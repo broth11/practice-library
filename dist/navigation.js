@@ -1,5 +1,5 @@
 const routeApp=document.querySelector('.app'),routeContent=document.getElementById('route-content'),routeSidebar=document.querySelector('.sidebar');
-let routePane='questions',routeExpanded=!matchMedia('(max-width:760px)').matches,selectedUnit='2A';
+let routePane='courses',routeExpanded=true,selectedUnit='2A';
 const unitLastQuestion={'2A':0,'2B':50};
 const unitInfo={
  '2A':{name:'Unit 2.A',description:'Categorical data & probability',start:0,end:50,lessons:sections.slice(0,5)},
