@@ -29,16 +29,15 @@ document.querySelectorAll('.card[id^="b"] .option').forEach(option=>option.query
 document.querySelectorAll('.card[id^="b"] .question-inner,.solution-panel[id^="b"] .solution-inner').forEach(typesetProbability);
 const unformattedCalculator=renderCalculator;
 renderCalculator=function(){unformattedCalculator();if(current>=50)typesetProbability(calcView)};
-/* Prefer four readable rows whenever they fit at the normal reading size.
-   Dense questions may use two columns to retain a readable font, never four. */
+/* Two by two is the default. Stack choices when expressions or prose would
+   become cramped; narrow mobile screens also use one column. */
 fitAnswers=function(card,inner,room){
  const options=[...card.querySelectorAll('.option-text')],field=card.querySelector('fieldset');
- const formulaOptions=options.some(el=>/P\(|\\frac|\\sigma|\\mu|\\leq|\\geq/.test([...el.querySelectorAll('[data-latex],annotation')].map(x=>x.dataset.latex||x.textContent).join(' ')));
- const layouts=formulaOptions||field.clientWidth<340?[1]:[1,2];
+ const layouts=field.clientWidth<340?[1]:[2,1];
  let chosen=null;
  for(let font=innerHeight<760?15:16;font>=13;font-=.25){
   card.style.setProperty('--q-font',font+'px');
-  for(const columns of layouts){card.style.setProperty('--answer-columns',columns);const overflow=options.some(el=>el.scrollWidth>el.clientWidth+1);if(!overflow){chosen={font,columns};if(inner.scrollHeight<=room){card.dataset.answerColumns=columns;return}}}
+  for(const columns of layouts){card.style.setProperty('--answer-columns',columns);const overflow=options.some(el=>el.scrollWidth>el.clientWidth+1),cramped=columns>1&&options.some(el=>el.getBoundingClientRect().height>parseFloat(getComputedStyle(el).lineHeight)*2.6);if(!overflow&&!cramped){chosen={font,columns};if(inner.scrollHeight<=room){card.dataset.answerColumns=columns;return}}}
  }
  chosen=chosen||{font:13,columns:1};card.style.setProperty('--q-font',chosen.font+'px');card.style.setProperty('--answer-columns',chosen.columns);card.dataset.answerColumns=chosen.columns;
 };
