@@ -1,3 +1,9 @@
-# AP Statistics Unit 2A Practice
+# AP Statistics Practice
 
-Published copy of the self-contained 50-question practice page. The editable content and build sources remain in outputs/ap-statistics-unit-2a-trial. Copy a rebuilt HTML to dist/index.html before publishing an update.
+Buildless practice site with Courses, Units, and Questions navigation. Unit 2.A and Unit 2.B each contain five lessons and 50 questions.
+
+`dist/index.html` retains the original Unit 2.A questions and calculator interface. `dist/unit2b.js` holds the original Unit 2.B questions, solutions, and calculator guides; `dist/navigation.js` manages the course, unit, and lesson route.
+
+Unit 2.B follows the STS 2.B.1–2.B.5 handout scope and uses the AP Question Archetypes task patterns and misconception-based distractors. New questions and diagram assets are original rather than copies of source examples.
+
+Regenerate the 26 SVG probability diagrams with `node scripts/build-diagrams.mjs`. The static hosting directory is `dist`.
