@@ -4,6 +4,7 @@ const script=fs.readFileSync('dist/unit2b.js','utf8'),math=fs.readFileSync('dist
 const questions=vm.runInNewContext(script.slice(0,script.indexOf('if(bQuestions.length'))+';bQuestions');
 const rules=vm.runInNewContext(math.slice(0,math.indexOf("document.querySelectorAll('.card"))+';({probabilityLatex,mathSequence})');
 let count=0;
+for(const text of ['−1 × 10⁹⁹','1 × 10⁹⁹','√'])katex.renderToString(rules.probabilityLatex(text),{throwOnError:true,strict:'error'});
 for(const q of questions)for(const text of [q.scenario,q.ask,...q.options,...q.steps,q.trap]){
  rules.mathSequence.lastIndex=0;
  for(const m of text.matchAll(rules.mathSequence))if(/\b(?:P|E|Var|SD|C)\(|[μσΦ√²³⁴⁵⁶⁷⁸⁹≤≥≈=<>/]|\b(?:np|X|Z|G|x|z|n|p|k|c)\b|x̄/.test(m[0])){katex.renderToString(rules.probabilityLatex(m[0]),{throwOnError:true,strict:'error'});count++}

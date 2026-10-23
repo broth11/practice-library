@@ -3,6 +3,8 @@ function probabilityLatex(source){
  let s=source.trim().replace(/X\s*~\s*Binomial/g,'X \\sim \\operatorname{Binomial}');
  s=s.replace(/C\((\d+),\s*(\d+)\)/g,'\\binom{$1}{$2}');
  s=s.replace(/√\[([^\]]+)\]/g,'\\sqrt{$1}').replace(/√(\d+(?:\.\d+)?)/g,'\\sqrt{$1}');
+ s=s.replace(/√/g,'\\surd ');
+ s=s.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g,run=>'^{'+[...run].map(c=>'⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c)).join('')+'}');
  s=s.replace(/\(([^()]*)\)\s*\/\s*([σμ](?:²)?|\d+(?:\.\d+)?)/g,'\\dfrac{$1}{$2}');
  s=s.replace(/\b(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/g,'\\dfrac{$1}{$2}');
  s=s.replace(/\b(Var|SD)\(/g,'\\operatorname{$1}(');
@@ -16,7 +18,7 @@ const mathAtom='(?:X\\s*~\\s*Binomial\\([^)]*\\)|(?:P|E|Var|SD|Φ)\\([^)]*\\)|C\
 const mathSequence=new RegExp(mathAtom+'(?:\\s*'+mathAtom+')*','g');
 function typesetProbability(root){
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];let node;
- while(node=walker.nextNode()){if(!node.parentElement.closest('.katex,script,style,.letter,.question-badge,.within,.eyebrow'))nodes.push(node)}
+ while(node=walker.nextNode()){if(!node.parentElement.closest('.katex,script,style,.letter,.question-badge,.within,.eyebrow,.lcd-glass,.mini-keypad,.kc'))nodes.push(node)}
  for(const node of nodes){
   const text=node.textContent;mathSequence.lastIndex=0;const matches=[...text.matchAll(mathSequence)].filter(m=>/\b(?:P|E|Var|SD|C)\(|[μσΦ√²³⁴⁵⁶⁷⁸⁹≤≥≈=<>/]|\b(?:np|X|Z|G|x|z|n|p|k|c)\b|x̄/.test(m[0]));
   if(!matches.length)continue;
