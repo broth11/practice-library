@@ -3,8 +3,8 @@ function probabilityLatex(source){
  let s=source.trim().replace(/X\s*~\s*Binomial/g,'X \\sim \\operatorname{Binomial}');
  s=s.replace(/C\((\d+),\s*(\d+)\)/g,'\\binom{$1}{$2}');
  s=s.replace(/√\[([^\]]+)\]/g,'\\sqrt{$1}').replace(/√(\d+(?:\.\d+)?)/g,'\\sqrt{$1}');
- s=s.replace(/\(([^()]*)\)\s*\/\s*([σμ](?:²)?|\d+(?:\.\d+)?)/g,'\\frac{$1}{$2}');
- s=s.replace(/\b(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/g,'\\frac{$1}{$2}');
+ s=s.replace(/\(([^()]*)\)\s*\/\s*([σμ](?:²)?|\d+(?:\.\d+)?)/g,'\\dfrac{$1}{$2}');
+ s=s.replace(/\b(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/g,'\\dfrac{$1}{$2}');
  s=s.replace(/\b(Var|SD)\(/g,'\\operatorname{$1}(');
  s=s.replace(/\b(prize|reject|event)\b/g,'\\text{$1}');
  const symbols={'μ':'\\mu ','σ':'\\sigma ','Φ':'\\Phi ','≤':'\\leq ','≥':'\\geq ','≈':'\\approx ','−':'-','×':'\\times ','²':'^{2}','³':'^{3}','⁴':'^{4}','⁵':'^{5}','⁶':'^{6}','⁷':'^{7}','⁸':'^{8}','⁹':'^{9}','%':'\\%'};
@@ -27,6 +27,12 @@ function typesetProbability(root){
 }
 document.querySelectorAll('.card[id^="b"] .option').forEach(option=>option.querySelector('input').setAttribute('aria-label',option.querySelector('.letter').textContent+': '+option.querySelector('.option-text').textContent));
 document.querySelectorAll('.card[id^="b"] .question-inner,.solution-panel[id^="b"] .solution-inner').forEach(typesetProbability);
+// Existing Unit 2.A choices were pre-rendered with compact inline fractions.
+// Re-render only those fractions in display style, retaining the inline layout.
+document.querySelectorAll('.card .option-text .katex').forEach(math=>{
+ const source=math.querySelector('annotation[encoding="application/x-tex"]')?.textContent;
+ if(source&&/\\frac\b/.test(source))math.outerHTML=katex.renderToString(source.replace(/\\frac\b/g,'\\dfrac'),{throwOnError:true,strict:'error',output:'htmlAndMathml',displayMode:false});
+});
 const unformattedCalculator=renderCalculator;
 renderCalculator=function(){unformattedCalculator();if(current>=50)typesetProbability(calcView)};
 /* Two by two is the default. Stack choices when expressions or prose would
