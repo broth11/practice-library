@@ -11,6 +11,7 @@
     "variant": { "type": ["string", "null"], "description": "Card variant id (V#), or null when no primary evidence supports one." },
     "scenario": { "type": "string" },
     "prompt": { "type": "string" },
+    "notationKey": { "type": "string", "minLength": 1, "description": "Literal display key, rendered in one inherited font without prose math detection." },
     "choices": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "$ref": "#/$defs/choice" } },
     "answer": { "enum": ["A", "B", "C", "D"] },
     "stimulus": { "$ref": "#/$defs/stimulus" },

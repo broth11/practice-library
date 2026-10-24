@@ -13,6 +13,7 @@ for (const value of [...values].sort((a, b) => a - b)) {
 const expected = { type: 'stem-and-leaf', rows: [...stems].map(([stem, leaves]) => ({ stem, leaves })) };
 const unit = JSON.parse(readFileSync('src/content/ap-statistics/units/1-a.json', 'utf8'));
 const question = unit.questions.find(q => q.id === 'a27');
+assert.equal(question.notationKey, '1|2 = 12 centimeters', 'The complete key must remain one literal notation field.');
 assert(question.choices.every(validChoice));
 const matches = question.choices.flatMap((choice, i) => JSON.stringify(choice) === JSON.stringify(expected) ? ['ABCD'[i]] : []);
 assert.deepEqual(matches, [question.answer], 'Exactly one plot must preserve all eight measurements in order.');
