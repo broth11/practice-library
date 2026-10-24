@@ -32,6 +32,22 @@
       ]
     },
     {
+      "id": "categorical_vs_quantitative_variable",
+      "status": "card",
+      "card": "categorical_vs_quantitative_variable",
+      "questions": [
+        "1-a:a04"
+      ]
+    },
+    {
+      "id": "causal_conclusion_from_study",
+      "status": "card",
+      "card": "causal_conclusion_from_study",
+      "questions": [
+        "1-b:c48"
+      ]
+    },
+    {
       "id": "central_limit_theorem_statement",
       "status": "card",
       "card": "central_limit_theorem_statement",
@@ -45,6 +61,25 @@
       "card": "choose_display_for_two_categorical_variables",
       "questions": [
         "2-a:q05"
+      ]
+    },
+    {
+      "id": "choose_experimental_design",
+      "status": "card",
+      "card": "choose_experimental_design",
+      "questions": [
+        "1-b:c44"
+      ]
+    },
+    {
+      "id": "claim_from_one_variable_display",
+      "status": "card",
+      "card": "claim_from_one_variable_display",
+      "questions": [
+        "1-a:a12",
+        "1-a:a13",
+        "1-a:a14",
+        "1-a:a17"
       ]
     },
     {
@@ -65,11 +100,37 @@
       ]
     },
     {
+      "id": "classify_variable_type_pair",
+      "status": "card",
+      "card": "classify_variable_type_pair",
+      "questions": [
+        "1-a:a06"
+      ]
+    },
+    {
+      "id": "compare_boxplots_and_summaries",
+      "status": "card",
+      "card": "compare_boxplots_and_summaries",
+      "questions": [
+        "1-a:a51",
+        "1-a:a52",
+        "1-a:a59"
+      ]
+    },
+    {
       "id": "compare_likelihoods_from_two_way_table",
       "status": "card",
       "card": "compare_likelihoods_from_two_way_table",
       "questions": [
         "2-a:q26"
+      ]
+    },
+    {
+      "id": "compare_relative_position_with_z_scores",
+      "status": "card",
+      "card": "compare_relative_position_with_z_scores",
+      "questions": [
+        "1-a:a56"
       ]
     },
     {
@@ -79,6 +140,17 @@
       "questions": [
         "2-a:q09",
         "2-a:q34"
+      ]
+    },
+    {
+      "id": "compute_summary_statistic_from_data_list",
+      "status": "card",
+      "card": "compute_summary_statistic_from_data_list",
+      "questions": [
+        "1-a:a31",
+        "1-a:a32",
+        "1-a:a40",
+        "1-a:a41"
       ]
     },
     {
@@ -104,12 +176,66 @@
       ]
     },
     {
+      "id": "construct_stemplot_from_data",
+      "status": "card",
+      "card": "construct_stemplot_from_data",
+      "questions": [
+        "1-a:a27"
+      ]
+    },
+    {
+      "id": "count_observations_from_dotplot",
+      "status": "card",
+      "card": "count_observations_from_dotplot",
+      "questions": [
+        "1-a:a23"
+      ]
+    },
+    {
+      "id": "describe_clusters_gaps_outliers_from_display",
+      "status": "card",
+      "card": "describe_clusters_gaps_outliers_from_display",
+      "questions": [
+        "1-a:a24",
+        "1-a:a30"
+      ]
+    },
+    {
+      "id": "describe_shape_from_display",
+      "status": "card",
+      "card": "describe_shape_from_display",
+      "questions": [
+        "1-a:a21",
+        "1-a:a22"
+      ]
+    },
+    {
       "id": "discrete_or_continuous_variable",
       "status": "card",
       "card": "discrete_or_continuous_variable",
       "questions": [
         "2-b:b01",
-        "2-b:b21"
+        "2-b:b21",
+        "1-a:a05"
+      ]
+    },
+    {
+      "id": "effect_of_bin_width_change",
+      "status": "card",
+      "card": "effect_of_bin_width_change",
+      "questions": [
+        "1-a:a25"
+      ]
+    },
+    {
+      "id": "effect_of_linear_transformation_on_statistics",
+      "status": "card",
+      "card": "effect_of_linear_transformation_on_statistics",
+      "questions": [
+        "1-a:a48",
+        "1-a:a49",
+        "1-a:a50",
+        "1-a:a57"
       ]
     },
     {
@@ -125,6 +251,14 @@
       ]
     },
     {
+      "id": "evaluate_experiment_design",
+      "status": "card",
+      "card": "evaluate_experiment_design",
+      "questions": [
+        "1-b:c40"
+      ]
+    },
+    {
       "id": "expected_value_of_discrete_random_variable",
       "status": "card",
       "card": "expected_value_of_discrete_random_variable",
@@ -133,6 +267,27 @@
         "2-b:b05",
         "2-b:b08",
         "2-b:b10"
+      ]
+    },
+    {
+      "id": "experimental_design_principle_meaning",
+      "status": "card",
+      "card": "experimental_design_principle_meaning",
+      "questions": [
+        "1-b:c35",
+        "1-b:c36",
+        "1-b:c39",
+        "1-b:c47"
+      ]
+    },
+    {
+      "id": "generalization_scope_from_sampling_frame",
+      "status": "card",
+      "card": "generalization_scope_from_sampling_frame",
+      "questions": [
+        "1-b:c05",
+        "1-b:c06",
+        "1-b:c49"
       ]
     },
     {
@@ -154,6 +309,35 @@
       ]
     },
     {
+      "id": "identify_datum",
+      "status": "card",
+      "card": "identify_datum",
+      "questions": [
+        "1-a:a09"
+      ]
+    },
+    {
+      "id": "identify_experiment_component",
+      "status": "card",
+      "card": "identify_experiment_component",
+      "questions": [
+        "1-b:c31",
+        "1-b:c32",
+        "1-b:c33",
+        "1-b:c34"
+      ]
+    },
+    {
+      "id": "identify_experimental_design",
+      "status": "card",
+      "card": "identify_experimental_design",
+      "questions": [
+        "1-b:c41",
+        "1-b:c42",
+        "1-b:c43"
+      ]
+    },
+    {
       "id": "identify_law_of_large_numbers",
       "status": "card",
       "card": "identify_law_of_large_numbers",
@@ -162,11 +346,60 @@
       ]
     },
     {
+      "id": "identify_outliers_with_iqr_rule",
+      "status": "card",
+      "card": "identify_outliers_with_iqr_rule",
+      "questions": [
+        "1-a:a42"
+      ]
+    },
+    {
       "id": "identify_population_and_sample",
       "status": "card",
       "card": "identify_population_and_sample",
       "questions": [
-        "2-b:b41"
+        "2-b:b41",
+        "1-a:a01",
+        "1-a:a02"
+      ]
+    },
+    {
+      "id": "identify_sampling_method",
+      "status": "card",
+      "card": "identify_sampling_method",
+      "questions": [
+        "1-b:c11",
+        "1-b:c12",
+        "1-b:c13",
+        "1-b:c14",
+        "1-b:c15",
+        "1-b:c16"
+      ]
+    },
+    {
+      "id": "identify_study_type",
+      "status": "card",
+      "card": "identify_study_type",
+      "questions": [
+        "1-b:c01",
+        "1-b:c02",
+        "1-b:c04",
+        "1-b:c10"
+      ]
+    },
+    {
+      "id": "identify_type_of_bias",
+      "status": "card",
+      "card": "identify_type_of_bias",
+      "questions": [
+        "1-b:c21",
+        "1-b:c22",
+        "1-b:c23",
+        "1-b:c24",
+        "1-b:c25",
+        "1-b:c26",
+        "1-b:c28",
+        "1-b:c29"
       ]
     },
     {
@@ -176,6 +409,14 @@
       "questions": [
         "2-b:b04",
         "2-b:b18"
+      ]
+    },
+    {
+      "id": "interpret_percentile",
+      "status": "card",
+      "card": "interpret_percentile",
+      "questions": [
+        "1-a:a34"
       ]
     },
     {
@@ -192,6 +433,245 @@
       "card": "interpret_standard_deviation_of_random_variable",
       "questions": [
         "2-b:b07"
+      ]
+    },
+    {
+      "id": "interpret_z_score",
+      "status": "card",
+      "card": "interpret_z_score",
+      "questions": [
+        "1-a:a54"
+      ]
+    },
+    {
+      "id": "investigative_question_for_study",
+      "status": "card",
+      "card": "investigative_question_for_study",
+      "questions": [
+        "1-a:a10",
+        "1-b:c09"
+      ]
+    },
+    {
+      "id": "justify_experimental_design_choice",
+      "status": "card",
+      "card": "justify_experimental_design_choice",
+      "questions": [
+        "1-b:c45"
+      ]
+    },
+    {
+      "id": "justify_resistant_measure_of_center",
+      "status": "card",
+      "card": "justify_resistant_measure_of_center",
+      "questions": [
+        "1-a:a46"
+      ]
+    },
+    {
+      "id": "justify_sampling_method_choice",
+      "status": "card",
+      "card": "justify_sampling_method_choice",
+      "questions": [
+        "1-b:c17",
+        "1-b:c18",
+        "1-b:c19"
+      ]
+    },
+    {
+      "id": "local_bias_and_variability",
+      "status": "local",
+      "note": "Local Unit 1 archetype. A larger sample can reduce random variation while retaining systematic selection bias. Reject claims that sample size repairs self-selection.",
+      "questions": [
+        "1-b:c27"
+      ]
+    },
+    {
+      "id": "local_categorical_count_from_share",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Recover a count as total multiplied by relative frequency. Distractors confuse proportions, percentages, totals, and complements.",
+      "questions": [
+        "1-a:a15"
+      ]
+    },
+    {
+      "id": "local_categorical_denominator",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Compare categorical shares using each group's own total. Larger counts do not necessarily imply larger shares.",
+      "questions": [
+        "1-a:a19"
+      ]
+    },
+    {
+      "id": "local_categorical_display_choice",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Use a bar chart for category labels. Histograms, boxplots, and numerical dotplots require a quantitative variable.",
+      "questions": [
+        "1-a:a16"
+      ]
+    },
+    {
+      "id": "local_categorical_missing_share",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Mutually exclusive exhaustive category proportions sum to one; subtract the known shares.",
+      "questions": [
+        "1-a:a20"
+      ]
+    },
+    {
+      "id": "local_categorical_proportion",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Divide the named category count or disjoint-category sum by the total across categories. The exact numerical task is not the claim-from-display card's task.",
+      "questions": [
+        "1-a:a11",
+        "1-a:a18"
+      ]
+    },
+    {
+      "id": "local_compare_distribution_shape",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Compare the shapes of two histograms on shared intervals. A symmetric-versus-skewed pair extends beyond the observed paired-shape variants.",
+      "questions": [
+        "1-a:a58"
+      ]
+    },
+    {
+      "id": "local_confounded_variable",
+      "status": "local",
+      "note": "Local Unit 1 archetype. An outcome difference cannot be attributed to treatment alone when treatment and other relevant conditions always change together.",
+      "questions": [
+        "1-b:c37"
+      ]
+    },
+    {
+      "id": "local_coverage_bias_direction",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Combine an incomplete selection frame with a stated response difference to determine the likely direction of bias.",
+      "questions": [
+        "1-b:c30"
+      ]
+    },
+    {
+      "id": "local_extreme_value_correction",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Correcting a maximum that remains the maximum leaves the median unchanged but changes the mean, range, and variance. Omits the source card's ambiguous mode alternative.",
+      "questions": [
+        "1-a:a47"
+      ]
+    },
+    {
+      "id": "local_histogram_interval_count",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Sum the frequencies of bins lying in the requested interval, preserving the stated endpoint convention.",
+      "questions": [
+        "1-a:a26"
+      ]
+    },
+    {
+      "id": "local_observational_unit",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Identify the object on which variables are recorded, rather than a characteristic, summary, or collection instrument.",
+      "questions": [
+        "1-a:a03"
+      ]
+    },
+    {
+      "id": "local_outlier_fence",
+      "status": "local",
+      "note": "Local Unit 1 archetype. An upper outlier is strictly greater than Q3 + 1.5 IQR. A value equal to the fence is not an outlier.",
+      "questions": [
+        "1-a:a43"
+      ]
+    },
+    {
+      "id": "local_parameter_or_statistic",
+      "status": "local",
+      "note": "Local Unit 1 archetype. A numerical summary of a population is a parameter; a summary of a sample is a statistic. Being known does not decide the classification.",
+      "questions": [
+        "1-a:a07",
+        "1-a:a08"
+      ]
+    },
+    {
+      "id": "local_placebo_purpose",
+      "status": "local",
+      "note": "Local Unit 1 archetype. An inactive comparison helps distinguish active-treatment effects from expectations and the experience of treatment.",
+      "questions": [
+        "1-b:c38"
+      ]
+    },
+    {
+      "id": "local_proportional_stratified_allocation",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Allocate a total sample proportionally using stratum size divided by population size. Random selection must then occur within strata.",
+      "questions": [
+        "1-b:c20"
+      ]
+    },
+    {
+      "id": "local_quantitative_display_choice",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Choose a quantitative distribution display for measured lengths; reject displays of identification labels.",
+      "questions": [
+        "1-a:a29"
+      ]
+    },
+    {
+      "id": "local_randomized_order",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Randomize the order of paired treatments to prevent practice or time effects from always favoring the same treatment.",
+      "questions": [
+        "1-b:c46"
+      ]
+    },
+    {
+      "id": "local_range_calculation",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Subtract the minimum from the maximum; neither endpoint alone is the range.",
+      "questions": [
+        "1-a:a38"
+      ]
+    },
+    {
+      "id": "local_sample_standard_deviation",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Center values at the sample mean, sum squared deviations, divide by n minus one, and take the square root.",
+      "questions": [
+        "1-a:a36"
+      ]
+    },
+    {
+      "id": "local_scope_and_causation",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Random selection supports population scope, random assignment supports a causal comparison, and volunteers limit scope to similar units.",
+      "questions": [
+        "1-b:c07",
+        "1-b:c08",
+        "1-b:c50"
+      ]
+    },
+    {
+      "id": "local_stemplot_reading",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Combine the ordered stem and leaf according to the display's key; reject isolated digits or reversed place values.",
+      "questions": [
+        "1-a:a28"
+      ]
+    },
+    {
+      "id": "local_study_type_experiment",
+      "status": "local",
+      "note": "Local Unit 1 archetype. A randomly imposed explanatory condition defines a randomized experiment; merely measuring an outcome does not make it observational.",
+      "questions": [
+        "1-b:c03"
+      ]
+    },
+    {
+      "id": "local_weighted_mean",
+      "status": "local",
+      "note": "Local Unit 1 archetype. Combine group means using group-size weights, not an unweighted average when sizes differ.",
+      "questions": [
+        "1-a:a37"
       ]
     },
     {
@@ -254,6 +734,14 @@
       ]
     },
     {
+      "id": "percentile_rank_from_dotplot",
+      "status": "card",
+      "card": "percentile_rank_from_dotplot",
+      "questions": [
+        "1-a:a35"
+      ]
+    },
+    {
       "id": "probability_from_simulation_results",
       "status": "card",
       "card": "probability_from_simulation_results",
@@ -287,6 +775,15 @@
       "card": "proportion_in_interval_from_cumulative_table",
       "questions": [
         "2-b:b09"
+      ]
+    },
+    {
+      "id": "read_statistic_from_boxplot",
+      "status": "card",
+      "card": "read_statistic_from_boxplot",
+      "questions": [
+        "1-a:a44",
+        "1-a:a45"
       ]
     },
     {
@@ -381,7 +878,9 @@
       "status": "review",
       "card": "statistic_from_description",
       "questions": [
-        "2-b:b42"
+        "2-b:b42",
+        "1-a:a33",
+        "1-a:a39"
       ],
       "note": "b42 asks whether 18 (a population mean) and 19.2 (a sample mean) are parameters or statistics. This card matches statistics to their descriptions (standard deviation, median), so its answer logic does not decide b42. Closest card: normal_distribution_parameter_notation.",
       "relatedCard": "normal_distribution_parameter_notation"
@@ -449,7 +948,10 @@
       "status": "card",
       "card": "z_score_calculation",
       "questions": [
-        "2-b:b27"
+        "2-b:b27",
+        "1-a:a53",
+        "1-a:a55",
+        "1-a:a60"
       ]
     }
   ]

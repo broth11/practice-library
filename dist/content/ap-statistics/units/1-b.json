@@ -1,0 +1,3595 @@
+{
+  "schemaVersion": 1,
+  "id": "1-b",
+  "code": "1.B",
+  "title": "Unit 1.B",
+  "description": "Collecting data & designing studies",
+  "reviewStatus": "AI reviewed and numeric results tool verified; no recorded human sign-off. Calculator keypresses and screenshots deferred.",
+  "lessons": [
+    {
+      "id": "1.B.1",
+      "title": "Types of Studies",
+      "intro": "Distinguish study types and the scope and strength of their conclusions.",
+      "cedTopics": [
+        "1.1",
+        "1.10"
+      ]
+    },
+    {
+      "id": "1.B.2",
+      "title": "Random Sampling",
+      "intro": "Recognize random sampling designs and explain their statistical benefits.",
+      "cedTopics": [
+        "1.11"
+      ]
+    },
+    {
+      "id": "1.B.3",
+      "title": "Bias & Nonrandom Sampling",
+      "intro": "Identify how selection and response mechanisms can bias an estimate.",
+      "cedTopics": [
+        "1.12"
+      ]
+    },
+    {
+      "id": "1.B.4",
+      "title": "Experimental Design",
+      "intro": "Identify components, confounding, randomization, replication, and blinding.",
+      "cedTopics": [
+        "1.10",
+        "1.13"
+      ]
+    },
+    {
+      "id": "1.B.5",
+      "title": "Grouping in Experiments",
+      "intro": "Use blocks and matched pairs and distinguish causal inference from generalization.",
+      "cedTopics": [
+        "1.13"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "c01",
+      "lesson": "1.B.1",
+      "archetype": "identify_study_type",
+      "variant": "V1",
+      "scenario": "Researchers randomly select 200 residents and ask how many times they used a public park last month.",
+      "prompt": "Which of the following best classifies the investigation?",
+      "choices": [
+        "A sample survey, because information is obtained by questioning selected residents.",
+        "An experiment, because park use is a treatment.",
+        "A census, because residents were selected randomly.",
+        "An observational study, because random selection defines observational studies."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The researchers ask questions of a subset of residents.",
+          "They impose no treatment. A sample survey is the most specific correct description."
+        ],
+        "warning": "Random selection determines how units enter a study; it does not itself define the study type."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D3",
+          "D5"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#12",
+            "SG_1.10#18",
+            "SG_1.10#33",
+            "SG_1.10#34"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "lesson": "1.B.1",
+      "archetype": "identify_study_type",
+      "variant": "V1",
+      "scenario": "A mechanic compares past maintenance records for buses that already use either steel or ceramic brake pads. The mechanic does not change the pads.",
+      "prompt": "Which of the following best classifies the investigation?",
+      "choices": [
+        "A census, because every bus in the region was measured.",
+        "A retrospective observational study, because existing records provide the data.",
+        "An experiment, because the buses use different pad types.",
+        "A prospective study, because future records will be collected."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The pad types were already in use, so no treatment was imposed.",
+          "The data come from past records, making the observational study retrospective."
+        ],
+        "warning": "Comparing existing groups does not turn an observational study into an experiment."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D6"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#12",
+            "SG_1.10#18",
+            "SG_1.10#33",
+            "SG_1.10#34"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "lesson": "1.B.1",
+      "archetype": "local_study_type_experiment",
+      "variant": null,
+      "scenario": "An engineer randomly assigns 60 similar air filters to receive either coating A or coating B, then measures particles trapped.",
+      "prompt": "Which of the following best classifies the study?",
+      "choices": [
+        "A sample survey, because 60 filters form a sample.",
+        "A census, because every manufactured filter is tested.",
+        "A randomized experiment, because the engineer assigns coatings at random.",
+        "An observational study, because particle counts are observed."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The engineer actively assigns the explanatory condition, the coating.",
+          "Random assignment makes this a randomized experiment."
+        ],
+        "warning": "Every study observes outcomes; the defining feature of an experiment is the imposition of treatments."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D3",
+          "KEY",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "lesson": "1.B.1",
+      "archetype": "identify_study_type",
+      "variant": "V1",
+      "scenario": "An inspector checks the functioning of every emergency exit in a 28-exit arena.",
+      "prompt": "Which of the following best describes the data collection?",
+      "choices": [
+        "A sample survey of the arena's exits",
+        "A simple random sample of exits",
+        "An experiment on exit performance",
+        "A census of the arena's exits"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The population is the arena's 28 emergency exits.",
+          "Every exit is checked, so no subset is sampled."
+        ],
+        "warning": "Checking the entire defined population is a census, even when that population is small."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D11",
+          "D1",
+          "KEY"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "role": "D11",
+            "reason": "New use of this card build in this variant; not AP-observed for the variant."
+          },
+          {
+            "reason": "A sampling-method option is added to the classify-study variant."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#12",
+            "SG_1.10#18",
+            "SG_1.10#33",
+            "SG_1.10#34"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "lesson": "1.B.1",
+      "archetype": "generalization_scope_from_sampling_frame",
+      "variant": "V2",
+      "scenario": "A transit authority draws a simple random sample of 180 adult holders of annual ferry passes in Bay District and asks about schedule satisfaction.",
+      "prompt": "To which population can the survey results be generalized?",
+      "choices": [
+        "All adult annual ferry-pass holders in Bay District",
+        "All ferry passengers nationwide",
+        "Only the 180 sampled pass holders",
+        "Only pass holders who reported being satisfied"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The random-selection frame is adult annual-pass holders in Bay District.",
+          "Retain the age, pass type, and geographic restrictions when naming the population."
+        ],
+        "warning": "A random sample does not justify extending conclusions beyond its selection frame."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D5",
+          "D4",
+          "D6"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#4",
+            "SG_1.10#6",
+            "SG_1.10#7",
+            "SG_1.10#24",
+            "SG_1.10#26",
+            "SG_1.13#9"
+          ],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "lesson": "1.B.1",
+      "archetype": "generalization_scope_from_sampling_frame",
+      "variant": "V5",
+      "scenario": "A housing association selects a random sample of its households to estimate average weekly water use.",
+      "prompt": "Which of the following is a benefit of selecting a random sample?",
+      "choices": [
+        "It allows treatments to be randomly assigned.",
+        "It supports generalizing the estimate to the association's households.",
+        "It guarantees that the sample's water-use distribution matches the population exactly.",
+        "It establishes that household size causes water use."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Random selection gives a probability-based link between the sampled households and the population.",
+          "It supports population inference while still allowing sampling variability."
+        ],
+        "warning": "Representativeness is not an exact-match guarantee, and random sampling alone does not establish causation."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D13",
+          "KEY",
+          "D13",
+          "D13"
+        ],
+        "variant": "V5",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#9"
+          ],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "lesson": "1.B.1",
+      "archetype": "local_scope_and_causation",
+      "variant": null,
+      "scenario": "A city randomly samples 300 households and finds that households with a compost bin produce less mixed waste. No bins are assigned.",
+      "prompt": "Which of the following conclusions is justified?",
+      "choices": [
+        "The results apply only to the 300 sampled households.",
+        "Random sampling removes every possible confounding variable.",
+        "Bin ownership is associated with mixed-waste production in the city's households.",
+        "Owning a bin causes every household to produce less mixed waste."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Random sampling supports generalization to the city's households.",
+          "Because bin ownership was observed rather than randomly assigned, other household differences may explain the association."
+        ],
+        "warning": "Random sampling supports scope; random assignment supports a causal comparison."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D3",
+          "KEY",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "lesson": "1.B.1",
+      "archetype": "local_scope_and_causation",
+      "variant": null,
+      "scenario": "Forty volunteer ceramic artists are randomly assigned to use one of two glazes. A well-designed experiment finds a statistically significant difference in durability.",
+      "prompt": "Which of the following conclusions is best supported?",
+      "choices": [
+        "The better glaze will improve durability for every artist.",
+        "No causal conclusion is possible because the artists volunteered.",
+        "The result automatically generalizes to all ceramic artists worldwide.",
+        "The glaze caused a durability difference for artists similar to these volunteers."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Random assignment supports a causal comparison between the glazes.",
+          "Volunteer recruitment limits the population to artists similar to those who participated."
+        ],
+        "warning": "A randomized experiment can support causation without supporting unrestricted generalization."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "lesson": "1.B.1",
+      "archetype": "investigative_question_for_study",
+      "variant": "V1",
+      "scenario": "A food laboratory will sample refrigerated shipments from one packing line to investigate whether the mean arrival temperature is below 5 degrees Celsius.",
+      "prompt": "Which of the following matches the investigation?",
+      "choices": [
+        "Is the mean arrival temperature for shipments from this line less than 5 degrees Celsius?",
+        "What is the temperature of one randomly selected shipment?",
+        "Is the mean arrival temperature for this line different from 5 degrees Celsius?",
+        "Is the mean arrival temperature of all refrigerated shipments nationwide below 5 degrees Celsius?"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The target is the mean temperature for shipments from the specified line.",
+          "The proposed question preserves the target population, measured variable, and below-5 direction."
+        ],
+        "warning": "Different from is a two-direction question and does not match a specifically lower claim."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.1#2"
+          ],
+          "ced": [
+            "1.1",
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 23,
+            "observedMin": 25,
+            "observedMax": 117,
+            "measuredFrom": 8,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "observedMin": 10,
+            "observedMax": 19,
+            "measuredFrom": 8,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 9,
+            "observedMin": 10,
+            "observedMax": 33,
+            "measuredFrom": 8,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c10",
+      "lesson": "1.B.1",
+      "archetype": "identify_study_type",
+      "variant": "V3",
+      "scenario": "A school records the travel time of every student enrolled this term. No travel-time records are missing.",
+      "prompt": "Which of the following statements is correct?",
+      "choices": [
+        "The data should be discarded because this is an observational investigation.",
+        "The mean travel time of enrolled students is known from the census.",
+        "A confidence interval is required to estimate this term's enrolled-student mean.",
+        "The results are unusable because no random sample was selected."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Every member of the defined population has been measured.",
+          "The population mean for this term can be calculated directly. Sampling uncertainty does not arise for that exact population."
+        ],
+        "warning": "A census does not eliminate measurement errors, but it removes the need to infer this population mean from a sample."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D10",
+          "KEY",
+          "D4",
+          "D4"
+        ],
+        "variant": "V3",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#2"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c11",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V1",
+      "scenario": "A service lists all 900 registered cargo bicycles, labels them 001 through 900, and uses a random-number generator to choose 50 distinct labels.",
+      "prompt": "Which sampling method is used?",
+      "choices": [
+        "Systematic random sampling",
+        "Convenience sampling",
+        "Simple random sampling",
+        "Stratified random sampling"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The selection takes place directly from one complete list.",
+          "Every possible set of 50 distinct labels has the same chance of selection."
+        ],
+        "warning": "Random sampling within preformed groups would be stratified sampling."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D4",
+          "KEY",
+          "D2"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#5",
+            "SG_1.11#6",
+            "SG_1.11#8",
+            "SG_1.11#9",
+            "SG_1.11#14",
+            "SG_1.11#16",
+            "SG_1.11#17",
+            "SG_1.11#20",
+            "SG_1.11#23",
+            "SG_1.12#3"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 23,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 17,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c12",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V1",
+      "scenario": "A university separates its staff into academic, technical, and administrative groups, then randomly selects 20 people from each group.",
+      "prompt": "Which sampling method is used?",
+      "choices": [
+        "Cluster random sampling",
+        "Simple random sampling",
+        "Systematic random sampling",
+        "Stratified random sampling"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The population is divided into groups before selection.",
+          "A random sample is taken from every group, which defines stratified random sampling."
+        ],
+        "warning": "Selecting some whole groups would be cluster sampling."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#5",
+            "SG_1.11#6",
+            "SG_1.11#8",
+            "SG_1.11#9",
+            "SG_1.11#14",
+            "SG_1.11#16",
+            "SG_1.11#17",
+            "SG_1.11#20",
+            "SG_1.11#23",
+            "SG_1.12#3"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 17,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c13",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V1",
+      "scenario": "An agency randomly chooses 6 of 40 apartment buildings and surveys every household in each chosen building.",
+      "prompt": "Which sampling method is used?",
+      "choices": [
+        "Cluster random sampling",
+        "Stratified random sampling",
+        "Simple random sampling",
+        "Convenience sampling"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Randomness selects whole buildings.",
+          "Every household in those selected buildings is included, so buildings serve as clusters."
+        ],
+        "warning": "Random selection can act on groups rather than on individual households."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#5",
+            "SG_1.11#6",
+            "SG_1.11#8",
+            "SG_1.11#9",
+            "SG_1.11#14",
+            "SG_1.11#16",
+            "SG_1.11#17",
+            "SG_1.11#20",
+            "SG_1.11#23",
+            "SG_1.12#3"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 17,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 17,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c14",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V1",
+      "scenario": "A bottling plant randomly selects a starting bottle from the first 25 bottles on a conveyor, then inspects that bottle and every 25th bottle afterward.",
+      "prompt": "Which sampling method is used?",
+      "choices": [
+        "Convenience sampling",
+        "Systematic random sampling",
+        "Simple random sampling",
+        "Stratified random sampling"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The process combines a random starting position with a fixed interval.",
+          "That every-25th structure defines systematic sampling."
+        ],
+        "warning": "A random start does not make every possible sample of the same size equally likely."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#5",
+            "SG_1.11#6",
+            "SG_1.11#8",
+            "SG_1.11#9",
+            "SG_1.11#14",
+            "SG_1.11#16",
+            "SG_1.11#17",
+            "SG_1.11#20",
+            "SG_1.11#23",
+            "SG_1.12#3"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 25,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 17,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c15",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V1",
+      "scenario": "A recreation manager asks the first 30 visitors leaving the nearest entrance about the park's paths.",
+      "prompt": "Which sampling method is used?",
+      "choices": [
+        "Cluster random sampling",
+        "Systematic random sampling",
+        "Convenience sampling",
+        "Simple random sampling"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The manager chooses people who are easiest to reach.",
+          "There is no chance mechanism for selecting visitors."
+        ],
+        "warning": "A chronological rule is not systematic random sampling unless it uses a random start and a specified interval."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D3",
+          "KEY",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#5",
+            "SG_1.11#6",
+            "SG_1.11#8",
+            "SG_1.11#9",
+            "SG_1.11#14",
+            "SG_1.11#16",
+            "SG_1.11#17",
+            "SG_1.11#20",
+            "SG_1.11#23",
+            "SG_1.12#3"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 16,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 17,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c16",
+      "lesson": "1.B.2",
+      "archetype": "identify_sampling_method",
+      "variant": "V3",
+      "scenario": "An archive has a complete list of 420 documents and wants a simple random sample of 35 distinct documents.",
+      "prompt": "Which procedure produces the required sample?",
+      "choices": [
+        "Randomly select 5 documents from each of 7 subject groups.",
+        "Select the first 35 documents on the shelf.",
+        "Select every 12th document after choosing a random start.",
+        "Randomly select 35 distinct labels from the complete list."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A simple random sample gives every possible set of 35 documents equal selection probability.",
+          "Selecting distinct random labels from the full list has that property."
+        ],
+        "warning": "Stratified and systematic samples can be random without being simple random samples."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D7",
+          "D3",
+          "KEY"
+        ],
+        "variant": "V3",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#1",
+            "SG_1.11#3",
+            "SG_1.11#13",
+            "SG_1.11#19"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "observedMin": 26,
+            "observedMax": 91,
+            "measuredFrom": 18,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c17",
+      "lesson": "1.B.2",
+      "archetype": "justify_sampling_method_choice",
+      "variant": "V1",
+      "scenario": "A grower wants to estimate mean fruit mass. Trees in each of three varieties produce similar masses, but the varieties have substantially different mean masses. The grower considers randomly sampling within each variety.",
+      "prompt": "Why is stratifying by variety useful?",
+      "choices": [
+        "It can reduce variability in estimates of the overall mean fruit mass.",
+        "It automatically eliminates bias in the mass measurements.",
+        "It reduces variability in estimates of the proportion of trees belonging to each variety.",
+        "It guarantees that the sampled and population mean masses are identical."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Variety explains substantial differences in fruit mass.",
+          "Sampling within every variety keeps random sample composition from varying unnecessarily across those groups."
+        ],
+        "warning": "Stratification targets variability of the response estimate, not automatic bias removal or exact agreement."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D1"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "The exact-agreement distractor is a new overclaim, not an observed D1 bias-removal build."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#4"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 6,
+            "observedMin": 7,
+            "observedMax": 20,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 8,
+            "observedMin": 9,
+            "observedMax": 25,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c18",
+      "lesson": "1.B.2",
+      "archetype": "justify_sampling_method_choice",
+      "variant": "V2",
+      "scenario": "A port authority wants strata that improve the precision of estimated average loading time.",
+      "prompt": "Which arrangement is most appropriate?",
+      "choices": [
+        "A small number of very large groups regardless of loading-time differences",
+        "Groups with similar loading times within each group and different typical times between groups",
+        "Groups with loading times as different as possible within every group",
+        "Groups of equal size regardless of loading-time differences"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Useful strata group units alike on a characteristic related to the response.",
+          "Random selection within every such group can reduce variability of the overall estimate."
+        ],
+        "warning": "Equal-sized strata are not required, and internal heterogeneity weakens the precision benefit."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#11"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 7,
+            "observedMax": 20,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option D",
+            "words": 8,
+            "observedMin": 9,
+            "observedMax": 25,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c19",
+      "lesson": "1.B.2",
+      "archetype": "justify_sampling_method_choice",
+      "variant": "V4",
+      "scenario": "A city proposes surveying every household on four randomly chosen streets. Streets differ greatly in housing type, which is related to the survey response.",
+      "prompt": "Which of the following is a statistical disadvantage of this cluster sample?",
+      "choices": [
+        "The sample is necessarily too large to yield accurate results.",
+        "A cluster sample has no statistical disadvantages.",
+        "A few selected streets may poorly represent the city's different housing types.",
+        "Some residents might be away when surveyors visit."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Each street is a cluster, but the streets differ in a way related to the outcome.",
+          "Selecting only a few clusters can produce substantial variation in which housing types are represented."
+        ],
+        "warning": "The stated statistical concern is variation between clusters, rather than a problem that any survey might face."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D7",
+          "D7",
+          "KEY",
+          "D6"
+        ],
+        "variant": "V4",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.11#12"
+          ],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "option B",
+            "words": 7,
+            "observedMin": 9,
+            "observedMax": 25,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option D",
+            "words": 8,
+            "observedMin": 9,
+            "observedMax": 25,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c20",
+      "lesson": "1.B.2",
+      "archetype": "local_proportional_stratified_allocation",
+      "variant": null,
+      "scenario": "An organization has 360 field staff and 240 office staff. It plans a stratified random sample of 50 employees, with allocation proportional to group size.",
+      "prompt": "How many field staff should be selected?",
+      "choices": [
+        "20",
+        "25",
+        "30",
+        "36"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Field staff make up 360/600 = 0.60 of employees.",
+          "Allocate the same share of the sample to them: 50 × 0.60 = 30."
+        ],
+        "warning": "Use the group's proportion of the whole population, then randomly sample within each group."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.11"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c21",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V1",
+      "scenario": "A city selects a random sample only from addresses with a registered landline telephone. It wants to estimate the share of all households using an electric bicycle.",
+      "prompt": "Which source of bias is most directly created by this selection frame?",
+      "choices": [
+        "Undercoverage",
+        "Nonresponse",
+        "Leading-question response bias",
+        "Voluntary response"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Households without registered landlines cannot enter the sample.",
+          "Excluding part of the target population creates undercoverage."
+        ],
+        "warning": "Random selection from an incomplete list does not repair the missing coverage."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D1",
+          "D1"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#9",
+            "SG_1.12#10",
+            "SG_1.12#13"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "option A",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c22",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V1",
+      "scenario": "A conservatory randomly selects 240 alumni to survey about careers. Only 76 respond, and employed alumni are more likely to reply.",
+      "prompt": "Which source of bias is most directly described?",
+      "choices": [
+        "Voluntary response from an open invitation",
+        "Nonresponse",
+        "Undercoverage",
+        "Leading-question response bias"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A sample was selected first, but many selected alumni did not reply.",
+          "Their employment status is related to response likelihood, so the respondents may systematically differ from nonrespondents."
+        ],
+        "warning": "Nonresponse concerns selected people who do not reply; an open voluntary survey begins without a selected sample."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D1",
+          "D1"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#9",
+            "SG_1.12#10",
+            "SG_1.12#13"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 8,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option C",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c23",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V1",
+      "scenario": "A museum posts an unrestricted link asking visitors to rate a new exhibition. People who choose to follow the link form the sample.",
+      "prompt": "Which source of bias is most directly described?",
+      "choices": [
+        "Measurement rounding",
+        "Random assignment",
+        "Voluntary response",
+        "Nonresponse from a selected random sample"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "People decide for themselves whether to join the survey.",
+          "Visitors with strong opinions may be especially likely to participate, making the sample self-selected."
+        ],
+        "warning": "An unrestricted invitation does not produce a random sample."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D1",
+          "KEY",
+          "D1"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Measurement rounding and random assignment are new non-bias alternatives; the exact option formulations are local."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#9",
+            "SG_1.12#10",
+            "SG_1.12#13"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 8,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c24",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V1",
+      "scenario": "A survey asks, 'Would you support the wasteful plan to remove our neighborhood's beautiful trees?'",
+      "prompt": "Which source of bias is most directly created by this wording?",
+      "choices": [
+        "Undercoverage",
+        "Nonresponse",
+        "Voluntary response",
+        "Response bias from a leading question"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Words such as wasteful and beautiful steer respondents toward an opinion.",
+          "That wording can systematically change answers, creating response bias."
+        ],
+        "warning": "A random sample can still give biased responses to a leading question."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D1",
+          "D1",
+          "KEY"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#9",
+            "SG_1.12#10",
+            "SG_1.12#13"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "option A",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c25",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V1",
+      "scenario": "Employees are asked to report safety violations directly to their supervisor. Some conceal violations because they fear discipline.",
+      "prompt": "Which source of bias is most directly described?",
+      "choices": [
+        "Response bias from inaccurate self-reporting",
+        "Response bias from confusing question wording",
+        "Undercoverage",
+        "Nonresponse"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The employees participate, but some answers systematically understate the true number of violations.",
+          "The issue is inaccurate reporting caused by concern about consequences."
+        ],
+        "warning": "A false answer is different from a missing response."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D6",
+          "D1",
+          "D1"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#9",
+            "SG_1.12#10",
+            "SG_1.12#13"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 8,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option C",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option D",
+            "words": 1,
+            "observedMin": 2,
+            "observedMax": 23,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c26",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V5",
+      "scenario": "A questionnaire asks shoppers whether they agree with a complicated, leading statement about reusable packaging.",
+      "prompt": "Which change most directly reduces response bias from the wording?",
+      "choices": [
+        "Select shoppers randomly but keep the wording unchanged.",
+        "Rewrite the statement neutrally and field-test it for clarity.",
+        "Increase the sample size.",
+        "Decrease the sample size."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Response bias here arises from how the question is phrased.",
+          "Neutral wording and a clarity check address that mechanism directly."
+        ],
+        "warning": "Larger samples and random selection do not remove a leading-question effect."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D2",
+          "D2"
+        ],
+        "variant": "V5",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#8"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 10,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c27",
+      "lesson": "1.B.3",
+      "archetype": "local_bias_and_variability",
+      "variant": null,
+      "scenario": "A website estimates citywide satisfaction using 30,000 self-selected online ratings. Residents with very negative experiences are especially likely to submit ratings.",
+      "prompt": "Which of the following statements is correct?",
+      "choices": [
+        "Selection bias disappears whenever more than 10,000 people respond.",
+        "A small random sample must have more bias than this large sample.",
+        "The large sample may still systematically underestimate citywide satisfaction.",
+        "The large sample guarantees that selection bias is negligible."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Selection favors residents with negative experiences, so the sample can systematically differ from the population.",
+          "More responses can reduce random variation while leaving the selection mechanism biased."
+        ],
+        "warning": "Sample size controls precision under a design; it does not automatically repair that design."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D3",
+          "KEY",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c28",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V4",
+      "scenario": "A random sample of residents receives a survey about public-library use. Frequent library users are more likely to return it.",
+      "prompt": "Why might nonresponse bias the estimate of average use?",
+      "choices": [
+        "Nonresponse automatically violates independence between all residents.",
+        "The only issue is that smaller samples always have greater bias.",
+        "Respondents and nonrespondents are necessarily indistinguishable.",
+        "Respondents may use the library more often than the selected nonrespondents."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The response likelihood is related to the variable being estimated.",
+          "Frequent users are overrepresented among completed surveys, so estimated use may be too high."
+        ],
+        "warning": "A lower response rate creates bias when the respondents differ in a relevant way."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D2",
+          "D4",
+          "KEY"
+        ],
+        "variant": "V4",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#7"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 9,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c29",
+      "lesson": "1.B.3",
+      "archetype": "identify_type_of_bias",
+      "variant": "V2",
+      "scenario": "A researcher wants to recognize an example of nonresponse bias.",
+      "prompt": "Which of the following describes that problem?",
+      "choices": [
+        "Selected trainees who disliked a course are less likely to return its evaluation.",
+        "An open evaluation link attracts trainees with strong opinions.",
+        "A trainee overstates practice time on a completed form.",
+        "A random sample of trainees all returns accurate forms."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Nonresponse starts with a selected sample, followed by missing responses.",
+          "Bias arises when the tendency not to reply is related to the evaluation outcome."
+        ],
+        "warning": "Self-selection, inaccurate answers, and complete accurate responses describe different situations."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D1",
+          "D5"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.12#2",
+            "SG_1.12#6",
+            "SG_1.12#11"
+          ],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "observedMin": 11,
+            "observedMax": 31,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c30",
+      "lesson": "1.B.3",
+      "archetype": "local_coverage_bias_direction",
+      "variant": null,
+      "scenario": "A survey of all neighborhood adults uses only a gym membership list. Gym members typically exercise more than adults who do not belong to the gym.",
+      "prompt": "What is the likely effect on the estimate of average weekly exercise?",
+      "choices": [
+        "It will be unbiased if enough gym members respond.",
+        "It will be too high because less-active nonmembers are excluded.",
+        "It will be too low because gym members exercise more.",
+        "It will be unbiased because the membership list is complete."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The frame excludes nonmembers who tend to exercise less.",
+          "An estimate based only on the more active group will tend to overstate the average for all adults."
+        ],
+        "warning": "A complete list of the wrong population can still create undercoverage."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.12"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c31",
+      "lesson": "1.B.4",
+      "archetype": "identify_experiment_component",
+      "variant": "V2",
+      "scenario": "Researchers randomly assign 72 reusable water bottles to one of three insulating sleeves, then measure the water-temperature increase after two hours.",
+      "prompt": "Which of the following is the response variable?",
+      "choices": [
+        "The number of bottles in the experiment",
+        "The assignment of bottles to groups",
+        "The temperature increase for each bottle",
+        "The type of insulating sleeve"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The response is the outcome measured after a treatment is applied.",
+          "Here that outcome is each bottle's temperature increase."
+        ],
+        "warning": "The sleeve type is the explanatory variable, rather than the measured response."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D3",
+          "KEY",
+          "D3"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#22"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 21,
+            "observedMin": 71,
+            "observedMax": 109,
+            "measuredFrom": 12,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c32",
+      "lesson": "1.B.4",
+      "archetype": "identify_experiment_component",
+      "variant": "V3",
+      "scenario": "A research team assigns seedlings to receive 4, 8, or 12 hours of light per day. It records each seedling's height after six weeks.",
+      "prompt": "Which of the following is the explanatory variable?",
+      "choices": [
+        "Height after six weeks",
+        "The group of seedlings receiving 4 hours",
+        "The number of seedlings studied",
+        "Daily hours of light"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The team imposes different levels of daily light.",
+          "Those daily hours form the explanatory variable; height is the response."
+        ],
+        "warning": "A treatment group is a collection of units, not the variable whose levels are imposed."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D4",
+          "D3",
+          "KEY"
+        ],
+        "variant": "V3",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#14"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 24,
+            "observedMin": 71,
+            "observedMax": 109,
+            "measuredFrom": 12,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c33",
+      "lesson": "1.B.4",
+      "archetype": "identify_experiment_component",
+      "variant": "V5",
+      "scenario": "A factory randomly assigns 90 metal panels to one of three protective finishes and measures corrosion after a month.",
+      "prompt": "Which of the following are the experimental units?",
+      "choices": [
+        "The 90 metal panels",
+        "The three protective finishes",
+        "Only the 30 panels receiving finish A",
+        "All panels the factory will ever produce"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Experimental units are the objects to which treatments are assigned.",
+          "Every panel in the experiment receives a finish, so all 90 panels are units."
+        ],
+        "warning": "Treatments are conditions, and a single treatment group contains only some of the units."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D3",
+          "D4",
+          "D5"
+        ],
+        "variant": "V5",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#19",
+            "SG_1.10#25",
+            "SG_1.10#29"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "observedMin": 71,
+            "observedMax": 109,
+            "measuredFrom": 12,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c34",
+      "lesson": "1.B.4",
+      "archetype": "identify_experiment_component",
+      "variant": "V6",
+      "scenario": "A grower studies two irrigation schedules and three fertilizer blends, using every schedule-blend combination.",
+      "prompt": "How many treatments are in the experiment?",
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A treatment is one combination of imposed factor levels.",
+          "There are 2 × 3 = 6 combinations."
+        ],
+        "warning": "Add factor counts to count factors' levels; multiply them to count all treatment combinations."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D8",
+          "D8",
+          "D8",
+          "KEY"
+        ],
+        "variant": "V6",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.10#27",
+            "SG_1.10#28",
+            "SG_1.10#35"
+          ],
+          "ced": [
+            "1.10"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 14,
+            "observedMin": 71,
+            "observedMax": 109,
+            "measuredFrom": 12,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c35",
+      "lesson": "1.B.4",
+      "archetype": "experimental_design_principle_meaning",
+      "variant": "V1",
+      "scenario": "An engineer uses a random process to assign each of 80 similar batteries to one of two charging protocols.",
+      "prompt": "Why is random assignment useful?",
+      "choices": [
+        "It guarantees that the experiment's calculations will be easier.",
+        "It allows the engineer to study the quality of the random-number generator.",
+        "It tends to balance uncontrolled battery characteristics between protocol groups.",
+        "It makes up for improper data collection and analysis."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Battery characteristics could affect the outcome independently of the charging protocol.",
+          "Random assignment reduces their systematic association with the protocol groups."
+        ],
+        "warning": "Randomization reduces confounding risk but does not guarantee identical groups or fix other design flaws."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D3",
+          "KEY",
+          "D2"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "A random-number-generator distractor adapts the card's randomization-as-target misconception."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#22",
+            "SG_1.13#27"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "observedMin": 20,
+            "observedMax": 148,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 20,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c36",
+      "lesson": "1.B.4",
+      "archetype": "experimental_design_principle_meaning",
+      "variant": "V2",
+      "scenario": "A materials experiment compares three adhesives on 18 panels per adhesive.",
+      "prompt": "Which feature provides replication?",
+      "choices": [
+        "Repeating the entire experiment in a later year",
+        "Using three different adhesives",
+        "Applying three measurements to the same panel",
+        "Assigning multiple panels to each adhesive"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Replication requires multiple experimental units for each treatment.",
+          "The 18 panels per adhesive provide independent units for each comparison."
+        ],
+        "warning": "Repeated measurements on one panel are not additional experimental units."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D5",
+          "D5",
+          "KEY"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#10"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 11,
+            "observedMin": 20,
+            "observedMax": 148,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 4,
+            "observedMin": 6,
+            "observedMax": 20,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 4,
+            "observedMin": 8,
+            "observedMax": 30,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option C",
+            "words": 7,
+            "observedMin": 8,
+            "observedMax": 30,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option D",
+            "words": 6,
+            "observedMin": 8,
+            "observedMax": 30,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c37",
+      "lesson": "1.B.4",
+      "archetype": "local_confounded_variable",
+      "variant": null,
+      "scenario": "A kitchen tests two bread recipes. One baker uses recipe A in an old oven, while another baker uses recipe B in a new oven.",
+      "prompt": "Why is a causal comparison of the recipes difficult?",
+      "choices": [
+        "Recipe, baker, and oven change together, so their effects cannot be separated.",
+        "There are only two recipes, so the study has no explanatory variable.",
+        "Bread volume cannot be a response variable.",
+        "A comparison is impossible unless all bakers in the city participate."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Every use of recipe A also uses one baker and oven; every use of B uses a different baker and oven.",
+          "A difference in bread volume could be caused by recipe, baker, oven, or their combination."
+        ],
+        "warning": "A variable is confounded with treatment when its effect is entangled with the treatment comparison."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c38",
+      "lesson": "1.B.4",
+      "archetype": "local_placebo_purpose",
+      "variant": null,
+      "scenario": "In a randomized trial of a new throat lozenge, one group receives an identical-looking lozenge without the active ingredient.",
+      "prompt": "What is the main purpose of the inactive lozenge?",
+      "choices": [
+        "To ensure that participants represent the whole population",
+        "To help separate the active ingredient's effect from effects of receiving a treatment",
+        "To guarantee that participants report no improvement",
+        "To make random assignment unnecessary"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Participants may respond to expectations or the experience of receiving treatment.",
+          "A placebo group provides a comparison under similar expectations without the active ingredient."
+        ],
+        "warning": "A placebo is a comparison condition; it does not replace random assignment or random sampling."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c39",
+      "lesson": "1.B.4",
+      "archetype": "experimental_design_principle_meaning",
+      "variant": "V5",
+      "scenario": "Participants are randomly assigned to perform balance exercises using either a visible rail or a visible floor marker. An assessor scores anonymized videos that hide the equipment.",
+      "prompt": "Which statement about blinding is correct?",
+      "choices": [
+        "The assessor cannot be blind because participants' age groups are recorded.",
+        "Blinding is impossible because there is no untreated control group.",
+        "Participants know their method, but the assessor can be blind to it.",
+        "Participants and the person setting up the visible equipment can both be blind to the method."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Participants can see the assigned equipment, so they cannot be blind to it.",
+          "The anonymized videos conceal the method from the assessor, allowing blind scoring."
+        ],
+        "warning": "Blinding concerns knowledge of treatment, not knowledge of every participant characteristic."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D8",
+          "D10",
+          "KEY",
+          "D9"
+        ],
+        "variant": "V5",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#6",
+            "SG_1.13#20"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c40",
+      "lesson": "1.B.4",
+      "archetype": "evaluate_experiment_design",
+      "variant": "V2",
+      "scenario": "A workshop compares two cleaning fluids on 40 identical parts. Parts are randomly assigned, but fluid A is always tested at 20 degrees Celsius and fluid B at 40 degrees Celsius.",
+      "prompt": "Which feature most directly weakens the treatment comparison?",
+      "choices": [
+        "The parts were not randomly selected from all parts in the country.",
+        "No part received both cleaning fluids.",
+        "Forty parts are automatically too few for an experiment.",
+        "Temperature is confounded with cleaning fluid."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The fluid and temperature change together in every comparison.",
+          "Even with random assignment, a result could be due to temperature rather than fluid."
+        ],
+        "warning": "Random assignment cannot undo a design that deliberately changes another condition together with treatment."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D1",
+          "D4",
+          "KEY"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#18",
+            "SG_1.13#31",
+            "SG_1.13#33",
+            "SG_1.13#34"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 31,
+            "observedMin": 61,
+            "observedMax": 132,
+            "measuredFrom": 9,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c41",
+      "lesson": "1.B.5",
+      "archetype": "identify_experimental_design",
+      "variant": "V1",
+      "scenario": "A laboratory randomly assigns 96 similar sensors to one of four calibration procedures, without first grouping the sensors.",
+      "prompt": "Which design is used?",
+      "choices": [
+        "A completely randomized design",
+        "A matched-pairs design because treatment groups have equal sizes",
+        "A randomized block design with the procedures as blocks",
+        "An observational study"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Treatments are assigned at random across the full set of sensors.",
+          "There is no preliminary grouping or pairing, so the design is completely randomized."
+        ],
+        "warning": "Equal group sizes or several treatments do not create blocks."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D1",
+          "D6"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#3",
+            "SG_1.13#8",
+            "SG_1.13#14",
+            "SG_1.13#25",
+            "SG_1.10#17"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 18,
+            "observedMin": 78,
+            "observedMax": 112,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 4,
+            "observedMin": 8,
+            "observedMax": 15,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c42",
+      "lesson": "1.B.5",
+      "archetype": "identify_experimental_design",
+      "variant": "V1",
+      "scenario": "A farm separates seedlings by species, then randomly assigns every fertilizer treatment to seedlings within each species.",
+      "prompt": "Which design is used?",
+      "choices": [
+        "An observational study",
+        "A randomized block design with species as blocks",
+        "A completely randomized design with no blocks",
+        "A matched-pairs design because several species are used"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Species forms groups before treatment assignment.",
+          "All treatments are assigned within every species, making this a randomized block design."
+        ],
+        "warning": "Blocks describe an existing source of response variation; fertilizers are treatments."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "KEY",
+          "D4",
+          "D5"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#3",
+            "SG_1.13#8",
+            "SG_1.13#14",
+            "SG_1.13#25",
+            "SG_1.10#17"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 17,
+            "observedMin": 78,
+            "observedMax": 112,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 4,
+            "observedMin": 8,
+            "observedMax": 15,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c43",
+      "lesson": "1.B.5",
+      "archetype": "identify_experimental_design",
+      "variant": "V1",
+      "scenario": "Each cyclist tests both tire models on separate days. The order of the models is randomized independently for each cyclist.",
+      "prompt": "Which design is used?",
+      "choices": [
+        "An observational study of existing tire choices",
+        "A placebo-controlled experiment",
+        "A matched-pairs design with each cyclist serving as a pair",
+        "A completely randomized design with independent groups"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Each cyclist supplies two linked responses, one for each tire model.",
+          "Randomized order gives a matched-pairs experiment while helping balance order effects."
+        ],
+        "warning": "Two treatments alone do not create pairing; the link here is the same cyclist under both conditions."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "D7",
+          "KEY",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#3",
+            "SG_1.13#8",
+            "SG_1.13#14",
+            "SG_1.13#25",
+            "SG_1.10#17"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 20,
+            "observedMin": 78,
+            "observedMax": 112,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 4,
+            "observedMin": 8,
+            "observedMax": 15,
+            "measuredFrom": 6,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c44",
+      "lesson": "1.B.5",
+      "archetype": "choose_experimental_design",
+      "variant": "V2",
+      "scenario": "A studio compares two sound-insulation panels. Room size is known to affect the response, and the study includes small and large rooms.",
+      "prompt": "Which plan best accounts for room size?",
+      "choices": [
+        "Assign panel A to all small rooms and panel B to all large rooms.",
+        "Ignore room size and randomly assign panels across all rooms.",
+        "Block by panel type, then randomly assign room sizes within each panel group.",
+        "Block rooms by size and randomly assign both panel types within each size group."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Room size is an existing source of variation in the response.",
+          "Blocking on size allows panel types to be compared within small rooms and within large rooms."
+        ],
+        "warning": "Assigning one panel to each room-size group confounds panel type with room size."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D3",
+          "D4",
+          "KEY"
+        ],
+        "variant": "V2",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#19",
+            "SG_1.13#26",
+            "SG_1.13#36"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 22,
+            "observedMin": 61,
+            "observedMax": 88,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "observedMin": 10,
+            "observedMax": 13,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option A",
+            "words": 14,
+            "observedMin": 16,
+            "observedMax": 30,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option B",
+            "words": 10,
+            "observedMin": 16,
+            "observedMax": 30,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option C",
+            "words": 13,
+            "observedMin": 16,
+            "observedMax": 30,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "option D",
+            "words": 14,
+            "observedMin": 16,
+            "observedMax": 30,
+            "measuredFrom": 4,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c45",
+      "lesson": "1.B.5",
+      "archetype": "justify_experimental_design_choice",
+      "variant": "V3",
+      "scenario": "An engineer pairs devices with nearly identical initial performance, then randomly assigns one device in each pair to an update and the other to no update.",
+      "prompt": "Why is a matched-pairs design appropriate?",
+      "choices": [
+        "The paired devices have similar initial performance, allowing comparison within each pair.",
+        "The devices were randomly sampled from all devices worldwide.",
+        "Random assignment alone uniquely defines matched pairs.",
+        "The update and no-update conditions are the two blocks."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Initial performance may affect the final outcome.",
+          "Comparing closely matched devices reduces variation from that preexisting difference."
+        ],
+        "warning": "Random assignment is common to randomized designs; similarity and pairing explain this choice."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": "V3",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#21"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 26,
+            "observedMin": 80,
+            "observedMax": 81,
+            "measuredFrom": 3,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 6,
+            "observedMin": 16,
+            "observedMax": 20,
+            "measuredFrom": 3,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c46",
+      "lesson": "1.B.5",
+      "archetype": "local_randomized_order",
+      "variant": null,
+      "scenario": "Each of 24 translators uses two keyboard layouts on separate trials. Translators may improve with practice during the session.",
+      "prompt": "Which plan best protects the layout comparison from practice effects?",
+      "choices": [
+        "Use layout A in the morning and layout B in the afternoon for everyone.",
+        "Randomly choose which layout each translator uses first.",
+        "Have every translator use layout A first and layout B second.",
+        "Let each translator choose the order based on preference."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "If every translator uses the same order, layout and practice are confounded.",
+          "Randomizing order helps distribute practice effects across the layouts."
+        ],
+        "warning": "Giving both treatments to each person creates pairing, but treatment order must also be handled."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c47",
+      "lesson": "1.B.5",
+      "archetype": "experimental_design_principle_meaning",
+      "variant": "V4",
+      "scenario": "A clinic compares two reminder systems and plans to block patients by their past appointment-attendance rate.",
+      "prompt": "Which plan correctly uses blocks?",
+      "choices": [
+        "Randomly assign patients to blocks, then choose one system for each block.",
+        "Put all patients using system A in one block and all using system B in another.",
+        "Group patients with similar attendance rates, then randomly assign both systems within every group.",
+        "Group patients with very different attendance rates together, then assign systems."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A useful block groups units alike on a characteristic related to the response.",
+          "Random assignment within each block gives a fair comparison while accounting for attendance history."
+        ],
+        "warning": "Blocks are formed using a relevant preexisting variable, rather than treatment or random grouping."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "D6",
+          "KEY",
+          "D7"
+        ],
+        "variant": "V4",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#7"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 16,
+            "observedMin": 20,
+            "observedMax": 148,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "observedMin": 6,
+            "observedMax": 20,
+            "measuredFrom": 7,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c48",
+      "lesson": "1.B.5",
+      "archetype": "causal_conclusion_from_study",
+      "variant": "V1",
+      "scenario": "In a well-designed randomized experiment, volunteer gardeners receive either mulch A or mulch B. Plant growth is significantly greater with A.",
+      "prompt": "Which conclusion is justified?",
+      "choices": [
+        "No causal conclusion is possible because the gardeners volunteered.",
+        "No causal conclusion is possible because there was no no-mulch group.",
+        "Mulch A will increase the growth of every plant in every garden.",
+        "Mulch A caused greater growth than mulch B under conditions like those studied."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Random assignment allows the growth difference to be attributed to the mulch comparison.",
+          "Volunteer recruitment and the tested conditions limit generalization. A separate no-mulch group is not required to compare A with B."
+        ],
+        "warning": "A causal average comparison is not a guarantee for each individual plant."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D2",
+          "D4",
+          "KEY"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#1",
+            "SG_1.13#32"
+          ],
+          "ced": [
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 4,
+            "observedMin": 11,
+            "observedMax": 23,
+            "measuredFrom": 3,
+            "note": "Concise original wording below the observed range; target and necessary information retained."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c49",
+      "lesson": "1.B.5",
+      "archetype": "generalization_scope_from_sampling_frame",
+      "variant": "V9",
+      "scenario": "Researchers randomly select eligible adult rowing-club members, then randomly assign them to one of two training plans.",
+      "prompt": "Why is random selection of members useful in this experiment?",
+      "choices": [
+        "It supports generalizing the results to eligible adult members of the club.",
+        "It is what permits a causal comparison of the training plans.",
+        "It is required before any experimental units can ever be recruited.",
+        "It allows researchers to assign the training plans at random."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Random selection links the experimental sample to the defined club population.",
+          "Random assignment, which is a separate step, supports the causal comparison."
+        ],
+        "warning": "Keep the roles of selection and assignment distinct even when a study uses both."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D13",
+          "D13",
+          "D13"
+        ],
+        "variant": "V9",
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item authored from local archetype answer logic, CED topic profile, and AP style rules.",
+          "card_exemplars": [
+            "SG_1.13#28"
+          ],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "c50",
+      "lesson": "1.B.5",
+      "archetype": "local_scope_and_causation",
+      "variant": null,
+      "scenario": "A district randomly selects students from its full enrollment list. Within each grade, the selected students are randomly assigned to one of two study schedules. A well-designed experiment finds a significant difference in retention.",
+      "prompt": "Which conclusion is best supported?",
+      "choices": [
+        "Random selection prevents the comparison from being an experiment.",
+        "The schedule caused a difference in retention, and results can be generalized to the district's enrolled students.",
+        "The schedules are only associated with retention because students were blocked by grade.",
+        "The causal result applies automatically to all students nationwide."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Random assignment within grades supports a causal comparison while controlling grade-related variation.",
+          "Random selection from the district's enrollment list supports generalization to that district population."
+        ],
+        "warning": "Blocking strengthens a randomized comparison; it does not remove random assignment or widen the sampling frame."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [],
+        "original": {
+          "basis": "Fresh original item aligned to the lesson target; local archetype documented in the registry.",
+          "card_exemplars": [],
+          "ced": [
+            "1.10",
+            "1.13"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-24",
+          "author": "Codex"
+        },
+        "sourceReview": {
+          "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    }
+  ]
+}

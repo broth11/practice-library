@@ -57,11 +57,17 @@ function independent(name, fields) {
 }
 
 const failures = [];
-let screens = 0, guides = 0, reasons = 0;
-for (const unit of ['2-a', '2-b']) {
+let screens = 0, guides = 0, reasons = 0, deferred = 0;
+const manifest = JSON.parse(readFileSync('src/content/ap-statistics/course.json', 'utf8'));
+for (const { id: unit } of manifest.units) {
   for (const question of JSON.parse(readFileSync(`src/content/ap-statistics/units/${unit}.json`, 'utf8')).questions) {
     const id = `${unit}:${question.id}`;
     const calc = question.calculator || {};
+    if (calc.status === 'deferred') {
+      if (calc.needed || calc.steps || calc.distribution || !calc.reason) failures.push(`${id}: deferred calculator support must have a reason and no guide`);
+      deferred += 1;
+      continue;
+    }
     if (!calc.needed && !calc.distribution) {
       if (!calc.reason || calc.reason.length < 20) failures.push(`${id}: no calculator guide and no reason given`);
       reasons += 1;
@@ -95,4 +101,4 @@ for (const unit of ['2-a', '2-b']) {
   }
 }
 if (failures.length) { console.error(`Calculator check failed:\n- ${failures.join('\n- ')}`); process.exitCode = 1; }
-else console.log(`Verified ${screens} arithmetic screens, ${guides} distribution walkthroughs, and ${reasons} reasoning-only explanations (tool check; no physical fx-CG50 verification recorded).`);
+else console.log(`Verified ${screens} arithmetic screens, ${guides} distribution walkthroughs, and ${reasons} reasoning-only explanations; ${deferred} calculator guides deferred (tool check; no physical fx-CG50 verification recorded).`);

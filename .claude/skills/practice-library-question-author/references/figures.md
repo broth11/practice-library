@@ -25,6 +25,12 @@ Install the renderer once with `pip install -r scripts/diagrams/requirements.txt
 | `segmented` | Segmented bars within groups | `groups` (`label`, `values`), `legend`, `xLabel`, `yLabel` |
 | `venn` | Two-set Venn diagram with counts | `left`, `right`, `counts` (`leftOnly`, `both`, `rightOnly`, `neither`) |
 | `tree` | Two-stage probability tree | `root`, `branches` (`label`, `p`, `children`) |
+| `categorical_bars` | Counts for named categories | `categories`, `values`, `tickStep`, `printValues`, `xLabel`, `yLabel` |
+| `categorical_pie` | Mutually exclusive category percentages | `categories`, `values` (sum to 100) |
+| `summary_boxplots` | One or more horizontal boxplots | `groups` (`label`, `min`, `q1`, `median`, `q3`, `max`, `outliers`), `xLabel`, optional `ticks` |
+| `paired_histograms` | Shared-scale comparison of quantitative distributions | `groups` (`label`, `counts`), `start`, `width`, `xLabel`, `yLabel` |
+
+For `summary_boxplots`, `min` and `max` are the non-outlier whisker endpoints. Overall extremes include `outliers`. Use explicit `ticks` when a deciding value otherwise falls between unlabelled gridlines. Do not describe an answer's computed statistic in image alt text; describe the underlying values instead.
 
 A normal bound can be a number or `{ "percentile": 0.9 }`, and `mu` or `sd` can be `{ "solveFrom": { "value": 42, "percentile": 0.10 } }`. Prefer these to typed decimals so the figure and the question cannot drift apart.
 

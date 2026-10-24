@@ -65,3 +65,9 @@ Where the decisions came from: the earlier ones were made in prior development s
 - The private archetype library, scoring-guide transcriptions, and any verbatim AP text never enter this repository. `npm run check` blocks personal machine paths, and `CONTRIBUTING.md` describes the leak scan.
 - Code is MIT licensed. Contributions are welcome. Casio menu icons are third-party and excluded from that license (`NOTICE.md`).
 - Claude and Codex share one rulebook, `AGENTS.md`, work on separate `<agent>/<topic>` branches, and hand off through `HANDOFF.md`.
+
+## Unit 1 and GitHub Pages (2026-10-24)
+
+- Ben requested Units 1.A and 1.B with all question content, figures, and explanations, while deferring calculator keypresses and screenshots. Unit 1.A contains ten items per lesson across six lessons; Unit 1.B contains ten per lesson across five lessons.
+- Deferred calculator support is an explicit data status. The shared renderer hides its tab instead of claiming that a calculator is never useful.
+- Ben subsequently requested the live GitHub-hosted site. GitHub Pages uses the existing Actions workflow, with `PAGES_ENABLED=true`, at `https://broth11.github.io/practice-library/`.

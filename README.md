@@ -38,7 +38,7 @@ Node 20 or later. Figures also need `pip install -r scripts/diagrams/requirement
 
 ## Hosting
 
-The primary site is deployed from `dist/`. This repository also has an optional GitHub Pages workflow that builds a second copy from `src/`; see `docs/DECISIONS.md`.
+The primary site is deployed from `dist/`. The [GitHub Pages copy](https://broth11.github.io/practice-library/) builds from `src/` through the Pages workflow. It includes Units 1.A, 1.B, 2.A, and 2.B. Calculator walkthroughs for Units 1.A and 1.B are deferred; see `docs/DECISIONS.md`.
 
 ## License
 

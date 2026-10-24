@@ -30,7 +30,8 @@ const node = (id, where, value) => {
   try { render(value.tex, value.mode === 'display'); } catch (error) { failures.push(`${id} ${where}: ${error.message}`); }
 };
 
-for (const unit of ['2-a', '2-b']) {
+const manifest = JSON.parse(readFileSync('src/content/ap-statistics/course.json', 'utf8'));
+for (const { id: unit } of manifest.units) {
   for (const q of JSON.parse(readFileSync(`src/content/ap-statistics/units/${unit}.json`, 'utf8')).questions) {
     const id = `${unit}:${q.id}`;
     prose(id, 'scenario', q.scenario);

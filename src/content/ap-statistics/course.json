@@ -4,6 +4,22 @@
   "title": "AP Statistics",
   "units": [
     {
+      "id": "1-a",
+      "title": "Unit 1.A",
+      "description": "Exploring data & distributions",
+      "questionCount": 60,
+      "lessonCount": 6,
+      "source": "content/ap-statistics/units/1-a.json"
+    },
+    {
+      "id": "1-b",
+      "title": "Unit 1.B",
+      "description": "Collecting data & designing studies",
+      "questionCount": 50,
+      "lessonCount": 5,
+      "source": "content/ap-statistics/units/1-b.json"
+    },
+    {
       "id": "2-a",
       "title": "Unit 2.A",
       "description": "Categorical data & probability",
