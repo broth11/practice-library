@@ -3,6 +3,7 @@ import { access, readFile, readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validChoice, choiceText } from '../src/app/choices.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
@@ -58,7 +59,10 @@ for (const course of catalog.courses || []) {
       }
       if (!question.scenario || !question.prompt) fail(`${label}: scenario and prompt are required.`);
       if (!Array.isArray(question.choices) || question.choices.length !== 4) fail(`${label}: exactly four choices are required.`);
-      else if (new Set(question.choices).size !== 4) fail(`${label}: choices must be distinct.`);
+      else {
+        if (!question.choices.every(validChoice)) fail(`${label}: each choice must be text or a valid structured stem-and-leaf plot.`);
+        else if (new Set(question.choices.map(choiceText)).size !== 4) fail(`${label}: choices must be distinct.`);
+      }
       if (!['A', 'B', 'C', 'D'].includes(question.answer)) fail(`${label}: answer must be A, B, C, or D.`);
       const steps = question.solution?.steps;
       if (!Array.isArray(steps) || !steps.length || !question.solution?.warning) fail(`${label}: solution steps and warning are required.`);

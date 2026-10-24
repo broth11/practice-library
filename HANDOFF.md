@@ -31,4 +31,4 @@ The current state of the project, for whichever agent or person works on it next
 
 ## In progress
 
-Unit 1 content work is complete on `codex/unit-1a-1b`. Calculator keypresses and screenshots are explicitly deferred by Ben. GitHub Pages is enabled at `https://broth11.github.io/practice-library/`; publication is checked through the Pages workflow after merge.
+Content work is complete on `codex/structured-answer-choices`: a27 uses reusable stem-and-leaf answer objects with aligned rows, screen-reader labels, and an independently reconstructed answer check. Other questions keep their existing text choices. Desktop uses a 2-by-2 grid; phone width uses one column. Unit 1 calculator support remains deferred. Publication uses the PR and GitHub Pages workflows.

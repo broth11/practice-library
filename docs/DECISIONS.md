@@ -71,3 +71,9 @@ Where the decisions came from: the earlier ones were made in prior development s
 - Ben requested Units 1.A and 1.B with all question content, figures, and explanations, while deferring calculator keypresses and screenshots. Unit 1.A contains ten items per lesson across six lessons; Unit 1.B contains ten per lesson across five lessons.
 - Deferred calculator support is an explicit data status. The shared renderer hides its tab instead of claiming that a calculator is never useful.
 - Ben subsequently requested the live GitHub-hosted site. GitHub Pages uses the existing Actions workflow, with `PAGES_ENABLED=true`, at `https://broth11.github.io/practice-library/`.
+
+## Structured answer displays (2026-10-24)
+
+- Answer choices that are statistical displays use structured data. A stem-and-leaf answer stores its rows, stems, and leaves explicitly and uses a shared renderer with aligned columns and a continuous divider.
+- The renderer preserves the authored row and leaf order, including errors intentionally used as distractors. It never sorts or repairs an answer during display.
+- The answer grid can retain two columns for compact structured plots and uses one column when narrow. Screen readers receive the stem and leaf values as the radio's accessible name. These displays bypass automatic prose math detection.

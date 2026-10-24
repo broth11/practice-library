@@ -22,11 +22,21 @@ Each archetype label must appear in `src/content/<course>/archetypes.json`. Prov
 
 When calculator support is explicitly postponed, use `calculator: { needed: false, status: "deferred", reason: "..." }` with no steps, distribution, or screenshots. The shared solution renderer hides the calculator tab for deferred items. This status does not claim that calculator support is unnecessary.
 
+## Structured answer choices
+
+`choices` accepts either a prose string or a structured `stem-and-leaf` object:
+
+```json
+{ "type": "stem-and-leaf", "rows": [{ "stem": "1", "leaves": ["2", "7", "8"] }, { "stem": "2", "leaves": ["3", "4", "5"] }] }
+```
+
+Use the structured form whenever an answer is a stem-and-leaf display. Each row is rendered with an aligned stem, a vertical divider, and spaced leaves; do not encode rows with semicolons or HTML breaks. Keep intentionally unordered or missing leaves in distractors. The renderer must preserve authored order, never sort or repair an option. The shared choice renderer supplies descriptive radio labels and excludes the plot from automatic prose mathematics. The answer grid keeps two columns when the plots fit and uses one column on narrow screens.
+
 ## Mathematical content
 
 The existing string fields and automatic prose scanner are a legacy convenience for simple statistics notation. They are not the long-term contract for matrices, vectors, calculus, aligned equations, or any expression whose layout matters.
 
-Explicit math nodes are implemented for solution steps: a step may be a string or a math node, rendered by `renderStep()` in `src/app/math.js` and validated by `scripts/check-math.mjs`. Scenario, prompt, choice, and warning fields are still strings read by the legacy detector. Before authoring advanced mathematics in those fields, extend the schema and renderer to accept math nodes there too. The node format is:
+Explicit math nodes are implemented for solution steps: a step may be a string or a math node, rendered by `renderStep()` in `src/app/math.js` and validated by `scripts/check-math.mjs`. Scenario, prompt, warning, and prose-choice fields still use the legacy detector. Structured stem-and-leaf choices bypass that detector. Before authoring advanced mathematics in prose fields, extend the schema and renderer to accept math nodes there too. The node format is:
 
 ```json
 { "type": "math", "mode": "inline", "tex": "P(A \\mid B)" }
