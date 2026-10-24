@@ -1,5 +1,5 @@
 import { renderStimulus } from './stimulus.js';
-import { typesetMath } from './math.js';
+import { renderStep, typesetMath } from './math.js';
 import { mountCalculator } from './calculator.js';
 
 const app = document.getElementById('practice-app');
@@ -143,7 +143,7 @@ function renderQuestion(question) {
 
 function renderExplanation(question) {
   const selected = answers.get(answerKey(question));
-  explanation.innerHTML = `<div class="solution-panel"><div class="solution-inner"><div class="answer-block"><span class="eyebrow">Correct answer</span><strong>${question.answer}</strong><p class="feedback" aria-live="polite" ${selected ? '' : 'hidden'}>${selected ? selected === question.answer ? 'Your choice was correct.' : `You chose ${selected}. Compare it with the reasoning below.` : ''}</p></div><h3>Work it through</h3>${renderStimulus(question.solutionStimulus)}<ol>${question.solution.steps.map(step => `<li>${step}</li>`).join('')}</ol><div class="trap"><h3>Watch the reasoning</h3><p>${question.solution.warning}</p></div></div></div>`;
+  explanation.innerHTML = `<div class="solution-panel"><div class="solution-inner"><div class="answer-block"><span class="eyebrow">Correct answer</span><strong>${question.answer}</strong><p class="feedback" aria-live="polite" ${selected ? '' : 'hidden'}>${selected ? selected === question.answer ? 'Your choice was correct.' : `You chose ${selected}. Compare it with the reasoning below.` : ''}</p></div><h3>Work it through</h3>${renderStimulus(question.solutionStimulus)}<ol>${question.solution.steps.map(step => `<li>${renderStep(step)}</li>`).join('')}</ol><div class="trap"><h3>Watch the reasoning</h3><p>${question.solution.warning}</p></div></div></div>`;
   typesetMath(explanation);
 }
 
@@ -196,6 +196,12 @@ function showQuestion(index, updateHash = true) {
   previous.disabled = index === 0;
   next.disabled = index === state.unit.questions.length - 1;
   document.getElementById('next-label').textContent = !next.disabled && state.unit.questions[index + 1].lesson !== question.lesson ? 'Next lesson' : 'Next';
+  // At phone width the route pane overlays the question, so close it once a
+  // question is chosen. The rail tabs stay visible to reopen it.
+  if (state.routeExpanded && matchMedia('(max-width: 760px)').matches) {
+    state.routeExpanded = false;
+    app.classList.add('nav-collapsed');
+  }
   renderQuestion(question);
   renderNavigation();
   if (updateHash) routeHash();

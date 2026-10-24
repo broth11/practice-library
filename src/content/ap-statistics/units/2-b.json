@@ -83,7 +83,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 0
+        }
       }
     },
     {
@@ -163,7 +168,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 1
+        }
       }
     },
     {
@@ -192,7 +202,9 @@
         "type": "image",
         "src": "assets/b03-discrete.svg",
         "alt": "Bar chart: P(X = 0) = 0.15, P(X = 1) = 0.35, P(X = 2) = 0.30, P(X = 3) = 0.20.",
-        "caption": "Each bar represents the probability of one count."
+        "caption": "Each bar represents the probability of one count.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -265,7 +277,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 2
+        }
       }
     },
     {
@@ -302,7 +319,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 3
+        }
       }
     },
     {
@@ -328,8 +350,22 @@
         "warning": "The expected prize is not the expected net gain. The cost also applies when the prize is zero."
       },
       "stimulus": {
-        "type": "html",
-        "html": "<div class=\"table-scroll\"><table><caption>Prize from a scratch card</caption><thead><tr><th scope=\"col\">Prize ($)</th><th scope=\"col\">0</th><th scope=\"col\">5</th><th scope=\"col\">20</th></tr></thead><tbody><tr><th scope=\"row\">Probability</th><td>0.70</td><td>0.20</td><td>0.10</td></tr></tbody></table></div>"
+        "type": "table",
+        "caption": "Prize from a scratch card",
+        "headers": [
+          "Prize ($)",
+          "0",
+          "5",
+          "20"
+        ],
+        "rows": [
+          [
+            "Probability",
+            "0.70",
+            "0.20",
+            "0.10"
+          ]
+        ]
       },
       "solutionStimulus": null,
       "calculator": {
@@ -398,7 +434,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 4
+        }
       }
     },
     {
@@ -424,14 +465,39 @@
         "warning": "The variance, 1.04, is in squared packages. Take its square root for standard deviation."
       },
       "stimulus": {
-        "type": "html",
-        "html": "<div class=\"table-scroll\"><table><caption>Packages returned in one day; μ = 1.4 packages</caption><thead><tr><th scope=\"col\">x</th><th scope=\"col\">0</th><th scope=\"col\">1</th><th scope=\"col\">2</th><th scope=\"col\">3</th></tr></thead><tbody><tr><th scope=\"row\">P(X = x)</th><td>0.20</td><td>0.40</td><td>0.20</td><td>0.20</td></tr><tr><th scope=\"row\">(x − μ)²</th><td>1.96</td><td>0.16</td><td>0.36</td><td>2.56</td></tr></tbody></table></div>"
+        "type": "table",
+        "caption": "Packages returned in one day; μ = 1.4 packages",
+        "headers": [
+          "x",
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "rows": [
+          [
+            "P(X = x)",
+            "0.20",
+            "0.40",
+            "0.20",
+            "0.20"
+          ],
+          [
+            "(x − μ)²",
+            "1.96",
+            "0.16",
+            "0.36",
+            "2.56"
+          ]
+        ]
       },
       "solutionStimulus": {
         "type": "image",
         "src": "assets/b06-discrete.svg",
         "alt": "Discrete probability bars for counts 0, 1, 2, 3 with probabilities 0.20, 0.40, 0.20, 0.20.",
-        "caption": ""
+        "caption": "",
+        "width": 480,
+        "height": 229
       },
       "calculator": {
         "needed": true,
@@ -484,7 +550,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 5
+        }
       }
     },
     {
@@ -521,7 +592,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 6
+        }
       }
     },
     {
@@ -598,7 +674,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 7
+        }
       }
     },
     {
@@ -624,8 +705,26 @@
         "warning": "Do not subtract P(X ≤ 0): that would incorrectly include X = 1."
       },
       "stimulus": {
-        "type": "html",
-        "html": "<div class=\"table-scroll\"><table><caption>Cumulative refund probabilities</caption><thead><tr><th scope=\"col\">x</th><th scope=\"col\">0</th><th scope=\"col\">1</th><th scope=\"col\">2</th><th scope=\"col\">3</th><th scope=\"col\">4</th></tr></thead><tbody><tr><th scope=\"row\">P(X ≤ x)</th><td>0.20</td><td>0.45</td><td>0.70</td><td>0.85</td><td>1.00</td></tr></tbody></table></div>"
+        "type": "table",
+        "caption": "Cumulative refund probabilities",
+        "headers": [
+          "x",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "rows": [
+          [
+            "P(X ≤ x)",
+            "0.20",
+            "0.45",
+            "0.70",
+            "0.85",
+            "1.00"
+          ]
+        ]
       },
       "solutionStimulus": null,
       "calculator": {
@@ -680,7 +779,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 8
+        }
       }
     },
     {
@@ -763,7 +867,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 9
+        }
       }
     },
     {
@@ -800,7 +909,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 10
+        }
       }
     },
     {
@@ -837,7 +951,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 11
+        }
       }
     },
     {
@@ -874,7 +993,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 12
+        }
       }
     },
     {
@@ -903,7 +1027,9 @@
         "type": "image",
         "src": "assets/b14-binomial.svg",
         "alt": "Binomial probability plot with n = 10 and p = 0.20. Only the bar at 3 is shaded.",
-        "caption": "Exactly 3: one probability bar."
+        "caption": "Exactly 3: one probability bar.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -934,7 +1060,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 13
+        }
       }
     },
     {
@@ -963,7 +1094,9 @@
         "type": "image",
         "src": "assets/b15-binomial.svg",
         "alt": "Binomial probability plot with n = 8 and p = 0.30. Bars 0, 1, and 2 are shaded.",
-        "caption": "At most 2: include 0, 1, and 2."
+        "caption": "At most 2: include 0, 1, and 2.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -998,7 +1131,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 14
+        }
       }
     },
     {
@@ -1027,7 +1165,9 @@
         "type": "image",
         "src": "assets/b16-binomial.svg",
         "alt": "Binomial probability plot with n = 12 and p = 0.25. Bars 4 through 12 are shaded.",
-        "caption": "At least 4: include the boundary count."
+        "caption": "At least 4: include the boundary count.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1062,7 +1202,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 15
+        }
       }
     },
     {
@@ -1091,7 +1236,9 @@
         "type": "image",
         "src": "assets/b17-binomial.svg",
         "alt": "Binomial probability plot with n = 10 and p = 0.40. Bars 0 through 3 are shaded.",
-        "caption": "Fewer than 4: the bar at 4 is excluded."
+        "caption": "Fewer than 4: the bar at 4 is excluded.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1126,7 +1273,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 16
+        }
       }
     },
     {
@@ -1203,7 +1355,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 17
+        }
       }
     },
     {
@@ -1288,7 +1445,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 18
+        }
       }
     },
     {
@@ -1317,7 +1479,9 @@
         "type": "image",
         "src": "assets/b20-binomial.svg",
         "alt": "Binomial probability plot with n = 6 and p = 0.90. All probabilities are shown on the same vertical scale.",
-        "caption": "Very small probabilities may be difficult to see at this scale."
+        "caption": "Very small probabilities may be difficult to see at this scale.",
+        "width": 480,
+        "height": 229
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1368,7 +1532,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 19
+        }
       }
     },
     {
@@ -1404,7 +1573,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 20
+        }
       }
     },
     {
@@ -1441,7 +1615,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 21
+        }
       }
     },
     {
@@ -1469,7 +1648,9 @@
         "type": "image",
         "src": "assets/b23-normal.svg",
         "alt": "Normal curve with mean 180 g and standard deviation 12 g; the interval from 168 to 192 g is shaded.",
-        "caption": "The shaded region is the event in the question."
+        "caption": "The shaded region is the event in the question.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1482,7 +1663,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 22
+        }
       }
     },
     {
@@ -1511,7 +1697,9 @@
         "type": "image",
         "src": "assets/b24-normal.svg",
         "alt": "Normal curve with mean 40 hours and standard deviation 3 hours; the tail above 46 hours is shaded.",
-        "caption": "One upper tail is shaded."
+        "caption": "One upper tail is shaded.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1524,7 +1712,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 23
+        }
       }
     },
     {
@@ -1553,7 +1746,9 @@
         "type": "image",
         "src": "assets/b25-normal.svg",
         "alt": "Normal curve with mean 100 minutes and standard deviation 8 minutes; all values above 92 minutes are shaded.",
-        "caption": "The shaded region starts below the mean."
+        "caption": "The shaded region starts below the mean.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1566,7 +1761,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 24
+        }
       }
     },
     {
@@ -1595,7 +1795,9 @@
         "type": "image",
         "src": "assets/b26-normal.svg",
         "alt": "Normal curve with the central 95 percent shaded between 42 and 66 cm. The standard deviation is not labeled.",
-        "caption": "The middle 95% leaves equal tails."
+        "caption": "The middle 95% leaves equal tails.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1650,7 +1852,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 25
+        }
       }
     },
     {
@@ -1729,7 +1936,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 26
+        }
       }
     },
     {
@@ -1758,7 +1970,9 @@
         "type": "image",
         "src": "assets/b28-normal.svg",
         "alt": "Standard normal curve with the interval from z = −1 to z = 2 shaded.",
-        "caption": "Split the shaded region at the mean if helpful."
+        "caption": "Split the shaded region at the mean if helpful.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1771,7 +1985,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 27
+        }
       }
     },
     {
@@ -1800,7 +2019,9 @@
         "type": "image",
         "src": "assets/b29-normal-comparison.svg",
         "alt": "Two normal curves centered at 50. Curve A is solid with standard deviation 4; curve B is dashed with standard deviation 10.",
-        "caption": "Compare shape, height, and total area."
+        "caption": "Compare shape, height, and total area.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1813,7 +2034,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 28
+        }
       }
     },
     {
@@ -1841,7 +2067,9 @@
         "type": "image",
         "src": "assets/b30-normal.svg",
         "alt": "Normal curve with mean 54 minutes and standard deviation 6 minutes. The lower 16 percent ends at an unknown cutoff c.",
-        "caption": "Find the cutoff labeled c."
+        "caption": "Find the cutoff labeled c.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1854,7 +2082,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 29
+        }
       }
     },
     {
@@ -1883,7 +2116,9 @@
         "type": "image",
         "src": "assets/b31-normal.svg",
         "alt": "Normal curve with mean 50 hours and standard deviation 8 hours, with the area below 44 hours shaded.",
-        "caption": "Lower-tail probability."
+        "caption": "Lower-tail probability.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1918,7 +2153,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 30
+        }
       }
     },
     {
@@ -1947,7 +2187,9 @@
         "type": "image",
         "src": "assets/b32-normal.svg",
         "alt": "Normal curve with mean 50 cm and standard deviation 8 cm, with the area above 60 cm shaded.",
-        "caption": "Upper-tail probability."
+        "caption": "Upper-tail probability.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -1982,7 +2224,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 31
+        }
       }
     },
     {
@@ -2011,7 +2258,9 @@
         "type": "image",
         "src": "assets/b33-normal.svg",
         "alt": "Normal curve with mean 30 minutes and standard deviation 5 minutes; the interval from 25 to 38 minutes is shaded.",
-        "caption": "Probability between two values."
+        "caption": "Probability between two values.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2046,7 +2295,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 32
+        }
       }
     },
     {
@@ -2075,7 +2329,9 @@
         "type": "image",
         "src": "assets/b34-normal.svg",
         "alt": "Normal curve with mean 20 mm and standard deviation 0.4 mm; both tails outside 19.6 to 20.8 mm are shaded.",
-        "caption": "Rejection occurs in either shaded tail."
+        "caption": "Rejection occurs in either shaded tail.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2144,7 +2400,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 33
+        }
       }
     },
     {
@@ -2173,7 +2434,9 @@
         "type": "image",
         "src": "assets/b35-normal.svg",
         "alt": "Normal curve with mean 80 km and standard deviation 12 km. The area to the left of an unknown cutoff c is 0.90.",
-        "caption": "Find the cutoff, rather than an area."
+        "caption": "Find the cutoff, rather than an area.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2208,7 +2471,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 34
+        }
       }
     },
     {
@@ -2237,7 +2505,9 @@
         "type": "image",
         "src": "assets/b36-normal.svg",
         "alt": "Normal curve with mean 120 seconds and standard deviation 15 seconds. The area below an unknown cutoff c is 0.05.",
-        "caption": "Fastest means the smallest completion times."
+        "caption": "Fastest means the smallest completion times.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2272,7 +2542,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 35
+        }
       }
     },
     {
@@ -2301,7 +2576,9 @@
         "type": "image",
         "src": "assets/b37-normal.svg",
         "alt": "Normal curve with mean 1000 g and standard deviation 20 g. The middle 80 percent is shaded between unknown cutoffs a and b.",
-        "caption": "Find both endpoints."
+        "caption": "Find both endpoints.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2360,7 +2637,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 36
+        }
       }
     },
     {
@@ -2389,7 +2671,9 @@
         "type": "image",
         "src": "assets/b38-normal.svg",
         "alt": "Normal curve with unknown mean μ and standard deviation 5 cm. The area below 42 cm is 0.10.",
-        "caption": "The 10th percentile lies below the unknown mean."
+        "caption": "The 10th percentile lies below the unknown mean.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2437,7 +2721,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 37
+        }
       }
     },
     {
@@ -2466,7 +2755,9 @@
         "type": "image",
         "src": "assets/b39-normal.svg",
         "alt": "Normal curve with mean 75 points and unknown standard deviation. The area below 84 points is 0.90.",
-        "caption": "Connect the percentile to its standard normal value."
+        "caption": "Connect the percentile to its standard normal value.",
+        "width": 480,
+        "height": 276
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2513,7 +2804,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 38
+        }
       }
     },
     {
@@ -2542,7 +2838,9 @@
         "type": "image",
         "src": "assets/b40-normal.svg",
         "alt": "Normal curve with mean 2 kg and standard deviation 0.3 kg, with the upper tail above 2.45 kg shaded.",
-        "caption": "Convert this probability to an expected count."
+        "caption": "Convert this probability to an expected count.",
+        "width": 480,
+        "height": 256
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2589,7 +2887,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 39
+        }
       }
     },
     {
@@ -2626,7 +2929,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 40
+        }
       }
     },
     {
@@ -2663,7 +2971,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 41
+        }
       }
     },
     {
@@ -2700,7 +3013,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 42
+        }
       }
     },
     {
@@ -2737,7 +3055,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 43
+        }
       }
     },
     {
@@ -2774,7 +3097,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 44
+        }
       }
     },
     {
@@ -2810,7 +3138,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 45
+        }
       }
     },
     {
@@ -2847,7 +3180,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 46
+        }
       }
     },
     {
@@ -2876,7 +3214,9 @@
         "type": "image",
         "src": "assets/b48-simulation.svg",
         "alt": "Histogram of 1,000 simulated sample means. Interval frequencies from 13.8 to 17.0 minutes in steps of 0.4 are 65, 180, 290, 260, 125, 52, 20, 8.",
-        "caption": "The shaded bars contain means of at least 16.2 minutes."
+        "caption": "The shaded bars contain means of at least 16.2 minutes.",
+        "width": 480,
+        "height": 224
       },
       "solutionStimulus": null,
       "calculator": {
@@ -2929,7 +3269,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 47
+        }
       }
     },
     {
@@ -2966,7 +3311,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 48
+        }
       }
     },
     {
@@ -2995,7 +3345,9 @@
         "type": "image",
         "src": "assets/b50-sampling.svg",
         "alt": "Dotplot of the six equally likely sample means: 3, 4, 5, 5, 6, and 7.",
-        "caption": "Each dot represents one sample, including repeated sample means."
+        "caption": "Each dot represents one sample, including repeated sample means.",
+        "width": 480,
+        "height": 172
       },
       "solutionStimulus": null,
       "calculator": {
@@ -3044,7 +3396,12 @@
         "variant": null,
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "commit": "183e7151d215b0dac2acdf234bf22af8cc4e741a",
+          "file": "dist/unit2b.js",
+          "index": 49
+        }
       }
     }
   ]

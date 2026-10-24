@@ -114,3 +114,9 @@
 .answer-block:has(.feedback[hidden]){min-height:44px;padding-bottom:8px;display:flex;align-items:center}
 
 .explanation-panels{display:flex;flex:1;min-height:0;flex-direction:column}.explanation-panels:has(.solution-panel:not([hidden])){display:flex}.explanation-panels:not(:has(.solution-panel:not([hidden]))){display:none}
+
+/* Explicit display mathematics (math node, mode "display"). Long lines scroll rather than shrink. */
+.math-display{display:block;margin:.35em 0;overflow-x:auto;overflow-y:hidden;max-width:100%}
+.math-display .katex-display{margin:0;text-align:left}
+.math-display .katex-display>.katex{text-align:left}
+.math-error{color:#9b1c1c;font-family:ui-monospace,monospace;white-space:pre-wrap}

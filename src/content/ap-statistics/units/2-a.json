@@ -162,7 +162,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q01"
+        }
       }
     },
     {
@@ -280,7 +285,12 @@
         "variant": "V2",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q02"
+        }
       }
     },
     {
@@ -300,7 +310,11 @@
       "solution": {
         "steps": [
           "Compare <b>the same response category across locations</b>, using each location’s own total.",
-          "<span class=\"math\">East: 18/60 = 0.30.<br>West: 42/70 = 0.60.</span>",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}\\text{East: } & \\dfrac{18}{60} = 0.30 \\\\ \\text{West: } & \\dfrac{42}{70} = 0.60\\end{aligned}"
+          },
           "The conditional distributions differ: window seating was more common among West visitors. That is evidence of an association in these data. It does not establish that location caused the choice."
         ],
         "warning": "B and C confuse group size with conditional proportions. D compares two responses within East rather than comparing the locations."
@@ -413,7 +427,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q03"
+        }
       }
     },
     {
@@ -439,28 +458,12 @@
         "warning": "A changes a comparison of proportions into a comparison of counts. B pools the groups without their sizes. C misreads the evening bar, whose indoor portion is below 50%."
       },
       "stimulus": {
-        "type": "segmented",
+        "type": "image",
+        "src": "assets/q04-segmented.svg",
+        "alt": "Segmented bar chart of activity preference within each membership group. Day: 64% indoor, 36% outdoor. Evening: 42% indoor, 58% outdoor. Group sizes are not shown.",
         "caption": "Activity preference by membership group",
-        "groups": [
-          {
-            "label": "Day",
-            "values": [
-              0.64,
-              0.36
-            ]
-          },
-          {
-            "label": "Evening",
-            "values": [
-              0.42,
-              0.58
-            ]
-          }
-        ],
-        "labels": [
-          "Indoor",
-          "Outdoor"
-        ]
+        "width": 480,
+        "height": 213
       },
       "calculator": {
         "needed": false,
@@ -475,9 +478,16 @@
         ],
         "keyBuild": null,
         "variant": "V3",
-        "extensions": [],
+        "extensions": [
+          "D2 and D3 are outside V3 observed_builds."
+        ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q04"
+        }
       }
     },
     {
@@ -517,7 +527,12 @@
         "variant": "V2",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q05"
+        }
       }
     },
     {
@@ -671,6 +686,11 @@
             "2.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q26"
         }
       }
     },
@@ -814,6 +834,11 @@
             "2.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q27"
         }
       }
     },
@@ -946,6 +971,11 @@
             "2.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q28"
         }
       }
     },
@@ -1033,6 +1063,11 @@
             "2.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q29"
         }
       }
     },
@@ -1059,32 +1094,12 @@
         "warning": "Distinguish proportions from counts. Also, avoid applying direction or distribution-shape terms to nominal categories."
       },
       "stimulus": {
-        "type": "segmented",
+        "type": "image",
+        "src": "assets/q30-segmented.svg",
+        "alt": "Segmented bar chart of bottle type within each learning center. Riverside: 36% reusable, 64% disposable. Hilltop: 58% reusable, 42% disposable. Group sizes are not given.",
         "caption": "Bottle type by learning center",
-        "groups": [
-          {
-            "label": "Riverside",
-            "values": [
-              0.36,
-              0.64
-            ]
-          },
-          {
-            "label": "Hilltop",
-            "values": [
-              0.58,
-              0.42
-            ]
-          }
-        ],
-        "legend": [
-          "Reusable",
-          "Disposable"
-        ],
-        "axis_label": "Percent within learning center",
-        "group_axis": "Learning center",
-        "alt": "Bottle type proportions at two learning centers",
-        "desc": "Riverside: 36 percent reusable, 64 percent disposable. Hilltop: 58 percent reusable, 42 percent disposable. Group sizes are not given."
+        "width": 480,
+        "height": 210
       },
       "calculator": {
         "needed": false,
@@ -1115,6 +1130,16 @@
             "2.2"
           ],
           "human_verified": false
+        },
+        "boundsCheck": {
+          "grid_step": 0.1,
+          "key": "Hilltop reusable > .50; Riverside reusable < .40",
+          "robust_to_grid_resolution": true
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q30"
         }
       }
     },
@@ -1155,7 +1180,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q06"
+        }
       }
     },
     {
@@ -1196,7 +1226,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q07"
+        }
       }
     },
     {
@@ -1237,7 +1272,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q08"
+        }
       }
     },
     {
@@ -1329,7 +1369,12 @@
         "variant": "V2",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q09"
+        }
       }
     },
     {
@@ -1454,7 +1499,12 @@
           "A frequency table presents the simulation results instead of a histogram; the event and answer logic are unchanged."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q10"
+        }
       }
     },
     {
@@ -1534,6 +1584,37 @@
             "2.4"
           ],
           "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": [
+              55
+            ],
+            "observed_range": [
+              61,
+              61
+            ],
+            "basis": "rough guide (single exemplar)",
+            "reason": "Concise classroom wording or explicit probability notation; reviewed for clarity."
+          },
+          {
+            "field": "ask",
+            "words": [
+              24
+            ],
+            "observed_range": [
+              31,
+              31
+            ],
+            "basis": "rough guide (single exemplar)",
+            "reason": "Concise classroom wording or explicit probability notation; reviewed for clarity."
+          }
+        ],
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q31"
         }
       }
     },
@@ -1637,6 +1718,11 @@
             "2.4"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q32"
         }
       }
     },
@@ -1663,19 +1749,12 @@
         "warning": "Exactly one uses only the bar at one. Less than one uses only zero. At most one includes both."
       },
       "stimulus": {
-        "type": "simulation_histogram",
+        "type": "image",
+        "src": "assets/q33-relative-frequency.svg",
+        "alt": "Relative frequency bar chart of 1,000 simulated groups of five calls. Zero through five unanswered calls have relative frequencies 0.440, 0.390, 0.130, 0.035, 0.004, and 0.001.",
         "caption": "Simulation of unanswered calls",
-        "counts": [
-          440,
-          390,
-          130,
-          35,
-          4,
-          1
-        ],
-        "trials": 1000,
-        "axis_label": "Number of unanswered calls in five",
-        "desc": "Relative frequencies for zero through five unanswered calls are 0.440, 0.390, 0.130, 0.035, 0.004, and 0.001."
+        "width": 480,
+        "height": 237
       },
       "calculator": {
         "needed": true,
@@ -1759,6 +1838,11 @@
             "2.4"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q33"
         }
       }
     },
@@ -1861,6 +1945,11 @@
             "2.4"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q34"
         }
       }
     },
@@ -1916,6 +2005,25 @@
             "2.4"
           ],
           "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": [
+              48
+            ],
+            "observed_range": [
+              51,
+              52
+            ],
+            "basis": "observed range",
+            "reason": "Concise classroom wording or explicit probability notation; reviewed for clarity."
+          }
+        ],
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q35"
         }
       }
     },
@@ -2028,7 +2136,12 @@
         "variant": "V5",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q11"
+        }
       }
     },
     {
@@ -2114,7 +2227,12 @@
           "Counts are supplied in prose rather than in a two-way table."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q12"
+        }
       }
     },
     {
@@ -2213,7 +2331,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q13"
+        }
       }
     },
     {
@@ -2293,9 +2416,16 @@
         ],
         "keyBuild": null,
         "variant": "V2",
-        "extensions": [],
+        "extensions": [
+          "D2 is outside V2 observed_builds."
+        ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q14"
+        }
       }
     },
     {
@@ -2321,16 +2451,12 @@
         "warning": "A answers “cycled given walked.” B ignores the condition. D includes the 12 who both cycled and walked in the numerator even though the condition excludes them."
       },
       "stimulus": {
-        "type": "venn",
+        "type": "image",
+        "src": "assets/q15-venn.svg",
+        "alt": "Venn diagram of 100 residents: 36 cycled only, 12 cycled and walked, 24 walked only, and 28 did neither.",
         "caption": "Ways residents traveled to work",
-        "left": "Cycled",
-        "right": "Walked",
-        "counts": [
-          36,
-          12,
-          24,
-          28
-        ]
+        "width": 480,
+        "height": 257
       },
       "calculator": {
         "needed": true,
@@ -2394,10 +2520,15 @@
         "keyBuild": null,
         "variant": "V6",
         "extensions": [
-          "A Venn diagram supplies the same four cells as a two-way table. D6 and D10 are outside V6 observed_builds."
+          "A Venn diagram supplies the same four cells as a two-way table. D1, D6, and D10 are outside V6 observed_builds."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q15"
+        }
       }
     },
     {
@@ -2498,6 +2629,11 @@
             "2.6.A.1"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q36"
         }
       }
     },
@@ -2626,6 +2762,11 @@
             "2.6.A.1"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q37"
         }
       }
     },
@@ -2722,6 +2863,11 @@
             "2.6.A.1"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q38"
         }
       }
     },
@@ -2805,6 +2951,11 @@
             "2.6.A.1"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q39"
         }
       }
     },
@@ -2860,6 +3011,25 @@
             "2.6.A.1"
           ],
           "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": [
+              20
+            ],
+            "observed_range": [
+              21,
+              26
+            ],
+            "basis": "observed range",
+            "reason": "Concise classroom wording or explicit probability notation; reviewed for clarity."
+          }
+        ],
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q40"
         }
       }
     },
@@ -2950,7 +3120,12 @@
           "D3 is outside V1 observed_builds."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q16"
+        }
       }
     },
     {
@@ -3042,7 +3217,12 @@
         "variant": "V4",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q17"
+        }
       }
     },
     {
@@ -3134,7 +3314,12 @@
         "variant": "V3",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q18"
+        }
       }
     },
     {
@@ -3220,7 +3405,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q19"
+        }
       }
     },
     {
@@ -3240,14 +3430,22 @@
       "solution": {
         "steps": [
           "There are two disjoint ways to arrive on time: Express and on time, or Standard and on time.",
-          "<span class=\"math\">P(Express and on time) = 0.30 × 0.90 = 0.27.<br>P(Standard and on time) = 0.70 × 0.60 = 0.42.</span>",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}P(\\text{Express and on time}) &= 0.30 \\times 0.90 = 0.27 \\\\ P(\\text{Standard and on time}) &= 0.70 \\times 0.60 = 0.42\\end{aligned}"
+          },
           "Add the path probabilities: <span class=\"math\">P(on time) = 0.27 + 0.42 = 0.69.</span>"
         ],
         "warning": "A counts only the Express path. B and D each return one conditional on-time rate and ignore the other delivery method."
       },
       "stimulus": {
-        "type": "tree",
-        "caption": "Parcel delivery paths"
+        "type": "image",
+        "src": "assets/q20-tree.svg",
+        "alt": "Tree diagram. Express has probability 0.30, then on time 0.90 or late 0.10. Standard has probability 0.70, then on time 0.60 or late 0.40.",
+        "caption": "Parcel delivery paths",
+        "width": 480,
+        "height": 221
       },
       "calculator": {
         "needed": true,
@@ -3321,7 +3519,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q20"
+        }
       }
     },
     {
@@ -3432,6 +3635,11 @@
             "2.6.A.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q41"
         }
       }
     },
@@ -3536,6 +3744,11 @@
             "2.6.A.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q42"
         }
       }
     },
@@ -3641,6 +3854,11 @@
             "2.6.A.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q43"
         }
       }
     },
@@ -3756,6 +3974,11 @@
             "2.6.A.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q44"
         }
       }
     },
@@ -3856,6 +4079,11 @@
             "2.6.A.2"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q45"
         }
       }
     },
@@ -3876,7 +4104,11 @@
       "solution": {
         "steps": [
           "Compare the probability of enabling backups within each device group.",
-          "<span class=\"math\">P(enabled | desktop) = 18/60 = 0.30.<br>P(enabled | laptop) = 12/40 = 0.30.</span>",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}P(\\text{enabled} \\mid \\text{desktop}) &= \\dfrac{18}{60} = 0.30 \\\\ P(\\text{enabled} \\mid \\text{laptop}) &= \\dfrac{12}{40} = 0.30\\end{aligned}"
+          },
           "The overall enabled proportion is also <span class=\"math\">30/100 = 0.30.</span> Knowing device type does not change the probability of enabling backups, so the events are independent for this group."
         ],
         "warning": "A compares counts instead of proportions. B claims equal counts, but 18 and 12 are different. C compares complementary outcomes within one device group."
@@ -3991,7 +4223,12 @@
           "V1 normally keys association; this trial uses equal conditional distributions to key independence."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q21"
+        }
       }
     },
     {
@@ -4089,7 +4326,12 @@
         "variant": "V3",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q22"
+        }
       }
     },
     {
@@ -4187,7 +4429,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q23"
+        }
       }
     },
     {
@@ -4274,10 +4521,16 @@
         "keyBuild": null,
         "variant": "V3",
         "extensions": [
-          "The V3 answer logic is used in the positive-probability, mutually exclusive direction; this direction is not evidenced by a separate observed variant."
+          "The V3 answer logic is used in the positive-probability, mutually exclusive direction; this direction is not evidenced by a separate observed variant.",
+          "D1 is outside V3 observed_builds."
         ],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q24"
+        }
       }
     },
     {
@@ -4318,7 +4571,12 @@
         "variant": "V1",
         "extensions": [],
         "sourceReview": null,
-        "original": null
+        "original": null,
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q25"
+        }
       }
     },
     {
@@ -4419,6 +4677,11 @@
             "2.7"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q46"
         }
       }
     },
@@ -4641,6 +4904,11 @@
             "2.7"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q47"
         }
       }
     },
@@ -4748,6 +5016,11 @@
             "2.7"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q48"
         }
       }
     },
@@ -4859,6 +5132,11 @@
             "2.7"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q49"
         }
       }
     },
@@ -4962,6 +5240,11 @@
             "2.7"
           ],
           "human_verified": false
+        },
+        "migratedFrom": {
+          "source": "Unit 2A trial package (local working copy, not published)",
+          "file": "questions.json",
+          "id": "q50"
         }
       }
     }

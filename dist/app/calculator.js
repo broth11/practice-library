@@ -30,7 +30,7 @@ function distributionSequence(name, fields, repeat = false) {
 }
 const arithmetic = (entry, result, note) => [{ title: 'Open the main menu', keys: ['MENU'], mode: 'menu', input: '', result: '', note: 'Choose Run-Matrix.' }, { title: 'Open Run-Matrix', keys: ['1'], mode: 'run', input: '', result: '', note: 'Press 1 for Run-Matrix.' }, { title: 'Calculate using retained digits', keys: ['AC', ...keysFor(entry)], entry, mode: 'result', input: entry, result: numberText(result), note }];
 
-function prepareGuide(question) {
+export function prepareGuide(question) {
   const guide = structuredClone(question.calculator || { needed: false, reason: 'Use the reasoning in the explanation; no calculator is needed.' });
   if (!guide.distribution) return guide;
   const descriptor = guide.distribution;

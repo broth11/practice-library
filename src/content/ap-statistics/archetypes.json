@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "$comment": "Every archetype label used by this course. status card: the label is an archetype_id in the private AP Question Archetypes library (verified 2026-10-24). local: a course label with no card. review: linked to a card whose answer logic does not decide at least one listed question. The card library holds verbatim AP text, so it is not published; see docs/PROVENANCE.md.",
+  "archetypes": [
+    {
+      "id": "assign_digits_for_simulation",
+      "status": "card",
+      "card": "assign_digits_for_simulation",
+      "questions": [
+        "2-a:q07",
+        "2-a:q35"
+      ]
+    },
+    {
+      "id": "association_from_conditional_proportions",
+      "status": "card",
+      "card": "association_from_conditional_proportions",
+      "questions": [
+        "2-a:q03",
+        "2-a:q21"
+      ]
+    },
+    {
+      "id": "binomial_probability_calculation",
+      "status": "card",
+      "card": "binomial_probability_calculation",
+      "questions": [
+        "2-b:b14",
+        "2-b:b15",
+        "2-b:b16",
+        "2-b:b17"
+      ]
+    },
+    {
+      "id": "central_limit_theorem_statement",
+      "status": "card",
+      "card": "central_limit_theorem_statement",
+      "questions": [
+        "2-b:b44"
+      ]
+    },
+    {
+      "id": "choose_display_for_two_categorical_variables",
+      "status": "card",
+      "card": "choose_display_for_two_categorical_variables",
+      "questions": [
+        "2-a:q05"
+      ]
+    },
+    {
+      "id": "claim_from_two_group_counts",
+      "status": "card",
+      "card": "claim_from_two_group_counts",
+      "questions": [
+        "2-a:q29"
+      ]
+    },
+    {
+      "id": "claim_from_two_group_relative_display",
+      "status": "card",
+      "card": "claim_from_two_group_relative_display",
+      "questions": [
+        "2-a:q04",
+        "2-a:q30"
+      ]
+    },
+    {
+      "id": "compare_likelihoods_from_two_way_table",
+      "status": "card",
+      "card": "compare_likelihoods_from_two_way_table",
+      "questions": [
+        "2-a:q26"
+      ]
+    },
+    {
+      "id": "complement_probability",
+      "status": "card",
+      "card": "complement_probability",
+      "questions": [
+        "2-a:q09",
+        "2-a:q34"
+      ]
+    },
+    {
+      "id": "conditional_probability_and_multiplication_rule",
+      "status": "card",
+      "card": "conditional_probability_and_multiplication_rule",
+      "questions": [
+        "2-a:q36",
+        "2-a:q16",
+        "2-a:q17",
+        "2-a:q42",
+        "2-a:q43",
+        "2-a:q45"
+      ]
+    },
+    {
+      "id": "conditional_probability_from_equally_likely_outcomes",
+      "status": "card",
+      "card": "conditional_probability_from_equally_likely_outcomes",
+      "questions": [
+        "2-a:q14",
+        "2-a:q38"
+      ]
+    },
+    {
+      "id": "discrete_or_continuous_variable",
+      "status": "card",
+      "card": "discrete_or_continuous_variable",
+      "questions": [
+        "2-b:b01",
+        "2-b:b21"
+      ]
+    },
+    {
+      "id": "empirical_rule_percents_and_bounds",
+      "status": "card",
+      "card": "empirical_rule_percents_and_bounds",
+      "questions": [
+        "2-b:b23",
+        "2-b:b24",
+        "2-b:b25",
+        "2-b:b26",
+        "2-b:b28"
+      ]
+    },
+    {
+      "id": "expected_value_of_discrete_random_variable",
+      "status": "card",
+      "card": "expected_value_of_discrete_random_variable",
+      "questions": [
+        "2-b:b03",
+        "2-b:b05",
+        "2-b:b08",
+        "2-b:b10"
+      ]
+    },
+    {
+      "id": "identify_binomial_quantity_meaning",
+      "status": "card",
+      "card": "identify_binomial_quantity_meaning",
+      "questions": [
+        "2-b:b13",
+        "2-b:b19"
+      ]
+    },
+    {
+      "id": "identify_binomial_setting",
+      "status": "card",
+      "card": "identify_binomial_setting",
+      "questions": [
+        "2-b:b11",
+        "2-b:b12"
+      ]
+    },
+    {
+      "id": "identify_law_of_large_numbers",
+      "status": "card",
+      "card": "identify_law_of_large_numbers",
+      "questions": [
+        "2-a:q31"
+      ]
+    },
+    {
+      "id": "identify_population_and_sample",
+      "status": "card",
+      "card": "identify_population_and_sample",
+      "questions": [
+        "2-b:b41"
+      ]
+    },
+    {
+      "id": "interpret_mean_of_random_variable",
+      "status": "card",
+      "card": "interpret_mean_of_random_variable",
+      "questions": [
+        "2-b:b04",
+        "2-b:b18"
+      ]
+    },
+    {
+      "id": "interpret_probability_as_long_run_frequency",
+      "status": "card",
+      "card": "interpret_probability_as_long_run_frequency",
+      "questions": [
+        "2-a:q06"
+      ]
+    },
+    {
+      "id": "interpret_standard_deviation_of_random_variable",
+      "status": "card",
+      "card": "interpret_standard_deviation_of_random_variable",
+      "questions": [
+        "2-b:b07"
+      ]
+    },
+    {
+      "id": "missing_information_for_probability",
+      "status": "card",
+      "card": "missing_information_for_probability",
+      "questions": [
+        "2-a:q40",
+        "2-a:q25"
+      ]
+    },
+    {
+      "id": "most_or_least_likely_binomial_value",
+      "status": "card",
+      "card": "most_or_least_likely_binomial_value",
+      "questions": [
+        "2-b:b20"
+      ]
+    },
+    {
+      "id": "mutually_exclusive_events_and_joint_probability",
+      "status": "card",
+      "card": "mutually_exclusive_events_and_joint_probability",
+      "questions": [
+        "2-a:q13",
+        "2-a:q39",
+        "2-a:q24",
+        "2-a:q48"
+      ]
+    },
+    {
+      "id": "normal_distribution_shape",
+      "status": "local",
+      "card": null,
+      "relatedCard": null,
+      "questions": [
+        "2-b:b29"
+      ],
+      "note": "No card covers comparing two normal curves by height, spread, and total area."
+    },
+    {
+      "id": "normal_parameter_from_percentile",
+      "status": "card",
+      "card": "normal_parameter_from_percentile",
+      "questions": [
+        "2-b:b38",
+        "2-b:b39"
+      ]
+    },
+    {
+      "id": "percent_beyond_value_in_normal_distribution",
+      "status": "card",
+      "card": "percent_beyond_value_in_normal_distribution",
+      "questions": [
+        "2-b:b31",
+        "2-b:b32",
+        "2-b:b33",
+        "2-b:b34",
+        "2-b:b40"
+      ]
+    },
+    {
+      "id": "probability_from_simulation_results",
+      "status": "card",
+      "card": "probability_from_simulation_results",
+      "questions": [
+        "2-a:q10",
+        "2-a:q33",
+        "2-b:b48"
+      ]
+    },
+    {
+      "id": "probability_of_independent_trials",
+      "status": "card",
+      "card": "probability_of_independent_trials",
+      "questions": [
+        "2-a:q18",
+        "2-a:q19",
+        "2-a:q41"
+      ]
+    },
+    {
+      "id": "probability_of_single_value_continuous",
+      "status": "card",
+      "card": "probability_of_single_value_continuous",
+      "questions": [
+        "2-b:b22"
+      ]
+    },
+    {
+      "id": "proportion_in_interval_from_cumulative_table",
+      "status": "card",
+      "card": "proportion_in_interval_from_cumulative_table",
+      "questions": [
+        "2-b:b09"
+      ]
+    },
+    {
+      "id": "reason_sampling_distribution_not_normal",
+      "status": "card",
+      "card": "reason_sampling_distribution_not_normal",
+      "questions": [
+        "2-b:b45"
+      ]
+    },
+    {
+      "id": "relative_frequency_from_two_way_table",
+      "status": "card",
+      "card": "relative_frequency_from_two_way_table",
+      "questions": [
+        "2-a:q01",
+        "2-a:q02",
+        "2-a:q27",
+        "2-a:q11",
+        "2-a:q12",
+        "2-a:q15",
+        "2-a:q37"
+      ]
+    },
+    {
+      "id": "sample_size_effect_on_sampling_distribution",
+      "status": "card",
+      "card": "sample_size_effect_on_sampling_distribution",
+      "questions": [
+        "2-b:b47"
+      ]
+    },
+    {
+      "id": "sample_space_and_equally_likely_outcomes",
+      "status": "card",
+      "card": "sample_space_and_equally_likely_outcomes",
+      "questions": [
+        "2-a:q08",
+        "2-a:q32"
+      ]
+    },
+    {
+      "id": "sampling_distribution_definition",
+      "status": "local",
+      "card": null,
+      "relatedCard": null,
+      "questions": [
+        "2-b:b43"
+      ],
+      "note": "No card covers what a histogram of simulated sample means approximates. central_limit_theorem_statement shares misconceptions but asks a different question."
+    },
+    {
+      "id": "sampling_distribution_exact_small_population",
+      "status": "local",
+      "card": null,
+      "relatedCard": null,
+      "questions": [
+        "2-b:b50"
+      ],
+      "note": "No card covers enumerating every sample from a tiny population."
+    },
+    {
+      "id": "sampling_distribution_shape",
+      "status": "local",
+      "card": null,
+      "relatedCard": null,
+      "questions": [
+        "2-b:b46"
+      ],
+      "note": "Closest card is reason_sampling_distribution_not_normal (same normal-population-or-large-n rule, opposite polarity). Not linked because its distractor list differs."
+    },
+    {
+      "id": "simulation_based_claim_evaluation",
+      "status": "local",
+      "card": null,
+      "relatedCard": "simulated_p_value_decision",
+      "questions": [
+        "2-b:b49"
+      ],
+      "note": "Same answer logic as simulated_p_value_decision (a large simulated proportion is not convincing evidence). Not relinked without review: the item has no dotplot and counts in the upper tail although the observed mean is below the claim."
+    },
+    {
+      "id": "standard_deviation_of_discrete_random_variable",
+      "status": "card",
+      "card": "standard_deviation_of_discrete_random_variable",
+      "questions": [
+        "2-b:b06"
+      ]
+    },
+    {
+      "id": "statistic_from_description",
+      "status": "review",
+      "card": "statistic_from_description",
+      "questions": [
+        "2-b:b42"
+      ],
+      "note": "b42 asks whether 18 (a population mean) and 19.2 (a sample mean) are parameters or statistics. This card matches statistics to their descriptions (standard deviation, median), so its answer logic does not decide b42. Closest card: normal_distribution_parameter_notation.",
+      "relatedCard": "normal_distribution_parameter_notation"
+    },
+    {
+      "id": "total_probability_and_reverse_conditional",
+      "status": "card",
+      "card": "total_probability_and_reverse_conditional",
+      "questions": [
+        "2-a:q20",
+        "2-a:q44"
+      ]
+    },
+    {
+      "id": "union_probability_addition_rule",
+      "status": "card",
+      "card": "union_probability_addition_rule",
+      "questions": [
+        "2-a:q22",
+        "2-a:q23",
+        "2-a:q46",
+        "2-a:q49"
+      ]
+    },
+    {
+      "id": "use_independence_to_find_or_check_probability",
+      "status": "card",
+      "card": "use_independence_to_find_or_check_probability",
+      "questions": [
+        "2-a:q47"
+      ]
+    },
+    {
+      "id": "valid_probability_distribution",
+      "status": "local",
+      "card": null,
+      "relatedCard": null,
+      "questions": [
+        "2-b:b02"
+      ],
+      "note": "No card in the library decides this item (complete a distribution so probabilities sum to 1). construct_probability_distribution builds distributions from paths, a different answer logic."
+    },
+    {
+      "id": "value_at_percentile_of_normal_distribution",
+      "status": "card",
+      "card": "value_at_percentile_of_normal_distribution",
+      "questions": [
+        "2-b:b30",
+        "2-b:b35",
+        "2-b:b36",
+        "2-b:b37"
+      ]
+    },
+    {
+      "id": "value_for_no_association",
+      "status": "card",
+      "card": "value_for_no_association",
+      "questions": [
+        "2-a:q28",
+        "2-a:q50"
+      ]
+    },
+    {
+      "id": "z_score_calculation",
+      "status": "card",
+      "card": "z_score_calculation",
+      "questions": [
+        "2-b:b27"
+      ]
+    }
+  ]
+}

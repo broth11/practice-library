@@ -1,0 +1,2 @@
+# Pinned so the committed SVGs are byte-reproducible on any machine and in CI.
+matplotlib==3.10.9
