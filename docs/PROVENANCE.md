@@ -78,6 +78,8 @@ Each question's `provenance.migratedFrom` names its source record.
 
 Fresh Unit 1 items use `provenance.original` instead. The Skew the Script Unit 1 handout headings and the 1.B.2 post-activity notes were inspected only to map the six 1.A and five 1.B lesson titles and topic boundaries. These files are in the author's private `~/Documents/Courses/AP Statistics/STS/Unit 1/` folder. No STS question text, images, or data were copied. See `docs/UNIT-1-REVIEW.md` for coverage and review limits.
 
+On 2026-10-24, a27's existing semicolon-separated choices were converted to structured stem-and-leaf rows without changing their values, leaf order, missing leaves, or keyed letter. `scripts/check-choices.mjs` independently reconstructs the correct plot from the eight raw measurements and confirms that exactly one displayed choice matches it. It also checks that all four choices render as three rows and have descriptive screen-reader labels. This check runs in `npm run check`.
+
 ## 5. Figure ledger
 
 | Figures | Source | Method |

@@ -1,6 +1,7 @@
 import { renderStimulus } from './stimulus.js';
 import { renderStep, typesetMath } from './math.js';
 import { mountCalculator } from './calculator.js';
+import { renderChoice, choiceText } from './choices.js';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -133,7 +134,7 @@ function renderQuestion(question) {
   const lessonQuestions = state.unit.questions.filter(item => item.lesson === question.lesson);
   const local = lessonQuestions.indexOf(question) + 1;
   const selected = answers.get(answerKey(question));
-  questionArea.innerHTML = `<article class="card" id="${question.id}" data-archetype="${escapeHtml(question.archetype || '')}" aria-labelledby="${question.id}-ask"><header class="card-top"><span class="question-badge">Question ${String(state.current + 1).padStart(2, '0')}</span><span class="within">Lesson ${escapeHtml(question.lesson)} · ${local} of ${lessonQuestions.length}</span></header><div class="question-content"><div class="question-inner"><p class="scenario">${question.scenario}</p>${renderStimulus(question.stimulus)}<p class="ask" id="${question.id}-ask">${question.prompt}</p><fieldset aria-labelledby="${question.id}-ask">${question.choices.map((choice, index) => { const letter = 'ABCD'[index]; return `<label class="option"><input type="radio" name="${question.id}" value="${letter}" ${selected === letter ? 'checked' : ''}><span class="letter">${letter}</span><span class="option-text">${choice}</span></label>`; }).join('')}</fieldset></div></div><footer class="card-footer"><span class="choice-status" aria-live="polite">${selected ? `Answer ${selected} selected. Ready to check?` : 'Select an answer, then check your reasoning.'}</span><button class="solution-trigger" type="button" aria-expanded="false">Solution <span aria-hidden="true">↗</span></button></footer></article>`;
+  questionArea.innerHTML = `<article class="card" id="${question.id}" data-archetype="${escapeHtml(question.archetype || '')}" aria-labelledby="${question.id}-ask"><header class="card-top"><span class="question-badge">Question ${String(state.current + 1).padStart(2, '0')}</span><span class="within">Lesson ${escapeHtml(question.lesson)} · ${local} of ${lessonQuestions.length}</span></header><div class="question-content"><div class="question-inner"><p class="scenario">${question.scenario}</p>${renderStimulus(question.stimulus)}<p class="ask" id="${question.id}-ask">${question.prompt}</p><fieldset aria-labelledby="${question.id}-ask">${question.choices.map((choice, index) => { const letter = 'ABCD'[index]; return `<label class="option ${typeof choice === 'string' ? '' : 'structured-option'}"><input type="radio" name="${question.id}" value="${letter}" ${typeof choice === 'string' ? '' : `aria-label="${escapeHtml(`${letter}. ${choiceText(choice)}`)}"`} ${selected === letter ? 'checked' : ''}><span class="letter">${letter}</span><span class="option-text ${typeof choice === 'string' ? '' : 'structured-choice'}">${renderChoice(choice)}</span></label>`; }).join('')}</fieldset></div></div><footer class="card-footer"><span class="choice-status" aria-live="polite">${selected ? `Answer ${selected} selected. Ready to check?` : 'Select an answer, then check your reasoning.'}</span><button class="solution-trigger" type="button" aria-expanded="false">Solution <span aria-hidden="true">↗</span></button></footer></article>`;
   const card = questionArea.firstElementChild;
   typesetMath(card);
   card.onchange = event => { answers.set(answerKey(question), event.target.value); card.querySelector('.choice-status').textContent = `Answer ${event.target.value} selected. Ready to check?`; renderNavigation(); fit(); };
@@ -228,7 +229,7 @@ function fit() {
       for (const columns of layouts) {
         card.style.setProperty('--answer-columns', columns);
         const overflow = options.some(option => option.scrollWidth > option.clientWidth + 1);
-        const cramped = columns > 1 && options.some(option => option.getBoundingClientRect().height > parseFloat(getComputedStyle(option).lineHeight) * 2.6);
+        const cramped = columns > 1 && options.some(option => !option.classList.contains('structured-choice') && option.getBoundingClientRect().height > parseFloat(getComputedStyle(option).lineHeight) * 2.6);
         if (!overflow && !cramped) { chosen = { font, columns }; if (inner.scrollHeight <= room) break outer; }
       }
     }
