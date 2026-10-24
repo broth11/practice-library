@@ -1,7 +1,7 @@
-import { renderStimulus } from './stimulus.js';
-import { renderStep, typesetMath } from './math.js';
-import { mountCalculator } from './calculator.js';
-import { renderChoice, choiceText } from './choices.js';
+import { renderStimulus } from './stimulus.js?v=8b4d61a3e702';
+import { renderStep, typesetMath } from './math.js?v=8b4d61a3e702';
+import { mountCalculator } from './calculator.js?v=8b4d61a3e702';
+import { renderChoice, choiceText } from './choices.js?v=8b4d61a3e702';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -32,7 +32,7 @@ const state = {
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const fetchJson = async source => {
-  const response = await fetch(new URL(source, document.baseURI));
+  const response = await fetch(new URL(source, document.baseURI), { cache: 'no-cache' });
   if (!response.ok) throw new Error(`Could not load ${source} (${response.status})`);
   return response.json();
 };

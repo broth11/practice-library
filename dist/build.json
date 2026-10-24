@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "version": "8b4d61a3e702",
   "source": "src/",
   "note": "Generated output. Edit src/ and rebuild."
 }

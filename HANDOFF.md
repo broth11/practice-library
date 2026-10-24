@@ -32,3 +32,5 @@ The current state of the project, for whichever agent or person works on it next
 ## In progress
 
 Content work is complete on `codex/structured-answer-choices`: a27 uses reusable stem-and-leaf answer objects with aligned rows, screen-reader labels, and an independently reconstructed answer check. Other questions keep their existing text choices. Desktop uses a 2-by-2 grid; phone width uses one column. Unit 1 calculator support remains deferred. Publication uses the PR and GitHub Pages workflows.
+
+The follow-up `codex/version-static-assets` makes builds fingerprint their source and version JavaScript/CSS URLs, including module imports. Course and unit JSON is revalidated when fetched so a browser cannot keep showing old text choices after deployment. The build remains deterministic.

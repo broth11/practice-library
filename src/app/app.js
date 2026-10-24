@@ -32,7 +32,7 @@ const state = {
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const fetchJson = async source => {
-  const response = await fetch(new URL(source, document.baseURI));
+  const response = await fetch(new URL(source, document.baseURI), { cache: 'no-cache' });
   if (!response.ok) throw new Error(`Could not load ${source} (${response.status})`);
   return response.json();
 };
