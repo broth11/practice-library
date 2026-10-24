@@ -26,7 +26,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def words(text: str) -> list[str]:
-    return re.findall(r"[a-z0-9]+", re.sub(r"<[^>]+>", " ", text).lower())
+    # Strip only real HTML tags, so statistical text such as "P(X < 3) and Y > 2" survives.
+    return re.findall(r"[a-z0-9]+", re.sub(r"</?[a-zA-Z][^<>]*>", " ", text).lower())
 
 
 def item_text(item: dict) -> str:
