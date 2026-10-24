@@ -24,6 +24,8 @@ When calculator support is explicitly postponed, use `calculator: { needed: fals
 
 ## Structured answer choices
 
+For a display key that must stay in one font, use the optional `notationKey` string, for example `"1|2 = 12 centimeters"`. It is rendered as a separate key line, escaped as text, and excluded from automatic prose mathematics. Do not split a stem-and-leaf key between ordinary text and a partial KaTeX expression.
+
 `choices` accepts either a prose string or a structured `stem-and-leaf` object:
 
 ```json

@@ -1889,7 +1889,7 @@
       "archetype": "construct_stemplot_from_data",
       "variant": "V1",
       "scenario": "A ranger recorded eight nest heights in centimeters: 23, 17, 25, 12, 31, 24, 18, and 35.",
-      "prompt": "Which of the following is the correctly ordered stem-and-leaf plot, with key 1 | 2 = 12 centimeters?",
+      "prompt": "Which of the following is the correctly ordered stem-and-leaf plot?",
       "choices": [
         {
           "type": "stem-and-leaf",
@@ -2049,14 +2049,6 @@
             "note": "Concise original wording below the observed range; target and necessary information retained."
           },
           {
-            "field": "ask",
-            "words": 18,
-            "observedMin": 21,
-            "observedMax": 21,
-            "measuredFrom": 1,
-            "note": "Concise original wording below the observed range; target and necessary information retained."
-          },
-          {
             "field": "option A",
             "words": 12,
             "observedMin": 14,
@@ -2076,7 +2068,8 @@
         "boundsCheck": {
           "status": "Not applicable: no graph reading."
         }
-      }
+      },
+      "notationKey": "1|2 = 12 centimeters"
     },
     {
       "id": "a28",

@@ -40,6 +40,8 @@
 .stem-leaf-row{display:grid;grid-template-columns:2.5ch auto;white-space:nowrap}
 .stem-leaf-stem{text-align:right;padding-right:.6ch;border-right:1px solid currentColor}
 .stem-leaf-leaves{padding-left:.8ch;white-space:pre}
+.notation-key{font-size:1em;line-height:1.4;margin:0 0 12px}
+.literal-notation{font:inherit;white-space:nowrap}
 .math-inline{display:inline;vertical-align:baseline}.card[data-answer-columns="1"] fieldset{gap:9px}.card[data-answer-columns="1"] .option{padding:12px 14px;min-height:47px}.card .option-text .math-inline{display:inline-block;white-space:nowrap}.card .option{font-size:1em}.katex,.card .question-inner .katex,.solution-inner .katex{font-size:1em!important}
 .distribution-guide{padding:20px;overflow:auto;min-height:0;flex:1}.distribution-guide h3{font:normal 23px var(--serif);margin:8px 0 16px}.distribution-guide ol{padding-left:21px;line-height:1.6}.distribution-guide li{margin-bottom:14px}.distribution-guide .guide-result{padding:14px;background:#e5efdf;border:1px solid #c9dbc2;border-radius:8px;line-height:1.6}.distribution-guide .guide-note{font-size:12px;color:#63745c;line-height:1.5}.distribution-guide button{border:1px solid #cddcc7;background:#f0f6eb;color:#42613a;border-radius:6px;padding:8px 12px;margin-top:15px}
 @media(max-width:1050px){.app,.app.calculator-mode{grid-template-columns:280px minmax(0,1fr)}.app.nav-collapsed,.app.nav-collapsed.calculator-mode{grid-template-columns:58px minmax(0,1fr)}.route-rail{flex-basis:58px;padding-left:5px;padding-right:5px}.app .route-content{padding:18px 12px}.route-tab{font-size:13px}}

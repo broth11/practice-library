@@ -58,6 +58,7 @@ for (const course of catalog.courses || []) {
         used.set(question.archetype, [...(used.get(question.archetype) || []), key]);
       }
       if (!question.scenario || !question.prompt) fail(`${label}: scenario and prompt are required.`);
+      if (question.notationKey !== undefined && (typeof question.notationKey !== 'string' || !question.notationKey.trim())) fail(`${label}: notationKey must be a nonempty literal string.`);
       if (!Array.isArray(question.choices) || question.choices.length !== 4) fail(`${label}: exactly four choices are required.`);
       else {
         if (!question.choices.every(validChoice)) fail(`${label}: each choice must be text or a valid structured stem-and-leaf plot.`);

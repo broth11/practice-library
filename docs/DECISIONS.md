@@ -78,3 +78,5 @@ Where the decisions came from: the earlier ones were made in prior development s
 - The renderer preserves the authored row and leaf order, including errors intentionally used as distractors. It never sorts or repairs an answer during display.
 - The answer grid can retain two columns for compact structured plots and uses one column when narrow. Screen readers receive the stem and leaf values as the radio's accessible name. These displays bypass automatic prose math detection.
 - Builds fingerprint their source and use that version in JavaScript, imported-module, and stylesheet URLs. Course and unit JSON is revalidated when fetched. This prevents cached runtime files or content from hiding a published rendering fix.
+- Literal notation keys are stored in `notationKey` and rendered as escaped text in a single inherited font. A stem-and-leaf key such as `1|2 = 12 centimeters` must not be partly processed as an arithmetic expression.
+- Ben confirmed that the original Sites address must also receive updates. Publish the same source and build to GitHub Pages and the original Sites project, retaining both addresses and the existing Sites audience.

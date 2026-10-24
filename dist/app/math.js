@@ -41,7 +41,7 @@ export function typesetMath(root) {
   const nodes = [];
   let node;
   while ((node = walker.nextNode())) {
-    if (!node.parentElement.closest('.katex,script,style,.letter,.question-badge,.within,.eyebrow,.lcd-glass,.mini-keypad,.kc,.stem-leaf-plot')) nodes.push(node);
+    if (!node.parentElement.closest('.katex,script,style,.letter,.question-badge,.within,.eyebrow,.lcd-glass,.mini-keypad,.kc,.stem-leaf-plot,.literal-notation')) nodes.push(node);
   }
   for (const textNode of nodes) {
     const text = textNode.textContent;

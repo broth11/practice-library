@@ -31,6 +31,8 @@ The current state of the project, for whichever agent or person works on it next
 
 ## In progress
 
+The a27 key is now one literal field, `1|2 = 12 centimeters`, in a consistent inherited font. The `codex/consistent-notation-key` publication also synchronizes the current four-unit tree to the original Sites artifact. Preserve both hosting targets on subsequent releases; updating GitHub Pages alone does not update Sites. The Sites source has its original Git lineage; GitHub has the documented rewritten lineage, so the release synchronizes file contents without replacing either history.
+
 Content work is complete on `codex/structured-answer-choices`: a27 uses reusable stem-and-leaf answer objects with aligned rows, screen-reader labels, and an independently reconstructed answer check. Other questions keep their existing text choices. Desktop uses a 2-by-2 grid; phone width uses one column. Unit 1 calculator support remains deferred. Publication uses the PR and GitHub Pages workflows.
 
 The follow-up `codex/version-static-assets` makes builds fingerprint their source and version JavaScript/CSS URLs, including module imports. Course and unit JSON is revalidated when fetched so a browser cannot keep showing old text choices after deployment. The build remains deterministic.
