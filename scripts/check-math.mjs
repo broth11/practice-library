@@ -1,12 +1,44 @@
-import fs from 'node:fs';import vm from 'node:vm';import {createRequire} from 'node:module';
-const require=createRequire(import.meta.url),katex=require('../dist/katex.min.js');
-const script=fs.readFileSync('dist/unit2b.js','utf8'),math=fs.readFileSync('dist/math-typography.js','utf8');
-const questions=vm.runInNewContext(script.slice(0,script.indexOf('if(bQuestions.length'))+';bQuestions');
-const rules=vm.runInNewContext(math.slice(0,math.indexOf("document.querySelectorAll('.card"))+';({probabilityLatex,mathSequence})');
-let count=0;
-for(const text of ['−1 × 10⁹⁹','1 × 10⁹⁹','√'])katex.renderToString(rules.probabilityLatex(text),{throwOnError:true,strict:'error'});
-for(const q of questions)for(const text of [q.scenario,q.ask,...q.options,...q.steps,q.trap]){
- rules.mathSequence.lastIndex=0;
- for(const m of text.matchAll(rules.mathSequence))if(/\b(?:P|E|Var|SD|C)\(|[μσΦ√²³⁴⁵⁶⁷⁸⁹≤≥≈=<>/]|\b(?:np|X|Z|G|x|z|n|p|k|c)\b|x̄/.test(m[0])){katex.renderToString(rules.probabilityLatex(m[0]),{throwOnError:true,strict:'error'});count++}
+// Mathematical notation check (see .claude/skills/practice-library-question-author/references/math-authoring.md).
+// - Every explicit math node parses in the bundled KaTeX, strictly.
+// - Every fragment the legacy prose detector would typeset also parses.
+// - No <br> inside an inline math span: multi-line work must be a display node.
+import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
+import { probabilityLatex, mathSequence, looksMathematical } from '../src/app/math.js';
+
+// The bundled KaTeX is a UMD script; load it in a sandbox because this package is ESM.
+const sandbox = { module: { exports: {} } };
+sandbox.exports = sandbox.module.exports;
+vm.runInNewContext(readFileSync('src/vendor-katex.min.js', 'utf8'), sandbox);
+const katex = sandbox.module.exports.default || sandbox.module.exports;
+const render = (tex, displayMode) => katex.renderToString(tex, { throwOnError: true, strict: 'error', displayMode });
+const strip = html => html.replace(/<[^>]+>/g, ' ');
+const failures = [];
+let nodes = 0, fragments = 0;
+
+const prose = (id, where, text) => {
+  if (/<span class="math"[^>]*>(?:(?!<\/span>)[\s\S])*<br/i.test(text)) failures.push(`${id} ${where}: <br> inside an inline math span; use a display math node`);
+  for (const match of strip(text).matchAll(mathSequence)) {
+    if (!looksMathematical(match[0])) continue;
+    fragments += 1;
+    try { render(probabilityLatex(match[0]), false); } catch (error) { failures.push(`${id} ${where}: "${match[0].trim()}" ${error.message}`); }
+  }
+};
+const node = (id, where, value) => {
+  if (value.type !== 'math' || !['inline', 'display'].includes(value.mode) || !value.tex) { failures.push(`${id} ${where}: malformed math node`); return; }
+  nodes += 1;
+  try { render(value.tex, value.mode === 'display'); } catch (error) { failures.push(`${id} ${where}: ${error.message}`); }
+};
+
+for (const unit of ['2-a', '2-b']) {
+  for (const q of JSON.parse(readFileSync(`src/content/ap-statistics/units/${unit}.json`, 'utf8')).questions) {
+    const id = `${unit}:${q.id}`;
+    prose(id, 'scenario', q.scenario);
+    prose(id, 'prompt', q.prompt);
+    q.choices.forEach((choice, i) => prose(id, `choice ${'ABCD'[i]}`, choice));
+    q.solution.steps.forEach((step, i) => (typeof step === 'string' ? prose(id, `step ${i + 1}`, step) : node(id, `step ${i + 1}`, step)));
+    prose(id, 'warning', q.solution.warning);
+  }
 }
-console.log('Verified '+count+' LaTeX math fragments across the Unit 2.B questions and worked solutions.');
+if (failures.length) { console.error(`Math check failed:\n- ${failures.join('\n- ')}`); process.exitCode = 1; }
+else console.log(`Verified ${nodes} explicit math nodes and ${fragments} detected math fragments with KaTeX.`);
