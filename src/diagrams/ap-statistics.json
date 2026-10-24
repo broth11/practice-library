@@ -2,58 +2,951 @@
   "schemaVersion": 1,
   "$comment": "Authored source for every generated question figure in the AP Statistics course. scripts/diagrams/build_diagrams.py renders each entry to src/assets/diagrams/<file> in AP print style (style_guide S14: grayscale, axis titles, boxed legend). Edit values here, never the SVG. Each entry lists the question ids that display it; npm run check confirms the link both ways.",
   "diagrams": [
-    { "file": "q04-segmented.svg", "questions": ["2-a:q04"], "kind": "segmented",
-      "groups": [{ "label": "Day", "values": [0.64, 0.36] }, { "label": "Evening", "values": [0.42, 0.58] }],
-      "legend": ["Indoor", "Outdoor"], "xLabel": "Percent within membership group", "yLabel": "Membership group" },
-    { "file": "q30-segmented.svg", "questions": ["2-a:q30"], "kind": "segmented",
-      "groups": [{ "label": "Riverside", "values": [0.36, 0.64] }, { "label": "Hilltop", "values": [0.58, 0.42] }],
-      "legend": ["Reusable", "Disposable"], "xLabel": "Percent within learning center", "yLabel": "Learning center" },
-    { "file": "q33-relative-frequency.svg", "questions": ["2-a:q33"], "kind": "relative_frequency_bars",
-      "categories": [0, 1, 2, 3, 4, 5], "counts": [440, 390, 130, 35, 4, 1], "trials": 1000,
-      "xLabel": "Number of unanswered calls in five", "yLabel": "Relative frequency" },
-    { "file": "q15-venn.svg", "questions": ["2-a:q15"], "kind": "venn",
-      "left": "Cycled", "right": "Walked", "counts": { "leftOnly": 36, "both": 12, "rightOnly": 24, "neither": 28 } },
-    { "file": "q20-tree.svg", "questions": ["2-a:q20"], "kind": "tree",
+    {
+      "file": "q04-segmented.svg",
+      "questions": [
+        "2-a:q04"
+      ],
+      "kind": "segmented",
+      "groups": [
+        {
+          "label": "Day",
+          "values": [
+            0.64,
+            0.36
+          ]
+        },
+        {
+          "label": "Evening",
+          "values": [
+            0.42,
+            0.58
+          ]
+        }
+      ],
+      "legend": [
+        "Indoor",
+        "Outdoor"
+      ],
+      "xLabel": "Percent within membership group",
+      "yLabel": "Membership group"
+    },
+    {
+      "file": "q30-segmented.svg",
+      "questions": [
+        "2-a:q30"
+      ],
+      "kind": "segmented",
+      "groups": [
+        {
+          "label": "Riverside",
+          "values": [
+            0.36,
+            0.64
+          ]
+        },
+        {
+          "label": "Hilltop",
+          "values": [
+            0.58,
+            0.42
+          ]
+        }
+      ],
+      "legend": [
+        "Reusable",
+        "Disposable"
+      ],
+      "xLabel": "Percent within learning center",
+      "yLabel": "Learning center"
+    },
+    {
+      "file": "q33-relative-frequency.svg",
+      "questions": [
+        "2-a:q33"
+      ],
+      "kind": "relative_frequency_bars",
+      "categories": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": [
+        440,
+        390,
+        130,
+        35,
+        4,
+        1
+      ],
+      "trials": 1000,
+      "xLabel": "Number of unanswered calls in five",
+      "yLabel": "Relative frequency"
+    },
+    {
+      "file": "q15-venn.svg",
+      "questions": [
+        "2-a:q15"
+      ],
+      "kind": "venn",
+      "left": "Cycled",
+      "right": "Walked",
+      "counts": {
+        "leftOnly": 36,
+        "both": 12,
+        "rightOnly": 24,
+        "neither": 28
+      }
+    },
+    {
+      "file": "q20-tree.svg",
+      "questions": [
+        "2-a:q20"
+      ],
+      "kind": "tree",
       "root": "Parcel",
       "branches": [
-        { "label": "Express", "p": "0.30", "children": [{ "label": "On time", "p": "0.90" }, { "label": "Late", "p": "0.10" }] },
-        { "label": "Standard", "p": "0.70", "children": [{ "label": "On time", "p": "0.60" }, { "label": "Late", "p": "0.40" }] }
-      ] },
-
-    { "file": "b03-discrete.svg", "questions": ["2-b:b03"], "kind": "discrete_bars",
-      "values": [0, 1, 2, 3], "probs": [0.15, 0.35, 0.30, 0.20], "printValues": true, "xLabel": "Repair calls per day, x" },
-    { "file": "b06-discrete.svg", "questions": ["2-b:b06"], "kind": "discrete_bars",
-      "values": [0, 1, 2, 3], "probs": [0.20, 0.40, 0.20, 0.20], "printValues": true, "xLabel": "Returned packages per day, x" },
-
-    { "file": "b14-binomial.svg", "questions": ["2-b:b14"], "kind": "binomial_bars", "n": 10, "p": 0.2, "highlight": [3, 3] },
-    { "file": "b15-binomial.svg", "questions": ["2-b:b15"], "kind": "binomial_bars", "n": 8, "p": 0.3, "highlight": [0, 2] },
-    { "file": "b16-binomial.svg", "questions": ["2-b:b16"], "kind": "binomial_bars", "n": 12, "p": 0.25, "highlight": [4, 12] },
-    { "file": "b17-binomial.svg", "questions": ["2-b:b17"], "kind": "binomial_bars", "n": 10, "p": 0.4, "highlight": [0, 3] },
-    { "file": "b20-binomial.svg", "questions": ["2-b:b20"], "kind": "binomial_bars", "n": 6, "p": 0.9, "highlight": null },
-
-    { "file": "b23-normal.svg", "questions": ["2-b:b23"], "kind": "normal", "mu": 180, "sd": 12, "lo": 168, "hi": 192, "marks": [168, 192], "xLabel": "Fruit mass (g)" },
-    { "file": "b24-normal.svg", "questions": ["2-b:b24"], "kind": "normal", "mu": 40, "sd": 3, "lo": 46, "marks": [46], "xLabel": "Lifetime (hours)" },
-    { "file": "b25-normal.svg", "questions": ["2-b:b25"], "kind": "normal", "mu": 100, "sd": 8, "lo": 92, "marks": [92], "xLabel": "Flight duration (minutes)" },
-    { "file": "b26-normal.svg", "questions": ["2-b:b26"], "kind": "normal", "mu": 54, "sd": 6, "lo": 42, "hi": 66, "marks": [42, 66], "xLabel": "Measurement (cm)", "area": "Middle 95% (approximately)", "showSd": false },
-    { "file": "b28-normal.svg", "questions": ["2-b:b28"], "kind": "normal", "mu": 0, "sd": 1, "lo": -1, "hi": 2, "marks": [-1, 2], "xLabel": "Standard normal value, z" },
-    { "file": "b29-normal-comparison.svg", "questions": ["2-b:b29"], "kind": "normal_comparison", "mu": 50,
-      "curves": [{ "name": "A", "sd": 4, "style": "solid" }, { "name": "B", "sd": 10, "style": "dashed" }], "xRange": [20, 80], "xLabel": "Measurement" },
-    { "file": "b30-normal.svg", "questions": ["2-b:b30"], "kind": "normal", "mu": 54, "sd": 6, "hi": 48, "marks": [{ "value": 48, "label": "c" }], "xLabel": "Finishing time (minutes)", "area": "Lower 16% (approximately)" },
-    { "file": "b31-normal.svg", "questions": ["2-b:b31"], "kind": "normal", "mu": 50, "sd": 8, "hi": 44, "marks": [44], "xLabel": "Waiting time (hours)" },
-    { "file": "b32-normal.svg", "questions": ["2-b:b32"], "kind": "normal", "mu": 50, "sd": 8, "lo": 60, "marks": [60], "xLabel": "Rod length (cm)" },
-    { "file": "b33-normal.svg", "questions": ["2-b:b33"], "kind": "normal", "mu": 30, "sd": 5, "lo": 25, "hi": 38, "marks": [25, 38], "xLabel": "Travel time (minutes)" },
-    { "file": "b34-normal.svg", "questions": ["2-b:b34"], "kind": "normal", "mu": 20, "sd": 0.4, "lo": 19.6, "hi": 20.8, "outside": true, "marks": [19.6, 20.8], "xLabel": "Ring diameter (mm)" },
-    { "file": "b35-normal.svg", "questions": ["2-b:b35"], "kind": "normal", "mu": 80, "sd": 12, "hi": { "percentile": 0.90 }, "marks": [{ "at": "hi", "label": "c" }], "xLabel": "Delivery distance (km)", "area": "Area to the left of c = 0.90" },
-    { "file": "b36-normal.svg", "questions": ["2-b:b36"], "kind": "normal", "mu": 120, "sd": 15, "hi": { "percentile": 0.05 }, "marks": [{ "at": "hi", "label": "c" }], "xLabel": "Completion time (seconds)", "area": "Area to the left of c = 0.05" },
-    { "file": "b37-normal.svg", "questions": ["2-b:b37"], "kind": "normal", "mu": 1000, "sd": 20, "lo": { "percentile": 0.10 }, "hi": { "percentile": 0.90 }, "marks": [{ "at": "lo", "label": "a" }, { "at": "hi", "label": "b" }], "xLabel": "Package mass (g)", "area": "Middle 80%" },
-    { "file": "b38-normal.svg", "questions": ["2-b:b38"], "kind": "normal", "mu": { "solveFrom": { "value": 42, "percentile": 0.10 } }, "sd": 5, "hi": 42, "marks": [42], "meanLabel": "μ", "xLabel": "Measurement (cm)", "area": "Area to the left of 42 = 0.10" },
-    { "file": "b39-normal.svg", "questions": ["2-b:b39"], "kind": "normal", "mu": 75, "sd": { "solveFrom": { "value": 84, "percentile": 0.90 } }, "hi": 84, "marks": [84], "xLabel": "Score (points)", "area": "Area to the left of 84 = 0.90", "showSd": false },
-    { "file": "b40-normal.svg", "questions": ["2-b:b40"], "kind": "normal", "mu": 2, "sd": 0.3, "lo": 2.45, "marks": [2.45], "xLabel": "Parcel mass (kg)" },
-
-    { "file": "b48-simulation.svg", "questions": ["2-b:b48"], "kind": "frequency_histogram",
-      "start": 13.8, "width": 0.4, "counts": [65, 180, 290, 260, 125, 52, 20, 8], "highlightFrom": 16.2, "printCounts": true,
-      "xLabel": "Sample mean service time (minutes)", "yLabel": "Frequency" },
-    { "file": "b50-sampling.svg", "questions": ["2-b:b50"], "kind": "dotplot",
-      "values": [3, 4, 5, 5, 6, 7], "highlightMin": 6, "title": "One dot per equally likely sample", "xLabel": "Sample mean, x̄" }
+        {
+          "label": "Express",
+          "p": "0.30",
+          "children": [
+            {
+              "label": "On time",
+              "p": "0.90"
+            },
+            {
+              "label": "Late",
+              "p": "0.10"
+            }
+          ]
+        },
+        {
+          "label": "Standard",
+          "p": "0.70",
+          "children": [
+            {
+              "label": "On time",
+              "p": "0.60"
+            },
+            {
+              "label": "Late",
+              "p": "0.40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "b03-discrete.svg",
+      "questions": [
+        "2-b:b03"
+      ],
+      "kind": "discrete_bars",
+      "values": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "probs": [
+        0.15,
+        0.35,
+        0.3,
+        0.2
+      ],
+      "printValues": true,
+      "xLabel": "Repair calls per day, x"
+    },
+    {
+      "file": "b06-discrete.svg",
+      "questions": [
+        "2-b:b06"
+      ],
+      "kind": "discrete_bars",
+      "values": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "probs": [
+        0.2,
+        0.4,
+        0.2,
+        0.2
+      ],
+      "printValues": true,
+      "xLabel": "Returned packages per day, x"
+    },
+    {
+      "file": "b14-binomial.svg",
+      "questions": [
+        "2-b:b14"
+      ],
+      "kind": "binomial_bars",
+      "n": 10,
+      "p": 0.2,
+      "highlight": [
+        3,
+        3
+      ]
+    },
+    {
+      "file": "b15-binomial.svg",
+      "questions": [
+        "2-b:b15"
+      ],
+      "kind": "binomial_bars",
+      "n": 8,
+      "p": 0.3,
+      "highlight": [
+        0,
+        2
+      ]
+    },
+    {
+      "file": "b16-binomial.svg",
+      "questions": [
+        "2-b:b16"
+      ],
+      "kind": "binomial_bars",
+      "n": 12,
+      "p": 0.25,
+      "highlight": [
+        4,
+        12
+      ]
+    },
+    {
+      "file": "b17-binomial.svg",
+      "questions": [
+        "2-b:b17"
+      ],
+      "kind": "binomial_bars",
+      "n": 10,
+      "p": 0.4,
+      "highlight": [
+        0,
+        3
+      ]
+    },
+    {
+      "file": "b20-binomial.svg",
+      "questions": [
+        "2-b:b20"
+      ],
+      "kind": "binomial_bars",
+      "n": 6,
+      "p": 0.9,
+      "highlight": null
+    },
+    {
+      "file": "b23-normal.svg",
+      "questions": [
+        "2-b:b23"
+      ],
+      "kind": "normal",
+      "mu": 180,
+      "sd": 12,
+      "lo": 168,
+      "hi": 192,
+      "marks": [
+        168,
+        192
+      ],
+      "xLabel": "Fruit mass (g)"
+    },
+    {
+      "file": "b24-normal.svg",
+      "questions": [
+        "2-b:b24"
+      ],
+      "kind": "normal",
+      "mu": 40,
+      "sd": 3,
+      "lo": 46,
+      "marks": [
+        46
+      ],
+      "xLabel": "Lifetime (hours)"
+    },
+    {
+      "file": "b25-normal.svg",
+      "questions": [
+        "2-b:b25"
+      ],
+      "kind": "normal",
+      "mu": 100,
+      "sd": 8,
+      "lo": 92,
+      "marks": [
+        92
+      ],
+      "xLabel": "Flight duration (minutes)"
+    },
+    {
+      "file": "b26-normal.svg",
+      "questions": [
+        "2-b:b26"
+      ],
+      "kind": "normal",
+      "mu": 54,
+      "sd": 6,
+      "lo": 42,
+      "hi": 66,
+      "marks": [
+        42,
+        66
+      ],
+      "xLabel": "Measurement (cm)",
+      "area": "Middle 95% (approximately)",
+      "showSd": false
+    },
+    {
+      "file": "b28-normal.svg",
+      "questions": [
+        "2-b:b28"
+      ],
+      "kind": "normal",
+      "mu": 0,
+      "sd": 1,
+      "lo": -1,
+      "hi": 2,
+      "marks": [
+        -1,
+        2
+      ],
+      "xLabel": "Standard normal value, z"
+    },
+    {
+      "file": "b29-normal-comparison.svg",
+      "questions": [
+        "2-b:b29"
+      ],
+      "kind": "normal_comparison",
+      "mu": 50,
+      "curves": [
+        {
+          "name": "A",
+          "sd": 4,
+          "style": "solid"
+        },
+        {
+          "name": "B",
+          "sd": 10,
+          "style": "dashed"
+        }
+      ],
+      "xRange": [
+        20,
+        80
+      ],
+      "xLabel": "Measurement"
+    },
+    {
+      "file": "b30-normal.svg",
+      "questions": [
+        "2-b:b30"
+      ],
+      "kind": "normal",
+      "mu": 54,
+      "sd": 6,
+      "hi": 48,
+      "marks": [
+        {
+          "value": 48,
+          "label": "c"
+        }
+      ],
+      "xLabel": "Finishing time (minutes)",
+      "area": "Lower 16% (approximately)"
+    },
+    {
+      "file": "b31-normal.svg",
+      "questions": [
+        "2-b:b31"
+      ],
+      "kind": "normal",
+      "mu": 50,
+      "sd": 8,
+      "hi": 44,
+      "marks": [
+        44
+      ],
+      "xLabel": "Waiting time (hours)"
+    },
+    {
+      "file": "b32-normal.svg",
+      "questions": [
+        "2-b:b32"
+      ],
+      "kind": "normal",
+      "mu": 50,
+      "sd": 8,
+      "lo": 60,
+      "marks": [
+        60
+      ],
+      "xLabel": "Rod length (cm)"
+    },
+    {
+      "file": "b33-normal.svg",
+      "questions": [
+        "2-b:b33"
+      ],
+      "kind": "normal",
+      "mu": 30,
+      "sd": 5,
+      "lo": 25,
+      "hi": 38,
+      "marks": [
+        25,
+        38
+      ],
+      "xLabel": "Travel time (minutes)"
+    },
+    {
+      "file": "b34-normal.svg",
+      "questions": [
+        "2-b:b34"
+      ],
+      "kind": "normal",
+      "mu": 20,
+      "sd": 0.4,
+      "lo": 19.6,
+      "hi": 20.8,
+      "outside": true,
+      "marks": [
+        19.6,
+        20.8
+      ],
+      "xLabel": "Ring diameter (mm)"
+    },
+    {
+      "file": "b35-normal.svg",
+      "questions": [
+        "2-b:b35"
+      ],
+      "kind": "normal",
+      "mu": 80,
+      "sd": 12,
+      "hi": {
+        "percentile": 0.9
+      },
+      "marks": [
+        {
+          "at": "hi",
+          "label": "c"
+        }
+      ],
+      "xLabel": "Delivery distance (km)",
+      "area": "Area to the left of c = 0.90"
+    },
+    {
+      "file": "b36-normal.svg",
+      "questions": [
+        "2-b:b36"
+      ],
+      "kind": "normal",
+      "mu": 120,
+      "sd": 15,
+      "hi": {
+        "percentile": 0.05
+      },
+      "marks": [
+        {
+          "at": "hi",
+          "label": "c"
+        }
+      ],
+      "xLabel": "Completion time (seconds)",
+      "area": "Area to the left of c = 0.05"
+    },
+    {
+      "file": "b37-normal.svg",
+      "questions": [
+        "2-b:b37"
+      ],
+      "kind": "normal",
+      "mu": 1000,
+      "sd": 20,
+      "lo": {
+        "percentile": 0.1
+      },
+      "hi": {
+        "percentile": 0.9
+      },
+      "marks": [
+        {
+          "at": "lo",
+          "label": "a"
+        },
+        {
+          "at": "hi",
+          "label": "b"
+        }
+      ],
+      "xLabel": "Package mass (g)",
+      "area": "Middle 80%"
+    },
+    {
+      "file": "b38-normal.svg",
+      "questions": [
+        "2-b:b38"
+      ],
+      "kind": "normal",
+      "mu": {
+        "solveFrom": {
+          "value": 42,
+          "percentile": 0.1
+        }
+      },
+      "sd": 5,
+      "hi": 42,
+      "marks": [
+        42
+      ],
+      "meanLabel": "μ",
+      "xLabel": "Measurement (cm)",
+      "area": "Area to the left of 42 = 0.10"
+    },
+    {
+      "file": "b39-normal.svg",
+      "questions": [
+        "2-b:b39"
+      ],
+      "kind": "normal",
+      "mu": 75,
+      "sd": {
+        "solveFrom": {
+          "value": 84,
+          "percentile": 0.9
+        }
+      },
+      "hi": 84,
+      "marks": [
+        84
+      ],
+      "xLabel": "Score (points)",
+      "area": "Area to the left of 84 = 0.90",
+      "showSd": false
+    },
+    {
+      "file": "b40-normal.svg",
+      "questions": [
+        "2-b:b40"
+      ],
+      "kind": "normal",
+      "mu": 2,
+      "sd": 0.3,
+      "lo": 2.45,
+      "marks": [
+        2.45
+      ],
+      "xLabel": "Parcel mass (kg)"
+    },
+    {
+      "file": "b48-simulation.svg",
+      "questions": [
+        "2-b:b48"
+      ],
+      "kind": "frequency_histogram",
+      "start": 13.8,
+      "width": 0.4,
+      "counts": [
+        65,
+        180,
+        290,
+        260,
+        125,
+        52,
+        20,
+        8
+      ],
+      "highlightFrom": 16.2,
+      "printCounts": true,
+      "xLabel": "Sample mean service time (minutes)",
+      "yLabel": "Frequency"
+    },
+    {
+      "file": "b50-sampling.svg",
+      "questions": [
+        "2-b:b50"
+      ],
+      "kind": "dotplot",
+      "values": [
+        3,
+        4,
+        5,
+        5,
+        6,
+        7
+      ],
+      "highlightMin": 6,
+      "title": "One dot per equally likely sample",
+      "xLabel": "Sample mean, x̄"
+    },
+    {
+      "file": "a17-item-types.svg",
+      "kind": "categorical_pie",
+      "categories": [
+        "Electronics",
+        "Clothing",
+        "Kitchen",
+        "Toys",
+        "Other"
+      ],
+      "values": [
+        30,
+        25,
+        20,
+        15,
+        10
+      ],
+      "questions": [
+        "1-a:a17"
+      ]
+    },
+    {
+      "file": "a18-arrival.svg",
+      "kind": "categorical_bars",
+      "categories": [
+        "Walk",
+        "Cycle",
+        "Bus",
+        "Car"
+      ],
+      "values": [
+        24,
+        18,
+        32,
+        26
+      ],
+      "xLabel": "Arrival method",
+      "yLabel": "Number of visitors",
+      "tickStep": 5,
+      "printValues": true,
+      "questions": [
+        "1-a:a18"
+      ]
+    },
+    {
+      "file": "a21-check-in.svg",
+      "kind": "frequency_histogram",
+      "counts": [
+        18,
+        12,
+        7,
+        3,
+        1
+      ],
+      "start": 0,
+      "width": 5,
+      "highlightFrom": 1000000,
+      "printCounts": true,
+      "xLabel": "Check-in time (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a21"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a22-puzzle.svg",
+      "kind": "frequency_histogram",
+      "counts": [
+        1,
+        3,
+        6,
+        12,
+        18
+      ],
+      "start": 0,
+      "width": 20,
+      "highlightFrom": 1000000,
+      "printCounts": true,
+      "xLabel": "Puzzle completed (%)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a22"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a23-calls.svg",
+      "kind": "dotplot",
+      "values": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6
+      ],
+      "highlightMin": 999,
+      "xLabel": "Calls per ten-minute period",
+      "questions": [
+        "1-a:a23"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a24-deliveries.svg",
+      "kind": "frequency_histogram",
+      "counts": [
+        5,
+        10,
+        8,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "start": 0,
+      "width": 5,
+      "highlightFrom": 1000000,
+      "printCounts": true,
+      "xLabel": "Delivery distance (kilometers)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a24"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a26-book-repairs.svg",
+      "kind": "frequency_histogram",
+      "counts": [
+        6,
+        12,
+        14,
+        8
+      ],
+      "start": 0,
+      "width": 10,
+      "highlightFrom": 1000000,
+      "printCounts": true,
+      "xLabel": "Repair time (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a26"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a35-repairs.svg",
+      "kind": "dotplot",
+      "values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        7,
+        8,
+        9
+      ],
+      "highlightMin": 999,
+      "xLabel": "Bicycles repaired per day",
+      "questions": [
+        "1-a:a35"
+      ],
+      "fontSize": 13
+    },
+    {
+      "file": "a44-packs.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Packs",
+          "min": 6,
+          "q1": 10,
+          "median": 14,
+          "q3": 18,
+          "max": 22,
+          "outliers": [
+            32
+          ]
+        }
+      ],
+      "xLabel": "Pack weight (kilograms)",
+      "questions": [
+        "1-a:a44"
+      ],
+      "ticks": [
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        32
+      ]
+    },
+    {
+      "file": "a45-parcels.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Parcels",
+          "min": 3,
+          "q1": 7,
+          "median": 11,
+          "q3": 15,
+          "max": 20,
+          "outliers": [
+            29
+          ]
+        }
+      ],
+      "xLabel": "Parcel mass (kilograms)",
+      "questions": [
+        "1-a:a45"
+      ],
+      "ticks": [
+        3,
+        7,
+        11,
+        15,
+        20,
+        25,
+        29
+      ]
+    },
+    {
+      "file": "a51-route-comparison.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Route A",
+          "min": 10,
+          "q1": 14,
+          "median": 18,
+          "q3": 22,
+          "max": 30,
+          "outliers": [
+            40
+          ]
+        },
+        {
+          "label": "Route B",
+          "min": 12,
+          "q1": 18,
+          "median": 24,
+          "q3": 30,
+          "max": 38,
+          "outliers": []
+        }
+      ],
+      "xLabel": "Delivery time (minutes)",
+      "questions": [
+        "1-a:a51"
+      ],
+      "ticks": [
+        10,
+        14,
+        18,
+        24,
+        30,
+        38,
+        40
+      ]
+    },
+    {
+      "file": "a58-workshops.svg",
+      "kind": "paired_histograms",
+      "start": 0,
+      "width": 10,
+      "groups": [
+        {
+          "label": "Workshop A",
+          "counts": [
+            2,
+            6,
+            10,
+            6,
+            2
+          ]
+        },
+        {
+          "label": "Workshop B",
+          "counts": [
+            12,
+            7,
+            4,
+            2,
+            1
+          ]
+        }
+      ],
+      "xLabel": "Job duration (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a58"
+      ]
+    },
+    {
+      "file": "a59-running.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Group A",
+          "min": 4,
+          "q1": 10,
+          "median": 18,
+          "q3": 26,
+          "max": 32,
+          "outliers": []
+        },
+        {
+          "label": "Group B",
+          "min": 6,
+          "q1": 14,
+          "median": 18,
+          "q3": 22,
+          "max": 30,
+          "outliers": []
+        }
+      ],
+      "xLabel": "Weekly distance (kilometers)",
+      "questions": [
+        "1-a:a59"
+      ],
+      "ticks": [
+        4,
+        10,
+        14,
+        18,
+        22,
+        26,
+        32
+      ]
+    }
   ]
 }

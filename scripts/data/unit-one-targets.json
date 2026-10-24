@@ -1,0 +1,301 @@
+[
+  {
+    "unit": "1-a",
+    "id": "a11",
+    "kind": "tableShare",
+    "row": 0
+  },
+  {
+    "unit": "1-a",
+    "id": "a15",
+    "kind": "product",
+    "values": [
+      250,
+      0.28
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a18",
+    "kind": "figureShare",
+    "indices": [
+      0,
+      1
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a20",
+    "kind": "complement",
+    "values": [
+      0.35,
+      0.22,
+      0.18
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a23",
+    "kind": "figureCount",
+    "threshold": 3
+  },
+  {
+    "unit": "1-a",
+    "id": "a26",
+    "kind": "figureBinSum",
+    "indices": [
+      1,
+      2
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a28",
+    "kind": "maximum",
+    "values": [
+      21,
+      24,
+      30,
+      35,
+      38,
+      42,
+      47
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a31",
+    "kind": "mean",
+    "values": [
+      7,
+      9,
+      10,
+      11,
+      13
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a32",
+    "kind": "median",
+    "values": [
+      34,
+      22,
+      41,
+      25,
+      30,
+      28
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a35",
+    "kind": "figurePercentile",
+    "threshold": 4
+  },
+  {
+    "unit": "1-a",
+    "id": "a36",
+    "kind": "sampleSD",
+    "values": [
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a37",
+    "kind": "weightedMean",
+    "sizes": [
+      12,
+      8
+    ],
+    "means": [
+      4,
+      9
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a38",
+    "kind": "range",
+    "values": [
+      18,
+      25,
+      21,
+      32,
+      19,
+      27
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a40",
+    "kind": "medianMeanDifference",
+    "values": [
+      8,
+      10,
+      11,
+      12,
+      24
+    ],
+    "claims": [
+      -2,
+      0,
+      2,
+      -4
+    ],
+    "optionTexts": [
+      "The median is 2 less than the mean.",
+      "The median equals the mean.",
+      "The median is 2 greater than the mean.",
+      "The median is 4 less than the mean."
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a41",
+    "optionTexts": [
+      "6",
+      "5",
+      "10.5",
+      "15"
+    ],
+    "kind": "iqr",
+    "values": [
+      14,
+      5,
+      11,
+      8,
+      20,
+      7,
+      13,
+      10
+    ]
+  },
+  {
+    "unit": "1-a",
+    "id": "a43",
+    "optionTexts": [
+      "65",
+      "56",
+      "60",
+      "64"
+    ],
+    "kind": "upperOutlier",
+    "q1": 24,
+    "q3": 40
+  },
+  {
+    "unit": "1-a",
+    "id": "a44",
+    "optionTexts": [
+      "8",
+      "4",
+      "14",
+      "22"
+    ],
+    "kind": "figureIQR",
+    "group": 0
+  },
+  {
+    "unit": "1-a",
+    "id": "a48",
+    "optionTexts": [
+      "10",
+      "4",
+      "17",
+      "25"
+    ],
+    "kind": "scaledSD",
+    "sd": 4,
+    "scale": 2.5
+  },
+  {
+    "unit": "1-a",
+    "id": "a49",
+    "optionTexts": [
+      "81",
+      "9",
+      "27",
+      "47"
+    ],
+    "kind": "scaledVariance",
+    "variance": 9,
+    "scale": 3
+  },
+  {
+    "unit": "1-a",
+    "id": "a53",
+    "optionTexts": [
+      "−2",
+      "−10",
+      "−2.4",
+      "−1.25"
+    ],
+    "kind": "z",
+    "value": 30,
+    "mean": 40,
+    "sd": 5
+  },
+  {
+    "unit": "1-a",
+    "id": "a55",
+    "optionTexts": [
+      "108",
+      "68",
+      "72",
+      "102"
+    ],
+    "kind": "transferZ",
+    "value": 68,
+    "mean1": 56,
+    "sd1": 8,
+    "mean2": 90,
+    "sd2": 12
+  },
+  {
+    "unit": "1-a",
+    "id": "a60",
+    "optionTexts": [
+      "24",
+      "12",
+      "36",
+      "48"
+    ],
+    "kind": "recoverSD",
+    "value": 176,
+    "mean": 140,
+    "z": 1.5
+  },
+  {
+    "unit": "1-b",
+    "id": "c20",
+    "optionTexts": [
+      "30",
+      "20",
+      "25",
+      "36"
+    ],
+    "kind": "allocation",
+    "group": 360,
+    "total": 600,
+    "sample": 50
+  },
+  {
+    "unit": "1-b",
+    "id": "c34",
+    "optionTexts": [
+      "6",
+      "2",
+      "3",
+      "5"
+    ],
+    "kind": "product",
+    "values": [
+      2,
+      3
+    ]
+  }
+]

@@ -177,12 +177,16 @@ def frequency_histogram(spec):
         selected = left >= spec["highlightFrom"] - 1e-9
         ax.bar(left, count, width=width, align="edge", color=DARK if selected else LIGHT, edgecolor=INK, linewidth=0.7)
         if spec.get("printCounts"):
-            ax.text(left + width / 2, count + top * 0.02, str(count), ha="center", va="bottom", fontsize=9)
+            ax.text(left + width / 2, count + top * 0.02, str(count), ha="center", va="bottom", fontsize=spec.get("fontSize", 9))
     edges = [round(start + i * width, 6) for i in range(len(counts) + 1)]
     ax.set_xticks(edges, [f"{e:.1f}" for e in edges])
     ax.set_xlim(edges[0], edges[-1])
     ax.set_ylim(0, top)
     bars_axes(ax, spec["xLabel"], spec["yLabel"])
+    if spec.get("fontSize"):
+        ax.tick_params(labelsize=spec["fontSize"])
+        ax.xaxis.label.set_size(spec["fontSize"])
+        ax.yaxis.label.set_size(spec["fontSize"])
     return finish(fig)
 
 
@@ -216,8 +220,78 @@ def dotplot(spec):
     ax.set_yticks([])
     ax.spines[["left", "top", "right"]].set_visible(False)
     ax.set_xlabel(tex(spec["xLabel"]))
+    if spec.get("fontSize"):
+        ax.tick_params(labelsize=spec["fontSize"])
+        ax.xaxis.label.set_size(spec["fontSize"])
     if spec.get("title"):
         ax.set_title(spec["title"])
+    return finish(fig)
+
+
+def categorical_bars(spec):
+    fig, ax = plt.subplots(figsize=WIDE)
+    bars = ax.bar(spec["categories"], spec["values"], color=LIGHT, edgecolor=INK, linewidth=0.8)
+    step = spec.get("tickStep", 5)
+    top = math.ceil((max(spec["values"]) + step) / step) * step
+    ax.set_ylim(0, top)
+    ax.set_yticks(range(0, top + 1, step))
+    if spec.get("printValues"):
+        ax.bar_label(bars, padding=3, fontsize=9)
+    bars_axes(ax, spec["xLabel"], spec["yLabel"])
+    return finish(fig)
+
+
+def categorical_pie(spec):
+    fig, ax = plt.subplots(figsize=(6.0, 3.1))
+    colors = ["#dddddd", "#999999", "#eeeeee", "#666666", "#bbbbbb"]
+    wedges, _, _ = ax.pie(spec["values"], autopct="%1.0f%%", colors=colors[:len(spec["values"])],
+                          startangle=90, wedgeprops={"edgecolor": INK, "linewidth": 0.8},
+                          textprops={"color": INK, "fontsize": 13})
+    ax.legend(wedges, spec["categories"], loc="center left", bbox_to_anchor=(1, 0.5),
+              frameon=True, fancybox=False, edgecolor=INK, fontsize=12)
+    ax.set_aspect("equal")
+    return finish(fig)
+
+
+def summary_boxplots(spec):
+    fig, ax = plt.subplots(figsize=(6.0, 2.35 if len(spec["groups"]) > 1 else 1.9))
+    groups = spec["groups"]
+    stats = [{"label": g["label"], "whislo": g["min"], "q1": g["q1"], "med": g["median"],
+              "q3": g["q3"], "whishi": g["max"], "fliers": g.get("outliers", [])} for g in groups]
+    ax.bxp(stats, vert=False, patch_artist=True, widths=0.5,
+           boxprops={"facecolor": LIGHT, "edgecolor": INK},
+           medianprops={"color": INK, "linewidth": 1.5},
+           whiskerprops={"color": INK}, capprops={"color": INK},
+           flierprops={"marker": "o", "markerfacecolor": "white", "markeredgecolor": INK, "markersize": 5})
+    values = [v for g in groups for v in [g["min"], g["q1"], g["median"], g["q3"], g["max"], *g.get("outliers", [])]]
+    low, high = math.floor(min(values) / 2) * 2, math.ceil(max(values) / 2) * 2
+    ax.set_xticks(spec.get("ticks", list(range(low, high + 1, 2))))
+    ax.set_xlim(low - 1, high + 1)
+    ax.xaxis.grid(True, color=GRID, linewidth=0.6)
+    ax.set_axisbelow(True)
+    ax.set_xlabel(spec["xLabel"])
+    ax.set_ylabel("Group")
+    ax.tick_params(labelsize=13)
+    ax.xaxis.label.set_size(13)
+    ax.yaxis.label.set_size(13)
+    ax.spines[["top", "right"]].set_visible(False)
+    return finish(fig)
+
+
+def paired_histograms(spec):
+    fig, axes = plt.subplots(len(spec["groups"]), 1, figsize=(6.0, 4.6), sharex=True, sharey=True)
+    top = max(max(g["counts"]) for g in spec["groups"]) + 2
+    for ax, group in zip(axes, spec["groups"]):
+        edges = [spec["start"] + i * spec["width"] for i in range(len(group["counts"]) + 1)]
+        ax.bar(edges[:-1], group["counts"], width=spec["width"], align="edge", color=LIGHT, edgecolor=INK)
+        ax.set_xticks(edges)
+        ax.set_ylim(0, top)
+        ax.set_title(group["label"])
+        bars_axes(ax, spec["xLabel"], spec["yLabel"])
+        ax.tick_params(labelsize=13)
+        ax.xaxis.label.set_size(13)
+        ax.yaxis.label.set_size(13)
+    fig.tight_layout()
     return finish(fig)
 
 
@@ -283,7 +357,8 @@ def tree(spec):
 
 
 KINDS = {fn.__name__: fn for fn in (discrete_bars, binomial_bars, normal, normal_comparison, frequency_histogram,
-                                    relative_frequency_bars, dotplot, segmented, venn, tree)}
+                                    relative_frequency_bars, dotplot, segmented, venn, tree,
+                                    categorical_bars, categorical_pie, summary_boxplots, paired_histograms)}
 
 
 def display_size(svg: bytes) -> tuple[int, int]:

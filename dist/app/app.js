@@ -173,7 +173,12 @@ function closeSolution(focus = false) {
 function setSolutionView(view) {
   state.solutionView = view;
   const question = state.unit.questions[state.current];
-  document.querySelectorAll('.solution-tab').forEach(button => { const selected = button.dataset.view === view; button.setAttribute('aria-selected', String(selected)); button.tabIndex = selected ? 0 : -1; });
+  document.querySelectorAll('.solution-tab').forEach(button => {
+    button.hidden = button.dataset.view === 'calculator' && question.calculator?.status === 'deferred';
+    const selected = button.dataset.view === view;
+    button.setAttribute('aria-selected', String(selected));
+    button.tabIndex = selected ? 0 : -1;
+  });
   explanation.hidden = view !== 'explanation';
   calculatorView.hidden = view !== 'calculator';
   app.classList.toggle('calculator-mode', view === 'calculator' && Boolean(question.calculator?.needed || question.calculator?.distribution));

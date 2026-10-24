@@ -20,6 +20,8 @@ Stimulus types supported by `src/app/stimulus.js`:
 
 Each archetype label must appear in `src/content/<course>/archetypes.json`. Provenance fields are defined in `src/schemas/question.schema.json`; `migratedFrom` or `original` records each item's origin.
 
+When calculator support is explicitly postponed, use `calculator: { needed: false, status: "deferred", reason: "..." }` with no steps, distribution, or screenshots. The shared solution renderer hides the calculator tab for deferred items. This status does not claim that calculator support is unnecessary.
+
 ## Mathematical content
 
 The existing string fields and automatic prose scanner are a legacy convenience for simple statistics notation. They are not the long-term contract for matrices, vectors, calculus, aligned equations, or any expression whose layout matters.
