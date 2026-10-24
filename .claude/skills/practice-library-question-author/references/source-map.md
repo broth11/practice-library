@@ -17,7 +17,7 @@
      - `app/src/page.html` (step renderer, LCD styling, `SEED_VERIFY` teacher ticks)
      - `app/icons/` (menu icon originals)
 3. **Project history**:
-   - This repository's Git history. Unit 2.B's pre-migration source is `dist/unit2b.js` at commit `183e715`.
+   - This repository's Git history. Unit 2.B's pre-migration source is `dist/unit2b.js` at commit `9abb4fc`.
    - Unit 2.A trial package: `~/.codex/.chatgpt-projects/<project-id>/outputs/ap-statistics-unit-2a-trial/` (`questions.json`, `expand_questions.py`, `calculator_data.py`, `verify_questions.py`, `verification.json`).
    - Prior session decisions, summarized in `docs/DECISIONS.md`.
 

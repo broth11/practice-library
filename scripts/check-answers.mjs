@@ -3,7 +3,7 @@
 // the keyed answer. Exactly one choice must match each target, and it must be the key.
 //
 // Unit 2.A targets port the trial package's verify_questions.py; Unit 2.B targets
-// extend the legacy check-content.mjs assertions from commit 183e715.
+// extend the legacy check-content.mjs assertions from commit 9abb4fc.
 import { readFileSync } from 'node:fs';
 
 import { Q, q, sum, Phi, invPhi, binom } from './lib/stats.mjs';

@@ -2,7 +2,7 @@
 
 The current state of the project, for whichever agent or person works on it next. Update this before you stop. Keep it short: what is true now, not a history (that is what Git is for).
 
-## Current state (2026-10-24, Claude, branch `prep/public-release`)
+## Current state (2026-10-24, Claude, merged to `main`)
 
 - Two units live: AP Statistics 2.A (50 questions) and 2.B (50 questions).
 - `npm run check` covers structure, provenance, the archetype registry, 61 independently recomputed answer keys, 58 calculator screens, 14 distribution walkthroughs, and KaTeX parsing. `npm run check:diagrams` confirms all 31 figures are reproducible.
