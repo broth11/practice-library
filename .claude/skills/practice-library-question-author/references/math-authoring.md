@@ -28,6 +28,10 @@ For example, prefer:
 
 over two inline fractions separated by an HTML break.
 
+## Status
+
+Display math nodes are implemented for solution steps and checked by `scripts/check-math.mjs`, which also rejects `<br>` inside an inline math span. Other fields still use the legacy prose detector; see `data-contract.md`.
+
 ## Authoring contract
 
 - Store TeX explicitly for nontrivial notation. Do not ask the prose auto-detector to infer matrices, vector notation, calculus, or aligned work.

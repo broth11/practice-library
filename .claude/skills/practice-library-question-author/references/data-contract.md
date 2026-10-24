@@ -12,13 +12,19 @@ Use `src/schemas/unit.schema.json` and `src/schemas/question.schema.json` as the
 - lesson: `id`, `title`, `intro`, `cedTopics`
 - question: `id`, `lesson`, `archetype`, `variant`, `scenario`, `prompt`, `choices`, `answer`, optional `stimulus`/`solutionStimulus`, `solution`, `calculator`, `provenance`
 
-Use structured stimulus types already supported by `src/app/stimulus.js`: tables, segmented displays, simulation histograms, Venn diagrams, trees, images, and carefully controlled authored HTML. Prefer structured data. Put diagram files in `src/assets/diagrams/` and reference them as `assets/<filename>`.
+Stimulus types supported by `src/app/stimulus.js`:
+
+- `table`: `caption`, `headers`, `rows`. Write numbers that need trailing zeros (`"0.70"`) as strings; numeric cells are formatted with thousands separators.
+- `image`: a generated figure. `src` (`assets/<file>.svg`), `alt`, optional `caption`, and `width`/`height` (kept in sync by `npm run diagrams`). Its data lives in `src/diagrams/<course>.json`; see `figures.md`.
+- `html`: allowed but discouraged. No current question uses it.
+
+Each archetype label must appear in `src/content/<course>/archetypes.json`. Provenance fields are defined in `src/schemas/question.schema.json`; `migratedFrom` or `original` records each item's origin.
 
 ## Mathematical content
 
 The existing string fields and automatic prose scanner are a legacy convenience for simple statistics notation. They are not the long-term contract for matrices, vectors, calculus, aligned equations, or any expression whose layout matters.
 
-When adding advanced mathematics, extend the shared schema and renderer with explicit math nodes before authoring that content. The portable target is:
+Explicit math nodes are implemented for solution steps: a step may be a string or a math node, rendered by `renderStep()` in `src/app/math.js` and validated by `scripts/check-math.mjs`. Scenario, prompt, choice, and warning fields are still strings read by the legacy detector. Before authoring advanced mathematics in those fields, extend the schema and renderer to accept math nodes there too. The node format is:
 
 ```json
 { "type": "math", "mode": "inline", "tex": "P(A \\mid B)" }

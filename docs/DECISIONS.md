@@ -2,6 +2,8 @@
 
 This record consolidates the decisions made while developing Units 2.A and 2.B. It is source context for future work, not a reconstruction from the rendered page.
 
+Where the decisions came from: the earlier ones were made in prior development sessions and consolidated from those session records, which live outside this repository. Several are corroborated by the Unit 2.A trial package's README and browser-verification records (2×2 answer layout, reserved solution space, calculator proportions, arrows above the screen, per-visit progress). Decisions dated 2026-10-24 were made with the author in the public-release session. See `docs/PROVENANCE.md`.
+
 ## Content model
 
 - A course contains units; a unit contains lessons; a lesson contains questions.
@@ -11,6 +13,8 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Each authored question records its archetype and, when known, variant and option roles. Missing historical metadata stays explicitly unknown; do not invent it from the finished interface.
 - Numerical answers are computed independently. AI/tool verification is not human sign-off, and review status must say so accurately.
 - Visuals are included when they materially support the reasoning: tables, discrete/bar displays, shaded binomial or normal plots, and sampling histograms or dotplots.
+- (2026-10-24) Every figure is generated from a data spec in `src/diagrams/` by one pinned matplotlib script, in AP print style (S14): grayscale, axis titles, boxed legends. No figure is hand-drawn or hard-coded in a renderer. Figure text is sized to match the question's reading size on desktop.
+- (2026-10-24) Archetype labels are registered with an honest link status. Labels without a card stay as local course labels; they are not renamed or called invented.
 
 ## Learning experience
 
@@ -19,6 +23,7 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Only one question is visible at a time. On desktop the practice workspace should fit without page scrolling.
 - The question has a stable reading width and permanently reserved solution space so opening a solution does not resize the question.
 - Explanations and calculator walkthroughs open alongside the question. The calculator view may collapse the route panel, but a visible route stub must let the user reopen it.
+- (2026-10-24) At phone width (760px and below) the route pane overlays the question, so it collapses when a question opens. The rail tabs remain as the route stub.
 - Progress lasts for the current page visit only. There are no accounts, sign-in, database, or cross-device persistence.
 - Answer choices default to a 2×2 layout, fall back to one column when long or cramped, and may use one row of four only for genuinely short choices. Mathematical expressions stay intact, at normal text size, with full-size fractions.
 - Remove generic filler such as repeated invitations to read the reasoning. Use the space for the actual reasoning.
@@ -30,6 +35,7 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Automatic detection in prose is a legacy convenience for simple expressions, not the authoring model for advanced mathematics.
 - Inline and display mathematics are explicit, distinct content modes. Use display mode for multi-line work, matrices, systems, prominent fractions, and calculus expressions with substantial vertical structure.
 - Never construct multi-line mathematics by putting `<br>` inside inline math. Use an aligned display or separate display blocks so fractions and other tall notation receive correct vertical spacing.
+- (2026-10-24) Solution steps accept explicit math nodes. The three steps that used `<br>` inside inline math (2.A q03, q20, q21) are now display nodes, and `npm run check` rejects the pattern.
 - Future advanced-math content must use explicit TeX stored in the authored JSON and rendered by a shared component. Schema, renderer, validation, and responsive QA evolve together; do not add per-question parsing exceptions.
 - Preserve KaTeX's MathML output for accessibility. A parse failure blocks publication rather than silently becoming plain text or an image.
 
@@ -39,7 +45,9 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Calculator mode gives the question, keypress explanation, and calculator meaningful full-height panes. Explanations and keypress directions use the question's reading size.
 - A separate step is justified by a new calculator menu or screen. Typing an entire arithmetic expression and pressing EXE is one step.
 - Navigation arrows sit above the calculator screen.
-- Calculations are derived, not typed from a remembered answer. Distribution routes are checked against the supplied calculator guides.
+- Calculations are derived, not typed from a remembered answer. Distribution routes are checked against the fx-CG50 Skill Finder master cards, and `npm run check` enforces those routes and field orders.
+- `Select Save Res: None` and the ±1×10⁹⁹ unbounded-tail entry are Practice Library conventions from the calculator restoration, not transcriptions of the Skill Finder cards. They stand pending a physical-calculator check.
+- The 648:1348 body proportion is an explicit design requirement. Its measurement source is not recorded.
 - Physical fx-CG50 verification has not been recorded and must not be claimed.
 
 ## Architecture and hosting
@@ -49,3 +57,11 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Course and unit content is split into JSON modules. The app loads the catalog first, a course manifest after course selection, and a unit only after unit selection.
 - Shared renderers own the question card, stimuli, math, navigation, solutions, and calculator. A question is data consumed by those renderers, not a standalone copied HTML card.
 - `dist/` is reproducible deployment output. GitHub stores the source, schemas, skill, workflow, and built static files together so Sites and GitHub-oriented hosting can use the same repository.
+
+## Publication and collaboration (2026-10-24)
+
+- The repository is public on GitHub under the author's personal account, pushed from the existing local repository with its full history.
+- The existing site stays authoritative. GitHub Pages is a secondary copy built by Actions from `src/`, switched on with the repository variable `PAGES_ENABLED`.
+- The private archetype library, scoring-guide transcriptions, and any verbatim AP text never enter this repository. `npm run check` blocks personal machine paths, and `CONTRIBUTING.md` describes the leak scan.
+- Code is MIT licensed. Contributions are welcome. Casio menu icons are third-party and excluded from that license (`NOTICE.md`).
+- Claude and Codex share one rulebook, `AGENTS.md`, work on separate `<agent>/<topic>` branches, and hand off through `HANDOFF.md`.

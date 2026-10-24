@@ -12,8 +12,16 @@ Add a guide only when it makes the reasoning or execution clearer. If mental or 
 
 ## Accuracy
 
-Calculate the displayed results from the inputs. Never type a remembered result into the simulation. For distribution work, check routes and field order against the supplied Casio skill and guides before authoring. The shared renderer supports arithmetic steps, distribution descriptors, and data-driven `followUps` for a second distribution or arithmetic operation. Extend those shared descriptors instead of hard-coding a question ID.
+Calculate the displayed results from the inputs. Never type a remembered result into the simulation. For distribution work, check routes and field order against the fx-CG50 Skill Finder master cards (`source-map.md`) before authoring. `scripts/check-calculator.mjs` enforces the routes and field orders those cards record, recomputes every arithmetic screen exactly, and compares every distribution result with an independent implementation.
 
-Preserve the calculator's tall 648:1348 body proportion, 384:216 screen proportion, and original menu icons. Directions and explanations use the same reading size as the question.
+## Project conventions not taken from the Skill Finder
+
+These come from earlier Practice Library sessions. They are deliberate, and each still awaits a physical-calculator check:
+
+- A `Select Save Res: None` step before Execute.
+- `−1 × 10⁹⁹` and `1 × 10⁹⁹` (keys NEG 1 EXP 9 9) for an unbounded normal tail.
+- One step per field selection in a distribution form, since each selection is a distinct screen state. The shared renderer supports arithmetic steps, distribution descriptors, and data-driven `followUps` for a second distribution or arithmetic operation. Extend those shared descriptors instead of hard-coding a question ID.
+
+Preserve the calculator's tall 648:1348 body proportion (an explicit design requirement; its measurement source is not recorded), the 384:216 screen proportion (from the Skill Finder's LCD), and the original menu icons (copied byte-for-byte from the Skill Finder). Directions and explanations use the same reading size as the question.
 
 Physical fx-CG50 verification is still unrecorded. Do not claim it. Record tool validation separately from human or device sign-off.

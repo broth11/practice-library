@@ -1,14 +1,9 @@
-# Practice Library instructions
+# Practice Library: Claude
 
-Before adding or revising questions, use the `practice-library-question-author` skill in `.claude/skills/practice-library-question-author/` and read the references it routes you to.
+Read `AGENTS.md` at the repository root first. It holds every rule for this repository and is shared with Codex and other agents, so edit rules there, not here.
 
-Treat `src/` as the only authoring source of truth. Never reconstruct content or design rules from `dist/`, because `dist/` is generated deployment output. Preserve the static SPA, course manifest, unit module, and shared-renderer architecture unless the user explicitly chooses a different system.
+Claude-specific notes:
 
-After any content or application change, run:
-
-```sh
-npm run check
-npm run build
-```
-
-Do not claim human or physical-calculator verification unless it actually occurred and is recorded.
+- Use the `practice-library-question-author` skill in `.claude/skills/practice-library-question-author/` for any question, stimulus, solution, or calculator work, and read the references it routes you to.
+- After any content or application change, run `npm run check` and `npm run build`.
+- Do not claim human or physical-calculator verification unless it actually occurred and is recorded in `docs/PROVENANCE.md`.

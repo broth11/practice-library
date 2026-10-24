@@ -1,35 +1,45 @@
 # Practice Library
 
-Practice Library is a static single-page application whose courses, units, lessons, and questions are authored as modular JSON. The browser first loads the small catalog, then the selected course manifest, then only the selected unit.
+Original AP Statistics practice with worked solutions and Casio fx-CG50 walkthroughs. A static single-page application: courses, units, lessons, and questions are authored as JSON, and the browser loads the catalog first, then the selected course, then only the selected unit.
 
-## Project structure
+No accounts, no tracking, and no install step for students. Progress lasts for the current page visit.
 
-- `src/content/catalog.json` — list of courses
-- `src/content/<course>/course.json` — unit manifest for a course
-- `src/content/<course>/units/*.json` — independently loadable unit modules
-- `src/app/` — reusable navigation, question, stimulus, math, and calculator renderers
-- `src/assets/` — diagrams and calculator artwork
-- `src/schemas/` — portable JSON schemas for authored content
-- `.claude/skills/practice-library-question-author/` — the complete Claude authoring method
-- `dist/` — generated static site deployed by Sites
+## For contributors and coding agents
+
+Start with [`AGENTS.md`](AGENTS.md). It holds the rules for everyone, including Claude and Codex. Then read [`HANDOFF.md`](HANDOFF.md) for the current state and [`CONTRIBUTING.md`](CONTRIBUTING.md) for the workflow.
 
 ## Commands
 
 ```sh
-npm run check
-npm run build
-npm run preview
-npm run export:github -- releases/practice-library.tar.gz
+npm run check            # structure, provenance, answer keys, calculator walkthroughs, math
+npm run build            # regenerate dist/ from src/
+npm run diagrams         # re-render figures from src/diagrams/ (Python + pinned matplotlib)
+npm run check:diagrams   # confirm committed figures match their specs
+npm run preview          # serve dist/ at http://127.0.0.1:4173/
 ```
 
-No install step or framework is required. Node 20+ is used only for validation, building, previewing, and export. The deployed site remains a static SPA and can be hosted by Sites, GitHub Pages, or any static host.
+Node 20 or later. Figures also need `pip install -r scripts/diagrams/requirements.txt`.
 
-## Add content
+## Project structure
 
-1. Add a unit JSON file under the appropriate course's `units/` directory.
-2. Add its metadata and source path to the course manifest.
-3. Run `npm run check` and `npm run build`.
+- `src/content/catalog.json`: the list of courses
+- `src/content/<course>/course.json`: a course's unit manifest
+- `src/content/<course>/units/*.json`: independently loadable units
+- `src/content/<course>/archetypes.json`: every archetype label and its link status
+- `src/diagrams/<course>.json`: data for every generated figure
+- `src/app/`: shared renderers for navigation, questions, stimuli, math, and the calculator
+- `src/assets/`: generated figures and calculator artwork
+- `src/schemas/`: JSON schemas for authored content
+- `scripts/`: build, checks, figure renderer, and leak scan
+- `docs/DECISIONS.md`: product and architecture decisions
+- `docs/PROVENANCE.md`: where everything came from and how it was checked
+- `.claude/skills/practice-library-question-author/`: the authoring method (plain Markdown; applies to every contributor)
+- `dist/`: generated site output. Never edit it by hand.
 
-For a new course, add its manifest and units, then register the course in `src/content/catalog.json`. Follow the bundled Claude skill for question-authoring and review rules.
+## Hosting
 
-For nontrivial notation, the bundled skill distinguishes explicit inline TeX from display TeX. Matrices, vectors, calculus, aligned working, and multi-line fractions must use the shared KaTeX contract rather than the legacy prose auto-detector.
+The primary site is deployed from `dist/`. This repository also has an optional GitHub Pages workflow that builds a second copy from `src/`; see `docs/DECISIONS.md`.
+
+## License
+
+MIT for the project's own code and content. KaTeX and the Casio menu icons are third-party; see [`NOTICE.md`](NOTICE.md). AP is a trademark of the College Board, which is not affiliated with this project.

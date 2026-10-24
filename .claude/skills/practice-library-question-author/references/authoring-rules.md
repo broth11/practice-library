@@ -4,7 +4,7 @@
 
 An archetype is stable when the correct-answer logic and the distractor misconception map are stable. Context, names, numerical values, display choice, and surface wording form variants. If the required reasoning or misconception map changes, create a new archetype.
 
-Use the project style guide, CED topic profiles, archetype records, existing authored cards, and prior review notes as layered evidence. Do not treat any single finished card as the specification. Every new question must be fresh and original; do not copy an exemplar's prose or simply swap nouns and numbers.
+Use the project style guide (public paraphrase in `ap-style.md`), CED topic profiles, archetype records, existing authored cards, and prior review notes as layered evidence. Do not treat any single finished card as the specification. Every new question must be fresh and original; do not copy an exemplar's prose or simply swap nouns and numbers.
 
 ## Construction order
 
@@ -17,7 +17,7 @@ Use the project style guide, CED topic profiles, archetype records, existing aut
 7. Write the explanation from the reasoning, not by paraphrasing the option.
 8. Add the warning by contrasting the correct logic with the actual distractor traps.
 
-Record `archetype`, `variant`, and `provenance.optionRoles` when the source evidence supports them. Preserve `null` for unknown migrated metadata.
+Record `archetype`, `variant`, and `provenance.optionRoles` when the source evidence supports them. Preserve `null` for unknown migrated metadata. Register the archetype label in `archetypes.json`: `card` only when the label is an id in the archetype library and that card's answer logic decides the item; `local` for a course label with no card; `review` when a linked card's logic does not fit a question. Flag every build outside the variant's observed builds in `provenance.extensions` (S21), and every length over a card's range in `provenance.lengthReview` (S22).
 
 ## Wording and display
 

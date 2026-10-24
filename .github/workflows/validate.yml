@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -12,5 +15,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm run check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/diagrams/requirements.txt
+      - name: Figures match their specs
+        run: npm run check:diagrams
+      - name: Structure, provenance, answers, calculator, math
+        run: npm run check
       - run: npm run build
+      - name: Committed dist/ is up to date
+        run: git diff --exit-code -- dist || (echo "dist/ is stale. Run npm run build and commit the result." && exit 1)
