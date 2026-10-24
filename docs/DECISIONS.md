@@ -24,6 +24,15 @@ This record consolidates the decisions made while developing Units 2.A and 2.B. 
 - Remove generic filler such as repeated invitations to read the reasoning. Use the space for the actual reasoning.
 - The welcome screen uses the cream/green visual language and is the only place with deliberately enlarged display text.
 
+## Mathematical notation
+
+- KaTeX is the shared typesetting engine. Its supported notation is sufficient for the intended statistics, matrices, vectors, and calculus content.
+- Automatic detection in prose is a legacy convenience for simple expressions, not the authoring model for advanced mathematics.
+- Inline and display mathematics are explicit, distinct content modes. Use display mode for multi-line work, matrices, systems, prominent fractions, and calculus expressions with substantial vertical structure.
+- Never construct multi-line mathematics by putting `<br>` inside inline math. Use an aligned display or separate display blocks so fractions and other tall notation receive correct vertical spacing.
+- Future advanced-math content must use explicit TeX stored in the authored JSON and rendered by a shared component. Schema, renderer, validation, and responsive QA evolve together; do not add per-question parsing exceptions.
+- Preserve KaTeX's MathML output for accessibility. A parse failure blocks publication rather than silently becoming plain text or an image.
+
 ## Calculator experience
 
 - Preserve the fx-CG50's tall proportions (648:1348) and its 384:216 screen proportion. Use the original menu icons.

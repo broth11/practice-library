@@ -31,3 +31,5 @@ No install step or framework is required. Node 20+ is used only for validation, 
 3. Run `npm run check` and `npm run build`.
 
 For a new course, add its manifest and units, then register the course in `src/content/catalog.json`. Follow the bundled Claude skill for question-authoring and review rules.
+
+For nontrivial notation, the bundled skill distinguishes explicit inline TeX from display TeX. Matrices, vectors, calculus, aligned working, and multi-line fractions must use the shared KaTeX contract rather than the legacy prose auto-detector.

@@ -25,7 +25,7 @@ Record `archetype`, `variant`, and `provenance.optionRoles` when the source evid
 - Put necessary information in the scenario, prompt, or structured stimulus; avoid ornamental data.
 - Keep units and rounding instructions consistent.
 - Use four answer choices. Default visual layout is 2×2, but the renderer may switch to one column for long choices.
-- Keep mathematical expressions intact and use the project's math markup conventions.
+- Keep mathematical expressions intact and follow `math-authoring.md`. Inline and display mathematics are different content modes; do not use HTML line breaks to turn inline math into multi-line working.
 - Tables, plots, diagrams, and simulations must be readable, labelled, and instructionally meaningful.
 
 ## Solutions and review
