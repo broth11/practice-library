@@ -1,0 +1,15 @@
+{
+  "name": "practice-library",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs",
+    "export:github": "node scripts/export-github.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

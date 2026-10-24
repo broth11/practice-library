@@ -1,0 +1,4969 @@
+{
+  "schemaVersion": 1,
+  "id": "2-a",
+  "code": "2.A",
+  "title": "Unit 2.A",
+  "description": "Categorical data & probability",
+  "reviewStatus": "AI and tool verified; no recorded human sign-off.",
+  "lessons": [
+    {
+      "id": "2.A.1",
+      "title": "Describing Two Categorical Variables",
+      "intro": "Read tables and displays. Choose the denominator that matches the group in the question.",
+      "cedTopics": [
+        "2.1",
+        "2.2"
+      ]
+    },
+    {
+      "id": "2.A.2",
+      "title": "Defining Probability",
+      "intro": "Connect probability to long-run frequency, sample spaces, simulations, and complements.",
+      "cedTopics": [
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "id": "2.A.3",
+      "title": "Conditional Probability",
+      "intro": "Use the given information to restrict the sample space before finding a probability.",
+      "cedTopics": [
+        "2.5",
+        "2.6.A.1"
+      ]
+    },
+    {
+      "id": "2.A.4",
+      "title": "The Multiplication Rule",
+      "intro": "Follow a sequence of events. Multiply along a path and add disjoint paths when needed.",
+      "cedTopics": [
+        "2.6.A.2"
+      ]
+    },
+    {
+      "id": "2.A.5",
+      "title": "Independence & the Addition Rule",
+      "intro": "Check independence with probabilities and account for overlap when finding a union.",
+      "cedTopics": [
+        "2.7"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V1",
+      "scenario": "A library recorded the reading format used by 200 visitors and whether each visitor attended a workshop. The results are shown in the table.",
+      "prompt": "What proportion of all visitors used a printed book and attended a workshop?",
+      "choices": [
+        "36/90",
+        "36/200",
+        "60/200",
+        "36/60"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The word <b>and</b> identifies the intersection: 36 visitors both used a printed book and attended a workshop.",
+          "The reference group is <b>all 200 visitors</b>, so use the grand total as the denominator.",
+          "<span class=\"math\">P(printed and workshop) = 36/200 = 0.18.</span> Thus 18% of all visitors had both characteristics."
+        ],
+        "warning": "A uses only workshop attendees. C gives the proportion using printed books, whether or not they attended. D conditions on using a printed book."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Library visitors",
+        "headers": [
+          "Workshop attendance",
+          "Printed book",
+          "Digital book",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Attended",
+            36,
+            54,
+            90
+          ],
+          [
+            "Did not attend",
+            24,
+            86,
+            110
+          ],
+          [
+            "Total",
+            60,
+            140,
+            200
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 36÷200",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "6",
+              "DIV",
+              "2",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "36/200",
+            "mode": "result",
+            "input": "36/200",
+            "result": "0.18",
+            "exact": "9/50",
+            "note": "Use the 36 visitors in both categories and all 200 visitors.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D4",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q02",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V2",
+      "scenario": "A swimming club classified 100 members by age group and whether they entered a weekend meet. The counts are shown in the table.",
+      "prompt": "What proportion of all club members are in the senior group?",
+      "choices": [
+        "18/100",
+        "18/60",
+        "40/100",
+        "60/100"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A marginal proportion concerns just one variable: age group. Add both senior cells: <span class=\"math\">18 + 42 = 60.</span>",
+          "Divide by all members: <span class=\"math\">60/100 = 0.60.</span> Therefore, 60% of the club members are seniors."
+        ],
+        "warning": "A counts only seniors who entered. B gives the entry rate among seniors. C gives the proportion of juniors."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Swimming club members",
+        "headers": [
+          "Age group",
+          "Entered meet",
+          "Did not enter",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Junior",
+            14,
+            26,
+            40
+          ],
+          [
+            "Senior",
+            18,
+            42,
+            60
+          ],
+          [
+            "Total",
+            32,
+            68,
+            100
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (18+42)÷100",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "8",
+              "ADD",
+              "4",
+              "2",
+              "RP",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(18+42)/100",
+            "mode": "result",
+            "input": "(18+42)/100",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Add both senior counts before dividing by all members.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D10",
+          "D3",
+          "D7",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q03",
+      "lesson": "2.A.1",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V1",
+      "scenario": "A café recorded the seating choice of visitors at its East and West locations. The results are shown in the table.",
+      "prompt": "Is there an association between café location and seating choice for these visitors?",
+      "choices": [
+        "Yes, because 30% of East visitors chose a window seat, compared with 60% of West visitors.",
+        "No, because the two locations had different total numbers of visitors.",
+        "An association cannot be assessed because the group sizes are unequal.",
+        "Yes, because at the East location 30% chose a window seat and 70% chose an aisle seat."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Compare <b>the same response category across locations</b>, using each location’s own total.",
+          "<span class=\"math\">East: 18/60 = 0.30.<br>West: 42/70 = 0.60.</span>",
+          "The conditional distributions differ: window seating was more common among West visitors. That is evidence of an association in these data. It does not establish that location caused the choice."
+        ],
+        "warning": "B and C confuse group size with conditional proportions. D compares two responses within East rather than comparing the locations."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Café seating choices",
+        "headers": [
+          "Location",
+          "Window",
+          "Aisle",
+          "Total"
+        ],
+        "rows": [
+          [
+            "East",
+            18,
+            42,
+            60
+          ],
+          [
+            "West",
+            42,
+            28,
+            70
+          ],
+          [
+            "Total",
+            60,
+            70,
+            130
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 18÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "18/60",
+            "mode": "result",
+            "input": "18/60",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Find the window-seat proportion at East.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 42÷70",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "2",
+              "DIV",
+              "7",
+              "0",
+              "EXE"
+            ],
+            "entry": "42/70",
+            "mode": "result",
+            "input": "42/70",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Find the window-seat proportion at West. Compare 0.30 and 0.60.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q04",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_relative_display",
+      "variant": "V3",
+      "scenario": "A recreation center surveyed day members and evening members about whether they preferred indoor or outdoor activities. The chart shows the proportions within each membership group. The numbers surveyed in the two groups are not given.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "More day members than evening members preferred indoor activities.",
+        "More than half of all surveyed members preferred indoor activities.",
+        "More than half of evening members preferred indoor activities.",
+        "A greater proportion of day members than evening members preferred indoor activities."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Read each bar as a distribution <b>within its membership group</b>.",
+          "The indoor portion for day members is between 60% and 70%. The indoor portion for evening members is between 40% and 50%. Thus the indoor proportion is greater for day members.",
+          "Because the sample sizes are not given, a comparison of the numbers of people across groups cannot be made. The overall indoor proportion also depends on those group sizes."
+        ],
+        "warning": "A changes a comparison of proportions into a comparison of counts. B pools the groups without their sizes. C misreads the evening bar, whose indoor portion is below 50%."
+      },
+      "stimulus": {
+        "type": "segmented",
+        "caption": "Activity preference by membership group",
+        "groups": [
+          {
+            "label": "Day",
+            "values": [
+              0.64,
+              0.36
+            ]
+          },
+          {
+            "label": "Evening",
+            "values": [
+              0.42,
+              0.58
+            ]
+          }
+        ],
+        "labels": [
+          "Indoor",
+          "Outdoor"
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "reason": "Read the proportions within each group. The day indoor portion exceeds 60%, while the evening indoor portion is below 50%. No calculation can recover the missing group sizes."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q05",
+      "lesson": "2.A.1",
+      "archetype": "choose_display_for_two_categorical_variables",
+      "variant": "V2",
+      "scenario": "At three community centers, visitors were asked which of four art activities they preferred. The centers had different numbers of visitors.",
+      "prompt": "Which display is appropriate for comparing the proportions choosing each art activity across the centers?",
+      "choices": [
+        "A segmented bar chart showing the conditional relative frequencies within each center",
+        "A back-to-back stemplot",
+        "A scatterplot",
+        "A boxplot"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Both variables are categorical: <b>community center</b> and <b>preferred art activity</b>.",
+          "A segmented bar chart gives each center a bar totaling 100%, divided into the activity categories. This makes the conditional distributions comparable even when group sizes differ."
+        ],
+        "warning": "Stemplots and boxplots summarize quantitative values. A scatterplot requires two quantitative variables."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Identify both variables as categorical, then choose a display of conditional relative frequencies. Calculator operations do not determine the display type."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q26",
+      "lesson": "2.A.1",
+      "archetype": "compare_likelihoods_from_two_way_table",
+      "variant": "V4",
+      "scenario": "Two local nature centers recorded which one souvenir each visitor selected. The centers had different numbers of visitors. The counts for one afternoon are summarized in the table.",
+      "prompt": "For which souvenir was the proportion selecting it the same at both centers?",
+      "choices": [
+        "Pocket compass",
+        "Trail poster",
+        "Folded map",
+        "Nature booklet"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. Compare each souvenir count with its own center's total, rather than comparing counts alone.",
+          "For trail posters, <span class=\"math\">12/40 = 0.30</span> and <span class=\"math\">24/80 = 0.30.</span> The conditional proportions are equal.",
+          "The other pairs are 0.15 versus 0.225 for compasses, 0.25 versus 0.125 for maps, and 0.30 versus 0.35 for booklets."
+        ],
+        "warning": "The equal map counts do not imply equal proportions: 10 out of 40 is different from 10 out of 80."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Souvenir selections",
+        "headers": [
+          "Center",
+          "Pocket compass",
+          "Trail poster",
+          "Folded map",
+          "Nature booklet",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Oak",
+            6,
+            12,
+            10,
+            12,
+            40
+          ],
+          [
+            "Pine",
+            18,
+            24,
+            10,
+            28,
+            80
+          ],
+          [
+            "Total",
+            24,
+            36,
+            20,
+            40,
+            120
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 12÷40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "2",
+              "DIV",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "12/40",
+            "mode": "result",
+            "input": "12/40",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Compare poster selections within the Oak center.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 24÷80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "4",
+              "DIV",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "24/80",
+            "mode": "result",
+            "input": "24/80",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "The Pine proportion is also 0.30. Compare these proportions, not the counts.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "KEY",
+          "D5",
+          "D6"
+        ],
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.2#16"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q27",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V4",
+      "scenario": "A literacy program recorded how long each member had belonged to the program and whether the member joined a reading challenge. The results are shown in the table.",
+      "prompt": "Of the members with <u>at least</u> one month in the program, what proportion joined the reading challenge?",
+      "choices": [
+        "78/190",
+        "78/90",
+        "78/150",
+        "54/90"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. The reference group includes the one-month row and the two-or-more-months row.",
+          "There are <span class=\"math\">60 + 90 = 150</span> members in that group. Of those members, <span class=\"math\">24 + 54 = 78</span> joined the challenge.",
+          "The conditional relative frequency is <span class=\"math\">78/150 = 0.52.</span>"
+        ],
+        "warning": "Use both qualifying rows. The grand total gives a joint proportion, and the challenge total reverses the condition."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Reading challenge participation",
+        "headers": [
+          "Time in program",
+          "Joined",
+          "Did not join",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Less than 1 month",
+            12,
+            28,
+            40
+          ],
+          [
+            "1 month",
+            24,
+            36,
+            60
+          ],
+          [
+            "2 or more months",
+            54,
+            36,
+            90
+          ],
+          [
+            "Total",
+            90,
+            100,
+            190
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (24+54)÷(60+90)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "2",
+              "4",
+              "ADD",
+              "5",
+              "4",
+              "RP",
+              "DIV",
+              "LP",
+              "6",
+              "0",
+              "ADD",
+              "9",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(24+54)/(60+90)",
+            "mode": "result",
+            "input": "(24+54)/(60+90)",
+            "result": "0.52",
+            "exact": "13/25",
+            "note": "Combine both qualifying membership rows in the numerator and denominator.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D6"
+        ],
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.2#3",
+            "SG_2.2#13"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q28",
+      "lesson": "2.A.1",
+      "archetype": "value_for_no_association",
+      "variant": "V1",
+      "scenario": "A repair shop classified 400 service visits by appointment status and whether the repair was completed that day. The table shows the margins, with the four interior counts represented by letters.",
+      "prompt": "If there were no association between the variables, what would the value of a be?",
+      "choices": [
+        "60",
+        "75",
+        "80",
+        "200"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. With no association, the same-day proportion among appointment visits equals the overall same-day proportion.",
+          "Overall, <span class=\"math\">160/400 = 0.40</span> of repairs were completed that day.",
+          "Apply this proportion to the 150 appointment visits: <span class=\"math\">150 × 0.40 = 60.</span> Thus a is 60."
+        ],
+        "warning": "There is no reason to split a row, a column, or the whole table in half. Use the proportion determined by the margins."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Service visits",
+        "headers": [
+          "Appointment status",
+          "Same day",
+          "Later",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Appointment",
+            "a",
+            "b",
+            150
+          ],
+          [
+            "Walk-in",
+            "c",
+            "d",
+            250
+          ],
+          [
+            "Total",
+            160,
+            240,
+            400
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 150×160÷400",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "5",
+              "0",
+              "MUL",
+              "1",
+              "6",
+              "0",
+              "DIV",
+              "4",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "150*160/400",
+            "mode": "result",
+            "input": "150*160/400",
+            "result": "60",
+            "exact": "60",
+            "note": "Apply the overall same-day proportion to the 150 appointment visits.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.2#20"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q29",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_counts",
+      "variant": "V8",
+      "scenario": "Diners at two college dining halls each selected one lunch. The counts for the sandwich, salad, and soup lunches are shown in the following table.",
+      "prompt": "Which statement is <u>not</u> supported by the data in the table?",
+      "choices": [
+        "Across both halls, the sandwich lunch and salad lunch were chosen by equal numbers of diners.",
+        "At Market Hall, the same number of diners chose each of the three lunches.",
+        "At Station Hall, the sandwich lunch was chosen by the fewest diners.",
+        "Across both halls, the soup lunch was chosen by the greatest number of diners."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. The statement is not supported. The sandwich total is 25, whereas the salad total is 35, so these numbers are not equal.",
+          "Market Hall has 20 selections in every category, and Station Hall has only 5 sandwich selections, its smallest count.",
+          "Soup has the largest combined total, 60. Therefore, the other three statements are supported."
+        ],
+        "warning": "A negative ask reverses the task: select the one false statement, rather than one of the three true statements."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Lunch selections",
+        "headers": [
+          "Dining hall",
+          "Sandwich",
+          "Salad",
+          "Soup",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Market",
+            20,
+            20,
+            20,
+            60
+          ],
+          [
+            "Station",
+            5,
+            15,
+            40,
+            60
+          ],
+          [
+            "Total",
+            25,
+            35,
+            60,
+            120
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "reason": "Compare the table counts directly: the sandwich and salad totals are 25 and 35, so the equality claim is false."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "T4",
+          "T4",
+          "T2"
+        ],
+        "keyBuild": "D6",
+        "variant": "V8",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.1#14"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q30",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_relative_display",
+      "variant": "V3",
+      "scenario": "Visitors at two learning centers reported using either a reusable bottle or a disposable bottle. The segmented bars show the proportions within each center. The numbers of visitors at the two centers are not given.",
+      "prompt": "Which of the following statements is supported by the segmented bar chart?",
+      "choices": [
+        "More visitors used reusable bottles at Hilltop than at Riverside.",
+        "The proportion using a reusable bottle is greater at Hilltop than at Riverside.",
+        "The chart shows a positive association between learning center and bottle type.",
+        "The distribution of bottle type is skewed to the right at both centers."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. The reusable segment at Hilltop is above 50%, whereas the reusable segment at Riverside is below 40%. The Hilltop proportion is greater.",
+          "The sample sizes are missing, so the chart cannot establish which center had more reusable-bottle users.",
+          "Center names have no numerical order, so positive association is not appropriate. Skewness describes quantitative distributions, not bottle categories."
+        ],
+        "warning": "Distinguish proportions from counts. Also, avoid applying direction or distribution-shape terms to nominal categories."
+      },
+      "stimulus": {
+        "type": "segmented",
+        "caption": "Bottle type by learning center",
+        "groups": [
+          {
+            "label": "Riverside",
+            "values": [
+              0.36,
+              0.64
+            ]
+          },
+          {
+            "label": "Hilltop",
+            "values": [
+              0.58,
+              0.42
+            ]
+          }
+        ],
+        "legend": [
+          "Reusable",
+          "Disposable"
+        ],
+        "axis_label": "Percent within learning center",
+        "group_axis": "Learning center",
+        "alt": "Bottle type proportions at two learning centers",
+        "desc": "Riverside: 36 percent reusable, 64 percent disposable. Hilltop: 58 percent reusable, 42 percent disposable. Group sizes are not given."
+      },
+      "calculator": {
+        "needed": false,
+        "reason": "Use the segment bounds to compare proportions. Missing group sizes prevent a comparison of counts. No calculator operation supplies those missing sizes."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D4",
+          "D4"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_1.4#8",
+            "SG_2.1#10"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "lesson": "2.A.2",
+      "archetype": "interpret_probability_as_long_run_frequency",
+      "variant": "V1",
+      "scenario": "For a randomly selected delivery made by a certain bicycle courier service, the probability that the delivery arrives before its promised time is 0.70.",
+      "prompt": "Which statement correctly interprets this probability?",
+      "choices": [
+        "Over many deliveries by this service, the proportion arriving before the promised time should be close to 0.70.",
+        "Exactly 7 of the next 10 deliveries by this service will arrive before the promised time.",
+        "Of all deliveries that arrive before their promised times, 70% are made by this service.",
+        "Of all deliveries made by all courier services, 70% arrive before their promised times."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Probability describes the <b>long-run relative frequency</b> of an event under the stated random process.",
+          "Keep both the event (arriving before the promised time) and the reference group (deliveries by this service). Over many such deliveries, the relative frequency should be close to 0.70."
+        ],
+        "warning": "B treats probability as a short-run guarantee. C reverses the reference group and event. D extends the claim to other courier services."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Interpret 0.70 as a long-run proportion for deliveries by this service. A calculator cannot turn this probability into a guarantee about the next ten deliveries."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D3",
+          "D1",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q07",
+      "lesson": "2.A.2",
+      "archetype": "assign_digits_for_simulation",
+      "variant": "V1",
+      "scenario": "A seed supplier reports that 30% of its seed packets contain at least one seed from a rare variety. A student wants to simulate checking six independently selected packets using random digits from 0 through 9. Each digit is equally likely.",
+      "prompt": "Which assignment correctly models whether one packet contains a seed from the rare variety?",
+      "choices": [
+        "Let 0 through 3 represent a packet with a rare seed and 4 through 9 represent a packet without one.",
+        "Let 0 through 6 represent a packet with a rare seed and 7 through 9 represent a packet without one.",
+        "Let even digits represent a packet with a rare seed and odd digits represent a packet without one.",
+        "Let 0 through 2 represent a packet with a rare seed and 3 through 9 represent a packet without one."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "There are 10 equally likely digits. A probability of 0.30 requires <span class=\"math\">0.30 × 10 = 3</span> digits for a packet with a rare seed.",
+          "The digits 0, 1, and 2 provide exactly three digits. The other seven digits represent packets without a rare seed.",
+          "To simulate checking six packets, generate six independent digits. The number of packets does not change the digit assignment."
+        ],
+        "warning": "A assigns 4 digits, so it models 40%. B models 70%. C models 50%. Count the endpoints when a range includes both."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Count the assigned digits: 0, 1, and 2 give three equally likely digits out of ten. This models 30%."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q08",
+      "lesson": "2.A.2",
+      "archetype": "sample_space_and_equally_likely_outcomes",
+      "variant": "V1",
+      "scenario": "A red spinner and a blue spinner each have four equal-sized sectors labeled 1, 2, 3, and 4. The spinners operate independently, and each is spun once.",
+      "prompt": "How many outcomes in the sample space have a sum of 5?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Record an outcome as <span class=\"math\">(red, blue)</span>. Because the spinners are distinguishable, (1, 4) and (4, 1) are different outcomes.",
+          "The outcomes with sum 5 are <span class=\"math\">(1, 4), (2, 3), (3, 2), (4, 1).</span>",
+          "There are <b>4 outcomes</b> in this event, out of 16 equally likely outcomes in the whole sample space."
+        ],
+        "warning": "B counts only unordered pairs. A and C omit valid ordered outcomes."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "List the ordered pairs with sum 5: (1, 4), (2, 3), (3, 2), and (4, 1). There are four outcomes."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D1",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q09",
+      "lesson": "2.A.2",
+      "archetype": "complement_probability",
+      "variant": "V2",
+      "scenario": "Every customer at a kiosk chooses exactly one drink. The probability that a randomly selected customer chooses tea is 0.22, and the probability that the customer chooses cocoa is 0.31.",
+      "prompt": "What is the probability that a randomly selected customer chooses neither tea nor cocoa?",
+      "choices": [
+        "0.22",
+        "0.31",
+        "0.47",
+        "0.53"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Tea and cocoa are mutually exclusive choices because each customer chooses exactly one drink.",
+          "<span class=\"math\">P(tea or cocoa) = 0.22 + 0.31 = 0.53.</span>",
+          "Take the complement: <span class=\"math\">P(neither) = 1 − 0.53 = 0.47.</span>"
+        ],
+        "warning": "A and B return only one given probability. D gives the probability of tea or cocoa instead of neither."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 1-(0.22+0.31)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "SUB",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "3",
+              "1",
+              "RP",
+              "EXE"
+            ],
+            "entry": "1-(0.22+0.31)",
+            "mode": "result",
+            "input": "1-(0.22+0.31)",
+            "result": "0.47",
+            "exact": "47/100",
+            "note": "Add tea and cocoa, then take the complement.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D3",
+          "KEY",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q10",
+      "lesson": "2.A.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": "V1",
+      "scenario": "A simulation models the number of late trains among four trains observed on a morning. The results from 200 simulated mornings are shown in the table.",
+      "prompt": "Based on the simulation, what is the estimated probability that <u>at least</u> three of the four trains are late?",
+      "choices": [
+        "0.20",
+        "0.25",
+        "0.75",
+        "0.95"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "“At least three” includes <b>three or four</b> late trains.",
+          "There are <span class=\"math\">40 + 10 = 50</span> qualifying simulated mornings out of 200.",
+          "<span class=\"math\">Estimated probability = 50/200 = 0.25.</span> This simulation estimates the probability; it does not establish an exact theoretical value."
+        ],
+        "warning": "A counts exactly three and drops four. C gives fewer than three. D includes zero through three, the opposite direction with the boundary included."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Simulation results",
+        "headers": [
+          "Number of late trains",
+          "Simulated mornings"
+        ],
+        "rows": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            50
+          ],
+          [
+            2,
+            80
+          ],
+          [
+            3,
+            40
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            "Total",
+            200
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (40+10)÷200",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "4",
+              "0",
+              "ADD",
+              "1",
+              "0",
+              "RP",
+              "DIV",
+              "2",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(40+10)/200",
+            "mode": "result",
+            "input": "(40+10)/200",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "Include both three and four late trains in the simulation.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "KEY",
+          "D1",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "A frequency table presents the simulation results instead of a histogram; the event and answer logic are unchanged."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q31",
+      "lesson": "2.A.2",
+      "archetype": "identify_law_of_large_numbers",
+      "variant": "V1",
+      "scenario": "An electronic generator independently selects one of four symbols with equal probability on each trial. A researcher records how many stars appear as the total number of trials increases. The cumulative counts are shown in the table. The relative frequency of stars varies at first but then settles closer to the theoretical probability of 0.25.",
+      "prompt": "Which statistical principle explains why the relative frequency of stars tends to be closer to 0.25 as the number of independent trials becomes large?",
+      "choices": [
+        "The law of large numbers",
+        "The addition rule for probabilities",
+        "The multiplication rule for probabilities",
+        "The property of mutually exclusive events"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. The cumulative star proportions are 11/40, 101/400, 1,005/4,000, and 10,008/40,000. They are 0.275, 0.2525, 0.25125, and 0.2502.",
+          "The law of large numbers describes the tendency of a relative frequency over many independent trials to approach the event's probability.",
+          "It does not require the relative frequency to move closer on every trial, nor does it require past outcomes to be balanced immediately."
+        ],
+        "warning": "The addition and multiplication rules combine event probabilities. They do not describe the long-run behavior of a running relative frequency."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Cumulative generator results",
+        "headers": [
+          "Total trials",
+          "Stars"
+        ],
+        "rows": [
+          [
+            "40",
+            11
+          ],
+          [
+            "400",
+            101
+          ],
+          [
+            "4,000",
+            1005
+          ],
+          [
+            "40,000",
+            10008
+          ]
+        ],
+        "cumulative": true
+      },
+      "calculator": {
+        "needed": false,
+        "reason": "The pattern of a running relative frequency approaching a theoretical probability is the law of large numbers. Naming the principle does not require arithmetic."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D1",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.3#10"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q32",
+      "lesson": "2.A.2",
+      "archetype": "sample_space_and_equally_likely_outcomes",
+      "variant": "V2",
+      "scenario": "Six student guides, Amina, Bruno, Chen, Dara, Eva, and Farid, are available for a welcome team. Two different guides will be selected, with every possible pair equally likely. The order in which the guides are selected does not matter.",
+      "prompt": "What is the probability that the selected pair consists of Amina and Farid?",
+      "choices": [
+        "1/30",
+        "1/15",
+        "1/12",
+        "1/6"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. There are <span class=\"math\">6 × 5 = 30</span> ordered selections of two different guides.",
+          "Each unordered pair appears twice in that count, so there are 15 equally likely pairs.",
+          "Only one of those pairs is Amina and Farid. The probability is 1/15."
+        ],
+        "warning": "Amina followed by Farid and Farid followed by Amina represent the same team. Counting only one favorable ordering out of 30 undercounts the event."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 1÷((6×5)÷2)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "DIV",
+              "LP",
+              "LP",
+              "6",
+              "MUL",
+              "5",
+              "RP",
+              "DIV",
+              "2",
+              "RP",
+              "EXE"
+            ],
+            "entry": "1/((6*5)/2)",
+            "mode": "result",
+            "input": "1/((6*5)/2)",
+            "result": "0.06666666667",
+            "exact": "1/15",
+            "note": "There are 15 unordered pairs. Compare this decimal with the exact fraction 1/15.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.4#3"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q33",
+      "lesson": "2.A.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": "V1",
+      "scenario": "A call center uses a computer simulation to model whether each of five calls goes unanswered. It repeats the simulated group of five calls 1,000 times and records the number of unanswered calls in each group. The relative frequencies from the simulation are shown in the histogram.",
+      "prompt": "Based on the simulation, approximately what is the estimated probability that <u>at most</u> one of the five calls in a group goes unanswered?",
+      "choices": [
+        "0.170",
+        "0.390",
+        "0.440",
+        "0.830"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. At most one includes the outcomes zero and one.",
+          "Add the two corresponding relative frequencies: <span class=\"math\">0.440 + 0.390 = 0.830.</span>",
+          "This is an estimate from the simulation. It is not a guarantee about any particular group of five calls."
+        ],
+        "warning": "Exactly one uses only the bar at one. Less than one uses only zero. At most one includes both."
+      },
+      "stimulus": {
+        "type": "simulation_histogram",
+        "caption": "Simulation of unanswered calls",
+        "counts": [
+          440,
+          390,
+          130,
+          35,
+          4,
+          1
+        ],
+        "trials": 1000,
+        "axis_label": "Number of unanswered calls in five",
+        "desc": "Relative frequencies for zero through five unanswered calls are 0.440, 0.390, 0.130, 0.035, 0.004, and 0.001."
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.440+0.390",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "4",
+              "4",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "3",
+              "9",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.440+0.390",
+            "mode": "result",
+            "input": "0.440+0.390",
+            "result": "0.83",
+            "exact": "83/100",
+            "note": "At most one includes both zero and one unanswered call.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D4",
+          "D2",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          {
+            "representation": "Discrete relative-frequency histogram with three-decimal labels, generated directly from simulation counts."
+          }
+        ],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.3#3",
+            "SG_2.3#6"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q34",
+      "lesson": "2.A.2",
+      "archetype": "complement_probability",
+      "variant": "V3",
+      "scenario": "A book display contains 40 books, of which 12 are novels. Each of the other books is either poetry or travel writing. One book is selected at random, with every book equally likely to be selected.",
+      "prompt": "Which of the following values <u>cannot</u> be the probability that the selected book is poetry?",
+      "choices": [
+        "0.35",
+        "0.55",
+        "0.70",
+        "0.85"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. There are <span class=\"math\">40 − 12 = 28</span> books that could be poetry.",
+          "Even if all 28 non-novels are poetry, the probability is only <span class=\"math\">28/40 = 0.70.</span> Thus 0.85 is impossible.",
+          "The other probabilities are possible with 14, 22, or 28 poetry books, respectively."
+        ],
+        "warning": "The number of poetry books is unknown, but it has an upper bound. A probability above that bound cannot occur."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (40-12)÷40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "4",
+              "0",
+              "SUB",
+              "1",
+              "2",
+              "RP",
+              "DIV",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "(40-12)/40",
+            "mode": "result",
+            "input": "(40-12)/40",
+            "result": "0.7",
+            "exact": "7/10",
+            "note": "This is the largest possible poetry probability, not the impossible option. Reject 0.85 because it exceeds this bound.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "T1",
+          "T1",
+          "T1",
+          "KEY"
+        ],
+        "keyBuild": "D5",
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.4#8"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q35",
+      "lesson": "2.A.2",
+      "archetype": "assign_digits_for_simulation",
+      "variant": "V1",
+      "scenario": "A community center estimates that 60% of new members attend orientation. A coordinator wants to simulate the number attending among eight new members, assuming attendance decisions are independent. For each member, the coordinator will use one random digit from 0 through 9, with all ten digits equally likely.",
+      "prompt": "Which assignment of random digits correctly models whether one new member attends the orientation session?",
+      "choices": [
+        "Let digits 0 through 4 represent attending, and let digits 5 through 9 represent not attending, using one random digit for each member.",
+        "Let digits 0 through 5 represent attending, and let digits 6 through 9 represent not attending, using one random digit for each member.",
+        "Let digits 0 through 6 represent attending, and let digits 7 through 9 represent not attending, using one random digit for each member.",
+        "Let digits 0 through 3 represent attending, and let digits 4 through 9 represent not attending, using one random digit for each member."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. Six of the ten equally likely digits must represent attending because the probability is 0.60.",
+          "Digits 0, 1, 2, 3, 4, and 5 provide six attending outcomes. Digits 6, 7, 8, and 9 provide the four non-attending outcomes.",
+          "Use eight independent digits to simulate eight members. The number of members does not change the assignment for one member."
+        ],
+        "warning": "Count both endpoints. Digits 0 through 5 are six digits, not five. The other assignments represent probabilities 0.50, 0.70, and 0.40."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Digits 0 through 5 are six equally likely outcomes out of ten. This matches the 60% attendance rate."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.3#2",
+            "SG_2.3#5"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q11",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V5",
+      "scenario": "A pottery studio recorded each participant’s experience level and whether the participant chose a glazed finish. The results are shown in the table. One participant is selected at random.",
+      "prompt": "Given that the selected participant is experienced, what is the probability that the participant chose a glazed finish?",
+      "choices": [
+        "42/60",
+        "42/120",
+        "42/66",
+        "66/120"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The condition “experienced” restricts the reference group to the <b>60 experienced participants</b>.",
+          "Of those participants, 42 chose a glazed finish. Therefore, <span class=\"math\">P(glazed | experienced) = 42/60 = 0.70.</span>"
+        ],
+        "warning": "B is the joint probability. C reverses the condition and finds the proportion experienced among glazed-finish participants. D gives the overall glazed proportion."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Pottery finishes",
+        "headers": [
+          "Experience",
+          "Glazed",
+          "Unglazed",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Beginner",
+            24,
+            36,
+            60
+          ],
+          [
+            "Experienced",
+            42,
+            18,
+            60
+          ],
+          [
+            "Total",
+            66,
+            54,
+            120
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 42÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "2",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "42/60",
+            "mode": "result",
+            "input": "42/60",
+            "result": "0.7",
+            "exact": "7/10",
+            "note": "The condition is experienced: divide by the 60 experienced participants.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D4"
+        ],
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q12",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V5",
+      "scenario": "Of 125 volunteers at a park, 75 worked on trails, 45 worked in gardens, and 15 worked on both. One volunteer is selected at random.",
+      "prompt": "Given that the selected volunteer worked on trails, approximately what is the probability that the volunteer also worked in gardens?",
+      "choices": [
+        "0.12",
+        "0.20",
+        "0.33",
+        "0.60"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The condition is working on trails, so the denominator is 75. The volunteers satisfying both events are the 15 who worked on trails and in gardens.",
+          "<span class=\"math\">P(gardens | trails) = 15/75 = 0.20.</span>",
+          "Reversing the condition would use 45 as the denominator and answer a different question."
+        ],
+        "warning": "A uses the grand total: 15/125 = 0.12. C reverses the condition: 15/45 ≈ 0.33. D gives the marginal trail probability: 75/125 = 0.60."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 15÷75",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "5",
+              "DIV",
+              "7",
+              "5",
+              "EXE"
+            ],
+            "entry": "15/75",
+            "mode": "result",
+            "input": "15/75",
+            "result": "0.2",
+            "exact": "1/5",
+            "note": "The condition is trail work: divide the overlap by 75.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D4"
+        ],
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Counts are supplied in prose rather than in a two-way table."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q13",
+      "lesson": "2.A.3",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V1",
+      "scenario": "Among 200 festival visitors, 96 attended a theater performance, 74 attended a music performance, and 50 attended neither. One visitor is selected at random. Let T be the event that the visitor attended theater and M the event that the visitor attended music.",
+      "prompt": "Are T and M mutually exclusive?",
+      "choices": [
+        "No, because P(T ∩ M) = 0.10.",
+        "Yes, because P(T ∩ M) = 0.10.",
+        "Yes, because P(T ∩ M) = 0.",
+        "No, because P(T ∩ M) = 0.75."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "First find the number who attended at least one performance: <span class=\"math\">200 − 50 = 150.</span>",
+          "Adding the theater and music counts counts anyone who attended both twice. Thus the overlap is <span class=\"math\">96 + 74 − 150 = 20.</span>",
+          "<span class=\"math\">P(T ∩ M) = 20/200 = 0.10.</span> Mutually exclusive events cannot occur together. Since the overlap is positive, these events are <b>not mutually exclusive</b>."
+        ],
+        "warning": "B gets the overlap right but the conclusion wrong. C ignores the overlap. D uses the union probability as the intersection."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (96+74-(200-50))÷200",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "9",
+              "6",
+              "ADD",
+              "7",
+              "4",
+              "SUB",
+              "LP",
+              "2",
+              "0",
+              "0",
+              "SUB",
+              "5",
+              "0",
+              "RP",
+              "RP",
+              "DIV",
+              "2",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(96+74-(200-50))/200",
+            "mode": "result",
+            "input": "(96+74-(200-50))/200",
+            "result": "0.1",
+            "exact": "1/10",
+            "note": "Find the overlap, then divide by all 200 visitors. A positive result means the events are not mutually exclusive.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q14",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_from_equally_likely_outcomes",
+      "variant": "V2",
+      "scenario": "A fair coin is tossed three times independently. The eight equally likely sequences are HHH, HHT, HTH, THH, HTT, THT, TTH, and TTT.",
+      "prompt": "Given that <u>at least</u> two tosses are heads, what is the probability that all three tosses are heads?",
+      "choices": [
+        "1/8",
+        "1/4",
+        "1/2",
+        "7/8"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Restrict the sample space to the sequences with at least two heads: <span class=\"math\">HHH, HHT, HTH, THH.</span>",
+          "These four sequences are equally likely. Only HHH has all three heads.",
+          "<span class=\"math\">P(three heads | at least two heads) = 1/4.</span>"
+        ],
+        "warning": "A ignores the condition and uses all eight outcomes. C incorrectly treats “exactly two heads” and “three heads” as equally likely categories. D is the unconditional probability of at least one head."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 1÷4",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "DIV",
+              "4",
+              "EXE"
+            ],
+            "entry": "1/4",
+            "mode": "result",
+            "input": "1/4",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "There is one favorable sequence among four sequences satisfying the condition.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D4"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q15",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V6",
+      "scenario": "A neighborhood survey asked 100 residents whether they had cycled and whether they had walked to work during the past week. The diagram shows the counts. One resident is selected at random.",
+      "prompt": "Given that the selected resident did <u>not</u> walk to work, what is the probability that the resident cycled to work?",
+      "choices": [
+        "12/36",
+        "36/100",
+        "36/64",
+        "48/64"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The condition excludes everyone inside the Walked circle. The remaining residents are 36 in Cycled only and 28 in neither.",
+          "So <span class=\"math\">n(not walked) = 36 + 28 = 64.</span> Within that group, 36 cycled.",
+          "<span class=\"math\">P(cycled | not walked) = 36/64 = 0.5625.</span>"
+        ],
+        "warning": "A answers “cycled given walked.” B ignores the condition. D includes the 12 who both cycled and walked in the numerator even though the condition excludes them."
+      },
+      "stimulus": {
+        "type": "venn",
+        "caption": "Ways residents traveled to work",
+        "left": "Cycled",
+        "right": "Walked",
+        "counts": [
+          36,
+          12,
+          24,
+          28
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 36÷(36+28)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "6",
+              "DIV",
+              "LP",
+              "3",
+              "6",
+              "ADD",
+              "2",
+              "8",
+              "RP",
+              "EXE"
+            ],
+            "entry": "36/(36+28)",
+            "mode": "result",
+            "input": "36/(36+28)",
+            "result": "0.5625",
+            "exact": "9/16",
+            "note": "Keep only residents who did not walk: 36 cycled and 28 did neither.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "D1",
+          "KEY",
+          "D10"
+        ],
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [
+          "A Venn diagram supplies the same four cells as a two-way table. D6 and D10 are outside V6 observed_builds."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q36",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V3",
+      "scenario": "At an outdoor event, 48% of participants rent a bicycle, 30% rent a helmet, and 18% rent both a bicycle and a helmet. One participant is selected at random from all participants at the event.",
+      "prompt": "Given that the participant rents a bicycle, what is the probability that the participant rents a helmet?",
+      "choices": [
+        "0.180",
+        "0.300",
+        "0.375",
+        "0.480"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. The condition restricts the reference group to bicycle renters.",
+          "Divide the probability of renting both items by the probability of renting a bicycle: <span class=\"math\">P(helmet | bicycle) = 0.18/0.48 = 0.375.</span>",
+          "The overall helmet-rental rate, 0.30, is not the requested conditional probability."
+        ],
+        "warning": "The joint probability 0.18 uses all participants as the reference group. A conditional probability uses only the group named after given."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.18÷0.48",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "1",
+              "8",
+              "DIV",
+              "0",
+              "DOT",
+              "4",
+              "8",
+              "EXE"
+            ],
+            "entry": "0.18/0.48",
+            "mode": "result",
+            "input": "0.18/0.48",
+            "result": "0.375",
+            "exact": "3/8",
+            "note": "Divide the joint rental probability by the probability of the condition, renting a bicycle.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D3",
+          "KEY",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#17"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q37",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V5",
+      "scenario": "A science festival recorded whether each reservation was made online or at a desk and whether the visitor requested a reminder. The results for 150 reservations are shown in the table. One reservation is selected at random.",
+      "prompt": "Given that a reminder was requested, what is the probability that the reservation was made online?",
+      "choices": [
+        "54/90",
+        "54/150",
+        "54/70",
+        "90/150"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. The condition is that a reminder was requested. Use the reminder-requested column, whose total is 70.",
+          "There are 54 online reservations in that column, so the probability is 54/70, approximately 0.771.",
+          "Dividing by the online total of 90 would answer the reversed question: the probability of requesting a reminder given an online reservation."
+        ],
+        "warning": "The condition, not the first event mentioned in the scenario, determines the denominator."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Festival reservations",
+        "headers": [
+          "Method",
+          "Reminder requested",
+          "No reminder",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Online",
+            54,
+            36,
+            90
+          ],
+          [
+            "Desk",
+            16,
+            44,
+            60
+          ],
+          [
+            "Total",
+            70,
+            80,
+            150
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 54÷70",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "5",
+              "4",
+              "DIV",
+              "7",
+              "0",
+              "EXE"
+            ],
+            "entry": "54/70",
+            "mode": "result",
+            "input": "54/70",
+            "result": "0.7714285714",
+            "exact": "27/35",
+            "note": "The condition is reminder requested, so use the reminder column total.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D1",
+          "KEY",
+          "D4"
+        ],
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#5",
+            "SG_2.6#12",
+            "SG_2.6#15"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q38",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_from_equally_likely_outcomes",
+      "variant": "V1",
+      "scenario": "A board game uses two distinguishable fair six-sided number cubes, one red and one blue. The cubes are rolled independently, and the number on each cube is recorded. Each of the 36 ordered outcomes is equally likely.",
+      "prompt": "Given that <u>at least</u> one cube shows 6, what is the probability that the sum of the two numbers is 8?",
+      "choices": [
+        "2/36",
+        "5/36",
+        "1/6",
+        "2/11"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. The condition leaves 11 ordered outcomes: six with a red 6, six with a blue 6, with (6, 6) counted only once.",
+          "Among these 11 outcomes, only (6, 2) and (2, 6) have a sum of 8.",
+          "The conditional probability is 2/11. The full sample space of 36 outcomes is no longer the reference group."
+        ],
+        "warning": "Keep the cubes distinguishable. Treating the six unordered pairs as equally likely is incorrect because most represent two ordered outcomes, while (6, 6) represents only one."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 2÷11",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "DIV",
+              "1",
+              "1",
+              "EXE"
+            ],
+            "entry": "2/11",
+            "mode": "result",
+            "input": "2/11",
+            "result": "0.1818181818",
+            "exact": "2/11",
+            "note": "Enumerate the conditioned outcomes first: 2 favorable outcomes among 11 remaining outcomes.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D1",
+          "D2",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#4"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q39",
+      "lesson": "2.A.3",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V2",
+      "scenario": "At an adventure camp, each participant chooses exactly one activity, sailing or climbing, and attends exactly one session, morning or afternoon. Every activity-session combination has participants. For each participant, the activity and session are recorded. The resulting counts are shown in the table.",
+      "prompt": "For one randomly selected participant, which pair of events is mutually exclusive?",
+      "choices": [
+        "Choosing sailing and attending the morning session",
+        "Choosing climbing and attending the afternoon session",
+        "Attending the morning session and attending the afternoon session",
+        "Choosing sailing and attending the afternoon session"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. Mutually exclusive events cannot both occur for the same participant.",
+          "A participant attends exactly one session, so attending morning and attending afternoon have joint probability zero.",
+          "Each other pair combines an activity with a session and has a positive count in the table: 12, 16, or 18."
+        ],
+        "warning": "Categories from different variables can overlap. Two different categories of a variable that allows exactly one choice cannot overlap."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Camp activity selections",
+        "headers": [
+          "Activity",
+          "Morning",
+          "Afternoon",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Sailing",
+            12,
+            18,
+            30
+          ],
+          [
+            "Climbing",
+            24,
+            16,
+            40
+          ],
+          [
+            "Total",
+            36,
+            34,
+            70
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "reason": "A participant attends exactly one session. Morning and afternoon are therefore mutually exclusive. Read the other positive overlaps from the table."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "D6",
+          "KEY",
+          "D6"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.5#2"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q40",
+      "lesson": "2.A.3",
+      "archetype": "missing_information_for_probability",
+      "variant": "V2",
+      "scenario": "A subscription service reports that 52% of all subscribers renew their subscriptions. Among subscribers who originally enrolled online, 65% renew. The service does not report the proportion of subscribers who originally enrolled online. One subscriber is selected at random.",
+      "prompt": "Based on the information provided, what is the probability that the randomly selected subscriber enrolled online and renews the subscription?",
+      "choices": [
+        "0.130",
+        "0.338",
+        "0.800",
+        "The probability cannot be determined from the information given."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. To find the joint probability, multiply the proportion enrolled online by the renewal probability among online subscribers.",
+          "The required online-enrollment proportion is missing. The overall renewal rate, 0.52, does not supply that proportion.",
+          "For example, an online proportion of 0.40 gives a joint probability of 0.26, while an online proportion of 0.60 gives 0.39. Both can be consistent with an overall renewal rate of 0.52."
+        ],
+        "warning": "A percentage of a subgroup is conditional. Do not multiply it by an unrelated overall percentage to manufacture a joint probability."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "The online-enrollment proportion is missing. A calculator cannot find a unique joint probability from the reported renewal rates alone."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#16",
+            "SG_2.7#23"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q16",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V1",
+      "scenario": "At a community arts center, 35% of members take a ceramics class. Of the members who take ceramics, 60% submit a piece for the annual exhibition. One member is selected at random.",
+      "prompt": "What is the probability that the selected member takes ceramics and submits a piece for the exhibition?",
+      "choices": [
+        "0.21",
+        "0.25",
+        "0.60",
+        "0.95"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Let C mean taking ceramics and E mean submitting a piece. The information gives <span class=\"math\">P(C) = 0.35</span> and <span class=\"math\">P(E | C) = 0.60.</span>",
+          "Use the general multiplication rule: <span class=\"math\">P(C ∩ E) = P(C)P(E | C) = 0.35 × 0.60 = 0.21.</span>",
+          "The second factor is conditional. No assumption of independence is needed."
+        ],
+        "warning": "B subtracts the given probabilities. C returns only the conditional rate. D adds the probabilities instead of multiplying."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.35×0.60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "3",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.35*0.60",
+            "mode": "result",
+            "input": "0.35*0.60",
+            "result": "0.21",
+            "exact": "21/100",
+            "note": "Multiply the ceramics probability by the submission probability given ceramics.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "D3 is outside V1 observed_builds."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q17",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V4",
+      "scenario": "A bag contains 5 green tokens and 7 purple tokens. Two tokens are selected at random, one after the other, without replacement.",
+      "prompt": "Approximately what is the probability that both selected tokens are green?",
+      "choices": [
+        "0.139",
+        "0.152",
+        "0.174",
+        "0.417"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The probability the first token is green is <span class=\"math\">5/12.</span>",
+          "After a green token is removed, 4 green tokens remain among 11 tokens. Thus <span class=\"math\">P(second green | first green) = 4/11.</span>",
+          "<span class=\"math\">P(both green) = (5/12)(4/11) = 20/132 ≈ 0.152.</span>"
+        ],
+        "warning": "A reduces the green count but keeps 12 as the second denominator. C treats the draws as if the first token were replaced. D considers only the first draw."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (5÷12)×(4÷11)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "5",
+              "DIV",
+              "1",
+              "2",
+              "RP",
+              "MUL",
+              "LP",
+              "4",
+              "DIV",
+              "1",
+              "1",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(5/12)*(4/11)",
+            "mode": "result",
+            "input": "(5/12)*(4/11)",
+            "result": "0.1515151515",
+            "exact": "5/33",
+            "note": "Without replacement, both the green count and the total decrease for the second draw.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "KEY",
+          "D6",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q18",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V3",
+      "scenario": "Three sensors detect a passing vehicle independently of one another. Their detection probabilities are 0.80, 0.90, and 0.95, respectively.",
+      "prompt": "What is the probability that all three sensors detect a particular passing vehicle?",
+      "choices": [
+        "0.001",
+        "0.316",
+        "0.684",
+        "2.650"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "All three detections must occur. Because the sensors operate independently, multiply their detection probabilities.",
+          "<span class=\"math\">P(all detect) = 0.80 × 0.90 × 0.95 = 0.684.</span>"
+        ],
+        "warning": "A multiplies the failure probabilities. B is the probability that at least one sensor fails. D adds the probabilities and produces a value greater than 1."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.80×0.90×0.95",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "9",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "9",
+              "5",
+              "EXE"
+            ],
+            "entry": "0.80*0.90*0.95",
+            "mode": "result",
+            "input": "0.80*0.90*0.95",
+            "result": "0.684",
+            "exact": "171/250",
+            "note": "Multiply the three independent detection probabilities.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D7",
+          "D8",
+          "KEY",
+          "D6"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q19",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V1",
+      "scenario": "A small machine has a 0.20 probability of needing adjustment on any given day. Whether it needs adjustment is independent from day to day.",
+      "prompt": "What is the probability that the machine needs adjustment on <u>at least</u> one of the next three days?",
+      "choices": [
+        "0.384",
+        "0.488",
+        "0.512",
+        "0.992"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The complement of “at least one day” is <b>no days</b>. The probability of no adjustment on one day is <span class=\"math\">1 − 0.20 = 0.80.</span>",
+          "By independence, <span class=\"math\">P(no adjustments in three days) = 0.80³ = 0.512.</span>",
+          "Therefore, <span class=\"math\">P(at least one adjustment) = 1 − 0.512 = 0.488.</span>"
+        ],
+        "warning": "A gives exactly one day, missing cases with two or three. C gives no days. D subtracts the probability of adjustment on all three days, a different complement."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 1-0.8^3",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "8",
+              "POW",
+              "3",
+              "EXE"
+            ],
+            "entry": "1-0.8^3",
+            "mode": "result",
+            "input": "1-0.8^3",
+            "result": "0.488",
+            "exact": "61/125",
+            "note": "Subtract the probability of no adjustment on all three days. The exponent 3 is the last part of this entry.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "KEY",
+          "D1",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q20",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V1",
+      "scenario": "A parcel company sends 30% of parcels by Express and the rest by Standard. The on-time rate is 90% for Express parcels and 60% for Standard parcels. The tree summarizes the probabilities.",
+      "prompt": "What is the probability that a randomly selected parcel arrives on time?",
+      "choices": [
+        "0.27",
+        "0.60",
+        "0.69",
+        "0.90"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "There are two disjoint ways to arrive on time: Express and on time, or Standard and on time.",
+          "<span class=\"math\">P(Express and on time) = 0.30 × 0.90 = 0.27.<br>P(Standard and on time) = 0.70 × 0.60 = 0.42.</span>",
+          "Add the path probabilities: <span class=\"math\">P(on time) = 0.27 + 0.42 = 0.69.</span>"
+        ],
+        "warning": "A counts only the Express path. B and D each return one conditional on-time rate and ignore the other delivery method."
+      },
+      "stimulus": {
+        "type": "tree",
+        "caption": "Parcel delivery paths"
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.30×0.90+0.70×0.60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "9",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.30*0.90+0.70*0.60",
+            "mode": "result",
+            "input": "0.30*0.90+0.70*0.60",
+            "result": "0.69",
+            "exact": "69/100",
+            "note": "Multiply along each on-time path, then add the two path probabilities.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q41",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V6",
+      "scenario": "Two independent security checks inspect a package. The first check flags the package with probability 0.25, and the second check flags it with probability 0.40. A package may be flagged by neither check, by either check alone, or by both checks.",
+      "prompt": "What is the probability that exactly one of the two checks flags a particular package?",
+      "choices": [
+        "0.15",
+        "0.45",
+        "0.55",
+        "0.65"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. Exactly one consists of two disjoint paths: the first flags and the second does not, or the first does not flag and the second does.",
+          "The path probabilities are <span class=\"math\">0.25 × 0.60 = 0.15</span> and <span class=\"math\">0.75 × 0.40 = 0.30.</span>",
+          "Add the disjoint paths: <span class=\"math\">0.15 + 0.30 = 0.45.</span>"
+        ],
+        "warning": "Multiplying only one path omits a valid case. Adding the two flagging rates includes packages flagged by both checks."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.25×0.60+0.75×0.40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.25*0.60+0.75*0.40",
+            "mode": "result",
+            "input": "0.25*0.60+0.75*0.40",
+            "result": "0.45",
+            "exact": "9/20",
+            "note": "Add the two disjoint exactly-one paths. Each path uses independence.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D9",
+          "KEY",
+          "D8",
+          "D6"
+        ],
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.7#19",
+            "SG_2.7#22"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q42",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V4",
+      "scenario": "A craft bag contains 5 silver beads and 8 wooden beads. Two beads are selected at random, one after the other, without replacement. Each bead remaining in the bag is equally likely to be selected.",
+      "prompt": "What is the probability that both of the selected beads are silver beads?",
+      "choices": [
+        "20/156",
+        "20/169",
+        "25/169",
+        "5/13"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. The probability that the first bead is silver is 5/13.",
+          "After a silver bead is removed, 4 silver beads remain among 12 beads. The conditional probability for the second bead is 4/12.",
+          "Multiply along the path: <span class=\"math\">5/13 × 4/12 = 20/156.</span>"
+        ],
+        "warning": "Without replacement, both the silver count and the total decrease. Keeping 13 in the second denominator models the wrong process."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (5÷13)×(4÷12)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "5",
+              "DIV",
+              "1",
+              "3",
+              "RP",
+              "MUL",
+              "LP",
+              "4",
+              "DIV",
+              "1",
+              "2",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(5/13)*(4/12)",
+            "mode": "result",
+            "input": "(5/13)*(4/12)",
+            "result": "0.1282051282",
+            "exact": "5/39",
+            "note": "Without replacement, 4 silver beads remain among 12 after a silver bead is selected.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D6",
+          "D6",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#11"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q43",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V5",
+      "scenario": "At a music school, 40% of students play in the orchestra, and 55% attend the end-of-term concert. Among orchestra students, 80% attend the concert. One student is selected at random from the school.",
+      "prompt": "What is the probability that the selected student attends the concert and is <u>not</u> in the orchestra?",
+      "choices": [
+        "0.22",
+        "0.23",
+        "0.32",
+        "0.55"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Correct. First find the probability of both being in the orchestra and attending: <span class=\"math\">0.40 × 0.80 = 0.32.</span>",
+          "The concert attendees split into orchestra students and students outside the orchestra. These groups do not overlap.",
+          "Subtract the orchestra attendees from all attendees: <span class=\"math\">0.55 − 0.32 = 0.23.</span>"
+        ],
+        "warning": "Multiplying 0.40 by 0.55 assumes independence, which is not given. The conditional attendance rate must be used to find the overlap."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.55-0.40×0.80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "5",
+              "SUB",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.55-0.40*0.80",
+            "mode": "result",
+            "input": "0.55-0.40*0.80",
+            "result": "0.23",
+            "exact": "23/100",
+            "note": "Subtract orchestra concert attendees from all concert attendees.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D5",
+          "KEY",
+          "D4",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#9"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q44",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V1",
+      "scenario": "A restoration team obtains 25% of its seeds from Bank A and the remaining seeds from Bank B. The germination rate is 40% for Bank A seeds and 80% for Bank B seeds. One seed is selected at random from all seeds obtained.",
+      "prompt": "What is the probability that the randomly selected seed will germinate?",
+      "choices": [
+        "0.100",
+        "0.250",
+        "0.400",
+        "0.700"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. Use two disjoint paths: Bank A and germinates, or Bank B and germinates.",
+          "Their probabilities are <span class=\"math\">0.25 × 0.40 = 0.10</span> and <span class=\"math\">0.75 × 0.80 = 0.60.</span>",
+          "Add the paths to obtain <span class=\"math\">0.10 + 0.60 = 0.70.</span>"
+        ],
+        "warning": "The bank-specific germination rates must be weighted by how many seeds come from each bank. One branch alone does not account for all germinating seeds."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.25×0.40+0.75×0.80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.25*0.40+0.75*0.80",
+            "mode": "result",
+            "input": "0.25*0.40+0.75*0.80",
+            "result": "0.7",
+            "exact": "7/10",
+            "note": "Weight the germination rate within each bank, then add the disjoint paths.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D2",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          {
+            "representation": "Decimal options in place of the exemplar variant's percent options. The event logic is unchanged."
+          }
+        ],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#14",
+            "SG_2.7#21"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q45",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V2",
+      "scenario": "An event organizer tracks two events for a randomly selected subscriber: A is clicking a registration link, and B is completing registration. The organizer reports P(A ∩ B) = 0.24 and P(B | A) = 0.60.",
+      "prompt": "What is the probability that the randomly selected subscriber clicks the registration link?",
+      "choices": [
+        "0.144",
+        "0.360",
+        "0.400",
+        "0.840"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. The multiplication rule is <span class=\"math\">P(A ∩ B) = P(A) × P(B | A).</span>",
+          "Here, <span class=\"math\">0.24 = P(A) × 0.60.</span> Solve for the probability of the condition by dividing the joint probability by the conditional probability.",
+          "<span class=\"math\">P(A) = 0.24/0.60 = 0.40.</span>"
+        ],
+        "warning": "Multiplication finds the joint when a marginal and conditional are known. Here the joint is already known, so divide to recover the marginal."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.24÷0.60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "4",
+              "DIV",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.24/0.60",
+            "mode": "result",
+            "input": "0.24/0.60",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Recover the marginal probability by dividing the joint probability by the conditional rate.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.6#3"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q21",
+      "lesson": "2.A.5",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V1",
+      "scenario": "A workshop recorded whether each participant used a desktop or a laptop and whether the participant enabled automatic backups. The results are shown in the table. One participant is selected at random.",
+      "prompt": "Are device type and enabling automatic backups independent for this group?",
+      "choices": [
+        "No, because 18 desktop users enabled backups but only 12 laptop users did.",
+        "Yes, because the number enabling backups is the same for both device types.",
+        "No, because 30% of desktop users enabled backups and 70% did not.",
+        "Yes, because the proportion enabling backups is 0.30 for both device types."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Compare the probability of enabling backups within each device group.",
+          "<span class=\"math\">P(enabled | desktop) = 18/60 = 0.30.<br>P(enabled | laptop) = 12/40 = 0.30.</span>",
+          "The overall enabled proportion is also <span class=\"math\">30/100 = 0.30.</span> Knowing device type does not change the probability of enabling backups, so the events are independent for this group."
+        ],
+        "warning": "A compares counts instead of proportions. B claims equal counts, but 18 and 12 are different. C compares complementary outcomes within one device group."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Automatic backup settings",
+        "headers": [
+          "Device",
+          "Enabled",
+          "Not enabled",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Desktop",
+            18,
+            42,
+            60
+          ],
+          [
+            "Laptop",
+            12,
+            28,
+            40
+          ],
+          [
+            "Total",
+            30,
+            70,
+            100
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 18÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "18/60",
+            "mode": "result",
+            "input": "18/60",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Find the backup-enabled proportion among desktop users.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 12÷40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "2",
+              "DIV",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "12/40",
+            "mode": "result",
+            "input": "12/40",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Find the backup-enabled proportion among laptop users. Both proportions equal 0.30.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D1",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "V1 normally keys association; this trial uses equal conditional distributions to key independence."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q22",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V3",
+      "scenario": "At a language center, 50% of learners study Spanish and 40% study Japanese. Of the learners who study Spanish, 30% also study Japanese. One learner is selected at random.",
+      "prompt": "What is the probability that the learner studies Spanish or Japanese, or both?",
+      "choices": [
+        "0.62",
+        "0.70",
+        "0.75",
+        "0.90"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Let S mean Spanish and J mean Japanese. The 30% is conditional: <span class=\"math\">P(J | S) = 0.30.</span>",
+          "Find the overlap: <span class=\"math\">P(S ∩ J) = 0.50 × 0.30 = 0.15.</span>",
+          "Use the addition rule: <span class=\"math\">P(S ∪ J) = 0.50 + 0.40 − 0.15 = 0.75.</span> Subtracting the overlap prevents double counting."
+        ],
+        "warning": "A constructs the overlap from the wrong probabilities: 0.40 × 0.70. B assumes independence and subtracts 0.50 × 0.40. D does not subtract the overlap."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.50+0.40-0.50×0.30",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.50+0.40-0.50*0.30",
+            "mode": "result",
+            "input": "0.50+0.40-0.50*0.30",
+            "result": "0.75",
+            "exact": "3/4",
+            "note": "Use the conditional probability to find the overlap before subtracting it.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D6",
+          "D5",
+          "KEY",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q23",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V1",
+      "scenario": "Two independent navigation systems are tested on a route. System A loses its signal with probability 0.25, and system B loses its signal with probability 0.40.",
+      "prompt": "What is the probability that <u>at least</u> one of the systems loses its signal?",
+      "choices": [
+        "0.10",
+        "0.15",
+        "0.55",
+        "0.65"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "By independence, the probability both lose signal is <span class=\"math\">0.25 × 0.40 = 0.10.</span>",
+          "Use the addition rule for at least one: <span class=\"math\">0.25 + 0.40 − 0.10 = 0.55.</span>",
+          "Equivalently, subtract the probability neither loses signal: <span class=\"math\">1 − (0.75)(0.60) = 0.55.</span>"
+        ],
+        "warning": "A gives the intersection instead of the union. B subtracts the two probabilities. D adds them without correcting for overlap."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.25+0.40-0.25×0.40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.25+0.40-0.25*0.40",
+            "mode": "result",
+            "input": "0.25+0.40-0.25*0.40",
+            "result": "0.55",
+            "exact": "11/20",
+            "note": "Independence gives the overlap as the product. Subtract it from the sum.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D2",
+          "D4",
+          "KEY",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q24",
+      "lesson": "2.A.5",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V3",
+      "scenario": "A passenger buys exactly one type of ticket. The probability of buying a single-ride ticket is 0.30, and the probability of buying a day pass is 0.20. Let S and D be these two events.",
+      "prompt": "Which statement correctly describes S and D?",
+      "choices": [
+        "They are both mutually exclusive and independent.",
+        "They are neither mutually exclusive nor independent.",
+        "They are independent but not mutually exclusive.",
+        "They are mutually exclusive but not independent."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A passenger cannot buy both types in this transaction, so <span class=\"math\">P(S ∩ D) = 0.</span> The events are mutually exclusive.",
+          "Independence would require <span class=\"math\">P(S ∩ D) = P(S)P(D) = 0.30 × 0.20 = 0.06.</span>",
+          "Since <span class=\"math\">0 ≠ 0.06</span>, the events are not independent. Knowing that one occurred rules out the other."
+        ],
+        "warning": "Mutually exclusive means “cannot happen together.” Independent means “knowing one occurred does not change the probability of the other.” With both probabilities positive, these are different properties."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.30×0.20",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.30*0.20",
+            "mode": "result",
+            "input": "0.30*0.20",
+            "result": "0.06",
+            "exact": "3/50",
+            "note": "Independence would require an overlap of 0.06. The actual overlap is 0, so the events are not independent.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D1",
+          "D5",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "The V3 answer logic is used in the positive-probability, mutually exclusive direction; this direction is not evidenced by a separate observed variant."
+        ],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q25",
+      "lesson": "2.A.5",
+      "archetype": "missing_information_for_probability",
+      "variant": "V1",
+      "scenario": "Among visitors to a museum, 35% visit the sculpture gallery and 25% visit the photography gallery. No information about visitors who go to both galleries is given.",
+      "prompt": "What is the probability that a randomly selected visitor goes to the sculpture gallery or the photography gallery, or both?",
+      "choices": [
+        "0.4000",
+        "0.5125",
+        "0.6000",
+        "The probability cannot be determined from the information given."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The addition rule is <span class=\"math\">P(S ∪ P) = 0.35 + 0.25 − P(S ∩ P).</span>",
+          "The overlap is unknown. Neither independence nor mutual exclusivity is stated, so neither can be assumed.",
+          "For example, if the overlap is 0.10, the union is 0.50. If the overlap is 0.20, the union is 0.40. Both are consistent with the given marginals, so there is <b>no unique answer</b>."
+        ],
+        "warning": "A is the complement of the sum. B assumes independence. C assumes no overlap. Each needs information the question does not supply."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "The overlap is missing. No calculator command can determine a unique union probability from the two marginal probabilities alone."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D2",
+          "D1",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "q46",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V2",
+      "scenario": "For a randomly selected shipment, let A be the event that the shipment includes a tracking sensor and B the event that it receives a manual inspection. Events A and B are independent, P(A) = 0.40, and P(A ∩ B) = 0.12.",
+      "prompt": "Which of the following probability statements is correct for this randomly selected shipment?",
+      "choices": [
+        "P(B|A)=0.30.",
+        "P(A|B)=0.30.",
+        "P(B)=0.60.",
+        "P(A∪B)=0.70."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. Independence gives <span class=\"math\">P(A ∩ B) = P(A) × P(B).</span> Thus <span class=\"math\">P(B) = 0.12/0.40 = 0.30.</span>",
+          "Knowing that A occurs does not change the probability of B. Therefore, <span class=\"math\">P(B | A) = 0.30.</span>",
+          "The reversed conditional is 0.40, and the union is <span class=\"math\">0.40 + 0.30 − 0.12 = 0.58.</span>"
+        ],
+        "warning": "Independence makes each conditional equal to the marginal of the same event. It does not make both conditional probabilities equal to each other."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.12÷0.40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "DIV",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.12/0.40",
+            "mode": "result",
+            "input": "0.12/0.40",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Independence gives P(B) = 0.30, which also equals P(B given A).",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D7",
+          "D4",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.7#6",
+            "SG_2.7#15"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q47",
+      "lesson": "2.A.5",
+      "archetype": "use_independence_to_find_or_check_probability",
+      "variant": "V1",
+      "scenario": "For a randomly selected order, let A mean that the order includes gift wrapping and B mean that it includes a greeting card. The options give probabilities for three disjoint portions of the order population. A superscript c denotes the complement of an event.",
+      "prompt": "Which assignment of the three joint probabilities makes events A and B independent?",
+      "choices": [
+        "P(A∩Bᶜ)=0.21, P(A∩B)=0.09, P(Aᶜ∩B)=0.21",
+        "P(A∩Bᶜ)=0.20, P(A∩B)=0.10, P(Aᶜ∩B)=0.20",
+        "P(A∩Bᶜ)=0.25, P(A∩B)=0, P(Aᶜ∩B)=0.25",
+        "P(A∩Bᶜ)=0.10, P(A∩B)=0.20, P(Aᶜ∩B)=0.30"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. For each option, add the first two pieces to find the marginal probability of A and the last two to find the marginal probability of B.",
+          "In option A, both marginals are <span class=\"math\">0.21 + 0.09 = 0.30.</span> Their product is <span class=\"math\">0.30 × 0.30 = 0.09,</span> exactly the joint probability.",
+          "In B the product is 0.09, not 0.10. In C it is 0.0625, not zero. In D it is 0.15, not 0.20. Only A satisfies independence."
+        ],
+        "warning": "A zero overlap with two positive marginal probabilities indicates mutually exclusive, dependent events, not independent events."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (0.21+0.09)×(0.09+0.21)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "1",
+              "ADD",
+              "0",
+              "DOT",
+              "0",
+              "9",
+              "RP",
+              "MUL",
+              "LP",
+              "0",
+              "DOT",
+              "0",
+              "9",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "1",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(0.21+0.09)*(0.09+0.21)",
+            "mode": "result",
+            "input": "(0.21+0.09)*(0.09+0.21)",
+            "result": "0.09",
+            "exact": "9/100",
+            "note": "Option A: the marginal product is 0.09, matching its joint probability.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate (0.20+0.10)×(0.10+0.20)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "RP",
+              "MUL",
+              "LP",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(0.20+0.10)*(0.10+0.20)",
+            "mode": "result",
+            "input": "(0.20+0.10)*(0.10+0.20)",
+            "result": "0.09",
+            "exact": "9/100",
+            "note": "Option B: the product is 0.09, which differs from its joint probability 0.10.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate (0.25+0)×(0+0.25)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "ADD",
+              "0",
+              "RP",
+              "MUL",
+              "LP",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(0.25+0)*(0+0.25)",
+            "mode": "result",
+            "input": "(0.25+0)*(0+0.25)",
+            "result": "0.0625",
+            "exact": "1/16",
+            "note": "Option C: the product is 0.0625, not its joint probability zero.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate (0.10+0.20)×(0.20+0.30)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "RP",
+              "MUL",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(0.10+0.20)*(0.20+0.30)",
+            "mode": "result",
+            "input": "(0.10+0.20)*(0.20+0.30)",
+            "result": "0.15",
+            "exact": "3/20",
+            "note": "Option D: the product is 0.15, not its joint probability 0.20. Only A satisfies independence.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D1"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.7#16"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q48",
+      "lesson": "2.A.5",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V4",
+      "scenario": "At an arts fair, 55% of visitors buy a print, 40% buy a card, and 75% buy a print or a card, or both. One visitor is selected at random from all visitors to the fair during its opening afternoon.",
+      "prompt": "What is the probability that the selected visitor buys both a print and a card?",
+      "choices": [
+        "0.20",
+        "0.22",
+        "0.75",
+        "0.95"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Correct. The sum of the two individual purchase probabilities counts visitors who buy both items twice.",
+          "Rearrange the addition rule to find the overlap: <span class=\"math\">P(print ∩ card) = 0.55 + 0.40 − 0.75 = 0.20.</span>",
+          "Independence is not stated, so the product of the two purchase rates need not equal the overlap."
+        ],
+        "warning": "The union includes either purchase. The intersection includes both purchases and must not be confused with their sum."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.55+0.40-0.75",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "5",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "EXE"
+            ],
+            "entry": "0.55+0.40-0.75",
+            "mode": "result",
+            "input": "0.55+0.40-0.75",
+            "result": "0.2",
+            "exact": "1/5",
+            "note": "Rearrange the addition rule to recover the joint purchase probability.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D8",
+          "D2",
+          "D2"
+        ],
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.5#6",
+            "SG_2.5#7",
+            "SG_2.7#13"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q49",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V1",
+      "scenario": "A production process has two independent alarms. For a particular fault, the first alarm sounds with probability 0.70, and the second alarm sounds with probability 0.50. A technician wants the fault to be signaled by at least one alarm.",
+      "prompt": "What is the probability that <u>at least</u> one of the two alarms sounds for this fault?",
+      "choices": [
+        "0.20",
+        "0.35",
+        "0.70",
+        "0.85"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Correct. Because the alarms are independent, the probability that both sound is <span class=\"math\">0.70 × 0.50 = 0.35.</span>",
+          "Apply the addition rule: <span class=\"math\">0.70 + 0.50 − 0.35 = 0.85.</span>",
+          "Equivalently, neither sounds with probability <span class=\"math\">0.30 × 0.50 = 0.15,</span> whose complement is 0.85."
+        ],
+        "warning": "Adding the two alarm probabilities alone double-counts the case when both sound. Their product answers both, rather than at least one."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.70+0.50-0.70×0.50",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.70+0.50-0.70*0.50",
+            "mode": "result",
+            "input": "0.70+0.50-0.70*0.50",
+            "result": "0.85",
+            "exact": "17/20",
+            "note": "Independence supplies the overlap to subtract from the sum.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D4",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.7#8",
+            "SG_2.7#26"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        }
+      }
+    },
+    {
+      "id": "q50",
+      "lesson": "2.A.5",
+      "archetype": "value_for_no_association",
+      "variant": "V3",
+      "scenario": "A neighborhood association has 300 members: 100 live in apartments, and 200 live in houses. Of the apartment residents, 60 attend the annual cleanup. Suppose that residence type and cleanup attendance are independent for association members.",
+      "prompt": "Under this independence condition, how many of the house residents attend the annual cleanup?",
+      "choices": [
+        "40",
+        "80",
+        "120",
+        "150"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Correct. Among apartment residents, the cleanup attendance proportion is <span class=\"math\">60/100 = 0.60.</span>",
+          "Independence requires this same attendance proportion among house residents.",
+          "Therefore, <span class=\"math\">200 × 0.60 = 120</span> house residents attend the cleanup."
+        ],
+        "warning": "The two groups have different sizes, so equal proportions do not require equal counts. Apply the attendance proportion, rather than its complement, to the house group."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 200×(60÷100)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "0",
+              "0",
+              "MUL",
+              "LP",
+              "6",
+              "0",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "200*(60/100)",
+            "mode": "result",
+            "input": "200*(60/100)",
+            "result": "120",
+            "exact": "120",
+            "note": "Independence requires the same attendance proportion in both residence groups.",
+            "decimal_tip": true
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": [
+          "D5",
+          "D6",
+          "KEY",
+          "D3"
+        ],
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [],
+        "sourceReview": {
+          "single_key": "Checked against answer logic; exact computation or explicit truth checks are in verify_questions.py.",
+          "calculator": "Computed screen values; screen-level steps per Ben's later instruction."
+        },
+        "original": {
+          "basis": "New item generated from built archetype and topic profile, not copied from an AP source item.",
+          "card_exemplars": [
+            "SG_2.7#4"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        }
+      }
+    }
+  ]
+}

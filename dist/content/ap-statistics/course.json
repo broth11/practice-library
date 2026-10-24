@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ap-statistics",
+  "title": "AP Statistics",
+  "units": [
+    {
+      "id": "2-a",
+      "title": "Unit 2.A",
+      "description": "Categorical data & probability",
+      "questionCount": 50,
+      "lessonCount": 5,
+      "source": "content/ap-statistics/units/2-a.json"
+    },
+    {
+      "id": "2-b",
+      "title": "Unit 2.B",
+      "description": "Random variables, normal models & sampling",
+      "questionCount": 50,
+      "lessonCount": 5,
+      "source": "content/ap-statistics/units/2-b.json"
+    }
+  ]
+}

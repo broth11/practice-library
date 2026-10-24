@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://practice-library.local/schemas/question.schema.json",
+  "title": "Practice Library question",
+  "type": "object",
+  "required": ["id", "lesson", "archetype", "scenario", "prompt", "choices", "answer", "solution"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+    "lesson": { "type": "string" },
+    "archetype": { "type": "string" },
+    "variant": { "type": ["string", "null"] },
+    "scenario": { "type": "string" },
+    "prompt": { "type": "string" },
+    "choices": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "string" } },
+    "answer": { "enum": ["A", "B", "C", "D"] },
+    "stimulus": { "type": ["object", "null"] },
+    "solutionStimulus": { "type": ["object", "null"] },
+    "solution": {
+      "type": "object",
+      "required": ["steps", "warning"],
+      "properties": {
+        "steps": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "warning": { "type": "string", "minLength": 1 }
+      }
+    },
+    "calculator": { "type": "object" },
+    "provenance": { "type": "object" }
+  }
+}

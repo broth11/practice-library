@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Original statistics practice with worked solutions and fx-CG50 walkthroughs.">
+  <title>Practice Library</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+</head>
+<body>
+  <a class="sr-only skip-link" href="#practice">Skip to question</a>
+  <div class="app" id="practice-app">
+    <aside class="sidebar" aria-label="Practice navigation">
+      <div class="route-rail" id="route-rail" role="tablist" aria-label="Practice library" aria-orientation="vertical"></div>
+      <div class="route-content" id="route-content"></div>
+    </aside>
+    <main class="main" id="practice">
+      <header class="workspace-header">
+        <div class="breadcrumb" id="breadcrumb"></div>
+        <h2 id="section-title"></h2>
+      </header>
+      <div class="workspace with-solution" id="workspace">
+        <div class="question-area" id="question-area"></div>
+        <aside class="drawer" id="solution-drawer" aria-label="Solution workspace" data-revealed="false">
+          <div class="solution-shell" id="solution-shell" hidden>
+            <header class="drawer-header">
+              <div><span class="eyebrow">Solution &amp; explanation</span><h2 id="solution-title" tabindex="-1"></h2></div>
+              <button class="close-drawer" id="close-drawer" aria-label="Close solution" type="button">×</button>
+            </header>
+            <div class="solution-tabs" role="tablist" aria-label="Solution views">
+              <button type="button" class="solution-tab" role="tab" data-view="explanation" aria-selected="true">Explanation</button>
+              <button type="button" class="solution-tab" role="tab" data-view="calculator" aria-selected="false">fx-CG50 keys</button>
+            </div>
+            <div id="explanation-panels" class="explanation-panels" role="tabpanel"></div>
+            <div id="calculator-view" class="calculator-view" role="tabpanel" hidden></div>
+          </div>
+        </aside>
+      </div>
+      <footer class="pager">
+        <button class="arrow-button" id="previous" type="button"><span class="arrow" aria-hidden="true">←</span> Back</button>
+        <div class="page-info"><b id="page-position" aria-live="polite"></b><span class="page-hint">Try first. Reveal when ready. · ← → to move</span></div>
+        <button class="arrow-button" id="next" type="button"><span id="next-label">Next</span><span class="arrow" aria-hidden="true">→</span></button>
+      </footer>
+      <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <p class="welcome-eyebrow" id="welcome-eyebrow">A little practice. A deeper understanding.</p>
+          <h1 id="welcome-title">Welcome to the <br>Practice Library</h1>
+          <h2 id="welcome-prompt">What would you like to practice today?</h2>
+          <p id="welcome-direction">Choose a course from the sidebar, then explore its units and lessons.</p>
+          <div class="welcome-note"><p>Try each question at your own pace. When you’re ready, open the solution for a worked explanation and step-by-step Casio calculator keypresses where helpful.</p></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <noscript>This practice workspace requires JavaScript.</noscript>
+  <script src="katex.min.js"></script>
+  <script type="module" src="app/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "id": "ap-statistics",
+      "title": "AP Statistics",
+      "description": "Original AP-style practice with worked solutions and fx-CG50 walkthroughs.",
+      "manifest": "content/ap-statistics/course.json"
+    }
+  ]
+}

@@ -1,13 +1,33 @@
 # Practice Library
 
-Buildless practice site with Courses, Units, and Questions navigation. Unit 2.A and Unit 2.B each contain five lessons and 50 questions.
+Practice Library is a static single-page application whose courses, units, lessons, and questions are authored as modular JSON. The browser first loads the small catalog, then the selected course manifest, then only the selected unit.
 
-Fresh visits show a text-only welcome screen with no course, unit, or lesson preselected. Course and unit selections show the next selection prompt; question and solution controls appear only after choosing a lesson.
+## Project structure
 
-`dist/index.html` retains the original Unit 2.A questions and calculator interface. `dist/unit2b.js` holds the original Unit 2.B questions, solutions, and calculator guides; `dist/navigation.js` manages the course, unit, and lesson route.
+- `src/content/catalog.json` — list of courses
+- `src/content/<course>/course.json` — unit manifest for a course
+- `src/content/<course>/units/*.json` — independently loadable unit modules
+- `src/app/` — reusable navigation, question, stimulus, math, and calculator renderers
+- `src/assets/` — diagrams and calculator artwork
+- `src/schemas/` — portable JSON schemas for authored content
+- `.claude/skills/practice-library-question-author/` — the complete Claude authoring method
+- `dist/` — generated static site deployed by Sites
 
-Unit 2.B follows the STS 2.B.1–2.B.5 handout scope and uses the AP Question Archetypes task patterns and misconception-based distractors. New questions and diagram assets are original rather than copies of source examples.
+## Commands
 
-Regenerate the 26 SVG probability diagrams with `node scripts/build-diagrams.mjs`. The static hosting directory is `dist`.
+```sh
+npm run check
+npm run build
+npm run preview
+npm run export:github -- releases/practice-library.tar.gz
+```
 
-`dist/math-typography.js` renders Unit 2.B expressions with bundled KaTeX 0.16.25 at the surrounding text size. Fractions use full-size numerators and denominators, including existing Unit 2.A answer choices. Answers default to a 2×2 arrangement across both units, with one column for long choices or narrow screens. Run `node scripts/check-content.mjs` and `node scripts/check-math.mjs` before publishing.
+No install step or framework is required. Node 20+ is used only for validation, building, previewing, and export. The deployed site remains a static SPA and can be hosted by Sites, GitHub Pages, or any static host.
+
+## Add content
+
+1. Add a unit JSON file under the appropriate course's `units/` directory.
+2. Add its metadata and source path to the course manifest.
+3. Run `npm run check` and `npm run build`.
+
+For a new course, add its manifest and units, then register the course in `src/content/catalog.json`. Follow the bundled Claude skill for question-authoring and review rules.

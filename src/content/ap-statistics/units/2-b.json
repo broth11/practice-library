@@ -1,0 +1,3051 @@
+{
+  "schemaVersion": 1,
+  "id": "2-b",
+  "code": "2.B",
+  "title": "Unit 2.B",
+  "description": "Random variables, normal models & sampling",
+  "reviewStatus": "AI and tool verified; no recorded human sign-off.",
+  "lessons": [
+    {
+      "id": "2.B.1",
+      "title": "Discrete Random Variables",
+      "intro": "Build probability distributions and interpret expected value, variance, and standard deviation.",
+      "cedTopics": [
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "id": "2.B.2",
+      "title": "The Binomial Distribution",
+      "intro": "Check the conditions, translate the event, and calculate binomial probabilities and summaries.",
+      "cedTopics": [
+        "2.10"
+      ]
+    },
+    {
+      "id": "2.B.3",
+      "title": "The Empirical Rule & Standard Normal Curve",
+      "intro": "Connect continuous probability, normal curves, standard scores, and the 68–95–99.7 rule.",
+      "cedTopics": [
+        "2.11"
+      ]
+    },
+    {
+      "id": "2.B.4",
+      "title": "Normal Calculations",
+      "intro": "Find normal probabilities, percentile cutoffs, and missing parameters.",
+      "cedTopics": [
+        "2.11"
+      ]
+    },
+    {
+      "id": "2.B.5",
+      "title": "Intro to Sampling Distributions",
+      "intro": "Distinguish populations, samples, and sampling distributions; explain simulation and the central limit theorem.",
+      "cedTopics": [
+        "2.12"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "b01",
+      "lesson": "2.B.1",
+      "archetype": "discrete_or_continuous_variable",
+      "variant": null,
+      "scenario": "A recreation center records four quantities for a randomly selected day.",
+      "prompt": "Which quantity is a discrete random variable?",
+      "choices": [
+        "The number of court reservations canceled",
+        "The time until the first visitor arrives",
+        "The volume of drinking water used",
+        "The total mass of lost property"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "A discrete variable has a countable set of possible values.",
+          "The number of canceled reservations is a count: 0, 1, 2, and so on.",
+          "Mass, elapsed time, and volume are measurements modeled as continuous."
+        ],
+        "warning": "A quantity reported with a number can still be continuous. Counts and measurements are different."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b02",
+      "lesson": "2.B.1",
+      "archetype": "valid_probability_distribution",
+      "variant": null,
+      "scenario": "A machine issues a coupon worth $0, $2, or $5. The probabilities of the first two values are 0.45 and 0.35.",
+      "prompt": "What probability must be assigned to the $5 coupon?",
+      "choices": [
+        "0.10",
+        "0.20",
+        "0.35",
+        "0.80"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A probability distribution must have probabilities between 0 and 1 whose sum is 1.",
+          "The missing probability is 1 − 0.45 − 0.35 = 0.20."
+        ],
+        "warning": "The probabilities, rather than the dollar values, must add to 1."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "4",
+              "5",
+              "SUB",
+              "0",
+              "DOT",
+              "3",
+              "5",
+              "EXE"
+            ],
+            "entry": "1-0.45-0.35",
+            "mode": "result",
+            "input": "1-0.45-0.35",
+            "result": "0.2",
+            "note": "The remaining probability completes the distribution."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b03",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "Let X be the number of repair calls a technician receives on a randomly selected day. The probability distribution is shown.",
+      "prompt": "What is the expected number of calls per day?",
+      "choices": [
+        "1.50",
+        "1.55",
+        "2.00",
+        "6.00"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Weight each number of calls by its probability.",
+          "E(X) = 0(0.15) + 1(0.35) + 2(0.30) + 3(0.20) = 1.55 calls.",
+          "Over many days, the average number of calls per day approaches 1.55."
+        ],
+        "warning": "The unweighted mean of the four possible counts is 1.50; it ignores how often each count occurs."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b03-discrete.svg",
+        "alt": "Bar chart: P(X = 0) = 0.15, P(X = 1) = 0.35, P(X = 2) = 0.30, P(X = 3) = 0.20.",
+        "caption": "Each bar represents the probability of one count."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "5",
+              "ADD",
+              "1",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "5",
+              "ADD",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "ADD",
+              "3",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "EXE"
+            ],
+            "entry": "0*0.15+1*0.35+2*0.30+3*0.20",
+            "mode": "result",
+            "input": "0*0.15+1*0.35+2*0.30+3*0.20",
+            "result": "1.55",
+            "note": "Multiply each outcome by its probability, then add."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b04",
+      "lesson": "2.B.1",
+      "archetype": "interpret_mean_of_random_variable",
+      "variant": null,
+      "scenario": "A shuttle company models the number of empty seats on a trip by a random variable X with E(X) = 2.4 seats.",
+      "prompt": "Which statement correctly interprets this mean?",
+      "choices": [
+        "Over many trips, the average number of empty seats per trip is about 2.4.",
+        "There is a 24% chance of an empty seat on the next trip.",
+        "Every trip has exactly 2.4 empty seats.",
+        "On each trip, the empty-seat count is 2.4 seats away from its mean."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Expected value describes an average over many repetitions of the chance process.",
+          "Here the repetitions are shuttle trips and the variable is the number of empty seats.",
+          "The long-run average is about 2.4 empty seats per trip, even though a single trip has a whole-number count."
+        ],
+        "warning": "An expected count need not be a possible individual outcome."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b05",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "A scratch card costs $4. Its prize distribution is shown. Let G be the player’s net gain, including the cost of the card.",
+      "prompt": "What is E(G), in dollars?",
+      "choices": [
+        "−1.00",
+        "0.00",
+        "3.00",
+        "7.00"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The expected prize is 0(0.70) + 5(0.20) + 20(0.10) = $3.",
+          "Subtract the $4 cost on every play: E(G) = 3 − 4 = −$1.",
+          "A player loses an average of $1 per card over many plays."
+        ],
+        "warning": "The expected prize is not the expected net gain. The cost also applies when the prize is zero."
+      },
+      "stimulus": {
+        "type": "html",
+        "html": "<div class=\"table-scroll\"><table><caption>Prize from a scratch card</caption><thead><tr><th scope=\"col\">Prize ($)</th><th scope=\"col\">0</th><th scope=\"col\">5</th><th scope=\"col\">20</th></tr></thead><tbody><tr><th scope=\"row\">Probability</th><td>0.70</td><td>0.20</td><td>0.10</td></tr></tbody></table></div>"
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "ADD",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "ADD",
+              "2",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "SUB",
+              "4",
+              "EXE"
+            ],
+            "entry": "0*0.70+5*0.20+20*0.10-4",
+            "mode": "result",
+            "input": "0*0.70+5*0.20+20*0.10-4",
+            "result": "-1",
+            "note": "Subtract the cost after calculating the expected prize."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b06",
+      "lesson": "2.B.1",
+      "archetype": "standard_deviation_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "X is the number of packages returned to a small store in a day. Its mean is 1.4 packages.",
+      "prompt": "Which value is closest to the standard deviation of X?",
+      "choices": [
+        "1.02",
+        "1.04",
+        "1.12",
+        "1.29"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Compute the weighted sum of squared deviations.",
+          "Var(X) = 1.96(0.20) + 0.16(0.40) + 0.36(0.20) + 2.56(0.20) = 1.04.",
+          "SD(X) = √1.04 ≈ 1.02 packages."
+        ],
+        "warning": "The variance, 1.04, is in squared packages. Take its square root for standard deviation."
+      },
+      "stimulus": {
+        "type": "html",
+        "html": "<div class=\"table-scroll\"><table><caption>Packages returned in one day; μ = 1.4 packages</caption><thead><tr><th scope=\"col\">x</th><th scope=\"col\">0</th><th scope=\"col\">1</th><th scope=\"col\">2</th><th scope=\"col\">3</th></tr></thead><tbody><tr><th scope=\"row\">P(X = x)</th><td>0.20</td><td>0.40</td><td>0.20</td><td>0.20</td></tr><tr><th scope=\"row\">(x − μ)²</th><td>1.96</td><td>0.16</td><td>0.36</td><td>2.56</td></tr></tbody></table></div>"
+      },
+      "solutionStimulus": {
+        "type": "image",
+        "src": "assets/b06-discrete.svg",
+        "alt": "Discrete probability bars for counts 0, 1, 2, 3 with probabilities 0.20, 0.40, 0.20, 0.20.",
+        "caption": ""
+      },
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "1",
+              "DOT",
+              "0",
+              "4",
+              "POW",
+              "0",
+              "DOT",
+              "5",
+              "EXE"
+            ],
+            "entry": "1.04^0.5",
+            "mode": "result",
+            "input": "1.04^0.5",
+            "result": "1.019803903",
+            "note": "Take the square root of the weighted variance."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b07",
+      "lesson": "2.B.1",
+      "archetype": "interpret_standard_deviation_of_random_variable",
+      "variant": null,
+      "scenario": "The daily number of deliveries has mean 18 deliveries and standard deviation 3 deliveries.",
+      "prompt": "Which statement correctly interprets the standard deviation?",
+      "choices": [
+        "Daily delivery counts typically differ from the mean of 18 by about 3 deliveries.",
+        "The average number of deliveries is 3 per day.",
+        "Every day has exactly 15 or exactly 21 deliveries.",
+        "The mean for any sample of days is exactly 3 deliveries away from 18."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Standard deviation describes the typical distance of individual values from the mean.",
+          "Here the individual values are daily delivery counts.",
+          "Their typical distance from 18 deliveries is about 3 deliveries."
+        ],
+        "warning": "Standard deviation describes variability; it is not a guarantee about every day or a mean."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b08",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "A game pays $12 with probability 0.25 and $0 otherwise. A player pays a fixed entry fee c.",
+      "prompt": "What fee makes the player’s expected net gain equal to zero?",
+      "choices": [
+        "$0.25",
+        "$3.00",
+        "$9.00",
+        "$12.00"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The expected prize is 12(0.25) + 0(0.75) = $3.",
+          "Expected net gain is 3 − c.",
+          "Set 3 − c = 0, giving c = $3."
+        ],
+        "warning": "A fair fee equals the expected prize, rather than the largest prize."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "1",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "EXE"
+            ],
+            "entry": "12*0.25",
+            "mode": "result",
+            "input": "12*0.25",
+            "result": "3",
+            "note": "This is the expected prize and therefore the fair entry fee."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b09",
+      "lesson": "2.B.1",
+      "archetype": "proportion_in_interval_from_cumulative_table",
+      "variant": null,
+      "scenario": "The cumulative distribution for a kiosk’s daily number X of refunds is shown.",
+      "prompt": "What is P(1 < X ≤ 3)?",
+      "choices": [
+        "0.20",
+        "0.30",
+        "0.40",
+        "0.85"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The desired event contains X = 2 and X = 3.",
+          "Subtract the cumulative probability through 1 from the cumulative probability through 3.",
+          "P(1 < X ≤ 3) = 0.85 − 0.45 = 0.40."
+        ],
+        "warning": "Do not subtract P(X ≤ 0): that would incorrectly include X = 1."
+      },
+      "stimulus": {
+        "type": "html",
+        "html": "<div class=\"table-scroll\"><table><caption>Cumulative refund probabilities</caption><thead><tr><th scope=\"col\">x</th><th scope=\"col\">0</th><th scope=\"col\">1</th><th scope=\"col\">2</th><th scope=\"col\">3</th><th scope=\"col\">4</th></tr></thead><tbody><tr><th scope=\"row\">P(X ≤ x)</th><td>0.20</td><td>0.45</td><td>0.70</td><td>0.85</td><td>1.00</td></tr></tbody></table></div>"
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "8",
+              "5",
+              "SUB",
+              "0",
+              "DOT",
+              "4",
+              "5",
+              "EXE"
+            ],
+            "entry": "0.85-0.45",
+            "mode": "result",
+            "input": "0.85-0.45",
+            "result": "0.4",
+            "note": "Subtract the lower cumulative total from the upper cumulative total."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b10",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "The number X of souvenir badges sold by a volunteer in an hour takes values 0, 1, and k, with probabilities 0.20, 0.50, and 0.30. The expected number sold is 1.7.",
+      "prompt": "What is k?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Use the weighted mean: 0(0.20) + 1(0.50) + k(0.30) = 1.7.",
+          "Solve 0.50 + 0.30k = 1.7.",
+          "k = (1.7 − 0.50)/0.30 = 4."
+        ],
+        "warning": "The outcomes are not equally likely, so their unweighted average is not the expected value."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "DOT",
+              "7",
+              "SUB",
+              "0",
+              "DOT",
+              "5",
+              "RP",
+              "DIV",
+              "0",
+              "DOT",
+              "3",
+              "EXE"
+            ],
+            "entry": "(1.7-0.5)/0.3",
+            "mode": "result",
+            "input": "(1.7-0.5)/0.3",
+            "result": "4",
+            "note": "Solve the expected-value equation for the unknown outcome."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b11",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_setting",
+      "variant": null,
+      "scenario": "In each situation, X is the quantity described.",
+      "prompt": "Which situation makes X a binomial random variable?",
+      "choices": [
+        "Ten independent serves, each with success probability 0.70; X is the total flight time.",
+        "Ten independent serves, each with success probability 0.70; X counts successful serves.",
+        "Serve until the first success; X counts the number of serves.",
+        "Ten serves with success probabilities increasing after each serve; X counts successes."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A binomial variable counts successes in a fixed number of independent trials with the same success probability.",
+          "The first described setting has n = 10, p = 0.70, two outcomes on each trial, and X counts successes.",
+          "The other settings lack a fixed trial count, constant probability, or a success-count variable."
+        ],
+        "warning": "Randomness alone does not make a variable binomial. Check what X counts."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b12",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_setting",
+      "variant": null,
+      "scenario": "A box contains 8 blue and 4 yellow tokens. Five tokens are drawn at random without replacement. X counts the blue tokens drawn.",
+      "prompt": "Why is the exact distribution of X not binomial?",
+      "choices": [
+        "The draws are dependent and the probability of blue changes after each draw.",
+        "The number of blue tokens in the sample is not stated.",
+        "Five is fewer than 30.",
+        "There are more than two tokens in the box."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "A binomial model requires independent trials with a constant success probability.",
+          "Without replacement, the remaining mix changes after a token is drawn.",
+          "Sampling 5 of only 12 tokens is too large a fraction to treat this dependence as negligible."
+        ],
+        "warning": "A sample size of 30 is not a binomial condition."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b13",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_quantity_meaning",
+      "variant": null,
+      "scenario": "A seed germinates with probability 0.60. Eight seeds are planted independently.",
+      "prompt": "What does C(8, 3)(0.60)³(0.40)⁵ represent?",
+      "choices": [
+        "The probability that exactly three of the eight seeds germinate.",
+        "The probability that at most three seeds germinate.",
+        "The probability that the first three seeds germinate, regardless of the others.",
+        "The expected number of seeds that germinate."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The binomial coefficient counts which three of the eight seeds germinate.",
+          "The product (0.60)³(0.40)⁵ gives the probability of one specified arrangement with three successes and five failures.",
+          "Multiplying gives P(X = 3), the probability of exactly three germinations."
+        ],
+        "warning": "At most three would require adding probabilities for 0, 1, 2, and 3 germinations."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b14",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "Each of 10 independently inspected components has probability 0.20 of failing a stress test. Let X count the failed components.",
+      "prompt": "What is P(X = 3), approximately?",
+      "choices": [
+        "0.0017",
+        "0.2013",
+        "0.7987",
+        "0.8791"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "X follows a binomial distribution with n = 10 and p = 0.20.",
+          "P(X = 3) = C(10, 3)(0.20)³(0.80)⁷.",
+          "The probability is approximately 0.2013."
+        ],
+        "warning": "The binomial coefficient accounts for all arrangements of the three failed components."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b14-binomial.svg",
+        "alt": "Binomial probability plot with n = 10 and p = 0.20. Only the bar at 3 is shaded.",
+        "caption": "Exactly 3: one probability bar."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Binomial PD",
+          "fields": [
+            [
+              "x",
+              3
+            ],
+            [
+              "Numtrial",
+              10
+            ],
+            [
+              "p",
+              0.2
+            ]
+          ],
+          "result": "0.2013",
+          "extra": "The bounds are inclusive whole-number counts."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b15",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "A text-message link is opened with probability 0.30, independently for each of 8 recipients. X counts the recipients who open it.",
+      "prompt": "What is the probability that at most two recipients open the link?",
+      "choices": [
+        "0.2553",
+        "0.2965",
+        "0.4482",
+        "0.5518"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "At most two means X ≤ 2, including 0, 1, and 2.",
+          "Use X ~ Binomial(n = 8, p = 0.30).",
+          "P(X ≤ 2) = P(X = 0) + P(X = 1) + P(X = 2) ≈ 0.5518."
+        ],
+        "warning": "Exactly two and fewer than two are different events."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b15-binomial.svg",
+        "alt": "Binomial probability plot with n = 8 and p = 0.30. Bars 0, 1, and 2 are shaded.",
+        "caption": "At most 2: include 0, 1, and 2."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Binomial CD",
+          "fields": [
+            [
+              "Lower",
+              0
+            ],
+            [
+              "Upper",
+              2
+            ],
+            [
+              "Numtrial",
+              8
+            ],
+            [
+              "p",
+              0.3
+            ]
+          ],
+          "result": "0.5518",
+          "extra": "The bounds are inclusive whole-number counts."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b16",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "A player wins each of 12 independent rounds with probability 0.25. X is the total number of wins.",
+      "prompt": "What is P(X ≥ 4), approximately?",
+      "choices": [
+        "0.1576",
+        "0.1936",
+        "0.3512",
+        "0.6488"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "At least four means 4 through 12 wins, inclusive.",
+          "The complementary event is X ≤ 3.",
+          "P(X ≥ 4) = 1 − P(X ≤ 3) ≈ 0.3512."
+        ],
+        "warning": "Using 1 − P(X ≤ 4) excludes four wins and answers more than four."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b16-binomial.svg",
+        "alt": "Binomial probability plot with n = 12 and p = 0.25. Bars 4 through 12 are shaded.",
+        "caption": "At least 4: include the boundary count."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Binomial CD",
+          "fields": [
+            [
+              "Lower",
+              4
+            ],
+            [
+              "Upper",
+              12
+            ],
+            [
+              "Numtrial",
+              12
+            ],
+            [
+              "p",
+              0.25
+            ]
+          ],
+          "result": "0.3512",
+          "extra": "The bounds are inclusive whole-number counts."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b17",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "A sensor correctly detects an object with probability 0.40 on each of 10 independent tests. X counts the correct detections.",
+      "prompt": "What is the probability of fewer than four correct detections?",
+      "choices": [
+        "0.2508",
+        "0.3669",
+        "0.3823",
+        "0.6331"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Fewer than four means X < 4. Since X is a count, this is X ≤ 3.",
+          "Use X ~ Binomial(n = 10, p = 0.40).",
+          "P(X < 4) = P(X ≤ 3) ≈ 0.3823."
+        ],
+        "warning": "A strict inequality requires moving the integer boundary by one."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b17-binomial.svg",
+        "alt": "Binomial probability plot with n = 10 and p = 0.40. Bars 0 through 3 are shaded.",
+        "caption": "Fewer than 4: the bar at 4 is excluded."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Binomial CD",
+          "fields": [
+            [
+              "Lower",
+              0
+            ],
+            [
+              "Upper",
+              3
+            ],
+            [
+              "Numtrial",
+              10
+            ],
+            [
+              "p",
+              0.4
+            ]
+          ],
+          "result": "0.3823",
+          "extra": "The bounds are inclusive whole-number counts."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b18",
+      "lesson": "2.B.2",
+      "archetype": "interpret_mean_of_random_variable",
+      "variant": null,
+      "scenario": "A service request is resolved on the first call with probability 0.65, independently for each of 40 requests. X counts first-call resolutions.",
+      "prompt": "What is the mean of X, and how should it be interpreted?",
+      "choices": [
+        "26; over many groups of 40 requests, the average count resolved on the first call is about 26.",
+        "26; every group of 40 requests contains exactly 26 first-call resolutions.",
+        "0.65; the average count resolved in a group of 40 requests is 0.65.",
+        "14; the average count resolved on the first call is about 14."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "For a binomial count, μ = np = 40(0.65) = 26.",
+          "This is a long-run average count over many groups of 40 requests.",
+          "A particular group can have more or fewer than 26 first-call resolutions."
+        ],
+        "warning": "Do not confuse the one-request probability with the mean count in 40 requests."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "5",
+              "EXE"
+            ],
+            "entry": "40*0.65",
+            "mode": "result",
+            "input": "40*0.65",
+            "result": "26",
+            "note": "Multiply the fixed number of trials by the success probability."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b19",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_quantity_meaning",
+      "variant": null,
+      "scenario": "X counts successes in 60 independent trials, each with success probability 0.40.",
+      "prompt": "Which value is closest to the standard deviation of X?",
+      "choices": [
+        "3.79",
+        "4.90",
+        "14.40",
+        "24.00"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "For a binomial count, σ = √[np(1 − p)].",
+          "σ = √[60(0.40)(0.60)] = √14.4 ≈ 3.79 successes."
+        ],
+        "warning": "np = 24 is the mean; np(1 − p) = 14.4 is the variance."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "LP",
+              "6",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "4",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "RP",
+              "POW",
+              "0",
+              "DOT",
+              "5",
+              "EXE"
+            ],
+            "entry": "(60*0.4*0.6)^0.5",
+            "mode": "result",
+            "input": "(60*0.4*0.6)^0.5",
+            "result": "3.794733192",
+            "note": "Use the binomial standard-deviation formula."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b20",
+      "lesson": "2.B.2",
+      "archetype": "most_or_least_likely_binomial_value",
+      "variant": null,
+      "scenario": "A quality-control alarm detects each faulty item with probability 0.90, independently. X counts the detections among 6 faulty items.",
+      "prompt": "Which listed value of X is least likely?",
+      "choices": [
+        "0",
+        "1",
+        "5",
+        "6"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "X ~ Binomial(n = 6, p = 0.90), so counts near 6 are much more likely than counts near 0.",
+          "P(X = 0) = (0.10)⁶ = 0.000001.",
+          "The probabilities for 1, 5, and 6 detections are 0.000054, 0.354294, and 0.531441, respectively."
+        ],
+        "warning": "The most extreme listed value relative to the likely high count is zero, not six."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b20-binomial.svg",
+        "alt": "Binomial probability plot with n = 6 and p = 0.90. All probabilities are shown on the same vertical scale.",
+        "caption": "Very small probabilities may be difficult to see at this scale."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "1",
+              "POW",
+              "6",
+              "EXE"
+            ],
+            "entry": "0.1^6",
+            "mode": "result",
+            "input": "0.1^6",
+            "result": "0.000001",
+            "note": "All six faulty items must go undetected."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b21",
+      "lesson": "2.B.3",
+      "archetype": "discrete_or_continuous_variable",
+      "variant": null,
+      "scenario": "A researcher records several quantities during a day at a greenhouse.",
+      "prompt": "Which variable is best modeled as continuous?",
+      "choices": [
+        "The number of cracked pots",
+        "The elapsed time until a pump stops",
+        "The number of seeds in a packet",
+        "The number of plants that flower"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Elapsed time is a measurement that can take any value in an interval.",
+          "The other quantities are counts with discrete possible values."
+        ],
+        "warning": "The phrase number of minutes would still describe measured time, rather than a count of objects."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b22",
+      "lesson": "2.B.3",
+      "archetype": "probability_of_single_value_continuous",
+      "variant": null,
+      "scenario": "The fill volume X of a bottle is modeled by a normal distribution with mean 500 mL and standard deviation 4 mL.",
+      "prompt": "Which probability is zero under this continuous model?",
+      "choices": [
+        "P(X = 500)",
+        "P(X < 500)",
+        "P(496 < X < 504)",
+        "P(X > 512)"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "For a continuous variable, probability is area under a density curve over an interval.",
+          "A single exact value has zero width and therefore zero area.",
+          "P(X = 500) = 0, even though 500 is the mean. The other regions have positive width and positive area."
+        ],
+        "warning": "A very small tail probability is still positive in a normal model."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b23",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "The mass of a certain fruit is approximately normal with mean 180 g and standard deviation 12 g.",
+      "prompt": "Using the empirical rule, approximately what percent of fruits weigh between 168 g and 192 g?",
+      "choices": [
+        "16%",
+        "34%",
+        "68%",
+        "95%"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The endpoints are 180 − 12 and 180 + 12: one standard deviation on each side of the mean.",
+          "The empirical rule places approximately 68% within one standard deviation."
+        ],
+        "warning": "34% describes only one half of this central interval."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b23-normal.svg",
+        "alt": "Normal curve with mean 180 g and standard deviation 12 g; the interval from 168 to 192 g is shaded.",
+        "caption": "The shaded region is the event in the question."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b24",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "Battery lifetimes are approximately normal with mean 40 hours and standard deviation 3 hours.",
+      "prompt": "Using the empirical rule, approximately what percent last more than 46 hours?",
+      "choices": [
+        "2.5%",
+        "5%",
+        "47.5%",
+        "95%"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "46 = 40 + 2(3), so the boundary is two standard deviations above the mean.",
+          "Approximately 95% lie within two standard deviations, leaving 5% in both tails.",
+          "By symmetry the upper tail is approximately 5%/2 = 2.5%."
+        ],
+        "warning": "The remaining 5% is split between two tails."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b24-normal.svg",
+        "alt": "Normal curve with mean 40 hours and standard deviation 3 hours; the tail above 46 hours is shaded.",
+        "caption": "One upper tail is shaded."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b25",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "Flight durations on a route are approximately normal with mean 100 minutes and standard deviation 8 minutes.",
+      "prompt": "Using the empirical rule, approximately what percent last at least 92 minutes?",
+      "choices": [
+        "16%",
+        "32%",
+        "68%",
+        "84%"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "92 minutes is one standard deviation below the mean.",
+          "Approximately 16% lie below μ − σ.",
+          "The area above that boundary is approximately 100% − 16% = 84%."
+        ],
+        "warning": "The direction matters: above a below-mean cutoff includes more than half the distribution."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b25-normal.svg",
+        "alt": "Normal curve with mean 100 minutes and standard deviation 8 minutes; all values above 92 minutes are shaded.",
+        "caption": "The shaded region starts below the mean."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b26",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "A normally distributed measurement has approximately 95% of its values in the central interval from 42 cm to 66 cm.",
+      "prompt": "What is the approximate standard deviation?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A central 95% interval extends approximately two standard deviations on each side of the mean.",
+          "Its full width is therefore approximately 4σ.",
+          "σ ≈ (66 − 42)/4 = 6 cm."
+        ],
+        "warning": "The full interval spans four standard deviations, not two."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b26-normal.svg",
+        "alt": "Normal curve with the central 95 percent shaded between 42 and 66 cm. The standard deviation is not labeled.",
+        "caption": "The middle 95% leaves equal tails."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "LP",
+              "6",
+              "6",
+              "SUB",
+              "4",
+              "2",
+              "RP",
+              "DIV",
+              "4",
+              "EXE"
+            ],
+            "entry": "(66-42)/4",
+            "mode": "result",
+            "input": "(66-42)/4",
+            "result": "6",
+            "note": "A central 95% interval is about four standard deviations wide."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b27",
+      "lesson": "2.B.3",
+      "archetype": "z_score_calculation",
+      "variant": null,
+      "scenario": "Test scores have mean 72 points and standard deviation 8 points. A student scores 60 points.",
+      "prompt": "What is the student’s z-score?",
+      "choices": [
+        "−1.50",
+        "−0.67",
+        "0.67",
+        "1.50"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Use z = (x − μ)/σ.",
+          "z = (60 − 72)/8 = −1.50.",
+          "The score is 1.5 standard deviations below the mean."
+        ],
+        "warning": "A score below the mean must have a negative z-score."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "LP",
+              "6",
+              "0",
+              "SUB",
+              "7",
+              "2",
+              "RP",
+              "DIV",
+              "8",
+              "EXE"
+            ],
+            "entry": "(60-72)/8",
+            "mode": "result",
+            "input": "(60-72)/8",
+            "result": "-1.5",
+            "note": "Subtract the mean before dividing by the standard deviation."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b28",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "Z follows the standard normal distribution.",
+      "prompt": "Using the empirical rule, what is P(−1 < Z < 2), approximately?",
+      "choices": [
+        "0.475",
+        "0.680",
+        "0.815",
+        "0.950"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "From z = −1 to 0, the area is approximately 0.34.",
+          "From 0 to z = 2, the area is approximately 0.95/2 = 0.475.",
+          "Add the disjoint regions: 0.34 + 0.475 = 0.815."
+        ],
+        "warning": "The interval is not symmetric about zero. Split it at the mean."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b28-normal.svg",
+        "alt": "Standard normal curve with the interval from z = −1 to z = 2 shaded.",
+        "caption": "Split the shaded region at the mean if helpful."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b29",
+      "lesson": "2.B.3",
+      "archetype": "normal_distribution_shape",
+      "variant": null,
+      "scenario": "Two normal models have the same mean, 50, but model A has standard deviation 4 and model B has standard deviation 10.",
+      "prompt": "Which comparison is correct?",
+      "choices": [
+        "B is taller and narrower than A; each curve has total area 1.",
+        "A has a greater total area because its peak is taller.",
+        "B has a greater total area because it is wider.",
+        "A is taller and narrower than B; each curve has total area 1."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The smaller standard deviation concentrates the same total probability closer to the mean.",
+          "Model A is narrower and has a higher peak than model B.",
+          "Every probability density curve has total area 1."
+        ],
+        "warning": "Curve height is density, not total probability."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b29-normal-comparison.svg",
+        "alt": "Two normal curves centered at 50. Curve A is solid with standard deviation 4; curve B is dashed with standard deviation 10.",
+        "caption": "Compare shape, height, and total area."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b30",
+      "lesson": "2.B.3",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "The finishing times of a running event are approximately normal with mean 54 minutes and standard deviation 6 minutes.",
+      "prompt": "Using the empirical rule, which time is approximately the 16th percentile?",
+      "choices": [
+        "42",
+        "48",
+        "60",
+        "66"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "About 16% of a normal distribution lies below μ − σ.",
+          "The 16th-percentile time is approximately 54 − 6 = 48 minutes."
+        ],
+        "warning": "A lower percentile corresponds to a time below the mean."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b30-normal.svg",
+        "alt": "Normal curve with mean 54 minutes and standard deviation 6 minutes. The lower 16 percent ends at an unknown cutoff c.",
+        "caption": "Find the cutoff labeled c."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b31",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "The waiting time X for a laboratory result is approximately normal with mean 50 hours and standard deviation 8 hours.",
+      "prompt": "What is P(X < 44), approximately?",
+      "choices": [
+        "0.2266",
+        "0.2734",
+        "0.4533",
+        "0.7734"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Standardize the boundary: z = (44 − 50)/8 = −0.75.",
+          "The required region is the lower tail.",
+          "P(X < 44) = P(Z < −0.75) ≈ 0.2266."
+        ],
+        "warning": "0.7734 is the probability above 44 hours; 0.2734 is only the area between 44 and the mean."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b31-normal.svg",
+        "alt": "Normal curve with mean 50 hours and standard deviation 8 hours, with the area below 44 hours shaded.",
+        "caption": "Lower-tail probability."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              "−1 × 10⁹⁹"
+            ],
+            [
+              "Upper",
+              44
+            ],
+            [
+              "σ",
+              8
+            ],
+            [
+              "μ",
+              50
+            ]
+          ],
+          "result": "0.2266",
+          "extra": "For an unbounded tail, the very large bound approximates infinity."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b32",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "The length of a metal rod is approximately normal with mean 50 cm and standard deviation 8 cm.",
+      "prompt": "What proportion of rods are longer than 60 cm?",
+      "choices": [
+        "0.1056",
+        "0.2113",
+        "0.3944",
+        "0.8944"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The cutoff has z = (60 − 50)/8 = 1.25.",
+          "Longer than 60 cm is the upper tail.",
+          "P(X > 60) = 1 − Φ(1.25) ≈ 0.1056."
+        ],
+        "warning": "A cumulative area to the left must be complemented for an upper-tail question."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b32-normal.svg",
+        "alt": "Normal curve with mean 50 cm and standard deviation 8 cm, with the area above 60 cm shaded.",
+        "caption": "Upper-tail probability."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              60
+            ],
+            [
+              "Upper",
+              "1 × 10⁹⁹"
+            ],
+            [
+              "σ",
+              8
+            ],
+            [
+              "μ",
+              50
+            ]
+          ],
+          "result": "0.1056",
+          "extra": "For an unbounded tail, the very large bound approximates infinity."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b33",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "Daily travel times are approximately normal with mean 30 minutes and standard deviation 5 minutes.",
+      "prompt": "What proportion of travel times are between 25 and 38 minutes?",
+      "choices": [
+        "0.0548",
+        "0.1587",
+        "0.7865",
+        "0.9452"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The lower and upper z-scores are (25 − 30)/5 = −1 and (38 − 30)/5 = 1.6.",
+          "Find the cumulative area through the upper endpoint and subtract the area through the lower endpoint.",
+          "P(25 < X < 38) = Φ(1.6) − Φ(−1) ≈ 0.7865."
+        ],
+        "warning": "Using only one endpoint includes values outside the requested interval."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b33-normal.svg",
+        "alt": "Normal curve with mean 30 minutes and standard deviation 5 minutes; the interval from 25 to 38 minutes is shaded.",
+        "caption": "Probability between two values."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              25
+            ],
+            [
+              "Upper",
+              38
+            ],
+            [
+              "σ",
+              5
+            ],
+            [
+              "μ",
+              30
+            ]
+          ],
+          "result": "0.7865",
+          "extra": "For an unbounded tail, the very large bound approximates infinity."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b34",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "A machine produces rings with diameters approximately normal with mean 20 mm and standard deviation 0.4 mm. A ring is rejected if its diameter is below 19.6 mm or above 20.8 mm.",
+      "prompt": "Approximately what proportion of rings are rejected?",
+      "choices": [
+        "0.0228",
+        "0.1587",
+        "0.1814",
+        "0.8186"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The rejection boundaries have z-scores −1 and 2.",
+          "Rejection occurs in either of two disjoint tails.",
+          "P(reject) = Φ(−1) + 1 − Φ(2) ≈ 0.1587 + 0.0228 = 0.1814."
+        ],
+        "warning": "The central interval represents accepted rings, not rejected rings."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b34-normal.svg",
+        "alt": "Normal curve with mean 20 mm and standard deviation 0.4 mm; both tails outside 19.6 to 20.8 mm are shaded.",
+        "caption": "Rejection occurs in either shaded tail."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "First calculation: Lower",
+              "−1 × 10⁹⁹"
+            ],
+            [
+              "Upper",
+              19.6
+            ],
+            [
+              "σ",
+              0.4
+            ],
+            [
+              "μ",
+              20
+            ]
+          ],
+          "result": "0.1587 + 0.0228 ≈ 0.1814",
+          "extra": "Repeat with Lower = 20.8 and Upper = 1 × 10⁹⁹ to find 0.0228, then add the two tail probabilities."
+        },
+        "followUps": [
+          {
+            "type": "distribution",
+            "name": "Normal CD",
+            "fields": [
+              [
+                "Lower",
+                20.8
+              ],
+              [
+                "Upper",
+                "1 × 10⁹⁹"
+              ],
+              [
+                "σ",
+                0.4
+              ],
+              [
+                "μ",
+                20
+              ]
+            ]
+          },
+          {
+            "type": "arithmetic",
+            "operation": "add",
+            "values": [
+              "$first",
+              "$previous"
+            ],
+            "entry": "$first+$previous",
+            "note": "Add the disjoint tail probabilities."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b35",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "A delivery distance is approximately normal with mean 80 km and standard deviation 12 km.",
+      "prompt": "Which distance is closest to the 90th percentile?",
+      "choices": [
+        "64.62",
+        "81.28",
+        "90.80",
+        "95.38"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The 90th percentile has 0.90 of the distribution to its left.",
+          "Its standard normal value is z ≈ 1.2816.",
+          "x = μ + zσ = 80 + 1.2816(12) ≈ 95.38 km."
+        ],
+        "warning": "0.90 is an area, not a z-score. Multiplying 12 by 0.90 gives the wrong cutoff."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b35-normal.svg",
+        "alt": "Normal curve with mean 80 km and standard deviation 12 km. The area to the left of an unknown cutoff c is 0.90.",
+        "caption": "Find the cutoff, rather than an area."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.9
+            ],
+            [
+              "σ",
+              12
+            ],
+            [
+              "μ",
+              80
+            ]
+          ],
+          "result": "95.38",
+          "extra": "Area is the proportion to the left of the required cutoff."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b36",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "Completion times are approximately normal with mean 120 seconds and standard deviation 15 seconds.",
+      "prompt": "What time marks the cutoff for the fastest 5% of completions?",
+      "choices": [
+        "95.33",
+        "118.36",
+        "121.64",
+        "144.67"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Faster means a smaller completion time, so use the lower 5% of the distribution.",
+          "The fifth percentile has z ≈ −1.6449.",
+          "x = 120 − 1.6449(15) ≈ 95.33 seconds."
+        ],
+        "warning": "The slowest 5% are in the upper tail, but the fastest 5% are in the lower tail."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b36-normal.svg",
+        "alt": "Normal curve with mean 120 seconds and standard deviation 15 seconds. The area below an unknown cutoff c is 0.05.",
+        "caption": "Fastest means the smallest completion times."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.05
+            ],
+            [
+              "σ",
+              15
+            ],
+            [
+              "μ",
+              120
+            ]
+          ],
+          "result": "95.33",
+          "extra": "Area is the proportion to the left of the required cutoff."
+        }
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b37",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "Package masses are approximately normal with mean 1000 g and standard deviation 20 g.",
+      "prompt": "Which interval contains the middle 80%, approximately?",
+      "choices": [
+        "974.37 to 1025.63",
+        "980.00 to 1020.00",
+        "983.17 to 1016.83",
+        "967.10 to 1032.90"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The middle 80% leaves 10% in each tail.",
+          "The endpoints are the 10th and 90th percentiles, with z ≈ ±1.2816.",
+          "1000 ± 1.2816(20) gives approximately 974.37 g to 1025.63 g."
+        ],
+        "warning": "Using the 80th percentile as the upper endpoint does not produce a central 80% interval."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b37-normal.svg",
+        "alt": "Normal curve with mean 1000 g and standard deviation 20 g. The middle 80 percent is shaded between unknown cutoffs a and b.",
+        "caption": "Find both endpoints."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "First cutoff: Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.1
+            ],
+            [
+              "σ",
+              20
+            ],
+            [
+              "μ",
+              1000
+            ]
+          ],
+          "result": "974.37 g and 1025.63 g",
+          "extra": "Calculate once with Area = 0.10 and again with Area = 0.90."
+        },
+        "followUps": [
+          {
+            "type": "distribution",
+            "name": "Inverse Normal",
+            "fields": [
+              [
+                "Tail",
+                "Left"
+              ],
+              [
+                "Area",
+                0.9
+              ],
+              [
+                "σ",
+                20
+              ],
+              [
+                "μ",
+                1000
+              ]
+            ]
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b38",
+      "lesson": "2.B.4",
+      "archetype": "normal_parameter_from_percentile",
+      "variant": null,
+      "scenario": "A normal distribution has standard deviation 5 cm. Its 10th percentile is 42 cm.",
+      "prompt": "Which value is closest to its mean?",
+      "choices": [
+        "35.59",
+        "41.50",
+        "42.00",
+        "48.41"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The 10th percentile has z ≈ −1.2816.",
+          "Use x = μ + zσ: 42 = μ − 1.2816(5).",
+          "Therefore μ = 42 + 6.408 ≈ 48.41 cm."
+        ],
+        "warning": "The 10th percentile lies below the mean. A proposed mean below 42 cm has the wrong direction."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b38-normal.svg",
+        "alt": "Normal curve with unknown mean μ and standard deviation 5 cm. The area below 42 cm is 0.10.",
+        "caption": "The 10th percentile lies below the unknown mean."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.1
+            ],
+            [
+              "σ",
+              1
+            ],
+            [
+              "μ",
+              0
+            ]
+          ],
+          "result": "z ≈ −1.2816; μ ≈ 48.41 cm",
+          "extra": "Find the standard normal z-score first. Then solve μ = 42 − z(5)."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "subtractProduct",
+            "values": [
+              42,
+              "$first",
+              5
+            ],
+            "entry": "42-($first)*5",
+            "note": "Solve for the mean."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b39",
+      "lesson": "2.B.4",
+      "archetype": "normal_parameter_from_percentile",
+      "variant": null,
+      "scenario": "The mean of a normal distribution is 75 points. Its 90th percentile is 84 points.",
+      "prompt": "Which equation can be used to find its standard deviation σ?",
+      "choices": [
+        "1.2816 = (84 − 75)/σ",
+        "0.90 = (84 − 75)/σ",
+        "−1.2816 = (84 − 75)/σ",
+        "1.2816 = (84 − 75)/σ²"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The 90th-percentile z-score is approximately 1.2816.",
+          "Standardizing gives z = (x − μ)/σ.",
+          "Substitute: 1.2816 = (84 − 75)/σ, so σ ≈ 7.02 points."
+        ],
+        "warning": "The denominator of a z-score is the standard deviation, not the variance."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b39-normal.svg",
+        "alt": "Normal curve with mean 75 points and unknown standard deviation. The area below 84 points is 0.90.",
+        "caption": "Connect the percentile to its standard normal value."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.9
+            ],
+            [
+              "σ",
+              1
+            ],
+            [
+              "μ",
+              0
+            ]
+          ],
+          "result": "z ≈ 1.2816; σ ≈ 7.02",
+          "extra": "After finding z, calculate (84 − 75)/z."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "divide",
+            "values": [
+              9,
+              "$first"
+            ],
+            "entry": "(84-75)/$first",
+            "note": "Solve for the standard deviation."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b40",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "The mass of a parcel is approximately normal with mean 2.0 kg and standard deviation 0.3 kg. A shipment contains 800 parcels from this process.",
+      "prompt": "Approximately how many parcels are expected to weigh more than 2.45 kg?",
+      "choices": [
+        "27",
+        "53",
+        "107",
+        "747"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The boundary has z = (2.45 − 2.0)/0.3 = 1.5.",
+          "The upper-tail probability is approximately 0.06681.",
+          "The expected count is 800(0.06681) ≈ 53 parcels."
+        ],
+        "warning": "The question asks for an expected count, not just the probability for one parcel."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b40-normal.svg",
+        "alt": "Normal curve with mean 2 kg and standard deviation 0.3 kg, with the upper tail above 2.45 kg shaded.",
+        "caption": "Convert this probability to an expected count."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              2.45
+            ],
+            [
+              "Upper",
+              "1 × 10⁹⁹"
+            ],
+            [
+              "σ",
+              0.3
+            ],
+            [
+              "μ",
+              2
+            ]
+          ],
+          "result": "p ≈ 0.066807; 800p ≈ 53.45",
+          "extra": "Keep the unrounded probability before multiplying by 800."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "multiply",
+            "values": [
+              "$first",
+              800
+            ],
+            "entry": "$first*800",
+            "note": "Convert the probability to an expected count."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b41",
+      "lesson": "2.B.5",
+      "archetype": "identify_population_and_sample",
+      "variant": null,
+      "scenario": "A city has 12,000 households. A researcher selects a random sample of 80 households and records their monthly water use.",
+      "prompt": "What are the population and sample?",
+      "choices": [
+        "Population: the 80 selected households; sample: all 12,000 households.",
+        "Population: the city mean water use; sample: the sample mean water use.",
+        "Population: all possible sample means; sample: one household’s water use.",
+        "Population: all 12,000 households; sample: the 80 selected households."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The population is the entire group the researcher wants to learn about.",
+          "The sample is the subset actually selected and measured.",
+          "Here they are all 12,000 households and the 80 selected households, respectively."
+        ],
+        "warning": "Parameters and statistics are numerical summaries, rather than the groups of households."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b42",
+      "lesson": "2.B.5",
+      "archetype": "statistic_from_description",
+      "variant": null,
+      "scenario": "A warehouse’s true mean packing time is μ = 18 minutes. A random sample of 50 orders has mean packing time x̄ = 19.2 minutes.",
+      "prompt": "Which statement is correct?",
+      "choices": [
+        "18 is a statistic and 19.2 is a parameter.",
+        "Both values are parameters because both are means.",
+        "18 is a parameter and 19.2 is a statistic.",
+        "Both values are statistics because packing times vary."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A parameter summarizes the population; a statistic summarizes a sample.",
+          "The true mean for all warehouse orders, μ = 18, is a parameter.",
+          "The mean from the 50 sampled orders, x̄ = 19.2, is a statistic."
+        ],
+        "warning": "Whether a number is a parameter or statistic depends on the group it summarizes."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b43",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_definition",
+      "variant": null,
+      "scenario": "A computer repeatedly takes independent random samples of 25 buses from a large population and calculates the mean delay for each sample.",
+      "prompt": "A histogram of the 2,000 sample means approximates which distribution?",
+      "choices": [
+        "The sampling distribution of mean delay for samples of size 25.",
+        "The delays of all individual buses in the population.",
+        "The delays of the 25 buses in the first sample.",
+        "The sampling distribution of mean delay for samples of size 2,000."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Each plotted value is a mean calculated from one sample of 25 buses.",
+          "A distribution of a statistic across repeated samples is a sampling distribution.",
+          "The sample size is 25; 2,000 is the number of repetitions used to approximate the distribution."
+        ],
+        "warning": "Do not confuse the number of simulated samples with the size of each sample."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b44",
+      "lesson": "2.B.5",
+      "archetype": "central_limit_theorem_statement",
+      "variant": null,
+      "scenario": "A large population of transaction amounts is moderately right-skewed with finite mean and standard deviation. Independent random samples of 100 transactions are selected.",
+      "prompt": "Which conclusion is justified by the central limit theorem?",
+      "choices": [
+        "The distribution of sample mean transaction amounts is approximately normal because each sample is large.",
+        "Every sample mean must equal the population mean.",
+        "The transaction amounts in every sample will be approximately normal.",
+        "The population of transaction amounts becomes approximately normal."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The central limit theorem concerns the sampling distribution of a sample mean.",
+          "For a sufficiently large random sample, that distribution is approximately normal even when the population is not normal.",
+          "Here n = 100 is large for the stated moderately skewed population."
+        ],
+        "warning": "The theorem does not make individual observations or the population normal."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b45",
+      "lesson": "2.B.5",
+      "archetype": "reason_sampling_distribution_not_normal",
+      "variant": null,
+      "scenario": "A population of purchase amounts is strongly right-skewed. A simulation takes independent random samples of 4 purchases and plots their means. The simulated distribution remains right-skewed.",
+      "prompt": "What best explains this result?",
+      "choices": [
+        "The sample means must all be below the population mean.",
+        "A sampling distribution is normal only if at least 4,000 samples are simulated.",
+        "Random selection forces a sampling distribution to be uniform.",
+        "The sample size is too small to expect the central limit theorem to remove the strong skewness."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The population is strongly skewed and the sample size is only 4.",
+          "A small sample mean can retain substantial skewness from the population.",
+          "More simulation repetitions reveal the shape more clearly; they do not change the underlying sampling distribution."
+        ],
+        "warning": "A sample-size rule of thumb is not a guarantee, especially for severe skewness."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b46",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_shape",
+      "variant": null,
+      "scenario": "Individual carton masses follow a normal distribution. Independent random samples of 6 cartons are taken.",
+      "prompt": "What is the shape of the sampling distribution of x̄?",
+      "choices": [
+        "Normal, because a mean of independent normal observations is normal even when n is small.",
+        "Not normal, because 6 is less than 30.",
+        "Right-skewed, because masses cannot be negative.",
+        "Uniform, because the samples are selected randomly."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "When the population is normal, the sampling distribution of the sample mean is normal for any sample size.",
+          "The n ≥ 30 guideline is used when normality must be justified from a non-normal population."
+        ],
+        "warning": "A small sample size does not prevent normal sample means when the population itself is normal."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b47",
+      "lesson": "2.B.5",
+      "archetype": "sample_size_effect_on_sampling_distribution",
+      "variant": null,
+      "scenario": "Simulation A takes 2,000 independent random samples of size 10 from a population. Simulation B takes 500 independent random samples of size 80 from the same population. Both record sample means.",
+      "prompt": "How should the centers and variability compare?",
+      "choices": [
+        "The centers and variability must both be identical.",
+        "The centers are about equal, and B has less variability.",
+        "The centers are about equal, and A has less variability because it uses more repetitions.",
+        "B has a larger center and less variability."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Sample means are centered at the same population mean regardless of the sample size.",
+          "A mean from 80 observations varies less from sample to sample than a mean from 10 observations.",
+          "The number of simulation repetitions affects how smooth the display looks, rather than the theoretical spread."
+        ],
+        "warning": "Distinguish the observations per sample from the number of simulated samples."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b48",
+      "lesson": "2.B.5",
+      "archetype": "probability_from_simulation_results",
+      "variant": null,
+      "scenario": "Assuming a claimed population mean of 15 minutes, a computer simulates 1,000 random samples of 40 service times. The histogram shows the resulting sample means, with frequency counts above the bars. An actual random sample of 40 has mean 16.2 minutes.",
+      "prompt": "What is the estimated probability of a sample mean at least as large as the observed mean, assuming the claim is true?",
+      "choices": [
+        "0.028",
+        "0.280",
+        "0.700",
+        "0.972"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The event is a simulated sample mean of at least 16.2 minutes.",
+          "The shaded bars have frequencies 20 and 8, giving 28 results among 1,000 repetitions.",
+          "Estimated probability = 28/1000 = 0.028."
+        ],
+        "warning": "This is a probability of a sample statistic assuming the claim, not the probability that the claim is true."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b48-simulation.svg",
+        "alt": "Histogram of 1,000 simulated sample means. Interval frequencies from 13.8 to 17.0 minutes in steps of 0.4 are 65, 180, 290, 260, 125, 52, 20, 8.",
+        "caption": "The shaded bars contain means of at least 16.2 minutes."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "2",
+              "8",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "28/1000",
+            "mode": "result",
+            "input": "28/1000",
+            "result": "0.028",
+            "note": "Use the number of simulated results in the requested tail over all repetitions."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b49",
+      "lesson": "2.B.5",
+      "archetype": "simulation_based_claim_evaluation",
+      "variant": null,
+      "scenario": "A school claims that its population mean journey time is 25 minutes. Under that claim, 300 of 500 simulated means from random samples of size 40 are at least as large as an observed sample mean of 24.8 minutes.",
+      "prompt": "What is the best conclusion from this comparison?",
+      "choices": [
+        "The observed mean is not unusual under the claim, so this comparison gives little evidence against the claim.",
+        "The observed mean disproves the claim because it differs from 25 minutes.",
+        "The probability that the claim is true is exactly 300/500.",
+        "The observed mean proves that the population mean is 25 minutes."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Under the claimed model, the estimated upper-tail probability is 300/500 = 0.60.",
+          "An observed mean at least this large is common in the simulation.",
+          "The result gives little evidence against the claim, but does not prove the claim true."
+        ],
+        "warning": "Sampling variability permits a sample mean to differ from the population mean."
+      },
+      "stimulus": null,
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": false,
+        "reason": "Use the definition and reasoning in the explanation; no calculator is needed."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    },
+    {
+      "id": "b50",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_exact_small_population",
+      "variant": null,
+      "scenario": "A population consists of four values: 2, 4, 6, and 8. Every unordered sample of size 2 without replacement is equally likely.",
+      "prompt": "What is the probability that the sample mean is at least 6?",
+      "choices": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "There are six equally likely samples: (2,4), (2,6), (2,8), (4,6), (4,8), and (6,8).",
+          "Their sample means are 3, 4, 5, 5, 6, and 7.",
+          "Two of the six means are at least 6, so the probability is 2/6 = 1/3."
+        ],
+        "warning": "Sample means are not equally likely as distinct values: 5 arises from two different samples."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b50-sampling.svg",
+        "alt": "Dotplot of the six equally likely sample means: 3, 4, 5, 5, 6, and 7.",
+        "caption": "Each dot represents one sample, including repeated sample means."
+      },
+      "solutionStimulus": null,
+      "calculator": {
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Choose Run-Matrix for an arithmetic calculation."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Press 1 to open Run-Matrix."
+          },
+          {
+            "title": "Evaluate the expression",
+            "keys": [
+              "AC",
+              "2",
+              "DIV",
+              "6",
+              "EXE"
+            ],
+            "entry": "2/6",
+            "mode": "result",
+            "input": "2/6",
+            "result": "0.3333333333",
+            "note": "Count equally likely samples, including repeated values of the sample mean."
+          }
+        ]
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [],
+        "sourceReview": null,
+        "original": null
+      }
+    }
+  ]
+}
