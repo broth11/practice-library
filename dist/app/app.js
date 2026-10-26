@@ -1,8 +1,8 @@
-import { renderStimulus } from './stimulus.js?v=19236ce86f0c';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=19236ce86f0c';
-import { renderStep, typesetMath } from './math.js?v=19236ce86f0c';
-import { mountCalculator } from './calculator.js?v=19236ce86f0c';
-import { renderChoice, choiceText } from './choices.js?v=19236ce86f0c';
+import { renderStimulus } from './stimulus.js?v=9c4f799e420b';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=9c4f799e420b';
+import { renderStep, typesetMath } from './math.js?v=9c4f799e420b';
+import { mountCalculator } from './calculator.js?v=9c4f799e420b';
+import { renderChoice, choiceText } from './choices.js?v=9c4f799e420b';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -269,11 +269,13 @@ document.addEventListener('keydown', event => {
 window.addEventListener('resize', fit);
 window.addEventListener('hashchange', restoreRoute);
 
+// Start alongside catalog/route loading, including direct links to a question.
+// Image warming never gates the welcome screen or question navigation.
+preloadLibraryImages().catch(() => {});
+
 try {
   state.catalog = await fetchJson('content/catalog.json');
   await restoreRoute();
-  // Background warming also runs on the welcome page; it never gates rendering.
-  preloadLibraryImages().catch(() => {});
 } catch (error) {
   routeContent.innerHTML = `<section class="route-pane"><h1>Could not load the library</h1><p>${escapeHtml(error.message)}</p></section>`;
   console.error(error);
