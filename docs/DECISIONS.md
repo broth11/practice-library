@@ -97,3 +97,10 @@ Question source arrays follow declared lesson order, with each lesson contiguous
 - Publish to the selected original Sites artifact with its existing audience. The separate GitHub and Pages copies are outside this pass.
 
 - Follow-up: Ben explicitly requested the completed 2.B additions on GitHub main. Apply them onto current GitHub history, preserve newer changes in other units, and include the regenerated static build. This follow-up supersedes the earlier publication-scope limit for GitHub synchronization.
+
+## Calculator pane sizing (2026-10-26)
+
+- Entering the calculator view collapses the active navigation pane every time. The three rail tabs remain available to reopen navigation.
+- On desktop, preserve the question card's width when entering the view. Divide the remaining workspace, after gaps, equally between the keypress pane and the hardware column. The captured question share scales with later window resizing.
+- Align the calculator's top with the keypress pane. Fit its whole 648:1348 body within both its allocated width and that pane's height. Retain the stacked phone layout with a calculator shorter than its minimum 330px keypress pane.
+- This layout change starts from current GitHub main, retaining the later 2.A and 2.B calculator guidance, and synchronizes both hosting targets.

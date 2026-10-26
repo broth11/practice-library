@@ -1,5 +1,12 @@
 # Handoff
 
+## Calculator pane sizing (2026-10-26, Codex)
+
+- Calculator entry now collapses navigation on every visit, while retaining all three rail tabs for manual reopening.
+- Desktop keeps the question's entry width and splits the remaining space equally between instructions and hardware. The calculator is top aligned, keeps its 648:1348 proportions, and cannot exceed the keypress pane's height. The phone layout stays stacked.
+- Browser measurements passed at 2,048 by 1,195, 2,048 by 800, 1,440 by 900, 1,024 by 768, and 390 by 844: equal desktop side columns, no horizontal page overflow, matching top edges, and calculator height within the keypress pane. Reopening navigation then reentering instructions collapses it again. Content and calculator calculations are unchanged.
+- Based on the latest GitHub main with both units' calculator-guidance updates. Publish the same source/build to GitHub Pages and Sites, preserving their existing access.
+
 ## Unit 2.B calculator guidance (2026-10-26, Claude)
 
 - b51–b100 (items 11–20 in each 2.B lesson) now have fx-CG50 guidance. 21 items have guides: 10 Run-Matrix arithmetic items (b54, b56, b57, b58, b62, b64, b67, b68, b74, b76, b80) and 11 distribution walkthroughs using the shared descriptors and followUps (b61, b65 Binomial CD; b81, b82, b87 Normal CD; b83, b84, b85, b86, b88 Inverse Normal). The other 29 are marked `needed: false` with a specific reason because they are definition, interpretation, read-off, or mental-arithmetic tasks.

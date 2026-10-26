@@ -1,7 +1,7 @@
-import { renderStimulus } from './stimulus.js?v=03e1d10f28a2';
-import { renderStep, typesetMath } from './math.js?v=03e1d10f28a2';
-import { mountCalculator } from './calculator.js?v=03e1d10f28a2';
-import { renderChoice, choiceText } from './choices.js?v=03e1d10f28a2';
+import { renderStimulus } from './stimulus.js?v=e12e6a6a20cf';
+import { renderStep, typesetMath } from './math.js?v=e12e6a6a20cf';
+import { mountCalculator } from './calculator.js?v=e12e6a6a20cf';
+import { renderChoice, choiceText } from './choices.js?v=e12e6a6a20cf';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -172,6 +172,15 @@ function closeSolution(focus = false) {
 }
 
 function setSolutionView(view) {
+  // Keep the question's reading width while the navigation space is released.
+  if (view === 'calculator') {
+    const questionWidth = questionArea.getBoundingClientRect().width;
+    setRoutePane(state.routePane, false);
+    const availableWidth = workspace.getBoundingClientRect().width;
+    if (availableWidth > 0 && matchMedia('(min-width: 761px)').matches) {
+      workspace.style.setProperty('--question-width', `${questionWidth / availableWidth * 100}%`);
+    }
+  }
   state.solutionView = view;
   const question = state.unit.questions[state.current];
   document.querySelectorAll('.solution-tab').forEach(button => {

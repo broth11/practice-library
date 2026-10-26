@@ -120,3 +120,22 @@
 .math-display .katex-display{margin:0;text-align:left}
 .math-display .katex-display>.katex{text-align:left}
 .math-error{color:#9b1c1c;font-family:ui-monospace,monospace;white-space:pre-wrap}
+
+/* Calculator columns share the space left beside the preserved question card.
+   The hardware scales proportionally within the keypress pane's row height. */
+.calculator-mode .calculator-stage{align-items:flex-start}
+@media(min-width:761px){
+  .calculator-mode .workspace,.calculator-mode .workspace.with-solution{
+    grid-template-columns:var(--question-width,42%) repeat(2,minmax(0,1fr));
+  }
+  .calculator-mode .calculator-stage{container-type:size}
+  .calculator-mode .calculator-stage .mini-calculator{
+    width:min(100%,calc(100cqh * 648 / 1348));
+    max-width:100%;
+    max-height:100%;
+  }
+}
+@media(max-width:760px){
+  /* The stacked keypress pane is at least 330px high. */
+  .calculator-mode .calculator-stage .mini-calculator{--calc-width:min(150px,100%)}
+}
