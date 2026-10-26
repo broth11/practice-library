@@ -104,3 +104,7 @@ Question source arrays follow declared lesson order, with each lesson contiguous
 - On desktop, preserve the question card's width when entering the view. Divide the remaining workspace, after gaps, equally between the keypress pane and the hardware column. The captured question share scales with later window resizing.
 - Align the calculator's top with the keypress pane. Fit its whole 648:1348 body within both its allocated width and that pane's height. Retain the stacked phone layout with a calculator shorter than its minimum 330px keypress pane.
 - This layout change starts from current GitHub main, retaining the later 2.A and 2.B calculator guidance, and synchronizes both hosting targets.
+
+## Stable calculator question width (2026-10-26)
+
+The calculator question uses the reading width of the normal sidebar-open desktop layout. Its width is derived from the shared expanded and collapsed navigation sizes, rather than captured from whichever state happened to precede calculator entry. The released navigation space goes equally to the keypress and calculator columns. This supersedes the entry-width capture above and remains consistent after resizing or revisiting the calculator. Top alignment, height containment, and phone stacking are retained.

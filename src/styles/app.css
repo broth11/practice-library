@@ -121,12 +121,16 @@
 .math-display .katex-display>.katex{text-align:left}
 .math-error{color:#9b1c1c;font-family:ui-monospace,monospace;white-space:pre-wrap}
 
-/* Calculator columns share the space left beside the preserved question card.
-   The hardware scales proportionally within the keypress pane's row height. */
+/* Base the calculator question on the sidebar-open reading width, regardless
+   of how navigation was entered. Released space belongs to the two side panes. */
 .calculator-mode .calculator-stage{align-items:flex-start}
 @media(min-width:761px){
   .calculator-mode .workspace,.calculator-mode .workspace.with-solution{
-    grid-template-columns:var(--question-width,42%) repeat(2,minmax(0,1fr));
+    --navigation-space:0px;
+    grid-template-columns:calc((100% - var(--navigation-space) - var(--reference-question-gap)) * .59) repeat(2,minmax(0,1fr));
+  }
+  .calculator-mode.nav-collapsed .workspace{
+    --navigation-space:calc(var(--expanded-route-width) - var(--collapsed-route-width));
   }
   .calculator-mode .calculator-stage{container-type:size}
   .calculator-mode .calculator-stage .mini-calculator{

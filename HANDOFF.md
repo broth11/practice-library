@@ -1,5 +1,12 @@
 # Handoff
 
+## Stable calculator proportions (2026-10-26, Codex)
+
+- Removed the state-dependent question-width capture. Desktop now derives the calculator question width from the sidebar-open reading layout using shared navigation dimensions; the two remaining columns divide the released space equally.
+- At a 1,440 by 834 viewport, both sidebar-open and already-collapsed entry paths produce the same 592px question and two 347px side columns. The question matches its sidebar-open reference width.
+- Browser checks also cover short/wide desktop, 1,024px desktop, phone stacking, and a diagram question. Equal side columns, top alignment, the calculator height limit, and no page-width overflow are retained. Standard content/calculator checks and build pass.
+- Synchronize the same correction to Sites and GitHub Pages. No question content or calculator instructions changed.
+
 ## Calculator pane sizing (2026-10-26, Codex)
 
 - Calculator entry now collapses navigation on every visit, while retaining all three rail tabs for manual reopening.
