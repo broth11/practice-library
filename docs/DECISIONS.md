@@ -1,5 +1,11 @@
 # Practice Library decision record
 
+## Panel motion (2026-10-26)
+
+- Use shared native view transitions for entering and departing panels. Keep the rail fixed, and preserve the question width and calculator height limits.
+- Layout movement takes 360ms with gentle easing. Calculator step details use a shorter 180ms reveal. Initial route restoration does not animate; network loading finishes before capture.
+- Reduced-motion preferences bypass animation. Unsupported browsers update directly. Fit cards synchronously before capture because awaiting an animation frame inside the update would stall capture.
+
 This record consolidates the decisions made while developing Units 2.A and 2.B. It is source context for future work, not a reconstruction from the rendered page.
 
 Where the decisions came from: the earlier ones were made in prior development sessions and consolidated from those session records, which live outside this repository. Several are corroborated by the Unit 2.A trial package's README and browser-verification records (2×2 answer layout, reserved solution space, calculator proportions, arrows above the screen, per-visit progress). Decisions dated 2026-10-24 were made with the author in the public-release session. See `docs/PROVENANCE.md`.

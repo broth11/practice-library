@@ -1,8 +1,9 @@
-import { renderStimulus } from './stimulus.js?v=9c4f799e420b';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=9c4f799e420b';
-import { renderStep, typesetMath } from './math.js?v=9c4f799e420b';
-import { mountCalculator } from './calculator.js?v=9c4f799e420b';
-import { renderChoice, choiceText } from './choices.js?v=9c4f799e420b';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=f8602b4b7f7c';
+import { renderStimulus } from './stimulus.js?v=f8602b4b7f7c';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=f8602b4b7f7c';
+import { renderStep, typesetMath } from './math.js?v=f8602b4b7f7c';
+import { mountCalculator } from './calculator.js?v=f8602b4b7f7c';
+import { renderChoice, choiceText } from './choices.js?v=f8602b4b7f7c';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -38,6 +39,14 @@ const fetchJson = async source => {
   return response.json();
 };
 const answerKey = question => `${state.unit.id}:${question.id}`;
+
+function transitionPanels(update) {
+  return runPanelTransition(() => {
+    update();
+    // View transition capture pauses animation frames, so fit synchronously.
+    fit(true);
+  });
+}
 
 function routeHash() {
   const values = new URLSearchParams();
@@ -77,22 +86,32 @@ function setRoutePane(pane, expanded = true) {
 }
 
 async function selectCourse(course, updateHash = true) {
-  state.course = course;
-  state.courseManifest = await fetchJson(course.manifest);
-  state.unit = null;
-  state.current = 0;
-  setWelcome();
-  setRoutePane('units');
-  if (updateHash) routeHash();
+  const manifest = await fetchJson(course.manifest);
+  const update = () => {
+    state.course = course;
+    state.courseManifest = manifest;
+    state.unit = null;
+    state.current = 0;
+    setWelcome();
+    setRoutePane('units');
+    if (updateHash) routeHash();
+  };
+  if (updateHash) await transitionPanels(update);
+  else update();
 }
 
 async function selectUnit(unitMeta, updateHash = true) {
-  state.unit = await fetchJson(unitMeta.source);
-  preloadUnitImages(state.unit);
-  state.current = 0;
-  setWelcome();
-  setRoutePane('questions');
-  if (updateHash) routeHash();
+  const unit = await fetchJson(unitMeta.source);
+  const update = () => {
+    state.unit = unit;
+    preloadUnitImages(state.unit);
+    state.current = 0;
+    setWelcome();
+    setRoutePane('questions');
+    if (updateHash) routeHash();
+  };
+  if (updateHash) await transitionPanels(update);
+  else update();
 }
 
 function selectLesson(lessonId) {
@@ -112,7 +131,7 @@ function progressForUnit() {
 function renderNavigation() {
   const panes = ['courses', 'units', 'questions'];
   rail.innerHTML = panes.map(pane => `<button type="button" role="tab" class="route-tab" aria-selected="${pane === state.routePane}" ${pane === 'units' && !state.course || pane === 'questions' && !state.unit ? 'disabled' : ''} data-pane="${pane}"><span class="tab-arrow" aria-hidden="true">${pane === state.routePane && state.routeExpanded ? '◀' : '▶'}</span><span>${pane[0].toUpperCase() + pane.slice(1)}</span></button>`).join('');
-  rail.querySelectorAll('[data-pane]').forEach(button => button.onclick = () => setRoutePane(button.dataset.pane, state.routePane === button.dataset.pane ? !state.routeExpanded : true));
+  rail.querySelectorAll('[data-pane]').forEach(button => button.onclick = () => transitionPanels(() => setRoutePane(button.dataset.pane, state.routePane === button.dataset.pane ? !state.routeExpanded : true)));
   if (!state.routeExpanded) { routeContent.innerHTML = ''; return; }
 
   if (state.routePane === 'courses') {
@@ -128,7 +147,7 @@ function renderNavigation() {
   const currentQuestion = state.unit.questions[state.current];
   const progress = progressForUnit();
   routeContent.innerHTML = `<section class="route-pane"><header class="brand"><div class="eyebrow">${escapeHtml(state.course.title)}</div><h1>${escapeHtml(state.unit.title)}</h1><p>${escapeHtml(state.unit.description)}</p></header><p class="route-label">Lessons &amp; questions</p><nav aria-label="${escapeHtml(state.unit.title)} lessons and questions">${state.unit.lessons.map(lesson => { const indices = state.unit.questions.flatMap((question, index) => question.lesson === lesson.id ? [index] : []); const open = currentQuestion?.lesson === lesson.id && app.classList.contains('practice-started'); return `<div class="nav-group ${open ? 'lesson-open' : ''}"><button type="button" class="section-link" data-lesson="${lesson.id}" aria-expanded="${open}"><span class="section-number">Lesson ${lesson.id}</span><span class="section-label">${escapeHtml(lesson.title)}</span></button><div class="question-dots" aria-label="Questions in lesson ${lesson.id}">${indices.map((index, local) => { const question = state.unit.questions[index]; const selected = index === state.current && app.classList.contains('practice-started'); return `<button type="button" class="question-dot ${selected ? 'current' : ''} ${answers.has(answerKey(question)) ? 'answered' : ''}" data-index="${index}" ${selected ? 'aria-current="step"' : ''}>${local + 1}</button>`; }).join('')}</div></div>`; }).join('')}</nav><footer class="side-footer"><span>${progress.answered}</span> / ${state.unit.questions.length} answers selected<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="${state.unit.questions.length}" aria-valuenow="${progress.answered}"><span style="width:${progress.answered / state.unit.questions.length * 100}%"></span></div><span>${progress.opened}</span> / ${state.unit.questions.length} solutions opened</footer></section>`;
-  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => selectLesson(button.dataset.lesson));
+  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => transitionPanels(() => selectLesson(button.dataset.lesson)));
   routeContent.querySelectorAll('[data-index]').forEach(button => button.onclick = () => showQuestion(Number(button.dataset.index)));
 }
 
@@ -140,7 +159,7 @@ function renderQuestion(question) {
   const card = questionArea.firstElementChild;
   typesetMath(card);
   card.onchange = event => { answers.set(answerKey(question), event.target.value); card.querySelector('.choice-status').textContent = `Answer ${event.target.value} selected. Ready to check?`; renderNavigation(); fit(); };
-  card.querySelector('.solution-trigger').onclick = () => state.solutionOpen ? closeSolution(true) : openSolution();
+  card.querySelector('.solution-trigger').onclick = () => transitionPanels(() => state.solutionOpen ? closeSolution(true) : openSolution());
   fit();
 }
 
@@ -187,7 +206,7 @@ function setSolutionView(view) {
   calculatorView.hidden = view !== 'calculator';
   app.classList.toggle('calculator-mode', view === 'calculator' && Boolean(question.calculator?.needed || question.calculator?.distribution));
   if (view === 'explanation') renderExplanation(question);
-  else mountCalculator(calculatorView, question, () => setSolutionView('explanation'));
+  else mountCalculator(calculatorView, question, () => transitionPanels(() => setSolutionView('explanation')));
   fit();
 }
 
@@ -216,10 +235,10 @@ function showQuestion(index, updateHash = true) {
   if (updateHash) routeHash();
 }
 
-function fit() {
+function fit(immediate = false) {
   const card = questionArea.querySelector('.card');
   if (!card) return;
-  requestAnimationFrame(() => {
+  const measure = () => {
     const content = card.querySelector('.question-content');
     const inner = card.querySelector('.question-inner');
     const field = card.querySelector('fieldset');
@@ -241,7 +260,9 @@ function fit() {
     card.dataset.answerColumns = chosen.columns;
     content.classList.toggle('needs-scroll', inner.scrollHeight > room);
     workspace.style.setProperty('--reading-font', getComputedStyle(inner).fontSize);
-  });
+  };
+  if (immediate) measure();
+  else requestAnimationFrame(measure);
 }
 
 async function restoreRoute() {
@@ -256,17 +277,17 @@ async function restoreRoute() {
   if (questionIndex >= 0) showQuestion(questionIndex, false);
 }
 
-document.getElementById('close-drawer').onclick = () => closeSolution(true);
-document.querySelectorAll('.solution-tab').forEach(button => button.onclick = () => setSolutionView(button.dataset.view));
+document.getElementById('close-drawer').onclick = () => transitionPanels(() => closeSolution(true));
+document.querySelectorAll('.solution-tab').forEach(button => button.onclick = () => transitionPanels(() => setSolutionView(button.dataset.view)));
 previous.onclick = () => showQuestion(state.current - 1);
 next.onclick = () => showQuestion(state.current + 1);
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && state.solutionOpen) { event.preventDefault(); closeSolution(true); return; }
+  if (event.key === 'Escape' && state.solutionOpen) { event.preventDefault(); transitionPanels(() => closeSolution(true)); return; }
   if (!app.classList.contains('practice-started') || event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input,textarea,select,[contenteditable],#calculator-view,.solution-tabs,.route-rail')) return;
   if (event.key === 'ArrowRight' && !next.disabled) { event.preventDefault(); showQuestion(state.current + 1); }
   if (event.key === 'ArrowLeft' && !previous.disabled) { event.preventDefault(); showQuestion(state.current - 1); }
 });
-window.addEventListener('resize', fit);
+window.addEventListener('resize', () => fit());
 window.addEventListener('hashchange', restoreRoute);
 
 // Start alongside catalog/route loading, including direct links to a question.
