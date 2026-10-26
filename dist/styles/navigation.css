@@ -4,7 +4,7 @@
 .app>.sidebar,.app.calculator-mode>.sidebar,.app.calculator-mode.route-open>.sidebar{display:flex;position:relative;inset:auto;grid-column:1;grid-row:1;width:auto;padding:0;overflow:hidden;z-index:10;box-shadow:none;flex-direction:row}
 .app .main,.app.calculator-mode .main{grid-column:2;grid-row:1}
 .app .route-toggle{display:none!important}
-.route-rail{display:flex;flex-direction:column;gap:10px;align-items:center;flex:0 0 62px;padding:16px 7px;border-right:1px solid #d5ddd5;background:#edf1eb}
+.route-rail{display:flex;flex-direction:column;align-self:stretch;justify-content:flex-start;gap:10px;align-items:center;flex:0 0 62px;padding:16px 7px;border-right:1px solid #d5ddd5;background:#edf1eb}
 .route-tab{display:flex;align-items:center;gap:12px;writing-mode:vertical-rl;border:1px solid transparent;border-radius:9px;background:transparent;color:#5f756b;font-weight:650;font-size:14px;letter-spacing:.02em;padding:16px 10px;min-height:120px}
 .route-tab:hover{background:#e0e9df}.route-tab[aria-selected=true]{border-color:#bdd3c4;background:#f8fbf5;color:#225b4f}.route-tab .tab-arrow{font-size:10px}
 .app .route-content,.app.calculator-mode .route-content{display:flex;flex:1;min-width:0;visibility:visible;opacity:1;pointer-events:auto;overflow:hidden;padding:22px 15px 14px}

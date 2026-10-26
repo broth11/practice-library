@@ -1,5 +1,12 @@
 # Handoff
 
+## Reading width and navigation rail follow-up (2026-10-26, Codex)
+
+- The sidebar-open reading width now applies to all desktop practice views, fixing enlargement in question and explanation mode as well as calculator mode.
+- Removed calculator-only sidebar centering and ensured the rail stretches with top-anchored tabs. The tab positions remain identical when navigation opens/closes and when switching solution modes.
+- Browser checks compared all six open/closed question/explanation/calculator combinations at 1,440 by 834: question width stayed 592px, and tab top coordinates stayed 16, 146, and 276px. Also checked 1,024px, 850px, and 390px views: question widths and tab positions match across normal/calculator views, with no page-width overflow and the calculator height cap retained.
+- Standard checks and build pass. Publish the same source/build to Sites and GitHub Pages. Content and calculator instructions are unchanged.
+
 ## Stable calculator proportions (2026-10-26, Codex)
 
 - Removed the state-dependent question-width capture. Desktop now derives the calculator question width from the sidebar-open reading layout using shared navigation dimensions; the two remaining columns divide the released space equally.
