@@ -1144,6 +1144,838 @@
       }
     },
     {
+      "id": "q51",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V3",
+      "scenario": "A makerspace recorded whether members completed safety training and whether they reserved a laser cutter. The counts are shown in the table.",
+      "prompt": "Among members who reserved a laser cutter, what proportion completed safety training?",
+      "choices": [
+        "24/80",
+        "24/40",
+        "24/30",
+        "40/80"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Restrict the reference group to the 30 members who reserved a laser cutter.",
+          "Of those members, 24 completed training, so the conditional proportion is 24/30 = 0.80."
+        ],
+        "warning": "A uses all members, B reverses the condition, and D gives the marginal training proportion."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Makerspace members",
+        "headers": [
+          "Training",
+          "Reserved",
+          "Did not reserve",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Completed",
+            24,
+            16,
+            40
+          ],
+          [
+            "Not completed",
+            6,
+            34,
+            40
+          ],
+          [
+            "Total",
+            30,
+            50,
+            80
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#12",
+            "SG_2.2#11",
+            "SG_2.2#6"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q52",
+      "lesson": "2.A.1",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V1",
+      "scenario": "A museum asked visitors arriving by coach or by train whether they used an audio guide. The results are shown in the table.",
+      "prompt": "Which statement describes the association in these data?",
+      "choices": [
+        "There is an association because 12 is less than 36.",
+        "There is no association because each row has more nonusers than users.",
+        "There is no association because both arrival groups have a 40% audio-guide rate.",
+        "There is an association because the arrival groups have different sizes."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The coach rate is 12/30 = 0.40; the train rate is 36/90 = 0.40.",
+          "The conditional distributions match, so arrival mode and audio-guide use have no association in these data."
+        ],
+        "warning": "Counts and group sizes can differ when proportions are equal. A within-row majority does not establish absence of association."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Audio-guide use",
+        "headers": [
+          "Arrival",
+          "Used",
+          "Did not use",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Coach",
+            12,
+            18,
+            30
+          ],
+          [
+            "Train",
+            36,
+            54,
+            90
+          ],
+          [
+            "Total",
+            48,
+            72,
+            120
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#4",
+            "SG_2.2#9"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 23,
+            "observed": {
+              "min": 37,
+              "max": 80,
+              "median": 56.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 8,
+            "observed": {
+              "min": 11,
+              "max": 34,
+              "median": 22.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q53",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_counts",
+      "variant": "V6",
+      "scenario": "A council surveyed 50 residents in District North and 100 in District South about their preferred park feature. Each person selected one feature. The counts are shown in the chart.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "Playgrounds were selected by a greater proportion in North than in South.",
+        "Gardens were selected by the same proportion in both districts.",
+        "Trails were selected by fewer residents in South than in North.",
+        "Playgrounds were selected by twice as many residents in North as in South."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Playgrounds account for 20/50 = 0.40 in North and 30/100 = 0.30 in South.",
+          "Garden proportions are 10/50 and 40/100. Trails have 20 North responses and 30 South responses."
+        ],
+        "warning": "Compare proportions using the district totals; neither equal counts nor a taller count bar guarantees a larger proportion."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q53-grouped-bars.svg",
+        "alt": "Grouped bars: North: Playground 20, Garden 10, Trail 20; South: Playground 30, Garden 40, Trail 30.",
+        "width": 480,
+        "height": 323
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.1#6"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "observed": {
+              "min": 10,
+              "max": 19,
+              "median": 10.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q54",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_relative_display",
+      "variant": "V5",
+      "scenario": "A venue surveyed 80 weekday guests and 160 weekend guests. Each guest chose one preferred performance type. The chart shows the relative frequencies within each group.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "The number choosing dance was the same in both groups.",
+        "More weekday guests than weekend guests chose comedy.",
+        "The proportion choosing music was greater on weekends.",
+        "The number choosing music was the same in both groups."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Music was chosen by 0.50 × 80 = 40 weekday guests and 0.25 × 160 = 40 weekend guests.",
+          "Dance proportions match at 0.25, but the counts are 20 and 40. Comedy counts are 20 and 80."
+        ],
+        "warning": "Equal proportions do not imply equal counts when group sizes differ. Music has a greater weekday proportion but an equal count."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q54-grouped-bars.svg",
+        "alt": "Grouped bars: Weekday: Music 0.5, Dance 0.25, Comedy 0.25; Weekend: Music 0.25, Dance 0.25, Comedy 0.5.",
+        "width": 480,
+        "height": 320
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_1.4#14"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "observed": {
+              "min": 8,
+              "max": 18,
+              "median": 11.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q55",
+      "lesson": "2.A.1",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V5",
+      "scenario": "A repair clinic recorded whether each repair was completed on the first visit. The mosaic plot summarizes the two service desks. Each rectangle’s area represents its count.",
+      "prompt": "Which conclusion is supported by the mosaic plot?",
+      "choices": [
+        "There is no association because both columns reach a proportion of 1.",
+        "There is an association because the columns have different widths.",
+        "There is an association because the completion proportions are 0.75 and 0.50.",
+        "There is no association because both desks completed 30 repairs."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Desk A completes 30 of 40 repairs, or 0.75; Desk B completes 30 of 60, or 0.50.",
+          "Different conditional completion proportions indicate association. Column width records desk volume, not the completion rate."
+        ],
+        "warning": "Equal counts can mask different rates. A common total height is a property of the display, not evidence of equal conditional distributions."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q55-mosaic.svg",
+        "alt": "Mosaic plot with group widths proportional to sample size. Desk A: Completed 30, Not completed 10; Desk B: Completed 30, Not completed 30.",
+        "width": 480,
+        "height": 314
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Mosaic display replaces the variant’s segmented bars; answer logic is unchanged."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.1#7"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 37,
+              "max": 80,
+              "median": 56.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 8,
+            "observed": {
+              "min": 11,
+              "max": 34,
+              "median": 22.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q56",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V1",
+      "scenario": "A farm recorded delivery method and crate type for 120 orders. In the mosaic plot, column widths represent delivery shares and the shaded heights represent crate shares within each delivery method.",
+      "prompt": "What proportion of all orders used local delivery and a reusable crate?",
+      "choices": [
+        "30/120",
+        "30/60",
+        "30/50",
+        "60/120"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Local delivery accounts for 60/120 of orders. Half of those 60 orders use a reusable crate.",
+          "The joint proportion is 30/120 = 0.25, represented by the area of the local reusable rectangle."
+        ],
+        "warning": "The column share or within-column height alone gives a marginal or conditional proportion, rather than the joint proportion."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q56-mosaic.svg",
+        "alt": "Mosaic plot with group widths proportional to sample size. Local: Reusable 30, Single use 30; Courier: Reusable 20, Single use 40.",
+        "width": 480,
+        "height": 314
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Joint frequency read from a mosaic rather than a table."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#1",
+            "SG_2.2#7"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q57",
+      "lesson": "2.A.1",
+      "archetype": "compare_likelihoods_from_two_way_table",
+      "variant": "V1",
+      "scenario": "A cinema recorded whether patrons at afternoon and evening screenings bought a snack. The counts are shown in the table.",
+      "prompt": "Which statement about these patrons is correct?",
+      "choices": [
+        "Afternoon patrons were more likely to buy a snack than evening patrons.",
+        "Evening patrons were more likely to buy a snack than afternoon patrons.",
+        "The snack purchase proportions were equal because both groups included 24 purchasers.",
+        "Most patrons at each screening bought a snack."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The afternoon rate is 24/80 = 0.30, whereas the evening rate is 24/40 = 0.60.",
+          "Evening patrons were twice as likely to purchase a snack in these data."
+        ],
+        "warning": "Equal purchaser counts do not establish equal purchase rates. Only the evening group has a majority buying snacks."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Cinema snack purchases",
+        "headers": [
+          "Screening",
+          "Snack",
+          "No snack",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Afternoon",
+            24,
+            56,
+            80
+          ],
+          [
+            "Evening",
+            24,
+            16,
+            40
+          ],
+          [
+            "Total",
+            48,
+            72,
+            120
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#2",
+            "SG_2.1#2"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 20,
+            "observed": {
+              "min": 28,
+              "max": 71,
+              "median": 56.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "observed": {
+              "min": 11,
+              "max": 20,
+              "median": 15.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q58",
+      "lesson": "2.A.1",
+      "archetype": "value_for_no_association",
+      "variant": "V1",
+      "scenario": "A subscription service has 60 monthly subscribers and 90 annual subscribers. Eighteen monthly subscribers choose mailed receipts. The incomplete table is shown.",
+      "prompt": "If subscription type and receipt choice have no association, what value replaces x?",
+      "choices": [
+        "18",
+        "27",
+        "45",
+        "63"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The mailed-receipt rate for monthly subscribers is 18/60 = 0.30.",
+          "The annual rate must also be 0.30, so x = 90 × 0.30 = 27."
+        ],
+        "warning": "Equal rates require scaling to the annual group size, not copying 18 or counting the annual subscribers who choose digital receipts."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Receipt preference",
+        "headers": [
+          "Subscription",
+          "Mailed",
+          "Digital",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Monthly",
+            18,
+            42,
+            60
+          ],
+          [
+            "Annual",
+            "x",
+            "90 − x",
+            90
+          ],
+          [
+            "Total",
+            "18 + x",
+            "132 − x",
+            150
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#20"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 22,
+            "observed": {
+              "min": 30,
+              "max": 65,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q59",
+      "lesson": "2.A.1",
+      "archetype": "claim_from_two_group_relative_display",
+      "variant": "V4",
+      "scenario": "A campus surveyed students before and after extending library hours. Each student named one preferred study setting. The relative-frequency chart summarizes the two surveys; their sample sizes are unknown.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "The number preferring home study fell by half.",
+        "The number preferring a café stayed the same.",
+        "The combined proportion preferring the library was exactly 0.50.",
+        "The proportion preferring the library increased by 0.20."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The library proportion rose from 0.40 to 0.60, an increase of 0.20, or 20 percentage points.",
+          "Counts and the combined proportion require the two sample sizes, which are not given."
+        ],
+        "warning": "A change in relative frequency does not determine a change in count. Pooling two percentages also requires their group sizes."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q59-grouped-bars.svg",
+        "alt": "Grouped bars: Before: Library 0.4, Home 0.4, Café 0.2; After: Library 0.6, Home 0.2, Café 0.2.",
+        "width": 480,
+        "height": 320
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_1.4#11"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "observed": {
+              "min": 8,
+              "max": 18,
+              "median": 11.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q60",
+      "lesson": "2.A.1",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V2",
+      "scenario": "A community center records the session and activity selected for each of 180 registrations. Each registration appears in exactly one cell. The counts are shown in the table.",
+      "prompt": "What proportion of all registrations are for a session <u>other than</u> morning?",
+      "choices": [
+        "30/180",
+        "60/180",
+        "90/180",
+        "120/180"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "There are 70 afternoon registrations and 50 evening registrations.",
+          "The marginal proportion outside morning is (70 + 50)/180 = 120/180."
+        ],
+        "warning": "Use all afternoon and evening registrations regardless of activity; 60/180 is the morning proportion."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Community registrations",
+        "headers": [
+          "Session",
+          "Fitness",
+          "Craft",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Morning",
+            40,
+            20,
+            60
+          ],
+          [
+            "Afternoon",
+            40,
+            30,
+            70
+          ],
+          [
+            "Evening",
+            10,
+            40,
+            50
+          ],
+          [
+            "Total",
+            90,
+            90,
+            180
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#19",
+            "SG_2.2#17",
+            "SG_2.2#10"
+          ],
+          "ced": [
+            "2.1",
+            "2.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
       "id": "q06",
       "lesson": "2.A.2",
       "archetype": "interpret_probability_as_long_run_frequency",
@@ -2024,6 +2856,750 @@
           "source": "Unit 2A trial package (local working copy, not published)",
           "file": "questions.json",
           "id": "q35"
+        }
+      }
+    },
+    {
+      "id": "q61",
+      "lesson": "2.A.2",
+      "archetype": "sample_space_and_equally_likely_outcomes",
+      "variant": "V3",
+      "scenario": "A sorting robot labels each of two successive parcels as fragile (F) or sturdy (S). Every combination can occur, and the order of the parcels is recorded.",
+      "prompt": "Which set is the complete sample space?",
+      "choices": [
+        "{F, S}",
+        "{FF, FS, SS}",
+        "{FF, FS, SF, SS}",
+        "{FF, SS}"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Each of the two positions can be F or S.",
+          "Listing the ordered pairs gives FF, FS, SF, and SS. FS and SF are different outcomes because parcel order is recorded."
+        ],
+        "warning": "Single labels describe only one parcel. Omitting SF or both mixed pairs leaves out possible outcomes."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.4#6"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 31,
+              "max": 58,
+              "median": 40
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "observed": {
+              "min": 10,
+              "max": 14,
+              "median": 11
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q62",
+      "lesson": "2.A.2",
+      "archetype": "complement_probability",
+      "variant": "V1",
+      "scenario": "At a community book exchange, 135 of 180 books have already been cataloged. One of the 180 books is selected at random for an inventory check.",
+      "prompt": "What is the probability that the selected book has <u>not</u> been cataloged?",
+      "choices": [
+        "0.25",
+        "0.33",
+        "0.75",
+        "1.33"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The number not cataloged is 180 − 135 = 45.",
+          "Divide by all books: 45/180 = 0.25. Equivalently, subtract the cataloged proportion from 1."
+        ],
+        "warning": "0.75 is the cataloged probability. Dividing by 135 uses the wrong reference group; a probability cannot exceed 1."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.4#2"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 26,
+            "observed": {
+              "min": 35,
+              "max": 52,
+              "median": 39.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 12,
+            "observed": {
+              "min": 13,
+              "max": 29,
+              "median": 15.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q63",
+      "lesson": "2.A.2",
+      "archetype": "assign_digits_for_simulation",
+      "variant": "V1",
+      "scenario": "A delivery company reports that 35% of its parcels require a signature. A student uses independent random two-digit integers from 00 through 99 to simulate parcels.",
+      "prompt": "Which assignment correctly simulates one parcel?",
+      "choices": [
+        "00–34 require a signature; 35–99 do not.",
+        "01–34 require a signature; 35–99 do not; ignore 00.",
+        "00–64 require a signature; 65–99 do not.",
+        "00–35 require a signature; 36–99 do not."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "There are 100 equally likely two-digit values. Exactly 35 must represent a required signature.",
+          "The values 00 through 34 supply 35 outcomes, leaving 65 outcomes for no signature."
+        ],
+        "warning": "Inclusive endpoints matter: 00–35 gives 36 outcomes. Ignoring 00 changes the denominator, and 00–64 models 65%."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Two-digit assignment extends the card’s single-digit model to represent 35% exactly."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#2",
+            "SG_2.3#5"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 51,
+              "max": 52,
+              "median": 51.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 6,
+            "observed": {
+              "min": 15,
+              "max": 17,
+              "median": 16.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q64",
+      "lesson": "2.A.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": "V1",
+      "scenario": "A student simulates 500 sets of four product inspections. A success means an item fails inspection. The chart records how many failures occur in each simulated set.",
+      "prompt": "Based on the simulation, what is the estimated probability of <u>at least</u> two failures in a set?",
+      "choices": [
+        "0.10",
+        "0.18",
+        "0.30",
+        "0.70"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Include the bars for 2, 3, and 4 failures: 100 + 40 + 10 = 150 repetitions.",
+          "The estimated probability is 150/500 = 0.30."
+        ],
+        "warning": "Use all outcomes meeting the threshold, including 2. The complement 0.70 estimates fewer than 2 failures."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q64-relative-frequency-bars.svg",
+        "alt": "Simulation frequencies for outcomes 0 through 4: 160, 190, 100, 40, 10, out of 500 repetitions.",
+        "width": 480,
+        "height": 237
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#3",
+            "SG_2.3#6"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 42,
+              "max": 83,
+              "median": 66.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 17,
+            "observed": {
+              "min": 23,
+              "max": 30,
+              "median": 27.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q65",
+      "lesson": "2.A.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": "V1",
+      "scenario": "A researcher simulates 400 mornings with three ferry departures per morning. A success means a departure is delayed. The table summarizes the number of delays per morning.",
+      "prompt": "Based on these results, what is the estimated probability of exactly one delayed departure?",
+      "choices": [
+        "0.20",
+        "0.45",
+        "0.65",
+        "0.80"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Exactly one delay occurred in 180 of the 400 simulated mornings.",
+          "The estimated probability is 180/400 = 0.45. The unit counted in the denominator is a morning, not a ferry departure."
+        ],
+        "warning": "Adding the zero-delay mornings answers at most one. Dividing by 1,200 mixes departures with simulated mornings."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Simulated ferry mornings",
+        "headers": [
+          "Number delayed",
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "rows": [
+          [
+            "Mornings",
+            80,
+            180,
+            100,
+            40
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Exactly-one event and a frequency table extend the observed tail-event chart variants."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#3",
+            "SG_2.3#6"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 42,
+              "max": 83,
+              "median": 66.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 14,
+            "observed": {
+              "min": 23,
+              "max": 30,
+              "median": 27.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q66",
+      "lesson": "2.A.2",
+      "archetype": "interpret_probability_as_long_run_frequency",
+      "variant": "V1",
+      "scenario": "A random art generator produces a spiral with probability 0.30 on each independent run. A class has just observed eight spirals in ten runs.",
+      "prompt": "Which statement is a correct interpretation of the probability?",
+      "choices": [
+        "Over many runs, the fraction producing a spiral tends toward 0.30.",
+        "The next ten runs will contain exactly three spirals.",
+        "The next run is less likely to be a spiral because eight have already appeared.",
+        "The next run has a spiral probability greater than 0.30."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The probability 0.30 describes the long-run fraction of runs producing a spiral.",
+          "Independent runs retain the same probability even after an unusual short sequence; a block of ten need not contain exactly three spirals."
+        ],
+        "warning": "Short-run results neither force future compensation nor change a fixed independent probability."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#1",
+            "SG_2.3#7"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q67",
+      "lesson": "2.A.2",
+      "archetype": "identify_law_of_large_numbers",
+      "variant": "V1",
+      "scenario": "A machine independently marks each tile with a star with probability 0.40. Two students will run it 20 times and 2,000 times, respectively, and calculate their proportions of stars.",
+      "prompt": "Which statement is justified by the law of large numbers?",
+      "choices": [
+        "The 2,000-run proportion is more likely to be close to 0.40, but neither proportion is guaranteed to equal it.",
+        "Both students must obtain a proportion of 0.40.",
+        "The 20-run proportion must be closer to 0.40.",
+        "The 2,000-run proportion will be exactly 100 times the 20-run proportion."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "With many independent repetitions, relative frequencies tend to stabilize near the process probability.",
+          "A larger run usually gives a closer proportion, but randomness remains. The number of stars and the proportion of stars are different quantities."
+        ],
+        "warning": "The law describes long-run stabilization, not an exact result or a guarantee for every pair of runs."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#10"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 31,
+            "observed": {
+              "min": 61,
+              "max": 61,
+              "median": 61
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 10,
+            "observed": {
+              "min": 31,
+              "max": 31,
+              "median": 31
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q68",
+      "lesson": "2.A.2",
+      "archetype": "sample_space_and_equally_likely_outcomes",
+      "variant": "V2",
+      "scenario": "An exhibit assigns each visitor an independent random badge: one of three equally likely shapes and one of four equally likely colors. Each shape-color pair is equally likely.",
+      "prompt": "What is the probability of a circular badge that is either blue or gold?",
+      "choices": [
+        "1/12",
+        "2/12",
+        "3/12",
+        "2/7"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "There are 3 × 4 = 12 equally likely shape-color pairs.",
+          "Two qualify: circular-blue and circular-gold. Their probability is 2/12."
+        ],
+        "warning": "Add the qualifying pairs, but multiply the numbers of choices to count the sample space."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Ordered cross-product sample space replaces the observed unordered selection."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.4#3"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 29,
+            "observed": {
+              "min": 31,
+              "max": 58,
+              "median": 40
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q69",
+      "lesson": "2.A.2",
+      "archetype": "complement_probability",
+      "variant": "V2",
+      "scenario": "A wildlife center classifies each observation into exactly one of four animal groups. The chart gives the counts from 200 observations. One recorded observation is selected at random.",
+      "prompt": "What is the probability that the selected observation is neither a bird nor a mammal?",
+      "choices": [
+        "0.15",
+        "0.25",
+        "0.40",
+        "0.60"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Reptiles and amphibians account for 50 + 30 = 80 observations.",
+          "The probability is 80/200 = 0.40, also found by subtracting the combined bird and mammal share from 1."
+        ],
+        "warning": "Neither includes both remaining groups. The value 0.60 describes birds or mammals."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q69-categorical-bars.svg",
+        "alt": "Observation counts: birds 70, mammals 50, reptiles 50, amphibians 30.",
+        "width": 480,
+        "height": 239
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.4#5",
+            "SG_2.4#7"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 35,
+              "max": 52,
+              "median": 39.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q70",
+      "lesson": "2.A.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": "V1",
+      "scenario": "A coach models five independent free throws per round and simulates 1,000 rounds. A success means a made free throw. The chart summarizes the simulated rounds.",
+      "prompt": "What is the estimated probability that <u>at most</u> one shot is made in a round?",
+      "choices": [
+        "0.15",
+        "0.20",
+        "0.25",
+        "0.35"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "At most one includes 0 makes and 1 make. These bars contain 150 + 200 = 350 rounds.",
+          "The estimate is 350/1,000 = 0.35."
+        ],
+        "warning": "Using only one bar misses part of the event. The denominator counts complete simulated rounds."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q70-relative-frequency-bars.svg",
+        "alt": "Simulation frequencies for outcomes 0 through 5: 150, 200, 250, 200, 150, 50, out of 1000 repetitions.",
+        "width": 480,
+        "height": 237
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.3#3",
+            "SG_2.3#6"
+          ],
+          "ced": [
+            "2.3",
+            "2.4"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 42,
+              "max": 83,
+              "median": 66.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 15,
+            "observed": {
+              "min": 23,
+              "max": 30,
+              "median": 27.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
         }
       }
     },
@@ -3031,6 +4607,693 @@
           "file": "questions.json",
           "id": "q40"
         }
+      }
+    },
+    {
+      "id": "q71",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V5",
+      "scenario": "A tool library recorded whether members borrowed a drill or a saw during a month. Members may borrow both. The counts are shown in the Venn diagram. One member is selected at random.",
+      "prompt": "Given that the member borrowed a drill, what is the probability that the member also borrowed a saw?",
+      "choices": [
+        "18/100",
+        "18/60",
+        "18/40",
+        "40/100"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The drill group contains 42 + 18 = 60 members.",
+          "Eighteen of those members also borrowed a saw, so the conditional probability is 18/60 = 0.30."
+        ],
+        "warning": "18/100 is a joint probability, and 18/40 reverses the conditioning event."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q71-venn.svg",
+        "alt": "Counts: Drill only 42, both 18, Saw only 22, neither 18.",
+        "width": 480,
+        "height": 257
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Conditional count read from a Venn diagram instead of a table."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#5",
+            "SG_2.6#12",
+            "SG_2.6#15"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q72",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V6",
+      "scenario": "A bicycle shop recorded whether each customer bought a light and whether each bought a lock. The counts are shown in the Venn diagram. One customer is selected at random.",
+      "prompt": "Given that the customer did <u>not</u> buy a lock, what is the probability that the customer bought a light?",
+      "choices": [
+        "24/100",
+        "24/60",
+        "24/40",
+        "40/100"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The no-lock group consists of 24 light-only customers and 16 customers who bought neither item, giving 40 customers.",
+          "Of these 40, 24 bought a light. The conditional probability is 24/40 = 0.60."
+        ],
+        "warning": "Exclude every customer inside the lock circle from the denominator, including those who bought both items."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q72-venn.svg",
+        "alt": "Counts: Light only 24, both 36, Lock only 24, neither 16.",
+        "width": 480,
+        "height": 257
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#8"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q73",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V3",
+      "scenario": "Among subscribers to a language platform, 40% use the listening course, 30% use the writing course, and 18% use both courses. One subscriber is selected at random.",
+      "prompt": "Given that the subscriber uses the writing course, what is the probability that the subscriber uses the listening course?",
+      "choices": [
+        "0.18",
+        "0.30",
+        "0.45",
+        "0.60"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The conditioning group is the 30% using writing. The 18% using both is a subset of that group.",
+          "Divide the joint probability by the writing probability: 0.18/0.30 = 0.60."
+        ],
+        "warning": "0.45 reverses the condition by dividing by 0.40; 0.18 leaves the sample space unrestricted."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#17"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 29,
+              "max": 53,
+              "median": 45
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q74",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_from_equally_likely_outcomes",
+      "variant": "V1",
+      "scenario": "Two fair six-sided number cubes are rolled independently. The first cube shows an even number. All ordered pairs consistent with that information remain equally likely.",
+      "prompt": "Given this information, what is the probability that the sum is 7?",
+      "choices": [
+        "1/6",
+        "1/18",
+        "3/36",
+        "1/3"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The first cube can show 2, 4, or 6, and the second can show any of six numbers. There are 18 conditional outcomes.",
+          "Three have sum 7: (2,5), (4,3), and (6,1). Thus the probability is 3/18 = 1/6."
+        ],
+        "warning": "Do not retain all 36 outcomes after restricting the first cube. Counting three qualifying pairs without the conditional denominator gives 3/36."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#4"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 26,
+            "observed": {
+              "min": 37,
+              "max": 51,
+              "median": 44.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 12,
+            "observed": {
+              "min": 21,
+              "max": 22,
+              "median": 21.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q75",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_from_equally_likely_outcomes",
+      "variant": "V2",
+      "scenario": "Three fair coins are tossed independently. The eight equally likely sequences are HHH, HHT, HTH, HTT, THH, THT, TTH, and TTT. The first toss is tails.",
+      "prompt": "Given that the first toss is tails, what is the probability of exactly two heads?",
+      "choices": [
+        "1/8",
+        "1/4",
+        "3/8",
+        "1/2"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The remaining sequences are THH, THT, TTH, and TTT.",
+          "Only THH has exactly two heads, so the conditional probability is 1/4."
+        ],
+        "warning": "Use the four sequences compatible with the first toss. Counting all two-head sequences ignores the given information."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#7"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 26,
+            "observed": {
+              "min": 37,
+              "max": 51,
+              "median": 44.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 15,
+            "observed": {
+              "min": 21,
+              "max": 22,
+              "median": 21.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q76",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V6",
+      "scenario": "A university survey records each respondent’s study year and use of a tutoring service. The counts are shown in the table. One respondent is selected at random.",
+      "prompt": "Given that the respondent is in year 2 or year 3, what is the probability that the respondent used tutoring?",
+      "choices": [
+        "30/150",
+        "30/60",
+        "30/90",
+        "60/150"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The condition includes the 40 year-2 respondents and 50 year-3 respondents, for a total of 90.",
+          "Within those years, 12 + 18 = 30 used tutoring. The probability is 30/90."
+        ],
+        "warning": "Combine both years in the numerator and denominator. Dividing by 60 conditions on tutoring use instead."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Tutoring use",
+        "headers": [
+          "Year",
+          "Used",
+          "Did not use",
+          "Total"
+        ],
+        "rows": [
+          [
+            "1",
+            30,
+            30,
+            60
+          ],
+          [
+            "2",
+            12,
+            28,
+            40
+          ],
+          [
+            "3",
+            18,
+            32,
+            50
+          ],
+          [
+            "Total",
+            60,
+            90,
+            150
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#8"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q77",
+      "lesson": "2.A.3",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V1",
+      "scenario": "An animal shelter recorded whether visitors met a cat and whether they met a dog. The Venn diagram shows the counts for 100 visitors. One visitor is selected at random.",
+      "prompt": "Are meeting a cat and meeting a dog mutually exclusive events?",
+      "choices": [
+        "Yes, because 30 visitors met only a cat.",
+        "Yes, because 10 visitors met neither animal.",
+        "No, because the two animal groups have different totals.",
+        "No, because 20 visitors met both animals."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The overlap contains 20 visitors, so the joint probability is 20/100 = 0.20.",
+          "Mutually exclusive events have no shared outcomes. These events have a nonzero overlap."
+        ],
+        "warning": "The overlap decides exclusivity. Neither unequal group sizes nor the visitors outside both circles settle the question."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q77-venn.svg",
+        "alt": "Counts: Cat only 30, both 20, Dog only 40, neither 10.",
+        "width": 480,
+        "height": 257
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.5#1",
+            "SG_2.5#3",
+            "SG_2.5#4",
+            "SG_2.5#9"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 30,
+            "observed": {
+              "min": 40,
+              "max": 105,
+              "median": 52.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q78",
+      "lesson": "2.A.3",
+      "archetype": "relative_frequency_from_two_way_table",
+      "variant": "V5",
+      "scenario": "A bakery tracks online and counter orders and whether each includes a cake. The mosaic plot summarizes 120 orders. Column widths show the ordering-method shares. One order is selected at random.",
+      "prompt": "Given that the order was placed online, what is the probability that it includes a cake?",
+      "choices": [
+        "0.15",
+        "0.25",
+        "0.40",
+        "0.60"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The online column contains 30 cake orders and 20 other orders.",
+          "The conditional probability is 30/(30 + 20) = 0.60, represented by the cake segment’s height within the online column."
+        ],
+        "warning": "0.25 is the joint online-and-cake share of all orders. A conditional probability uses only online orders."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q78-mosaic.svg",
+        "alt": "Mosaic plot with group widths proportional to sample size. Online: Cake 30, Other 20; Counter: Cake 18, Other 52.",
+        "width": 480,
+        "height": 314
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Conditional probability read from mosaic height rather than a table."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#5",
+            "SG_2.6#12",
+            "SG_2.6#15"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q79",
+      "lesson": "2.A.3",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V3",
+      "scenario": "For randomly selected workshop attendees, the probability of registering early is 0.60, and the probability of both registering early and requesting materials is 0.24. Overall, 0.50 request materials.",
+      "prompt": "What is the probability of registering early given that the attendee requests materials?",
+      "choices": [
+        "0.24",
+        "0.40",
+        "0.48",
+        "0.60"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The requested condition is requesting materials, with probability 0.50.",
+          "The relevant joint probability is 0.24, so the answer is 0.24/0.50 = 0.48."
+        ],
+        "warning": "Dividing by 0.60 gives the reverse conditional probability. The 0.24 joint probability uses all attendees as the reference group."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#17"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q80",
+      "lesson": "2.A.3",
+      "archetype": "missing_information_for_probability",
+      "variant": "V2",
+      "scenario": "At a photo service, 40% of all customers order an album. Among customers who book a portrait session, 60% order an album. One customer is selected at random.",
+      "prompt": "Which additional value is sufficient to find the probability that the customer books a portrait session and orders an album?",
+      "choices": [
+        "The proportion of all customers who book a portrait session",
+        "The proportion of all customers who do not order an album",
+        "The number of album designs offered",
+        "The probability of ordering an album given a portrait booking"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Let P represent a portrait booking and A represent an album order. The joint probability is P(P) × P(A | P).",
+          "The conditional factor is already 0.60. Knowing P(P) supplies the missing factor."
+        ],
+        "warning": "The album complement is already known, and repeating the given conditional supplies no new information."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Asks which missing input suffices, rather than keying a statement of insufficient information."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#16",
+            "SG_2.7#23"
+          ],
+          "ced": [
+            "2.5",
+            "2.6.A.1"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 31,
+              "max": 49,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 20,
+            "observed": {
+              "min": 21,
+              "max": 26,
+              "median": 21
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
       }
     },
     {
@@ -4084,6 +6347,612 @@
           "source": "Unit 2A trial package (local working copy, not published)",
           "file": "questions.json",
           "id": "q45"
+        }
+      }
+    },
+    {
+      "id": "q81",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V3",
+      "scenario": "A warehouse routes 25% of orders through line A and 75% through line B. The probability of a packing error is 0.12 on line A and 0.04 on line B. The tree shows the process.",
+      "prompt": "Given that an order has a packing error, what is the probability that it came from line A?",
+      "choices": [
+        "0.03000",
+        "0.12000",
+        "0.25000",
+        "0.50000"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The error paths have probabilities 0.25 × 0.12 = 0.03 and 0.75 × 0.04 = 0.03.",
+          "The total error probability is 0.06. Of that error probability, line A contributes 0.03, so the reverse conditional is 0.03/0.06 = 0.50."
+        ],
+        "warning": "0.12 is the probability of an error given line A, not the reverse conditional. A single path is a joint probability."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q81-tree.svg",
+        "alt": "First stage: Line A 0.25, Line B 0.75. Conditional Error rates: 0.12, 0.04.",
+        "width": 480,
+        "height": 221
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#1"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 37,
+            "observed": {
+              "min": 39,
+              "max": 87,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q82",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V2",
+      "scenario": "A tour office finds that 20% of trips are delayed by traffic. If traffic causes a delay, rain also causes a delay with probability 0.30. If traffic does not cause a delay, rain causes a delay with probability 0.10. The tree summarizes these probabilities.",
+      "prompt": "What is the probability of a delay caused by <u>at least</u> one of traffic or rain?",
+      "choices": [
+        "0.140",
+        "0.200",
+        "0.280",
+        "0.300"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Every traffic-delay trip qualifies, including those also delayed by rain, contributing 0.20.",
+          "Add the disjoint no-traffic, rain-delay path: 0.80 × 0.10 = 0.08. The union probability is 0.20 + 0.08 = 0.28."
+        ],
+        "warning": "The total rain probability 0.14 excludes traffic-only delays. Adding 0.20 and 0.10 fails to weight the second path."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q82-tree.svg",
+        "alt": "First stage: Traffic 0.2, No traffic 0.8. Conditional Rain rates: 0.3, 0.1.",
+        "width": 480,
+        "height": 221
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#6",
+            "SG_2.7#9"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q83",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V4",
+      "scenario": "A prize box contains four copper tokens and five brass tokens. Two tokens are drawn one at a time without replacement, with each remaining token equally likely to be drawn.",
+      "prompt": "What is the probability that both tokens are copper?",
+      "choices": [
+        "12/81",
+        "12/72",
+        "16/81",
+        "4/9"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The first copper probability is 4/9. After a copper draw, 3 of the remaining 8 tokens are copper.",
+          "Multiply along the required sequence: (4/9)(3/8) = 12/72."
+        ],
+        "warning": "Reducing neither count models replacement; reducing only the numerator leaves the second denominator incorrect. The first-draw probability alone is incomplete."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#11"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 9,
+            "observed": {
+              "min": 13,
+              "max": 25,
+              "median": 19
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q84",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V6",
+      "scenario": "A bag contains red, blue, and green counters in proportions 0.50, 0.30, and 0.20. Two counters are drawn with replacement, and the bag is mixed before each draw.",
+      "prompt": "What is the probability that the two counters have the same color?",
+      "choices": [
+        "0.25",
+        "0.38",
+        "0.62",
+        "1.00"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The disjoint matching-color cases are red-red, blue-blue, and green-green.",
+          "With replacement the draws are independent, so add 0.50² + 0.30² + 0.20² = 0.38."
+        ],
+        "warning": "0.25 counts only two reds. The complement 0.62 is the probability of different colors."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V6",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#19",
+            "SG_2.7#22"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q85",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V2",
+      "scenario": "A spinner lands on black with probability 0.70 and white with probability 0.30. Spins are independent. The last four spins all landed on black.",
+      "prompt": "Which statement about the next two spins is correct?",
+      "choices": [
+        "Black-white is more likely than white-black.",
+        "White-white is more likely than black-black because white is overdue.",
+        "Black-black and white-white are equally likely.",
+        "Black-white and white-black are equally likely."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The probability of black-white is 0.70 × 0.30 = 0.21. White-black has probability 0.30 × 0.70 = 0.21.",
+          "Previous spins do not change these probabilities. Black-black has probability 0.49, compared with 0.09 for white-white."
+        ],
+        "warning": "Independence rules out compensation for earlier outcomes, and equally many sequences need not have equal probabilities when their color counts differ."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.4#4"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q86",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V1",
+      "scenario": "A bicycle rental service finds that 40% of customers choose an electric bicycle. Among those customers, 30% also rent a helmet. Overall, 25% of customers rent a helmet.",
+      "prompt": "What is the probability that a randomly selected customer rents both an electric bicycle and a helmet?",
+      "choices": [
+        "0.10",
+        "0.12",
+        "0.25",
+        "0.30"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Start with the electric-bicycle group, which represents 0.40 of all customers.",
+          "Multiply by its helmet rate: 0.40 × 0.30 = 0.12. The overall helmet rate is not needed."
+        ],
+        "warning": "Multiplying the two marginal rates assumes independence. The conditional helmet rate alone omits the first stage."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#10"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 29,
+              "max": 53,
+              "median": 45
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q87",
+      "lesson": "2.A.4",
+      "archetype": "probability_of_independent_trials",
+      "variant": "V4",
+      "scenario": "A remote control requires two independent connections. The first connects successfully with probability 0.80, and the second connects successfully with probability 0.60.",
+      "prompt": "What is the probability that neither connection succeeds?",
+      "choices": [
+        "0.08",
+        "0.48",
+        "0.52",
+        "0.60"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The failure probabilities are 1 − 0.80 = 0.20 and 1 − 0.60 = 0.40.",
+          "Independent failures have joint probability 0.20 × 0.40 = 0.08."
+        ],
+        "warning": "0.48 is both connections succeeding; 0.52 is at least one failing, which also includes exactly one failure."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#7",
+            "SG_2.7#12",
+            "SG_2.7#17"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q88",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V1",
+      "scenario": "A nursery grows 60% of its plants in greenhouse A and the rest in greenhouse B. The probabilities of flowering by May are 0.70 and 0.45, respectively. The tree shows these rates.",
+      "prompt": "What is the probability that a randomly selected plant flowers by May?",
+      "choices": [
+        "18%",
+        "42%",
+        "60%",
+        "70%"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Greenhouse A contributes 0.60 × 0.70 = 0.42 to the flowering probability.",
+          "Greenhouse B contributes 0.40 × 0.45 = 0.18. Add the disjoint paths to obtain 0.60, or 60%."
+        ],
+        "warning": "A single path excludes plants from the other greenhouse. The conditional flowering rates require weighting by greenhouse share."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q88-tree.svg",
+        "alt": "First stage: House A 0.6, House B 0.4. Conditional Flowers rates: 0.7, 0.45.",
+        "width": 480,
+        "height": 221
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#14",
+            "SG_2.7#21"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 34,
+            "observed": {
+              "min": 39,
+              "max": 87,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q89",
+      "lesson": "2.A.4",
+      "archetype": "conditional_probability_and_multiplication_rule",
+      "variant": "V5",
+      "scenario": "At a college, 40% of students take a laboratory course, 50% borrow a locker, and 75% of laboratory-course students borrow a locker. One student is selected at random.",
+      "prompt": "What is the probability that the student borrows a locker but does <u>not</u> take a laboratory course?",
+      "choices": [
+        "0.20",
+        "0.30",
+        "0.40",
+        "0.50"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The probability of both a laboratory course and a locker is 0.40 × 0.75 = 0.30.",
+          "Subtract this overlap from the overall locker probability: 0.50 − 0.30 = 0.20."
+        ],
+        "warning": "0.30 is the wrong part of the locker group. Multiplying 0.50 by 0.60 assumes an independence condition that was not given."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#9"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q90",
+      "lesson": "2.A.4",
+      "archetype": "total_probability_and_reverse_conditional",
+      "variant": "V3",
+      "scenario": "A distributor gets 40% of its lamps from supplier A and 60% from supplier B. The damaged-lamp rates are 0.05 for A and 0.10 for B. The tree summarizes the process.",
+      "prompt": "Given that a lamp is damaged, what is the probability that it came from supplier A?",
+      "choices": [
+        "0.02000",
+        "0.05000",
+        "0.25000",
+        "0.40000"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Supplier A contributes 0.40 × 0.05 = 0.02 to the damaged probability; supplier B contributes 0.60 × 0.10 = 0.06.",
+          "Among damaged lamps, the A share is 0.02/(0.02 + 0.06) = 0.25."
+        ],
+        "warning": "The 0.05 rate conditions on supplier A, whereas the question conditions on damage. The 0.02 joint probability requires normalization."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q90-tree.svg",
+        "alt": "First stage: Supplier A 0.4, Supplier B 0.6. Conditional Damaged rates: 0.05, 0.1.",
+        "width": 480,
+        "height": 221
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.6#1"
+          ],
+          "ced": [
+            "2.6.A.2"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 34,
+            "observed": {
+              "min": 39,
+              "max": 87,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
         }
       }
     },
@@ -5246,6 +8115,668 @@
           "file": "questions.json",
           "id": "q50"
         }
+      }
+    },
+    {
+      "id": "q91",
+      "lesson": "2.A.5",
+      "archetype": "use_independence_to_find_or_check_probability",
+      "variant": "V2",
+      "scenario": "For a randomly selected fair visitor, A is buying a poster and B is buying a pin. The events are independent. The probabilities of buying both and buying a poster without a pin are 0.12 and 0.28, respectively.",
+      "prompt": "What is the probability that the visitor buys a pin?",
+      "choices": [
+        "0.12",
+        "0.30",
+        "0.40",
+        "0.60"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The poster probability is 0.12 + 0.28 = 0.40.",
+          "Independence gives 0.12 = 0.40 × P(B), so the pin probability is 0.12/0.40 = 0.30."
+        ],
+        "warning": "0.40 is the known marginal for posters, 0.60 is its complement, and 0.12 is the joint probability."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#20"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 10,
+            "observed": {
+              "min": 13,
+              "max": 15,
+              "median": 14.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q92",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V3",
+      "scenario": "A gym finds that 50% of members attend yoga, 40% attend swimming, and 60% of yoga attendees also attend swimming. One member is selected at random.",
+      "prompt": "What is the probability that the member attends yoga or swimming, or both?",
+      "choices": [
+        "0.24",
+        "0.60",
+        "0.70",
+        "0.90"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The overlap is 0.50 × 0.60 = 0.30.",
+          "Use the addition rule: 0.50 + 0.40 − 0.30 = 0.60."
+        ],
+        "warning": "0.70 assumes independence when finding the overlap. The sum 0.90 counts members who attend both activities twice."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#25"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q93",
+      "lesson": "2.A.5",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V3",
+      "scenario": "A ticket holder is randomly selected from a theater audience. The probability that the holder sits in the balcony is 0.30, and the probability that the holder sits in the stalls is 0.70. Every holder has exactly one seat.",
+      "prompt": "Which statement correctly describes balcony seating and stalls seating?",
+      "choices": [
+        "They are independent because each ticket holder has one seat.",
+        "They are neither mutually exclusive nor independent.",
+        "They are both mutually exclusive and independent.",
+        "They are mutually exclusive but not independent."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "One holder cannot occupy both seating sections, so the intersection probability is 0.",
+          "The marginal product is 0.30 × 0.70 = 0.21, which differs from 0. Therefore, the events are not independent."
+        ],
+        "warning": "Mutual exclusivity and independence have different requirements. Nonzero disjoint events cannot be independent."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.5#5",
+            "SG_2.5#8",
+            "SG_2.7#14"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q94",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V1",
+      "scenario": "A weather display receives data from two independent transmitters. Transmitter A sends a usable reading with probability 0.60, and transmitter B does so with probability 0.50.",
+      "prompt": "What is the probability that <u>at least</u> one transmitter sends a usable reading?",
+      "choices": [
+        "0.10",
+        "0.30",
+        "0.60",
+        "0.80"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Neither transmitter sends a usable reading with probability 0.40 × 0.50 = 0.20.",
+          "Take the complement: 1 − 0.20 = 0.80. Equivalently, subtract the overlap 0.30 from the sum 1.10."
+        ],
+        "warning": "The product 0.30 is both, and 0.60 is only one transmitter’s marginal. The union includes exactly one and both."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#8",
+            "SG_2.7#26"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      }
+    },
+    {
+      "id": "q95",
+      "lesson": "2.A.5",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V5",
+      "scenario": "A school survey records participation in orchestra and drama. The Venn diagram gives the counts for 100 students. One student is selected at random.",
+      "prompt": "What is the probability that the student participates in neither orchestra nor drama?",
+      "choices": [
+        "0.25",
+        "0.35",
+        "0.65",
+        "0.75"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The union contains 20 + 15 + 30 = 65 students.",
+          "The 35 students outside both circles participate in neither activity, giving a probability of 35/100 = 0.35."
+        ],
+        "warning": "The overlap 0.15 is both activities, not neither. Adding the marginal counts without subtracting overlap counts some students twice."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q95-venn.svg",
+        "alt": "Counts: Orchestra only 20, both 15, Drama only 30, neither 35.",
+        "width": 480,
+        "height": 257
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V5",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Complement-of-union count read from a Venn diagram rather than the variant’s bulleted probabilities."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#18"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 24,
+            "observed": {
+              "min": 40,
+              "max": 105,
+              "median": 52.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q96",
+      "lesson": "2.A.5",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V3",
+      "scenario": "A store recorded whether customers used a coupon and whether they bought a reusable bag. The counts are shown in the table. One customer is selected at random.",
+      "prompt": "Which comparison shows that coupon use and bag purchase are <u>not</u> independent?",
+      "choices": [
+        "30/60 ≠ 40/100",
+        "60/100 ≠ 40/100",
+        "30/100 ≠ 40/100",
+        "30/60 = 40/100"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Among coupon users, the bag-purchase probability is 30/60 = 0.50. Overall it is 40/100 = 0.40.",
+          "Because conditioning on coupon use changes the bag-purchase probability, the events are not independent."
+        ],
+        "warning": "B compares unrelated marginals, C compares a joint probability with a marginal probability, and D states a false equality: 0.50 does not equal 0.40."
+      },
+      "stimulus": {
+        "type": "table",
+        "caption": "Store customers",
+        "headers": [
+          "Coupon",
+          "Bag",
+          "No bag",
+          "Total"
+        ],
+        "rows": [
+          [
+            "Used",
+            30,
+            30,
+            60
+          ],
+          [
+            "Not used",
+            10,
+            30,
+            40
+          ],
+          [
+            "Total",
+            40,
+            60,
+            100
+          ]
+        ]
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#18"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 37,
+              "max": 80,
+              "median": 56.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q97",
+      "lesson": "2.A.5",
+      "archetype": "union_probability_addition_rule",
+      "variant": "V3",
+      "scenario": "A club records whether members use its pool and its courts. The Venn diagram shows the counts for 200 members. One member is selected at random.",
+      "prompt": "What is the probability that the member uses the pool or the courts, or both?",
+      "choices": [
+        "0.15",
+        "0.35",
+        "0.75",
+        "0.90"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The union is the set inside either circle: 70 + 30 + 50 = 150 members.",
+          "Its probability is 150/200 = 0.75. Counting the 30-member overlap once is essential."
+        ],
+        "warning": "0.15 counts only the overlap. The sum of the two marginal proportions is 0.90 and double-counts those using both facilities."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q97-venn.svg",
+        "alt": "Counts: Pool only 70, both 30, Courts only 50, neither 50.",
+        "width": 480,
+        "height": 257
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Addition-rule overlap supplied as Venn counts rather than a conditional probability."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#25"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q98",
+      "lesson": "2.A.5",
+      "archetype": "association_from_conditional_proportions",
+      "variant": "V1",
+      "scenario": "A festival compares shuttle use among day-pass and full-pass visitors. The mosaic plot summarizes 150 visitors. Column widths represent the numbers in the two pass groups.",
+      "prompt": "Are pass type and shuttle use independent in these data?",
+      "choices": [
+        "Yes, because the shuttle-use rate is 0.40 in both pass groups.",
+        "No, because there are more shuttle users with full passes.",
+        "Yes, because both columns extend to 1.",
+        "No, because the two pass groups have different sizes."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The day-pass shuttle rate is 20/50 = 0.40; the full-pass rate is 40/100 = 0.40.",
+          "The conditional rates match, and they also equal the overall rate 60/150 = 0.40, so the variables are independent in these data."
+        ],
+        "warning": "Counts and column widths reflect unequal group sizes. Equal full column heights alone would occur even with unequal shuttle rates."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/q98-mosaic.svg",
+        "alt": "Mosaic plot with group widths proportional to sample size. Day pass: Shuttle 20, No shuttle 30; Full pass: Shuttle 40, No shuttle 60.",
+        "width": 480,
+        "height": 314
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Independence judged from a mosaic rather than the variant’s table."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.2#4",
+            "SG_2.2#9"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 28,
+            "observed": {
+              "min": 37,
+              "max": 80,
+              "median": 56.5
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 10,
+            "observed": {
+              "min": 11,
+              "max": 34,
+              "median": 22.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ],
+        "boundsCheck": {
+          "method": "Counts or probabilities printed, or deciding values lie on labelled gridlines; checked against figure source."
+        }
+      }
+    },
+    {
+      "id": "q99",
+      "lesson": "2.A.5",
+      "archetype": "missing_information_for_probability",
+      "variant": "V1",
+      "scenario": "At a science center, 45% of visitors attend a planetarium show and 35% visit the telescope exhibit. The center does not report how many visitors do both.",
+      "prompt": "Which additional value would allow the probability of doing <u>at least</u> one activity to be calculated?",
+      "choices": [
+        "The proportion who do not attend the planetarium show",
+        "The proportion who visit the telescope exhibit",
+        "The total number of exhibits in the center",
+        "The proportion who do both activities"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The addition rule combines the marginal probabilities and subtracts the overlap.",
+          "The two marginals are given, so the probability of doing both activities is the missing value."
+        ],
+        "warning": "The planetarium complement can already be computed, and repeating the telescope marginal does not determine the overlap."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V1",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted.",
+          "Asks for the sufficient missing probability instead of a cannot-determine option."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.7#1"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 31,
+              "max": 49,
+              "median": 49
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          },
+          {
+            "field": "ask",
+            "words": 16,
+            "observed": {
+              "min": 21,
+              "max": 26,
+              "median": 21
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q100",
+      "lesson": "2.A.5",
+      "archetype": "mutually_exclusive_events_and_joint_probability",
+      "variant": "V4",
+      "scenario": "A neighborhood survey found that 60% of households have a bicycle, 45% have a scooter, and 80% have one or both. One household is selected at random.",
+      "prompt": "What is the probability that the household has both a bicycle and a scooter?",
+      "choices": [
+        "0.20",
+        "0.25",
+        "0.27",
+        "0.80"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The marginal sum is 0.60 + 0.45 = 1.05. That sum counts the overlap twice.",
+          "Subtract the union to recover the overlap: 1.05 − 0.80 = 0.25."
+        ],
+        "warning": "0.27 assumes independence. The 0.20 complement of the union represents neither vehicle, and 0.80 is the union."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh distractors follow the named misconceptions in the warning; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric checks are recorded in scripts/check-unit-two-a.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original item authored from the archetype answer logic and CED topic profile; no source wording or data copied.",
+          "card_exemplars": [
+            "SG_2.5#6",
+            "SG_2.5#7",
+            "SG_2.7#13"
+          ],
+          "ced": [
+            "2.7"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 27,
+            "observed": {
+              "min": 40,
+              "max": 105,
+              "median": 52.0
+            },
+            "reason": "Concise standalone wording preserves all necessary conditions."
+          }
+        ]
       }
     }
   ]

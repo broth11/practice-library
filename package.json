@@ -9,7 +9,8 @@
     "diagrams": "python3 scripts/diagrams/build_diagrams.py",
     "check:diagrams": "python3 scripts/diagrams/build_diagrams.py --check",
     "preview": "node scripts/preview.mjs",
-    "export:github": "node scripts/export-github.mjs"
+    "export:github": "node scripts/export-github.mjs",
+    "check:working": "python3 scripts/check-unit-two-a-working.py"
   },
   "engines": {
     "node": ">=20"

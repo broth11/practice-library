@@ -8,6 +8,8 @@ import { readFileSync } from 'node:fs';
 
 import { Q, q, sum, Phi, invPhi, binom } from './lib/stats.mjs';
 import './check-unit-one.mjs';
+import './check-unit-two-a.mjs';
+import './check-unit-two-a-concepts.mjs';
 
 // ---------- combinatorics helpers ----------
 const product = (values, repeat) => repeat === 0 ? [[]] : product(values, repeat - 1).flatMap(rest => values.map(v => [...rest, v]));

@@ -25,6 +25,8 @@ Install the renderer once with `pip install -r scripts/diagrams/requirements.txt
 | `segmented` | Segmented bars within groups | `groups` (`label`, `values`), `legend`, `xLabel`, `yLabel` |
 | `venn` | Two-set Venn diagram with counts | `left`, `right`, `counts` (`leftOnly`, `both`, `rightOnly`, `neither`) |
 | `tree` | Two-stage probability tree | `root`, `branches` (`label`, `p`, `children`) |
+| `grouped_bars` | Side-by-side count or relative-frequency bars | `groups` (`label`, `values`), `categories`, `relative`, `xLabel`, `yLabel` |
+| `mosaic` | Two-variable counts as areas; widths show group sizes | `groups` (`label`, `counts`), `legend`, `xLabel`, `yLabel` |
 | `categorical_bars` | Counts for named categories | `categories`, `values`, `tickStep`, `printValues`, `xLabel`, `yLabel` |
 | `categorical_pie` | Mutually exclusive category percentages | `categories`, `values` (sum to 100) |
 | `summary_boxplots` | One or more horizontal boxplots | `groups` (`label`, `min`, `q1`, `median`, `q3`, `max`, `outliers`), `xLabel`, optional `ticks` |

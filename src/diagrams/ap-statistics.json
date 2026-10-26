@@ -947,6 +947,521 @@
         26,
         32
       ]
+    },
+    {
+      "file": "q53-grouped-bars.svg",
+      "questions": [
+        "2-a:q53"
+      ],
+      "kind": "grouped_bars",
+      "groups": [
+        {
+          "label": "North",
+          "values": [
+            20,
+            10,
+            20
+          ]
+        },
+        {
+          "label": "South",
+          "values": [
+            30,
+            40,
+            30
+          ]
+        }
+      ],
+      "categories": [
+        "Playground",
+        "Garden",
+        "Trail"
+      ],
+      "relative": false,
+      "xLabel": "Response",
+      "yLabel": "Number of respondents"
+    },
+    {
+      "file": "q54-grouped-bars.svg",
+      "questions": [
+        "2-a:q54"
+      ],
+      "kind": "grouped_bars",
+      "groups": [
+        {
+          "label": "Weekday",
+          "values": [
+            0.5,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "label": "Weekend",
+          "values": [
+            0.25,
+            0.25,
+            0.5
+          ]
+        }
+      ],
+      "categories": [
+        "Music",
+        "Dance",
+        "Comedy"
+      ],
+      "relative": true,
+      "xLabel": "Response",
+      "yLabel": "Proportion within group"
+    },
+    {
+      "file": "q55-mosaic.svg",
+      "questions": [
+        "2-a:q55"
+      ],
+      "kind": "mosaic",
+      "groups": [
+        {
+          "label": "Desk A",
+          "counts": [
+            30,
+            10
+          ]
+        },
+        {
+          "label": "Desk B",
+          "counts": [
+            30,
+            30
+          ]
+        }
+      ],
+      "legend": [
+        "Completed",
+        "Not completed"
+      ],
+      "xLabel": "Group (width shows group size)",
+      "yLabel": "Proportion within group"
+    },
+    {
+      "file": "q56-mosaic.svg",
+      "questions": [
+        "2-a:q56"
+      ],
+      "kind": "mosaic",
+      "groups": [
+        {
+          "label": "Local",
+          "counts": [
+            30,
+            30
+          ]
+        },
+        {
+          "label": "Courier",
+          "counts": [
+            20,
+            40
+          ]
+        }
+      ],
+      "legend": [
+        "Reusable",
+        "Single use"
+      ],
+      "xLabel": "Group (width shows group size)",
+      "yLabel": "Proportion within group"
+    },
+    {
+      "file": "q59-grouped-bars.svg",
+      "questions": [
+        "2-a:q59"
+      ],
+      "kind": "grouped_bars",
+      "groups": [
+        {
+          "label": "Before",
+          "values": [
+            0.4,
+            0.4,
+            0.2
+          ]
+        },
+        {
+          "label": "After",
+          "values": [
+            0.6,
+            0.2,
+            0.2
+          ]
+        }
+      ],
+      "categories": [
+        "Library",
+        "Home",
+        "Café"
+      ],
+      "relative": true,
+      "xLabel": "Response",
+      "yLabel": "Proportion within group"
+    },
+    {
+      "file": "q64-relative-frequency-bars.svg",
+      "questions": [
+        "2-a:q64"
+      ],
+      "kind": "relative_frequency_bars",
+      "categories": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "counts": [
+        160,
+        190,
+        100,
+        40,
+        10
+      ],
+      "trials": 500,
+      "xLabel": "Number of successes in a repetition",
+      "yLabel": "Relative frequency"
+    },
+    {
+      "file": "q69-categorical-bars.svg",
+      "questions": [
+        "2-a:q69"
+      ],
+      "kind": "categorical_bars",
+      "categories": [
+        "Bird",
+        "Mammal",
+        "Reptile",
+        "Amphibian"
+      ],
+      "values": [
+        70,
+        50,
+        50,
+        30
+      ],
+      "tickStep": 10,
+      "printValues": true,
+      "xLabel": "Animal group",
+      "yLabel": "Number of observations"
+    },
+    {
+      "file": "q70-relative-frequency-bars.svg",
+      "questions": [
+        "2-a:q70"
+      ],
+      "kind": "relative_frequency_bars",
+      "categories": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": [
+        150,
+        200,
+        250,
+        200,
+        150,
+        50
+      ],
+      "trials": 1000,
+      "xLabel": "Number of successes in a repetition",
+      "yLabel": "Relative frequency"
+    },
+    {
+      "file": "q71-venn.svg",
+      "questions": [
+        "2-a:q71"
+      ],
+      "kind": "venn",
+      "left": "Drill",
+      "right": "Saw",
+      "counts": {
+        "leftOnly": 42,
+        "both": 18,
+        "rightOnly": 22,
+        "neither": 18
+      }
+    },
+    {
+      "file": "q72-venn.svg",
+      "questions": [
+        "2-a:q72"
+      ],
+      "kind": "venn",
+      "left": "Light",
+      "right": "Lock",
+      "counts": {
+        "leftOnly": 24,
+        "both": 36,
+        "rightOnly": 24,
+        "neither": 16
+      }
+    },
+    {
+      "file": "q77-venn.svg",
+      "questions": [
+        "2-a:q77"
+      ],
+      "kind": "venn",
+      "left": "Cat",
+      "right": "Dog",
+      "counts": {
+        "leftOnly": 30,
+        "both": 20,
+        "rightOnly": 40,
+        "neither": 10
+      }
+    },
+    {
+      "file": "q78-mosaic.svg",
+      "questions": [
+        "2-a:q78"
+      ],
+      "kind": "mosaic",
+      "groups": [
+        {
+          "label": "Online",
+          "counts": [
+            30,
+            20
+          ]
+        },
+        {
+          "label": "Counter",
+          "counts": [
+            18,
+            52
+          ]
+        }
+      ],
+      "legend": [
+        "Cake",
+        "Other"
+      ],
+      "xLabel": "Group (width shows group size)",
+      "yLabel": "Proportion within group"
+    },
+    {
+      "file": "q81-tree.svg",
+      "questions": [
+        "2-a:q81"
+      ],
+      "kind": "tree",
+      "root": "Start",
+      "branches": [
+        {
+          "label": "Line A",
+          "p": "0.25",
+          "children": [
+            {
+              "label": "Error",
+              "p": "0.12"
+            },
+            {
+              "label": "Correct",
+              "p": "0.88"
+            }
+          ]
+        },
+        {
+          "label": "Line B",
+          "p": "0.75",
+          "children": [
+            {
+              "label": "Error",
+              "p": "0.04"
+            },
+            {
+              "label": "Correct",
+              "p": "0.96"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "q82-tree.svg",
+      "questions": [
+        "2-a:q82"
+      ],
+      "kind": "tree",
+      "root": "Start",
+      "branches": [
+        {
+          "label": "Traffic",
+          "p": "0.20",
+          "children": [
+            {
+              "label": "Rain",
+              "p": "0.30"
+            },
+            {
+              "label": "No rain",
+              "p": "0.70"
+            }
+          ]
+        },
+        {
+          "label": "No traffic",
+          "p": "0.80",
+          "children": [
+            {
+              "label": "Rain",
+              "p": "0.10"
+            },
+            {
+              "label": "No rain",
+              "p": "0.90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "q88-tree.svg",
+      "questions": [
+        "2-a:q88"
+      ],
+      "kind": "tree",
+      "root": "Start",
+      "branches": [
+        {
+          "label": "House A",
+          "p": "0.60",
+          "children": [
+            {
+              "label": "Flowers",
+              "p": "0.70"
+            },
+            {
+              "label": "No flowers",
+              "p": "0.30"
+            }
+          ]
+        },
+        {
+          "label": "House B",
+          "p": "0.40",
+          "children": [
+            {
+              "label": "Flowers",
+              "p": "0.45"
+            },
+            {
+              "label": "No flowers",
+              "p": "0.55"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "q90-tree.svg",
+      "questions": [
+        "2-a:q90"
+      ],
+      "kind": "tree",
+      "root": "Start",
+      "branches": [
+        {
+          "label": "Supplier A",
+          "p": "0.40",
+          "children": [
+            {
+              "label": "Damaged",
+              "p": "0.05"
+            },
+            {
+              "label": "Intact",
+              "p": "0.95"
+            }
+          ]
+        },
+        {
+          "label": "Supplier B",
+          "p": "0.60",
+          "children": [
+            {
+              "label": "Damaged",
+              "p": "0.10"
+            },
+            {
+              "label": "Intact",
+              "p": "0.90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "q95-venn.svg",
+      "questions": [
+        "2-a:q95"
+      ],
+      "kind": "venn",
+      "left": "Orchestra",
+      "right": "Drama",
+      "counts": {
+        "leftOnly": 20,
+        "both": 15,
+        "rightOnly": 30,
+        "neither": 35
+      }
+    },
+    {
+      "file": "q97-venn.svg",
+      "questions": [
+        "2-a:q97"
+      ],
+      "kind": "venn",
+      "left": "Pool",
+      "right": "Courts",
+      "counts": {
+        "leftOnly": 70,
+        "both": 30,
+        "rightOnly": 50,
+        "neither": 50
+      }
+    },
+    {
+      "file": "q98-mosaic.svg",
+      "questions": [
+        "2-a:q98"
+      ],
+      "kind": "mosaic",
+      "groups": [
+        {
+          "label": "Day pass",
+          "counts": [
+            20,
+            30
+          ]
+        },
+        {
+          "label": "Full pass",
+          "counts": [
+            40,
+            60
+          ]
+        }
+      ],
+      "legend": [
+        "Shuttle",
+        "No shuttle"
+      ],
+      "xLabel": "Group (width shows group size)",
+      "yLabel": "Proportion within group"
     }
   ]
 }

@@ -8,7 +8,8 @@
       "card": "assign_digits_for_simulation",
       "questions": [
         "2-a:q07",
-        "2-a:q35"
+        "2-a:q35",
+        "2-a:q63"
       ]
     },
     {
@@ -17,7 +18,11 @@
       "card": "association_from_conditional_proportions",
       "questions": [
         "2-a:q03",
-        "2-a:q21"
+        "2-a:q21",
+        "2-a:q52",
+        "2-a:q55",
+        "2-a:q96",
+        "2-a:q98"
       ]
     },
     {
@@ -87,7 +92,8 @@
       "status": "card",
       "card": "claim_from_two_group_counts",
       "questions": [
-        "2-a:q29"
+        "2-a:q29",
+        "2-a:q53"
       ]
     },
     {
@@ -96,7 +102,9 @@
       "card": "claim_from_two_group_relative_display",
       "questions": [
         "2-a:q04",
-        "2-a:q30"
+        "2-a:q30",
+        "2-a:q54",
+        "2-a:q59"
       ]
     },
     {
@@ -122,7 +130,8 @@
       "status": "card",
       "card": "compare_likelihoods_from_two_way_table",
       "questions": [
-        "2-a:q26"
+        "2-a:q26",
+        "2-a:q57"
       ]
     },
     {
@@ -139,7 +148,9 @@
       "card": "complement_probability",
       "questions": [
         "2-a:q09",
-        "2-a:q34"
+        "2-a:q34",
+        "2-a:q62",
+        "2-a:q69"
       ]
     },
     {
@@ -158,12 +169,17 @@
       "status": "card",
       "card": "conditional_probability_and_multiplication_rule",
       "questions": [
-        "2-a:q36",
         "2-a:q16",
         "2-a:q17",
+        "2-a:q36",
         "2-a:q42",
         "2-a:q43",
-        "2-a:q45"
+        "2-a:q45",
+        "2-a:q73",
+        "2-a:q79",
+        "2-a:q83",
+        "2-a:q86",
+        "2-a:q89"
       ]
     },
     {
@@ -172,7 +188,9 @@
       "card": "conditional_probability_from_equally_likely_outcomes",
       "questions": [
         "2-a:q14",
-        "2-a:q38"
+        "2-a:q38",
+        "2-a:q74",
+        "2-a:q75"
       ]
     },
     {
@@ -214,9 +232,9 @@
       "status": "card",
       "card": "discrete_or_continuous_variable",
       "questions": [
+        "1-a:a05",
         "2-b:b01",
-        "2-b:b21",
-        "1-a:a05"
+        "2-b:b21"
       ]
     },
     {
@@ -342,7 +360,8 @@
       "status": "card",
       "card": "identify_law_of_large_numbers",
       "questions": [
-        "2-a:q31"
+        "2-a:q31",
+        "2-a:q67"
       ]
     },
     {
@@ -358,9 +377,9 @@
       "status": "card",
       "card": "identify_population_and_sample",
       "questions": [
-        "2-b:b41",
         "1-a:a01",
-        "1-a:a02"
+        "1-a:a02",
+        "2-b:b41"
       ]
     },
     {
@@ -424,7 +443,8 @@
       "status": "card",
       "card": "interpret_probability_as_long_run_frequency",
       "questions": [
-        "2-a:q06"
+        "2-a:q06",
+        "2-a:q66"
       ]
     },
     {
@@ -679,8 +699,10 @@
       "status": "card",
       "card": "missing_information_for_probability",
       "questions": [
+        "2-a:q25",
         "2-a:q40",
-        "2-a:q25"
+        "2-a:q80",
+        "2-a:q99"
       ]
     },
     {
@@ -696,10 +718,14 @@
       "status": "card",
       "card": "mutually_exclusive_events_and_joint_probability",
       "questions": [
+        "2-a:q100",
         "2-a:q13",
-        "2-a:q39",
         "2-a:q24",
-        "2-a:q48"
+        "2-a:q39",
+        "2-a:q48",
+        "2-a:q77",
+        "2-a:q93",
+        "2-a:q95"
       ]
     },
     {
@@ -748,6 +774,9 @@
       "questions": [
         "2-a:q10",
         "2-a:q33",
+        "2-a:q64",
+        "2-a:q65",
+        "2-a:q70",
         "2-b:b48"
       ]
     },
@@ -758,7 +787,10 @@
       "questions": [
         "2-a:q18",
         "2-a:q19",
-        "2-a:q41"
+        "2-a:q41",
+        "2-a:q84",
+        "2-a:q85",
+        "2-a:q87"
       ]
     },
     {
@@ -801,11 +833,18 @@
       "questions": [
         "2-a:q01",
         "2-a:q02",
-        "2-a:q27",
         "2-a:q11",
         "2-a:q12",
         "2-a:q15",
-        "2-a:q37"
+        "2-a:q27",
+        "2-a:q37",
+        "2-a:q51",
+        "2-a:q56",
+        "2-a:q60",
+        "2-a:q71",
+        "2-a:q72",
+        "2-a:q76",
+        "2-a:q78"
       ]
     },
     {
@@ -822,7 +861,9 @@
       "card": "sample_space_and_equally_likely_outcomes",
       "questions": [
         "2-a:q08",
-        "2-a:q32"
+        "2-a:q32",
+        "2-a:q61",
+        "2-a:q68"
       ]
     },
     {
@@ -878,9 +919,9 @@
       "status": "review",
       "card": "statistic_from_description",
       "questions": [
-        "2-b:b42",
         "1-a:a33",
-        "1-a:a39"
+        "1-a:a39",
+        "2-b:b42"
       ],
       "note": "b42 asks whether 18 (a population mean) and 19.2 (a sample mean) are parameters or statistics. This card matches statistics to their descriptions (standard deviation, median), so its answer logic does not decide b42. Closest card: normal_distribution_parameter_notation.",
       "relatedCard": "normal_distribution_parameter_notation"
@@ -891,7 +932,11 @@
       "card": "total_probability_and_reverse_conditional",
       "questions": [
         "2-a:q20",
-        "2-a:q44"
+        "2-a:q44",
+        "2-a:q81",
+        "2-a:q82",
+        "2-a:q88",
+        "2-a:q90"
       ]
     },
     {
@@ -902,7 +947,10 @@
         "2-a:q22",
         "2-a:q23",
         "2-a:q46",
-        "2-a:q49"
+        "2-a:q49",
+        "2-a:q92",
+        "2-a:q94",
+        "2-a:q97"
       ]
     },
     {
@@ -910,7 +958,8 @@
       "status": "card",
       "card": "use_independence_to_find_or_check_probability",
       "questions": [
-        "2-a:q47"
+        "2-a:q47",
+        "2-a:q91"
       ]
     },
     {
@@ -940,7 +989,8 @@
       "card": "value_for_no_association",
       "questions": [
         "2-a:q28",
-        "2-a:q50"
+        "2-a:q50",
+        "2-a:q58"
       ]
     },
     {
@@ -948,10 +998,10 @@
       "status": "card",
       "card": "z_score_calculation",
       "questions": [
-        "2-b:b27",
         "1-a:a53",
         "1-a:a55",
-        "1-a:a60"
+        "1-a:a60",
+        "2-b:b27"
       ]
     }
   ]

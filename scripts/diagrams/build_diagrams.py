@@ -356,9 +356,68 @@ def tree(spec):
     return finish(fig)
 
 
+def grouped_bars(spec):
+    fig, ax = plt.subplots(figsize=(6.0, 3.0))
+    groups = spec['groups']
+    width = 0.72 / len(groups)
+    for i, group in enumerate(groups):
+        positions = [x - 0.36 + width * (i + 0.5) for x in range(len(spec['categories']))]
+        bars = ax.bar(positions, group['values'], width=width, label=group['label'],
+                      color=[DARK, LIGHT, 'white'][i % 3], edgecolor=INK, linewidth=0.8)
+        labels = [number(v) for v in group['values']]
+        ax.bar_label(bars, labels=labels, padding=3, fontsize=11)
+    ax.set_xticks(range(len(spec['categories'])), spec['categories'])
+    top = max(max(g['values']) for g in groups)
+    if spec.get('relative'):
+        ax.set_ylim(0, 1)
+        ax.set_yticks([0, .2, .4, .6, .8, 1], ['0', '0.2', '0.4', '0.6', '0.8', '1'])
+    else:
+        step = 10
+        ax.set_ylim(0, math.ceil((top + step) / step) * step)
+        ax.set_yticks(range(0, int(ax.get_ylim()[1]) + 1, step))
+    bars_axes(ax, spec['xLabel'], spec['yLabel'])
+    ax.tick_params(labelsize=11)
+    ax.legend(loc='upper center', bbox_to_anchor=(.5, -.30), ncol=len(groups),
+              frameon=True, fancybox=False, edgecolor=INK, fontsize=11)
+    return finish(fig)
+
+
+def mosaic(spec):
+    fig, ax = plt.subplots(figsize=(6.0, 3.0))
+    groups = spec['groups']
+    total = sum(sum(g['counts']) for g in groups)
+    left = 0
+    colors = [DARK, LIGHT, 'white']
+    centers = []
+    for group in groups:
+        n = sum(group['counts'])
+        width = n / total
+        bottom = 0
+        centers.append(left + width / 2)
+        for i, count in enumerate(group['counts']):
+            height = count / n
+            ax.add_patch(Rectangle((left, bottom), width, height, facecolor=colors[i % 3],
+                                   edgecolor=INK, linewidth=1))
+            ax.text(left + width / 2, bottom + height / 2, str(count), ha='center', va='center',
+                    color='white' if i == 0 else INK, fontsize=13)
+            bottom += height
+        left += width
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.set_xticks(centers, [g['label'] for g in groups])
+    ax.set_yticks([0, .25, .5, .75, 1], ['0', '0.25', '0.50', '0.75', '1'])
+    ax.set_xlabel(spec['xLabel'])
+    ax.set_ylabel(spec['yLabel'])
+    ax.tick_params(labelsize=11)
+    handles = [Patch(facecolor=colors[i], edgecolor=INK, label=l) for i, l in enumerate(spec['legend'])]
+    ax.legend(handles=handles, loc='upper center', bbox_to_anchor=(.5, -.30), ncol=len(handles),
+              frameon=True, fancybox=False, edgecolor=INK, fontsize=11)
+    return finish(fig)
+
+
 KINDS = {fn.__name__: fn for fn in (discrete_bars, binomial_bars, normal, normal_comparison, frequency_histogram,
                                     relative_frequency_bars, dotplot, segmented, venn, tree,
-                                    categorical_bars, categorical_pie, summary_boxplots, paired_histograms)}
+                                    categorical_bars, categorical_pie, summary_boxplots, paired_histograms, grouped_bars, mosaic)}
 
 
 def display_size(svg: bytes) -> tuple[int, int]:

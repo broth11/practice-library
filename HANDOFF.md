@@ -1,5 +1,26 @@
 # Handoff
 
+## GitHub synchronization (2026-10-26)
+
+- Ben explicitly authorized pushing the expansion and navigation/accuracy follow-up directly to GitHub main. The two Sites changes were applied on top of the existing GitHub history without replacing or rewriting it.
+- The 100-question 2.A set, nineteen diagrams, corrected question ordering, answer checks, worked-equation audit, and regenerated dist are included. Local validation passes.
+
+## Navigation and accuracy follow-up (2026-10-26)
+
+- Reordered 2.A into lesson order, preserving within-lesson order and every id. Arrows now finish 1–20 before moving lessons. A structural check rejects interleaved lesson order in every unit.
+- All 100 2.A keys now have numeric or conceptual checks: 64 numeric and 36 conceptual, including the previously unported original conceptual items.
+- Rechecked worked explanations. `npm run check:working` verifies 131 explicit numeric equations in 73 explanations; symbolic and conceptual working received AI review. No incorrect numeric key was found.
+- Browser regression checks passed forward and backward at 10↔11 in all five lessons and at 20↔1 across lessons.
+- q96’s fourth comparison was clarified to an explicitly false equality, making the intended independence comparison unambiguous. Key A is unchanged.
+
+## Latest change (2026-10-26, Codex, `codex/expand-unit-2a`)
+
+- Unit 2.A now has 100 questions, twenty per lesson. q01–q50 are unchanged; q51–q100 have questions, explanations, and nineteen generated figures. Calculator guidance is deferred on all additions by Ben’s request.
+- Underrepresented variants and representations are documented in `docs/UNIT-2A-EXPANSION-REVIEW.md`. New reusable diagram kinds: grouped bars and mosaic.
+- Checks pass: 33 new numeric keys, figure inputs, balanced unit keys, per-lesson counts, deferrals, KaTeX, all 63 reproducible figures, and source leak scan. Conceptual review is AI review; no human sign-off. Browser review covered desktop and 390px layouts.
+- Publication scope: update the selected Sites artifact through its native source workflow. The repository’s no-direct-main rule governs GitHub collaboration; the Sites connector supplies a separate source remote on main and its required workflow synchronizes that remote. Local authoring remains on the named Codex branch. GitHub/Pages has not been changed in this pass.
+
+
 The current state of the project, for whichever agent or person works on it next. Update this before you stop. Keep it short: what is true now, not a history (that is what Git is for).
 
 ## Current state (2026-10-24, Codex, `codex/unit-1a-1b`)
@@ -18,7 +39,7 @@ The current state of the project, for whichever agent or person works on it next
 
 ## Known gaps
 
-- 19 conceptual 2.A keys rely on AI reasoning plus assertions in the trial package's `verify_questions.py`. Those assertions are not yet ported to `scripts/check-answers.mjs`. q03 to q07, q13, q21, q24 to q26, q29 to q31, q34, q35, q39, q40, q46, and q47.
+- Original 2.A conceptual keys are now covered by `scripts/check-unit-two-a-concepts.mjs` (2026-10-26 follow-up).
 - Math nodes exist for solution steps only. Scenario, prompt, choice, and warning fields still use the legacy detector.
 - Upstream pedagogical provenance for Unit 2.B (variants, option roles, distractor rationale) was never recorded.
 - At phone width the b48 histogram's tick labels are small (about 7px). It is legible but tight.

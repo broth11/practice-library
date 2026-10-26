@@ -7,7 +7,7 @@ Where the decisions came from: the earlier ones were made in prior development s
 ## Content model
 
 - A course contains units; a unit contains lessons; a lesson contains questions.
-- The current unit pattern is five lessons with ten questions per lesson. This is a current content target, not a renderer limitation.
+- Unit 2.A now has five lessons with twenty questions per lesson (2026-10-26). Other unit counts are recorded in their manifests; counts are content targets, not renderer limitations.
 - An archetype is defined by answer logic and distractor misconceptions. A changed context, number set, or display is a variant when the logic and misconception map stay the same.
 - Questions must be fresh and original. Existing exemplar questions are evidence for structure and style, never text to copy.
 - Each authored question records its archetype and, when known, variant and option roles. Missing historical metadata stays explicitly unknown; do not invent it from the finished interface.
@@ -80,3 +80,12 @@ Where the decisions came from: the earlier ones were made in prior development s
 - Builds fingerprint their source and use that version in JavaScript, imported-module, and stylesheet URLs. Course and unit JSON is revalidated when fetched. This prevents cached runtime files or content from hiding a published rendering fix.
 - Literal notation keys are stored in `notationKey` and rendered as escaped text in a single inherited font. A stem-and-leaf key such as `1|2 = 12 centimeters` must not be partly processed as an arithmetic expression.
 - Ben confirmed that the original Sites address must also receive updates. Publish the same source and build to GitHub Pages and the original Sites project, retaining both addresses and the existing Sites audience.
+
+## Unit 2.A expansion (2026-10-26)
+
+- Expand ten to twenty questions in each of the five lessons. Preserve existing items and calculator walkthroughs. Defer calculator guidance for every added item.
+- Use shared generated grouped-bar and mosaic displays to cover two-variable representations absent from the original set. Preserve the current app layout and navigation.
+
+## Question traversal (2026-10-26)
+
+Question source arrays follow declared lesson order, with each lesson contiguous. Keyboard and button traversal share this sequence. New questions belong inside their lesson block. The structural validator enforces this for every unit. Stable ids and deep links are preserved.

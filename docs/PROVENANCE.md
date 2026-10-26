@@ -130,3 +130,11 @@ They stay `null` until primary authoring evidence supports a value.
 - **b49** matches `simulated_p_value_decision` in answer logic, but it counts simulated means at or above an observed mean that is below the claim. The key stands either way; the tail direction is worth a look before relinking.
 - Six 2.B labels are local, with no card: `valid_probability_distribution`, `normal_distribution_shape`, `sampling_distribution_definition`, `sampling_distribution_shape`, `simulation_based_claim_evaluation`, `sampling_distribution_exact_small_population`.
 - The physical-calculator check of the `Save Res: None` step and the ±1×10⁹⁹ entry.
+
+## Unit 2.A expansion (2026-10-26)
+
+Original items q51–q100 were authored from the existing private card answer logic and CED profiles 2.1–2.7. The SG_2.6 Markdown transcription was inspected to check conditional and path reasoning. No source prose, original images, or private card files were copied. Variant extensions and source exemplar ids only are recorded per question; option build codes remain null rather than overclaiming source lineage. The 33 numeric answers are recomputed by `scripts/check-unit-two-a.mjs`, which is imported by the standard checks. New figures have synthetic data in the shared diagram spec. Calculator guidance is explicitly deferred for all fifty additions. See `docs/UNIT-2A-EXPANSION-REVIEW.md` for coverage, display counts, browser inspection, and verification limits.
+
+### Accuracy follow-up (2026-10-26)
+
+The full 100-item 2.A set was reviewed again for keyed answers, reference populations, path probabilities, complements, overlap, rounding, and consistency of worked explanations. No numeric key correction was needed. All 36 conceptual keys now have explicit checks in `scripts/check-unit-two-a-concepts.mjs`, complementing the 64 recomputed numeric keys. `npm run check:working` additionally verifies 131 parseable numeric equations across 73 explanations; symbolic and conceptual working was AI reviewed. q96’s fourth distractor is now an explicitly false equality; its key remains A. This is tool and AI review, with no human sign-off.

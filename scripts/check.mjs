@@ -38,6 +38,13 @@ for (const course of catalog.courses || []) {
     const unit = await readJson(unitPath);
     const lessons = new Set((unit.lessons || []).map(lesson => lesson.id));
     const localIds = new Set();
+    // Arrows traverse source order. Lessons must remain contiguous after expansion.
+    const lessonOrder = new Map((unit.lessons || []).map((lesson, index) => [lesson.id, index]));
+    const positions = (unit.questions || []).map(question => lessonOrder.get(question.lesson));
+    if (positions.some((position, index) => index > 0 && position < positions[index - 1])) {
+      fail(`${unit.id}: question order must follow lesson order so arrows finish each lesson before advancing.`);
+    }
+
     if (unit.id !== unitMeta.id) fail(`${unitMeta.id}: unit id does not match its manifest entry.`);
     if (unitMeta.lessonCount !== unit.lessons?.length) fail(`${unit.id}: lessonCount is stale.`);
     if (unitMeta.questionCount !== unit.questions?.length) fail(`${unit.id}: questionCount is stale.`);
