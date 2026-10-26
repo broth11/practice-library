@@ -63,13 +63,30 @@
 .app.calculator-mode{grid-template-columns:44px minmax(0,1fr)}.calculator-mode .main{grid-column:2}.calculator-mode>.sidebar{display:flex;position:relative;grid-column:1;grid-row:1;padding:14px 5px;overflow:hidden;z-index:5;width:44px}.calculator-mode .route-toggle{display:flex;writing-mode:vertical-rl;padding:14px 7px;min-height:125px}.calculator-mode .route-content{visibility:hidden;opacity:0;pointer-events:none}.calculator-mode.route-open>.sidebar{position:absolute;inset:0 auto 0 0;width:clamp(260px,25vw,360px);padding:18px 20px 20px;box-shadow:12px 0 35px #25344825;z-index:10}.calculator-mode.route-open .route-toggle{writing-mode:horizontal-tb;min-height:38px;align-self:flex-end;margin-bottom:15px}.calculator-mode.route-open .route-content{visibility:visible;opacity:1;pointer-events:auto;overflow:auto}
 /* One shared reading size, taken from the active question after fitting. */
 .solution-inner{font-size:var(--s-font)!important}.solution-inner .feedback,.solution-inner .trap p{font-size:1em}.keypress-row,.keypress-note,.decimal-tip,.no-calculator p{font-size:var(--reading-font,16px)!important;line-height:1.48}.step-label .kc{font-size:.85em}.step-number{width:1.7em;height:1.7em;font-size:.85em}.keypress-position{font-size:calc(var(--reading-font,16px)*.9)}.keypress-header button{font-size:calc(var(--reading-font,16px)*.85)}.keypress-header{flex-wrap:wrap}.keypress-footer{max-height:42%;overflow:auto}.keypress-row .step-label>span:last-child{white-space:normal;overflow:visible}.keypress-row:not(.active) .step-label>span:last-child{display:inline}
-/* Native transitions retain outgoing panes so both opening and closing slide. */
-.sidebar{view-transition-name:practice-route}.question-area{view-transition-name:practice-question}.explanation-panels{view-transition-name:practice-explanation}.keypress-pane{view-transition-name:practice-keypresses}.calculator-stage{view-transition-name:practice-calculator}
-::view-transition-group(*){animation-duration:320ms;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
-::view-transition-new(practice-explanation),::view-transition-new(practice-keypresses),::view-transition-new(practice-calculator){animation:pane-arrive 320ms ease both}
-::view-transition-old(practice-explanation),::view-transition-old(practice-keypresses),::view-transition-old(practice-calculator){animation:pane-depart 260ms ease both}
-@keyframes pane-arrive{from{opacity:0;transform:translateX(35px)}to{opacity:1;transform:translateX(0)}}@keyframes pane-depart{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(35px)}}
+/* Retain outgoing panels for a complete slide in either direction.
+   Only the route content moves; the rail remains in the unchanged root. */
+.route-content{view-transition-name:practice-route}
+.question-area{view-transition-name:practice-question}
+.workspace-header{view-transition-name:practice-header}
+.pager{view-transition-name:practice-pager}
+.solution-shell{view-transition-name:practice-explanation}
+.calculator-mode .solution-shell{view-transition-name:none}
+.keypress-pane{view-transition-name:practice-keypresses}
+.calculator-stage{view-transition-name:practice-calculator}
+::view-transition,::view-transition-group(*),::view-transition-image-pair(*),::view-transition-old(*),::view-transition-new(*){pointer-events:none}
+::view-transition-group(*){animation-duration:360ms;animation-timing-function:cubic-bezier(.22,.8,.25,1)}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-group(practice-route){overflow:clip}
+::view-transition-new(practice-route){animation:route-arrive 360ms cubic-bezier(.22,.8,.25,1) both}
+::view-transition-old(practice-route){animation:route-depart 300ms cubic-bezier(.22,.8,.25,1) both}
+::view-transition-new(practice-explanation),::view-transition-new(practice-keypresses),::view-transition-new(practice-calculator){animation:pane-arrive 360ms cubic-bezier(.22,.8,.25,1) both}
+::view-transition-old(practice-explanation),::view-transition-old(practice-keypresses),::view-transition-old(practice-calculator){animation:pane-depart 300ms cubic-bezier(.22,.8,.25,1) both}
+@keyframes route-arrive{from{opacity:0;transform:translateX(-100%)}to{opacity:1;transform:translateX(0)}}
+@keyframes route-depart{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-100%)}}
+@keyframes pane-arrive{from{opacity:0;transform:translateX(36px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pane-depart{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(36px)}}
 @media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-new(*),::view-transition-old(*){animation:none!important}.route-content{transition:none}}
+
 /* Highlight rings preserve each key's original face and label colors. */
 .mini-key.lit{background:#151516;color:#fff}.mini-key.fn.lit{background:radial-gradient(circle at 50% 35%,#aaa,#84878c);color:#fff}.mini-key.shift.lit{color:#f5ce59}.mini-key.alpha.lit{color:#f18f9b}.mini-key.num.lit{background:#eeeff1;color:#1b1c20}.mini-key.blue.lit{background:#4d6ef0;color:#fff}.mini-key.exe.lit{background:#eeeff1;color:#2448d4}
 /* Center column headings and values, including numeric row headings. */

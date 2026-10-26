@@ -1,5 +1,13 @@
 # Handoff
 
+## Panel transitions (2026-10-26, Codex)
+
+- Navigation panes, course/unit selections, lesson selection, solution reveal/close, and explanation/calculator switching now use shared view transitions. Outgoing panels slide away; the rail stays fixed.
+- Card fitting runs synchronously before capture. New actions skip active transitions. Initial route restoration does not animate; network loading finishes before capture. Reduced-motion and unsupported browsers update directly.
+- Calculator step notes and screen changes use a brief 180ms reveal and preserve list scroll.
+- Browser checks cover all three tabs, repeated toggles, solution open/close, calculator entry/return, step advancement, and phone use. Desktop question width stays 592px and tab tops stay 16, 146, and 276px at 1,440 by 834. Phone width stays 318px and tab tops stay 12, 132, and 252px at 390 by 844. No horizontal overflow; calculator height containment is retained. No app errors/warnings recorded.
+- Standard checks/build and syntax checks pass. A helper check confirms reduced-motion/unsupported-browser bypass and active-transition replacement. Synchronize both hosting targets; no content changes.
+
 ## Background image loading (2026-10-26, Codex)
 
 - All 75 diagrams and 12 calculator menu icons preload and decode after startup. The selected unit's question/solution figures have priority. Four low-priority downloads run at once; the interface and navigation never await completion.

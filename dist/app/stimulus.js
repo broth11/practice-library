@@ -1,4 +1,4 @@
-import { imageSource } from './image-preload.js?v=9c4f799e420b';
+import { imageSource } from './image-preload.js?v=f8602b4b7f7c';
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
