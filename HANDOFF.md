@@ -1,5 +1,11 @@
 # Handoff
 
+## Solution transition endpoint fix (2026-10-26, Codex)
+
+- Removed the legacy 180ms `reveal-content` animation from the live solution shell. It applied a 10px offset while the new view transition captured its target, leaving an offset snapshot that snapped to the live position at handoff.
+- The shared view transition now owns the complete slide; its live target has no animation or transform. Browser checks confirm identical immediate/settled desktop bounds (x 999.3125, y 85, width 409.453125 at 1,440 by 834) and no transform after calculator-to-explanation switching.
+- Standard checks/build pass. Publish the same correction to Sites and GitHub Pages. Content and layout proportions are unchanged.
+
 ## Panel transitions (2026-10-26, Codex)
 
 - Navigation panes, course/unit selections, lesson selection, solution reveal/close, and explanation/calculator switching now use shared view transitions. Outgoing panels slide away; the rail stays fixed.

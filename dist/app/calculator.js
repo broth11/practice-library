@@ -1,4 +1,4 @@
-import { imageSource } from './image-preload.js?v=f8602b4b7f7c';
+import { imageSource } from './image-preload.js?v=d78cb9bad191';
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const keyInfo = { F1: ['F1', 'fn'], F2: ['F2', 'fn'], F3: ['F3', 'fn'], F4: ['F4', 'fn'], F5: ['F5', 'fn'], F6: ['F6', 'fn'], SHIFT: ['SHIFT', 'shift'], OPTN: ['OPTN', ''], VARS: ['VARS', ''], MENU: ['MENU', ''], ALPHA: ['ALPHA', 'alpha'], SQR: ['x²', ''], POW: ['^', ''], EXIT: ['EXIT', ''], XTT: ['X,θ,T', ''], LOG: ['log', ''], LN: ['ln', ''], SIN: ['sin', ''], COS: ['cos', ''], TAN: ['tan', ''], FRAC: ['▫⁄▫', ''], SD: ['S⇔D', ''], LP: ['(', ''], RP: [')', ''], COMMA: [',', ''], STO: ['→', ''], DEL: ['DEL', 'blue'], AC: ['AC/ON', 'blue'], MUL: ['×', 'num'], DIV: ['÷', 'num'], ADD: ['+', 'num'], SUB: ['−', 'num'], DOT: ['.', 'num'], EXP: ['×10ˣ', 'num'], NEG: ['(−)', 'num'], EXE: ['EXE', 'exe'], UP: ['▲', ''], LEFT: ['◀', ''], RIGHT: ['▶', ''], DOWN: ['▼', ''] };
