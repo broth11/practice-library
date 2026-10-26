@@ -172,6 +172,15 @@ function closeSolution(focus = false) {
 }
 
 function setSolutionView(view) {
+  // Keep the question's reading width while the navigation space is released.
+  if (view === 'calculator') {
+    const questionWidth = questionArea.getBoundingClientRect().width;
+    setRoutePane(state.routePane, false);
+    const availableWidth = workspace.getBoundingClientRect().width;
+    if (availableWidth > 0 && matchMedia('(min-width: 761px)').matches) {
+      workspace.style.setProperty('--question-width', `${questionWidth / availableWidth * 100}%`);
+    }
+  }
   state.solutionView = view;
   const question = state.unit.questions[state.current];
   document.querySelectorAll('.solution-tab').forEach(button => {
