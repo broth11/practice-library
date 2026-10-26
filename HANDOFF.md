@@ -1,5 +1,14 @@
 # Handoff
 
+## Reading width and compact answer fitting (2026-10-26, Codex)
+
+- Increased the desktop reading share from 59% to 64%. At 1,440 by 834 the card is 642px wide, up from 592px. This width remains fixed across navigation expansion/collapse and question, explanation, and calculator modes. Rail positions and calculator height containment are retained.
+- The shared fitter now tries four columns for single-line compact choices, two columns for prose or structured choices, and one column when needed. It measures with the matching grid-specific styles. Long prose can occupy three lines per choice in a two-column grid.
+- Start at 16px. If needed, shrink diagrams by at most 25%, with a 160px floor for larger images, before reducing text. Preserve aspect ratio. If scrolling remains unavoidable at every fitting font, keep the largest font that fits horizontally and the shortest valid grid. Refit after image load and ignore detached cards.
+- Isolated browser audits rendered all 310 questions at 1,440 by 834, 2,048 by 1,195, 1,024 by 768, and 390 by 844. No option or page-width overflow. At the reference desktop size, 303 questions retain 16px; all 310 do on wide desktop. Unit 2.A #16 and #58 use four columns at 16px without scrolling, and #16 uses a fitting two-column phone layout.
+- All six previously flagged questions now use compact grids. Unit 1.A #58 retains 16px and a two-column grid with vertical scrolling because its full content still exceeds the available height. Dense questions can still need smaller type or scrolling.
+- Browser checks cover all six navigation/view combinations, calculator top alignment, equal side columns, height limits, and smooth explanation return. Standard checks/build pass. Synchronize Sites and GitHub Pages; question content is unchanged.
+
 ## Solution transition endpoint fix (2026-10-26, Codex)
 
 - Removed the legacy 180ms `reveal-content` animation from the live solution shell. It applied a 10px offset while the new view transition captured its target, leaving an offset snapshot that snapped to the live position at handoff.

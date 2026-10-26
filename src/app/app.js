@@ -1,4 +1,5 @@
 import { transitionPanels as runPanelTransition } from './panel-motion.js';
+import { fitQuestion } from './question-fit.js';
 import { renderStimulus } from './stimulus.js';
 import { preloadLibraryImages, preloadUnitImages } from './image-preload.js';
 import { renderStep, typesetMath } from './math.js';
@@ -158,6 +159,7 @@ function renderQuestion(question) {
   questionArea.innerHTML = `<article class="card" id="${question.id}" data-archetype="${escapeHtml(question.archetype || '')}" aria-labelledby="${question.id}-ask"><header class="card-top"><span class="question-badge">Question ${String(state.current + 1).padStart(2, '0')}</span><span class="within">Lesson ${escapeHtml(question.lesson)} · ${local} of ${lessonQuestions.length}</span></header><div class="question-content"><div class="question-inner"><p class="scenario">${question.scenario}</p>${renderStimulus(question.stimulus)}<p class="ask" id="${question.id}-ask">${question.prompt}</p>${question.notationKey ? `<p class="notation-key">Key: <span class="literal-notation">${escapeHtml(question.notationKey)}</span></p>` : ''}<fieldset aria-labelledby="${question.id}-ask">${question.choices.map((choice, index) => { const letter = 'ABCD'[index]; return `<label class="option ${typeof choice === 'string' ? '' : 'structured-option'}"><input type="radio" name="${question.id}" value="${letter}" ${typeof choice === 'string' ? '' : `aria-label="${escapeHtml(`${letter}. ${choiceText(choice)}`)}"`} ${selected === letter ? 'checked' : ''}><span class="letter">${letter}</span><span class="option-text ${typeof choice === 'string' ? '' : 'structured-choice'}">${renderChoice(choice)}</span></label>`; }).join('')}</fieldset></div></div><footer class="card-footer"><span class="choice-status" aria-live="polite">${selected ? `Answer ${selected} selected. Ready to check?` : 'Select an answer, then check your reasoning.'}</span><button class="solution-trigger" type="button" aria-expanded="false">Solution <span aria-hidden="true">↗</span></button></footer></article>`;
   const card = questionArea.firstElementChild;
   typesetMath(card);
+  card.querySelectorAll('img').forEach(image => image.addEventListener('load', () => fit(), { once: true }));
   card.onchange = event => { answers.set(answerKey(question), event.target.value); card.querySelector('.choice-status').textContent = `Answer ${event.target.value} selected. Ready to check?`; renderNavigation(); fit(); };
   card.querySelector('.solution-trigger').onclick = () => transitionPanels(() => state.solutionOpen ? closeSolution(true) : openSolution());
   fit();
@@ -239,25 +241,12 @@ function fit(immediate = false) {
   const card = questionArea.querySelector('.card');
   if (!card) return;
   const measure = () => {
+    if (!card.isConnected) return;
     const content = card.querySelector('.question-content');
     const inner = card.querySelector('.question-inner');
-    const field = card.querySelector('fieldset');
-    const options = [...card.querySelectorAll('.option-text')];
     const room = content.clientHeight - parseFloat(getComputedStyle(content).paddingTop) - parseFloat(getComputedStyle(content).paddingBottom);
-    const layouts = field.clientWidth < 340 ? [1] : [2, 1];
-    let chosen = { font: 13, columns: 1 };
-    outer: for (let font = innerHeight < 760 ? 15 : 16; font >= 13; font -= .25) {
-      card.style.setProperty('--q-font', `${font}px`);
-      for (const columns of layouts) {
-        card.style.setProperty('--answer-columns', columns);
-        const overflow = options.some(option => option.scrollWidth > option.clientWidth + 1);
-        const cramped = columns > 1 && options.some(option => !option.classList.contains('structured-choice') && option.getBoundingClientRect().height > parseFloat(getComputedStyle(option).lineHeight) * 2.6);
-        if (!overflow && !cramped) { chosen = { font, columns }; if (inner.scrollHeight <= room) break outer; }
-      }
-    }
-    card.style.setProperty('--q-font', `${chosen.font}px`);
-    card.style.setProperty('--answer-columns', chosen.columns);
-    card.dataset.answerColumns = chosen.columns;
+    if (room <= 0) return;
+    fitQuestion(card, room);
     content.classList.toggle('needs-scroll', inner.scrollHeight > room);
     workspace.style.setProperty('--reading-font', getComputedStyle(inner).fontSize);
   };
