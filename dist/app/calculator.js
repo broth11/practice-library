@@ -1,3 +1,5 @@
+import { imageSource } from './image-preload.js?v=19236ce86f0c';
+
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 const keyInfo = { F1: ['F1', 'fn'], F2: ['F2', 'fn'], F3: ['F3', 'fn'], F4: ['F4', 'fn'], F5: ['F5', 'fn'], F6: ['F6', 'fn'], SHIFT: ['SHIFT', 'shift'], OPTN: ['OPTN', ''], VARS: ['VARS', ''], MENU: ['MENU', ''], ALPHA: ['ALPHA', 'alpha'], SQR: ['x²', ''], POW: ['^', ''], EXIT: ['EXIT', ''], XTT: ['X,θ,T', ''], LOG: ['log', ''], LN: ['ln', ''], SIN: ['sin', ''], COS: ['cos', ''], TAN: ['tan', ''], FRAC: ['▫⁄▫', ''], SD: ['S⇔D', ''], LP: ['(', ''], RP: [')', ''], COMMA: [',', ''], STO: ['→', ''], DEL: ['DEL', 'blue'], AC: ['AC/ON', 'blue'], MUL: ['×', 'num'], DIV: ['÷', 'num'], ADD: ['+', 'num'], SUB: ['−', 'num'], DOT: ['.', 'num'], EXP: ['×10ˣ', 'num'], NEG: ['(−)', 'num'], EXE: ['EXE', 'exe'], UP: ['▲', ''], LEFT: ['◀', ''], RIGHT: ['▶', ''], DOWN: ['▼', ''] };
 for (let number = 0; number < 10; number += 1) keyInfo[number] = [String(number), 'num'];
@@ -73,10 +75,10 @@ function distributionScreen(frame) {
 
 function screen(step) {
   if (step.frame) {
-    if (step.frame.type === 'main') return `<div class="lcd-status menu-status"><span class="lcd-battery"></span>MAIN MENU</div><div class="lcd-menu">${icons.map(([file, label], index) => `<div class="lcd-icon ${index === 1 ? 'selected' : ''}"><img src="assets/casio-icons/${file}.png" alt=""><span>${escapeHtml(label)}</span></div>`).join('')}</div>`;
+    if (step.frame.type === 'main') return `<div class="lcd-status menu-status"><span class="lcd-battery"></span>MAIN MENU</div><div class="lcd-menu">${icons.map(([file, label], index) => `<div class="lcd-icon ${index === 1 ? 'selected' : ''}"><img src="${escapeHtml(imageSource(`assets/casio-icons/${file}.png`))}" alt=""><span>${escapeHtml(label)}</span></div>`).join('')}</div>`;
     return distributionScreen(step.frame);
   }
-  if (step.mode === 'menu') return `<div class="lcd-status menu-status"><span class="lcd-battery"></span>MAIN MENU</div><div class="lcd-menu">${icons.map(([file, label], index) => `<div class="lcd-icon ${index === 0 ? 'selected' : ''}"><img src="assets/casio-icons/${file}.png" alt=""><span>${escapeHtml(label)}</span></div>`).join('')}</div>`;
+  if (step.mode === 'menu') return `<div class="lcd-status menu-status"><span class="lcd-battery"></span>MAIN MENU</div><div class="lcd-menu">${icons.map(([file, label], index) => `<div class="lcd-icon ${index === 0 ? 'selected' : ''}"><img src="${escapeHtml(imageSource(`assets/casio-icons/${file}.png`))}" alt=""><span>${escapeHtml(label)}</span></div>`).join('')}</div>`;
   return `<div class="lcd-status"><span class="lcd-battery"></span><b>Math</b><b>Norm1</b><b>d/c</b><b>Real</b></div><div class="lcd-input">${escapeHtml(step.input || '').replaceAll('*', '×').replaceAll('/', '÷').replaceAll('-', '−')}${step.mode === 'result' ? '' : '<span class="cursor">▏</span>'}</div><div class="lcd-result">${escapeHtml(step.result || '')}</div>`;
 }
 

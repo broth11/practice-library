@@ -1,4 +1,5 @@
 import { renderStimulus } from './stimulus.js';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js';
 import { renderStep, typesetMath } from './math.js';
 import { mountCalculator } from './calculator.js';
 import { renderChoice, choiceText } from './choices.js';
@@ -87,6 +88,7 @@ async function selectCourse(course, updateHash = true) {
 
 async function selectUnit(unitMeta, updateHash = true) {
   state.unit = await fetchJson(unitMeta.source);
+  preloadUnitImages(state.unit);
   state.current = 0;
   setWelcome();
   setRoutePane('questions');
@@ -270,6 +272,8 @@ window.addEventListener('hashchange', restoreRoute);
 try {
   state.catalog = await fetchJson('content/catalog.json');
   await restoreRoute();
+  // Background warming also runs on the welcome page; it never gates rendering.
+  preloadLibraryImages().catch(() => {});
 } catch (error) {
   routeContent.innerHTML = `<section class="route-pane"><h1>Could not load the library</h1><p>${escapeHtml(error.message)}</p></section>`;
   console.error(error);

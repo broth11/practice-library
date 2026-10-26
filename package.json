@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "check": "node scripts/check.mjs && node scripts/check-answers.mjs && node scripts/check-calculator.mjs && node scripts/check-math.mjs && node scripts/check-choices.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-answers.mjs && node scripts/check-calculator.mjs && node scripts/check-math.mjs && node scripts/check-choices.mjs && node scripts/check-image-preload.mjs",
     "build": "node scripts/build.mjs",
     "diagrams": "python3 scripts/diagrams/build_diagrams.py",
     "check:diagrams": "python3 scripts/diagrams/build_diagrams.py --check",
