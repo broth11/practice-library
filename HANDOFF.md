@@ -1,5 +1,12 @@
 # Handoff
 
+## Unit 2.A calculator guidance (2026-10-26, Claude)
+
+- q51–q100 (items 11–20 in each 2.A lesson) now have fx-CG50 guidance. 37 items use Run-Matrix arithmetic screens (48 result screens in all), following the q01–q50 pattern. 13 items are marked `needed: false` with a reason because they are counting, interpretation, or read-off tasks: q59, q61, q63, q66, q67, q68, q74, q75, q77, q80, q85, q95, q99.
+- `scripts/check-unit-two-a.mjs` no longer requires deferral for q51–q100; it now requires either a result screen or a reason. `npm run check` recomputes every screen exactly and confirms the keys spell each entry.
+- Tool verification only. No browser review of the new keypress panes and no physical fx-CG50 check are recorded.
+- Pushed directly to main at Ben's explicit request in chat, overriding the branch-only rule for this change.
+
 ## GitHub synchronization (2026-10-26)
 
 - Ben explicitly authorized pushing the expansion and navigation/accuracy follow-up directly to GitHub main. The two Sites changes were applied on top of the existing GitHub history without replacing or rewriting it.

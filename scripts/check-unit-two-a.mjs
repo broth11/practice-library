@@ -50,8 +50,11 @@ assert.equal(unit.questions.length,100);
 const keys='ABCD'.split('').map(k=>unit.questions.filter(q=>q.answer===k).length);
 assert.deepEqual(keys,[25,25,25,25],'Balanced unit key positions');
 for(const q of unit.questions.filter(q=>Number(q.id.slice(1))>50)) {
- assert.equal(q.calculator.status,'deferred');
- assert.ok(!q.calculator.steps&&!q.calculator.distribution);
+ // Calculator guidance added 2026-10-26: either Run-Matrix arithmetic screens or a stated reason.
+ assert.notEqual(q.calculator.status,'deferred',`${q.id}: calculator guidance should no longer be deferred`);
+ assert.ok(!q.calculator.distribution,`${q.id}: no distribution guide expected`);
+ if(q.calculator.needed) assert.ok(q.calculator.steps?.some(s=>s.mode==='result'),`${q.id}: guide needs a result screen`);
+ else assert.ok(q.calculator.reason?.length>=20,`${q.id}: reason required`);
  const isNumeric=q.choices.every(c=>/^[\d.]+(?:\/[\d.]+|%)?$/.test(c));
  if(isNumeric) assert.ok(q.id in numeric,`${q.id}: numeric target missing`);
  if(q.choices.every(c=>/^\d*\.?\d+%?$/.test(c))) assert.ok(q.choices.every((v,i,a)=>!i||ratio(v)>ratio(a[i-1])),`${q.id}: numeric ordering`);
@@ -74,4 +77,4 @@ assert.equal(.7*.3,.3*.7);
 assert.notEqual(0,.3*.7);
 assert.notEqual(cells('q96')[0][1]/cells('q96')[0][3],cells('q96')[2][1]/cells('q96')[2][3]);
 assert.equal(fig('q98').groups[0].counts[0]/sum(fig('q98').groups[0].counts),fig('q98').groups[1].counts[0]/sum(fig('q98').groups[1].counts));
-console.log(`Verified ${Object.keys(numeric).length} expansion numeric keys, graphical claim inputs, twenty items per lesson, balanced keys, and calculator deferrals.`);
+console.log(`Verified ${Object.keys(numeric).length} expansion numeric keys, graphical claim inputs, twenty items per lesson, balanced keys, and calculator guidance (37 guides, 13 reasoning-only).`);

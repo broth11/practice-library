@@ -1,6 +1,6 @@
 # Unit 2.A expansion review
 
-2026-10-26. Original q01–q50 preserved exactly; q51–q100 are original additions. Each of the five lessons now has twenty items. No human sign-off is recorded. Calculator guides on the fifty additions are deferred by the author’s request. Existing guides remain as authored.
+2026-10-26. Original q01–q50 preserved exactly; q51–q100 are original additions. Each of the five lessons now has twenty items. No human sign-off is recorded. Calculator guides on the fifty additions were added on 2026-10-26: 37 Run-Matrix arithmetic guides and 13 reasoning-only explanations (tool checked; no physical fx-CG50 verification). Existing guides remain as authored.
 
 ## Coverage decisions
 

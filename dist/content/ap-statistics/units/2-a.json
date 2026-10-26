@@ -1195,9 +1195,51 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 24÷30",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "4",
+              "DIV",
+              "3",
+              "0",
+              "EXE"
+            ],
+            "entry": "24/30",
+            "mode": "result",
+            "input": "24/30",
+            "result": "0.8",
+            "exact": "4/5",
+            "note": "Use only the 30 members who reserved a laser cutter. Twenty-four of them completed training.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1278,9 +1320,71 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 12÷30",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "2",
+              "DIV",
+              "3",
+              "0",
+              "EXE"
+            ],
+            "entry": "12/30",
+            "mode": "result",
+            "input": "12/30",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Find the audio-guide rate among coach arrivals.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 36÷90",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "6",
+              "DIV",
+              "9",
+              "0",
+              "EXE"
+            ],
+            "entry": "36/90",
+            "mode": "result",
+            "input": "36/90",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Find the rate among train arrivals. Both rates are 0.40, so there is no association.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1358,9 +1462,72 @@
         "height": 323
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 20÷50",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "0",
+              "DIV",
+              "5",
+              "0",
+              "EXE"
+            ],
+            "entry": "20/50",
+            "mode": "result",
+            "input": "20/50",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Playground proportion in North, using the 50 North residents.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 30÷100",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "30/100",
+            "mode": "result",
+            "input": "30/100",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Playground proportion in South, using the 100 South residents. North's 0.40 is greater.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1430,9 +1597,75 @@
         "height": 320
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.5×80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "MUL",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.5*80",
+            "mode": "result",
+            "input": "0.5*80",
+            "result": "40",
+            "exact": "40",
+            "note": "Weekday music count: half of the 80 weekday guests.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 0.25×160",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "1",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.25*160",
+            "mode": "result",
+            "input": "0.25*160",
+            "result": "40",
+            "exact": "40",
+            "note": "Weekend music count: a quarter of the 160 weekend guests. Both counts are 40.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1502,9 +1735,71 @@
         "height": 314
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 30÷40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "30/40",
+            "mode": "result",
+            "input": "30/40",
+            "result": "0.75",
+            "exact": "3/4",
+            "note": "Desk A completion rate: 30 of its 40 repairs.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 30÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "30/60",
+            "mode": "result",
+            "input": "30/60",
+            "result": "0.5",
+            "exact": "1/2",
+            "note": "Desk B completion rate: 30 of its 60 repairs. The rates 0.75 and 0.50 differ.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1585,9 +1880,52 @@
         "height": 314
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 30÷120",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "1",
+              "2",
+              "0",
+              "EXE"
+            ],
+            "entry": "30/120",
+            "mode": "result",
+            "input": "30/120",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "Use the local reusable count over all 120 orders for a joint proportion.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1671,9 +2009,71 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 24÷80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "4",
+              "DIV",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "24/80",
+            "mode": "result",
+            "input": "24/80",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Snack rate for afternoon patrons.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 24÷40",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "4",
+              "DIV",
+              "4",
+              "0",
+              "EXE"
+            ],
+            "entry": "24/40",
+            "mode": "result",
+            "input": "24/40",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Snack rate for evening patrons. Evening's 0.60 is higher.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1774,9 +2174,74 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 18÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "18/60",
+            "mode": "result",
+            "input": "18/60",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Mailed-receipt rate for monthly subscribers.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 90×18÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "9",
+              "0",
+              "MUL",
+              "1",
+              "8",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "90*18/60",
+            "mode": "result",
+            "input": "90*18/60",
+            "result": "27",
+            "exact": "27",
+            "note": "Apply the same rate to the 90 annual subscribers to find x.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1844,8 +2309,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Read the two library bars, 0.40 and 0.60, and subtract mentally. No calculation can recover counts or a pooled proportion without the sample sizes."
       },
       "provenance": {
         "optionRoles": null,
@@ -1944,9 +2408,57 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (70+50)÷180",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "7",
+              "0",
+              "ADD",
+              "5",
+              "0",
+              "RP",
+              "DIV",
+              "1",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "(70+50)/180",
+            "mode": "result",
+            "input": "(70+50)/180",
+            "result": "0.6666666667",
+            "exact": "2/3",
+            "note": "Add the afternoon and evening totals, then divide by all 180 registrations. Compare with 120/180.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -2883,8 +3395,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Listing the ordered outcomes for two parcels is a counting task. A calculator adds nothing to writing FF, FS, SF, and SS."
       },
       "provenance": {
         "optionRoles": null,
@@ -2955,9 +3466,59 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (180-135)÷180",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "8",
+              "0",
+              "SUB",
+              "1",
+              "3",
+              "5",
+              "RP",
+              "DIV",
+              "1",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "(180-135)/180",
+            "mode": "result",
+            "input": "(180-135)/180",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "Find the uncataloged books, then divide by all 180 books.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3029,8 +3590,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "The task is matching 35 of the 100 two-digit labels to a signature. Count the labels in each range; no calculation is needed."
       },
       "provenance": {
         "optionRoles": null,
@@ -3109,9 +3669,61 @@
         "height": 237
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (100+40+10)÷500",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "0",
+              "0",
+              "ADD",
+              "4",
+              "0",
+              "ADD",
+              "1",
+              "0",
+              "RP",
+              "DIV",
+              "5",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(100+40+10)/500",
+            "mode": "result",
+            "input": "(100+40+10)/500",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "Add the bars for 2, 3, and 4 failures, then divide by the 500 simulated sets.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3205,9 +3817,53 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 180÷400",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "0",
+              "DIV",
+              "4",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "180/400",
+            "mode": "result",
+            "input": "180/400",
+            "result": "0.45",
+            "exact": "9/20",
+            "note": "Divide the exactly-one-delay mornings by all 400 simulated mornings.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3281,8 +3937,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "This item tests the meaning of a long-run probability. The answer depends on interpretation, not on any computed value."
       },
       "provenance": {
         "optionRoles": null,
@@ -3334,8 +3989,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "This item tests what the law of large numbers does and does not promise. It is answered by reasoning, not calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -3407,8 +4061,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Count the 3 × 4 = 12 equally likely pairs and the 2 that qualify. The choices are fractions, so the counting itself is the work."
       },
       "provenance": {
         "optionRoles": null,
@@ -3476,9 +4129,57 @@
         "height": 239
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (50+30)÷200",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "5",
+              "0",
+              "ADD",
+              "3",
+              "0",
+              "RP",
+              "DIV",
+              "2",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(50+30)/200",
+            "mode": "result",
+            "input": "(50+30)/200",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Add reptiles and amphibians, then divide by all 200 observations.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3549,9 +4250,60 @@
         "height": 237
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (150+200)÷1000",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "5",
+              "0",
+              "ADD",
+              "2",
+              "0",
+              "0",
+              "RP",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(150+200)/1000",
+            "mode": "result",
+            "input": "(150+200)/1000",
+            "result": "0.35",
+            "exact": "7/20",
+            "note": "Add the bars for 0 and 1 made shots, then divide by the 1,000 rounds.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4638,9 +5390,56 @@
         "height": 257
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 18÷(42+18)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "DIV",
+              "LP",
+              "4",
+              "2",
+              "ADD",
+              "1",
+              "8",
+              "RP",
+              "EXE"
+            ],
+            "entry": "18/(42+18)",
+            "mode": "result",
+            "input": "18/(42+18)",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "The drill group is 42 + 18. Divide the 18 who borrowed both by that group.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4702,9 +5501,56 @@
         "height": 257
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 24÷(24+16)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "4",
+              "DIV",
+              "LP",
+              "2",
+              "4",
+              "ADD",
+              "1",
+              "6",
+              "RP",
+              "EXE"
+            ],
+            "entry": "24/(24+16)",
+            "mode": "result",
+            "input": "24/(24+16)",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "The no-lock group is light only plus neither. Divide the 24 light-only customers by that group.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4757,9 +5603,55 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.18÷0.30",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "1",
+              "8",
+              "DIV",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.18/0.30",
+            "mode": "result",
+            "input": "0.18/0.30",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Divide the joint probability by P(writing), the given condition.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4821,8 +5713,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Restrict to the 18 outcomes with an even first cube and count the 3 with sum 7. The choices are fractions, so the counting is the work."
       },
       "provenance": {
         "optionRoles": null,
@@ -4894,8 +5785,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Restrict to the four sequences that start with T and count those with two heads. This is direct counting."
       },
       "provenance": {
         "optionRoles": null,
@@ -5001,9 +5891,61 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (12+18)÷(40+50)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "2",
+              "ADD",
+              "1",
+              "8",
+              "RP",
+              "DIV",
+              "LP",
+              "4",
+              "0",
+              "ADD",
+              "5",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(12+18)/(40+50)",
+            "mode": "result",
+            "input": "(12+18)/(40+50)",
+            "result": "0.3333333333",
+            "exact": "1/3",
+            "note": "Combine years 2 and 3 in both the numerator and the denominator.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -5060,8 +6002,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Mutual exclusivity depends only on whether the overlap is empty. Read the 20 in the overlap; nothing needs to be calculated."
       },
       "provenance": {
         "optionRoles": null,
@@ -5134,9 +6075,56 @@
         "height": 314
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 30÷(30+20)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "LP",
+              "3",
+              "0",
+              "ADD",
+              "2",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "30/(30+20)",
+            "mode": "result",
+            "input": "30/(30+20)",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Use only the online column: cake orders over all online orders.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -5192,9 +6180,55 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.24÷0.50",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "4",
+              "DIV",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.24/0.50",
+            "mode": "result",
+            "input": "0.24/0.50",
+            "result": "0.48",
+            "exact": "12/25",
+            "note": "Divide the joint probability by P(requests materials), the given condition.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -5245,8 +6279,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "This item asks which information completes the multiplication rule. It is answered by reasoning about P(P) × P(A | P), not by calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -6379,9 +7412,111 @@
         "height": 221
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.25×0.12+0.75×0.04",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "0",
+              "4",
+              "EXE"
+            ],
+            "entry": "0.25*0.12+0.75*0.04",
+            "mode": "result",
+            "input": "0.25*0.12+0.75*0.04",
+            "result": "0.06",
+            "exact": "3/50",
+            "note": "Add the two error paths to find the total error probability, 0.06.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 0.25×0.12÷(0.25×0.12+0.75×0.04)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "DIV",
+              "LP",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "MUL",
+              "0",
+              "DOT",
+              "0",
+              "4",
+              "RP",
+              "EXE"
+            ],
+            "entry": "0.25*0.12/(0.25*0.12+0.75*0.04)",
+            "mode": "result",
+            "input": "0.25*0.12/(0.25*0.12+0.75*0.04)",
+            "result": "0.5",
+            "exact": "1/2",
+            "note": "Divide the line A error path by the total error probability.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6450,9 +7585,60 @@
         "height": 221
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.20+0.80×0.10",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.20+0.80*0.10",
+            "mode": "result",
+            "input": "0.20+0.80*0.10",
+            "result": "0.28",
+            "exact": "7/25",
+            "note": "Add every traffic delay to the no-traffic, rain-delay path.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6505,9 +7691,53 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 4÷9×3÷8",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "DIV",
+              "9",
+              "MUL",
+              "3",
+              "DIV",
+              "8",
+              "EXE"
+            ],
+            "entry": "4/9*3/8",
+            "mode": "result",
+            "input": "4/9*3/8",
+            "result": "0.1666666667",
+            "exact": "1/6",
+            "note": "Multiply the first copper probability by the second, with one fewer of each. Compare with 12/72.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6567,9 +7797,66 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.50^2+0.30^2+0.20^2",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "POW",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "POW",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "0",
+              "POW",
+              "2",
+              "EXE"
+            ],
+            "entry": "0.50^2+0.30^2+0.20^2",
+            "mode": "result",
+            "input": "0.50^2+0.30^2+0.20^2",
+            "result": "0.38",
+            "exact": "19/50",
+            "note": "Square each color's probability for a matching pair, then add the three disjoint cases.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6620,8 +7907,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "Compare the sequences by reasoning: 0.70 × 0.30 and 0.30 × 0.70 use the same two factors, and earlier spins do not change them. No calculator step is needed."
       },
       "provenance": {
         "optionRoles": null,
@@ -6670,9 +7956,55 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.40×0.30",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.40*0.30",
+            "mode": "result",
+            "input": "0.40*0.30",
+            "result": "0.12",
+            "exact": "3/25",
+            "note": "Multiply P(electric) by the conditional helmet rate. The overall 25% is not used.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6732,9 +8064,63 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (1-0.80)×(1-0.60)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "RP",
+              "MUL",
+              "LP",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "(1-0.80)*(1-0.60)",
+            "mode": "result",
+            "input": "(1-0.80)*(1-0.60)",
+            "result": "0.08",
+            "exact": "2/25",
+            "note": "Multiply the two failure probabilities.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6791,9 +8177,65 @@
         "height": 221
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.60×0.70+0.40×0.45",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "4",
+              "5",
+              "EXE"
+            ],
+            "entry": "0.60*0.70+0.40*0.45",
+            "mode": "result",
+            "input": "0.60*0.70+0.40*0.45",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Add the two flowering paths, one for each greenhouse.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6857,9 +8299,60 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.50-0.40×0.75",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "7",
+              "5",
+              "EXE"
+            ],
+            "entry": "0.50-0.40*0.75",
+            "mode": "result",
+            "input": "0.50-0.40*0.75",
+            "result": "0.2",
+            "exact": "1/5",
+            "note": "Find the lab-and-locker overlap, then subtract it from the overall locker probability.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -6914,9 +8407,111 @@
         "height": 221
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.40×0.05+0.60×0.10",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "0",
+              "5",
+              "ADD",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.40*0.05+0.60*0.10",
+            "mode": "result",
+            "input": "0.40*0.05+0.60*0.10",
+            "result": "0.08",
+            "exact": "2/25",
+            "note": "Add the two damaged paths to find the total damaged probability, 0.08.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 0.40×0.05÷(0.40×0.05+0.60×0.10)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "0",
+              "5",
+              "DIV",
+              "LP",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "0",
+              "5",
+              "ADD",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "1",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "0.40*0.05/(0.40*0.05+0.60*0.10)",
+            "mode": "result",
+            "input": "0.40*0.05/(0.40*0.05+0.60*0.10)",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "Divide the supplier A damaged path by the total damaged probability.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8140,9 +9735,62 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.12÷(0.12+0.28)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "DIV",
+              "LP",
+              "0",
+              "DOT",
+              "1",
+              "2",
+              "ADD",
+              "0",
+              "DOT",
+              "2",
+              "8",
+              "RP",
+              "EXE"
+            ],
+            "entry": "0.12/(0.12+0.28)",
+            "mode": "result",
+            "input": "0.12/(0.12+0.28)",
+            "result": "0.3",
+            "exact": "3/10",
+            "note": "P(A) is 0.12 + 0.28. Independence means P(B) = P(A and B) ÷ P(A).",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8202,9 +9850,65 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.50+0.40-0.50×0.60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "0",
+              "SUB",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.50+0.40-0.50*0.60",
+            "mode": "result",
+            "input": "0.50+0.40-0.50*0.60",
+            "result": "0.6",
+            "exact": "3/5",
+            "note": "Find the overlap as 0.50 × 0.60, then apply the addition rule.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8253,9 +9957,55 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.30×0.70",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "3",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "7",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.30*0.70",
+            "mode": "result",
+            "input": "0.30*0.70",
+            "result": "0.21",
+            "exact": "21/100",
+            "note": "The product of the marginals is 0.21, but the joint probability is 0. The events are mutually exclusive and not independent.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8306,9 +10056,65 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 1-(1-0.60)×(1-0.50)",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "SUB",
+              "LP",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "RP",
+              "MUL",
+              "LP",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "5",
+              "0",
+              "RP",
+              "EXE"
+            ],
+            "entry": "1-(1-0.60)*(1-0.50)",
+            "mode": "result",
+            "input": "1-(1-0.60)*(1-0.50)",
+            "result": "0.8",
+            "exact": "4/5",
+            "note": "Find P(neither) as the product of the failures, then take the complement.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8365,8 +10171,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "The 35 students outside both circles are read directly from the diagram, and 35/100 needs no calculator."
       },
       "provenance": {
         "optionRoles": null,
@@ -8459,9 +10264,72 @@
         ]
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 30÷60",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "3",
+              "0",
+              "DIV",
+              "6",
+              "0",
+              "EXE"
+            ],
+            "entry": "30/60",
+            "mode": "result",
+            "input": "30/60",
+            "result": "0.5",
+            "exact": "1/2",
+            "note": "Bag-purchase rate among coupon users.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 40÷100",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "0",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "40/100",
+            "mode": "result",
+            "input": "40/100",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Overall bag-purchase rate. Since 0.50 ≠ 0.40, the events are not independent.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8527,9 +10395,60 @@
         "height": 257
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate (70+30+50)÷200",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "7",
+              "0",
+              "ADD",
+              "3",
+              "0",
+              "ADD",
+              "5",
+              "0",
+              "RP",
+              "DIV",
+              "2",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(70+30+50)/200",
+            "mode": "result",
+            "input": "(70+30+50)/200",
+            "result": "0.75",
+            "exact": "3/4",
+            "note": "Add the three regions inside the circles, counting the overlap once, then divide by 200.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8588,9 +10507,93 @@
         "height": 314
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 20÷50",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "0",
+              "DIV",
+              "5",
+              "0",
+              "EXE"
+            ],
+            "entry": "20/50",
+            "mode": "result",
+            "input": "20/50",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Shuttle rate for day-pass visitors.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 40÷100",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "0",
+              "DIV",
+              "1",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "40/100",
+            "mode": "result",
+            "input": "40/100",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Shuttle rate for full-pass visitors.",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate 60÷150",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "6",
+              "0",
+              "DIV",
+              "1",
+              "5",
+              "0",
+              "EXE"
+            ],
+            "entry": "60/150",
+            "mode": "result",
+            "input": "60/150",
+            "result": "0.4",
+            "exact": "2/5",
+            "note": "Overall shuttle rate. All three equal 0.40, so the variables are independent in these data.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -8666,8 +10669,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "reason": "This item asks which value the addition rule is missing. It is answered by reasoning about the overlap, not by calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -8738,9 +10740,60 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred at the author’s request for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate 0.60+0.45-0.80",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "0",
+              "DOT",
+              "6",
+              "0",
+              "ADD",
+              "0",
+              "DOT",
+              "4",
+              "5",
+              "SUB",
+              "0",
+              "DOT",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "0.60+0.45-0.80",
+            "mode": "result",
+            "input": "0.60+0.45-0.80",
+            "result": "0.25",
+            "exact": "1/4",
+            "note": "Add the two marginals, then subtract the union to recover the overlap.",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
