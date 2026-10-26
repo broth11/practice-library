@@ -2,6 +2,8 @@
 
 ## Panel motion (2026-10-26)
 
+- The live solution shell must not run its own entry animation. View transition snapshots must capture final target geometry and opacity; a second transform animation leaves a visible endpoint jump when the snapshot hands back to the live DOM.
+
 - Use shared native view transitions for entering and departing panels. Keep the rail fixed, and preserve the question width and calculator height limits.
 - Layout movement takes 360ms with gentle easing. Calculator step details use a shorter 180ms reveal. Initial route restoration does not animate; network loading finishes before capture.
 - Reduced-motion preferences bypass animation. Unsupported browsers update directly. Fit cards synchronously before capture because awaiting an animation frame inside the update would stall capture.

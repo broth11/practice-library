@@ -1,9 +1,9 @@
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=f8602b4b7f7c';
-import { renderStimulus } from './stimulus.js?v=f8602b4b7f7c';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=f8602b4b7f7c';
-import { renderStep, typesetMath } from './math.js?v=f8602b4b7f7c';
-import { mountCalculator } from './calculator.js?v=f8602b4b7f7c';
-import { renderChoice, choiceText } from './choices.js?v=f8602b4b7f7c';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=d78cb9bad191';
+import { renderStimulus } from './stimulus.js?v=d78cb9bad191';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=d78cb9bad191';
+import { renderStep, typesetMath } from './math.js?v=d78cb9bad191';
+import { mountCalculator } from './calculator.js?v=d78cb9bad191';
+import { renderChoice, choiceText } from './choices.js?v=d78cb9bad191';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
