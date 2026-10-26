@@ -1,5 +1,11 @@
 # Practice Library decision record
 
+## Reading width and fitter priorities (2026-10-26)
+
+- Ben approved increasing the desktop question share from 59% to 64% of the sidebar-open workspace. Preserve this reading width when navigation collapses and across solution modes; calculator instructions and hardware share the remaining space equally.
+- Keep the preferred question font at 16px. Try compact four-column answers where each choice fits on one line, two-column answers for longer prose or structured plots, and one column when needed. Diagram size can decrease modestly before reducing text; preserve aspect ratio and limit reduction to 25% with a 160px floor for larger diagrams.
+- If the content requires scrolling at every tested font, prefer readable text and the shortest horizontally fitting answer grid. Do not switch to a taller single-column grid simply because the available height was exceeded.
+
 ## Panel motion (2026-10-26)
 
 - The live solution shell must not run its own entry animation. View transition snapshots must capture final target geometry and opacity; a second transform animation leaves a visible endpoint jump when the snapshot hands back to the live DOM.

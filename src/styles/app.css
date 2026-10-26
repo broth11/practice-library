@@ -126,7 +126,8 @@
 
 .calculator-mode:not(.route-open) .route-content{display:none}.calculator-mode:not(.route-open)>.sidebar{overflow:hidden}
 
-/* Let the drawing fill its frame instead of letterboxing inside a height cap. */
+/* Fit diagrams without stretching their aspect ratio when height is constrained. */
+.question-inner figure.diagram img{object-fit:contain}
 .question-inner figure.diagram{padding-left:4px;padding-right:4px}.question-inner figure.diagram svg{width:100%;height:auto;max-height:var(--diagram-max-height,none)}
 
 .answer-block:has(.feedback[hidden]){min-height:44px;padding-bottom:8px;display:flex;align-items:center}
@@ -145,7 +146,7 @@
 @media(min-width:761px){
   .practice-started .workspace,.practice-started .workspace.with-solution{
     --navigation-space:0px;
-    --reading-question-width:calc((100% - var(--navigation-space) - var(--reference-question-gap)) * .59);
+    --reading-question-width:calc((100% - var(--navigation-space) - var(--reference-question-gap)) * .64);
     grid-template-columns:var(--reading-question-width) minmax(0,1fr);
   }
   .practice-started.nav-collapsed .workspace{
