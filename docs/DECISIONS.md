@@ -108,3 +108,9 @@ Question source arrays follow declared lesson order, with each lesson contiguous
 ## Stable calculator question width (2026-10-26)
 
 The calculator question uses the reading width of the normal sidebar-open desktop layout. Its width is derived from the shared expanded and collapsed navigation sizes, rather than captured from whichever state happened to precede calculator entry. The released navigation space goes equally to the keypress and calculator columns. This supersedes the entry-width capture above and remains consistent after resizing or revisiting the calculator. Top alignment, height containment, and phone stacking are retained.
+
+## Fixed reading width and rail positions (2026-10-26)
+
+- Use the sidebar-open question width in every desktop practice view, including unrevealed questions and explanations. Collapsing navigation releases space to the right-hand panels instead of enlarging the question.
+- Keep the same main padding in normal and calculator views. The keypress and hardware columns still share their remaining space equally.
+- Keep the rail stretched and its tabs anchored at the top. Remove the legacy calculator-only sidebar centering rule so Courses, Units, and Questions never move when a pane collapses or the solution view changes.
