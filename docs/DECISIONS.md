@@ -114,3 +114,9 @@ The calculator question uses the reading width of the normal sidebar-open deskto
 - Use the sidebar-open question width in every desktop practice view, including unrevealed questions and explanations. Collapsing navigation releases space to the right-hand panels instead of enlarging the question.
 - Keep the same main padding in normal and calculator views. The keypress and hardware columns still share their remaining space equally.
 - Keep the rail stretched and its tabs anchored at the top. Remove the legacy calculator-only sidebar centering rule so Courses, Units, and Questions never move when a pane collapses or the solution view changes.
+
+## Background image preload (2026-10-26)
+
+- Begin preloading all diagrams and calculator menu icons on page startup, including the welcome screen, without waiting for those assets before rendering the interface. Selecting a unit promotes its question and solution diagrams in the queue.
+- Use four low-priority requests at a time, retain image objects, and decode completed downloads. Duplicate URLs coalesce; an individual failure does not stall other images or navigation and can retry on later selection.
+- Build a static image index from the generated asset directories. Do not fetch all question modules just to discover images. Displayed and preloaded assets use the same build-versioned URLs so they share cache entries and changed releases cannot reuse outdated images.

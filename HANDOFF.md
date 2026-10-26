@@ -1,5 +1,13 @@
 # Handoff
 
+## Background image loading (2026-10-26, Codex)
+
+- All 75 diagrams and 12 calculator menu icons preload and decode after startup. The selected unit's question/solution figures have priority. Four low-priority downloads run at once; the interface and navigation never await completion.
+- The build generates `dist/image-preloads.json`; its URLs match the build-versioned diagram and calculator image renderer URLs. Unit question JSON remains loaded on selection.
+- `scripts/check-image-preload.mjs` covers bounded concurrency, duplicate URLs, selected-unit priority, decoding, failure recovery, and retry behavior. It runs in the standard checks.
+- Browser/server QA on a fresh local origin recorded 87 distinct asset requests while still on the welcome screen, with no unit question data fetched. Navigating to two unseen normal-diagram questions and opening the calculator produced zero additional asset requests; the diagram images were already complete. Checks and build pass.
+- Publish the same source/build to Sites and GitHub Pages. No content or layout changes.
+
 ## Reading width and navigation rail follow-up (2026-10-26, Codex)
 
 - The sidebar-open reading width now applies to all desktop practice views, fixing enlargement in question and explanation mode as well as calculator mode.

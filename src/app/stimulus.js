@@ -1,9 +1,11 @@
+import { imageSource } from './image-preload.js';
+
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
 export function renderStimulus(stimulus) {
   if (!stimulus) return '';
   const caption = escapeHtml(stimulus.caption || 'Question diagram');
-  if (stimulus.type === 'image') return `<figure class="diagram probability-diagram"><img src="${escapeHtml(stimulus.src)}" width="${Number(stimulus.width) || 480}" height="${Number(stimulus.height) || 210}" alt="${escapeHtml(stimulus.alt || '')}">${stimulus.caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`;
+  if (stimulus.type === 'image') return `<figure class="diagram probability-diagram"><img src="${escapeHtml(imageSource(stimulus.src))}" width="${Number(stimulus.width) || 480}" height="${Number(stimulus.height) || 210}" alt="${escapeHtml(stimulus.alt || '')}">${stimulus.caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`;
   if (stimulus.type === 'html') return stimulus.html;
   if (stimulus.type === 'table') {
     const heads = stimulus.headers.map(value => `<th scope="col">${escapeHtml(value)}</th>`).join('');

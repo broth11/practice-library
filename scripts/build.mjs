@@ -39,6 +39,13 @@ await Promise.all([
   cp(resolve(source, 'vendor-katex.min.js'), resolve(output, 'katex.min.js'))
 ]);
 
+// Discover assets at build time without loading every unit's question data.
+const diagramImages = (await readdir(resolve(output, 'assets')))
+  .filter(file => file.endsWith('.svg')).sort().map(file => `assets/${file}`);
+const calculatorImages = (await readdir(resolve(output, 'assets/casio-icons')))
+  .filter(file => file.endsWith('.png')).sort().map(file => `assets/casio-icons/${file}`);
+await writeFile(resolve(output, 'image-preloads.json'), `${JSON.stringify({ schemaVersion: 1, images: [...diagramImages, ...calculatorImages] }, null, 2)}\n`);
+
 const build = {
   schemaVersion: 1,
   version,
