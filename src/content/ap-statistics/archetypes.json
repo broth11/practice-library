@@ -33,7 +33,10 @@
         "2-b:b14",
         "2-b:b15",
         "2-b:b16",
-        "2-b:b17"
+        "2-b:b17",
+        "2-b:b61",
+        "2-b:b62",
+        "2-b:b65"
       ]
     },
     {
@@ -57,7 +60,8 @@
       "status": "card",
       "card": "central_limit_theorem_statement",
       "questions": [
-        "2-b:b44"
+        "2-b:b44",
+        "2-b:b99"
       ]
     },
     {
@@ -265,7 +269,10 @@
         "2-b:b24",
         "2-b:b25",
         "2-b:b26",
-        "2-b:b28"
+        "2-b:b28",
+        "2-b:b72",
+        "2-b:b73",
+        "2-b:b78"
       ]
     },
     {
@@ -284,7 +291,9 @@
         "2-b:b03",
         "2-b:b05",
         "2-b:b08",
-        "2-b:b10"
+        "2-b:b10",
+        "2-b:b56",
+        "2-b:b57"
       ]
     },
     {
@@ -314,7 +323,10 @@
       "card": "identify_binomial_quantity_meaning",
       "questions": [
         "2-b:b13",
-        "2-b:b19"
+        "2-b:b19",
+        "2-b:b63",
+        "2-b:b67",
+        "2-b:b70"
       ]
     },
     {
@@ -323,7 +335,9 @@
       "card": "identify_binomial_setting",
       "questions": [
         "2-b:b11",
-        "2-b:b12"
+        "2-b:b12",
+        "2-b:b64",
+        "2-b:b66"
       ]
     },
     {
@@ -427,7 +441,8 @@
       "card": "interpret_mean_of_random_variable",
       "questions": [
         "2-b:b04",
-        "2-b:b18"
+        "2-b:b18",
+        "2-b:b59"
       ]
     },
     {
@@ -710,7 +725,8 @@
       "status": "card",
       "card": "most_or_least_likely_binomial_value",
       "questions": [
-        "2-b:b20"
+        "2-b:b20",
+        "2-b:b69"
       ]
     },
     {
@@ -734,7 +750,9 @@
       "card": null,
       "relatedCard": null,
       "questions": [
-        "2-b:b29"
+        "2-b:b29",
+        "2-b:b75",
+        "2-b:b79"
       ],
       "note": "No card covers comparing two normal curves by height, spread, and total area."
     },
@@ -744,7 +762,9 @@
       "card": "normal_parameter_from_percentile",
       "questions": [
         "2-b:b38",
-        "2-b:b39"
+        "2-b:b39",
+        "2-b:b84",
+        "2-b:b85"
       ]
     },
     {
@@ -756,7 +776,12 @@
         "2-b:b32",
         "2-b:b33",
         "2-b:b34",
-        "2-b:b40"
+        "2-b:b40",
+        "2-b:b81",
+        "2-b:b82",
+        "2-b:b87",
+        "2-b:b89",
+        "2-b:b90"
       ]
     },
     {
@@ -777,7 +802,10 @@
         "2-a:q64",
         "2-a:q65",
         "2-a:q70",
-        "2-b:b48"
+        "2-b:b48",
+        "2-b:b68",
+        "2-b:b92",
+        "2-b:b100"
       ]
     },
     {
@@ -798,7 +826,8 @@
       "status": "card",
       "card": "probability_of_single_value_continuous",
       "questions": [
-        "2-b:b22"
+        "2-b:b22",
+        "2-b:b71"
       ]
     },
     {
@@ -806,7 +835,8 @@
       "status": "card",
       "card": "proportion_in_interval_from_cumulative_table",
       "questions": [
-        "2-b:b09"
+        "2-b:b09",
+        "2-b:b53"
       ]
     },
     {
@@ -852,7 +882,8 @@
       "status": "card",
       "card": "sample_size_effect_on_sampling_distribution",
       "questions": [
-        "2-b:b47"
+        "2-b:b47",
+        "2-b:b93"
       ]
     },
     {
@@ -872,7 +903,9 @@
       "card": null,
       "relatedCard": null,
       "questions": [
-        "2-b:b43"
+        "2-b:b43",
+        "2-b:b91",
+        "2-b:b97"
       ],
       "note": "No card covers what a histogram of simulated sample means approximates. central_limit_theorem_statement shares misconceptions but asks a different question."
     },
@@ -882,7 +915,8 @@
       "card": null,
       "relatedCard": null,
       "questions": [
-        "2-b:b50"
+        "2-b:b50",
+        "2-b:b95"
       ],
       "note": "No card covers enumerating every sample from a tiny population."
     },
@@ -902,7 +936,8 @@
       "card": null,
       "relatedCard": "simulated_p_value_decision",
       "questions": [
-        "2-b:b49"
+        "2-b:b49",
+        "2-b:b94"
       ],
       "note": "Same answer logic as simulated_p_value_decision (a large simulated proportion is not convincing evidence). Not relinked without review: the item has no dotplot and counts in the upper tail although the observed mean is below the claim."
     },
@@ -911,7 +946,9 @@
       "status": "card",
       "card": "standard_deviation_of_discrete_random_variable",
       "questions": [
-        "2-b:b06"
+        "2-b:b06",
+        "2-b:b54",
+        "2-b:b58"
       ]
     },
     {
@@ -968,7 +1005,8 @@
       "card": null,
       "relatedCard": null,
       "questions": [
-        "2-b:b02"
+        "2-b:b02",
+        "2-b:b51"
       ],
       "note": "No card in the library decides this item (complete a distribution so probabilities sum to 1). construct_probability_distribution builds distributions from paths, a different answer logic."
     },
@@ -980,7 +1018,11 @@
         "2-b:b30",
         "2-b:b35",
         "2-b:b36",
-        "2-b:b37"
+        "2-b:b37",
+        "2-b:b77",
+        "2-b:b83",
+        "2-b:b86",
+        "2-b:b88"
       ]
     },
     {
@@ -1001,7 +1043,55 @@
         "1-a:a53",
         "1-a:a55",
         "1-a:a60",
-        "2-b:b27"
+        "2-b:b27",
+        "2-b:b74",
+        "2-b:b76",
+        "2-b:b80"
+      ]
+    },
+    {
+      "id": "probability_from_discrete_distribution",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b52"
+      ]
+    },
+    {
+      "id": "discrete_distribution_comparison",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b55"
+      ]
+    },
+    {
+      "id": "discrete_distribution_from_enumeration",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b60"
+      ]
+    },
+    {
+      "id": "sampling_simulation_design",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b96"
+      ]
+    },
+    {
+      "id": "randomization_distribution_definition",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b98"
       ]
     }
   ]

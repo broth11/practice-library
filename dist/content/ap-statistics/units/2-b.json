@@ -876,6 +876,646 @@
       }
     },
     {
+      "id": "b51",
+      "lesson": "2.B.1",
+      "archetype": "valid_probability_distribution",
+      "variant": null,
+      "scenario": "A planner proposes the probability model shown in the table for X, the number of spare seats on a shuttle.",
+      "prompt": "Which statement explains why this is not a valid probability distribution?",
+      "choices": [
+        "The values of X include zero.",
+        "The probabilities are not all equal.",
+        "The expected value is not an integer.",
+        "One probability is negative, even though the probabilities sum to 1."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The proposed probabilities sum to 0.25 + 0.50 − 0.10 + 0.35 = 1.",
+          "Every individual probability must also be between 0 and 1. The value −0.10 violates that requirement."
+        ],
+        "warning": "A sum of 1 is necessary but does not excuse a negative probability."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "x",
+          "P(X = x)"
+        ],
+        "rows": [
+          [
+            0,
+            "0.25"
+          ],
+          [
+            1,
+            "0.50"
+          ],
+          [
+            2,
+            "−0.10"
+          ],
+          [
+            3,
+            "0.35"
+          ]
+        ],
+        "caption": "Proposed shuttle model"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "not"
+      ]
+    },
+    {
+      "id": "b52",
+      "lesson": "2.B.1",
+      "archetype": "probability_from_discrete_distribution",
+      "variant": null,
+      "scenario": "A repair desk models X, the number of devices returned during an hour, using the probability plot shown.",
+      "prompt": "What is P(X > 2)?",
+      "choices": [
+        "0.15",
+        "0.30",
+        "0.45",
+        "0.70"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The event includes X = 3 and X = 4.",
+          "Add their probabilities: 0.20 + 0.10 = 0.30."
+        ],
+        "warning": "The bar at 2 is excluded by the strict inequality."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b52-discrete-bars.svg",
+        "alt": "Probability bars at 0, 1, 2, 3, and 4 with heights 0.15, 0.25, 0.30, 0.20, and 0.10.",
+        "width": 480,
+        "height": 229
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b53",
+      "lesson": "2.B.1",
+      "archetype": "proportion_in_interval_from_cumulative_table",
+      "variant": null,
+      "scenario": "The cumulative probabilities for X, the number of late deliveries in a day, are shown in the table.",
+      "prompt": "What is P(X = 2)?",
+      "choices": [
+        "0.15",
+        "0.25",
+        "0.40",
+        "0.65"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The table gives P(X ≤ 2) = 0.65 and P(X ≤ 1) = 0.40.",
+          "Subtract: P(X = 2) = 0.65 − 0.40 = 0.25."
+        ],
+        "warning": "A cumulative entry includes all smaller counts, not just the count on its row."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "x",
+          "P(X ≤ x)"
+        ],
+        "rows": [
+          [
+            0,
+            "0.15"
+          ],
+          [
+            1,
+            "0.40"
+          ],
+          [
+            2,
+            "0.65"
+          ],
+          [
+            3,
+            "0.90"
+          ],
+          [
+            4,
+            "1.00"
+          ]
+        ],
+        "caption": "Cumulative delivery probabilities"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b54",
+      "lesson": "2.B.1",
+      "archetype": "standard_deviation_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "The probability plot shows X, the number of replacement parts needed on a job. The mean is 1.6 parts.",
+      "prompt": "Which value is closest to the variance of X?",
+      "choices": [
+        "0.16",
+        "0.64",
+        "0.80",
+        "0.89"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\operatorname{Var}(X)=(0-1.6)^2(0.20)+(2-1.6)^2(0.80)=0.64"
+          },
+          "Variance weights each squared deviation by its probability. Its units are squared parts."
+        ],
+        "warning": "The value 0.80 is the standard deviation, found by taking the square root of the variance 0.64."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b54-discrete-bars.svg",
+        "alt": "A probability distribution with P(X = 0) = 0.20 and P(X = 2) = 0.80.",
+        "width": 480,
+        "height": 229
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b55",
+      "lesson": "2.B.1",
+      "archetype": "discrete_distribution_comparison",
+      "variant": null,
+      "scenario": "Two refill stations have the probability models shown in the table for the number of empty bottles arriving in one minute.",
+      "prompt": "Which comparison of the means and standard deviations is correct?",
+      "choices": [
+        "A has a larger mean and the same standard deviation.",
+        "A has a smaller mean and a larger standard deviation.",
+        "The means and standard deviations are both equal.",
+        "The means are equal, and A has a larger standard deviation."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Both distributions are symmetric about 2, so both means are 2.",
+          "For A, the variance is 4(0.50) + 4(0.50) = 4. For B, it is 1(0.50) + 1(0.50) = 1.",
+          "The standard deviations are 2 and 1, respectively."
+        ],
+        "warning": "Equal means do not imply equal spread."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "x",
+          "Station A",
+          "Station B"
+        ],
+        "rows": [
+          [
+            0,
+            "0.50",
+            "0.00"
+          ],
+          [
+            1,
+            "0.00",
+            "0.50"
+          ],
+          [
+            2,
+            "0.00",
+            "0.00"
+          ],
+          [
+            3,
+            "0.00",
+            "0.50"
+          ],
+          [
+            4,
+            "0.50",
+            "0.00"
+          ]
+        ],
+        "caption": "Arrival models"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b56",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "A stall earns $4 per mug sold and pays a fixed $7 daily display fee. The plot shows the probability model for X, the number of mugs sold in a day.",
+      "prompt": "What is the expected daily profit, in dollars?",
+      "choices": [
+        "−4.80",
+        "−1.80",
+        "1.80",
+        "8.80"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The expected sales count is 0(0.20) + 2(0.50) + 4(0.30) = 2.20.",
+          "Expected profit is 4(2.20) − 7 = 1.80 dollars."
+        ],
+        "warning": "Subtracting the fee from the expected count omits the $4 rate; reversing profit and cost changes its sign; omitting the fee gives $8.80."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b56-discrete-bars.svg",
+        "alt": "Probability bars for 0, 2, and 4 mugs with heights 0.20, 0.50, and 0.30.",
+        "width": 480,
+        "height": 230
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b57",
+      "lesson": "2.B.1",
+      "archetype": "expected_value_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "A delivery route has probability 0.70 of earning a $12 bonus and probability 0.30 of incurring a $6 penalty. The same model applies on each of 25 workdays.",
+      "prompt": "What is the expected total bonus minus penalties over the 25 days?",
+      "choices": [
+        "45",
+        "165",
+        "210",
+        "255"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The expected net amount per day is 12(0.70) − 6(0.30) = 6.60 dollars.",
+          "Multiply by 25 days: 25(6.60) = 165 dollars."
+        ],
+        "warning": "Treat the penalty as a loss. The total is an expectation, not a guaranteed payment."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b58",
+      "lesson": "2.B.1",
+      "archetype": "standard_deviation_of_discrete_random_variable",
+      "variant": null,
+      "scenario": "The table gives the distribution of X, the number of cancellations per afternoon. Its mean is 2.",
+      "prompt": "Which value is closest to the standard deviation of X?",
+      "choices": [
+        "1.00",
+        "1.41",
+        "2.00",
+        "2.24"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\sigma_X=\\sqrt{(0-2)^2(0.25)+(2-2)^2(0.50)+(4-2)^2(0.25)}=\\sqrt{2}\\approx1.41"
+          },
+          "This measures the typical distance of afternoon cancellation counts from the mean of 2."
+        ],
+        "warning": "The variance is 2; take its square root for the standard deviation."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "x",
+          "P(X = x)"
+        ],
+        "rows": [
+          [
+            0,
+            "0.25"
+          ],
+          [
+            2,
+            "0.50"
+          ],
+          [
+            4,
+            "0.25"
+          ]
+        ],
+        "caption": "Cancellation model"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b59",
+      "lesson": "2.B.1",
+      "archetype": "interpret_mean_of_random_variable",
+      "variant": null,
+      "scenario": "A bike shop models the number of repairs completed in one hour. The expected value is 3.7 repairs, but only whole numbers of repairs are possible.",
+      "prompt": "Which statement is correct?",
+      "choices": [
+        "The model is invalid because the mean is not a possible outcome.",
+        "The most likely count must be 3.7.",
+        "Over many hours, the average repair count can approach 3.7.",
+        "Exactly 37 repairs must be completed in every 10 hours."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "An expected value is a probability-weighted average. It need not itself be a possible value.",
+          "Repeated hours can have different whole-number counts whose average is close to 3.7."
+        ],
+        "warning": "A long-run average does not fix the count in any particular hour or block of hours."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b60",
+      "lesson": "2.B.1",
+      "archetype": "discrete_distribution_from_enumeration",
+      "variant": null,
+      "scenario": "A fair coin is tossed twice. X is the number of times the result changes between the first toss and the second toss.",
+      "prompt": "Which of the following gives the probability distribution of X?",
+      "choices": [
+        "P(X = 0) = 0.25; P(X = 1) = 0.75",
+        "P(X = 0) = 0.50; P(X = 1) = 0.25; P(X = 2) = 0.25",
+        "P(X = 0) = 0.25; P(X = 1) = 0.50; P(X = 2) = 0.25",
+        "P(X = 0) = 0.50; P(X = 1) = 0.50"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The four equally likely sequences are HH, HT, TH, and TT.",
+          "HH and TT have no change; HT and TH have one change. There is only one transition to inspect.",
+          "Thus X has values 0 and 1, each with probability 2/4 = 0.50."
+        ],
+        "warning": "X counts changes between results, not the number of heads."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.8",
+            "2.9"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
       "id": "b11",
       "lesson": "2.B.2",
       "archetype": "identify_binomial_setting",
@@ -1541,6 +2181,557 @@
       }
     },
     {
+      "id": "b61",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "Each of 9 independently tested sensors has probability 0.30 of needing recalibration. X counts sensors needing recalibration. The plot shows its distribution.",
+      "prompt": "What is P(2 ≤ X ≤ 4), approximately?",
+      "choices": [
+        "0.2668",
+        "0.2948",
+        "0.4384",
+        "0.7052"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Include counts 2, 3, and 4.",
+          "The probabilities for 2, 3, and 4 are approximately 0.266828, 0.266828, and 0.171532. Their sum is approximately 0.7052."
+        ],
+        "warning": "Include both endpoints of the interval."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b61-binomial-bars.svg",
+        "alt": "Binomial probability bars for 9 trials and success probability 0.30; bars at 2 through 4 are shaded.",
+        "width": 480,
+        "height": 229
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b62",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "Each of 5 independent print runs has probability 0.08 of a paper jam. X counts runs with a jam.",
+      "prompt": "What is the probability of at least one jam, approximately?",
+      "choices": [
+        "0.0287",
+        "0.0800",
+        "0.3409",
+        "0.6591"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Use the complement of no jams.",
+          "P(X ≥ 1) = 1 − (0.92)⁵ ≈ 0.3409."
+        ],
+        "warning": "Adding five probabilities of 0.08 double-counts outcomes with several jams."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "at least",
+        "least"
+      ]
+    },
+    {
+      "id": "b63",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_quantity_meaning",
+      "variant": "V2",
+      "scenario": "A binomial random variable has mean 12 and variance 9.",
+      "prompt": "What is its success probability p?",
+      "choices": [
+        "0.25",
+        "0.50",
+        "0.75",
+        "0.90"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\frac{np(1-p)}{np}=\\frac{9}{12}=1-p"
+          },
+          "Therefore p = 1 − 0.75 = 0.25."
+        ],
+        "warning": "The ratio variance divided by mean gives the failure probability, not p."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b64",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_setting",
+      "variant": "V3",
+      "scenario": "An automated sorter independently accepts each parcel with probability 0.60. X counts accepted parcels in a batch of n parcels. The mean of X is 18.",
+      "prompt": "Which model describes X?",
+      "choices": [
+        "Binomial with n = 18 and p = 0.60",
+        "Binomial with n = 30 and p = 0.40",
+        "Binomial with n = 30 and p = 0.60",
+        "Binomial with n = 45 and p = 0.60"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "For a binomial count, the mean is np.",
+          "Solve 0.60n = 18 to obtain n = 30. Success means acceptance, so p = 0.60."
+        ],
+        "warning": "The mean number of successes is not the number of trials."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V3",
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b65",
+      "lesson": "2.B.2",
+      "archetype": "binomial_probability_calculation",
+      "variant": null,
+      "scenario": "Each of 8 independent appointments has probability 0.25 of being canceled. X counts canceled appointments. Its distribution is plotted.",
+      "prompt": "What is the probability of more than two cancellations, approximately?",
+      "choices": [
+        "0.2076",
+        "0.3215",
+        "0.3671",
+        "0.6785"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "More than two means X = 3, 4, 5, 6, 7, or 8.",
+          "Add those binomial probabilities, or subtract P(X ≤ 2) from 1, to obtain approximately 0.3215."
+        ],
+        "warning": "Do not include X = 2 in a strict upper tail."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b65-binomial-bars.svg",
+        "alt": "Binomial probability bars with n = 8 and p = 0.25; counts 3 through 8 are shaded.",
+        "width": 480,
+        "height": 229
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b66",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_setting",
+      "variant": null,
+      "scenario": "A game records the number of attempts needed to score a third hit. Attempts are independent and the hit probability is 0.40 on every attempt.",
+      "prompt": "Why is the recorded random variable not binomial?",
+      "choices": [
+        "The success probability is below 0.50.",
+        "There are only two outcomes per attempt.",
+        "The number of attempts is not fixed in advance.",
+        "Independence prevents a binomial model."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A binomial variable counts successes in a fixed number of trials.",
+          "Here the number of successes is fixed at three, and the number of attempts varies."
+        ],
+        "warning": "Independent trials with a constant success probability are not sufficient when the stopping rule makes n random."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "not"
+      ]
+    },
+    {
+      "id": "b67",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_quantity_meaning",
+      "variant": null,
+      "scenario": "Each of 50 independent submitted forms has probability 0.20 of requiring correction. X counts forms requiring correction.",
+      "prompt": "Which value is closest to the standard deviation of X?",
+      "choices": [
+        "2.83",
+        "3.16",
+        "8.00",
+        "10.00"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\sigma_X=\\sqrt{np(1-p)}=\\sqrt{50(0.20)(0.80)}=\\sqrt{8}\\approx2.83"
+          }
+        ],
+        "warning": "The mean is 10 and the variance is 8; neither is the standard deviation."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b68",
+      "lesson": "2.B.2",
+      "archetype": "probability_from_simulation_results",
+      "variant": null,
+      "scenario": "A program simulates 500 batches, each containing 6 independent batteries that fail a test with probability 0.20. The table records the failure count in each batch.",
+      "prompt": "What is the simulated estimate of P(X ≥ 3)?",
+      "choices": [
+        "0.016",
+        "0.080",
+        "0.096",
+        "0.904"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Counts 3, 4, 5, and 6 occurred 40 + 7 + 1 + 0 = 48 times.",
+          "The estimated probability is 48/500 = 0.096."
+        ],
+        "warning": "Divide by the number of batches, not by the six batteries in a batch."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Failures in batch",
+          "Simulated batches"
+        ],
+        "rows": [
+          [
+            0,
+            130
+          ],
+          [
+            1,
+            195
+          ],
+          [
+            2,
+            127
+          ],
+          [
+            3,
+            40
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "caption": "Simulated battery batches"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b69",
+      "lesson": "2.B.2",
+      "archetype": "most_or_least_likely_binomial_value",
+      "variant": null,
+      "scenario": "X is binomial with n = 4 and p = 0.50.",
+      "prompt": "Which listed count is most likely?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The probabilities for 0, 1, 2, and 4 are 1/16, 4/16, 6/16, and 1/16.",
+          "The largest is 6/16, which belongs to X = 2."
+        ],
+        "warning": "Equal success and failure probabilities do not make the different counts equally likely."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b70",
+      "lesson": "2.B.2",
+      "archetype": "identify_binomial_quantity_meaning",
+      "variant": null,
+      "scenario": "A plant independently labels each of 7 trays correctly with probability 0.80. Let X count correctly labeled trays.",
+      "prompt": "Which expression gives P(X = 5)?",
+      "choices": [
+        "(0.80)⁵(0.20)²",
+        "C(7, 5)(0.80)²(0.20)⁵",
+        "C(7, 5)(0.80)⁵",
+        "C(7, 5)(0.80)⁵(0.20)²"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Five correct labels contribute (0.80)⁵ and two incorrect labels contribute (0.20)².",
+          "The factor C(7, 5) counts which five trays are labeled correctly."
+        ],
+        "warning": "A single arrangement omits the combination factor; the success exponent must match the count requested."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.10"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
       "id": "b21",
       "lesson": "2.B.3",
       "archetype": "discrete_or_continuous_variable",
@@ -2089,6 +3280,548 @@
           "index": 29
         }
       }
+    },
+    {
+      "id": "b71",
+      "lesson": "2.B.3",
+      "archetype": "probability_of_single_value_continuous",
+      "variant": null,
+      "scenario": "A continuous random variable X models a filling time in seconds.",
+      "prompt": "Which statement must be true?",
+      "choices": [
+        "P(X < 12) is less than P(X ≤ 12).",
+        "P(X = 12) equals the curve height at 12.",
+        "P(X = 12) must be positive if 12 is the mean.",
+        "P(X < 12) = P(X ≤ 12)."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "For a continuous model, P(X = 12) = 0.",
+          "Adding the single endpoint does not change the probability."
+        ],
+        "warning": "Probabilities are areas over intervals, not heights at points."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b72",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "A normal model for cable strength has mean 90 newtons and standard deviation 5 newtons.",
+      "prompt": "Using the empirical rule, approximately what percent of strengths are between 95 and 100 newtons?",
+      "choices": [
+        "2.5%",
+        "13.5%",
+        "27%",
+        "47.5%"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The boundaries are one and two standard deviations above the mean.",
+          "The area between them is (95% − 68%)/2 = 13.5%."
+        ],
+        "warning": "The 27% outside the central 68% but inside the central 95% is shared by two sides."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b73",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "A laboratory models measurement errors with a standard normal distribution. The shaded region is shown.",
+      "prompt": "Using the empirical rule, approximately what percent fall outside the interval from −3 to 3?",
+      "choices": [
+        "0.15%",
+        "0.30%",
+        "3.00%",
+        "99.70%"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Approximately 99.7% lie within three standard deviations.",
+          "The two tails together contain 100% − 99.7% = 0.3%."
+        ],
+        "warning": "Each individual tail contains about 0.15%; the event includes both."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b73-normal.svg",
+        "alt": "Standard normal curve with both tails outside −3 and 3 shaded.",
+        "width": 480,
+        "height": 256
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b74",
+      "lesson": "2.B.3",
+      "archetype": "z_score_calculation",
+      "variant": "V4",
+      "scenario": "The table summarizes scores on two different assessments. A student scores 82 on Assessment A and 660 on Assessment B.",
+      "prompt": "On which assessment is the student farther above the mean in standard deviation units?",
+      "choices": [
+        "A, because 82 is 12 points above its mean.",
+        "B, because 660 is the larger raw score.",
+        "B, because its z-score is 2.0 while A’s is 1.5.",
+        "A, because its z-score is 2.0 while B’s is 1.5."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "z_A=\\frac{82-70}{8}=1.5,\\qquad z_B=\\frac{660-500}{80}=2.0"
+          },
+          "A larger positive z-score places the student farther above the relevant mean."
+        ],
+        "warning": "Raw scores and raw gaps cannot be compared across different scales."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Assessment",
+          "Mean",
+          "Standard deviation"
+        ],
+        "rows": [
+          [
+            "A",
+            70,
+            8
+          ],
+          [
+            "B",
+            500,
+            80
+          ]
+        ],
+        "caption": "Assessment summaries"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b75",
+      "lesson": "2.B.3",
+      "archetype": "normal_distribution_shape",
+      "variant": null,
+      "scenario": "The table describes two normal models for machine output.",
+      "prompt": "Which statement about the models is correct?",
+      "choices": [
+        "B has a wider curve because its mean is larger.",
+        "B has a taller peak because its mean is larger.",
+        "B has a larger total area because its center is farther right.",
+        "B is shifted 20 units to the right, with the same shape and peak height as A."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Both standard deviations are 6, so both curves have the same spread and height.",
+          "Changing the mean from 40 to 60 shifts the curve without changing its shape or total area of 1."
+        ],
+        "warning": "The mean controls location; the standard deviation controls spread."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Model",
+          "Mean",
+          "Standard deviation"
+        ],
+        "rows": [
+          [
+            "A",
+            40,
+            6
+          ],
+          [
+            "B",
+            60,
+            6
+          ]
+        ],
+        "caption": "Normal model parameters"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b76",
+      "lesson": "2.B.3",
+      "archetype": "z_score_calculation",
+      "variant": null,
+      "scenario": "A swimmer has a standardized training-time score of −1.25 in a distribution with mean 48 seconds and standard deviation 4 seconds.",
+      "prompt": "What is the swimmer’s time, in seconds?",
+      "choices": [
+        "43",
+        "46.75",
+        "49.25",
+        "53"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Undo the standardization: x = μ + zσ.",
+          "The time is 48 + (−1.25)(4) = 43 seconds."
+        ],
+        "warning": "A negative z-score puts the time below the mean; it does not make the time itself negative."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b77",
+      "lesson": "2.B.3",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "A distribution of daily donations is strongly right-skewed. Its mean is $60 and standard deviation is $20. No normal model is stated.",
+      "prompt": "Which conclusion about its 75th percentile is justified?",
+      "choices": [
+        "It is $73.49 because the normal z-score is about 0.6745.",
+        "It is $75 because 75% is the z-score.",
+        "It is $80 because one standard deviation identifies a quartile.",
+        "The exact 75th percentile cannot be determined from this information."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A percentile depends on the distribution’s shape as well as its center and spread.",
+          "The standard normal 75th-percentile z-score cannot be imposed on a strongly skewed distribution."
+        ],
+        "warning": "Mean and standard deviation alone do not determine a percentile without a suitable model."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b78",
+      "lesson": "2.B.3",
+      "archetype": "empirical_rule_percents_and_bounds",
+      "variant": null,
+      "scenario": "A normal model for a process has approximately 95% of values between 26 and 50.",
+      "prompt": "Which pair gives the mean and standard deviation, approximately?",
+      "choices": [
+        "Mean 38; standard deviation 12",
+        "Mean 38; standard deviation 6",
+        "Mean 26; standard deviation 6",
+        "Mean 50; standard deviation 24"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The symmetric interval is centered at (26 + 50)/2 = 38.",
+          "A central 95% interval spans about four standard deviations, so σ ≈ (50 − 26)/4 = 6."
+        ],
+        "warning": "Its full width is four standard deviations, not two."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b79",
+      "lesson": "2.B.3",
+      "archetype": "normal_distribution_shape",
+      "variant": null,
+      "scenario": "X follows a standard normal distribution.",
+      "prompt": "Which statement is not supported by this model?",
+      "choices": [
+        "The mean and median are both 0.",
+        "The curve is symmetric about 0.",
+        "X cannot take values greater than 3.",
+        "The total area under the curve is 1."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A standard normal distribution has mean and median 0, standard deviation 1, and total area 1.",
+          "Its tails continue beyond ±3, although only about 0.3% of the area is outside that interval."
+        ],
+        "warning": "The empirical rule does not give a minimum or maximum possible value."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "not"
+      ]
+    },
+    {
+      "id": "b80",
+      "lesson": "2.B.3",
+      "archetype": "z_score_calculation",
+      "variant": "V2",
+      "scenario": "A student’s score of 74 is 1.5 standard deviations above the mean score of 62.",
+      "prompt": "What is the standard deviation of the scores?",
+      "choices": [
+        "6",
+        "8",
+        "12",
+        "18"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The distance above the mean is 74 − 62 = 12.",
+          "Since 12 = 1.5σ, divide to find σ = 8."
+        ],
+        "warning": "The gap from the mean is not itself the standard deviation unless z = 1."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V2",
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
     },
     {
       "id": "b31",
@@ -2896,6 +4629,514 @@
       }
     },
     {
+      "id": "b81",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "Charging times are approximately normal with mean 40 minutes and standard deviation 6 minutes. The event of interest is shaded.",
+      "prompt": "What proportion of charging times are between 43 and 49 minutes, approximately?",
+      "choices": [
+        "0.0668",
+        "0.2417",
+        "0.3085",
+        "0.9332"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Standardize the boundaries: (43 − 40)/6 = 0.5 and (49 − 40)/6 = 1.5.",
+          "The probability is Φ(1.5) − Φ(0.5) ≈ 0.9332 − 0.6915 = 0.2417."
+        ],
+        "warning": "Both boundaries are above the mean; the interval is not centered."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b81-normal.svg",
+        "alt": "Normal charging-time curve with mean 40 and standard deviation 6; the area from 43 to 49 minutes is shaded.",
+        "width": 480,
+        "height": 256
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b82",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "A diameter X is normally distributed with mean 25 millimeters and standard deviation 2 millimeters. A component is rejected if its diameter is below 22 or above 28 millimeters.",
+      "prompt": "What proportion are rejected, approximately?",
+      "choices": [
+        "0.0668",
+        "0.1336",
+        "0.8664",
+        "0.9332"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The cutoffs have z-scores −1.5 and 1.5.",
+          "Add the two tails: 2P(Z > 1.5) ≈ 2(0.066807) = 0.1336."
+        ],
+        "warning": "One tail gives only half the rejection probability."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b83",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "Daily energy use is approximately normal with mean 120 kilowatt-hours and standard deviation 18 kilowatt-hours. The highest 15% of days are flagged. The upper-tail area is shaded.",
+      "prompt": "What is the flagging cutoff, in kilowatt-hours, approximately?",
+      "choices": [
+        "101.34",
+        "122.70",
+        "135.30",
+        "138.66"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The cutoff has 0.85 of the distribution to its left.",
+          "The corresponding z-score is about 1.0364, so x = 120 + 18(1.0364) ≈ 138.66."
+        ],
+        "warning": "The highest 15% starts at the 85th percentile, not the 15th percentile."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b83-normal.svg",
+        "alt": "Normal energy-use curve; an upper tail of area 0.15 is shaded above a cutoff labeled c.",
+        "width": 480,
+        "height": 276
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b84",
+      "lesson": "2.B.4",
+      "archetype": "normal_parameter_from_percentile",
+      "variant": null,
+      "scenario": "A normal distribution has 25th percentile 32 and 75th percentile 48.",
+      "prompt": "Which value is closest to its standard deviation?",
+      "choices": [
+        "5.93",
+        "8.00",
+        "11.86",
+        "16.00"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "By symmetry the mean is 40. The 75th percentile is 0.67449 standard deviations above it.",
+          "Thus σ = (48 − 40)/0.67449 ≈ 11.86."
+        ],
+        "warning": "The interquartile range is about 1.349 standard deviations, not two."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b85",
+      "lesson": "2.B.4",
+      "archetype": "normal_parameter_from_percentile",
+      "variant": null,
+      "scenario": "Assembly times follow a normal model with standard deviation 3 minutes. Its 95th percentile is 19 minutes. The lower 95% is shaded.",
+      "prompt": "What is the mean assembly time, approximately?",
+      "choices": [
+        "14.07",
+        "16.15",
+        "19.00",
+        "23.93"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The 95th-percentile standard normal value is about 1.64485.",
+          "Solve 19 = μ + 3(1.64485) to get μ ≈ 14.07 minutes."
+        ],
+        "warning": "The mean lies below a 95th-percentile cutoff."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b85-normal.svg",
+        "alt": "Normal curve with standard deviation 3; area 0.95 lies below 19, and its mean is labeled mu.",
+        "width": 480,
+        "height": 276
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b86",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": null,
+      "scenario": "A normal distribution of test readings has mean 300 and standard deviation 12.",
+      "prompt": "Which interval contains the middle 90% of readings, approximately?",
+      "choices": [
+        "280.26 to 319.74",
+        "284.62 to 315.38",
+        "288.00 to 312.00",
+        "290.00 to 310.00"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The middle 90% leaves 5% in each tail.",
+          "Use z = ±1.64485: 300 ± 12(1.64485) gives approximately 280.26 to 319.74."
+        ],
+        "warning": "Using the 90th-percentile z-score gives a middle 80% interval."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b87",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "A normal model for bottle volume has mean 750 milliliters and standard deviation 8 milliliters. A batch contains 1,200 bottles.",
+      "prompt": "Approximately how many bottles are expected to contain less than 740 milliliters?",
+      "choices": [
+        "63",
+        "127",
+        "254",
+        "1,073"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The cutoff has z = (740 − 750)/8 = −1.25.",
+          "The lower-tail probability is about 0.10565. Multiply by 1,200 to get approximately 126.78 bottles, or 127."
+        ],
+        "warning": "An expected count multiplies the probability by the batch size and need not equal the actual count."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b88",
+      "lesson": "2.B.4",
+      "archetype": "value_at_percentile_of_normal_distribution",
+      "variant": "V4",
+      "scenario": "A normal score distribution has mean 100 and standard deviation 15. A certificate requires a score in the highest 10%. Only whole-number scores are awarded.",
+      "prompt": "What is the smallest whole-number score that meets the requirement?",
+      "choices": [
+        "118",
+        "119",
+        "120",
+        "121"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The 90th-percentile cutoff is 100 + 15(1.28155) ≈ 119.22.",
+          "A score must reach or exceed that cutoff. The smallest whole number that does so is 120."
+        ],
+        "warning": "Rounding the cutoff to the nearest integer would admit a score below it."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": "V4",
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b89",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "A random variable X follows a normal distribution with mean 60 and standard deviation 10. Let Φ(z) denote the area to the left of z under a standard normal curve.",
+      "prompt": "Which expression gives P(X < 45 or X > 70)?",
+      "choices": [
+        "Φ(−1.5) + Φ(1)",
+        "Φ(1) − Φ(−1.5)",
+        "1 − Φ(−1.5) + Φ(1)",
+        "Φ(−1.5) + 1 − Φ(1)"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The cutoffs standardize to −1.5 and 1.",
+          "The left tail is Φ(−1.5); the right tail is 1 − Φ(1). Add them because the events are disjoint."
+        ],
+        "warning": "Subtracting the cumulative probabilities gives the middle interval instead of the two tails."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b90",
+      "lesson": "2.B.4",
+      "archetype": "percent_beyond_value_in_normal_distribution",
+      "variant": null,
+      "scenario": "X follows a normal distribution with mean 10 and standard deviation 2. A researcher wants P(X < 13).",
+      "prompt": "Which statement correctly describes the required normal area?",
+      "choices": [
+        "The area between z = −1.5 and z = 1.5 under a standard normal curve.",
+        "The area to the right of z = 1.5 under a standard normal curve.",
+        "The area to the left of z = 6.5 under a standard normal curve.",
+        "The area to the left of z = 1.5 under a standard normal curve."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Standardize 13 using z = (13 − 10)/2 = 1.5.",
+          "Standardization preserves the direction of this inequality because the standard deviation is positive."
+        ],
+        "warning": "Using 13/2 ignores the mean, and using both tails changes the event."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.11"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
       "id": "b41",
       "lesson": "2.B.5",
       "archetype": "identify_population_and_sample",
@@ -3403,6 +5644,579 @@
           "index": 49
         }
       }
+    },
+    {
+      "id": "b91",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_definition",
+      "variant": null,
+      "scenario": "A program takes 400 independent random samples of 12 rechargeable cells and records the median lifetime of each sample.",
+      "prompt": "What does a dot in a dotplot of these 400 recorded values represent?",
+      "choices": [
+        "The lifetime of one cell among 400 cells.",
+        "The median lifetime of all cells in the population.",
+        "The median lifetime from one sample of 12 cells.",
+        "The average of all 400 sample medians."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Each repetition selects 12 cells and produces one median.",
+          "The display approximates a sampling distribution of a median for samples of size 12."
+        ],
+        "warning": "A sampling distribution can describe statistics other than the sample mean."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b92",
+      "lesson": "2.B.5",
+      "archetype": "probability_from_simulation_results",
+      "variant": null,
+      "scenario": "Under a claimed population mean of 24 minutes, a computer generates 20 independent random samples of size 30. The dotplot shows the sample means, rounded to whole minutes. An observed sample has mean 27 minutes.",
+      "prompt": "What is the simulation estimate of the probability of a rounded sample mean of at least 27 minutes?",
+      "choices": [
+        "0.10",
+        "0.15",
+        "0.20",
+        "0.80"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Count the dots at 27 and 28: there are 3 + 1 = 4.",
+          "The estimated probability is 4/20 = 0.20."
+        ],
+        "warning": "Count dots rather than distinct positions, and include the boundary at 27."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b92-dotplot.svg",
+        "alt": "Twenty simulated rounded sample means: one at 21, two at 22, three at 23, five at 24, three at 25, two at 26, three at 27, and one at 28.",
+        "width": 480,
+        "height": 197
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "at least",
+        "least"
+      ]
+    },
+    {
+      "id": "b93",
+      "lesson": "2.B.5",
+      "archetype": "sample_size_effect_on_sampling_distribution",
+      "variant": null,
+      "scenario": "The table summarizes two simulations of sample means from the same moderately right-skewed population.",
+      "prompt": "Which comparison is justified?",
+      "choices": [
+        "B has more variable means because it has more repetitions.",
+        "A has more nearly normal means because its samples are smaller.",
+        "B has a larger theoretical center because its samples are larger.",
+        "B has less variable means and a shape closer to normal."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The observations per sample increase from 5 to 80. Averaging more observations reduces the variability of sample means.",
+          "For this moderately skewed population, larger samples also make the sampling distribution closer to normal.",
+          "The center remains the population mean; the repetition count does not determine theoretical spread."
+        ],
+        "warning": "Increasing repetitions improves the simulation’s detail; increasing sample size changes the sampling distribution."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Simulation",
+          "Observations per sample",
+          "Repetitions"
+        ],
+        "rows": [
+          [
+            "A",
+            5,
+            5000
+          ],
+          [
+            "B",
+            80,
+            1000
+          ]
+        ],
+        "caption": "Simulation designs"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b94",
+      "lesson": "2.B.5",
+      "archetype": "simulation_based_claim_evaluation",
+      "variant": null,
+      "scenario": "The histogram shows 1,000 simulated means from samples of 40 refill times under a claimed population mean of 10 minutes. An actual sample of 40 has mean 12 minutes.",
+      "prompt": "Which conclusion is supported against the alternative of a larger population mean?",
+      "choices": [
+        "The probability that the claim is true is 0.015.",
+        "The result proves the population mean exceeds 10 minutes.",
+        "The upper-tail estimate is 0.015, providing evidence against the claim.",
+        "The upper-tail estimate is 0.985, giving little evidence against the claim."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The bins at or above 12 minutes contain 12 + 3 = 15 simulated means.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\widehat{P}(\\bar{X}\\ge12)=\\frac{15}{1000}=0.015"
+          },
+          "This small upper-tail estimate provides evidence against the claimed mean in the stated direction."
+        ],
+        "warning": "The tail probability assumes the claim; it is not the probability that the claim is true."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b94-frequency-histogram.svg",
+        "alt": "Histogram of 1,000 sample means with bins 7–8 through 13–14 and counts 20, 110, 340, 350, 165, 12, and 3; bins from 12 onward are shaded.",
+        "width": 480,
+        "height": 228
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b95",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_exact_small_population",
+      "variant": null,
+      "scenario": "A population contains the four values 1, 3, 5, and 7. Every unordered sample of size 2 without replacement is equally likely. The table lists all possible samples.",
+      "prompt": "What is the probability that a sample mean equals the population mean?",
+      "choices": [
+        "1/6",
+        "2/6",
+        "3/6",
+        "4/6"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The population mean is (1 + 3 + 5 + 7)/4 = 4.",
+          "The six sample means are 2, 3, 4, 4, 5, and 6. Two of them equal 4.",
+          "Because the six samples are equally likely, the probability is 2/6."
+        ],
+        "warning": "Distinct sample-mean values are not equally likely."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Sample",
+          "Mean"
+        ],
+        "rows": [
+          [
+            "1 and 3",
+            2
+          ],
+          [
+            "1 and 5",
+            3
+          ],
+          [
+            "1 and 7",
+            4
+          ],
+          [
+            "3 and 5",
+            4
+          ],
+          [
+            "3 and 7",
+            5
+          ],
+          [
+            "5 and 7",
+            6
+          ]
+        ],
+        "caption": "All equally likely samples"
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b96",
+      "lesson": "2.B.5",
+      "archetype": "sampling_simulation_design",
+      "variant": null,
+      "scenario": "A researcher wants to approximate the sampling distribution of the mean shelf life for random samples of 20 cartons from a very large population.",
+      "prompt": "Which simulation plan is appropriate?",
+      "choices": [
+        "Draw one sample of 20 cartons, then plot the 20 individual shelf lives.",
+        "Find the population mean once, then plot that same number 1,000 times.",
+        "Take 20 random samples of 1,000 cartons, then plot every individual shelf life.",
+        "Take 1,000 random samples of 20 cartons, record each sample mean, and plot the 1,000 means."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The sample size must remain 20 in every repetition.",
+          "Each repeated random sample must contribute one mean. Plotting those means approximates the sampling distribution."
+        ],
+        "warning": "Plotting individual observations produces a distribution of data rather than a distribution of sample means."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b97",
+      "lesson": "2.B.5",
+      "archetype": "sampling_distribution_definition",
+      "variant": null,
+      "scenario": "A graph contains one value for every possible random sample of 10 books from a library. Each value is the sample’s mean page count.",
+      "prompt": "Which statement distinguishes this graph from one based on 500 simulated samples?",
+      "choices": [
+        "The simulated graph must have the larger true mean.",
+        "The exact graph describes individual books instead of means.",
+        "The simulated graph uses sample size 500.",
+        "The exact graph is the sampling distribution; the simulated graph approximates it."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A sampling distribution includes the statistic from every possible sample of the specified size.",
+          "A finite simulation uses only some repeated samples to approximate that distribution."
+        ],
+        "warning": "The number of simulated repetitions is separate from the number of books per sample."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b98",
+      "lesson": "2.B.5",
+      "archetype": "randomization_distribution_definition",
+      "variant": null,
+      "scenario": "An experiment compares two fertilizers using the difference in mean plant height. A computer repeatedly shuffles the observed heights between two groups of the original sizes and records a difference in means.",
+      "prompt": "What distribution is being simulated?",
+      "choices": [
+        "The population distribution of individual plant heights.",
+        "The sampling distribution of one plant’s height.",
+        "A randomization distribution of the difference in means under no treatment effect.",
+        "A distribution that proves the two fertilizers have equal effects."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The procedure reassigns the observed responses to treatment groups rather than drawing fresh observations from a population.",
+          "Repeated reassignments generate a randomization distribution for the difference in means under no treatment effect."
+        ],
+        "warning": "Shuffling supports a reference distribution; it does not establish that the null claim is true."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b99",
+      "lesson": "2.B.5",
+      "archetype": "central_limit_theorem_statement",
+      "variant": null,
+      "scenario": "A population of invoice amounts is strongly right-skewed. Independent random samples of size 6 are taken, and their means are plotted. A second simulation uses the same sample size but increases repetitions from 500 to 50,000.",
+      "prompt": "What effect should the additional repetitions have?",
+      "choices": [
+        "They force the sampling distribution to become normal.",
+        "They reduce the theoretical variability of the sample means.",
+        "They make every sample mean equal the population mean.",
+        "They make the simulated graph more stable without changing the underlying sampling distribution."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The distribution being approximated still concerns samples of size 6. Its underlying shape and variability are unchanged.",
+          "More repetitions make the simulated frequencies more stable and reveal that distribution more clearly."
+        ],
+        "warning": "The central limit theorem depends on observations per sample, not the number of repetitions."
+      },
+      "stimulus": null,
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": []
+    },
+    {
+      "id": "b100",
+      "lesson": "2.B.5",
+      "archetype": "probability_from_simulation_results",
+      "variant": null,
+      "scenario": "Assuming a claimed population median of 49, a computer simulates 24 random samples of size 15. The dotplot shows their sample medians. An observed sample median is 47. Smaller medians would count as evidence against the claim.",
+      "prompt": "What is the estimated probability of a sample median at most 47 under the claimed model?",
+      "choices": [
+        "3/24",
+        "5/24",
+        "8/24",
+        "19/24"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The dots at 46 and 47 occur 2 and 3 times, respectively.",
+          "There are 5 simulated medians at most 47 among 24 repetitions, giving 5/24."
+        ],
+        "warning": "This is a lower-tail event. Include all dots at the observed value."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/b100-dotplot.svg",
+        "alt": "Twenty-four simulated sample medians: two at 46, three at 47, four at 48, six at 49, four at 50, three at 51, and two at 52.",
+        "width": 480,
+        "height": 239
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+      },
+      "provenance": {
+        "optionRoles": null,
+        "keyBuild": null,
+        "variant": null,
+        "extensions": [
+          "Fresh variant and distractor constructions; source build codes are not asserted."
+        ],
+        "sourceReview": {
+          "single_key": "AI reviewed all four choices; numeric targets are independently checked in scripts/check-unit-two-b.mjs.",
+          "calculator": "Deferred by explicit user request."
+        },
+        "original": {
+          "basis": "Original synthetic item informed by the CED topic profile and relevant card answer logic where available; no source text or data copied.",
+          "ced": [
+            "2.12"
+          ],
+          "human_verified": false
+        },
+        "lengthReview": []
+      },
+      "emphasis": [
+        "at most"
+      ]
     }
   ]
 }

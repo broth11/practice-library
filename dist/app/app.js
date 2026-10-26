@@ -1,7 +1,7 @@
-import { renderStimulus } from './stimulus.js?v=f474b2398f0f';
-import { renderStep, typesetMath } from './math.js?v=f474b2398f0f';
-import { mountCalculator } from './calculator.js?v=f474b2398f0f';
-import { renderChoice, choiceText } from './choices.js?v=f474b2398f0f';
+import { renderStimulus } from './stimulus.js?v=45fbeca7192f';
+import { renderStep, typesetMath } from './math.js?v=45fbeca7192f';
+import { mountCalculator } from './calculator.js?v=45fbeca7192f';
+import { renderChoice, choiceText } from './choices.js?v=45fbeca7192f';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');

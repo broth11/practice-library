@@ -1,5 +1,12 @@
 # Handoff
 
+## Unit 2.B GitHub synchronization (2026-10-26, Codex)
+
+- Ben explicitly requested pushing the new 2.B questions to GitHub main. This authorizes the direct main update for this synchronization.
+- Applied the completed Sites expansion onto current GitHub main, preserving the newer 2.A calculator guidance. Unit 2.B now has 100 questions, twenty per lesson, with twelve new figures and nine new tables. The original fifty 2.B items are unchanged.
+- The fifty added 2.B calculator guides remain deferred. Numeric and model checks are in `scripts/check-unit-two-b.mjs`; coverage, provenance, and review limits are in `docs/UNIT-2B-EXPANSION-REVIEW.md`.
+- Sites version 14 already contains the 2.B expansion. This synchronization updates GitHub and its existing Pages workflow without changing Sites hosting or access.
+
 ## Unit 2.A calculator guidance (2026-10-26, Claude)
 
 - q51–q100 (items 11–20 in each 2.A lesson) now have fx-CG50 guidance. 37 items use Run-Matrix arithmetic screens (48 result screens in all), following the q01–q50 pattern. 13 items are marked `needed: false` with a reason because they are counting, interpretation, or read-off tasks: q59, q61, q63, q66, q67, q68, q74, q75, q77, q80, q85, q95, q99.

@@ -89,3 +89,11 @@ Where the decisions came from: the earlier ones were made in prior development s
 ## Question traversal (2026-10-26)
 
 Question source arrays follow declared lesson order, with each lesson contiguous. Keyboard and button traversal share this sequence. New questions belong inside their lesson block. The structural validator enforces this for every unit. Stable ids and deep links are preserved.
+
+## Unit 2.B expansion (2026-10-26)
+
+- Expand each of the five lessons from ten to twenty questions. Preserve b01 to b50 and defer calculator keypress guidance on b51 to b100.
+- Give underrepresented reasoning variants and representations more space. Add twelve generated figures and nine tables while retaining the established shared renderers and lesson traversal order.
+- Publish to the selected original Sites artifact with its existing audience. The separate GitHub and Pages copies are outside this pass.
+
+- Follow-up: Ben explicitly requested the completed 2.B additions on GitHub main. Apply them onto current GitHub history, preserve newer changes in other units, and include the regenerated static build. This follow-up supersedes the earlier publication-scope limit for GitHub synchronization.
