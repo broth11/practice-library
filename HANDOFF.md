@@ -1,5 +1,12 @@
 # Handoff
 
+## Unit 2.B calculator guidance (2026-10-26, Claude)
+
+- b51–b100 (items 11–20 in each 2.B lesson) now have fx-CG50 guidance. 21 items have guides: 10 Run-Matrix arithmetic items (b54, b56, b57, b58, b62, b64, b67, b68, b74, b76, b80) and 11 distribution walkthroughs using the shared descriptors and followUps (b61, b65 Binomial CD; b81, b82, b87 Normal CD; b83, b84, b85, b86, b88 Inverse Normal). The other 29 are marked `needed: false` with a specific reason because they are definition, interpretation, read-off, or mental-arithmetic tasks.
+- `scripts/check-unit-two-b.mjs` no longer requires deferral for b51–b100; it requires a result screen, a distribution descriptor, or a reason. Every guide's final screen was also compared with the keyed choice.
+- Tool verification only. No browser review of the new keypress panes and no physical fx-CG50 check are recorded.
+- Pushed directly to main at Ben's explicit request in chat, overriding the branch-only rule for this change.
+
 ## Unit 2.B GitHub synchronization (2026-10-26, Codex)
 
 - Ben explicitly requested pushing the new 2.B questions to GitHub main. This authorizes the direct main update for this synchronization.

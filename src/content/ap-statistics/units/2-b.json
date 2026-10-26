@@ -924,8 +924,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Check each listed probability against the 0-to-1 requirement. The negative entry is visible in the table, so no calculation is needed."
       },
       "provenance": {
         "optionRoles": null,
@@ -982,8 +981,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Read the two bars at 3 and 4 and add 0.20 + 0.10 mentally."
       },
       "provenance": {
         "optionRoles": null,
@@ -1061,8 +1059,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Subtract the two adjacent cumulative values, 0.65 − 0.40, mentally."
       },
       "provenance": {
         "optionRoles": null,
@@ -1120,9 +1117,72 @@
         "height": 229
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the variance",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "0",
+              "SUB",
+              "1",
+              "DOT",
+              "6",
+              "RP",
+              "POW",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "ADD",
+              "LP",
+              "2",
+              "SUB",
+              "1",
+              "DOT",
+              "6",
+              "RP",
+              "POW",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "8",
+              "EXE"
+            ],
+            "entry": "(0-1.6)^2*0.2+(2-1.6)^2*0.8",
+            "mode": "result",
+            "input": "(0-1.6)^2*0.2+(2-1.6)^2*0.8",
+            "result": "0.64",
+            "note": "Square each deviation from the mean of 1.6, weight it by its probability, and add.",
+            "exact": "16/25"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1207,8 +1267,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Both models are symmetric about 2, and the squared deviations are 4 for A and 1 for B. Reading the tables is quicker than calculating."
       },
       "provenance": {
         "optionRoles": null,
@@ -1262,9 +1321,62 @@
         "height": 230
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the expected profit",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "MUL",
+              "LP",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "5",
+              "ADD",
+              "4",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "RP",
+              "SUB",
+              "7",
+              "EXE"
+            ],
+            "entry": "4*(2*0.5+4*0.3)-7",
+            "mode": "result",
+            "input": "4*(2*0.5+4*0.3)-7",
+            "result": "1.8",
+            "note": "The bracket is the expected number of mugs, 2.2. Multiply by $4, then subtract the $7 fee.",
+            "exact": "9/5"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1312,9 +1424,62 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the expected 25-day total",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "2",
+              "5",
+              "MUL",
+              "LP",
+              "1",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "7",
+              "SUB",
+              "6",
+              "MUL",
+              "0",
+              "DOT",
+              "3",
+              "RP",
+              "EXE"
+            ],
+            "entry": "25*(12*0.7-6*0.3)",
+            "mode": "result",
+            "input": "25*(12*0.7-6*0.3)",
+            "result": "165",
+            "note": "The bracket is the expected net amount for one day, $6.60. Multiply by 25 days.",
+            "exact": "165"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1387,9 +1552,87 @@
         "caption": "Cancellation model"
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the standard deviation",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "LP",
+              "0",
+              "SUB",
+              "2",
+              "RP",
+              "POW",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "ADD",
+              "LP",
+              "2",
+              "SUB",
+              "2",
+              "RP",
+              "POW",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "5",
+              "ADD",
+              "LP",
+              "4",
+              "SUB",
+              "2",
+              "RP",
+              "POW",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "5",
+              "RP",
+              "POW",
+              "0",
+              "DOT",
+              "5",
+              "EXE"
+            ],
+            "entry": "((0-2)^2*0.25+(2-2)^2*0.5+(4-2)^2*0.25)^0.5",
+            "mode": "result",
+            "input": "((0-2)^2*0.25+(2-2)^2*0.5+(4-2)^2*0.25)^0.5",
+            "result": "1.414213562",
+            "note": "Find the weighted squared deviations inside the bracket, then raise to the power 0.5 for the square root."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -1438,8 +1681,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "This question asks how to interpret an expected value. There is nothing to calculate."
       },
       "provenance": {
         "optionRoles": null,
@@ -1489,8 +1731,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "List the four equally likely sequences and count changes. This is enumeration, not calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -2210,8 +2451,29 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Binomial CD",
+          "fields": [
+            [
+              "Lower",
+              2
+            ],
+            [
+              "Upper",
+              4
+            ],
+            [
+              "Numtrial",
+              9
+            ],
+            [
+              "p",
+              0.3
+            ]
+          ],
+          "result": "0.7052",
+          "extra": "The bounds are inclusive whole-number counts."
+        }
       },
       "provenance": {
         "optionRoles": null,
@@ -2258,9 +2520,52 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the complement of no jams",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "SUB",
+              "0",
+              "DOT",
+              "9",
+              "2",
+              "POW",
+              "5",
+              "EXE"
+            ],
+            "entry": "1-0.92^5",
+            "mode": "result",
+            "input": "1-0.92^5",
+            "result": "0.3409184768",
+            "note": "Every run must avoid a jam for X = 0, so P(X = 0) = 0.92⁵. Subtract it from 1."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -2315,8 +2620,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Dividing the variance by the mean gives 1 − p = 9/12 = 0.75 directly. Mental arithmetic is enough."
       },
       "provenance": {
         "optionRoles": null,
@@ -2363,9 +2667,51 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Solve 0.60n = 18",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "1",
+              "8",
+              "DIV",
+              "0",
+              "DOT",
+              "6",
+              "EXE"
+            ],
+            "entry": "18/0.6",
+            "mode": "result",
+            "input": "18/0.6",
+            "result": "30",
+            "note": "Divide the mean by the success probability to find n.",
+            "exact": "30"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -2419,8 +2765,29 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Binomial CD",
+          "fields": [
+            [
+              "Lower",
+              3
+            ],
+            [
+              "Upper",
+              8
+            ],
+            [
+              "Numtrial",
+              8
+            ],
+            [
+              "p",
+              0.25
+            ]
+          ],
+          "result": "0.3215",
+          "extra": "More than two starts at 3. The bounds are inclusive whole-number counts."
+        }
       },
       "provenance": {
         "optionRoles": null,
@@ -2468,8 +2835,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Decide whether the number of trials is fixed. This is a definition check, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -2521,9 +2887,60 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the standard deviation",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "5",
+              "0",
+              "MUL",
+              "0",
+              "DOT",
+              "2",
+              "MUL",
+              "0",
+              "DOT",
+              "8",
+              "RP",
+              "POW",
+              "0",
+              "DOT",
+              "5",
+              "EXE"
+            ],
+            "entry": "(50*0.2*0.8)^0.5",
+            "mode": "result",
+            "input": "(50*0.2*0.8)^0.5",
+            "result": "2.828427125",
+            "note": "Use σ = √(np(1 − p)). The power 0.5 takes the square root."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -2607,9 +3024,60 @@
         "caption": "Simulated battery batches"
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the simulated proportion",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "4",
+              "0",
+              "ADD",
+              "7",
+              "ADD",
+              "1",
+              "ADD",
+              "0",
+              "RP",
+              "DIV",
+              "5",
+              "0",
+              "0",
+              "EXE"
+            ],
+            "entry": "(40+7+1+0)/500",
+            "mode": "result",
+            "input": "(40+7+1+0)/500",
+            "result": "0.096",
+            "note": "Add the batches with 3, 4, 5, or 6 failures, then divide by the 500 simulated batches.",
+            "exact": "12/125",
+            "decimal_tip": true
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -2657,8 +3125,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Compare the counts 1, 4, 6, and 1 out of 16 equally likely sequences. The largest is clear without a calculator."
       },
       "provenance": {
         "optionRoles": null,
@@ -2706,8 +3173,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Choose the expression with the right coefficient and exponents. The question asks for the setup, not a value."
       },
       "provenance": {
         "optionRoles": null,
@@ -3305,8 +3771,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "A single value has probability 0 under a continuous model. This is a property of the model, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -3354,8 +3819,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Use the empirical rule percentages 68% and 95%. Mental arithmetic is enough."
       },
       "provenance": {
         "optionRoles": null,
@@ -3409,8 +3873,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Use the empirical rule: 100% − 99.7% = 0.3%. No calculation is needed."
       },
       "provenance": {
         "optionRoles": null,
@@ -3481,9 +3944,81 @@
         "caption": "Assessment summaries"
       },
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Calculate the z-score on A",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "8",
+              "2",
+              "SUB",
+              "7",
+              "0",
+              "RP",
+              "DIV",
+              "8",
+              "EXE"
+            ],
+            "entry": "(82-70)/8",
+            "mode": "result",
+            "input": "(82-70)/8",
+            "result": "1.5",
+            "note": "A is 12 points above a mean of 70 with standard deviation 8.",
+            "exact": "3/2",
+            "decimal_tip": true
+          },
+          {
+            "title": "Calculate the z-score on B",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "6",
+              "6",
+              "0",
+              "SUB",
+              "5",
+              "0",
+              "0",
+              "RP",
+              "DIV",
+              "8",
+              "0",
+              "EXE"
+            ],
+            "entry": "(660-500)/80",
+            "mode": "result",
+            "input": "(660-500)/80",
+            "result": "2",
+            "note": "B is 160 points above a mean of 500 with standard deviation 80. Compare 2 with 1.5.",
+            "exact": "2"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3551,8 +4086,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Compare the parameters in the table. Equal standard deviations mean equal spread and height; only the center moves."
       },
       "provenance": {
         "optionRoles": null,
@@ -3599,9 +4133,54 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Undo the standardization",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "4",
+              "8",
+              "SUB",
+              "1",
+              "DOT",
+              "2",
+              "5",
+              "MUL",
+              "4",
+              "EXE"
+            ],
+            "entry": "48-1.25*4",
+            "mode": "result",
+            "input": "48-1.25*4",
+            "result": "43",
+            "note": "A z-score of −1.25 is 1.25 standard deviations below the mean, so subtract 1.25 × 4 from 48.",
+            "exact": "43"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -3649,8 +4228,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "A normal percentile cannot be applied to a strongly skewed distribution. The point is a reasoning check, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -3698,8 +4276,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "The midpoint of 26 and 50 is 38, and a quarter of the 24-unit width is 6. Mental arithmetic is enough."
       },
       "provenance": {
         "optionRoles": null,
@@ -3747,8 +4324,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Recall the properties of the standard normal model. There is nothing to calculate."
       },
       "provenance": {
         "optionRoles": null,
@@ -3797,9 +4373,56 @@
       },
       "stimulus": null,
       "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "needed": true,
+        "steps": [
+          {
+            "title": "Open the main menu",
+            "instruction": "Press MENU.",
+            "keys": [
+              "MENU"
+            ],
+            "mode": "menu",
+            "input": "",
+            "result": "",
+            "note": "Run-Matrix is item 1."
+          },
+          {
+            "title": "Open Run-Matrix",
+            "instruction": "Press 1 to open Run-Matrix.",
+            "keys": [
+              "1"
+            ],
+            "mode": "run",
+            "input": "",
+            "result": "",
+            "note": "Use Run-Matrix for these arithmetic checks."
+          },
+          {
+            "title": "Solve 12 = 1.5σ",
+            "instruction": "Press AC/ON, enter the whole calculation, then press EXE.",
+            "keys": [
+              "AC",
+              "LP",
+              "7",
+              "4",
+              "SUB",
+              "6",
+              "2",
+              "RP",
+              "DIV",
+              "1",
+              "DOT",
+              "5",
+              "EXE"
+            ],
+            "entry": "(74-62)/1.5",
+            "mode": "result",
+            "input": "(74-62)/1.5",
+            "result": "8",
+            "note": "Divide the distance above the mean by the number of standard deviations.",
+            "exact": "8"
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4658,8 +5281,29 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              43
+            ],
+            [
+              "Upper",
+              49
+            ],
+            [
+              "σ",
+              6
+            ],
+            [
+              "μ",
+              40
+            ]
+          ],
+          "result": "0.2417",
+          "extra": "Enter the raw boundaries with the stated mean and standard deviation."
+        }
       },
       "provenance": {
         "optionRoles": null,
@@ -4707,8 +5351,63 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "First calculation: Lower",
+              "−1 × 10⁹⁹"
+            ],
+            [
+              "Upper",
+              22
+            ],
+            [
+              "σ",
+              2
+            ],
+            [
+              "μ",
+              25
+            ]
+          ],
+          "result": "0.0668 + 0.0668 ≈ 0.1336",
+          "extra": "Repeat with Lower = 28 and Upper = 1 × 10⁹⁹, then add the two tails."
+        },
+        "followUps": [
+          {
+            "type": "distribution",
+            "name": "Normal CD",
+            "fields": [
+              [
+                "Lower",
+                28
+              ],
+              [
+                "Upper",
+                "1 × 10⁹⁹"
+              ],
+              [
+                "σ",
+                2
+              ],
+              [
+                "μ",
+                25
+              ]
+            ]
+          },
+          {
+            "type": "arithmetic",
+            "operation": "add",
+            "values": [
+              "$first",
+              "$previous"
+            ],
+            "entry": "$first+$previous",
+            "note": "Add the disjoint lower and upper rejection tails."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4762,8 +5461,29 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.85
+            ],
+            [
+              "σ",
+              18
+            ],
+            [
+              "μ",
+              120
+            ]
+          ],
+          "result": "138.66",
+          "extra": "The highest 15% leaves an area of 0.85 to the left of the cutoff."
+        }
       },
       "provenance": {
         "optionRoles": null,
@@ -4811,8 +5531,41 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.75
+            ],
+            [
+              "σ",
+              1
+            ],
+            [
+              "μ",
+              0
+            ]
+          ],
+          "result": "z ≈ 0.6745; σ ≈ 11.86",
+          "extra": "Use the standard normal to find the 75th-percentile z-score, then divide the 8-unit distance by it."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "divide",
+            "values": [
+              8,
+              "$first"
+            ],
+            "entry": "8/$first",
+            "note": "The 75th percentile, 48, is 8 units above the mean of 40. Divide by the z-score."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4866,8 +5619,42 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.95
+            ],
+            [
+              "σ",
+              1
+            ],
+            [
+              "μ",
+              0
+            ]
+          ],
+          "result": "z ≈ 1.6449; μ ≈ 14.07",
+          "extra": "Find the 95th-percentile z-score, then subtract 3z from 19."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "subtractProduct",
+            "values": [
+              19,
+              3,
+              "$first"
+            ],
+            "entry": "19-3*$first",
+            "note": "Solve 19 = μ + 3z for the mean."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4915,8 +5702,53 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "First cutoff: Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.05
+            ],
+            [
+              "σ",
+              12
+            ],
+            [
+              "μ",
+              300
+            ]
+          ],
+          "result": "280.26 and 319.74",
+          "extra": "Calculate once with Area = 0.05 and again with Area = 0.95."
+        },
+        "followUps": [
+          {
+            "type": "distribution",
+            "name": "Inverse Normal",
+            "fields": [
+              [
+                "Tail",
+                "Left"
+              ],
+              [
+                "Area",
+                0.95
+              ],
+              [
+                "σ",
+                12
+              ],
+              [
+                "μ",
+                300
+              ]
+            ]
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -4964,8 +5796,41 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Normal CD",
+          "fields": [
+            [
+              "Lower",
+              "−1 × 10⁹⁹"
+            ],
+            [
+              "Upper",
+              740
+            ],
+            [
+              "σ",
+              8
+            ],
+            [
+              "μ",
+              750
+            ]
+          ],
+          "result": "p ≈ 0.10565; 1200p ≈ 126.78",
+          "extra": "Keep the unrounded probability before multiplying by 1,200."
+        },
+        "followUps": [
+          {
+            "type": "arithmetic",
+            "operation": "multiply",
+            "values": [
+              "$first",
+              1200
+            ],
+            "entry": "$first*1200",
+            "note": "Convert the probability to an expected count of bottles, then round to 127."
+          }
+        ]
       },
       "provenance": {
         "optionRoles": null,
@@ -5013,8 +5878,29 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "distribution": {
+          "name": "Inverse Normal",
+          "fields": [
+            [
+              "Tail",
+              "Left"
+            ],
+            [
+              "Area",
+              0.9
+            ],
+            [
+              "σ",
+              15
+            ],
+            [
+              "μ",
+              100
+            ]
+          ],
+          "result": "119.22, so 120",
+          "extra": "The highest 10% leaves an area of 0.90 to the left. Round the cutoff up to the next whole score."
+        }
       },
       "provenance": {
         "optionRoles": null,
@@ -5062,8 +5948,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Choose the expression that adds the two tails. The question asks for the setup, not a value."
       },
       "provenance": {
         "optionRoles": null,
@@ -5111,8 +5996,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Standardize 13 mentally: (13 − 10)/2 = 1.5. The question asks which area to use, not its value."
       },
       "provenance": {
         "optionRoles": null,
@@ -5669,8 +6553,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Identify what one simulated value represents. This is a definition check, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -5724,8 +6607,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Count the 4 dots at 27 or above and divide by 20 mentally."
       },
       "provenance": {
         "optionRoles": null,
@@ -5797,8 +6679,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Compare the simulation designs in the table. This is a reasoning check, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -5857,8 +6738,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Read the bins at or above 12, add 12 + 3, and divide by 1,000 mentally."
       },
       "provenance": {
         "optionRoles": null,
@@ -5940,8 +6820,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Count the two sample means equal to 4 among the six samples. The answer stays a fraction."
       },
       "provenance": {
         "optionRoles": null,
@@ -5989,8 +6868,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Choose the simulation plan that matches the sample size and statistic. There is nothing to calculate."
       },
       "provenance": {
         "optionRoles": null,
@@ -6038,8 +6916,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Distinguish an exact sampling distribution from a simulated one. There is nothing to calculate."
       },
       "provenance": {
         "optionRoles": null,
@@ -6087,8 +6964,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Identify the randomization distribution. There is nothing to calculate."
       },
       "provenance": {
         "optionRoles": null,
@@ -6136,8 +7012,7 @@
       "stimulus": null,
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Decide what more repetitions change. This is a reasoning check, not a calculation."
       },
       "provenance": {
         "optionRoles": null,
@@ -6191,8 +7066,7 @@
       },
       "calculator": {
         "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypress guidance is deferred by the author for this expansion."
+        "reason": "Count the 5 dots at or below 47. The answer stays a fraction of the 24 repetitions."
       },
       "provenance": {
         "optionRoles": null,

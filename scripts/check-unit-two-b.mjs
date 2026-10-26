@@ -73,8 +73,11 @@ for(const [id,mu,sd]of [['b73',0,1],['b81',40,6],['b83',120,18]])assert.deepEqua
 assert.equal(fig('b85').mu.solveFrom.percentile,.95);assert.equal(fig('b85').sd,3);
 for(const lesson of unit.lessons)assert.equal(unit.questions.filter(q=>q.lesson===lesson.id).length,20);
 assert.equal(unit.questions.length,100);
+let guided=0,reasoning=0;
 for(const q of unit.questions.filter(q=>Number(q.id.slice(1))>50)){
- assert.equal(q.calculator.status,'deferred');assert.equal(q.calculator.needed,false);
- assert.ok(!q.calculator.steps&&!q.calculator.distribution&&!q.calculator.followUps);
+ assert.notEqual(q.calculator.status,'deferred',`${q.id}: calculator guidance should no longer be deferred`);
+ if(q.calculator.distribution){guided+=1;continue;}
+ if(q.calculator.needed){assert.ok(q.calculator.steps?.some(s=>s.mode==='result'),`${q.id}: guide needs a result screen`);guided+=1;}
+ else{assert.ok(q.calculator.reason?.length>=20,`${q.id}: reason required`);reasoning+=1;}
 }
-console.log(`Verified ${Object.keys(numeric).length} fresh 2.B numeric keys, 6 compound comparisons, model inputs, twenty questions per lesson, and fifty calculator deferrals. Other conceptual items received AI review, not human sign-off.`);
+console.log(`Verified ${Object.keys(numeric).length} fresh 2.B numeric keys, 6 compound comparisons, model inputs, twenty questions per lesson, and calculator guidance (${guided} guides, ${reasoning} reasoning-only). Other conceptual items received AI review, not human sign-off.`);
