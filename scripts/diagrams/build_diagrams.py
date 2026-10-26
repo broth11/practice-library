@@ -415,9 +415,74 @@ def mosaic(spec):
     return finish(fig)
 
 
+def comparison_dotplots(spec):
+    """Exact-value comparisons on one shared horizontal scale."""
+    groups = spec["groups"]
+    fig, axes = plt.subplots(len(groups), 1, figsize=(6.0, 2.8), sharex=True)
+    values = [v for g in groups for v in g["values"]]
+    low, high = min(values), max(values)
+    for ax, g in zip(axes, groups):
+        seen = {}
+        for v in g["values"]:
+            seen[v] = seen.get(v, 0) + 1
+            ax.plot(v, seen[v], "o", ms=7, mfc="white", mec=INK, mew=1)
+        ax.set_ylim(0, max(seen.values()) + .7)
+        ax.set_xlim(low - .6, high + .6)
+        ax.set_yticks([])
+        ax.set_ylabel(g["label"], rotation=0, labelpad=28, va="center", fontsize=12)
+        ax.spines[["left", "top", "right"]].set_visible(False)
+        ax.set_xticks(range(low, high + 1))
+        ax.tick_params(labelsize=11)
+    axes[-1].set_xlabel(spec["xLabel"], fontsize=12)
+    fig.tight_layout(h_pad=.4)
+    return finish(fig)
+
+
+def study_flow(spec):
+    """A two-branch selection or assignment plan with explicit action labels."""
+    fig, ax = plt.subplots(figsize=(6.4, 3.0))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+    def box(x, y, label, w, h):
+        ax.add_patch(Rectangle((x-w/2, y-h/2), w, h, facecolor=LIGHT,
+                               edgecolor=INK, linewidth=1))
+        ax.text(x, y, label, ha="center", va="center", fontsize=14.5)
+    box(.5, .85, spec["root"], .62, .26)
+    for x, branch in zip([.25, .75], spec["branches"]):
+        ax.annotate("", xy=(x, .29), xytext=(.5, .71),
+                    arrowprops={"arrowstyle": "->", "color": INK, "lw": 1.1})
+        ax.text(x, .49, branch["label"], ha="center", va="center", fontsize=12.5,
+                bbox={"facecolor": "white", "edgecolor": "none", "pad": 2})
+        box(x, .15, branch["end"], .46, .26)
+    return finish(fig)
+
+
+def sampling_grid(spec):
+    """Show selection of intact groups, with individual units visible inside."""
+    fig, ax = plt.subplots(figsize=(6.4, 2.7))
+    ax.set_xlim(0, 6)
+    ax.set_ylim(0, 2.55)
+    ax.axis('off')
+    ax.set_title(spec['title'], fontsize=15)
+    for i, label in enumerate(spec['groups']):
+        selected = i in spec['selected']
+        ax.add_patch(Rectangle((i+.1, .55), .8, 1.25, facecolor=LIGHT if selected else 'white',
+                               edgecolor=INK, linewidth=1.1))
+        for x, y in [(i+.33,.9), (i+.67,.9), (i+.33,1.4), (i+.67,1.4)]:
+            ax.plot(x,y,'o',mfc=DARK if selected else 'white',mec=INK,ms=7)
+        ax.text(i+.5, 1.98, label, ha='center', fontsize=14)
+    handles = [Patch(facecolor=LIGHT, edgecolor=INK, label='Selected: survey every resident'),
+               Patch(facecolor='white', edgecolor=INK, label='Not selected')]
+    ax.legend(handles=handles, loc='lower center', bbox_to_anchor=(.5,-.1),
+              frameon=True, fancybox=False, edgecolor=INK, fontsize=14, ncol=1)
+    return finish(fig)
+
+
 KINDS = {fn.__name__: fn for fn in (discrete_bars, binomial_bars, normal, normal_comparison, frequency_histogram,
                                     relative_frequency_bars, dotplot, segmented, venn, tree,
-                                    categorical_bars, categorical_pie, summary_boxplots, paired_histograms, grouped_bars, mosaic)}
+                                    categorical_bars, categorical_pie, summary_boxplots, paired_histograms, grouped_bars, mosaic,
+                                    comparison_dotplots, study_flow, sampling_grid)}
 
 
 def display_size(svg: bytes) -> tuple[int, int]:

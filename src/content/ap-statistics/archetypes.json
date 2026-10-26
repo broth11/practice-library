@@ -44,7 +44,8 @@
       "status": "card",
       "card": "categorical_vs_quantitative_variable",
       "questions": [
-        "1-a:a04"
+        "1-a:a04",
+        "1-a:a66"
       ]
     },
     {
@@ -52,7 +53,9 @@
       "status": "card",
       "card": "causal_conclusion_from_study",
       "questions": [
-        "1-b:c48"
+        "1-b:c48",
+        "1-b:c57",
+        "1-b:c98"
       ]
     },
     {
@@ -77,7 +80,9 @@
       "status": "card",
       "card": "choose_experimental_design",
       "questions": [
-        "1-b:c44"
+        "1-b:c44",
+        "1-b:c91",
+        "1-b:c95"
       ]
     },
     {
@@ -88,7 +93,18 @@
         "1-a:a12",
         "1-a:a13",
         "1-a:a14",
-        "1-a:a17"
+        "1-a:a17",
+        "1-a:a73",
+        "1-a:a78",
+        "1-a:a79"
+      ]
+    },
+    {
+      "id": "claim_from_quartile_meaning",
+      "status": "card",
+      "card": "claim_from_quartile_meaning",
+      "questions": [
+        "1-a:a101"
       ]
     },
     {
@@ -124,9 +140,21 @@
       "status": "card",
       "card": "compare_boxplots_and_summaries",
       "questions": [
+        "1-a:a117",
         "1-a:a51",
         "1-a:a52",
         "1-a:a59"
+      ]
+    },
+    {
+      "id": "compare_histograms_dotplots_stemplots",
+      "status": "card",
+      "card": "compare_histograms_dotplots_stemplots",
+      "questions": [
+        "1-a:a111",
+        "1-a:a112",
+        "1-a:a118",
+        "1-a:a98"
       ]
     },
     {
@@ -143,6 +171,9 @@
       "status": "card",
       "card": "compare_relative_position_with_z_scores",
       "questions": [
+        "1-a:a113",
+        "1-a:a114",
+        "1-a:a119",
         "1-a:a56"
       ]
     },
@@ -165,7 +196,8 @@
         "1-a:a31",
         "1-a:a32",
         "1-a:a40",
-        "1-a:a41"
+        "1-a:a41",
+        "1-a:a92"
       ]
     },
     {
@@ -219,7 +251,8 @@
       "card": "describe_clusters_gaps_outliers_from_display",
       "questions": [
         "1-a:a24",
-        "1-a:a30"
+        "1-a:a30",
+        "1-a:a84"
       ]
     },
     {
@@ -228,7 +261,26 @@
       "card": "describe_shape_from_display",
       "questions": [
         "1-a:a21",
-        "1-a:a22"
+        "1-a:a22",
+        "1-a:a83"
+      ]
+    },
+    {
+      "id": "discrete_distribution_comparison",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b55"
+      ]
+    },
+    {
+      "id": "discrete_distribution_from_enumeration",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b60"
       ]
     },
     {
@@ -237,6 +289,7 @@
       "card": "discrete_or_continuous_variable",
       "questions": [
         "1-a:a05",
+        "1-a:a70",
         "2-b:b01",
         "2-b:b21"
       ]
@@ -250,14 +303,25 @@
       ]
     },
     {
+      "id": "effect_of_changing_an_extreme_value",
+      "status": "card",
+      "card": "effect_of_changing_an_extreme_value",
+      "questions": [
+        "1-a:a95"
+      ]
+    },
+    {
       "id": "effect_of_linear_transformation_on_statistics",
       "status": "card",
       "card": "effect_of_linear_transformation_on_statistics",
       "questions": [
+        "1-a:a104",
+        "1-a:a110",
         "1-a:a48",
         "1-a:a49",
         "1-a:a50",
-        "1-a:a57"
+        "1-a:a57",
+        "1-a:a94"
       ]
     },
     {
@@ -280,7 +344,10 @@
       "status": "card",
       "card": "evaluate_experiment_design",
       "questions": [
-        "1-b:c40"
+        "1-b:c40",
+        "1-b:c87",
+        "1-b:c89",
+        "1-b:c97"
       ]
     },
     {
@@ -304,7 +371,27 @@
         "1-b:c35",
         "1-b:c36",
         "1-b:c39",
-        "1-b:c47"
+        "1-b:c47",
+        "1-b:c84",
+        "1-b:c86",
+        "1-b:c88",
+        "1-b:c90"
+      ]
+    },
+    {
+      "id": "five_number_summary_and_boxplot",
+      "status": "card",
+      "card": "five_number_summary_and_boxplot",
+      "questions": [
+        "1-a:a103"
+      ]
+    },
+    {
+      "id": "fixed_value_is_not_a_variable",
+      "status": "card",
+      "card": "fixed_value_is_not_a_variable",
+      "questions": [
+        "1-a:a63"
       ]
     },
     {
@@ -314,7 +401,8 @@
       "questions": [
         "1-b:c05",
         "1-b:c06",
-        "1-b:c49"
+        "1-b:c49",
+        "1-b:c55"
       ]
     },
     {
@@ -356,7 +444,8 @@
         "1-b:c31",
         "1-b:c32",
         "1-b:c33",
-        "1-b:c34"
+        "1-b:c34",
+        "1-b:c81"
       ]
     },
     {
@@ -366,7 +455,8 @@
       "questions": [
         "1-b:c41",
         "1-b:c42",
-        "1-b:c43"
+        "1-b:c43",
+        "1-b:c92"
       ]
     },
     {
@@ -383,6 +473,8 @@
       "status": "card",
       "card": "identify_outliers_with_iqr_rule",
       "questions": [
+        "1-a:a102",
+        "1-a:a109",
         "1-a:a42"
       ]
     },
@@ -393,6 +485,7 @@
       "questions": [
         "1-a:a01",
         "1-a:a02",
+        "1-a:a68",
         "2-b:b41"
       ]
     },
@@ -406,7 +499,11 @@
         "1-b:c13",
         "1-b:c14",
         "1-b:c15",
-        "1-b:c16"
+        "1-b:c16",
+        "1-b:c61",
+        "1-b:c63",
+        "1-b:c64",
+        "1-b:c65"
       ]
     },
     {
@@ -417,7 +514,9 @@
         "1-b:c01",
         "1-b:c02",
         "1-b:c04",
-        "1-b:c10"
+        "1-b:c10",
+        "1-b:c52",
+        "1-b:c53"
       ]
     },
     {
@@ -432,7 +531,12 @@
         "1-b:c25",
         "1-b:c26",
         "1-b:c28",
-        "1-b:c29"
+        "1-b:c29",
+        "1-b:c71",
+        "1-b:c72",
+        "1-b:c73",
+        "1-b:c74",
+        "1-b:c78"
       ]
     },
     {
@@ -484,7 +588,8 @@
       "card": "investigative_question_for_study",
       "questions": [
         "1-a:a10",
-        "1-b:c09"
+        "1-b:c09",
+        "1-b:c51"
       ]
     },
     {
@@ -492,7 +597,9 @@
       "status": "card",
       "card": "justify_experimental_design_choice",
       "questions": [
-        "1-b:c45"
+        "1-b:c100",
+        "1-b:c45",
+        "1-b:c94"
       ]
     },
     {
@@ -510,7 +617,24 @@
       "questions": [
         "1-b:c17",
         "1-b:c18",
-        "1-b:c19"
+        "1-b:c19",
+        "1-b:c67"
+      ]
+    },
+    {
+      "id": "least_representative_sampling_method",
+      "status": "card",
+      "card": "least_representative_sampling_method",
+      "questions": [
+        "1-b:c77"
+      ]
+    },
+    {
+      "id": "local_adding_center_observation",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a105"
       ]
     },
     {
@@ -518,7 +642,40 @@
       "status": "local",
       "note": "Local Unit 1 archetype. A larger sample can reduce random variation while retaining systematic selection bias. Reject claims that sample size repairs self-selection.",
       "questions": [
-        "1-b:c27"
+        "1-b:c27",
+        "1-b:c76"
+      ]
+    },
+    {
+      "id": "local_bias_is_not_any_sample_error",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c80"
+      ]
+    },
+    {
+      "id": "local_blocks_vs_strata",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c96"
+      ]
+    },
+    {
+      "id": "local_boxplot_gap_limit",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a107"
+      ]
+    },
+    {
+      "id": "local_boxplot_information_limit",
+      "status": "local",
+      "note": "Local reasoning extension with no exact private-card variant asserted.",
+      "questions": [
+        "1-a:a106"
       ]
     },
     {
@@ -534,7 +691,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Compare categorical shares using each group's own total. Larger counts do not necessarily imply larger shares.",
       "questions": [
-        "1-a:a19"
+        "1-a:a19",
+        "1-a:a76"
       ]
     },
     {
@@ -542,7 +700,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Use a bar chart for category labels. Histograms, boxplots, and numerical dotplots require a quantitative variable.",
       "questions": [
-        "1-a:a16"
+        "1-a:a16",
+        "1-a:a75"
       ]
     },
     {
@@ -554,12 +713,37 @@
       ]
     },
     {
+      "id": "local_categorical_ordering",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a80"
+      ]
+    },
+    {
       "id": "local_categorical_proportion",
       "status": "local",
       "note": "Local Unit 1 archetype. Divide the named category count or disjoint-category sum by the total across categories. The exact numerical task is not the claim-from-display card's task.",
       "questions": [
         "1-a:a11",
-        "1-a:a18"
+        "1-a:a18",
+        "1-a:a72"
+      ]
+    },
+    {
+      "id": "local_categorical_total_from_share",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a77"
+      ]
+    },
+    {
+      "id": "local_cluster_sampling_tradeoff",
+      "status": "local",
+      "note": "Local reasoning extension with no exact private-card variant asserted.",
+      "questions": [
+        "1-b:c68"
       ]
     },
     {
@@ -571,11 +755,20 @@
       ]
     },
     {
+      "id": "local_comparison_from_summary_limits",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a120"
+      ]
+    },
+    {
       "id": "local_confounded_variable",
       "status": "local",
       "note": "Local Unit 1 archetype. An outcome difference cannot be attributed to treatment alone when treatment and other relevant conditions always change together.",
       "questions": [
-        "1-b:c37"
+        "1-b:c37",
+        "1-b:c59"
       ]
     },
     {
@@ -583,7 +776,16 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Combine an incomplete selection frame with a stated response difference to determine the likely direction of bias.",
       "questions": [
-        "1-b:c30"
+        "1-b:c30",
+        "1-b:c75"
+      ]
+    },
+    {
+      "id": "local_experimental_unit_pseudoreplication",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c83"
       ]
     },
     {
@@ -595,11 +797,68 @@
       ]
     },
     {
+      "id": "local_gap_inference",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a90"
+      ]
+    },
+    {
+      "id": "local_histogram_bin_merge",
+      "status": "local",
+      "note": "Local reasoning extension with no exact private-card variant asserted.",
+      "questions": [
+        "1-a:a85"
+      ]
+    },
+    {
+      "id": "local_histogram_information_limit",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a82"
+      ]
+    },
+    {
       "id": "local_histogram_interval_count",
       "status": "local",
       "note": "Local Unit 1 archetype. Sum the frequencies of bins lying in the requested interval, preserving the stated endpoint convention.",
       "questions": [
-        "1-a:a26"
+        "1-a:a26",
+        "1-a:a89"
+      ]
+    },
+    {
+      "id": "local_investigative_question_stability",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c60"
+      ]
+    },
+    {
+      "id": "local_misleading_categorical_axis",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a74"
+      ]
+    },
+    {
+      "id": "local_missing_value_from_mean",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a99"
+      ]
+    },
+    {
+      "id": "local_nonresponse_followup",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c79"
       ]
     },
     {
@@ -607,7 +866,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Identify the object on which variables are recorded, rather than a characteristic, summary, or collection instrument.",
       "questions": [
-        "1-a:a03"
+        "1-a:a03",
+        "1-a:a65"
       ]
     },
     {
@@ -619,12 +879,21 @@
       ]
     },
     {
+      "id": "local_paired_difference_direction",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c99"
+      ]
+    },
+    {
       "id": "local_parameter_or_statistic",
       "status": "local",
       "note": "Local Unit 1 archetype. A numerical summary of a population is a parameter; a summary of a sample is a statistic. Being known does not decide the classification.",
       "questions": [
         "1-a:a07",
-        "1-a:a08"
+        "1-a:a08",
+        "1-a:a69"
       ]
     },
     {
@@ -632,7 +901,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. An inactive comparison helps distinguish active-treatment effects from expectations and the experience of treatment.",
       "questions": [
-        "1-b:c38"
+        "1-b:c38",
+        "1-b:c85"
       ]
     },
     {
@@ -640,7 +910,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Allocate a total sample proportionally using stratum size divided by population size. Random selection must then occur within strata.",
       "questions": [
-        "1-b:c20"
+        "1-b:c20",
+        "1-b:c69"
       ]
     },
     {
@@ -648,7 +919,24 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Choose a quantitative distribution display for measured lengths; reject displays of identification labels.",
       "questions": [
-        "1-a:a29"
+        "1-a:a29",
+        "1-a:a87"
+      ]
+    },
+    {
+      "id": "local_random_assignment_procedure",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c82"
+      ]
+    },
+    {
+      "id": "local_random_labels_without_replacement",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c70"
       ]
     },
     {
@@ -656,7 +944,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Randomize the order of paired treatments to prevent practice or time effects from always favoring the same treatment.",
       "questions": [
-        "1-b:c46"
+        "1-b:c46",
+        "1-b:c93"
       ]
     },
     {
@@ -665,6 +954,22 @@
       "note": "Local Unit 1 archetype. Subtract the minimum from the maximum; neither endpoint alone is the range.",
       "questions": [
         "1-a:a38"
+      ]
+    },
+    {
+      "id": "local_repeated_measurement_variation",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a64"
+      ]
+    },
+    {
+      "id": "local_resistant_spread_choice",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a108"
       ]
     },
     {
@@ -682,7 +987,17 @@
       "questions": [
         "1-b:c07",
         "1-b:c08",
-        "1-b:c50"
+        "1-b:c50",
+        "1-b:c56",
+        "1-b:c58"
+      ]
+    },
+    {
+      "id": "local_srs_equal_individual_chance_limit",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c62"
       ]
     },
     {
@@ -690,7 +1005,16 @@
       "status": "local",
       "note": "Local Unit 1 archetype. Combine the ordered stem and leaf according to the display's key; reject isolated digits or reversed place values.",
       "questions": [
-        "1-a:a28"
+        "1-a:a28",
+        "1-a:a86"
+      ]
+    },
+    {
+      "id": "local_strict_percentile_rank",
+      "status": "local",
+      "note": "Local reasoning extension with no exact private-card variant asserted.",
+      "questions": [
+        "1-a:a96"
       ]
     },
     {
@@ -698,7 +1022,16 @@
       "status": "local",
       "note": "Local Unit 1 archetype. A randomly imposed explanatory condition defines a randomized experiment; merely measuring an outcome does not make it observational.",
       "questions": [
-        "1-b:c03"
+        "1-b:c03",
+        "1-b:c54"
+      ]
+    },
+    {
+      "id": "local_systematic_periodicity",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-b:c66"
       ]
     },
     {
@@ -707,6 +1040,39 @@
       "note": "Local Unit 1 archetype. Combine group means using group-size weights, not an unweighted average when sizes differ.",
       "questions": [
         "1-a:a37"
+      ]
+    },
+    {
+      "id": "local_z_score_without_normality",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a115"
+      ]
+    },
+    {
+      "id": "local_zero_standard_deviation",
+      "status": "local",
+      "note": "Local course reasoning variant; no private-card match asserted.",
+      "questions": [
+        "1-a:a97"
+      ]
+    },
+    {
+      "id": "locate_median_or_quartile_from_binned_data",
+      "status": "card",
+      "card": "locate_median_or_quartile_from_binned_data",
+      "questions": [
+        "1-a:a100",
+        "1-a:a81"
+      ]
+    },
+    {
+      "id": "median_after_raising_lowest_values",
+      "status": "card",
+      "card": "median_after_raising_lowest_values",
+      "questions": [
+        "1-a:a93"
       ]
     },
     {
@@ -793,6 +1159,15 @@
       ]
     },
     {
+      "id": "probability_from_discrete_distribution",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b52"
+      ]
+    },
+    {
       "id": "probability_from_simulation_results",
       "status": "card",
       "card": "probability_from_simulation_results",
@@ -802,10 +1177,10 @@
         "2-a:q64",
         "2-a:q65",
         "2-a:q70",
+        "2-b:b100",
         "2-b:b48",
         "2-b:b68",
-        "2-b:b92",
-        "2-b:b100"
+        "2-b:b92"
       ]
     },
     {
@@ -837,6 +1212,15 @@
       "questions": [
         "2-b:b09",
         "2-b:b53"
+      ]
+    },
+    {
+      "id": "randomization_distribution_definition",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b98"
       ]
     },
     {
@@ -875,6 +1259,14 @@
         "2-a:q72",
         "2-a:q76",
         "2-a:q78"
+      ]
+    },
+    {
+      "id": "relative_frequency_table_from_counts",
+      "status": "card",
+      "card": "relative_frequency_table_from_counts",
+      "questions": [
+        "1-a:a71"
       ]
     },
     {
@@ -931,6 +1323,23 @@
       "note": "Closest card is reason_sampling_distribution_not_normal (same normal-population-or-large-n rule, opposite polarity). Not linked because its distractor list differs."
     },
     {
+      "id": "sampling_simulation_design",
+      "status": "local",
+      "card": null,
+      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
+      "questions": [
+        "2-b:b96"
+      ]
+    },
+    {
+      "id": "shape_of_combined_distributions",
+      "status": "card",
+      "card": "shape_of_combined_distributions",
+      "questions": [
+        "1-a:a88"
+      ]
+    },
+    {
       "id": "simulation_based_claim_evaluation",
       "status": "local",
       "card": null,
@@ -962,6 +1371,22 @@
       ],
       "note": "b42 asks whether 18 (a population mean) and 19.2 (a sample mean) are parameters or statistics. This card matches statistics to their descriptions (standard deviation, median), so its answer logic does not decide b42. Closest card: normal_distribution_parameter_notation.",
       "relatedCard": "normal_distribution_parameter_notation"
+    },
+    {
+      "id": "statistical_vs_nonstatistical_question",
+      "status": "card",
+      "card": "statistical_vs_nonstatistical_question",
+      "questions": [
+        "1-a:a61"
+      ]
+    },
+    {
+      "id": "sum_of_squared_deviations_expression",
+      "status": "card",
+      "card": "sum_of_squared_deviations_expression",
+      "questions": [
+        "1-a:a91"
+      ]
     },
     {
       "id": "total_probability_and_reverse_conditional",
@@ -1036,10 +1461,27 @@
       ]
     },
     {
+      "id": "variable_that_could_be_quantitative",
+      "status": "card",
+      "card": "variable_that_could_be_quantitative",
+      "questions": [
+        "1-a:a67"
+      ]
+    },
+    {
+      "id": "why_statistical_study_is_needed",
+      "status": "card",
+      "card": "why_statistical_study_is_needed",
+      "questions": [
+        "1-a:a62"
+      ]
+    },
+    {
       "id": "z_score_calculation",
       "status": "card",
       "card": "z_score_calculation",
       "questions": [
+        "1-a:a116",
         "1-a:a53",
         "1-a:a55",
         "1-a:a60",
@@ -1047,51 +1489,6 @@
         "2-b:b74",
         "2-b:b76",
         "2-b:b80"
-      ]
-    },
-    {
-      "id": "probability_from_discrete_distribution",
-      "status": "local",
-      "card": null,
-      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
-      "questions": [
-        "2-b:b52"
-      ]
-    },
-    {
-      "id": "discrete_distribution_comparison",
-      "status": "local",
-      "card": null,
-      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
-      "questions": [
-        "2-b:b55"
-      ]
-    },
-    {
-      "id": "discrete_distribution_from_enumeration",
-      "status": "local",
-      "card": null,
-      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
-      "questions": [
-        "2-b:b60"
-      ]
-    },
-    {
-      "id": "sampling_simulation_design",
-      "status": "local",
-      "card": null,
-      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
-      "questions": [
-        "2-b:b96"
-      ]
-    },
-    {
-      "id": "randomization_distribution_definition",
-      "status": "local",
-      "card": null,
-      "note": "Original course label for the stated reasoning; no matching private card is asserted.",
-      "questions": [
-        "2-b:b98"
       ]
     }
   ]

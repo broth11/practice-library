@@ -134,3 +134,14 @@ The calculator question uses the reading width of the normal sidebar-open deskto
 - Begin preloading all diagrams and calculator menu icons on page startup, including the welcome screen, without waiting for those assets before rendering the interface. Selecting a unit promotes its question and solution diagrams in the queue.
 - Use four low-priority requests at a time, retain image objects, and decode completed downloads. Duplicate URLs coalesce; an individual failure does not stall other images or navigation and can retry on later selection.
 - Build a static image index from the generated asset directories. Do not fetch all question modules just to discover images. Displayed and preloaded assets use the same build-versioned URLs so they share cache entries and changed releases cannot reuse outdated images.
+
+## Unit 1 expansion and explanation-only content (2026-10-27)
+
+- Ben requested twenty questions per lesson throughout 1.A and 1.B, with underrepresented archetypes and diagram styles given more space. Original question ids, choices, solutions, and provenance are retained.
+- Ben specified no calculator references in these units. Omit the optional calculator descriptor from every Unit 1 item, including original items; show only the explanation tab. An absent descriptor is an intentional explanation-only choice, rather than deferred guidance. Other units keep their existing descriptors.
+- Comparative dotplots, study flows, and intact-cluster grids are reusable generated diagram kinds, not branches in the application renderer. Preserve the current layout and navigation.
+- Publish this pass to the selected Sites project with its existing public access. The separate GitHub and Pages copies are outside this pass.
+
+## Unit 1 GitHub synchronization (2026-10-27)
+
+Ben explicitly requested pushing the completed expansion to main after Sites publication. Synchronize the same source and regenerated build to GitHub main, preserving its history and existing Pages workflow. This follow-up supersedes the earlier GitHub scope limit and authorizes a direct main push for this synchronization.

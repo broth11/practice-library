@@ -195,11 +195,12 @@ function closeSolution(focus = false) {
 }
 
 function setSolutionView(view) {
+  const question = state.unit.questions[state.current];
+  if (view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred')) view = 'explanation';
   if (view === 'calculator') setRoutePane(state.routePane, false);
   state.solutionView = view;
-  const question = state.unit.questions[state.current];
   document.querySelectorAll('.solution-tab').forEach(button => {
-    button.hidden = button.dataset.view === 'calculator' && question.calculator?.status === 'deferred';
+    button.hidden = button.dataset.view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred');
     const selected = button.dataset.view === view;
     button.setAttribute('aria-selected', String(selected));
     button.tabIndex = selected ? 0 : -1;

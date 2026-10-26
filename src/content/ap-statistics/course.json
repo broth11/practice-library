@@ -7,7 +7,7 @@
       "id": "1-a",
       "title": "Unit 1.A",
       "description": "Exploring data & distributions",
-      "questionCount": 60,
+      "questionCount": 120,
       "lessonCount": 6,
       "source": "content/ap-statistics/units/1-a.json"
     },
@@ -15,7 +15,7 @@
       "id": "1-b",
       "title": "Unit 1.B",
       "description": "Collecting data & designing studies",
-      "questionCount": 50,
+      "questionCount": 100,
       "lessonCount": 5,
       "source": "content/ap-statistics/units/1-b.json"
     },

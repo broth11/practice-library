@@ -1,5 +1,19 @@
 # Handoff
 
+## Unit 1 GitHub synchronization (2026-10-27, Codex)
+
+- Ben explicitly requested “push to main” after the successful Sites version 23 publication. This authorizes a direct GitHub main update for this synchronization, overriding the branch-only rule for this action.
+- Applied the completed 1.A/1.B expansion onto the current GitHub main. Its source tree matched the pre-expansion Sites baseline, so the content and interface changes applied without conflict. All 420 questions and the existing Unit 2 calculator guidance are retained.
+- Unit 1 has twenty questions per lesson, 110 additions, 21 new diagrams, and 10 new tables. It is explanation-only, with no calculator references. The original Sites publication remains live. This follow-up supersedes the earlier GitHub publication-scope limit.
+- Structure/answer checks, all 96 reproducible diagrams, current-source and history leak scans, and the regenerated build pass in this GitHub checkout. Browser QA from the completed Sites pass covers this same application and content. No human sign-off is claimed.
+
+## Unit 1.A and 1.B expansion (2026-10-27, Codex)
+
+- Each Unit 1 lesson now has twenty questions: 120 in 1.A and 100 in 1.B, with 110 fresh additions, 21 generated figures, and 10 tables. Existing question content and stable ids are preserved. Coverage decisions and verification limits are in `docs/UNIT-1-EXPANSION-REVIEW.md`.
+- Unit 1 is explanation-only by Ben's explicit request. All 220 questions omit calculator metadata and references. The shared renderer hides an absent optional guide, and the generic welcome note no longer promises keypresses. Other units retain their guides. This supersedes the historical deferral language below.
+- The standard checks recompute 50 Unit 1 numeric/compound targets, including 26 additions, enforce twenty items per lesson, balanced keys, and no Unit 1 calculator references. New shared diagram kinds are comparison_dotplots, study_flow, and sampling_grid.
+- Local authoring branch: `codex/expand-unit-1a-1b`. Publication scope is the selected Sites project and its separate source remote. GitHub and Pages are outside this request. Standard checks, all 96 reproducible figures, source leak scan, and browser review pass. All 110 additions were opened with explanations at desktop and phone widths; 31 navigation transitions passed. Source is ready for the native Sites publication step; consult that deployment result for live status.
+
 ## Reading width and compact answer fitting (2026-10-26, Codex)
 
 - Increased the desktop reading share from 59% to 64%. At 1,440 by 834 the card is 642px wide, up from 592px. This width remains fixed across navigation expansion/collapse and question, explanation, and calculator modes. Rail positions and calculator height containment are retained.

@@ -1,10 +1,10 @@
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=31ae20218cd0';
-import { fitQuestion } from './question-fit.js?v=31ae20218cd0';
-import { renderStimulus } from './stimulus.js?v=31ae20218cd0';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=31ae20218cd0';
-import { renderStep, typesetMath } from './math.js?v=31ae20218cd0';
-import { mountCalculator } from './calculator.js?v=31ae20218cd0';
-import { renderChoice, choiceText } from './choices.js?v=31ae20218cd0';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=6768427ebbf1';
+import { fitQuestion } from './question-fit.js?v=6768427ebbf1';
+import { renderStimulus } from './stimulus.js?v=6768427ebbf1';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=6768427ebbf1';
+import { renderStep, typesetMath } from './math.js?v=6768427ebbf1';
+import { mountCalculator } from './calculator.js?v=6768427ebbf1';
+import { renderChoice, choiceText } from './choices.js?v=6768427ebbf1';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -195,11 +195,12 @@ function closeSolution(focus = false) {
 }
 
 function setSolutionView(view) {
+  const question = state.unit.questions[state.current];
+  if (view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred')) view = 'explanation';
   if (view === 'calculator') setRoutePane(state.routePane, false);
   state.solutionView = view;
-  const question = state.unit.questions[state.current];
   document.querySelectorAll('.solution-tab').forEach(button => {
-    button.hidden = button.dataset.view === 'calculator' && question.calculator?.status === 'deferred';
+    button.hidden = button.dataset.view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred');
     const selected = button.dataset.view === view;
     button.setAttribute('aria-selected', String(selected));
     button.tabIndex = selected ? 0 : -1;

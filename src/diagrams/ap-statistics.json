@@ -1713,6 +1713,489 @@
       "highlightMin": 100,
       "xLabel": "Sample median",
       "title": "One dot per simulated sample"
+    },
+    {
+      "file": "a72-formats.svg",
+      "kind": "categorical_pie",
+      "categories": [
+        "Print",
+        "Audio",
+        "Digital"
+      ],
+      "values": [
+        40,
+        25,
+        35
+      ],
+      "questions": [
+        "1-a:a72"
+      ]
+    },
+    {
+      "file": "a73-materials.svg",
+      "kind": "categorical_bars",
+      "categories": [
+        "Wood",
+        "Metal",
+        "Glass"
+      ],
+      "values": [
+        30,
+        18,
+        12
+      ],
+      "tickStep": 6,
+      "printValues": true,
+      "xLabel": "Main material",
+      "yLabel": "Number of items",
+      "questions": [
+        "1-a:a73"
+      ]
+    },
+    {
+      "file": "a78-collection-day.svg",
+      "kind": "categorical_pie",
+      "categories": [
+        "Tuesday",
+        "Friday",
+        "Saturday"
+      ],
+      "values": [
+        45,
+        30,
+        25
+      ],
+      "questions": [
+        "1-a:a78"
+      ]
+    },
+    {
+      "file": "a79-help-reasons.svg",
+      "kind": "categorical_bars",
+      "categories": [
+        "Renewal",
+        "Account access",
+        "Room booking"
+      ],
+      "values": [
+        24,
+        12,
+        4
+      ],
+      "tickStep": 4,
+      "printValues": true,
+      "xLabel": "Request reason",
+      "yLabel": "Number of requests",
+      "questions": [
+        "1-a:a79"
+      ]
+    },
+    {
+      "file": "a81-median-bin.svg",
+      "kind": "frequency_histogram",
+      "start": 0,
+      "width": 5,
+      "counts": [
+        2,
+        6,
+        8,
+        4
+      ],
+      "highlightFrom": 9999,
+      "printCounts": true,
+      "xLabel": "Time (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a81"
+      ]
+    },
+    {
+      "file": "a84-repair-clusters.svg",
+      "kind": "dotplot",
+      "values": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10
+      ],
+      "highlightMin": 9999,
+      "xLabel": "Parts needed",
+      "questions": [
+        "1-a:a84"
+      ]
+    },
+    {
+      "file": "a89-visit-times.svg",
+      "kind": "frequency_histogram",
+      "start": 0,
+      "width": 10,
+      "counts": [
+        2,
+        4,
+        7,
+        5,
+        2
+      ],
+      "highlightFrom": 9999,
+      "printCounts": true,
+      "xLabel": "Visit duration (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a89"
+      ]
+    },
+    {
+      "file": "a96-player-scores.svg",
+      "kind": "dotplot",
+      "values": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "highlightMin": 9999,
+      "xLabel": "Score",
+      "questions": [
+        "1-a:a96"
+      ]
+    },
+    {
+      "file": "a98-equal-ranges.svg",
+      "kind": "comparison_dotplots",
+      "groups": [
+        {
+          "label": "A",
+          "values": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            4
+          ]
+        },
+        {
+          "label": "B",
+          "values": [
+            0,
+            0,
+            0,
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "xLabel": "Deliveries completed",
+      "questions": [
+        "1-a:a98"
+      ]
+    },
+    {
+      "file": "a100-distance-median.svg",
+      "kind": "frequency_histogram",
+      "start": 0,
+      "width": 2,
+      "counts": [
+        2,
+        4,
+        6,
+        4
+      ],
+      "highlightFrom": 9999,
+      "printCounts": true,
+      "xLabel": "Travel distance (kilometers)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a100"
+      ]
+    },
+    {
+      "file": "a101-wait-quartiles.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Visitors",
+          "min": 2,
+          "q1": 6,
+          "median": 10,
+          "q3": 14,
+          "max": 22,
+          "outliers": []
+        }
+      ],
+      "xLabel": "Waiting time (minutes)",
+      "ticks": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "questions": [
+        "1-a:a101"
+      ]
+    },
+    {
+      "file": "a106-task-summary.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Tasks",
+          "min": 4,
+          "q1": 8,
+          "median": 12,
+          "q3": 16,
+          "max": 24,
+          "outliers": []
+        }
+      ],
+      "xLabel": "Duration (minutes)",
+      "ticks": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "questions": [
+        "1-a:a106"
+      ]
+    },
+    {
+      "file": "a111-shifted-puzzles.svg",
+      "kind": "comparison_dotplots",
+      "groups": [
+        {
+          "label": "Team A",
+          "values": [
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Team B",
+          "values": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "xLabel": "Puzzles completed",
+      "questions": [
+        "1-a:a111"
+      ]
+    },
+    {
+      "file": "a112-binned-routes.svg",
+      "kind": "paired_histograms",
+      "start": 0,
+      "width": 10,
+      "groups": [
+        {
+          "label": "Route A",
+          "counts": [
+            4,
+            12,
+            4
+          ]
+        },
+        {
+          "label": "Route B",
+          "counts": [
+            4,
+            12,
+            4
+          ]
+        }
+      ],
+      "xLabel": "Travel time (minutes)",
+      "yLabel": "Frequency",
+      "questions": [
+        "1-a:a112"
+      ]
+    },
+    {
+      "file": "a117-repair-ranges.svg",
+      "kind": "summary_boxplots",
+      "groups": [
+        {
+          "label": "Type A",
+          "min": 4,
+          "q1": 8,
+          "median": 12,
+          "q3": 16,
+          "max": 20,
+          "outliers": []
+        },
+        {
+          "label": "Type B",
+          "min": 2,
+          "q1": 8,
+          "median": 12,
+          "q3": 16,
+          "max": 24,
+          "outliers": []
+        }
+      ],
+      "xLabel": "Repair duration (days)",
+      "ticks": [
+        2,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "questions": [
+        "1-a:a117"
+      ]
+    },
+    {
+      "file": "a118-battery-lifetimes.svg",
+      "kind": "comparison_dotplots",
+      "groups": [
+        {
+          "label": "Set A",
+          "values": [
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "label": "Set B",
+          "values": [
+            7,
+            8,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "xLabel": "Lifetime (hours)",
+      "questions": [
+        "1-a:a118"
+      ]
+    },
+    {
+      "file": "c58-sample-assign.svg",
+      "kind": "study_flow",
+      "root": "Clinic's registered adults\nRandomly select 100",
+      "branches": [
+        {
+          "label": "Randomly assign 50",
+          "end": "New message\nMeasure attendance"
+        },
+        {
+          "label": "Randomly assign 50",
+          "end": "Usual message\nMeasure attendance"
+        }
+      ],
+      "questions": [
+        "1-b:c58"
+      ]
+    },
+    {
+      "file": "c63-faculty-strata.svg",
+      "kind": "study_flow",
+      "root": "Faculty roster\nGroup by department",
+      "branches": [
+        {
+          "label": "Science department",
+          "end": "Randomly select\n8 teachers"
+        },
+        {
+          "label": "Humanities department",
+          "end": "Randomly select\n8 teachers"
+        }
+      ],
+      "questions": [
+        "1-b:c63"
+      ]
+    },
+    {
+      "file": "c64-building-clusters.svg",
+      "questions": [
+        "1-b:c64"
+      ],
+      "kind": "sampling_grid",
+      "title": "Randomly select 3 of the 6 buildings",
+      "groups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "selected": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "file": "c89-self-selection.svg",
+      "kind": "study_flow",
+      "root": "Volunteers\nChoose their layout",
+      "branches": [
+        {
+          "label": "Choose layout A",
+          "end": "Use A\nMeasure task time"
+        },
+        {
+          "label": "Choose layout B",
+          "end": "Use B\nMeasure task time"
+        }
+      ],
+      "questions": [
+        "1-b:c89"
+      ]
+    },
+    {
+      "file": "c92-runner-pairs.svg",
+      "kind": "study_flow",
+      "root": "Pair similar runners\nby pace and experience",
+      "branches": [
+        {
+          "label": "Within each pair",
+          "end": "Randomly assign one\nrunner to sole A"
+        },
+        {
+          "label": "Same pair",
+          "end": "Other runner\nreceives sole B"
+        }
+      ],
+      "questions": [
+        "1-b:c92"
+      ]
     }
   ]
 }

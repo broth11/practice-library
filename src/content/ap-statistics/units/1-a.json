@@ -4,7 +4,7 @@
   "code": "1.A",
   "title": "Unit 1.A",
   "description": "Exploring data & distributions",
-  "reviewStatus": "AI reviewed and numeric results tool verified; no recorded human sign-off. Calculator keypresses and screenshots deferred.",
+  "reviewStatus": "AI reviewed with independently recomputed numeric targets; no recorded human sign-off.",
   "lessons": [
     {
       "id": "1.A.1",
@@ -81,11 +81,6 @@
         ],
         "warning": "Keep both restrictions: trained volunteer crews and membership in this center."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "KEY",
@@ -138,11 +133,6 @@
           "Only the sample drawn from monthly-pass records guarantees that membership."
         ],
         "warning": "A group that might include pass holders is not guaranteed to be a subset of them."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -197,11 +187,6 @@
         ],
         "warning": "A variable is a characteristic measured on a unit; a summary combines measurements."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "KEY",
@@ -252,11 +237,6 @@
           "Species, release bay, and tag status assign labels or groups."
         ],
         "warning": "A label remains categorical even if it is stored using a number."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -312,11 +292,6 @@
         ],
         "warning": "The accuracy of a measuring instrument does not turn an underlying continuous quantity into a count."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -370,11 +345,6 @@
           "Possible values are whole-number counts, making the variable discrete."
         ],
         "warning": "Discrete and continuous classify quantitative variables, not category labels."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -438,11 +408,6 @@
         ],
         "warning": "The type of summary depends on which units were measured, not on whether the value is known."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -494,11 +459,6 @@
         ],
         "warning": "Define the population from the study's goal. It does not automatically include other theaters."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "KEY",
@@ -549,11 +509,6 @@
           "The response of 35 minutes belongs to one participant."
         ],
         "warning": "The instrument collects data; the final report summarizes them."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -641,11 +596,6 @@
         ],
         "warning": "An investigative question must preserve the population, variable, and direction of the study."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D5",
@@ -713,6 +663,677 @@
       }
     },
     {
+      "id": "a61",
+      "lesson": "1.A.1",
+      "archetype": "statistical_vs_nonstatistical_question",
+      "variant": "V1",
+      "scenario": "A community garden coordinator wants to investigate the time members spend tending their plots. Different members have different schedules.",
+      "prompt": "Which of the following is an appropriate statistical question?",
+      "choices": [
+        "At what time did the coordinator arrive yesterday?",
+        "How many minutes are in one hour?",
+        "What is the average weekly tending time among the garden members?",
+        "What is the posted closing time of the garden?"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The question names a group and a quantity that can vary among its members.",
+          "Collecting tending times from members would allow a summary of that variation."
+        ],
+        "warning": "A statistical question anticipates variation in the data used to answer it."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 9,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a62",
+      "lesson": "1.A.1",
+      "archetype": "why_statistical_study_is_needed",
+      "variant": "V1",
+      "scenario": "A manufacturer wants to estimate how long its sealed emergency lamps last. Testing a lamp until failure makes that lamp unusable.",
+      "prompt": "Which of the following best explains using a sample?",
+      "choices": [
+        "A sample always gives the exact population mean.",
+        "A sample removes all variation in lamp life.",
+        "Testing every lamp would destroy the entire stock.",
+        "Testing more lamps makes a study less accurate."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A lifetime test consumes the item being measured.",
+          "A sample provides evidence about lamp life while preserving most of the stock."
+        ],
+        "warning": "Sampling can be necessary because a census is impractical, even when the population is countable."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 21,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 9,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a63",
+      "lesson": "1.A.1",
+      "archetype": "fixed_value_is_not_a_variable",
+      "variant": "V1",
+      "scenario": "An archivist records information separately for each of 180 donated maps.",
+      "prompt": "Which of the following is <u>not</u> a variable measured on individual maps?",
+      "choices": [
+        "The publication year of a map",
+        "The total number of maps in the collection",
+        "The width of a map",
+        "The language printed on a map"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Publication year, language, and width can differ across maps.",
+          "The collection size describes the data set as a whole, rather than a characteristic recorded for each map."
+        ],
+        "warning": "Distinguish information about one observational unit from a fixed description of the collection."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": "V1",
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 14,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a64",
+      "lesson": "1.A.1",
+      "archetype": "local_repeated_measurement_variation",
+      "variant": null,
+      "scenario": "Six surveyors independently measure the length of the same rigid beam under unchanged conditions. Their readings differ slightly.",
+      "prompt": "Which statement correctly identifies the source of variation?",
+      "choices": [
+        "The beam has a different true length for every surveyor.",
+        "The recorded readings vary even though the beam has one fixed length.",
+        "Variation proves that all six readings are unusable.",
+        "The number of surveyors is a measurement of beam length."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The object has one true length under the stated conditions.",
+          "Technique and instrument precision can produce different recorded measurements of that fixed quantity."
+        ],
+        "warning": "Variation in measurements does not require the object itself to change."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a65",
+      "lesson": "1.A.1",
+      "archetype": "local_observational_unit",
+      "variant": null,
+      "scenario": "A repair cooperative records one row for each job. Part of the file is shown in the table.",
+      "prompt": "Which of the following is the observational unit?",
+      "choices": [
+        "A technician",
+        "A repair category",
+        "A minute of repair time",
+        "A repair job"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Each row contains measurements on one job.",
+          "A technician can appear in several rows, so the technician is not the unit represented by a row."
+        ],
+        "warning": "Find what one row represents before classifying the columns."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Job",
+          "Technician",
+          "Category",
+          "Time (minutes)"
+        ],
+        "rows": [
+          [
+            "R17",
+            "Mina",
+            "Brake",
+            35
+          ],
+          [
+            "R18",
+            "Mina",
+            "Light",
+            12
+          ],
+          [
+            "R19",
+            "Owen",
+            "Wheel",
+            28
+          ]
+        ],
+        "caption": "Selected repair records"
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a66",
+      "lesson": "1.A.1",
+      "archetype": "categorical_vs_quantitative_variable",
+      "variant": null,
+      "scenario": "A transit agency records route labels such as 12, 28, and 40 for each passenger trip. The numbers identify routes rather than measured amounts.",
+      "prompt": "Which statement correctly classifies the route label?",
+      "choices": [
+        "It is quantitative because every value contains digits.",
+        "It is categorical because the number identifies a group.",
+        "It is continuous because buses move continuously.",
+        "It is quantitative because averaging labels measures a typical route."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The labels identify routes. Differences between their numbers do not measure differences in a quantity.",
+          "Numerical coding does not change a category into a quantitative variable."
+        ],
+        "warning": "Classify by the meaning of the values, rather than their written form."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a67",
+      "lesson": "1.A.1",
+      "archetype": "variable_that_could_be_quantitative",
+      "variant": null,
+      "scenario": "A festival survey asks each visitor to record a primary activity, a ticket code, an enjoyment category, and another characteristic.",
+      "prompt": "Which of the following could be recorded as a quantitative variable?",
+      "choices": [
+        "Ticket code printed on the pass",
+        "Favorite performance category",
+        "Distance traveled to the festival in kilometers",
+        "Enjoyment described as low, medium, or high"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Distance measures an amount with a meaningful unit.",
+          "A code and the named response categories identify groups; the ordering of enjoyment categories does not supply equal numerical distances."
+        ],
+        "warning": "Ordered categories remain categorical unless the recorded values represent measured or counted quantities."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 20,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 11,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a68",
+      "lesson": "1.A.1",
+      "archetype": "identify_population_and_sample",
+      "variant": null,
+      "scenario": "A school randomly selects 70 families from its enrollment list for a survey. It obtains usable responses from 52 of those families.",
+      "prompt": "Which group supplied the observed data?",
+      "choices": [
+        "All families on the enrollment list",
+        "The 70 families originally selected",
+        "The 18 families that did not respond",
+        "The 52 responding families"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Only the 52 respondents supplied measurements in the completed data set.",
+          "The selected sample had 70 families, but selection does not guarantee that data are obtained from everyone selected."
+        ],
+        "warning": "Keep the selected sample distinct from the responding group when nonresponse is stated."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a69",
+      "lesson": "1.A.1",
+      "archetype": "local_parameter_or_statistic",
+      "variant": null,
+      "scenario": "A warehouse checks every one of its 640 stored crates and finds that 32 have damaged labels. The population of interest is those 640 crates.",
+      "prompt": "Which statement correctly classifies the proportion with damaged labels?",
+      "choices": [
+        "It is a statistic because it was calculated from data.",
+        "It is a parameter because every crate in the population was checked.",
+        "It is a variable because 32 is smaller than 640.",
+        "It is a sample because only damaged crates matter."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The proportion summarizes the entire defined population.",
+          "A numerical summary of a population is a parameter, even when its exact value is known from a census."
+        ],
+        "warning": "Whether a summary is known does not determine whether it is a parameter or a statistic."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a70",
+      "lesson": "1.A.1",
+      "archetype": "discrete_or_continuous_variable",
+      "variant": null,
+      "scenario": "A laboratory measures elapsed drying time to the nearest whole second. The underlying time could take any value within an interval.",
+      "prompt": "Which of the following describes the underlying variable?",
+      "choices": [
+        "Discrete quantitative because the display shows integers",
+        "Categorical because seconds are labels",
+        "Continuous quantitative",
+        "Categorical because the instrument rounds"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Elapsed time is measured and can vary continuously.",
+          "Rounding limits the recorded precision but does not make the underlying quantity a count."
+        ],
+        "warning": "Distinguish a measurement scale from the precision used to record it."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.1",
+            "1.2"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "option",
+            "words": 2,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
       "id": "a11",
       "lesson": "1.A.2",
       "archetype": "local_categorical_proportion",
@@ -732,11 +1353,6 @@
           "Planting was chosen by 24 participants, so its relative frequency is 24/80 = 0.30."
         ],
         "warning": "Use the total across all mutually exclusive categories, not only the other categories."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -814,11 +1430,6 @@
           "Fabric accounts for 40 of 100 stalls. Wood is not the largest category, and metal accounts for 15%."
         ],
         "warning": "A count becomes a percentage only after dividing by the total."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -902,11 +1513,6 @@
         ],
         "warning": "For a not-supported question, reject the one claim contradicted by the counts."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "T1",
@@ -986,11 +1592,6 @@
           "An exact count requires the total number of visitors, which is not given. Each remaining claim follows from the proportions."
         ],
         "warning": "A relative frequency of 0.18 does not mean 18 observations."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1072,11 +1673,6 @@
         ],
         "warning": "Do not treat a decimal proportion or its percentage as the count."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -1128,11 +1724,6 @@
         ],
         "warning": "Histograms, boxplots, and numerical dotplots summarize quantitative values."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -1183,11 +1774,6 @@
           "Electronics are the largest single category. Toys and kitchen items total 35%, and electronics exceed kitchen items."
         ],
         "warning": "Combine only the named slices and compare the result with the stated benchmark."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1250,11 +1836,6 @@
         ],
         "warning": "The word or includes both of the named, nonoverlapping categories."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D3",
@@ -1312,11 +1893,6 @@
           "Hill has the larger proportion, although Lake has the larger count."
         ],
         "warning": "Different group sizes require each count to be divided by its own total."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1394,11 +1970,6 @@
         ],
         "warning": "Relative frequencies sum to 1, while percentages sum to 100."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -1456,6 +2027,696 @@
       }
     },
     {
+      "id": "a71",
+      "lesson": "1.A.2",
+      "archetype": "relative_frequency_table_from_counts",
+      "variant": null,
+      "scenario": "Forty visitors each choose one workshop. The counts are shown in the table.",
+      "prompt": "Which row gives the relative frequencies in the order clay, print, and wood?",
+      "choices": [
+        "8, 12, 20",
+        "0.20, 0.30, 0.40",
+        "0.50, 0.30, 0.20",
+        "0.20, 0.30, 0.50"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Divide each count by the total of 40: 8/40, 12/40, and 20/40.",
+          "The resulting proportions are 0.20, 0.30, and 0.50, which sum to 1."
+        ],
+        "warning": "A total of 1 is necessary, but each proportion must also match its category."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Workshop",
+          "Count"
+        ],
+        "rows": [
+          [
+            "Clay",
+            8
+          ],
+          [
+            "Print",
+            12
+          ],
+          [
+            "Wood",
+            20
+          ]
+        ],
+        "caption": "Workshop choices"
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          },
+          {
+            "reason": "Relative-frequency rows are prose choices rather than full table objects."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 13,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 13,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 3,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a72",
+      "lesson": "1.A.2",
+      "archetype": "local_categorical_proportion",
+      "variant": null,
+      "scenario": "Every member of a reading club chooses one preferred format. The results are shown in the pie chart.",
+      "prompt": "What percentage chose either audio or digital?",
+      "choices": [
+        "25%",
+        "35%",
+        "60%",
+        "75%"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Audio accounts for 25% and digital accounts for 35%.",
+          "The categories do not overlap, so their combined share is 25% + 35% = 60%."
+        ],
+        "warning": "Add shares only when the categories are mutually exclusive."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a72-formats.svg",
+        "alt": "Pie chart: print 40%, audio 25%, and digital 35%.",
+        "width": 480,
+        "height": 323
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a73",
+      "lesson": "1.A.2",
+      "archetype": "claim_from_one_variable_display",
+      "variant": null,
+      "scenario": "Each item in a craft exhibition is classified by its main material. The counts are shown in the bar chart.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "There are as many wood items as metal and glass items combined.",
+        "More than half of the items are made of wood.",
+        "Glass is the most common material.",
+        "There are twice as many metal items as wood items."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The wood count is 30. Metal and glass have counts 18 and 12, which also total 30.",
+          "Wood accounts for exactly half of the 60 items, so the claim of more than half is false."
+        ],
+        "warning": "Compare the actual bar values rather than their order on the horizontal axis."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a73-materials.svg",
+        "alt": "Bar chart: wood 30, metal 18, and glass 12.",
+        "width": 480,
+        "height": 239
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a74",
+      "lesson": "1.A.2",
+      "archetype": "local_misleading_categorical_axis",
+      "variant": null,
+      "scenario": "Two community centers report 48 and 52 registrations. A bar chart displays only the vertical interval from 45 to 55, so the bars appear very different in height.",
+      "prompt": "Which change best supports a fair visual comparison?",
+      "choices": [
+        "Start the registration axis at zero.",
+        "Remove the registration-axis labels.",
+        "Replace counts with unrelated category codes.",
+        "Increase the width of only the taller bar."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Bar height encodes a count using distance from the baseline.",
+          "Starting at 45 exaggerates the relative difference between 48 and 52; a zero baseline displays that difference proportionally."
+        ],
+        "warning": "A truncated baseline can distort bar-length comparisons even when the printed counts are correct."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a75",
+      "lesson": "1.A.2",
+      "archetype": "local_categorical_display_choice",
+      "variant": null,
+      "scenario": "A survey allows each of 100 visitors to select every activity they tried. Counts are 70 for walking, 55 for cycling, and 25 for skating.",
+      "prompt": "Why would a single pie chart of these three counts be inappropriate?",
+      "choices": [
+        "Pie charts require quantitative measurements.",
+        "A pie chart can never contain three categories.",
+        "The categories must have equal counts.",
+        "A visitor can appear in more than one category."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The counts total 150 because visitors may select multiple activities.",
+          "Slices representing percentages of visitors would overlap rather than partition one whole."
+        ],
+        "warning": "A pie chart requires mutually exclusive categories that divide the same whole."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a76",
+      "lesson": "1.A.2",
+      "archetype": "local_categorical_denominator",
+      "variant": null,
+      "scenario": "Two branches ask customers to select one delivery option. The table shows the results.",
+      "prompt": "Which statement correctly compares the shares choosing collection?",
+      "choices": [
+        "Collection has a larger share at East because 30 exceeds 20.",
+        "Collection has a larger share at West than at East.",
+        "The shares are equal because both counts are multiples of 10.",
+        "The shares cannot be compared because the totals differ."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "At East, the collection share is 30/100 = 0.30. At West, it is 20/50 = 0.40.",
+          "West has the larger proportion despite having fewer collection customers."
+        ],
+        "warning": "Use each branch total as its denominator when comparing its distribution."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Branch",
+          "Collection",
+          "Delivery",
+          "Total"
+        ],
+        "rows": [
+          [
+            "East",
+            30,
+            70,
+            100
+          ],
+          [
+            "West",
+            20,
+            30,
+            50
+          ]
+        ],
+        "caption": "Delivery options by branch"
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a77",
+      "lesson": "1.A.2",
+      "archetype": "local_categorical_total_from_share",
+      "variant": null,
+      "scenario": "At a club fair, each student selects one activity. Eighteen students select robotics, representing 30% of all students who made a selection.",
+      "prompt": "How many students made a selection?",
+      "choices": [
+        "6",
+        "54",
+        "60",
+        "90"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The robotics count is 0.30 times the total.",
+          "Dividing 18 by 0.30 gives a total of 60 students."
+        ],
+        "warning": "A part divided by its share gives the whole."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a78",
+      "lesson": "1.A.2",
+      "archetype": "claim_from_one_variable_display",
+      "variant": null,
+      "scenario": "A council surveys 200 households about their single preferred recycling collection day. The percentages are shown in the pie chart.",
+      "prompt": "Which statement is <u>not</u> supported by the chart?",
+      "choices": [
+        "Tuesday was the most common choice.",
+        "Friday and Saturday together account for 55% of households.",
+        "More than half of the households chose Tuesday.",
+        "Saturday was chosen by 50 households."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Tuesday accounts for 45%, which is less than half.",
+          "Friday and Saturday total 55%, and Saturday represents 25% of 200, or 50 households."
+        ],
+        "warning": "The largest category need not contain a majority."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a78-collection-day.svg",
+        "alt": "Pie chart: Tuesday 45%, Friday 30%, and Saturday 25%.",
+        "width": 480,
+        "height": 305
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a79",
+      "lesson": "1.A.2",
+      "archetype": "claim_from_one_variable_display",
+      "variant": null,
+      "scenario": "A library records one reason for each online help request. The results are shown in the bar chart.",
+      "prompt": "Which statement is supported by the chart?",
+      "choices": [
+        "Room bookings account for half of all requests.",
+        "Account access is the most common request.",
+        "Renewals and room bookings have equal counts.",
+        "Renewals account for twice as many requests as account access."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The counts are 24 for renewals and 12 for account access.",
+          "Since 24 is twice 12, the stated comparison is supported. Room bookings account for 4 of the 40 requests."
+        ],
+        "warning": "Named categories have no numerical spacing; use bar heights to compare frequencies."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a79-help-reasons.svg",
+        "alt": "Bar chart: renewal 24, account access 12, and room booking 4.",
+        "width": 480,
+        "height": 239
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a80",
+      "lesson": "1.A.2",
+      "archetype": "local_categorical_ordering",
+      "variant": null,
+      "scenario": "A bar chart displays preferences for four unrelated mural themes. The artist redraws the same bars in alphabetical order instead of decreasing frequency.",
+      "prompt": "Which statement <u>must</u> remain true?",
+      "choices": [
+        "The most popular theme is the leftmost bar.",
+        "Each theme has the same relative frequency as before.",
+        "The chart now describes a symmetric quantitative distribution.",
+        "The sample size changes because the bars move."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Reordering categories changes their positions, rather than their counts.",
+          "Both each count and the total remain fixed, so every relative frequency remains fixed."
+        ],
+        "warning": "Do not assign quantitative shape or numerical spacing to unrelated category labels."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.3",
+            "1.4"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
       "id": "a21",
       "lesson": "1.A.3",
       "archetype": "describe_shape_from_display",
@@ -1475,11 +2736,6 @@
           "The frequencies decrease toward the larger times, creating a longer right tail."
         ],
         "warning": "Name skew by the tail, not by the side holding most observations."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1543,11 +2799,6 @@
         ],
         "warning": "The location of the tallest bar does not name the skew."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D3",
@@ -1609,11 +2860,6 @@
           "There are 3 + 4 + 2 + 1 = 10 such periods."
         ],
         "warning": "Include observations at the boundary as well as those above it."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1684,11 +2930,6 @@
         ],
         "warning": "An empty interval is a gap; a distant occupied interval can indicate a potential outlier."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -1757,11 +2998,6 @@
           "Each observation still belongs to one bin, so the frequencies still total 80."
         ],
         "warning": "Smaller bins can reveal or hide features without changing the underlying data."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -1840,11 +3076,6 @@
           "Their frequencies total 12 + 14 = 26 books."
         ],
         "warning": "Count observations rather than counting the number of bars."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -2008,11 +3239,6 @@
         ],
         "warning": "An unordered plot or a plot with missing leaves does not preserve the full ordered display."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -2092,11 +3318,6 @@
         ],
         "warning": "Read the key before combining stems and leaves."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -2170,11 +3391,6 @@
         ],
         "warning": "Identification codes do not reveal the distribution of the measured variable."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -2226,11 +3442,6 @@
         ],
         "warning": "Use only what the missing interval establishes; do not infer the whole shape."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D4",
@@ -2273,6 +3484,744 @@
       }
     },
     {
+      "id": "a81",
+      "lesson": "1.A.3",
+      "archetype": "locate_median_or_quartile_from_binned_data",
+      "variant": null,
+      "scenario": "A workshop records 20 assembly times. The histogram shows counts in intervals that include the left endpoint and exclude the right endpoint.",
+      "prompt": "Which interval contains the median assembly time?",
+      "choices": [
+        "10 to under 15 minutes",
+        "0 to under 5 minutes",
+        "5 to under 10 minutes",
+        "15 to under 20 minutes"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The first two bins contain 2 + 6 = 8 observations.",
+          "The next bin brings the cumulative count to 16, so both the 10th and 11th observations lie from 10 to under 15 minutes."
+        ],
+        "warning": "For an even sample size, locate both middle observations."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a81-median-bin.svg",
+        "alt": "Histogram with bin start 0, width 5, and counts 2, 6, 8, 4.",
+        "width": 480,
+        "height": 231
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          },
+          {
+            "reason": "Cross-topic median-position reasoning connects quantitative displays to CED 1.7."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6",
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a82",
+      "lesson": "1.A.3",
+      "archetype": "local_histogram_information_limit",
+      "variant": null,
+      "scenario": "A histogram groups 24 recorded delivery times into intervals of width 10 minutes. Individual times within the intervals are not listed.",
+      "prompt": "Which quantity can be determined exactly from the histogram?",
+      "choices": [
+        "The exact mean delivery time",
+        "The number of delivery times in each interval",
+        "The exact largest delivery time",
+        "The exact median delivery time"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Bar heights give interval counts directly.",
+          "Different sets of individual times can produce the same bars while having different means, medians, and maxima."
+        ],
+        "warning": "A histogram preserves grouped counts while hiding exact positions within bins."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a83",
+      "lesson": "1.A.3",
+      "archetype": "describe_shape_from_display",
+      "variant": null,
+      "scenario": "An archive lists the ages of 15 donated chairs in the stem-and-leaf table.",
+      "prompt": "Which of the following best describes the shape of the age distribution?",
+      "choices": [
+        "Skewed to the right",
+        "Approximately uniform",
+        "Symmetric with one central peak",
+        "Skewed to the left"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Most chairs are in the teens and twenties. Only a few are in their thirties and forties.",
+          "The values extend farther toward older ages, producing a right tail."
+        ],
+        "warning": "Identify the direction of the tail, rather than the side containing most observations."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Stem",
+          "Leaves"
+        ],
+        "rows": [
+          [
+            "1",
+            "1 2 2 4 5 7 8"
+          ],
+          [
+            "2",
+            "0 1 3 5 8"
+          ],
+          [
+            "3",
+            "2 9"
+          ],
+          [
+            "4",
+            "7"
+          ]
+        ],
+        "caption": "Chair ages; key: 1|1 = 11 years"
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a84",
+      "lesson": "1.A.3",
+      "archetype": "describe_clusters_gaps_outliers_from_display",
+      "variant": null,
+      "scenario": "A project records the number of parts needed for each of 12 repairs. The dotplot shows the results.",
+      "prompt": "Which statement is supported by the dotplot?",
+      "choices": [
+        "There are two clusters separated by a gap from 4 through 7 parts.",
+        "There is one roughly symmetric cluster centered at 5 parts.",
+        "No repair required more than 7 parts.",
+        "Every count from 1 through 10 parts occurred."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Six observations fall from 1 to 3 parts, and six fall from 8 to 10 parts.",
+          "There are no observations at 4, 5, 6, or 7 parts in this sample."
+        ],
+        "warning": "A gap describes the observed sample; it does not prove those values are impossible."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a84-repair-clusters.svg",
+        "alt": "Dotplot of the values 1, 1, 2, 2, 3, 3, 8, 8, 9, 9, 10, 10.",
+        "width": 480,
+        "height": 104
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a85",
+      "lesson": "1.A.3",
+      "archetype": "local_histogram_bin_merge",
+      "variant": null,
+      "scenario": "A trail group draws a histogram with four consecutive 5-minute bins. Their frequencies are 3, 7, 6, and 4, starting at 0 minutes. It then combines adjacent bins.",
+      "prompt": "What are the frequencies of the two resulting 10-minute bins?",
+      "choices": [
+        "10 and 10",
+        "3 and 4",
+        "5 and 5",
+        "7 and 6"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The first wider bin combines 3 and 7 observations, giving 10.",
+          "The second combines 6 and 4 observations, also giving 10."
+        ],
+        "warning": "Wider bins add neighboring counts; they do not average the original bar heights."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 29,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 11,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 3,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 3,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 3,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 3,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a86",
+      "lesson": "1.A.3",
+      "archetype": "local_stemplot_reading",
+      "variant": null,
+      "scenario": "The table shows a stem-and-leaf display of seedling heights.",
+      "prompt": "How many seedlings are <u>at least</u> 25 centimeters tall?",
+      "choices": [
+        "2",
+        "4",
+        "5",
+        "7"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The qualifying leaves in stem 2 are 5, 7, and 9.",
+          "Both leaves in stem 3 also qualify, giving 3 + 2 = 5 seedlings."
+        ],
+        "warning": "Include 25 itself because the question says at least."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Stem",
+          "Leaves"
+        ],
+        "rows": [
+          [
+            "1",
+            "6 8"
+          ],
+          [
+            "2",
+            "1 3 5 7 9"
+          ],
+          [
+            "3",
+            "0 2"
+          ]
+        ],
+        "caption": "Seedling heights; key: 2|5 = 25 centimeters"
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a87",
+      "lesson": "1.A.3",
+      "archetype": "local_quantitative_display_choice",
+      "variant": null,
+      "scenario": "A researcher has exact walking times for 18 people and wants a compact display that retains every measured value.",
+      "prompt": "Which display meets both goals?",
+      "choices": [
+        "A histogram with 5-minute bins",
+        "A stem-and-leaf plot with a stated key",
+        "A pie chart of the time intervals",
+        "A bar chart of the interval frequencies"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A stem-and-leaf plot records each observation through its stem and leaf.",
+          "Grouping times into intervals hides the exact values, even when the interval counts are shown."
+        ],
+        "warning": "Choose the display according to which information must be retained."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 5,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 9,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a88",
+      "lesson": "1.A.3",
+      "archetype": "shape_of_combined_distributions",
+      "variant": null,
+      "scenario": "Two machines produce the same number of rods. Machine A produces rods tightly clustered near 10 centimeters, and machine B produces rods tightly clustered near 30 centimeters, with no values near 20 centimeters.",
+      "prompt": "Which shape should the combined distribution have?",
+      "choices": [
+        "Unimodal, with a peak near 20 centimeters",
+        "Uniform from 10 to 30 centimeters",
+        "Skewed to the right, with only one peak",
+        "Bimodal, with peaks near 10 and 30 centimeters"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Combining the data preserves the concentration near each machine center.",
+          "The empty region between the groups leaves two separated peaks; an average near 20 need not be a common value."
+        ],
+        "warning": "A combined average can fall in a gap between clusters."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 33,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a89",
+      "lesson": "1.A.3",
+      "archetype": "local_histogram_interval_count",
+      "variant": null,
+      "scenario": "A museum records visit durations using the histogram shown. Bins include their left endpoints and exclude their right endpoints.",
+      "prompt": "How many visits lasted from 20 to under 40 minutes?",
+      "choices": [
+        "5",
+        "7",
+        "12",
+        "18"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The 20-to-under-30 bin contains 7 visits.",
+          "The 30-to-under-40 bin contains 5 visits, so the requested count is 7 + 5 = 12."
+        ],
+        "warning": "Use exactly the bins covered by the interval, including its lower endpoint."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a89-visit-times.svg",
+        "alt": "Histogram with bin start 0, width 10, and counts 2, 4, 7, 5, 2.",
+        "width": 480,
+        "height": 235
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a90",
+      "lesson": "1.A.3",
+      "archetype": "local_gap_inference",
+      "variant": null,
+      "scenario": "A dotplot of selected batteries has no recorded lifetime between 11 and 18 hours. There are observations below 11 and above 18 hours.",
+      "prompt": "Which conclusion is justified?",
+      "choices": [
+        "No battery in the population can last 15 hours.",
+        "The population must consist of two different brands.",
+        "The sample mean must be less than 11 hours.",
+        "The sample contains a gap in the recorded lifetimes."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The absence of sample observations in an interval is a feature of this data set.",
+          "It does not establish impossible population values, a cause of the gap, or the location of the mean."
+        ],
+        "warning": "Describe a graph before drawing explanations that require additional evidence."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.5",
+            "1.6"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
       "id": "a31",
       "lesson": "1.A.4",
       "archetype": "compute_summary_statistic_from_data_list",
@@ -2296,11 +4245,6 @@
           }
         ],
         "warning": "The smallest or largest daily count is not the mean. Add every count before dividing by five."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -2364,11 +4308,6 @@
         ],
         "warning": "Find the middle positions after sorting, not in the order the values were recorded."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -2431,11 +4370,6 @@
         ],
         "warning": "Range, IQR, and distance from the median describe different summaries."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "KEY",
@@ -2497,11 +4431,6 @@
           "The 72nd percentile places about 72% of scores at or below that score."
         ],
         "warning": "A percentile is not the percentage answering correctly or the percentage with exactly the same score."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -2609,11 +4538,6 @@
         ],
         "warning": "Include dots at the stated value, and divide by the total number of dots."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -2695,11 +4619,6 @@
         ],
         "warning": "For a sample standard deviation, divide squared deviations by n − 1 before taking the square root."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -2755,11 +4674,6 @@
         ],
         "warning": "Weight each group mean by its group size. The two groups are not equally large."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -2811,11 +4725,6 @@
         ],
         "warning": "The maximum is an endpoint, not a measure of the distance between endpoints."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -2866,11 +4775,6 @@
           "That location is the median, not a measure of spread or the arithmetic mean."
         ],
         "warning": "The mean need not divide a distribution into two equal halves."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -2950,11 +4854,6 @@
         ],
         "warning": "Compute both summaries. A large upper value can pull the mean above the median."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D4",
@@ -3005,6 +4904,715 @@
       }
     },
     {
+      "id": "a91",
+      "lesson": "1.A.4",
+      "archetype": "sum_of_squared_deviations_expression",
+      "variant": null,
+      "scenario": "Four workshop groups complete 2, 4, 6, and 8 models. Their mean is 5 models.",
+      "prompt": "Which expression gives the sum of squared deviations from the mean?",
+      "choices": [
+        "[(2 − 5) + (4 − 5) + (6 − 5) + (8 − 5)]²",
+        "(2 − 5) + (4 − 5) + (6 − 5) + (8 − 5)",
+        "2² + 4² + 6² + 8²",
+        "(2 − 5)² + (4 − 5)² + (6 − 5)² + (8 − 5)²"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Subtract the mean from each value to get deviations of −3, −1, 1, and 3.",
+          "Square each deviation before adding: 9 + 1 + 1 + 9 = 20."
+        ],
+        "warning": "The deviations sum to zero; squaring their sum is different from summing their squares."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 15,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 11,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 12,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 4,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 9,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a92",
+      "lesson": "1.A.4",
+      "archetype": "compute_summary_statistic_from_data_list",
+      "variant": null,
+      "scenario": "A repair kiosk records the number of items brought by each customer. The frequency table shows all 10 customers.",
+      "prompt": "What is the mean number of items per customer?",
+      "choices": [
+        "2.0",
+        "2.4",
+        "3.0",
+        "4.0"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Multiply each value by its frequency: 1 × 2 + 2 × 4 + 3 × 2 + 4 × 2 = 24 items.",
+          "Divide 24 items by 10 customers to obtain 2.4 items per customer."
+        ],
+        "warning": "Average the customer observations, rather than the four distinct category values."
+      },
+      "stimulus": {
+        "type": "table",
+        "headers": [
+          "Items",
+          "Customers"
+        ],
+        "rows": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "caption": "Items per customer"
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 9,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a93",
+      "lesson": "1.A.4",
+      "archetype": "median_after_raising_lowest_values",
+      "variant": null,
+      "scenario": "Seven grant awards are $20, $30, $40, $45, $60, $80, and $100. A donor raises every award below $50 to $50.",
+      "prompt": "What is the new median award?",
+      "choices": [
+        "$45",
+        "$50",
+        "$60",
+        "$65"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "After the change the ordered awards are 50, 50, 50, 50, 60, 80, and 100 dollars.",
+          "The fourth of seven values is the median, so it is $50."
+        ],
+        "warning": "Reorder the changed observations before locating the middle."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 21,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 1,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 1,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 1,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 1,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a94",
+      "lesson": "1.A.4",
+      "archetype": "effect_of_linear_transformation_on_statistics",
+      "variant": null,
+      "scenario": "A scale adds 3 grams to every parcel measurement. A set of recorded masses has mean 18 grams and standard deviation 4 grams. The error is corrected.",
+      "prompt": "Which pair gives the corrected mean and standard deviation?",
+      "choices": [
+        "Mean 18 grams; standard deviation 4 grams",
+        "Mean 15 grams; standard deviation 1 gram",
+        "Mean 21 grams; standard deviation 7 grams",
+        "Mean 15 grams; standard deviation 4 grams"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Subtract 3 grams from every measurement, so the mean decreases from 18 to 15 grams.",
+          "All distances from the mean stay the same, leaving the standard deviation at 4 grams."
+        ],
+        "warning": "Adding or subtracting a constant changes location but not spread."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a95",
+      "lesson": "1.A.4",
+      "archetype": "effect_of_changing_an_extreme_value",
+      "variant": null,
+      "scenario": "Five repair costs are $10, $12, $14, $16, and $18. The final cost is corrected from $18 to $118.",
+      "prompt": "Which statement correctly describes the changes?",
+      "choices": [
+        "The mean increases by $20, and the median stays at $14.",
+        "The mean and median both increase by $20.",
+        "The mean stays unchanged, and the median increases by $100.",
+        "The mean increases by $100, and the median stays at $14."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The total increases by $100 across five observations, so the mean increases by $20.",
+          "The third ordered observation is still $14, so the median is unchanged."
+        ],
+        "warning": "A one-value correction affects the mean through the total divided by the sample size."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 19,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a96",
+      "lesson": "1.A.4",
+      "archetype": "local_strict_percentile_rank",
+      "variant": null,
+      "scenario": "The dotplot gives the scores of 10 players. Define a score’s percentile rank here as the percentage of scores strictly below it.",
+      "prompt": "What is the percentile rank of a score of 4?",
+      "choices": [
+        "30%",
+        "40%",
+        "50%",
+        "60%"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "There are four scores strictly below 4: 1, 2, 2, and 3.",
+          "Four of ten scores is 40%; the two scores equal to 4 are excluded by the stated convention."
+        ],
+        "warning": "Check whether a percentile convention counts values below the score or at or below it."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a96-player-scores.svg",
+        "alt": "Dotplot of the values 1, 2, 2, 3, 4, 4, 5, 6, 7, 8.",
+        "width": 480,
+        "height": 116
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 23,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 10,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a97",
+      "lesson": "1.A.4",
+      "archetype": "local_zero_standard_deviation",
+      "variant": null,
+      "scenario": "Six packages have measured masses of 250, 250, 250, 250, 250, and 250 grams.",
+      "prompt": "What is the sample standard deviation?",
+      "choices": [
+        "0",
+        "1",
+        "6",
+        "250"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Every mass equals the mean of 250 grams.",
+          "All deviations from the mean are zero, so the sample variance and standard deviation are zero."
+        ],
+        "warning": "The size of the observations does not by itself determine their variability."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a98",
+      "lesson": "1.A.4",
+      "archetype": "compare_histograms_dotplots_stemplots",
+      "variant": null,
+      "scenario": "Two groups record the number of deliveries completed on six days. The dotplots show every observation on the same scale.",
+      "prompt": "Which statement is supported by the dotplots?",
+      "choices": [
+        "Group A has the larger standard deviation because it has more central values.",
+        "Group B has the larger mean.",
+        "The standard deviations are equal because the ranges are equal.",
+        "Group B has the larger standard deviation, although both ranges are 4."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Both groups have mean 2 and range 4.",
+          "Group B places more observations at 0 and 4, farther from the common mean, so its squared deviations and standard deviation are larger."
+        ],
+        "warning": "Equal ranges do not imply equal standard deviations."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a98-equal-ranges.svg",
+        "alt": "Dotplots showing A: 0, 2, 2, 2, 2, 4; B: 0, 0, 0, 4, 4, 4.",
+        "width": 480,
+        "height": 217
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a99",
+      "lesson": "1.A.4",
+      "archetype": "local_missing_value_from_mean",
+      "variant": null,
+      "scenario": "Five trays contain 6, 8, 10, 12, and an unknown number of seedlings. Their mean is 10 seedlings per tray.",
+      "prompt": "How many seedlings are in the fifth tray?",
+      "choices": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A mean of 10 across five trays requires 50 seedlings in total.",
+          "The four known trays contain 36 seedlings, leaving 50 − 36 = 14."
+        ],
+        "warning": "Recover the required total before finding the missing observation."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a100",
+      "lesson": "1.A.4",
+      "archetype": "locate_median_or_quartile_from_binned_data",
+      "variant": null,
+      "scenario": "A group records 16 travel distances. The histogram uses intervals that include the left endpoint and exclude the right endpoint.",
+      "prompt": "Which interval contains the median travel distance?",
+      "choices": [
+        "4 to under 6 kilometers",
+        "0 to under 2 kilometers",
+        "2 to under 4 kilometers",
+        "6 to under 8 kilometers"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The cumulative count below 4 kilometers is 2 + 4 = 6.",
+          "The next bin contains positions 7 through 12, including both middle positions 8 and 9."
+        ],
+        "warning": "Locate the middle positions; the tallest bar is not automatically the median bin."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a100-distance-median.svg",
+        "alt": "Histogram with bin start 0, width 2, and counts 2, 4, 6, 4.",
+        "width": 480,
+        "height": 233
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
       "id": "a41",
       "lesson": "1.A.5",
       "archetype": "compute_summary_statistic_from_data_list",
@@ -3024,11 +5632,6 @@
           "The lower-half median is 7.5 and the upper-half median is 13.5, so IQR = 13.5 − 7.5 = 6 minutes."
         ],
         "warning": "IQR measures the span of the middle half; it is not the full range."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3091,11 +5694,6 @@
           "The minimum 4 is inside the fences; the maximum 35 exceeds the upper fence. A summary does not show whether other values exceed 30."
         ],
         "warning": "A five-number summary identifies extreme outliers but cannot count all observations beyond a fence."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3161,11 +5759,6 @@
         ],
         "warning": "The outlier rule uses a strict inequality at each fence."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D1",
@@ -3217,11 +5810,6 @@
           "Their difference is 18 − 10 = 8 kilograms."
         ],
         "warning": "The median line and whisker ends are not the two endpoints of the IQR."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3300,11 +5888,6 @@
           "The separate point at 29 kilograms is an observed value and is larger than the upper whisker endpoint of 20."
         ],
         "warning": "The largest plotted outlier is part of the data and counts when finding the maximum."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3387,11 +5970,6 @@
         ],
         "warning": "Using every value does not make the mean resistant to extreme values."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -3454,11 +6032,6 @@
         ],
         "warning": "Resistance concerns positions and influence; it does not make every summary stay fixed."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D2",
@@ -3509,11 +6082,6 @@
           "Multiplying by 2.5 multiplies standard deviation by 2.5, giving 10 units."
         ],
         "warning": "Additive shifts affect the mean and position statistics, but not spread."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3578,11 +6146,6 @@
         ],
         "warning": "Standard deviation scales by the absolute multiplier; variance scales by its square."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D4",
@@ -3638,11 +6201,6 @@
         ],
         "warning": "A common shift moves the distribution without stretching it."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "KEY",
@@ -3688,6 +6246,639 @@
       }
     },
     {
+      "id": "a101",
+      "lesson": "1.A.5",
+      "archetype": "claim_from_quartile_meaning",
+      "variant": null,
+      "scenario": "A boxplot summarizes waiting times for many visitors. The times are distinct, and the quartiles are shown at labelled ticks.",
+      "prompt": "Which statement is supported by the boxplot?",
+      "choices": [
+        "The mean waiting time is exactly 10 minutes.",
+        "About 75% of waiting times lie between 6 and 14 minutes.",
+        "About 75% of waiting times are at or below 14 minutes.",
+        "There are more visitors from 6 to 10 minutes than from 10 to 14 minutes."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The right edge of the box is the third quartile, 14 minutes.",
+          "The third quartile marks approximately the 75th percentile; the whole box spans the middle 50%."
+        ],
+        "warning": "A boxplot shows quartiles rather than the mean or exact counts inside subintervals."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a101-wait-quartiles.svg",
+        "alt": "Boxplots with summaries {'label': 'Visitors', 'min': 2, 'q1': 6, 'median': 10, 'q3': 14, 'max': 22, 'outliers': []}.",
+        "width": 480,
+        "height": 174
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a102",
+      "lesson": "1.A.5",
+      "archetype": "identify_outliers_with_iqr_rule",
+      "variant": null,
+      "scenario": "A data set has first quartile 10 and third quartile 18. Under the 1.5 × IQR rule, outliers are strictly beyond the fences.",
+      "prompt": "Which statement about an observation of 30 is correct?",
+      "choices": [
+        "It is an outlier because it equals the upper fence.",
+        "It is an outlier because it exceeds the third quartile.",
+        "It is not an outlier because every value above the median is excluded from the rule.",
+        "It is not an outlier because it equals the upper fence."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The IQR is 18 − 10 = 8, so the upper fence is 18 + 1.5 × 8 = 30.",
+          "The rule classifies values greater than 30 as upper outliers; equality does not qualify."
+        ],
+        "warning": "Exceeding the third quartile is different from exceeding the upper outlier fence."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 23,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a103",
+      "lesson": "1.A.5",
+      "archetype": "five_number_summary_and_boxplot",
+      "variant": null,
+      "scenario": "Eight ordered repair times, in minutes, are 2, 4, 6, 8, 10, 12, 14, and 16. Use the medians of the lower and upper halves as quartiles.",
+      "prompt": "Which is the five-number summary?",
+      "choices": [
+        "2, 6, 9, 12, 16",
+        "2, 4, 8, 12, 16",
+        "2, 5, 9, 13, 16",
+        "4, 5, 9, 13, 14"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The median is (8 + 10)/2 = 9. The lower-half median is (4 + 6)/2 = 5, and the upper-half median is (12 + 14)/2 = 13.",
+          "Including the minimum 2 and maximum 16 gives 2, 5, 9, 13, 16."
+        ],
+        "warning": "For an even sample size, average the two middle observations at each median calculation."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 5,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 5,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 5,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "option",
+            "words": 5,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a104",
+      "lesson": "1.A.5",
+      "archetype": "effect_of_linear_transformation_on_statistics",
+      "variant": null,
+      "scenario": "An index X has mean 12 and standard deviation 3. A reversed index is defined by Y = 50 − 2X.",
+      "prompt": "Which pair gives the mean and standard deviation of Y?",
+      "choices": [
+        "Mean 26; standard deviation −6",
+        "Mean 26; standard deviation 6",
+        "Mean 74; standard deviation 6",
+        "Mean 26; standard deviation 44"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Apply the transformation to the mean: 50 − 2 × 12 = 26.",
+          "Multiply standard deviation by the absolute value of the scale factor: 2 × 3 = 6."
+        ],
+        "warning": "A negative scale reverses order, but standard deviation remains nonnegative."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a105",
+      "lesson": "1.A.5",
+      "archetype": "local_adding_center_observation",
+      "variant": null,
+      "scenario": "A data set contains four values: 2, 4, 6, and 8. A fifth observation equal to the original mean, 5, is added.",
+      "prompt": "Which statement is correct?",
+      "choices": [
+        "The mean stays the same, and the sample standard deviation decreases.",
+        "Both the mean and sample standard deviation stay the same.",
+        "The mean increases, and the sample standard deviation decreases.",
+        "The mean stays the same, and the sample standard deviation increases."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The original total is 20; adding 5 gives 25 across five values, so the mean remains 5.",
+          "The squared deviations still total 20, but the sample-variance denominator increases from 3 to 4, so the standard deviation decreases."
+        ],
+        "warning": "An added value at the mean contributes zero squared deviation but changes the denominator."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a106",
+      "lesson": "1.A.5",
+      "archetype": "local_boxplot_information_limit",
+      "variant": null,
+      "scenario": "A boxplot summarizes task durations. No individual observations are listed.",
+      "prompt": "Which quantity <u>cannot</u> be determined exactly from the boxplot?",
+      "choices": [
+        "The median task duration",
+        "The mean task duration",
+        "The first quartile of task duration",
+        "The interquartile range of task duration"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The median and quartiles are marked by the box and its internal line.",
+          "The mean depends on all individual values, which the boxplot does not display."
+        ],
+        "warning": "Different data sets can have the same boxplot and different means."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a106-task-summary.svg",
+        "alt": "Boxplots with summaries {'label': 'Tasks', 'min': 4, 'q1': 8, 'median': 12, 'q3': 16, 'max': 24, 'outliers': []}.",
+        "width": 480,
+        "height": 179
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 10,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 11,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a107",
+      "lesson": "1.A.5",
+      "archetype": "local_boxplot_gap_limit",
+      "variant": null,
+      "scenario": "A boxplot has a long whisker between its first quartile and minimum. No raw data are shown.",
+      "prompt": "Which statement about that interval is justified?",
+      "choices": [
+        "The long whisker proves that no observations lie inside the interval.",
+        "The long whisker proves that observations are evenly spaced inside the interval.",
+        "The boxplot alone does not reveal whether there is a gap inside the interval.",
+        "The interval must contain half of all observations."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A whisker marks a span between summary values.",
+          "It does not display the positions of individual observations within that span, so it cannot establish gaps or uniform spacing."
+        ],
+        "warning": "A drawn line in a boxplot is not a record of observations at every point."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a108",
+      "lesson": "1.A.5",
+      "archetype": "local_resistant_spread_choice",
+      "variant": null,
+      "scenario": "Most repair bills are modest, but a few very large bills create a long right tail. A shop wants a resistant summary of a typical bill and its spread.",
+      "prompt": "Which pair is most appropriate?",
+      "choices": [
+        "Mean and standard deviation",
+        "Mean and range",
+        "Median and range",
+        "Median and interquartile range"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The median depends on ordered position rather than the sizes of the largest bills.",
+          "The IQR describes the middle half and is also resistant to extreme values."
+        ],
+        "warning": "Pair a resistant center with a resistant spread when extreme values are influential."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a109",
+      "lesson": "1.A.5",
+      "archetype": "identify_outliers_with_iqr_rule",
+      "variant": null,
+      "scenario": "A set of repair times has first quartile 8 minutes and third quartile 16 minutes.",
+      "prompt": "Which of the following is an upper outlier by the 1.5 × IQR rule?",
+      "choices": [
+        "20",
+        "24",
+        "28",
+        "30"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The IQR is 16 − 8 = 8 minutes, so the upper fence is 16 + 12 = 28 minutes.",
+          "Only 30 is strictly above that fence."
+        ],
+        "warning": "A value on the fence is not beyond it."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 15,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a110",
+      "lesson": "1.A.5",
+      "archetype": "effect_of_linear_transformation_on_statistics",
+      "variant": null,
+      "scenario": "A distribution has median 8 and IQR 6. Every observation is multiplied by 3 and then increased by 5.",
+      "prompt": "Which pair gives the new median and IQR?",
+      "choices": [
+        "Median 29; IQR 18",
+        "Median 24; IQR 23",
+        "Median 29; IQR 23",
+        "Median 13; IQR 11"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "With a positive multiplier, transform the median directly: 3 × 8 + 5 = 29.",
+          "Quartile distances are multiplied by 3, so the new IQR is 18; the added 5 cancels in their difference."
+        ],
+        "warning": "Apply shifts to location measures, not to distances between observations."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.7",
+            "1.8"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
       "id": "a51",
       "lesson": "1.A.6",
       "archetype": "compare_boxplots_and_summaries",
@@ -3707,11 +6898,6 @@
           "The IQRs are 8 and 12 minutes. The ranges, including A's outlier, are 30 and 26 minutes. Group sizes are not shown."
         ],
         "warning": "Compare medians and box lengths directly; include plotted outliers in a range."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3785,11 +6971,6 @@
           "Both ranges equal 40 minutes, and R's median is higher. The table contains no passenger counts."
         ],
         "warning": "Five-number summaries show position and spread, not group sizes or means."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -3888,11 +7069,6 @@
         ],
         "warning": "The median and IQR do not replace the mean and standard deviation in a z-score."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D5",
@@ -3946,11 +7122,6 @@
           "The magnitude 1.4 measures that difference in standard deviations."
         ],
         "warning": "A standardized score has no original measurement unit and is not a ratio to the mean."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -4026,11 +7197,6 @@
         ],
         "warning": "Carry the standardized distance between distributions, rather than the raw score or raw point difference."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D5",
@@ -4086,11 +7252,6 @@
           "Omar's standardized score is (94 − 80)/10 = 1.4. Nia has the higher relative position."
         ],
         "warning": "A larger raw score or raw distance does not establish a higher standardized position."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -4163,11 +7324,6 @@
         ],
         "warning": "A positive unit conversion changes the measurement scale, not a value's relative position."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D7",
@@ -4227,11 +7383,6 @@
         ],
         "warning": "Compare the full frequency pattern in each graph, using the same horizontal scale."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D3",
@@ -4289,11 +7440,6 @@
           "Both groups have 40 runners, so each box represents about 20 runners despite the different box lengths."
         ],
         "warning": "Box length measures spread, while group size determines how many observations the box represents."
-      },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
       },
       "provenance": {
         "optionRoles": [
@@ -4375,11 +7521,6 @@
         ],
         "warning": "Divide the distance above the mean by the z-score; do not multiply."
       },
-      "calculator": {
-        "needed": false,
-        "status": "deferred",
-        "reason": "Calculator keypresses and screenshots are deferred by the author for this unit."
-      },
       "provenance": {
         "optionRoles": [
           "D6",
@@ -4409,6 +7550,651 @@
         },
         "sourceReview": {
           "method": "AI review against answer logic; numeric results independently checked where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a111",
+      "lesson": "1.A.6",
+      "archetype": "compare_histograms_dotplots_stemplots",
+      "variant": null,
+      "scenario": "Two teams record the number of puzzles completed. Each dot represents one member. The plots use the same scale.",
+      "prompt": "Which statement correctly compares the distributions?",
+      "choices": [
+        "Team B has a mean 3 higher and the same standard deviation as Team A.",
+        "Team B has both a larger mean and a larger standard deviation.",
+        "The means are equal because the plots have the same shape.",
+        "Team B has a mean 3 lower and the same standard deviation as Team A."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Every Team B value is 3 more than the corresponding ordered Team A value.",
+          "A translation raises the mean by 3 while preserving all deviations from the mean."
+        ],
+        "warning": "A distribution can move without becoming more variable."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a111-shifted-puzzles.svg",
+        "alt": "Dotplots showing Team A: 1, 2, 2, 3, 4; Team B: 4, 5, 5, 6, 7.",
+        "width": 480,
+        "height": 217
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 6,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a112",
+      "lesson": "1.A.6",
+      "archetype": "compare_histograms_dotplots_stemplots",
+      "variant": null,
+      "scenario": "Two routes each have 20 recorded travel times. The histograms use identical bins, with left endpoints included and right endpoints excluded.",
+      "prompt": "Which statement <u>must</u> be true?",
+      "choices": [
+        "Both median times lie from 10 to under 20 minutes.",
+        "The two means are exactly equal.",
+        "Route A has a smaller maximum time.",
+        "The two medians are exactly equal."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Each histogram has four observations below 10 minutes and 16 below 20 minutes.",
+          "Both middle positions, 10 and 11, lie in the 10-to-under-20 bin for both routes; exact values within that bin remain unknown."
+        ],
+        "warning": "Matching binned counts do not establish equal exact medians or means."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a112-binned-routes.svg",
+        "alt": "Two histograms, each with counts 4, 12, and 4 in bins 0–10, 10–20, and 20–30 minutes.",
+        "width": 480,
+        "height": 365
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a113",
+      "lesson": "1.A.6",
+      "archetype": "compare_relative_position_with_z_scores",
+      "variant": null,
+      "scenario": "For two quizzes, higher scores are better. Ari has a z-score of −0.4 on the first quiz and −1.2 on the second.",
+      "prompt": "Which statement correctly compares Ari’s relative performance?",
+      "choices": [
+        "Ari performed better relative to the group on the second quiz.",
+        "The relative performances are equal because both z-scores are negative.",
+        "Ari performed better relative to the group on the first quiz.",
+        "The comparison requires the original score units."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The z-score −0.4 is greater than −1.2 and is closer to the group mean from below.",
+          "Because higher scores are better, the higher z-score represents better relative performance."
+        ],
+        "warning": "Compare signed standardized positions, rather than their absolute magnitudes."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 25,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a114",
+      "lesson": "1.A.6",
+      "archetype": "compare_relative_position_with_z_scores",
+      "variant": null,
+      "scenario": "For two timed tasks, lower completion times are better. Noor’s z-scores are −1.5 for task A and 0.5 for task B.",
+      "prompt": "Which statement correctly compares Noor’s relative performance?",
+      "choices": [
+        "Task B was better because its z-score was positive.",
+        "Task A was worse because a negative z-score is always worse.",
+        "The performances were equal because both scores are within two standard deviations.",
+        "Task A was better because the time was farther below its task mean."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A negative time z-score indicates a faster-than-average completion.",
+          "For a measure where lower is better, −1.5 represents better relative performance than 0.5."
+        ],
+        "warning": "The direction of better performance depends on the meaning of the variable."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 25,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 8,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a115",
+      "lesson": "1.A.6",
+      "archetype": "local_z_score_without_normality",
+      "variant": null,
+      "scenario": "Repair durations are strongly skewed to the right, with mean 20 minutes and standard deviation 5 minutes. One repair lasts 30 minutes.",
+      "prompt": "Which statement is justified?",
+      "choices": [
+        "Its z-score is 2, but a percentile cannot be assigned from these summaries alone.",
+        "Its z-score is undefined because the distribution is skewed.",
+        "Its z-score is 2, so it must be at the 97.5th percentile.",
+        "Its z-score is 6 because 30 divided by 5 is 6."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Standardization gives (30 − 20)/5 = 2 regardless of the distribution shape.",
+          "A percentile depends on the distribution; a normal percentile rule is not justified by these skewed data."
+        ],
+        "warning": "Calculating a z-score does not require normality; a normal-model percentile does."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a116",
+      "lesson": "1.A.6",
+      "archetype": "z_score_calculation",
+      "variant": null,
+      "scenario": "A plant has mean weekly output 80 units and standard deviation 10 units. A revised reporting scale uses Y = 2X + 7. One week originally had output 95.",
+      "prompt": "What is that week’s z-score on the revised scale?",
+      "choices": [
+        "0.75",
+        "1.5",
+        "2.0",
+        "3.0"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The revised output is 197, the revised mean is 167, and the revised standard deviation is 20.",
+          "The standardized position is (197 − 167)/20 = 1.5, the same as before the positive transformation."
+        ],
+        "warning": "Transform both the observation and its distribution when standardizing."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a117",
+      "lesson": "1.A.6",
+      "archetype": "compare_boxplots_and_summaries",
+      "variant": null,
+      "scenario": "The boxplots show the number of days needed for two types of repair.",
+      "prompt": "Which statement is supported by the boxplots?",
+      "choices": [
+        "Type A has a larger median.",
+        "The medians and IQRs are equal, but type B has a larger overall range.",
+        "Type B has a larger IQR.",
+        "The two distributions have identical individual observations."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Both medians are 12 days, and both IQRs are 16 − 8 = 8 days.",
+          "The ranges are 20 − 4 = 16 days for A and 24 − 2 = 22 days for B."
+        ],
+        "warning": "Equal medians and IQRs do not make two complete distributions identical."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a117-repair-ranges.svg",
+        "alt": "Boxplots with summaries {'label': 'Type A', 'min': 4, 'q1': 8, 'median': 12, 'q3': 16, 'max': 20, 'outliers': []}; {'label': 'Type B', 'min': 2, 'q1': 8, 'median': 12, 'q3': 16, 'max': 24, 'outliers': []}.",
+        "width": 480,
+        "height": 205
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 13,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a118",
+      "lesson": "1.A.6",
+      "archetype": "compare_histograms_dotplots_stemplots",
+      "variant": null,
+      "scenario": "Two sets of batteries have lifetimes shown in the dotplots. All lifetimes in set B exceed all lifetimes in set A.",
+      "prompt": "Which statement <u>must</u> be true?",
+      "choices": [
+        "Set B has a larger standard deviation.",
+        "Set B has more observations.",
+        "Set B has a larger mean lifetime.",
+        "Set A has a larger median lifetime."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The largest A lifetime is 4 hours, while the smallest B lifetime is 7 hours.",
+          "Every B value exceeds every A value, so the B mean must exceed the A mean. Their equal shapes do not give B a larger spread."
+        ],
+        "warning": "Location and spread are separate features."
+      },
+      "stimulus": {
+        "type": "image",
+        "src": "assets/a118-battery-lifetimes.svg",
+        "alt": "Dotplots showing Set A: 1, 2, 2, 3, 4; Set B: 7, 8, 8, 9, 10.",
+        "width": 480,
+        "height": 217
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Deciding values printed or shown at labelled ticks."
+        }
+      }
+    },
+    {
+      "id": "a119",
+      "lesson": "1.A.6",
+      "archetype": "compare_relative_position_with_z_scores",
+      "variant": null,
+      "scenario": "A seedling is 18 centimeters tall in a group with mean 14 and standard deviation 2. Another is 27 centimeters tall in a group with mean 21 and standard deviation 3.",
+      "prompt": "Which statement correctly compares their relative heights?",
+      "choices": [
+        "Both seedlings are 2 standard deviations above their group means.",
+        "The second seedling has a higher standardized height because it is taller.",
+        "The first seedling is 4 standard deviations above its group mean.",
+        "The second seedling is 6 standard deviations above its group mean."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The first standardized height is (18 − 14)/2 = 2.",
+          "The second is (27 − 21)/3 = 2, so the relative positions are equal."
+        ],
+        "warning": "Raw differences from different means must be scaled by their corresponding standard deviations."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
+          "status": "No recorded human sign-off"
+        },
+        "lengthReview": [
+          {
+            "field": "scenario",
+            "words": 31,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          },
+          {
+            "field": "ask",
+            "words": 7,
+            "reason": "Deliberate concise extension; reviewed for sufficient context and clear choice logic."
+          }
+        ],
+        "boundsCheck": {
+          "status": "Not applicable: no graph reading."
+        }
+      }
+    },
+    {
+      "id": "a120",
+      "lesson": "1.A.6",
+      "archetype": "local_comparison_from_summary_limits",
+      "variant": null,
+      "scenario": "Two distributions have the same mean and the same positive standard deviation. No shape information or raw observations are provided.",
+      "prompt": "Which statement <u>must</u> be true?",
+      "choices": [
+        "The distributions have the same median.",
+        "The distributions have the same proportion above their mean.",
+        "The distributions have identical shapes.",
+        "An observation equal to the common mean has z-score 0 in either distribution."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A z-score subtracts the mean and divides by the standard deviation. At the mean, the numerator is zero.",
+          "Equal means and standard deviations alone do not determine medians, percentile shares, or shapes."
+        ],
+        "warning": "Two summary statistics do not uniquely identify a distribution."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": null,
+        "extensions": [
+          {
+            "reason": "Original context, data, and misconception wording; no unverified source build codes asserted."
+          }
+        ],
+        "original": {
+          "basis": "Fresh original item informed by archetype reasoning and CED topic objectives; synthetic data.",
+          "card_exemplars": [],
+          "ced": [
+            "1.9"
+          ],
+          "human_verified": false,
+          "authored": "2026-10-27",
+          "author": "Codex",
+          "optionRoleBasis": "Locally assigned KEY and D labels describe the authored options; no private-card build-code match is asserted."
+        },
+        "sourceReview": {
+          "method": "AI review of answer logic and distractors; numeric targets independently recomputed where applicable.",
           "status": "No recorded human sign-off"
         },
         "lengthReview": [],

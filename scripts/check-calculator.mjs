@@ -62,6 +62,8 @@ const manifest = JSON.parse(readFileSync('src/content/ap-statistics/course.json'
 for (const { id: unit } of manifest.units) {
   for (const question of JSON.parse(readFileSync(`src/content/ap-statistics/units/${unit}.json`, 'utf8')).questions) {
     const id = `${unit}:${question.id}`;
+    // Calculator support is optional. Absence means explanation-only content.
+    if (!question.calculator) continue;
     const calc = question.calculator || {};
     if (calc.status === 'deferred') {
       if (calc.needed || calc.steps || calc.distribution || !calc.reason) failures.push(`${id}: deferred calculator support must have a reason and no guide`);

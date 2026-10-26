@@ -36,6 +36,8 @@ For `summary_boxplots`, `min` and `max` are the non-outlier whisker endpoints. O
 
 A normal bound can be a number or `{ "percentile": 0.9 }`, and `mu` or `sd` can be `{ "solveFrom": { "value": 42, "percentile": 0.10 } }`. Prefer these to typed decimals so the figure and the question cannot drift apart.
 
+Additional reusable kinds: `comparison_dotplots` takes `groups` of labelled exact `values` on a shared `xLabel` scale; `study_flow` takes a `root` and two labelled `branches` with `end` text; `sampling_grid` takes named `groups`, zero-based `selected` indices, and a `title` to show whole-group selection.
+
 ## Style
 
 AP print style, rule S14 in `ap-style.md`: grayscale, black lines, dark gray for the highlighted event, light gray otherwise, axis titles on both axes of a chart, and a boxed legend for several series. Density curves carry no vertical axis. Keep a figure's information identical to what the question needs. A figure that prints a value the question asks for gives away the answer.

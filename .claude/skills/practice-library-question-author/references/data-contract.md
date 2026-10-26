@@ -20,6 +20,8 @@ Stimulus types supported by `src/app/stimulus.js`:
 
 Each archetype label must appear in `src/content/<course>/archetypes.json`. Provenance fields are defined in `src/schemas/question.schema.json`; `migratedFrom` or `original` records each item's origin.
 
+For explanation-only content, omit the optional `calculator` descriptor. The shared renderer hides its tab. This is the chosen mode for all Unit 1 questions.
+
 When calculator support is explicitly postponed, use `calculator: { needed: false, status: "deferred", reason: "..." }` with no steps, distribution, or screenshots. The shared solution renderer hides the calculator tab for deferred items. This status does not claim that calculator support is unnecessary.
 
 ## Structured answer choices
