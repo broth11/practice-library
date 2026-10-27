@@ -159,3 +159,10 @@ Authored 130 fresh questions, 80 in 3A and 50 in 3B, from the completed Unit 3 p
 Per-question provenance records CED alignment, family exemplar IDs where supported, and locally specified option-build evidence. Four local labels and two simulation variant departures are identified in `docs/UNIT-3-AUTHORING-REVIEW.md`, with the complete 10-per-lesson inventory and Claude calculator-pass handoff. All 130 calculator guides remain explicitly deferred by Ben. Existing calculator support is preserved.
 
 All numerical keys were independently recomputed and all four alternatives for each question reviewed. Standard checks include 50 numerical/comparison/decision targets, generated figures, counts, notation, and the deferral contract. Full desktop and phone rendering reviews covered all 130 questions with explanations; follow-up pattern and navigation checks are described in the authoring review. AI/tool verification only; no human sign-off or physical-calculator verification. The private-source leak scan is required before publication.
+
+
+## Working and explanation revision (2026-10-27)
+
+Reviewed eight original AP scoring-guide pages for expression-choice and explanatory patterns: SG_3.2#1, SG_3.3#6/#33/#41, SG_3.7#5, SG_3.10#20/#21, and SG_3.13#6. Original pages were rendered and visually inspected. Six have gray explanation boxes and two do not. No source prose, data, or images were copied. The SG_3.10#19 pooled-interval explanation defect was excluded.
+
+Nine Unit 3 items now assess working expressions, with all four options independently evaluated; all 130 explanations were expanded and independently AI-reviewed. Counts, stable IDs, keyed letters, and calculator metadata are retained. Shared formats now support two-row hypotheses and mathematical choices. Layout and verification details, including corrected source-scan field boundaries and two narrow stock-frame exceptions allowed by S16, are recorded in `docs/READABLE-WORKING-REVIEW.md`. These changes supersede the old horizontal-math-scroll limitation. AI/tool verification only.

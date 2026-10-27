@@ -1,10 +1,10 @@
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=6ac3484615b1';
-import { fitQuestion } from './question-fit.js?v=6ac3484615b1';
-import { renderStimulus } from './stimulus.js?v=6ac3484615b1';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=6ac3484615b1';
-import { renderStep, typesetMath } from './math.js?v=6ac3484615b1';
-import { mountCalculator } from './calculator.js?v=6ac3484615b1';
-import { renderChoice, choiceText } from './choices.js?v=6ac3484615b1';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=3aed6f13bcdb';
+import { fitQuestion } from './question-fit.js?v=3aed6f13bcdb';
+import { renderStimulus } from './stimulus.js?v=3aed6f13bcdb';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=3aed6f13bcdb';
+import { renderStep, typesetMath } from './math.js?v=3aed6f13bcdb';
+import { mountCalculator } from './calculator.js?v=3aed6f13bcdb';
+import { renderChoice, choiceText } from './choices.js?v=3aed6f13bcdb';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');

@@ -1,5 +1,13 @@
 # Handoff
 
+## Readable working and fuller explanations (2026-10-27, Codex)
+
+- Hypothesis answers now put H0 and Ha on separate rows. Nine Unit 3 items assess the correct working, and all 130 Unit 3 explanations include specific method justification and interpretation. Counts, stable IDs, keys, and calculator deferrals are preserved.
+- Reworked display mathematics across the bank into aligned lines; long sums and interval endpoints use intermediate steps. Working no longer depends on a horizontal scrollbar. The shared answer fitter measures nested math, and ordinary panes stack at narrow desktop widths.
+- All 550 questions were audited at phone width; all 130 Unit 3 questions and older explicit-math cases were checked on desktop. Identified cases were fixed and rechecked at 390, 787, and 1,107 CSS pixels. Standard checks and independent expression checks pass. See `docs/READABLE-WORKING-REVIEW.md` for exact scope and limits.
+- Corrected leak-scan field boundaries and untracked-file coverage. Exact stock ask frames have narrow documented S16 exceptions, with regression tests that retain true within-field leak detection. No source contexts/data were copied and no history was rewritten.
+- Publish the same source/build to the original Sites artifact and GitHub Pages through the PR workflow. No human or physical-calculator sign-off is claimed.
+
 ## Unit 3 production (2026-10-27, Codex)
 
 - Added 130 original questions in two modules: 80 in 3.A.1–3.A.8 and 50 in 3.B.1–3.B.5, ten per lesson. 3.A.6 combines both parts; 3.A.0 is excluded. The latest Unit 1 expansion and all Unit 2 guidance are retained.

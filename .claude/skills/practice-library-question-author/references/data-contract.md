@@ -52,3 +52,12 @@ Render `inline` with KaTeX `displayMode: false` and `display` with `displayMode:
 To add a unit, create one unit JSON module and one course-manifest entry. To add a course, create its directory, manifest, unit modules, and one catalog entry. Do not add question-specific branches to `src/app/app.js`; extend a shared renderer or data descriptor instead.
 
 Run `npm run check` and `npm run build`. `dist/` is generated and must never become the source used to revise questions.
+
+
+## Hypotheses and mathematical working choices
+
+Hypothesis pairs use `{ "type": "hypotheses", "null": "p = 0.30", "alternative": "p > 0.30" }`. The shared renderer supplies the H0 and Ha labels and keeps the statements on separate rows. Prose hypotheses use the same descriptor.
+
+A working choice uses `{ "type": "math", "tex": "...", "ariaLabel": "..." }`. Store explicit short aligned TeX lines and a complete spoken description. Do not put raw TeX in a prose choice or use a bare HTML line break to split inline math. The shared fitter measures the mathematical content and chooses fewer answer columns before shrinking text. Verify all four expressions mathematically, including algebraic equivalence. Retain a balance of working-selection and numerical-result items.
+
+Explanations should identify the statistic from the data, justify the procedure or formula, substitute named values, and interpret the result when appropriate. Make each step specific to the question. Do not copy source explanation wording or pad a formula with generic reminders.

@@ -313,7 +313,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}\\text{East: } & \\dfrac{18}{60} = 0.30 \\\\ \\text{West: } & \\dfrac{42}{70} = 0.60\\end{aligned}"
+            "tex": "\\begin{aligned}\\text{East: }  \\dfrac{18}{60}&=0.30\\\\\\text{West: }  \\dfrac{42}{70}&=0.60\\end{aligned}"
           },
           "The conditional distributions differ: window seating was more common among West visitors. That is evidence of an association in these data. It does not establish that location caused the choice."
         ],
@@ -6538,7 +6538,12 @@
       "solution": {
         "steps": [
           "All three detections must occur. Because the sensors operate independently, multiply their detection probabilities.",
-          "<span class=\"math\">P(all detect) = 0.80 × 0.90 × 0.95 = 0.684.</span>"
+          "Let A mean that all three detectors signal. Multiply the three probabilities because the detection events are independent.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}r&=0.80(0.90)\\\\&=0.72\\\\P(A)&=r(0.95)\\\\&=0.684\\end{aligned}"
+          }
         ],
         "warning": "A multiplies the failure probabilities. B is the probability that at least one sensor fails. D adds the probabilities and produces a value greater than 1."
       },
@@ -6725,13 +6730,13 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "There are two disjoint ways to arrive on time: Express and on time, or Standard and on time.",
+          "Let A mean express, B mean standard, and O mean on time. Multiply each service’s share by its own on-time probability.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}P(\\text{Express and on time}) &= 0.30 \\times 0.90 = 0.27 \\\\ P(\\text{Standard and on time}) &= 0.70 \\times 0.60 = 0.42\\end{aligned}"
+            "tex": "\\begin{aligned}P(A\\cap O)&=0.30(0.90)\\\\&=0.27\\\\P(B\\cap O)&=0.70(0.60)\\\\&=0.42\\end{aligned}"
           },
-          "Add the path probabilities: <span class=\"math\">P(on time) = 0.27 + 0.42 = 0.69.</span>"
+          "The two service categories are disjoint, so add 0.27 and 0.42 to obtain the overall on-time probability 0.69."
         ],
         "warning": "A counts only the Express path. B and D each return one conditional on-time rate and ignore the other delivery method."
       },
@@ -6839,8 +6844,12 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. Exactly one consists of two disjoint paths: the first flags and the second does not, or the first does not flag and the second does.",
-          "The path probabilities are <span class=\"math\">0.25 × 0.60 = 0.15</span> and <span class=\"math\">0.75 × 0.40 = 0.30.</span>",
+          "Correct. Exactly one consists of two disjoint paths: the first flags and the second does not, or the first does not flag and the second does. Let F and S denote those two paths, respectively.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}P(F)&=0.25(0.60)\\\\&=0.15\\\\P(S)&=0.75(0.40)\\\\&=0.30\\end{aligned}"
+          },
           "Add the disjoint paths: <span class=\"math\">0.15 + 0.30 = 0.45.</span>"
         ],
         "warning": "Multiplying only one path omits a valid case. Adding the two flagging rates includes packages flagged by both checks."
@@ -8567,11 +8576,11 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Compare the probability of enabling backups within each device group.",
+          "Compare the probability of enabling backups within each device group. Let E mean backups enabled, D mean desktop, and L mean laptop.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}P(\\text{enabled} \\mid \\text{desktop}) &= \\dfrac{18}{60} = 0.30 \\\\ P(\\text{enabled} \\mid \\text{laptop}) &= \\dfrac{12}{40} = 0.30\\end{aligned}"
+            "tex": "\\begin{aligned}P(E\\mid D)&=\\frac{18}{60}\\\\&=0.30\\\\P(E\\mid L)&=\\frac{12}{40}\\\\&=0.30\\end{aligned}"
           },
           "The overall enabled proportion is also <span class=\"math\">30/100 = 0.30.</span> Knowing device type does not change the probability of enabling backups, so the events are independent for this group."
         ],

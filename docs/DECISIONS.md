@@ -152,3 +152,10 @@ Ben explicitly requested pushing the completed expansion to main after Sites pub
 Add thirteen core lessons in two progressively loaded modules, with ten original questions per lesson and no optional opener. Treat 3.A.6 Parts A/B as one lesson. Follow the audited STS boundaries, especially known-p versus unpooled versus pooled formulas and the staged chi-square conditions/df instruction. Calculator guidance is explicitly deferred for all new items at Ben’s request. Preserve existing modules, calculator guides, audience, and both hosting histories.
 
 Use explicit display/aligned working and shared inference-notation support. Give every radio answer a complete text label so MathML-bearing hypothesis symbols do not disappear from its accessible name. Add generated proportion-dotplot and chi-square-density diagram kinds to the existing AP grayscale pipeline.
+
+
+## Readable mathematical working (2026-10-27)
+
+The author explicitly requested separate null/alternative lines, no horizontal scrolling to read mathematical working, more expression-selection questions, and fuller explanations. Use structured hypothesis pairs and explicit display-math choices. Align short working at relation signs, defining intermediate quantities rather than forcing a wide formula into one line. Measure nested choice mathematics when fitting grids. At ordinary narrow-desktop widths up to 1,100 CSS pixels, stack the question and explanation panes; preserve calculator-mode layout. This supersedes the earlier math-scroll allowance.
+
+Keep a mixture of expression selection and numerical answers. Explanations must justify the procedure and connect the data to the formula and contextual conclusion. AP scoring-guide boxes inform that method but are not text to copy.

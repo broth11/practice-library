@@ -1,5 +1,7 @@
 # Unit 3 authoring review
 
+The subsequent `READABLE-WORKING-REVIEW.md` supersedes the horizontal-scroll limitation below and records nine expression-choice conversions and fuller explanations.
+
 27 October 2026. Exactly 130 original questions: 80 in 3.A and 50 in 3.B. The optional 3.A.0 opener is excluded; 3.A.6 Parts A and B share ten questions. The four pre-existing modules and their 420 questions are preserved.
 
 ## Coverage and calculator-pass inventory

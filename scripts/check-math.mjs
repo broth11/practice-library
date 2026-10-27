@@ -36,7 +36,7 @@ for (const { id: unit } of manifest.units) {
     const id = `${unit}:${q.id}`;
     prose(id, 'scenario', q.scenario);
     prose(id, 'prompt', q.prompt);
-    q.choices.forEach((choice, i) => { if (typeof choice === 'string') prose(id, `choice ${'ABCD'[i]}`, choice); });
+    q.choices.forEach((choice, i) => { if (typeof choice === 'string') prose(id, `choice ${'ABCD'[i]}`, choice); else if (choice.type === 'math') node(id, `choice ${'ABCD'[i]}`, {type:'math',mode:'display',tex:choice.tex}); else if (choice.type === 'hypotheses') {prose(id,'null hypothesis',choice.null); prose(id,'alternative hypothesis',choice.alternative);} });
     q.solution.steps.forEach((step, i) => (typeof step === 'string' ? prose(id, `step ${i + 1}`, step) : node(id, `step ${i + 1}`, step)));
     prose(id, 'warning', q.solution.warning);
   }

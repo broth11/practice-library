@@ -48,16 +48,22 @@
     "lesson": "3.A.1"
   },
   "3-a:u3a05": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "1-Phi((.86-.80)/.04)",
-    "correctText": "0.0668",
+    "correctText": "P(Z > (0.86 − 0.80)/0.04)",
     "optionReasons": {
-      "0.0668": "Follows the stated parameter, model, and requested event.",
-      "0.1336": "Doubles a one-sided tail.",
-      "0.4761": "Treats the raw difference as a z-score.",
-      "0.9332": "Uses the lower tail."
+      "P(Z > (0.86 − 0.80)/0.04)": "Follows the stated parameter, model, and requested event.",
+      "2 P(Z > (0.86 − 0.80)/0.04)": "Doubles a one-sided tail.",
+      "P(Z > 0.86 − 0.80)": "Treats the raw difference as a z-score.",
+      "P(Z < (0.86 − 0.80)/0.04)": "Uses the lower tail."
     },
-    "lesson": "3.A.1"
+    "lesson": "3.A.1",
+    "optionFormulas": [
+      "1-Phi((.86-.80)/.04)",
+      "2*(1-Phi((.86-.80)/.04))",
+      "1-Phi(.86-.80)",
+      "Phi((.86-.80)/.04)"
+    ]
   },
   "3-a:u3a06": {
     "kind": "numeric",
@@ -401,40 +407,58 @@
     "lesson": "3.A.4"
   },
   "3-a:u3a34": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "Math.sqrt((100/400)*(1-100/400)/400)",
-    "correctText": "0.02165",
+    "correctText": "Square root of 0.25(0.75)/400",
     "optionReasons": {
-      "0.00047": "Uses estimated variance rather than SE.",
-      "0.02165": "Follows the stated parameter, model, and requested event.",
-      "0.43301": "Omits sample size.",
-      "0.04330": "Reports twice the estimated SE rather than SE."
+      "0.25(0.75)/400": "Uses estimated variance rather than SE.",
+      "Square root of 0.25(0.75)/400": "Follows the stated parameter, model, and requested event.",
+      "2 times the square root of 0.25(0.75)/400": "Reports twice the estimated SE rather than SE.",
+      "Square root of 0.25(0.75)": "Omits sample size."
     },
-    "lesson": "3.A.4"
+    "lesson": "3.A.4",
+    "optionFormulas": [
+      ".25*.75/400",
+      "Math.sqrt(.25*.75/400)",
+      "2*Math.sqrt(.25*.75/400)",
+      "Math.sqrt(.25*.75)"
+    ]
   },
   "3-a:u3a35": {
-    "kind": "interval",
+    "kind": "expression",
     "target": "[190/500-1.96*Math.sqrt(.38*.62/500),190/500+1.96*Math.sqrt(.38*.62/500)]",
-    "correctText": "(0.3375, 0.4225)",
+    "correctText": "SE = square root of 0.2356/500; interval = 0.38 plus or minus 1.96 SE",
     "optionReasons": {
-      "(0.5775, 0.6625)": "Centers at the complementary proportion.",
-      "(0.3362, 0.4238)": "Uses conservative 0.50 variance despite observed data.",
-      "(0.3375, 0.4225)": "Follows the stated parameter, model, and requested event.",
-      "(0.3583, 0.4017)": "Uses one SE instead of 1.96 SE."
+      "SE = square root of 0.2356/500; interval = 0.62 plus or minus 1.96 SE": "Centers at the complementary proportion.",
+      "SE = square root of 0.25/500; interval = 0.38 plus or minus 1.96 SE": "Uses conservative 0.50 variance despite observed data.",
+      "SE = square root of 0.2356/500; interval = 0.38 plus or minus 1.96 SE": "Follows the stated parameter, model, and requested event.",
+      "SE = square root of 0.2356/500; interval = 0.38 plus or minus 1 SE": "Uses one SE instead of 1.96 SE."
     },
-    "lesson": "3.A.4"
+    "lesson": "3.A.4",
+    "optionFormulas": [
+      "[0.62-1.96*Math.sqrt(0.2356/500),0.62+1.96*Math.sqrt(0.2356/500)]",
+      "[0.38-1.96*Math.sqrt(0.25/500),0.38+1.96*Math.sqrt(0.25/500)]",
+      "[0.38-1.96*Math.sqrt(0.2356/500),0.38+1.96*Math.sqrt(0.2356/500)]",
+      "[0.38-1*Math.sqrt(0.2356/500),0.38+1*Math.sqrt(0.2356/500)]"
+    ]
   },
   "3-a:u3a36": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "1.96*Math.sqrt((360/600)*(240/600)/600)",
-    "correctText": "0.0392",
+    "correctText": "1.96 times the square root of 0.60(0.40)/600",
     "optionReasons": {
-      "0.0008": "Omits the square root.",
-      "0.0200": "Reports SE instead of margin.",
-      "0.0392": "Follows the stated parameter, model, and requested event.",
-      "0.0784": "Reports full interval width."
+      "1.96 times 0.60(0.40)/600": "Omits the square root.",
+      "Square root of 0.60(0.40)/600": "Reports SE instead of margin.",
+      "1.96 times the square root of 0.60(0.40)/600": "Follows the stated parameter, model, and requested event.",
+      "2 times 1.96 times the square root of 0.60(0.40)/600": "Reports full interval width."
     },
-    "lesson": "3.A.4"
+    "lesson": "3.A.4",
+    "optionFormulas": [
+      "1.96*.6*.4/600",
+      "Math.sqrt(.6*.4/600)",
+      "1.96*Math.sqrt(.6*.4/600)",
+      "2*1.96*Math.sqrt(.6*.4/600)"
+    ]
   },
   "3-a:u3a37": {
     "kind": "interval",
@@ -497,16 +521,22 @@
     "lesson": "3.A.5"
   },
   "3-a:u3a42": {
-    "kind": "interval",
+    "kind": "expression",
     "target": "[.6-1.645*Math.sqrt(.6*.4/200),.6+1.645*Math.sqrt(.6*.4/200)]",
-    "correctText": "(0.5430, 0.6570)",
+    "correctText": "SE = square root of 0.24/200; interval = 0.60 plus or minus 1.645 SE",
     "optionReasons": {
-      "(0.5430, 0.6570)": "Follows the stated parameter, model, and requested event.",
-      "(0.5321, 0.6679)": "Uses the 95% multiplier.",
-      "(0.5654, 0.6346)": "Uses one SE rather than the requested critical multiplier.",
-      "(0.3430, 0.4570)": "Centers at the complementary proportion."
+      "SE = square root of 0.24/200; interval = 0.60 plus or minus 1.96 SE": "Uses the 95% multiplier.",
+      "SE = square root of 0.24/200; interval = 0.60 plus or minus 1 SE": "Uses one SE rather than the requested critical multiplier.",
+      "SE = square root of 0.24/200; interval = 0.40 plus or minus 1.645 SE": "Centers at the complementary proportion.",
+      "SE = square root of 0.24/200; interval = 0.60 plus or minus 1.645 SE": "Follows the stated parameter, model, and requested event."
     },
-    "lesson": "3.A.5"
+    "lesson": "3.A.5",
+    "optionFormulas": [
+      "[0.6-1.96*Math.sqrt(0.24/200),0.6+1.96*Math.sqrt(0.24/200)]",
+      "[0.6-1*Math.sqrt(0.24/200),0.6+1*Math.sqrt(0.24/200)]",
+      "[0.4-1.645*Math.sqrt(0.24/200),0.4+1.645*Math.sqrt(0.24/200)]",
+      "[0.6-1.645*Math.sqrt(0.24/200),0.6+1.645*Math.sqrt(0.24/200)]"
+    ]
   },
   "3-a:u3a43": {
     "kind": "numeric",
@@ -749,16 +779,22 @@
     "lesson": "3.A.7"
   },
   "3-a:u3a63": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "(90/200-.4)/Math.sqrt(.4*.6/200)",
-    "correctText": "1.443",
+    "correctText": "(0.45 − 0.40) divided by the square root of 0.40(0.60)/200",
     "optionReasons": {
-      "-1.443": "Reverses the numerator.",
-      "1.421": "Uses the interval SE.",
-      "1.443": "Follows the stated parameter, model, and requested event.",
-      "41.667": "Uses variance instead of SD."
+      "(0.40 − 0.45) divided by the square root of 0.40(0.60)/200": "Reverses the numerator.",
+      "(0.45 − 0.40) divided by the square root of 0.45(0.55)/200": "Uses the interval SE.",
+      "(0.45 − 0.40) divided by the square root of 0.40(0.60)/200": "Follows the stated parameter, model, and requested event.",
+      "(0.45 − 0.40) divided by 0.40(0.60)/200": "Uses variance instead of SD."
     },
-    "lesson": "3.A.7"
+    "lesson": "3.A.7",
+    "optionFormulas": [
+      "(.4-.45)/Math.sqrt(.4*.6/200)",
+      "(.45-.4)/Math.sqrt(.45*.55/200)",
+      "(.45-.4)/Math.sqrt(.4*.6/200)",
+      "(.45-.4)/(.4*.6/200)"
+    ]
   },
   "3-a:u3a64": {
     "kind": "concept",
@@ -1098,28 +1134,40 @@
     "lesson": "3.B.2"
   },
   "3-b:u3b12": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "Math.sqrt((84/140)*(56/140)/140+(90/180)*(90/180)/180)",
-    "correctText": "0.05571",
+    "correctText": "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = square root of vA + vB",
     "optionReasons": {
-      "0.01804": "Subtracts variance terms.",
-      "0.05571": "Follows the stated parameter, model, and requested event.",
-      "0.05613": "Uses a null-pooled estimate for an interval.",
-      "0.10918": "Reports the 95% margin instead of SE."
+      "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = square root of vA − vB": "Subtracts variance terms.",
+      "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = square root of vA + vB": "Follows the stated parameter, model, and requested event.",
+      "Pooled c = 174/320; vA = c(1−c)/140 and vB = c(1−c)/180; SE = square root of vA + vB": "Uses a null-pooled estimate for an interval.",
+      "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = 1.96 times square root of vA + vB": "Reports the 95% margin instead of SE."
     },
-    "lesson": "3.B.2"
+    "lesson": "3.B.2",
+    "optionFormulas": [
+      "Math.sqrt(.6*.4/140-.5*.5/180)",
+      "Math.sqrt(.6*.4/140+.5*.5/180)",
+      "Math.sqrt((174/320)*(146/320)*(1/140+1/180))",
+      "1.96*Math.sqrt(.6*.4/140+.5*.5/180)"
+    ]
   },
   "3-b:u3b13": {
-    "kind": "interval",
+    "kind": "expression",
     "target": "[.15-1.96*Math.sqrt(.7*.3/200+.55*.45/200),.15+1.96*Math.sqrt(.7*.3/200+.55*.45/200)]",
-    "correctText": "(0.0563, 0.2437)",
+    "correctText": "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1.96 times square root of vA + vB",
     "optionReasons": {
-      "(0.1022, 0.1978)": "Uses one SE instead of 1.96 SE.",
-      "(0.0713, 0.2287)": "Uses the 90% multiplier 1.645.",
-      "(0.0563, 0.2437)": "Follows the stated parameter, model, and requested event.",
-      "(−0.2437, −0.0563)": "Reverses group order."
+      "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1.645 times square root of vA + vB": "Uses the 90% multiplier 1.645.",
+      "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = -0.15 plus or minus 1.96 times square root of vA + vB": "Reverses group order.",
+      "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1 times square root of vA + vB": "Uses one SE instead of 1.96 SE.",
+      "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1.96 times square root of vA + vB": "Correct: uses A minus B, independent unpooled variance contributions, and the 95% multiplier 1.96."
     },
-    "lesson": "3.B.2"
+    "lesson": "3.B.2",
+    "optionFormulas": [
+      "[0.15-1.645*Math.sqrt(.7*.3/200+.55*.45/200),0.15+1.645*Math.sqrt(.7*.3/200+.55*.45/200)]",
+      "[-0.15-1.96*Math.sqrt(.7*.3/200+.55*.45/200),-0.15+1.96*Math.sqrt(.7*.3/200+.55*.45/200)]",
+      "[0.15-1*Math.sqrt(.7*.3/200+.55*.45/200),0.15+1*Math.sqrt(.7*.3/200+.55*.45/200)]",
+      "[0.15-1.96*Math.sqrt(.7*.3/200+.55*.45/200),0.15+1.96*Math.sqrt(.7*.3/200+.55*.45/200)]"
+    ]
   },
   "3-b:u3b14": {
     "kind": "concept",
@@ -1242,16 +1290,22 @@
     "lesson": "3.B.3"
   },
   "3-b:u3b24": {
-    "kind": "numeric",
+    "kind": "expression",
     "target": "(90/150-66/150)/Math.sqrt((156/300)*(144/300)*(1/150+1/150))",
-    "correctText": "2.774",
+    "correctText": "Pooled proportion 0.52; null variance = 0.52(0.48)(2/150); z = (0.60 − 0.44)/square root of null variance",
     "optionReasons": {
-      "-2.774": "Reverses subtraction order.",
-      "2.774": "Follows the stated parameter, model, and requested event.",
-      "2.810": "Uses the unpooled interval SE.",
-      "5.547": "Combines sample sizes as a single sample."
+      "Pooled proportion 0.52; null variance = 0.52(0.48)(2/150); z = (0.44 − 0.60)/square root of null variance": "Reverses subtraction order.",
+      "Pooled proportion 0.52; null variance = 0.52(0.48)(2/150); z = (0.60 − 0.44)/square root of null variance": "Follows the stated parameter, model, and requested event.",
+      "Unpooled variance = 0.60(0.40)/150 + 0.44(0.56)/150; z = (0.60 − 0.44)/square root of variance": "Uses the unpooled interval SE.",
+      "Pooled proportion 0.52; null variance = 0.52(0.48)/300; z = (0.60 − 0.44)/square root of null variance": "Combines sample sizes as a single sample."
     },
-    "lesson": "3.B.3"
+    "lesson": "3.B.3",
+    "optionFormulas": [
+      "(.44-.6)/Math.sqrt(.52*.48*(2/150))",
+      "(.6-.44)/Math.sqrt(.52*.48*(2/150))",
+      "(.6-.44)/Math.sqrt(.6*.4/150+.44*.56/150)",
+      "(.6-.44)/Math.sqrt(.52*.48/300)"
+    ]
   },
   "3-b:u3b25": {
     "kind": "numeric",
