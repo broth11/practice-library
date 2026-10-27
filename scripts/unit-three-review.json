@@ -1,0 +1,1569 @@
+{
+  "3-a:u3a01": {
+    "kind": "numeric",
+    "target": "0.36",
+    "correctText": "0.3600",
+    "optionReasons": {
+      "0.3600": "Follows the stated parameter, model, and requested event.",
+      "0.6400": "Uses the complementary category.",
+      "51.8400": "Reports a mean count rather than a mean proportion.",
+      "0.0400": "Uses the standard deviation as the mean."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a02": {
+    "kind": "numeric",
+    "target": "Math.sqrt(.28*.72/200)",
+    "correctText": "0.03175",
+    "optionReasons": {
+      "0.00101": "Returns variance without the square root.",
+      "0.03175": "Follows the stated parameter, model, and requested event.",
+      "0.20160": "Omits division by sample size and the square root.",
+      "0.11940": "Divides by the square root of n inside another square root."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a03": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Over many samples, the sample proportions average about 0.42.",
+    "optionReasons": {
+      "Every sample contains exactly 42 bicycle requests.": "Confuses a proportion with an exact count.",
+      "Each sample proportion is exactly 0.42.": "Ignores sample-to-sample variability.",
+      "About 42% of samples have a proportion of 0.80.": "Confuses the mean with a probability of a particular statistic.",
+      "Over many samples, the sample proportions average about 0.42.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a04": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Both center at 0.25; the n = 400 distribution has half the standard deviation.",
+    "optionReasons": {
+      "The n = 400 distribution centers at 1.00 and has the same standard deviation.": "Multiplies the mean by the sample-size factor.",
+      "Both center at 0.25; the n = 400 distribution has twice the standard deviation.": "Reverses the effect of larger samples.",
+      "Both center at 0.25; the n = 400 distribution has half the standard deviation.": "Follows the stated parameter, model, and requested event.",
+      "Both center at 0.25; the n = 400 distribution has one-fourth the standard deviation.": "Treats SD as inversely proportional to n."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a05": {
+    "kind": "numeric",
+    "target": "1-Phi((.86-.80)/.04)",
+    "correctText": "0.0668",
+    "optionReasons": {
+      "0.0668": "Follows the stated parameter, model, and requested event.",
+      "0.1336": "Doubles a one-sided tail.",
+      "0.4761": "Treats the raw difference as a z-score.",
+      "0.9332": "Uses the lower tail."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a06": {
+    "kind": "numeric",
+    "target": "Phi((.68-.60)/.04)-Phi((.56-.60)/.04)",
+    "correctText": "0.8186",
+    "optionReasons": {
+      "0.1587": "Uses only the left excluded tail.",
+      "0.1814": "Returns the probability outside the interval.",
+      "0.8186": "Follows the stated parameter, model, and requested event.",
+      "0.9772": "Omits the lower bound."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a07": {
+    "kind": "comparison",
+    "target": "binom(50,.6,Math.floor(.70*50)+1,50)>binom(100,.6,Math.floor(.70*100)+1,100) ? 1 : 0",
+    "correctText": "The event is more likely for n = 50; the cutoffs are 36 and 71 successes.",
+    "optionReasons": {
+      "The event is more likely for n = 100; the cutoffs are 36 and 71 successes.": "Reverses the verified probability ordering.",
+      "The probabilities are equal because the population success probability stays 0.60.": "Ignores the effect of n on sample-proportion variability.",
+      "The event is more likely for n = 50; the cutoffs are 35 and 70 successes.": "Uses inclusive cutoffs for a strict inequality.",
+      "The event is more likely for n = 50; the cutoffs are 36 and 71 successes.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.1",
+    "expected": 1
+  },
+  "3-a:u3a08": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Its center stays approximately the same and its spread decreases.",
+    "optionReasons": {
+      "Its center stays approximately the same and its spread increases.": "Reverses the spread effect.",
+      "Its center decreases and its spread stays the same.": "Changes the center while ignoring the sample-size effect.",
+      "Its center stays approximately the same and its spread decreases.": "Follows the stated parameter, model, and requested event.",
+      "Its center increases and its spread decreases.": "Treats larger samples as increasing the population proportion."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a09": {
+    "kind": "pair",
+    "target": "[.75,Math.sqrt(.75*.25/48)]",
+    "correctText": "Mean 0.75; SD 0.0625",
+    "optionReasons": {
+      "Mean 0.25; SD 0.0625": "Centers on the complementary outcome.",
+      "Mean 0.75; SD 0.0625": "Follows the stated parameter, model, and requested event.",
+      "Mean 36; SD 3": "Uses binomial count summaries.",
+      "Mean 0.75; SD 0.00390625": "Uses the proportion variance as its SD."
+    },
+    "lesson": "3.A.1",
+    "expected": [
+      0.75,
+      0.0625
+    ]
+  },
+  "3-a:u3a10": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "One observation is the proportion with reusable packaging in one sample of 50 parcels.",
+    "optionReasons": {
+      "One observation is the proportion with reusable packaging in one sample of 50 parcels.": "Follows the stated parameter, model, and requested event.",
+      "One observation is the packaging status of one parcel.": "Describes the population or raw data distribution.",
+      "One observation is the fixed population proportion 0.32.": "Substitutes a parameter for a random statistic.",
+      "One observation is the total number of parcels sampled across all repetitions.": "Combines samples instead of recording each statistic."
+    },
+    "lesson": "3.A.1"
+  },
+  "3-a:u3a11": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "R is unbiased and S is biased, regardless of their relative spreads.",
+    "optionReasons": {
+      "R is unbiased and S is biased, regardless of their relative spreads.": "Follows the stated parameter, model, and requested event.",
+      "Both are unbiased because their means are close to 0.46.": "Treats small bias as zero bias.",
+      "S is unbiased because it has less variability.": "Confuses precision with unbiasedness.",
+      "R is biased because some estimates differ from 0.46.": "Requires every realized estimate to equal the parameter."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a12": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The large-counts check fails because the expected defect count is 4.8.",
+    "optionReasons": {
+      "The model is justified because n exceeds 30.": "Uses an irrelevant universal sample-size rule.",
+      "The model is justified because 55.2 expected nondefects exceeds 10.": "Checks only one category.",
+      "The model fails because the observed defect count must equal 4.8.": "Requires a random observed count to equal its expectation.",
+      "The large-counts check fails because the expected defect count is 4.8.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a13": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The sample exceeds 10% of households, so the usual independence approximation is unjustified.",
+    "optionReasons": {
+      "The population proportion must be 0.50 for the formula to apply.": "Incorrectly requires maximum variance.",
+      "Random selection guarantees independent draws without replacement at any sampling fraction.": "Ignores dependence at a large sampling fraction.",
+      "The sample exceeds 10% of households, so the usual independence approximation is unjustified.": "Follows the stated parameter, model, and requested event.",
+      "There are fewer than 10 expected composting households.": "120 expected successes passes."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a14": {
+    "kind": "numeric",
+    "target": "Math.ceil(Math.max(10/.12,10/.88))",
+    "correctText": "84",
+    "optionReasons": {
+      "12": "Checks only failures.",
+      "30": "Uses the n = 30 shortcut.",
+      "83": "Rounds the binding threshold down.",
+      "84": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a15": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The larger response count does not by itself establish that selection bias is absent.",
+    "optionReasons": {
+      "The larger response count does not by itself establish that selection bias is absent.": "Follows the stated parameter, model, and requested event.",
+      "The larger response count proves the estimator is unbiased.": "Confuses precision with representative selection.",
+      "Voluntary response proves the estimate is numerically above the population proportion.": "Claims a direction of bias without evidence.",
+      "An estimator is unbiased whenever its reported decimal has more digits.": "Confuses numerical formatting with expectation."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a16": {
+    "kind": "numeric",
+    "target": "Phi((.60-.64)/Math.sqrt(.64*.36/400))",
+    "correctText": "0.0478",
+    "optionReasons": {
+      "0.0000": "Uses variance instead of SD.",
+      "0.0478": "Follows the stated parameter, model, and requested event.",
+      "0.4751": "Uses p as the SD.",
+      "0.9522": "Uses the complementary upper tail."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a17": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The p = 0.50 process has greater SD because 0.50(0.50) exceeds 0.20(0.80).",
+    "optionReasons": {
+      "The p = 0.20 process has greater SD because rare outcomes are always more variable.": "Reverses the variance comparison.",
+      "The p = 0.50 process has greater SD because its sampling distribution has a larger bias.": "Confuses center and bias with spread.",
+      "The p = 0.50 process has greater SD because 0.50(0.50) exceeds 0.20(0.80).": "Follows the stated parameter, model, and requested event.",
+      "Both have equal SD because n is the same.": "Ignores the p(1-p) factor."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a18": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Both estimators are unbiased, and M is more precise.",
+    "optionReasons": {
+      "Both estimators equal 0.30 in every sample.": "Confuses expectation with a realized value.",
+      "Both estimators are unbiased, and M is more precise.": "Follows the stated parameter, model, and requested event.",
+      "Only M is unbiased because it has the smaller SD.": "Uses variability to define bias.",
+      "Only N is unbiased because it varies more.": "Treats greater variation as more representative."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a19": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The sample is under 10% of the collection and expected counts are 30 foil and 90 nonfoil.",
+    "optionReasons": {
+      "The sample is under 10% of the collection and expected counts are 30 foil and 90 nonfoil.": "Follows the stated parameter, model, and requested event.",
+      "The observed sample must contain exactly 30 foil cards.": "Treats an expectation as a guaranteed observation.",
+      "The count check uses 0.50 because the sample proportion is unknown.": "Substitutes conservative planning p for known population p.",
+      "A population of foil indicators is itself normal.": "Confuses the categorical population with the sampling distribution."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a20": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The sample proportion estimates the proportion among all registered district patrons.",
+    "optionReasons": {
+      "The sample proportion estimates the number of e-books in the district.": "Changes both variable and units.",
+      "The population proportion estimates the proportion in this particular sample.": "Reverses statistic and parameter.",
+      "The sample size estimates the proportion among all district residents.": "Uses the wrong statistic and population.",
+      "The sample proportion estimates the proportion among all registered district patrons.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.2"
+  },
+  "3-a:u3a21": {
+    "kind": "numeric",
+    "target": "(.38+.50)/2",
+    "correctText": "0.4400",
+    "optionReasons": {
+      "0.0600": "Reports the margin of error.",
+      "0.1200": "Reports the full width.",
+      "0.4400": "Follows the stated parameter, model, and requested event.",
+      "0.8800": "Adds endpoints without dividing by two."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a22": {
+    "kind": "numeric",
+    "target": "(.69-.57)/2",
+    "correctText": "0.0600",
+    "optionReasons": {
+      "0.0600": "Follows the stated parameter, model, and requested event.",
+      "0.1200": "Uses the full interval width.",
+      "0.6300": "Uses the midpoint.",
+      "1.2600": "Uses the sum of endpoints."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a23": {
+    "kind": "interval",
+    "target": "[.46-2*.025,.46+2*.025]",
+    "correctText": "(0.410, 0.510)",
+    "optionReasons": {
+      "(0.490, 0.590)": "Centers the interval at the complementary proportion.",
+      "(0.410, 0.510)": "Follows the stated parameter, model, and requested event.",
+      "(0.435, 0.485)": "Uses only one SE.",
+      "(0.360, 0.560)": "Uses four SE on each side."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a24": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "We are 95% confident that 31% to 39% of all adult residents own a bicycle.",
+    "optionReasons": {
+      "We are 95% confident that 31% to 39% of all adult residents own a bicycle.": "Follows the stated parameter, model, and requested event.",
+      "Between 31% and 39% of individual residents have a 95% chance of owning a bicycle.": "Assigns confidence to individual outcomes.",
+      "95% of the sampled residents have ownership proportions between 0.31 and 0.39.": "Treats individuals as possessing sample proportions.",
+      "The probability that the fixed population proportion changes into this interval is 0.95.": "Treats a fixed parameter as randomly changing."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a25": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "In the long run, about 90% of the constructed intervals contain the population proportion.",
+    "optionReasons": {
+      "Exactly 90 of every 100 intervals must contain the population proportion.": "Turns long-run coverage into a fixed batch count.",
+      "About 90% of the population proportions lie in each interval.": "Treats one fixed parameter as a population of parameters.",
+      "About 90% of individual sample values fall inside each interval.": "Confuses parameter coverage with data coverage.",
+      "In the long run, about 90% of the constructed intervals contain the population proportion.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a26": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Each realized interval either contains the fixed population proportion or does not.",
+    "optionReasons": {
+      "The parameter is in exactly 95% of each realized interval.": "Treats coverage as a fraction of interval length.",
+      "The overlap proves both intervals contain the parameter.": "Uses overlap as proof of coverage.",
+      "Each realized interval either contains the fixed population proportion or does not.": "Follows the stated parameter, model, and requested event.",
+      "The population proportion varies from 0.40 to 0.51 between the samples.": "Moves the fixed parameter to match sample variation."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a27": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The interval supports a population proportion above 0.60.",
+    "optionReasons": {
+      "The interval shows that exactly 62% of the sampled businesses accept digital invoices.": "Uses an endpoint as the sample statistic.",
+      "The interval supports a population proportion above 0.60.": "Follows the stated parameter, model, and requested event.",
+      "The interval supports a population proportion above 0.68.": "Ignores values below 0.68 inside the interval.",
+      "The interval proves the population proportion is 0.66.": "Treats the midpoint as the exact parameter."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a28": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "It is half as large.",
+    "optionReasons": {
+      "It is half as large.": "Follows the stated parameter, model, and requested event.",
+      "It is one-fourth as large.": "Uses inverse n rather than inverse square-root n.",
+      "It is twice as large.": "Reverses the precision effect.",
+      "It is unchanged.": "Ignores sample size."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a29": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The 99% interval is wider because it uses a larger critical value.",
+    "optionReasons": {
+      "The 99% interval is narrower because greater confidence means greater precision.": "Confuses confidence and precision.",
+      "The intervals have different centers because their confidence levels differ.": "Changes the point estimate without changing the sample.",
+      "The intervals have equal widths because the sample size is unchanged.": "Ignores the critical multiplier.",
+      "The 99% interval is wider because it uses a larger critical value.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a30": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The estimate extends four percentage points on each side, giving 50% to 58%.",
+    "optionReasons": {
+      "The interval runs from 52% to 56% because four points is the full width.": "Uses the margin as the full width.",
+      "The population proportion is guaranteed to differ from 54% by exactly four points.": "Turns an uncertainty margin into an exact error.",
+      "The estimate extends four percentage points on each side, giving 50% to 58%.": "Follows the stated parameter, model, and requested event.",
+      "The method accounts for every possible nonresponse or wording bias.": "Attributes nonsampling-error protection to the margin."
+    },
+    "lesson": "3.A.3"
+  },
+  "3-a:u3a31": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The proportion of all 18,000 registered cyclists who wear a helmet on every trip",
+    "optionReasons": {
+      "The number 156 of sampled helmet users": "Uses a sample count.",
+      "The proportion of all city residents who own a helmet": "Changes the population and response.",
+      "The proportion of all 18,000 registered cyclists who wear a helmet on every trip": "Follows the stated parameter, model, and requested event.",
+      "The proportion 156/240 in the sample": "Names the statistic."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a32": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A one-sample z-interval for a population proportion",
+    "optionReasons": {
+      "A confidence interval for a population mean": "Uses a quantitative-mean procedure for a categorical response.",
+      "A one-sample z-interval for a population proportion": "Follows the stated parameter, model, and requested event.",
+      "A one-sample z-test for a population proportion": "Tests a claim instead of estimating with an interval.",
+      "A two-sample z-interval for a difference of proportions": "Treats yes and no in one sample as independent groups."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a33": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Random selection, a sample below 10%, and observed counts 14 and 166 support the method.",
+    "optionReasons": {
+      "Random selection, a sample below 10%, and observed counts 14 and 166 support the method.": "Follows the stated parameter, model, and requested event.",
+      "The large-counts check must use an unprovided null proportion.": "Uses test conditions for an interval.",
+      "The method fails because 14/180 is less than 0.10.": "Confuses a success proportion with a minimum expected count.",
+      "The sample exceeds 10% because 180 is greater than 10.": "Compares n with 10 instead of 10% of N."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a34": {
+    "kind": "numeric",
+    "target": "Math.sqrt((100/400)*(1-100/400)/400)",
+    "correctText": "0.02165",
+    "optionReasons": {
+      "0.00047": "Uses estimated variance rather than SE.",
+      "0.02165": "Follows the stated parameter, model, and requested event.",
+      "0.43301": "Omits sample size.",
+      "0.04330": "Reports twice the estimated SE rather than SE."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a35": {
+    "kind": "interval",
+    "target": "[190/500-1.96*Math.sqrt(.38*.62/500),190/500+1.96*Math.sqrt(.38*.62/500)]",
+    "correctText": "(0.3375, 0.4225)",
+    "optionReasons": {
+      "(0.5775, 0.6625)": "Centers at the complementary proportion.",
+      "(0.3362, 0.4238)": "Uses conservative 0.50 variance despite observed data.",
+      "(0.3375, 0.4225)": "Follows the stated parameter, model, and requested event.",
+      "(0.3583, 0.4017)": "Uses one SE instead of 1.96 SE."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a36": {
+    "kind": "numeric",
+    "target": "1.96*Math.sqrt((360/600)*(240/600)/600)",
+    "correctText": "0.0392",
+    "optionReasons": {
+      "0.0008": "Omits the square root.",
+      "0.0200": "Reports SE instead of margin.",
+      "0.0392": "Follows the stated parameter, model, and requested event.",
+      "0.0784": "Reports full interval width."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a37": {
+    "kind": "interval",
+    "target": "[8000*.18,8000*.26]",
+    "correctText": "(1,440, 2,080)",
+    "optionReasons": {
+      "(1,440, 2,080)": "Follows the stated parameter, model, and requested event.",
+      "(0.18, 0.26)": "Leaves the interval on the proportion scale.",
+      "(18, 26)": "Treats percentages as household counts.",
+      "(3,520, 3,520)": "Collapses the interval to a wrongly scaled midpoint."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a38": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The interval does not establish that more than half of all participants return.",
+    "optionReasons": {
+      "The interval establishes that more than half return because the midpoint exceeds 0.50.": "Uses the midpoint alone.",
+      "The interval establishes that fewer than half return because 0.48 is included.": "Uses one endpoint alone.",
+      "The interval proves that exactly half return because 0.50 is included.": "Treats inclusion as proof of a point null.",
+      "The interval does not establish that more than half of all participants return.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a39": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The observed damaged count is too small for the usual large-counts condition.",
+    "optionReasons": {
+      "The condition is met because 194 undamaged parcels is greater than 10.": "Checks only failures.",
+      "The interval method is valid because a test with p0 = 0.10 would have 20 expected damaged parcels.": "Uses hypothetical null counts for an interval.",
+      "The observed damaged count is too small for the usual large-counts condition.": "Follows the stated parameter, model, and requested event.",
+      "The condition is met because n is greater than 30.": "Uses n alone."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a40": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "About 95% of intervals from repeated samples would capture the fixed annual population proportion.",
+    "optionReasons": {
+      "Each interval contains 95% of the sampled payment records.": "Confuses interval estimation with the distribution of data.",
+      "About 95% of intervals from repeated samples would capture the fixed annual population proportion.": "Follows the stated parameter, model, and requested event.",
+      "About 95% of members pay online.": "Confuses confidence with the parameter value.",
+      "The endpoints will be identical for 95% of samples.": "Confuses coverage with identical estimates."
+    },
+    "lesson": "3.A.4"
+  },
+  "3-a:u3a41": {
+    "kind": "numeric",
+    "target": "invPhi((1+.98)/2)",
+    "correctText": "2.326",
+    "optionReasons": {
+      "1.645": "Uses 90% central confidence.",
+      "1.960": "Uses 95% central confidence.",
+      "2.054": "Uses the 98th percentile instead of the 99th.",
+      "2.326": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a42": {
+    "kind": "interval",
+    "target": "[.6-1.645*Math.sqrt(.6*.4/200),.6+1.645*Math.sqrt(.6*.4/200)]",
+    "correctText": "(0.5430, 0.6570)",
+    "optionReasons": {
+      "(0.5430, 0.6570)": "Follows the stated parameter, model, and requested event.",
+      "(0.5321, 0.6679)": "Uses the 95% multiplier.",
+      "(0.5654, 0.6346)": "Uses one SE rather than the requested critical multiplier.",
+      "(0.3430, 0.4570)": "Centers at the complementary proportion."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a43": {
+    "kind": "numeric",
+    "target": "Math.ceil(1.96**2*.25/.04**2)",
+    "correctText": "601",
+    "optionReasons": {
+      "151": "Uses a margin twice as large.",
+      "600": "Rounds the required size down.",
+      "601": "Follows the stated parameter, model, and requested event.",
+      "2401": "Uses half the requested margin."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a44": {
+    "kind": "numeric",
+    "target": "Math.ceil(1.96**2*.2*.8/.03**2)",
+    "correctText": "683",
+    "optionReasons": {
+      "171": "Uses twice the requested margin.",
+      "682": "Rounds down.",
+      "683": "Follows the stated parameter, model, and requested event.",
+      "1068": "Uses 0.50 despite the requested prior estimate."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a45": {
+    "kind": "numeric",
+    "target": "(.06/.02)**2",
+    "correctText": "9",
+    "optionReasons": {
+      "1/9": "Reverses the sample-size direction.",
+      "9": "Follows the stated parameter, model, and requested event.",
+      "3": "Scales n linearly with inverse margin.",
+      "6": "Adds rather than squares the margin ratio."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a46": {
+    "kind": "numeric",
+    "target": "2*Phi(.040/.020)-1",
+    "correctText": "0.9545",
+    "optionReasons": {
+      "0.0228": "Uses one excluded tail.",
+      "0.0455": "Reports the total excluded area.",
+      "0.9545": "Follows the stated parameter, model, and requested event.",
+      "0.9772": "Uses one cumulative tail instead of central coverage."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a47": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The model SD uses 0.40, while an interval’s estimated SE uses 0.46.",
+    "optionReasons": {
+      "Both must use 0.50 because it maximizes variance.": "Uses a planning safeguard in place of known or observed inputs.",
+      "The model SD uses 0.46, while the interval SE uses 0.40.": "Reverses known and observed inputs.",
+      "Both equal the observed proportion 0.46.": "Confuses a proportion with its uncertainty.",
+      "The model SD uses 0.40, while an interval’s estimated SE uses 0.46.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a48": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "K has a smaller margin because 2.576/2 is less than 1.96.",
+    "optionReasons": {
+      "K has exactly half the margin because its sample size is four times larger.": "Ignores the changed critical value.",
+      "Both have equal margins because the changes cancel exactly.": "Assumes cancellation without comparing multipliers.",
+      "K has a smaller margin because 2.576/2 is less than 1.96.": "Follows the stated parameter, model, and requested event.",
+      "K has a larger margin because it has higher confidence.": "Ignores the fourfold sample-size increase."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a49": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A majority is supported by the 90% interval but is not established by the 99% interval.",
+    "optionReasons": {
+      "A majority is disproved by the 99% interval because it contains 0.48.": "Treats one included value as proof against the claim.",
+      "A majority is supported by the 90% interval but is not established by the 99% interval.": "Follows the stated parameter, model, and requested event.",
+      "A majority is established by both intervals because their midpoints exceed 0.50.": "Uses midpoints rather than full intervals.",
+      "A majority is established only by the 99% interval because its confidence is higher.": "Confuses confidence with stronger threshold evidence."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a50": {
+    "kind": "numeric",
+    "target": ".5",
+    "correctText": "0.50",
+    "optionReasons": {
+      "0.10": "This has variance factor 0.09, below 0.25.",
+      "0.50": "Follows the stated parameter, model, and requested event.",
+      "0.75": "This has variance factor 0.1875, below 0.25.",
+      "1.00": "This gives a variance factor of zero."
+    },
+    "lesson": "3.A.5"
+  },
+  "3-a:u3a51": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "H0: p = 0.30; Ha: p > 0.30",
+    "optionReasons": {
+      "H0: p = 0.30; Ha: p > 0.30": "Follows the stated parameter, model, and requested event.",
+      "H0: p = 0.30; Ha: p < 0.30": "Reverses the research direction.",
+      "H0: p-hat = 0.30; Ha: p-hat > 0.30": "Writes hypotheses about a sample statistic.",
+      "H0: p = 0.30; Ha: p ≠ 0.30": "Uses a two-sided alternative for a stated increase."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a52": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "To assess whether the sample provides convincing evidence against the population benchmark.",
+    "optionReasons": {
+      "To prove that the observed sample proportion is exactly 0.58.": "The observed statistic is already known.",
+      "To calculate the probability that the benchmark itself is true.": "Reverses the conditioning of frequentist inference.",
+      "To remove selection bias from the sampling process.": "Attributes design repair to a significance test.",
+      "To assess whether the sample provides convincing evidence against the population benchmark.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a53": {
+    "kind": "numeric",
+    "target": "27/1000",
+    "correctText": "0.0270",
+    "optionReasons": {
+      "0.0270": "Follows the stated parameter, model, and requested event.",
+      "0.0540": "Doubles a one-sided tail.",
+      "0.2700": "Misplaces the decimal.",
+      "0.9730": "Uses the complementary lower region."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a54": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The population completion proportion equals 0.70.",
+    "optionReasons": {
+      "The null hypothesis has probability 0.70 of being true.": "Interprets a parameter as a hypothesis probability.",
+      "The population completion proportion equals 0.70.": "Follows the stated parameter, model, and requested event.",
+      "The population proportion equals the observed sample proportion.": "Builds the reference model around observed data.",
+      "The alternative hypothesis is known to be true.": "Conditions on the alternative rather than the null."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a55": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "If p = 0.60, the probability of a sample proportion as low as or lower than observed is 0.08.",
+    "optionReasons": {
+      "If p = 0.60, the probability of a sample proportion as low as or lower than observed is 0.08.": "Follows the stated parameter, model, and requested event.",
+      "There is an 8% probability that p equals 0.60.": "Assigns a posterior probability to H0.",
+      "If p equals the observed proportion, the probability of obtaining 0.60 is 0.08.": "Conditions on the observed estimate and changes the event.",
+      "If p = 0.60, the probability of a sample proportion as high as or higher than observed is 0.08.": "Uses the opposite tail."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a56": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Reject H0; there is convincing evidence that the population carpool proportion exceeds 0.40.",
+    "optionReasons": {
+      "Fail to reject H0 because 0.032 is below 0.05.": "Reverses the decision rule.",
+      "Reject H0; the probability that H0 is true is 0.032.": "Interprets a p-value as a null probability.",
+      "Accept H0; the population proportion is exactly 0.40.": "Claims null proof despite a significant result.",
+      "Reject H0; there is convincing evidence that the population carpool proportion exceeds 0.40.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a57": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Fail to reject H0; the sample does not provide convincing evidence that the population proportion differs from 0.25.",
+    "optionReasons": {
+      "Reject H0 because 0.18 is greater than 0.05.": "Reverses the decision rule.",
+      "Fail to reject H0; 18% of residents use the service.": "Confuses p-value with the population proportion.",
+      "Fail to reject H0; the sample does not provide convincing evidence that the population proportion differs from 0.25.": "Follows the stated parameter, model, and requested event.",
+      "Accept H0; the population proportion is proved to be 0.25.": "Treats nonsignificance as proof of equality."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a58": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Repeatedly generate 150 independent damage indicators with success probability 0.12 and record each damaged fraction.",
+    "optionReasons": {
+      "Generate 150 indicators with probability 0.12 and record only their total across all repetitions.": "Combines repetitions instead of recording a proportion per sample.",
+      "Repeatedly generate 150 independent damage indicators with success probability 0.12 and record each damaged fraction.": "Follows the stated parameter, model, and requested event.",
+      "Repeatedly generate 150 indicators with probability 0.18 and record each fraction.": "Uses the observed estimate instead of the null.",
+      "Generate one indicator with probability 0.12 and treat it as a sample proportion of 150 packages.": "Uses the wrong sample size."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a59": {
+    "kind": "numeric",
+    "target": "(20+40)/1000",
+    "correctText": "0.060",
+    "optionReasons": {
+      "0.020": "Counts only values strictly below the observation.",
+      "0.040": "Counts only values exactly equal to the observation.",
+      "0.060": "Follows the stated parameter, model, and requested event.",
+      "0.940": "Uses the opposite side of the distribution."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a60": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Fail to reject at 0.01; reject at 0.05.",
+    "optionReasons": {
+      "Reject at 0.01; fail to reject at 0.05.": "Reverses both comparisons.",
+      "Reject at both levels.": "Ignores that 0.024 exceeds 0.01.",
+      "Fail to reject at both levels.": "Ignores that 0.024 is below 0.05.",
+      "Fail to reject at 0.01; reject at 0.05.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.6"
+  },
+  "3-a:u3a61": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The null expected counts are 16 and 64, so this check is satisfied.",
+    "optionReasons": {
+      "The check fails because the observed count is 8.": "Uses interval counts for a null test.",
+      "The check is satisfied merely because n exceeds 30.": "Uses the n = 30 shortcut.",
+      "The check uses p = 0.50 because the population proportion is unknown.": "Ignores the null value.",
+      "The null expected counts are 16 and 64, so this check is satisfied.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a62": {
+    "kind": "numeric",
+    "target": "Math.sqrt(.35*.65/260)",
+    "correctText": "0.02958",
+    "optionReasons": {
+      "0.00087": "Uses variance.",
+      "0.02958": "Follows the stated parameter, model, and requested event.",
+      "0.03038": "Uses the observed estimate.",
+      "0.47697": "Omits n."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a63": {
+    "kind": "numeric",
+    "target": "(90/200-.4)/Math.sqrt(.4*.6/200)",
+    "correctText": "1.443",
+    "optionReasons": {
+      "-1.443": "Reverses the numerator.",
+      "1.421": "Uses the interval SE.",
+      "1.443": "Follows the stated parameter, model, and requested event.",
+      "41.667": "Uses variance instead of SD."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a64": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The observed sample proportion is 2.10 null standard deviations below the null proportion.",
+    "optionReasons": {
+      "The observed sample proportion is 2.10 null standard deviations below the null proportion.": "Follows the stated parameter, model, and requested event.",
+      "The population proportion is −2.10.": "Treats a standardized score as a proportion.",
+      "The observed proportion is 2.10 percentage points below the null proportion.": "Confuses SD units with percentage points.",
+      "The p-value is −2.10.": "Treats a signed z-score as a probability."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a65": {
+    "kind": "numeric",
+    "target": "Phi(-1.75)",
+    "correctText": "0.0401",
+    "optionReasons": {
+      "0.0200": "Halves an already one-sided probability.",
+      "0.0401": "Follows the stated parameter, model, and requested event.",
+      "0.0801": "Uses a two-sided probability.",
+      "0.9599": "Uses the upper tail."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a66": {
+    "kind": "numeric",
+    "target": "2*(1-Phi(Math.abs(2.2)))",
+    "correctText": "0.0278",
+    "optionReasons": {
+      "0.0139": "Includes only one tail.",
+      "0.0278": "Follows the stated parameter, model, and requested event.",
+      "0.9722": "Returns central coverage.",
+      "0.9861": "Uses the lower cumulative area."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a67": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The two fractions are complementary outcomes from one sample, so use a one-proportion test against 0.50.",
+    "optionReasons": {
+      "The correct procedure compares the two counts as two quantitative sample means.": "Uses the wrong variable type and design.",
+      "The two fractions are complementary outcomes from one sample, so use a one-proportion test against 0.50.": "Follows the stated parameter, model, and requested event.",
+      "A test is unnecessary whenever the observed fractions differ.": "Ignores sampling variability.",
+      "The two fractions are independent because the category labels differ.": "Confuses categories with independent groups."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a68": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Sample R",
+    "optionReasons": {
+      "Sample R": "Follows the stated parameter, model, and requested event.",
+      "Sample S": "Uses the largest n alone.",
+      "Sample T": "Uses the largest raw difference alone.",
+      "Sample U": "Uses the sign rather than absolute standardized distance."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a69": {
+    "kind": "decision",
+    "target": "1-Phi((132/200-.6)/Math.sqrt(.6*.4/200))",
+    "correctText": "Reject H0; there is convincing evidence that the laboratory’s success probability exceeds 0.60.",
+    "optionReasons": {
+      "Fail to reject H0 because the two-sided p-value exceeds 0.05.": "Uses the wrong alternative and tail.",
+      "Fail to reject H0 because the observed proportion is greater than 0.60.": "Uses the direction of the estimate as a reason not to reject.",
+      "Reject H0; there is convincing evidence that the laboratory’s success probability exceeds 0.60.": "Follows the stated parameter, model, and requested event.",
+      "Reject H0; about 4.16% is the probability that the null is true.": "Reverses conditional probability."
+    },
+    "lesson": "3.A.7",
+    "alpha": 0.05
+  },
+  "3-a:u3a70": {
+    "kind": "numeric",
+    "target": "2*.035",
+    "correctText": "0.070",
+    "optionReasons": {
+      "0.0175": "Halves instead of doubling.",
+      "0.070": "Follows the stated parameter, model, and requested event.",
+      "0.930": "Uses central area instead of two tails.",
+      "0.965": "Uses the lower-tail complement."
+    },
+    "lesson": "3.A.7"
+  },
+  "3-a:u3a71": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Replacing the supplier when its true defect proportion is 0.04.",
+    "optionReasons": {
+      "Replacing the supplier when its true defect proportion is 0.07.": "Describes a correct rejection.",
+      "Keeping the supplier when its true defect proportion is 0.04.": "Describes a correct failure to reject.",
+      "Replacing the supplier when its true defect proportion is 0.04.": "Follows the stated parameter, model, and requested event.",
+      "Keeping the supplier when its true defect proportion is 0.07.": "Describes a Type II error."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a72": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Failing to adopt the method when the true pass proportion is 0.78.",
+    "optionReasons": {
+      "Failing to adopt the method when the true proportion is 0.70.": "Describes a correct nonrejection.",
+      "Failing to adopt the method when the true pass proportion is 0.78.": "Follows the stated parameter, model, and requested event.",
+      "Adopting the method when the true proportion is 0.70.": "Describes Type I error at the null boundary.",
+      "Adopting the method when the true proportion is 0.78.": "Describes a correct rejection."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a73": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A Type II error could occur if the population proportion differs from 0.50.",
+    "optionReasons": {
+      "A Type II error could occur if the population proportion differs from 0.50.": "Follows the stated parameter, model, and requested event.",
+      "A Type I error could occur because the test rejects H0.": "Misstates both decision and possible error.",
+      "A Type II error definitely occurred because p exceeds alpha.": "Claims the unknown true state is established.",
+      "No error is possible because the null was not rejected.": "Ignores false-null nonrejection."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a74": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "When the null model is true, about 1% of repeated tests reject it.",
+    "optionReasons": {
+      "There is a 1% probability that the null is true.": "Reverses conditional probability.",
+      "The probability of Type II error is necessarily 0.99.": "Confuses alpha with the complement of power.",
+      "The test has a 99% chance of detecting every false null.": "Confuses Type I control with universal power.",
+      "When the null model is true, about 1% of repeated tests reject it.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a75": {
+    "kind": "numeric",
+    "target": "1-.84",
+    "correctText": "0.1600",
+    "optionReasons": {
+      "0.0500": "Substitutes a conventional alpha.",
+      "0.1600": "Follows the stated parameter, model, and requested event.",
+      "0.8400": "Reports power rather than its complement.",
+      "0.9500": "Complements a conventional alpha instead of power."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a76": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "If the true proportion is 0.68, the test rejects H0 in about 73% of repeated samples.",
+    "optionReasons": {
+      "The sample proportion equals 0.68 in 73% of samples.": "Confuses rejection probability with an exact statistic value.",
+      "If the true proportion is 0.68, the test rejects H0 in about 73% of repeated samples.": "Follows the stated parameter, model, and requested event.",
+      "The null hypothesis has a 73% probability of being false.": "Treats power as a posterior probability.",
+      "If the true proportion is 0.60, the test rejects H0 in 73% of samples.": "Conditions on the null instead of the stated alternative."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a77": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Power increases and Type II error probability decreases.",
+    "optionReasons": {
+      "Power increases and Type II error probability decreases.": "Follows the stated parameter, model, and requested event.",
+      "Power decreases and Type II error probability increases.": "Reverses the sample-size effect.",
+      "Power increases and the significance level necessarily increases.": "Changes alpha despite it being fixed.",
+      "Both Type I and Type II error probabilities become zero.": "Claims certainty from larger finite samples."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a78": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Use a smaller significance level, accepting a possible increase in Type II errors.",
+    "optionReasons": {
+      "Use a larger significance level to demand stronger evidence.": "A larger alpha makes rejection easier.",
+      "Keep alpha fixed but rename nonrejection as acceptance.": "Wording does not change error probabilities.",
+      "Use a smaller significance level to guarantee detection of every unsafe process.": "Claims improved Type II performance from stricter rejection.",
+      "Use a smaller significance level, accepting a possible increase in Type II errors.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a79": {
+    "kind": "numeric",
+    "target": "1-(1-.05)**8",
+    "correctText": "0.3366",
+    "optionReasons": {
+      "0.0500": "Uses the rate for only one test.",
+      "0.3366": "Follows the stated parameter, model, and requested event.",
+      "0.4000": "Adds rates without accounting for overlap.",
+      "0.6634": "Returns the probability of no errors."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-a:u3a80": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "0.60",
+    "optionReasons": {
+      "0.50": "The effect is still smaller than at 0.60.",
+      "0.60": "Follows the stated parameter, model, and requested event.",
+      "0.42": "The true alternative is closest to the null.",
+      "0.45": "The effect is smaller than at 0.60."
+    },
+    "lesson": "3.A.8"
+  },
+  "3-b:u3b01": {
+    "kind": "numeric",
+    "target": ".55-.35",
+    "correctText": "0.2000",
+    "optionReasons": {
+      "-0.2000": "Reverses the subtraction order.",
+      "0.2000": "Follows the stated parameter, model, and requested event.",
+      "0.4500": "Averages the two population proportions.",
+      "5.0000": "Subtracts expected counts instead of proportions."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b02": {
+    "kind": "numeric",
+    "target": "Math.sqrt(.4*.6/100+.6*.4/150)",
+    "correctText": "0.06325",
+    "optionReasons": {
+      "0.00400": "Reports variance.",
+      "0.02828": "Subtracts the independent variances.",
+      "0.03098": "Merges the two sample sizes.",
+      "0.06325": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b03": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "It is not justified by large counts because group A has only 8 expected successes.",
+    "optionReasons": {
+      "It is justified because the total sample size is 200.": "Checks the combined size instead of four group counts.",
+      "It is justified because group B has 60 expected successes and failures.": "Checks only one group.",
+      "It fails because the population proportions are unequal.": "Requires equality for a general sampling distribution.",
+      "It is not justified by large counts because group A has only 8 expected successes.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b04": {
+    "kind": "numeric",
+    "target": "78/120-54/100",
+    "correctText": "0.1100",
+    "optionReasons": {
+      "-0.1100": "Reverses group order.",
+      "0.1100": "Follows the stated parameter, model, and requested event.",
+      "0.2400": "Reports the count difference divided by 100.",
+      "0.1091": "Divides the count difference by the combined sample size."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b05": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Over many repetitions, the sample differences average about 0.18.",
+    "optionReasons": {
+      "The average number of successes differs by 0.18 people.": "Confuses count and proportion scales.",
+      "Over many repetitions, the sample differences average about 0.18.": "Follows the stated parameter, model, and requested event.",
+      "Every sample difference equals 0.18.": "Ignores sampling variability.",
+      "About 18% of sample differences are positive.": "Confuses mean with a probability."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b06": {
+    "kind": "numeric",
+    "target": "Phi((0-.10)/.05)",
+    "correctText": "0.0228",
+    "optionReasons": {
+      "0.0228": "Follows the stated parameter, model, and requested event.",
+      "0.0455": "Doubles a one-sided probability.",
+      "0.9545": "Returns the central region.",
+      "0.9772": "Uses the complementary event."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b07": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The SD is 0.045 in proportion units, equivalent to 4.5 percentage points.",
+    "optionReasons": {
+      "The SD is 0.045 people.": "Uses count units.",
+      "The SD means the first population proportion is 4.5% larger in relative terms.": "Confuses absolute percentage points with relative change.",
+      "The SD is a 4.5% probability of rejecting a null hypothesis.": "Confuses variability with a rejection probability.",
+      "The SD is 0.045 in proportion units, equivalent to 4.5 percentage points.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b08": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The first sample exceeds 10% of its population.",
+    "optionReasons": {
+      "The success counts are too small in both groups.": "Known-p expected successes are 75 and 90.",
+      "The population proportions are equal.": "Equality does not invalidate the model.",
+      "The first sample exceeds 10% of its population.": "Follows the stated parameter, model, and requested event.",
+      "The second sample exceeds 10% of its population.": "180/5,000 is only 3.6%."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b09": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A roughly symmetric distribution centered at 0.20 with about 95% of values between 0.12 and 0.28.",
+    "optionReasons": {
+      "A roughly symmetric distribution centered at 0.20 with about 95% of values between −0.60 and 1.00.": "Uses a spread ten times too large.",
+      "A roughly symmetric distribution centered at 0.20 with about 95% of values between 0.12 and 0.28.": "Follows the stated parameter, model, and requested event.",
+      "A roughly symmetric distribution centered at −0.20 with about 95% of values between −0.28 and −0.12.": "Reverses subtraction.",
+      "A roughly symmetric distribution centered at 0 with about 95% of values between −0.08 and 0.08.": "Assumes equal population proportions."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b10": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Random assignment and independent responses support group comparison; a finite-population 10% check is not required for this experiment.",
+    "optionReasons": {
+      "Random assignment and independent responses support group comparison; a finite-population 10% check is not required for this experiment.": "Follows the stated parameter, model, and requested event.",
+      "The model fails unless 1,000 students exist in each treatment population.": "Applies a without-replacement sampling check to a randomized experiment.",
+      "The model needs a pooled estimate before its known-probability SD can be calculated.": "Pools despite known population-model probabilities.",
+      "The two treatment probabilities must be equal to form a sampling distribution.": "Requires null equality outside a null test."
+    },
+    "lesson": "3.B.1"
+  },
+  "3-b:u3b11": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A two-sample z-interval for a difference of population proportions",
+    "optionReasons": {
+      "A two-sample z-interval for a difference of population proportions": "Follows the stated parameter, model, and requested event.",
+      "A one-proportion z-interval after combining both samples": "Erases the group comparison.",
+      "A two-sample z-test for equality of proportions": "Tests rather than estimates with an interval.",
+      "An interval for a difference of population means of water volume": "Changes a binary response into a quantitative measurement."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b12": {
+    "kind": "numeric",
+    "target": "Math.sqrt((84/140)*(56/140)/140+(90/180)*(90/180)/180)",
+    "correctText": "0.05571",
+    "optionReasons": {
+      "0.01804": "Subtracts variance terms.",
+      "0.05571": "Follows the stated parameter, model, and requested event.",
+      "0.05613": "Uses a null-pooled estimate for an interval.",
+      "0.10918": "Reports the 95% margin instead of SE."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b13": {
+    "kind": "interval",
+    "target": "[.15-1.96*Math.sqrt(.7*.3/200+.55*.45/200),.15+1.96*Math.sqrt(.7*.3/200+.55*.45/200)]",
+    "correctText": "(0.0563, 0.2437)",
+    "optionReasons": {
+      "(0.1022, 0.1978)": "Uses one SE instead of 1.96 SE.",
+      "(0.0713, 0.2287)": "Uses the 90% multiplier 1.645.",
+      "(0.0563, 0.2437)": "Follows the stated parameter, model, and requested event.",
+      "(−0.2437, −0.0563)": "Reverses group order."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b14": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The observed count 7 fails the large-counts condition.",
+    "optionReasons": {
+      "Both pass because a pooled null estimate gives more than 10 expected successes per group.": "Uses null-pooled test conditions.",
+      "The observed count 7 fails the large-counts condition.": "Follows the stated parameter, model, and requested event.",
+      "Both pass because there are 25 successes combined.": "Combines groups for an interval check.",
+      "Both pass because each sample size is 100.": "Uses sample size alone."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b15": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "City A’s cycling proportion is estimated to be 4 to 14 percentage points lower than city B’s.",
+    "optionReasons": {
+      "City A’s cycling proportion is estimated to be 4 to 14 percentage points lower than city B’s.": "Follows the stated parameter, model, and requested event.",
+      "City A’s cycling proportion is 4% to 14% lower relative to city B’s proportion.": "Uses relative percent rather than percentage points.",
+      "City A’s cycling proportion is estimated to be 4 to 14 percentage points higher.": "Reverses the sign.",
+      "Between 4% and 14% of commuters live in city A.": "Changes the target quantity."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b16": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The interval does not establish which population has the higher reuse proportion.",
+    "optionReasons": {
+      "The first population is higher because the midpoint is positive.": "Uses the point estimate alone.",
+      "The populations are proved equal because zero is included.": "Treats compatibility as equality proof.",
+      "The first population is lower because the lower endpoint is negative.": "Uses a single endpoint alone.",
+      "The interval does not establish which population has the higher reuse proportion.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b17": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "About 90% of the intervals would contain the fixed population difference pA − pB.",
+    "optionReasons": {
+      "90% of pairs of individual responses lie in each interval.": "Confuses data values with a parameter difference.",
+      "Exactly 90% of each interval’s width represents plausible values.": "Treats confidence as a fraction of interval length.",
+      "About 90% of the intervals would contain the fixed population difference pA − pB.": "Follows the stated parameter, model, and requested event.",
+      "The difference changes in 90% of repeated samples.": "Makes a fixed population difference random."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b18": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The trial supports a treatment effect for the studied volunteers’ setting; broad population generalization needs additional justification.",
+    "optionReasons": {
+      "The interval proves every treated seed benefits.": "Turns an average probability effect into an individual guarantee.",
+      "The trial supports a treatment effect for the studied volunteers’ setting; broad population generalization needs additional justification.": "Follows the stated parameter, model, and requested event.",
+      "Random assignment alone makes the volunteers representative of every gardener.": "Confuses assignment with population sampling.",
+      "The interval establishes only association because assignment was random.": "Ignores experimental randomization."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b19": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The interval supports a positive difference but not the manager’s minimum useful gain.",
+    "optionReasons": {
+      "The interval supports a positive difference but not the manager’s minimum useful gain.": "Follows the stated parameter, model, and requested event.",
+      "The interval supports a gain of at least 0.02 because zero is excluded.": "Equates statistical and practical importance.",
+      "The interval supports no difference because all values are small.": "Treats a small positive effect as zero.",
+      "The interval guarantees the true gain equals its midpoint.": "Treats an estimate as an exact parameter."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b20": {
+    "kind": "interval",
+    "target": "[-.11,-.03]",
+    "correctText": "(−0.11, −0.03)",
+    "optionReasons": {
+      "(−0.03, −0.11)": "Negates endpoints without restoring increasing order.",
+      "(0.03, 0.11)": "Ignores the changed subtraction order.",
+      "(0.89, 0.97)": "Complements proportions instead of negating a difference.",
+      "(−0.11, −0.03)": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.2"
+  },
+  "3-b:u3b21": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "H0: pA − pB = 0; Ha: pA − pB > 0",
+    "optionReasons": {
+      "H0: pA − pB = 0; Ha: pA − pB < 0": "Reverses direction.",
+      "H0: p-hat-A − p-hat-B = 0; Ha: p-hat-A − p-hat-B > 0": "Uses sample statistics in hypotheses.",
+      "H0: pA − pB = 0; Ha: pA − pB ≠ 0": "Uses a two-sided alternative despite a directional question.",
+      "H0: pA − pB = 0; Ha: pA − pB > 0": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b22": {
+    "kind": "numeric",
+    "target": "(48+54)/(80+120)",
+    "correctText": "0.5100",
+    "optionReasons": {
+      "0.4500": "Uses only the second group.",
+      "0.5100": "Follows the stated parameter, model, and requested event.",
+      "0.5250": "Averages sample proportions without weighting unequal sizes.",
+      "0.6000": "Uses only the first group."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b23": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "40.8, 39.2, 61.2, and 58.8",
+    "optionReasons": {
+      "102 and 98 only": "Checks combined totals rather than each group.",
+      "40.8, 39.2, 61.2, and 58.8": "Follows the stated parameter, model, and requested event.",
+      "48, 32, 54, and 66": "Uses observed interval counts rather than pooled null counts.",
+      "40, 40, 60, and 60": "Uses a default 0.50 instead of the pooled estimate."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b24": {
+    "kind": "numeric",
+    "target": "(90/150-66/150)/Math.sqrt((156/300)*(144/300)*(1/150+1/150))",
+    "correctText": "2.774",
+    "optionReasons": {
+      "-2.774": "Reverses subtraction order.",
+      "2.774": "Follows the stated parameter, model, and requested event.",
+      "2.810": "Uses the unpooled interval SE.",
+      "5.547": "Combines sample sizes as a single sample."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b25": {
+    "kind": "numeric",
+    "target": "1-Phi(1.9)",
+    "correctText": "0.0287",
+    "optionReasons": {
+      "0.0144": "Halves the already one-sided probability.",
+      "0.0287": "Follows the stated parameter, model, and requested event.",
+      "0.0574": "Doubles a one-sided probability.",
+      "0.9713": "Uses the opposite tail."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b26": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "If the population proportions are equal, a sample difference at least 0.09 from zero in either direction has probability about 0.06.",
+    "optionReasons": {
+      "If the population difference is 0.09, the probability that it equals zero is 0.06.": "Conditions on the observed difference and makes the parameter random.",
+      "The population difference is 0.06 with probability 0.09.": "Swaps effect size and p-value.",
+      "If the population proportions are equal, a sample difference at least 0.09 from zero in either direction has probability about 0.06.": "Follows the stated parameter, model, and requested event.",
+      "There is a 6% probability that the population proportions are equal.": "Reverses conditional probability."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b27": {
+    "kind": "decision",
+    "target": "1-Phi((124/200-100/200)/Math.sqrt((224/400)*(176/400)*(1/200+1/200)))",
+    "correctText": "Reject H0; there is evidence at 0.01 that store A’s population use proportion is higher.",
+    "optionReasons": {
+      "Fail to reject H0 because the observed difference is only 0.12.": "Compares a raw effect with a significance decision without standardization.",
+      "Reject H0; there is evidence at 0.01 that store A’s population use proportion is higher.": "Follows the stated parameter, model, and requested event.",
+      "Fail to reject H0 because the two-sided p-value exceeds 0.01.": "Uses two tails for a one-sided alternative.",
+      "Reject H0; every shopper is more likely to use containers at A.": "Turns population evidence into a universal individual claim."
+    },
+    "lesson": "3.B.3",
+    "alpha": 0.01
+  },
+  "3-b:u3b28": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A Type I error if the population completion proportions are actually equal.",
+    "optionReasons": {
+      "A Type I error if the population completion proportions are actually equal.": "Follows the stated parameter, model, and requested event.",
+      "A Type II error because rejection always misses a real difference.": "Reverses the error-decision pairing.",
+      "A Type I error definitely occurred because alpha is 0.05.": "Treats a controlled risk as proof of error.",
+      "No error is possible because the result is statistically significant.": "Treats significance as certainty."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b29": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Large counts do not supply the missing design basis for population or causal inference.",
+    "optionReasons": {
+      "Large counts make the groups randomly assigned.": "Treats size as randomization.",
+      "Pooling removes selection and confounding differences.": "Attributes design repair to a variance formula.",
+      "The design proves the two population proportions are equal.": "Turns a design limitation into a population conclusion.",
+      "Large counts do not supply the missing design basis for population or causal inference.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b30": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Their conclusions often agree, but near a boundary each must be computed because their SE formulas differ.",
+    "optionReasons": {
+      "An interval containing zero proves a pooled test can never reject.": "Claims universal exact equivalence.",
+      "A pooled test must use the interval midpoint as its p-value.": "Confuses effect estimate with tail probability.",
+      "Their conclusions often agree, but near a boundary each must be computed because their SE formulas differ.": "Follows the stated parameter, model, and requested event.",
+      "They are exact inverses for every dataset because both use z.": "Ignores pooled versus unpooled SE."
+    },
+    "lesson": "3.B.3"
+  },
+  "3-b:u3b31": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A chi-square test for homogeneity",
+    "optionReasons": {
+      "A paired t-test": "Uses quantitative paired differences for unpaired categorical data.",
+      "A one-sample interval for a mean": "Uses the wrong parameter and goal.",
+      "A chi-square test for homogeneity": "Follows the stated parameter, model, and requested event.",
+      "A one-proportion z-test": "Cannot compare three-category distributions across three samples."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b32": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "H0: The class-preference distributions are the same at both centers; Ha: the distributions differ.",
+    "optionReasons": {
+      "H0: The distributions differ; Ha: the distributions are the same.": "Reverses null and alternative.",
+      "H0: The class-preference distributions are the same at both centers; Ha: the distributions differ.": "Follows the stated parameter, model, and requested event.",
+      "H0: Each class has probability one-third at both centers; Ha: at least one probability differs.": "Adds a uniformity requirement absent from homogeneity.",
+      "H0: The observed sample counts are identical; Ha: the counts differ.": "Tests sample outcomes rather than population distributions."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b33": {
+    "kind": "numeric",
+    "target": "80*120/200",
+    "correctText": "48",
+    "optionReasons": {
+      "40": "Returns the observed cell count.",
+      "48": "Follows the stated parameter, model, and requested event.",
+      "80": "Uses the whole row total.",
+      "120": "Uses the whole column total."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b34": {
+    "kind": "numeric",
+    "target": "(36-30)**2/30",
+    "correctText": "1.2",
+    "optionReasons": {
+      "1.2": "Follows the stated parameter, model, and requested event.",
+      "6.0": "Returns O − E.",
+      "30.0": "Returns E instead of the contribution.",
+      "36.0": "Returns the squared difference without dividing by E."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b35": {
+    "kind": "numeric",
+    "target": "2*((36-30)**2/30+(24-30)**2/30)",
+    "correctText": "4.8",
+    "optionReasons": {
+      "1.2": "Reports one cell contribution.",
+      "2.4": "Sums only one row’s contributions.",
+      "4.8": "Follows the stated parameter, model, and requested event.",
+      "144.0": "Adds squared discrepancies without dividing by expected counts."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b36": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Every observed cell count equals its null expected count.",
+    "optionReasons": {
+      "Positive and negative cell contributions canceled.": "Chi-square contributions cannot be negative.",
+      "Every observed cell count equals its null expected count.": "Follows the stated parameter, model, and requested event.",
+      "Every population category proportion has been proved equal.": "Turns exact sample fit into population proof.",
+      "Every category must have equal observed frequency.": "Confuses null fit with uniformity."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b37": {
+    "kind": "numeric",
+    "target": "chiSF(6,2)",
+    "correctText": "0.0498",
+    "optionReasons": {
+      "0.0249": "Halves the right tail.",
+      "0.0498": "Follows the stated parameter, model, and requested event.",
+      "0.0996": "Doubles the already complete right tail.",
+      "0.9502": "Uses the lower-tail complement."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b38": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "If the population preference distributions are the same, the probability of chi-square at least 9.2 is about 0.056.",
+    "optionReasons": {
+      "The probability that the population distributions are the same is 0.056.": "Reverses conditioning.",
+      "If the distributions are the same, the probability of chi-square at most 9.2 is 0.056.": "Uses the lower tail.",
+      "The probability that the largest class proportion is 0.092 is 0.056.": "Confuses the statistic with a category proportion.",
+      "If the population preference distributions are the same, the probability of chi-square at least 9.2 is about 0.056.": "Follows the stated parameter, model, and requested event."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b39": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Reject H0; the population appointment-type distributions are not all the same.",
+    "optionReasons": {
+      "Fail to reject H0 because 0.014 exceeds 0.05.": "States a false numerical comparison.",
+      "Accept H0; all clinics have the same appointment distribution.": "Supports equality despite significant evidence against it.",
+      "Reject H0; the population appointment-type distributions are not all the same.": "Follows the stated parameter, model, and requested event.",
+      "Reject H0; every pair of clinics differs in every category.": "Overstates an omnibus rejection."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b40": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The chance of one or more false positives can exceed 0.05 across the six tests.",
+    "optionReasons": {
+      "An overall significant result proves every pairwise test will reject.": "Overstates the scope of an omnibus result.",
+      "The chance of one or more false positives can exceed 0.05 across the six tests.": "Follows the stated parameter, model, and requested event.",
+      "The six tests necessarily have independent outcomes because schools were independently sampled.": "Shared groups make test outcomes dependent.",
+      "Each additional test reduces the chance of any false positive.": "Reverses multiplicity risk."
+    },
+    "lesson": "3.B.4"
+  },
+  "3-b:u3b41": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "A chi-square test for independence",
+    "optionReasons": {
+      "A paired proportion test comparing each person with themself": "Invents a repeated binary measurement design.",
+      "A chi-square test for independence": "Follows the stated parameter, model, and requested event.",
+      "A chi-square test for homogeneity based on separate neighborhood samples": "Misstates the one-sample design.",
+      "A two-independent-means t-test": "Uses quantitative means for categorical variables."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b42": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "H0: Building size and locker use are independent in the population; Ha: they are associated.",
+    "optionReasons": {
+      "H0: Building size and locker use are independent in the population; Ha: they are associated.": "Follows the stated parameter, model, and requested event.",
+      "H0: All building sizes are equally common; Ha: they are not.": "Tests a one-variable uniform distribution.",
+      "H0: The observed cell counts are identical; Ha: they differ.": "Uses sample count equality instead of population independence.",
+      "H0: Building size causes locker use; Ha: locker use causes building size.": "Frames hypotheses as causal directions."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b43": {
+    "kind": "numeric",
+    "target": "(3-1)*(4-1)",
+    "correctText": "6",
+    "optionReasons": {
+      "6": "Follows the stated parameter, model, and requested event.",
+      "7": "Adds the category counts.",
+      "9": "Decrements only the column dimension.",
+      "12": "Uses r times c."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b44": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "It is satisfied because all expected counts are greater than 5.",
+    "optionReasons": {
+      "It requires every expected proportion to exceed 0.05.": "Confuses expected counts with proportions.",
+      "It requires the total sample size to be less than 30.": "Introduces a false size rule.",
+      "It is satisfied because all expected counts are greater than 5.": "Follows the stated parameter, model, and requested event.",
+      "It fails because one observed count is below 5.": "Checks observed instead of expected counts."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b45": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The hospital’s 18% sampling fraction fails the usual 10% independence approximation.",
+    "optionReasons": {
+      "The test requires each hospital to have identical sample sizes.": "Invents equal-size sampling as a requirement.",
+      "The hospital’s 18% sampling fraction fails the usual 10% independence approximation.": "Follows the stated parameter, model, and requested event.",
+      "Homogeneity always requires one overall SRS rather than separate samples.": "Rejects the correct multiple-sample design.",
+      "All conditions hold solely because expected counts exceed 10.": "Overlooks a separate independence condition."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b46": {
+    "kind": "numeric",
+    "target": "120*120/300",
+    "correctText": "48",
+    "optionReasons": {
+      "40": "Assumes equal numbers in all three shift columns.",
+      "48": "Follows the stated parameter, model, and requested event.",
+      "60": "Uses the observed count.",
+      "120": "Uses the bus row total."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b47": {
+    "kind": "numeric",
+    "target": "chiSF(12,(3-1)*(3-1))",
+    "correctText": "0.0174",
+    "optionReasons": {
+      "0.0025": "Uses df = 2 rather than 4.",
+      "0.0174": "Follows the stated parameter, model, and requested event.",
+      "0.0347": "Doubles the chi-square right tail.",
+      "0.9826": "Uses the lower tail."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b48": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "Values are nonnegative, and the curves are generally right-skewed, becoming less skewed as df increases.",
+    "optionReasons": {
+      "Values are between zero and one because they are p-values.": "Confuses statistics with probabilities.",
+      "Values are nonnegative, and larger df always makes the curves more right-skewed.": "Reverses the df-shape trend.",
+      "Values are nonnegative, and the curves are generally right-skewed, becoming less skewed as df increases.": "Follows the stated parameter, model, and requested event.",
+      "Values can be negative, and the curves are symmetric about zero.": "Describes a standard-normal family instead."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b49": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "There is convincing evidence of association between travel mode and shift type among city commuters.",
+    "optionReasons": {
+      "The association must be positive because chi-square is positive.": "Infers direction from an unsigned statistic.",
+      "There is convincing evidence of association between travel mode and shift type among city commuters.": "Follows the stated parameter, model, and requested event.",
+      "Shift type has been proved to cause travel-mode choice.": "Claims causation from an observational sample.",
+      "The two variables are independent because 0.0052 is below 0.01.": "Reverses the decision rule."
+    },
+    "lesson": "3.B.5"
+  },
+  "3-b:u3b50": {
+    "kind": "concept",
+    "target": null,
+    "correctText": "The finding does not establish equal bike-share participation rates across membership tiers in the whole city.",
+    "optionReasons": {
+      "The finding does not establish equal bike-share participation rates across membership tiers in the whole city.": "Follows the stated parameter, model, and requested event.",
+      "The finding proves membership tier and helmet use are independent in every city resident.": "Turns nonsignificance and a restricted sample into a universal claim.",
+      "The finding proves membership tier has no causal effect on any behavior.": "Claims causal absence from observational nonsignificance.",
+      "The finding proves the citywide helmet-use proportions differ by tier.": "Asserts an unsupported opposite population conclusion."
+    },
+    "lesson": "3.B.5"
+  }
+}

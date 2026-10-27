@@ -2196,6 +2196,129 @@
       "questions": [
         "1-b:c92"
       ]
+    },
+    {
+      "file": "u3a05-normal.svg",
+      "questions": [
+        "3-a:u3a05"
+      ],
+      "kind": "normal",
+      "mu": 0.8,
+      "sd": 0.04,
+      "lo": 0.86,
+      "hi": null,
+      "outside": false,
+      "marks": [
+        {
+          "value": 0.86,
+          "label": "0.86"
+        }
+      ],
+      "xLabel": "Sample on-time proportion",
+      "showSd": false
+    },
+    {
+      "file": "u3a08-normal-comparison.svg",
+      "questions": [
+        "3-a:u3a08"
+      ],
+      "kind": "normal_comparison",
+      "mu": 0.3,
+      "curves": [
+        {
+          "name": "n = 64",
+          "sd": 0.057282196186948,
+          "style": "--"
+        },
+        {
+          "name": "n = 256",
+          "sd": 0.028641098093474,
+          "style": "-"
+        }
+      ],
+      "xRange": [
+        0.12,
+        0.48
+      ],
+      "xLabel": "Sample audio-guide proportion",
+      "showSd": false
+    },
+    {
+      "file": "u3a10-proportion-dotplot.svg",
+      "questions": [
+        "3-a:u3a10"
+      ],
+      "kind": "proportion_dotplot",
+      "values": [
+        0.2,
+        0.22,
+        0.24,
+        0.24,
+        0.26,
+        0.26,
+        0.28,
+        0.28,
+        0.28,
+        0.3,
+        0.3,
+        0.3,
+        0.32,
+        0.32,
+        0.32,
+        0.32,
+        0.34,
+        0.34,
+        0.34,
+        0.36,
+        0.36,
+        0.38,
+        0.4,
+        0.42
+      ],
+      "step": 0.04,
+      "xLabel": "Sample reusable-packaging proportion"
+    },
+    {
+      "file": "u3b06-normal.svg",
+      "questions": [
+        "3-b:u3b06"
+      ],
+      "kind": "normal",
+      "mu": 0.1,
+      "sd": 0.05,
+      "lo": null,
+      "hi": 0,
+      "outside": false,
+      "marks": [
+        {
+          "value": 0,
+          "label": "0"
+        }
+      ],
+      "xLabel": "First minus second sample proportion",
+      "showSd": false
+    },
+    {
+      "file": "u3b38-chi-square-curve.svg",
+      "questions": [
+        "3-b:u3b38"
+      ],
+      "kind": "chi_square_curve",
+      "df": 4,
+      "cutoff": 9.2,
+      "xMax": 20,
+      "xLabel": "Chi-square statistic"
+    },
+    {
+      "file": "u3b48-chi-square-curve.svg",
+      "questions": [
+        "3-b:u3b48"
+      ],
+      "kind": "chi_square_curve",
+      "df": 4,
+      "cutoff": null,
+      "xMax": 20,
+      "xLabel": "Chi-square statistic"
     }
   ]
 }

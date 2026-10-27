@@ -1,5 +1,10 @@
 export function probabilityLatex(source) {
   let value = source.trim().replace(/X\s*~\s*Binomial/g, 'X \\sim \\operatorname{Binomial}');
+  // Shared inference notation, including group labels, belongs to one intact
+  // math fragment rather than a prose p followed by a hyphenated hat suffix.
+  value = value.replace(/\bp-hat(?:-([A-Z][a-z]*|\d+))?\b/g, (_, group) => '\\hat{p}' + (group ? `_{\\mathrm{${group}}}` : ''));
+  value = value.replace(/\bp([A-Z][a-z]*|\d+)\b/g, (_, group) => `p_{\\mathrm{${group}}}`);
+  value = value.replace(/\bH0\b/g, 'H_0').replace(/\bHa\b/g, 'H_a');
   value = value.replace(/C\((\d+),\s*(\d+)\)/g, '\\binom{$1}{$2}');
   value = value.replace(/√\[([^\]]+)\]/g, '\\sqrt{$1}').replace(/√(\d+(?:\.\d+)?)/g, '\\sqrt{$1}').replace(/√/g, '\\surd ');
   value = value.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g, run => `^{${[...run].map(character => '⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(character)).join('')}}`);
@@ -11,11 +16,13 @@ export function probabilityLatex(source) {
   return value.replace(/\bn\s*p\b/g, 'np');
 }
 
-const atom = '(?:X\\s*~\\s*Binomial\\([^)]*\\)|(?:P|E|Var|SD|Φ)\\([^)]*\\)|C\\(\\d+,\\s*\\d+\\)|x̄|[μσ]|\\b(?:np|X|Z|G|x|z|n|p|k|c)\\b|\\d+(?:\\.\\d+)?|[=<>≤≥≈+−×*/√²³⁴⁵⁶⁷⁸⁹%()\\[\\]−-])';
+const inferenceAtom = '\\b(?:p-hat(?:-(?:[A-Z][a-z]*|\\d+))?|p(?:[A-Z][a-z]*|\\d+)|H0|Ha)\\b';
+const legacyAtom = '(?:X\\s*~\\s*Binomial\\([^)]*\\)|(?:P|E|Var|SD|Φ)\\([^)]*\\)|C\\(\\d+,\\s*\\d+\\)|x̄|[μσ]|\\b(?:np|X|Z|G|x|z|n|p|k|c)\\b|\\d+(?:\\.\\d+)?|[=<>≤≥≈+−×*/√²³⁴⁵⁶⁷⁸⁹%()\\[\\]−-])';
+const atom = '(?:' + inferenceAtom + '|' + legacyAtom + ')';
 const sequence = new RegExp(`${atom}(?:\\s*${atom})*`, 'g');
 // The legacy prose detector: a matched run is typeset only when it passes this test.
 export const mathSequence = sequence;
-export const looksMathematical = text => /\b(?:P|E|Var|SD|C)\(|[μσΦ√²³⁴⁵⁶⁷⁸⁹≤≥≈=<>/]|\b(?:np|X|Z|G|x|z|n|p|k|c)\b|x̄/.test(text);
+export const looksMathematical = text => /\b(?:p-hat|p[A-Z][a-z]*|p\d+|H0|Ha)\b/.test(text) || /\b(?:P|E|Var|SD|C)\(|[μσΦ√²³⁴⁵⁶⁷⁸⁹≤≥≈=<>/]|\b(?:np|X|Z|G|x|z|n|p|k|c)\b|x̄/.test(text);
 
 // Explicit math node: { type: 'math', mode: 'inline' | 'display', tex }.
 // A parse error is a content bug, so the page shows it rather than hiding it.

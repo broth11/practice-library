@@ -1,10 +1,10 @@
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=6768427ebbf1';
-import { fitQuestion } from './question-fit.js?v=6768427ebbf1';
-import { renderStimulus } from './stimulus.js?v=6768427ebbf1';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=6768427ebbf1';
-import { renderStep, typesetMath } from './math.js?v=6768427ebbf1';
-import { mountCalculator } from './calculator.js?v=6768427ebbf1';
-import { renderChoice, choiceText } from './choices.js?v=6768427ebbf1';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=6ac3484615b1';
+import { fitQuestion } from './question-fit.js?v=6ac3484615b1';
+import { renderStimulus } from './stimulus.js?v=6ac3484615b1';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=6ac3484615b1';
+import { renderStep, typesetMath } from './math.js?v=6ac3484615b1';
+import { mountCalculator } from './calculator.js?v=6ac3484615b1';
+import { renderChoice, choiceText } from './choices.js?v=6ac3484615b1';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -156,7 +156,7 @@ function renderQuestion(question) {
   const lessonQuestions = state.unit.questions.filter(item => item.lesson === question.lesson);
   const local = lessonQuestions.indexOf(question) + 1;
   const selected = answers.get(answerKey(question));
-  questionArea.innerHTML = `<article class="card" id="${question.id}" data-archetype="${escapeHtml(question.archetype || '')}" aria-labelledby="${question.id}-ask"><header class="card-top"><span class="question-badge">Question ${String(state.current + 1).padStart(2, '0')}</span><span class="within">Lesson ${escapeHtml(question.lesson)} · ${local} of ${lessonQuestions.length}</span></header><div class="question-content"><div class="question-inner"><p class="scenario">${question.scenario}</p>${renderStimulus(question.stimulus)}<p class="ask" id="${question.id}-ask">${question.prompt}</p>${question.notationKey ? `<p class="notation-key">Key: <span class="literal-notation">${escapeHtml(question.notationKey)}</span></p>` : ''}<fieldset aria-labelledby="${question.id}-ask">${question.choices.map((choice, index) => { const letter = 'ABCD'[index]; return `<label class="option ${typeof choice === 'string' ? '' : 'structured-option'}"><input type="radio" name="${question.id}" value="${letter}" ${typeof choice === 'string' ? '' : `aria-label="${escapeHtml(`${letter}. ${choiceText(choice)}`)}"`} ${selected === letter ? 'checked' : ''}><span class="letter">${letter}</span><span class="option-text ${typeof choice === 'string' ? '' : 'structured-choice'}">${renderChoice(choice)}</span></label>`; }).join('')}</fieldset></div></div><footer class="card-footer"><span class="choice-status" aria-live="polite">${selected ? `Answer ${selected} selected. Ready to check?` : 'Select an answer, then check your reasoning.'}</span><button class="solution-trigger" type="button" aria-expanded="false">Solution <span aria-hidden="true">↗</span></button></footer></article>`;
+  questionArea.innerHTML = `<article class="card" id="${question.id}" data-archetype="${escapeHtml(question.archetype || '')}" aria-labelledby="${question.id}-ask"><header class="card-top"><span class="question-badge">Question ${String(state.current + 1).padStart(2, '0')}</span><span class="within">Lesson ${escapeHtml(question.lesson)} · ${local} of ${lessonQuestions.length}</span></header><div class="question-content"><div class="question-inner"><p class="scenario">${question.scenario}</p>${renderStimulus(question.stimulus)}<p class="ask" id="${question.id}-ask">${question.prompt}</p>${question.notationKey ? `<p class="notation-key">Key: <span class="literal-notation">${escapeHtml(question.notationKey)}</span></p>` : ''}<fieldset aria-labelledby="${question.id}-ask">${question.choices.map((choice, index) => { const letter = 'ABCD'[index]; return `<label class="option ${typeof choice === 'string' ? '' : 'structured-option'}"><input type="radio" name="${question.id}" value="${letter}" aria-label="${escapeHtml(`${letter}. ${choiceText(choice)}`)}" ${selected === letter ? 'checked' : ''}><span class="letter">${letter}</span><span class="option-text ${typeof choice === 'string' ? '' : 'structured-choice'}">${renderChoice(choice)}</span></label>`; }).join('')}</fieldset></div></div><footer class="card-footer"><span class="choice-status" aria-live="polite">${selected ? `Answer ${selected} selected. Ready to check?` : 'Select an answer, then check your reasoning.'}</span><button class="solution-trigger" type="button" aria-expanded="false">Solution <span aria-hidden="true">↗</span></button></footer></article>`;
   const card = questionArea.firstElementChild;
   typesetMath(card);
   card.querySelectorAll('img').forEach(image => image.addEventListener('load', () => fit(), { once: true }));

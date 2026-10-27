@@ -1,5 +1,15 @@
 # Handoff
 
+## Unit 3 production (2026-10-27, Codex)
+
+- Added 130 original questions in two modules: 80 in 3.A.1–3.A.8 and 50 in 3.B.1–3.B.5, ten per lesson. 3.A.6 combines both parts; 3.A.0 is excluded. The latest Unit 1 expansion and all Unit 2 guidance are retained.
+- All new calculator fields use Ben’s exact deferred contract. Claude’s complete ID/file inventory is in `docs/UNIT-3-AUTHORING-REVIEW.md`. No calculator guidance was created.
+- Six generated figures add shared proportion-dotplot and chi-square-curve support. Display/aligned math, indexed proportion notation, and complete accessible answer labels use shared renderers.
+- Standard checks independently recompute 50 numerical/decision targets; all 130 keys and 520 alternatives received independent AI review. Desktop/phone review covers all questions and explanations, with 34 follow-up pattern checks and 48 navigation transitions. Ten long phone formulas pan inside their math panels; dense cards can scroll vertically.
+- See the Unit 3 review and provenance ledger for local archetype labels, flagged extensions, source exclusions, and the pilot-card limitation. No human or physical-calculator sign-off is claimed.
+- Publication uses the GitHub task branch/PR and the original Sites project through its source helper, preserving each history and the existing public audience. Consult the PR and native deployment records for final live status.
+
+
 ## Unit 1 GitHub synchronization (2026-10-27, Codex)
 
 - Ben explicitly requested “push to main” after the successful Sites version 23 publication. This authorizes a direct GitHub main update for this synchronization, overriding the branch-only rule for this action.
