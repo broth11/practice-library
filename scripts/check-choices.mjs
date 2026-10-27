@@ -33,6 +33,7 @@ console.log('Verified structured choices, screen-reader labels, and the independ
 const hypotheses={type:'hypotheses',null:'p = 0.30',alternative:'p < 0.30'};
 assert(validChoice(hypotheses));
 assert.equal(choiceText(hypotheses),'H0: p = 0.30; Ha: p < 0.30');
+assert(renderChoice(hypotheses).includes('symbolic'));
 assert(renderChoice(hypotheses).includes('<span>H0: p = 0.30</span><span>Ha: p &lt; 0.30</span>'));
 assert(!validChoice({...hypotheses,alternative:''}));
 const working={type:'math',tex:String.raw`\frac{0.25}{400}`,ariaLabel:'0.25 divided by 400'};

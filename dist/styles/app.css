@@ -178,3 +178,21 @@
  .app:not(.calculator-mode) .workspace:has(.drawer[data-revealed="true"]){grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
  .app:not(.calculator-mode) .drawer[data-revealed="false"]{display:none}
 }
+
+/* Keep each symbolic hypothesis intact; the fitter can then choose one column. */
+.hypothesis-pair.symbolic>span{white-space:nowrap}
+
+/* The active solution owns the workspace. Scroll prose vertically at any size. */
+@media screen {
+ .practice-started .workspace:has(.drawer[data-revealed="true"]){grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+ .workspace:has(.drawer[data-revealed="true"]) .drawer{grid-column:1;grid-row:1}
+ .solution-panel,.solution-panel.needs-scroll{overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
+ .calculator-mode.practice-started .workspace:has(.drawer[data-revealed="true"]){grid-template-columns:minmax(0,1fr) minmax(180px,.7fr);grid-template-rows:minmax(0,1fr)}
+ .calculator-mode .keypress-pane{grid-column:1;grid-row:1}
+ .calculator-mode .calculator-stage{grid-column:2;grid-row:1}
+ .calculator-return{display:flex;flex-wrap:wrap;gap:6px}
+}
+@media screen and (max-width:760px){
+ .calculator-mode.practice-started .workspace:has(.drawer[data-revealed="true"]){grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(330px,1fr) minmax(340px,auto);overflow-y:auto}
+ .calculator-mode .calculator-stage{grid-column:1;grid-row:2}
+}

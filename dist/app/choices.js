@@ -1,4 +1,4 @@
-import { renderMathNode } from './math.js?v=3aed6f13bcdb';
+import { renderMathNode } from './math.js?v=d252a8943b63';
 // Structured answers carry data, rather than HTML or layout encoded in prose.
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 
@@ -21,7 +21,10 @@ export function choiceText(choice) {
 export function renderChoice(choice) {
   if (typeof choice === 'string') return choice;
   if (choice.type === 'math') return renderMathNode({ type:'math', mode:'display', tex:choice.tex });
-  if (choice.type === 'hypotheses') return `<span class="hypothesis-pair"><span>H0: ${escapeHtml(choice.null)}</span><span>Ha: ${escapeHtml(choice.alternative)}</span></span>`;
+  if (choice.type === 'hypotheses') {
+    const symbolic = /[=<>≠≤≥]/.test(choice.null) && /[=<>≠≤≥]/.test(choice.alternative);
+    return `<span class="hypothesis-pair ${symbolic ? 'symbolic' : ''}"><span>H0: ${escapeHtml(choice.null)}</span><span>Ha: ${escapeHtml(choice.alternative)}</span></span>`;
+  }
   if (!validChoice(choice)) throw new Error('Invalid structured answer choice.');
   return `<span class="stem-leaf-plot" aria-hidden="true">${choice.rows.map(row => `<span class="stem-leaf-row"><span class="stem-leaf-stem">${escapeHtml(row.stem)}</span><span class="stem-leaf-leaves">${row.leaves.map(escapeHtml).join(' ') || ' '}</span></span>`).join('')}</span>`;
 }

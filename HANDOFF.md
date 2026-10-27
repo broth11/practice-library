@@ -1,8 +1,13 @@
 # Handoff
 
+## Full workspace for solutions and calculators (2026-10-27, Codex)
+
+- At Ben’s request, opening either view collapses the question panel. Explanations scroll vertically automatically. Back to question, Escape and question navigation restore the question; calculator mode also has a direct Question button. This supersedes the earlier stable question-width and stacked question/solution decisions.
+- Includes the final phone fix keeping each symbolic hypothesis label and expression together.
+
 ## Readable working and fuller explanations (2026-10-27, Codex)
 
-- Hypothesis answers now put H0 and Ha on separate rows. Nine Unit 3 items assess the correct working, and all 130 Unit 3 explanations include specific method justification and interpretation. Counts, stable IDs, keys, and calculator deferrals are preserved.
+- Hypothesis answers now put H0 and Ha on separate rows. Symbolic rows keep label and expression together, allowing a one-column phone layout. Nine Unit 3 items assess the correct working, and all 130 Unit 3 explanations include specific method justification and interpretation. Counts, stable IDs, keys, and calculator deferrals are preserved.
 - Reworked display mathematics across the bank into aligned lines; long sums and interval endpoints use intermediate steps. Working no longer depends on a horizontal scrollbar. The shared answer fitter measures nested math, and ordinary panes stack at narrow desktop widths.
 - All 550 questions were audited at phone width; all 130 Unit 3 questions and older explicit-math cases were checked on desktop. Identified cases were fixed and rechecked at 390, 787, and 1,107 CSS pixels. Standard checks and independent expression checks pass. See `docs/READABLE-WORKING-REVIEW.md` for exact scope and limits.
 - Corrected leak-scan field boundaries and untracked-file coverage. Exact stock ask frames have narrow documented S16 exceptions, with regression tests that retain true within-field leak detection. No source contexts/data were copied and no history was rewritten.

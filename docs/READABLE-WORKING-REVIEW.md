@@ -4,7 +4,7 @@
 
 ## Changes
 
-- All four hypothesis-choice sets use separate null and alternative rows, including the two prose sets. The shared `hypotheses` descriptor retains complete accessible names.
+- All four hypothesis-choice sets use separate null and alternative rows, including the two prose sets. The shared `hypotheses` descriptor retains complete accessible names. Symbolic rows keep the label and equation together; the fitter uses one answer column on small phones rather than splitting a hypothesis into extra lines.
 - Reworked the existing display working across Units 1, 2, and 3 into short lines aligned at relation signs. Long sums use defined intermediate quantities; interval bounds are calculated separately where needed. Two further legacy inline equations in Unit 2A became explicit display working. The final bank has 89 solution display nodes and 36 explicit mathematical answer choices.
 - Mathematical working no longer owns a horizontal scroll container. The answer fitter measures nested math before choosing columns, so a formula that needs the full width receives a one-column answer layout rather than an internal scrollbar. At narrow desktop widths up to 1,100 CSS pixels, ordinary question and explanation panes stack before the solution column becomes cramped. Calculator mode keeps its established layout.
 - Converted nine original questions from rounded-result choices to correct-working choices: u3a05, u3a34, u3a35, u3a36, u3a42, u3a63, u3b12, u3b13, and u3b24. Inputs, question IDs, answer letters, lesson coverage, and the mathematical targets are preserved. All four expressions are independently evaluated for each question, including interval endpoints. No equivalent correct expression is used as a false choice.
@@ -34,3 +34,10 @@ The historical Unit 3 build contains two exact 12-word context-free ask frames t
 ## Limits
 
 AI and tool verification only, with no human sign-off or physical-calculator check. Expanded explanations can require vertical scrolling. They are authored to avoid horizontal scrolling at the tested widths, without hiding mathematical content or shrinking it to unreadable type. Future questions must follow the updated authoring references and repeat the width checks.
+
+
+## Active solution workspace follow-up
+
+At Ben’s request, the question collapses while explanations or calculators are viewed. Explanation panels always allow vertical scrolling, including keyboard Page Down and End. At 320 × 500 CSS pixels, the long hypothesis explanation scrolled to its final warning (363px of scroll), with the warning bottom inside the panel. Closing restored the question and focus to its Solution button. Symbolic hypothesis answers use one column at this width, with both labels and expressions intact. The calculator’s Question return restored the question too; phone calculator steps and hardware stack without horizontal page overflow. Desktop explanation width was checked at 1,107 CSS pixels.
+
+This supersedes the earlier side-by-side/stacked question layout audit. No question content, keys or calculator guide steps changed in this follow-up.
