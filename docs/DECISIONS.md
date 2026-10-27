@@ -164,3 +164,8 @@ Keep a mixture of expression selection and numerical answers. Explanations must 
 ## Full workspace for the active solution (2026-10-27)
 
 Ben reported clipped explanation content and requested collapsing the question whenever a solution or calculator is viewed. Hide the question from layout and accessibility while either view is open. Let the explanation use the full workspace with automatic vertical scrolling. Keep calculator steps and hardware together, with a direct Question return. Closing, Escape or changing questions restores the question. This supersedes stable question-width and question/solution stacking rules above.
+
+
+## Clarified navigation collapse (2026-10-27)
+
+Ben clarified that the Courses/Units/Questions navigation should collapse, not the question card. Opening either explanation or calculator collapses the expanded navigation content through the shared route control. The narrow navigation handles remain available. Keep the question visible alongside the explanation or calculator panes; retain responsive stacking and automatic vertical explanation scrolling. Closing a solution does not reopen navigation automatically. This supersedes the full-workspace decision immediately above.

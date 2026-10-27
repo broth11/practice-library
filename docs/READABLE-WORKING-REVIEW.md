@@ -41,3 +41,8 @@ AI and tool verification only, with no human sign-off or physical-calculator che
 At Ben’s request, the question collapses while explanations or calculators are viewed. Explanation panels always allow vertical scrolling, including keyboard Page Down and End. At 320 × 500 CSS pixels, the long hypothesis explanation scrolled to its final warning (363px of scroll), with the warning bottom inside the panel. Closing restored the question and focus to its Solution button. Symbolic hypothesis answers use one column at this width, with both labels and expressions intact. The calculator’s Question return restored the question too; phone calculator steps and hardware stack without horizontal page overflow. Desktop explanation width was checked at 1,107 CSS pixels.
 
 This supersedes the earlier side-by-side/stacked question layout audit. No question content, keys or calculator guide steps changed in this follow-up.
+
+
+## Clarified navigation behavior
+
+Ben clarified that the navigation list should collapse, while the question stays visible. This supersedes the previous active-solution workspace section. Browser checks confirmed an expanded Questions list collapsed on opening an explanation and also when selecting calculator guidance. At 1,440 CSS pixels the question, keypresses and calculator all retained visible panes with no horizontal page overflow. At 390 CSS pixels, question and explanation stayed visible in stacked panes; the explanation allowed vertical scrolling (309px of available scroll). Navigation handles remained available for reopening lists. Standard checks pass across all 550 questions.
