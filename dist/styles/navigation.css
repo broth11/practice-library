@@ -54,3 +54,9 @@
 .dc-menu-name{padding:9cqw 2cqw;font-size:4.5cqw}.dc-results{padding:4cqw 2cqw;font-size:4.5cqw;line-height:8cqw}.dc-lists{display:grid;grid-template-columns:repeat(3,1fr);padding:1cqw;font-size:3.8cqw;line-height:5.2cqw;flex:1}.dc-lists>div{border-right:.3cqw solid #888;padding-left:1.5cqw}
 .welcome-eyebrow{font-size:16.5px}.welcome-copy h1{font-size:clamp(54px,6.75vw,93px)}.welcome-copy h2{font-size:clamp(27px,2.475vw,34.5px)}.welcome-copy #welcome-direction{font-size:24px}.welcome-note p{font-size:21px}
 @media(max-width:760px){.welcome-eyebrow{font-size:13.5px}.welcome-copy h1{font-size:54px}.welcome-copy h2{font-size:27px}.welcome-copy #welcome-direction{font-size:21px}.welcome-note p{font-size:19.5px}}
+
+/* Larger unit and lesson titles in the route pane. */
+.route-pane .brand h1{font-size:34px;line-height:1.15}
+.route-pane .nav-choice strong{font-size:28px}
+.route-pane .section-number{font-size:12px}
+.route-pane .section-label{font-size:15px;line-height:1.4}

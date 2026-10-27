@@ -69,7 +69,8 @@
         "steps": [
           "The word <b>and</b> identifies the intersection: 36 visitors both used a printed book and attended a workshop.",
           "The reference group is <b>all 200 visitors</b>, so use the grand total as the denominator.",
-          "<span class=\"math\">P(printed and workshop) = 36/200 = 0.18.</span> Thus 18% of all visitors had both characteristics."
+          "<span class=\"math\">P(printed and workshop) = 36/200 = 0.18.</span> Thus 18% of all visitors had both characteristics.",
+          "A joint proportion uses the cell satisfying both characteristics. Conditioning on workshop attendance would change the reference group and would answer a different question."
         ],
         "warning": "A uses only workshop attendees. C gives the proportion using printed books, whether or not they attended. D conditions on using a printed book."
       },
@@ -187,7 +188,8 @@
       "solution": {
         "steps": [
           "A marginal proportion concerns just one variable: age group. Add both senior cells: <span class=\"math\">18 + 42 = 60.</span>",
-          "Divide by all members: <span class=\"math\">60/100 = 0.60.</span> Therefore, 60% of the club members are seniors."
+          "Divide by all members: <span class=\"math\">60/100 = 0.60.</span> Therefore, 60% of the club members are seniors.",
+          "Summing across workshop status removes that second variable from the question. A single senior cell would describe an intersection rather than the full senior margin."
         ],
         "warning": "A counts only seniors who entered. B gives the entry rate among seniors. C gives the proportion of juniors."
       },
@@ -315,7 +317,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}\\text{East: }  \\dfrac{18}{60}&=0.30\\\\\\text{West: }  \\dfrac{42}{70}&=0.60\\end{aligned}"
           },
-          "The conditional distributions differ: window seating was more common among West visitors. That is evidence of an association in these data. It does not establish that location caused the choice."
+          "The conditional distributions differ: window seating was more common among West visitors. That is evidence of an association in these data. It does not establish that location caused the choice.",
+          "The higher West count is not decisive by itself because the locations have different totals. The comparison must use proportions measured within their respective locations."
         ],
         "warning": "B and C confuse group size with conditional proportions. D compares two responses within East rather than comparing the locations."
       },
@@ -453,7 +456,8 @@
         "steps": [
           "Read each bar as a distribution <b>within its membership group</b>.",
           "The indoor portion for day members is between 60% and 70%. The indoor portion for evening members is between 40% and 50%. Thus the indoor proportion is greater for day members.",
-          "Because the sample sizes are not given, a comparison of the numbers of people across groups cannot be made. The overall indoor proportion also depends on those group sizes."
+          "Because the sample sizes are not given, a comparison of the numbers of people across groups cannot be made. The overall indoor proportion also depends on those group sizes.",
+          "A taller percentage segment establishes a rate comparison even when counts are unavailable. Multiplying by unknown group sizes cannot establish which group contributed more indoor-preferring members."
         ],
         "warning": "A changes a comparison of proportions into a comparison of counts. B pools the groups without their sizes. C misreads the evening bar, whose indoor portion is below 50%."
       },
@@ -507,7 +511,8 @@
       "solution": {
         "steps": [
           "Both variables are categorical: <b>community center</b> and <b>preferred art activity</b>.",
-          "A segmented bar chart gives each center a bar totaling 100%, divided into the activity categories. This makes the conditional distributions comparable even when group sizes differ."
+          "A segmented bar chart gives each center a bar totaling 100%, divided into the activity categories. This makes the conditional distributions comparable even when group sizes differ.",
+          "Normalize separately within each center so that bar segments describe preference rates. Raw count bars could make a busier center look more popular in every activity merely because it has more visitors."
         ],
         "warning": "Stemplots and boxplots summarize quantitative values. A scatterplot requires two quantitative variables."
       },
@@ -551,9 +556,10 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. Compare each souvenir count with its own center's total, rather than comparing counts alone.",
+          "Compare each souvenir count with its own center's total, rather than comparing counts alone.",
           "For trail posters, <span class=\"math\">12/40 = 0.30</span> and <span class=\"math\">24/80 = 0.30.</span> The conditional proportions are equal.",
-          "The other pairs are 0.15 versus 0.225 for compasses, 0.25 versus 0.125 for maps, and 0.30 versus 0.35 for booklets."
+          "The other pairs are 0.15 versus 0.225 for compasses, 0.25 versus 0.125 for maps, and 0.30 versus 0.35 for booklets.",
+          "Equal shares can come from different counts when the center totals differ. The doubled trail-poster count at the larger center exactly matches its doubled visitor total."
         ],
         "warning": "The equal map counts do not imply equal proportions: 10 out of 40 is different from 10 out of 80."
       },
@@ -710,9 +716,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. The reference group includes the one-month row and the two-or-more-months row.",
+          "The reference group includes the one-month row and the two-or-more-months row.",
           "There are <span class=\"math\">60 + 90 = 150</span> members in that group. Of those members, <span class=\"math\">24 + 54 = 78</span> joined the challenge.",
-          "The conditional relative frequency is <span class=\"math\">78/150 = 0.52.</span>"
+          "The conditional relative frequency is <span class=\"math\">78/150 = 0.52.</span>",
+          "Combine both the successes and the totals of the eligible rows. Averaging their separate participation rates without weights would give equal influence to groups of different sizes."
         ],
         "warning": "Use both qualifying rows. The grand total gives a joint proportion, and the challenge total reverses the condition."
       },
@@ -858,9 +865,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. With no association, the same-day proportion among appointment visits equals the overall same-day proportion.",
+          "With no association, the same-day proportion among appointment visits equals the overall same-day proportion.",
           "Overall, <span class=\"math\">160/400 = 0.40</span> of repairs were completed that day.",
-          "Apply this proportion to the 150 appointment visits: <span class=\"math\">150 × 0.40 = 60.</span> Thus a is 60."
+          "Apply this proportion to the 150 appointment visits: <span class=\"math\">150 × 0.40 = 60.</span> Thus a is 60.",
+          "No association requires a common completion rate, not equal interior cell counts. The appointment group should inherit the overall 40% rate under the stated condition."
         ],
         "warning": "There is no reason to split a row, a column, or the whole table in half. Use the proportion determined by the margins."
       },
@@ -995,9 +1003,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. The statement is not supported. The sandwich total is 25, whereas the salad total is 35, so these numbers are not equal.",
+          "The statement is not supported. The sandwich total is 25, whereas the salad total is 35, so these numbers are not equal.",
           "Market Hall has 20 selections in every category, and Station Hall has only 5 sandwich selections, its smallest count.",
-          "Soup has the largest combined total, 60. Therefore, the other three statements are supported."
+          "Soup has the largest combined total, 60. Therefore, the other three statements are supported.",
+          "For a not-supported question, identify the numerical contradiction rather than choosing a statement that sounds unusual. The two combined lunch totals are explicitly unequal."
         ],
         "warning": "A negative ask reverses the task: select the one false statement, rather than one of the three true statements."
       },
@@ -1087,9 +1096,10 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. The reusable segment at Hilltop is above 50%, whereas the reusable segment at Riverside is below 40%. The Hilltop proportion is greater.",
+          "The reusable segment at Hilltop is above 50%, whereas the reusable segment at Riverside is below 40%. The Hilltop proportion is greater.",
           "The sample sizes are missing, so the chart cannot establish which center had more reusable-bottle users.",
-          "Center names have no numerical order, so positive association is not appropriate. Skewness describes quantitative distributions, not bottle categories."
+          "Center names have no numerical order, so positive association is not appropriate. Skewness describes quantitative distributions, not bottle categories.",
+          "The chart establishes an ordering of conditional proportions, not an ordering of headcounts. That distinction remains valid even without exact percentages for the displayed segments."
         ],
         "warning": "Distinguish proportions from counts. Also, avoid applying direction or distribution-shape terms to nominal categories."
       },
@@ -1160,7 +1170,8 @@
       "solution": {
         "steps": [
           "Restrict the reference group to the 30 members who reserved a laser cutter.",
-          "Of those members, 24 completed training, so the conditional proportion is 24/30 = 0.80."
+          "Of those members, 24 completed training, so the conditional proportion is 24/30 = 0.80.",
+          "The condition is reservation, not training completion. Training members who did not reserve a cutter are outside the reference group and do not enter either count."
         ],
         "warning": "A uses all members, B reverses the condition, and D gives the marginal training proportion."
       },
@@ -1285,7 +1296,8 @@
       "solution": {
         "steps": [
           "The coach rate is 12/30 = 0.40; the train rate is 36/90 = 0.40.",
-          "The conditional distributions match, so arrival mode and audio-guide use have no association in these data."
+          "The conditional distributions match, so arrival mode and audio-guide use have no association in these data.",
+          "The larger train group contributes more audio-guide users but the same usage rate. Association is about differences in conditional distributions, not simply differences in cell counts."
         ],
         "warning": "Counts and group sizes can differ when proportions are equal. A within-row majority does not establish absence of association."
       },
@@ -1450,7 +1462,8 @@
       "solution": {
         "steps": [
           "Playgrounds account for 20/50 = 0.40 in North and 30/100 = 0.30 in South.",
-          "Garden proportions are 10/50 and 40/100. Trails have 20 North responses and 30 South responses."
+          "Garden proportions are 10/50 and 40/100. Trails have 20 North responses and 30 South responses.",
+          "Use district totals to remove the effect of surveying twice as many South residents. The playground count is larger in South while its within-district share is smaller."
         ],
         "warning": "Compare proportions using the district totals; neither equal counts nor a taller count bar guarantees a larger proportion."
       },
@@ -1585,7 +1598,8 @@
       "solution": {
         "steps": [
           "Music was chosen by 0.50 × 80 = 40 weekday guests and 0.25 × 160 = 40 weekend guests.",
-          "Dance proportions match at 0.25, but the counts are 20 and 40. Comedy counts are 20 and 80."
+          "Dance proportions match at 0.25, but the counts are 20 and 40. Comedy counts are 20 and 80.",
+          "A lower relative frequency can produce the same count when its group total is larger. Convert percentages to counts before evaluating a claim about numbers of guests."
         ],
         "warning": "Equal proportions do not imply equal counts when group sizes differ. Music has a greater weekday proportion but an equal count."
       },
@@ -1723,7 +1737,8 @@
       "solution": {
         "steps": [
           "Desk A completes 30 of 40 repairs, or 0.75; Desk B completes 30 of 60, or 0.50.",
-          "Different conditional completion proportions indicate association. Column width records desk volume, not the completion rate."
+          "Different conditional completion proportions indicate association. Column width records desk volume, not the completion rate.",
+          "Within-column segment height describes completion rate; column area combines that height with desk volume. Equal numbers of completions do not establish equal completion probabilities."
         ],
         "warning": "Equal counts can mask different rates. A common total height is a property of the display, not evidence of equal conditional distributions."
       },
@@ -1868,7 +1883,8 @@
       "solution": {
         "steps": [
           "Local delivery accounts for 60/120 of orders. Half of those 60 orders use a reusable crate.",
-          "The joint proportion is 30/120 = 0.25, represented by the area of the local reusable rectangle."
+          "The joint proportion is 30/120 = 0.25, represented by the area of the local reusable rectangle.",
+          "The rectangle's width represents a delivery-method share, while its height is a conditional crate share. Their product gives the joint share of all orders represented by the area."
         ],
         "warning": "The column share or within-column height alone gives a marginal or conditional proportion, rather than the joint proportion."
       },
@@ -1974,7 +1990,8 @@
       "solution": {
         "steps": [
           "The afternoon rate is 24/80 = 0.30, whereas the evening rate is 24/40 = 0.60.",
-          "Evening patrons were twice as likely to purchase a snack in these data."
+          "Evening patrons were twice as likely to purchase a snack in these data.",
+          "The two snack counts match, but evening attendance is half as large. The same numerator therefore represents a larger fraction among evening patrons."
         ],
         "warning": "Equal purchaser counts do not establish equal purchase rates. Only the evening group has a majority buying snacks."
       },
@@ -2139,7 +2156,8 @@
       "solution": {
         "steps": [
           "The mailed-receipt rate for monthly subscribers is 18/60 = 0.30.",
-          "The annual rate must also be 0.30, so x = 90 × 0.30 = 27."
+          "The annual rate must also be 0.30, so x = 90 × 0.30 = 27.",
+          "The missing count is determined by making the conditional receipt distributions match. Equal mailed-receipt counts would not satisfy no association because the subscription groups differ in size."
         ],
         "warning": "Equal rates require scaling to the annual group size, not copying 18 or counting the annual subscribers who choose digital receipts."
       },
@@ -2296,7 +2314,8 @@
       "solution": {
         "steps": [
           "The library proportion rose from 0.40 to 0.60, an increase of 0.20, or 20 percentage points.",
-          "Counts and the combined proportion require the two sample sizes, which are not given."
+          "Counts and the combined proportion require the two sample sizes, which are not given.",
+          "A change from 40% to 60% is 20 percentage points. It is not an increase of 20 people, since neither survey's sample size is known."
         ],
         "warning": "A change in relative frequency does not determine a change in count. Pooling two percentages also requires their group sizes."
       },
@@ -2367,7 +2386,8 @@
       "solution": {
         "steps": [
           "There are 70 afternoon registrations and 50 evening registrations.",
-          "The marginal proportion outside morning is (70 + 50)/180 = 120/180."
+          "The marginal proportion outside morning is (70 + 50)/180 = 120/180.",
+          "Each registration belongs to just one session, so afternoon and evening totals can be added without overlap. Morning registrations remain in the denominator because the question concerns all registrations."
         ],
         "warning": "Use all afternoon and evening registrations regardless of activity; 60/180 is the morning proportion."
       },
@@ -2504,7 +2524,8 @@
       "solution": {
         "steps": [
           "Probability describes the <b>long-run relative frequency</b> of an event under the stated random process.",
-          "Keep both the event (arriving before the promised time) and the reference group (deliveries by this service). Over many such deliveries, the relative frequency should be close to 0.70."
+          "Keep both the event (arriving before the promised time) and the reference group (deliveries by this service). Over many such deliveries, the relative frequency should be close to 0.70.",
+          "The 0.70 is a stable process probability, not a promise of exactly seven early arrivals in every group of ten deliveries. Short-run proportions can fluctuate substantially."
         ],
         "warning": "B treats probability as a short-run guarantee. C reverses the reference group and event. D extends the claim to other courier services."
       },
@@ -2550,7 +2571,8 @@
         "steps": [
           "There are 10 equally likely digits. A probability of 0.30 requires <span class=\"math\">0.30 × 10 = 3</span> digits for a packet with a rare seed.",
           "The digits 0, 1, and 2 provide exactly three digits. The other seven digits represent packets without a rare seed.",
-          "To simulate checking six packets, generate six independent digits. The number of packets does not change the digit assignment."
+          "To simulate checking six packets, generate six independent digits. The number of packets does not change the digit assignment.",
+          "One digit models one packet, and six digits constitute one repetition of the packet-checking experiment. Repeating that six-digit experiment estimates probabilities for the resulting count."
         ],
         "warning": "A assigns 4 digits, so it models 40%. B models 70%. C models 50%. Count the endpoints when a range includes both."
       },
@@ -2596,7 +2618,8 @@
         "steps": [
           "Record an outcome as <span class=\"math\">(red, blue)</span>. Because the spinners are distinguishable, (1, 4) and (4, 1) are different outcomes.",
           "The outcomes with sum 5 are <span class=\"math\">(1, 4), (2, 3), (3, 2), (4, 1).</span>",
-          "There are <b>4 outcomes</b> in this event, out of 16 equally likely outcomes in the whole sample space."
+          "There are <b>4 outcomes</b> in this event, out of 16 equally likely outcomes in the whole sample space.",
+          "Count the ordered outcomes before converting to a probability. Although two sequences can have the same sum, their distinct color-labelled results must remain separate sample-space outcomes."
         ],
         "warning": "B counts only unordered pairs. A and C omit valid ordered outcomes."
       },
@@ -2642,7 +2665,8 @@
         "steps": [
           "Tea and cocoa are mutually exclusive choices because each customer chooses exactly one drink.",
           "<span class=\"math\">P(tea or cocoa) = 0.22 + 0.31 = 0.53.</span>",
-          "Take the complement: <span class=\"math\">P(neither) = 1 − 0.53 = 0.47.</span>"
+          "Take the complement: <span class=\"math\">P(neither) = 1 − 0.53 = 0.47.</span>",
+          "The complement includes every drink other than the two named choices. No independence assumption is needed because the kiosk's one-drink rule already makes their overlap impossible."
         ],
         "warning": "A and B return only one given probability. D gives the probability of tea or cocoa instead of neither."
       },
@@ -2739,7 +2763,8 @@
         "steps": [
           "“At least three” includes <b>three or four</b> late trains.",
           "There are <span class=\"math\">40 + 10 = 50</span> qualifying simulated mornings out of 200.",
-          "<span class=\"math\">Estimated probability = 50/200 = 0.25.</span> This simulation estimates the probability; it does not establish an exact theoretical value."
+          "<span class=\"math\">Estimated probability = 50/200 = 0.25.</span> This simulation estimates the probability; it does not establish an exact theoretical value.",
+          "Count simulated mornings that meet the event, rather than the number of late trains within those mornings. Each repetition contributes once to the denominator and at most once to the numerator."
         ],
         "warning": "A counts exactly three and drops four. C gives fewer than three. D includes zero through three, the opposite direction with the boundary included."
       },
@@ -2867,9 +2892,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. The cumulative star proportions are 11/40, 101/400, 1,005/4,000, and 10,008/40,000. They are 0.275, 0.2525, 0.25125, and 0.2502.",
+          "The cumulative star proportions are 11/40, 101/400, 1,005/4,000, and 10,008/40,000. They are 0.275, 0.2525, 0.25125, and 0.2502.",
           "The law of large numbers describes the tendency of a relative frequency over many independent trials to approach the event's probability.",
-          "It does not require the relative frequency to move closer on every trial, nor does it require past outcomes to be balanced immediately."
+          "It does not require the relative frequency to move closer on every trial, nor does it require past outcomes to be balanced immediately.",
+          "The cumulative numerator counts stars while the denominator counts all trials to that point. Stabilization of their ratio does not mean the difference between the counts must approach zero."
         ],
         "warning": "The addition and multiplication rules combine event probabilities. They do not describe the long-run behavior of a running relative frequency."
       },
@@ -2978,9 +3004,10 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. There are <span class=\"math\">6 × 5 = 30</span> ordered selections of two different guides.",
+          "There are <span class=\"math\">6 × 5 = 30</span> ordered selections of two different guides.",
           "Each unordered pair appears twice in that count, so there are 15 equally likely pairs.",
-          "Only one of those pairs is Amina and Farid. The probability is 1/15."
+          "Only one of those pairs is Amina and Farid. The probability is 1/15.",
+          "Choosing Amina then Farid and Farid then Amina describes the same final team. Counting both orders for the numerator and denominator would give the same probability, but counting only one side twice would not."
         ],
         "warning": "Amina followed by Farid and Farid followed by Amina represent the same team. Counting only one favorable ordering out of 30 undercounts the event."
       },
@@ -3086,9 +3113,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. At most one includes the outcomes zero and one.",
+          "At most one includes the outcomes zero and one.",
           "Add the two corresponding relative frequencies: <span class=\"math\">0.440 + 0.390 = 0.830.</span>",
-          "This is an estimate from the simulation. It is not a guarantee about any particular group of five calls."
+          "This is an estimate from the simulation. It is not a guarantee about any particular group of five calls.",
+          "The count being simulated ranges over a group of five calls. At most one allows the zero case, so using only the one-unanswered-call bar would omit favorable repetitions."
         ],
         "warning": "Exactly one uses only the bar at one. Less than one uses only zero. At most one includes both."
       },
@@ -3206,9 +3234,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. There are <span class=\"math\">40 − 12 = 28</span> books that could be poetry.",
+          "There are <span class=\"math\">40 − 12 = 28</span> books that could be poetry.",
           "Even if all 28 non-novels are poetry, the probability is only <span class=\"math\">28/40 = 0.70.</span> Thus 0.85 is impossible.",
-          "The other probabilities are possible with 14, 22, or 28 poetry books, respectively."
+          "The other probabilities are possible with 14, 22, or 28 poetry books, respectively.",
+          "Poetry books form a subset of the 28 non-novels. Their probability cannot exceed that subset's maximum possible share even though every proposed value lies between zero and one."
         ],
         "warning": "The number of poetry books is unknown, but it has an upper bound. A probability above that bound cannot occur."
       },
@@ -3313,9 +3342,10 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. Six of the ten equally likely digits must represent attending because the probability is 0.60.",
+          "Six of the ten equally likely digits must represent attending because the probability is 0.60.",
           "Digits 0, 1, 2, 3, 4, and 5 provide six attending outcomes. Digits 6, 7, 8, and 9 provide the four non-attending outcomes.",
-          "Use eight independent digits to simulate eight members. The number of members does not change the assignment for one member."
+          "Use eight independent digits to simulate eight members. The number of members does not change the assignment for one member.",
+          "The digit labels themselves do not matter; their count and equal likelihood do. A coding that assigns only five digits to attendance would model the wrong individual probability."
         ],
         "warning": "Count both endpoints. Digits 0 through 5 are six digits, not five. The other assignments represent probabilities 0.50, 0.70, and 0.40."
       },
@@ -3388,7 +3418,8 @@
       "solution": {
         "steps": [
           "Each of the two positions can be F or S.",
-          "Listing the ordered pairs gives FF, FS, SF, and SS. FS and SF are different outcomes because parcel order is recorded."
+          "Listing the ordered pairs gives FF, FS, SF, and SS. FS and SF are different outcomes because parcel order is recorded.",
+          "Listing all possibilities defines the sample space, but does not by itself assert equal probabilities for those outcomes. Equal likelihood would require additional information about the sorting process."
         ],
         "warning": "Single labels describe only one parcel. Omitting SF or both mixed pairs leaves out possible outcomes."
       },
@@ -3460,7 +3491,8 @@
       "solution": {
         "steps": [
           "The number not cataloged is 180 − 135 = 45.",
-          "Divide by all books: 45/180 = 0.25. Equivalently, subtract the cataloged proportion from 1."
+          "Divide by all books: 45/180 = 0.25. Equivalently, subtract the cataloged proportion from 1.",
+          "Cataloged and not cataloged partition the same collection. Their probabilities sum to 1 because every book is in exactly one of those two categories."
         ],
         "warning": "0.75 is the cataloged probability. Dividing by 135 uses the wrong reference group; a probability cannot exceed 1."
       },
@@ -3583,7 +3615,8 @@
       "solution": {
         "steps": [
           "There are 100 equally likely two-digit values. Exactly 35 must represent a required signature.",
-          "The values 00 through 34 supply 35 outcomes, leaving 65 outcomes for no signature."
+          "The values 00 through 34 supply 35 outcomes, leaving 65 outcomes for no signature.",
+          "Inclusive endpoints matter: 00 through 34 contains 35 values. A range ending at 35 would incorrectly assign 36 of the 100 equally likely outcomes to signature-required parcels."
         ],
         "warning": "Inclusive endpoints matter: 00–35 gives 36 outcomes. Ignoring 00 changes the denominator, and 00–64 models 65%."
       },
@@ -3657,7 +3690,8 @@
       "solution": {
         "steps": [
           "Include the bars for 2, 3, and 4 failures: 100 + 40 + 10 = 150 repetitions.",
-          "The estimated probability is 150/500 = 0.30."
+          "The estimated probability is 150/500 = 0.30.",
+          "The event includes every repetition with two or more failures. Add repetition counts first and divide by repetitions, not by the total number of individual inspected products."
         ],
         "warning": "Use all outcomes meeting the threshold, including 2. The complement 0.70 estimates fewer than 2 failures."
       },
@@ -3792,7 +3826,8 @@
       "solution": {
         "steps": [
           "Exactly one delay occurred in 180 of the 400 simulated mornings.",
-          "The estimated probability is 180/400 = 0.45. The unit counted in the denominator is a morning, not a ferry departure."
+          "The estimated probability is 180/400 = 0.45. The unit counted in the denominator is a morning, not a ferry departure.",
+          "One simulated morning is one trial of the three-departure experiment. Dividing by all simulated departures would estimate a different quantity than the probability of exactly one delayed departure in a morning."
         ],
         "warning": "Adding the zero-delay mornings answers at most one. Dividing by 1,200 mixes departures with simulated mornings."
       },
@@ -3930,7 +3965,8 @@
       "solution": {
         "steps": [
           "The probability 0.30 describes the long-run fraction of runs producing a spiral.",
-          "Independent runs retain the same probability even after an unusual short sequence; a block of ten need not contain exactly three spirals."
+          "Independent runs retain the same probability even after an unusual short sequence; a block of ten need not contain exactly three spirals.",
+          "The unusual early spiral count does not create a debt that future runs must repay. Independence preserves the next-run probability while long-run proportions can still stabilize near the process value."
         ],
         "warning": "Short-run results neither force future compensation nor change a fixed independent probability."
       },
@@ -3982,7 +4018,8 @@
       "solution": {
         "steps": [
           "With many independent repetitions, relative frequencies tend to stabilize near the process probability.",
-          "A larger run usually gives a closer proportion, but randomness remains. The number of stars and the proportion of stars are different quantities."
+          "A larger run usually gives a closer proportion, but randomness remains. The number of stars and the proportion of stars are different quantities.",
+          "The larger experiment is more stable in proportion, not necessarily closer in raw number of stars to its expected count. More runs reduce relative fluctuation without removing randomness."
         ],
         "warning": "The law describes long-run stabilization, not an exact result or a guarantee for every pair of runs."
       },
@@ -4054,7 +4091,8 @@
       "solution": {
         "steps": [
           "There are 3 × 4 = 12 equally likely shape-color pairs.",
-          "Two qualify: circular-blue and circular-gold. Their probability is 2/12."
+          "Two qualify: circular-blue and circular-gold. Their probability is 2/12.",
+          "The multiplication count forms the full set of shape-color combinations. Counting just the two acceptable colors would omit the requirement that the shape be circular."
         ],
         "warning": "Add the qualifying pairs, but multiply the numbers of choices to count the sample space."
       },
@@ -4117,7 +4155,8 @@
       "solution": {
         "steps": [
           "Reptiles and amphibians account for 50 + 30 = 80 observations.",
-          "The probability is 80/200 = 0.40, also found by subtracting the combined bird and mammal share from 1."
+          "The probability is 80/200 = 0.40, also found by subtracting the combined bird and mammal share from 1.",
+          "The two qualifying animal categories do not overlap because each observation receives exactly one classification. All 200 recorded observations remain the equally likely choices in the denominator."
         ],
         "warning": "Neither includes both remaining groups. The value 0.60 describes birds or mammals."
       },
@@ -4238,7 +4277,8 @@
       "solution": {
         "steps": [
           "At most one includes 0 makes and 1 make. These bars contain 150 + 200 = 350 rounds.",
-          "The estimate is 350/1,000 = 0.35."
+          "The estimate is 350/1,000 = 0.35.",
+          "The simulation's success label means a made shot. Translate at most one into the corresponding count values before adding bars; failure to notice that label can reverse the event."
         ],
         "warning": "Using only one bar misses part of the event. The denominator counts complete simulated rounds."
       },
@@ -4372,7 +4412,8 @@
       "solution": {
         "steps": [
           "The condition “experienced” restricts the reference group to the <b>60 experienced participants</b>.",
-          "Of those participants, 42 chose a glazed finish. Therefore, <span class=\"math\">P(glazed | experienced) = 42/60 = 0.70.</span>"
+          "Of those participants, 42 chose a glazed finish. Therefore, <span class=\"math\">P(glazed | experienced) = 42/60 = 0.70.</span>",
+          "Within the experienced group, the 42 glazed participants are the favorable subset. Using the total glazed count as denominator would reverse which characteristic is assumed known."
         ],
         "warning": "B is the joint probability. C reverses the condition and finds the proportion experienced among glazed-finish participants. D gives the overall glazed proportion."
       },
@@ -4490,7 +4531,8 @@
         "steps": [
           "The condition is working on trails, so the denominator is 75. The volunteers satisfying both events are the 15 who worked on trails and in gardens.",
           "<span class=\"math\">P(gardens | trails) = 15/75 = 0.20.</span>",
-          "Reversing the condition would use 45 as the denominator and answer a different question."
+          "Reversing the condition would use 45 as the denominator and answer a different question.",
+          "All 125 volunteers are initially eligible, but learning that the selected person worked on trails narrows the relevant population. Only trail volunteers remain possible after applying that condition."
         ],
         "warning": "A uses the grand total: 15/125 = 0.12. C reverses the condition: 15/45 ≈ 0.33. D gives the marginal trail probability: 75/125 = 0.60."
       },
@@ -4581,7 +4623,8 @@
         "steps": [
           "First find the number who attended at least one performance: <span class=\"math\">200 − 50 = 150.</span>",
           "Adding the theater and music counts counts anyone who attended both twice. Thus the overlap is <span class=\"math\">96 + 74 − 150 = 20.</span>",
-          "<span class=\"math\">P(T ∩ M) = 20/200 = 0.10.</span> Mutually exclusive events cannot occur together. Since the overlap is positive, these events are <b>not mutually exclusive</b>."
+          "<span class=\"math\">P(T ∩ M) = 20/200 = 0.10.</span> Mutually exclusive events cannot occur together. Since the overlap is positive, these events are <b>not mutually exclusive</b>.",
+          "The overlap is established from observed counts, without an independence assumption. Any positive shared count is enough to rule out mutual exclusivity."
         ],
         "warning": "B gets the overlap right but the conclusion wrong. C ignores the overlap. D uses the union probability as the intersection."
       },
@@ -4685,7 +4728,8 @@
         "steps": [
           "Restrict the sample space to the sequences with at least two heads: <span class=\"math\">HHH, HHT, HTH, THH.</span>",
           "These four sequences are equally likely. Only HHH has all three heads.",
-          "<span class=\"math\">P(three heads | at least two heads) = 1/4.</span>"
+          "<span class=\"math\">P(three heads | at least two heads) = 1/4.</span>",
+          "The condition excludes four sequences, so the original denominator of eight no longer applies. Fairness and independence make each surviving sequence equally likely within the restricted group."
         ],
         "warning": "A ignores the condition and uses all eight outcomes. C incorrectly treats “exactly two heads” and “three heads” as equally likely categories. D is the unconditional probability of at least one head."
       },
@@ -4774,7 +4818,8 @@
         "steps": [
           "The condition excludes everyone inside the Walked circle. The remaining residents are 36 in Cycled only and 28 in neither.",
           "So <span class=\"math\">n(not walked) = 36 + 28 = 64.</span> Within that group, 36 cycled.",
-          "<span class=\"math\">P(cycled | not walked) = 36/64 = 0.5625.</span>"
+          "<span class=\"math\">P(cycled | not walked) = 36/64 = 0.5625.</span>",
+          "Not walking includes both cycling-only residents and residents doing neither activity. Excluding the neither group would incorrectly treat all nonwalkers as cyclists."
         ],
         "warning": "A answers “cycled given walked.” B ignores the condition. D includes the 12 who both cycled and walked in the numerator even though the condition excludes them."
       },
@@ -4875,9 +4920,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. The condition restricts the reference group to bicycle renters.",
+          "The condition restricts the reference group to bicycle renters.",
           "Divide the probability of renting both items by the probability of renting a bicycle: <span class=\"math\">P(helmet | bicycle) = 0.18/0.48 = 0.375.</span>",
-          "The overall helmet-rental rate, 0.30, is not the requested conditional probability."
+          "The overall helmet-rental rate, 0.30, is not the requested conditional probability.",
+          "The joint probability measures bicycle-and-helmet renters as a share of everyone. Dividing by the bicycle share rescales that overlap to the smaller conditioning group."
         ],
         "warning": "The joint probability 0.18 uses all participants as the reference group. A conditional probability uses only the group named after given."
       },
@@ -4981,9 +5027,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. The condition is that a reminder was requested. Use the reminder-requested column, whose total is 70.",
+          "The condition is that a reminder was requested. Use the reminder-requested column, whose total is 70.",
           "There are 54 online reservations in that column, so the probability is 54/70, approximately 0.771.",
-          "Dividing by the online total of 90 would answer the reversed question: the probability of requesting a reminder given an online reservation."
+          "Dividing by the online total of 90 would answer the reversed question: the probability of requesting a reminder given an online reservation.",
+          "Read the condition after given as the group whose total belongs in the denominator. Online reservations supply the favorable count inside that reminder-requested group."
         ],
         "warning": "The condition, not the first event mentioned in the scenario, determines the denominator."
       },
@@ -5114,9 +5161,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. The condition leaves 11 ordered outcomes: six with a red 6, six with a blue 6, with (6, 6) counted only once.",
+          "The condition leaves 11 ordered outcomes: six with a red 6, six with a blue 6, with (6, 6) counted only once.",
           "Among these 11 outcomes, only (6, 2) and (2, 6) have a sum of 8.",
-          "The conditional probability is 2/11. The full sample space of 36 outcomes is no longer the reference group."
+          "The conditional probability is 2/11. The full sample space of 36 outcomes is no longer the reference group.",
+          "The two occurrences of a 6 overlap at the double-six outcome. Counting that outcome twice would distort the restricted sample space and the resulting conditional probability."
         ],
         "warning": "Keep the cubes distinguishable. Treating the six unordered pairs as equally likely is incorrect because most represent two ordered outcomes, while (6, 6) represents only one."
       },
@@ -5215,9 +5263,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. Mutually exclusive events cannot both occur for the same participant.",
+          "Mutually exclusive events cannot both occur for the same participant.",
           "A participant attends exactly one session, so attending morning and attending afternoon have joint probability zero.",
-          "Each other pair combines an activity with a session and has a positive count in the table: 12, 16, or 18."
+          "Each other pair combines an activity with a session and has a positive count in the table: 12, 16, or 18.",
+          "Mutual exclusivity is about one selected participant satisfying both events. Different participants can attend different sessions without creating any shared outcome for that one-person experiment."
         ],
         "warning": "Categories from different variables can overlap. Two different categories of a variable that allows exactly one choice cannot overlap."
       },
@@ -5303,9 +5352,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. To find the joint probability, multiply the proportion enrolled online by the renewal probability among online subscribers.",
+          "To find the joint probability, multiply the proportion enrolled online by the renewal probability among online subscribers.",
           "The required online-enrollment proportion is missing. The overall renewal rate, 0.52, does not supply that proportion.",
-          "For example, an online proportion of 0.40 gives a joint probability of 0.26, while an online proportion of 0.60 gives 0.39. Both can be consistent with an overall renewal rate of 0.52."
+          "For example, an online proportion of 0.40 gives a joint probability of 0.26, while an online proportion of 0.60 gives 0.39. Both can be consistent with an overall renewal rate of 0.52.",
+          "An overall renewal rate combines online and other subscribers. It cannot identify the online group size without further information about how the overall population is split."
         ],
         "warning": "A percentage of a subgroup is conditional. Do not multiply it by an unrelated overall percentage to manufacture a joint probability."
       },
@@ -5378,7 +5428,8 @@
       "solution": {
         "steps": [
           "The drill group contains 42 + 18 = 60 members.",
-          "Eighteen of those members also borrowed a saw, so the conditional probability is 18/60 = 0.30."
+          "Eighteen of those members also borrowed a saw, so the conditional probability is 18/60 = 0.30.",
+          "A drill borrower can be in the drill-only region or in the overlap. Both regions belong in the denominator, but only the overlap satisfies the additional saw requirement."
         ],
         "warning": "18/100 is a joint probability, and 18/40 reverses the conditioning event."
       },
@@ -5489,7 +5540,8 @@
       "solution": {
         "steps": [
           "The no-lock group consists of 24 light-only customers and 16 customers who bought neither item, giving 40 customers.",
-          "Of these 40, 24 bought a light. The conditional probability is 24/40 = 0.60."
+          "Of these 40, 24 bought a light. The conditional probability is 24/40 = 0.60.",
+          "The no-lock condition removes the entire lock circle, including its overlap. The neither group remains eligible because its members also satisfy not buying a lock."
         ],
         "warning": "Exclude every customer inside the lock circle from the denominator, including those who bought both items."
       },
@@ -5597,7 +5649,8 @@
       "solution": {
         "steps": [
           "The conditioning group is the 30% using writing. The 18% using both is a subset of that group.",
-          "Divide the joint probability by the writing probability: 0.18/0.30 = 0.60."
+          "Divide the joint probability by the writing probability: 0.18/0.30 = 0.60.",
+          "Reverse conditioning would use the 40% listening group as denominator. The requested writing condition instead asks what fraction of writing users belong to the overlap."
         ],
         "warning": "0.45 reverses the condition by dividing by 0.40; 0.18 leaves the sample space unrestricted."
       },
@@ -5706,7 +5759,8 @@
       "solution": {
         "steps": [
           "The first cube can show 2, 4, or 6, and the second can show any of six numbers. There are 18 conditional outcomes.",
-          "Three have sum 7: (2,5), (4,3), and (6,1). Thus the probability is 3/18 = 1/6."
+          "Three have sum 7: (2,5), (4,3), and (6,1). Thus the probability is 3/18 = 1/6.",
+          "The condition reduces only the first cube's possibilities. The second still has six possible results for each allowed first result, preserving equally likely ordered pairs within the restricted space."
         ],
         "warning": "Do not retain all 36 outcomes after restricting the first cube. Counting three qualifying pairs without the conditional denominator gives 3/36."
       },
@@ -5778,7 +5832,8 @@
       "solution": {
         "steps": [
           "The remaining sequences are THH, THT, TTH, and TTT.",
-          "Only THH has exactly two heads, so the conditional probability is 1/4."
+          "Only THH has exactly two heads, so the conditional probability is 1/4.",
+          "Exactly two heads with an initial tail requires heads on both remaining tosses. The initial tail is known information, not an additional event whose probability should be multiplied into this conditional answer."
         ],
         "warning": "Use the four sequences compatible with the first toss. Counting all two-head sequences ignores the given information."
       },
@@ -5850,7 +5905,8 @@
       "solution": {
         "steps": [
           "The condition includes the 40 year-2 respondents and 50 year-3 respondents, for a total of 90.",
-          "Within those years, 12 + 18 = 30 used tutoring. The probability is 30/90."
+          "Within those years, 12 + 18 = 30 used tutoring. The probability is 30/90.",
+          "The two study years form disjoint eligible groups. Pool the tutoring counts and group totals before dividing; a simple average of their rates would ignore their different sizes."
         ],
         "warning": "Combine both years in the numerator and denominator. Dividing by 60 conditions on tutoring use instead."
       },
@@ -5989,7 +6045,8 @@
       "solution": {
         "steps": [
           "The overlap contains 20 visitors, so the joint probability is 20/100 = 0.20.",
-          "Mutually exclusive events have no shared outcomes. These events have a nonzero overlap."
+          "Mutually exclusive events have no shared outcomes. These events have a nonzero overlap.",
+          "The overlap records visitors who satisfy both events in one visit. That observed shared group directly rules out mutual exclusivity, regardless of how large either individual animal group is."
         ],
         "warning": "The overlap decides exclusivity. Neither unequal group sizes nor the visitors outside both circles settle the question."
       },
@@ -6063,7 +6120,8 @@
       "solution": {
         "steps": [
           "The online column contains 30 cake orders and 20 other orders.",
-          "The conditional probability is 30/(30 + 20) = 0.60, represented by the cake segment’s height within the online column."
+          "The conditional probability is 30/(30 + 20) = 0.60, represented by the cake segment’s height within the online column.",
+          "Conditioning on online ordering uses the cake segment's height within its own column. The full rectangle's area would instead represent online cake orders as a share of all orders."
         ],
         "warning": "0.25 is the joint online-and-cake share of all orders. A conditional probability uses only online orders."
       },
@@ -6174,7 +6232,8 @@
       "solution": {
         "steps": [
           "The requested condition is requesting materials, with probability 0.50.",
-          "The relevant joint probability is 0.24, so the answer is 0.24/0.50 = 0.48."
+          "The relevant joint probability is 0.24, so the answer is 0.24/0.50 = 0.48.",
+          "Early registration is the event sought, while requesting materials is assumed known. The 0.60 early-registration rate is not the conditioning denominator for this direction of the question."
         ],
         "warning": "Dividing by 0.60 gives the reverse conditional probability. The 0.24 joint probability uses all attendees as the reference group."
       },
@@ -6272,7 +6331,8 @@
       "solution": {
         "steps": [
           "Let P represent a portrait booking and A represent an album order. The joint probability is P(P) × P(A | P).",
-          "The conditional factor is already 0.60. Knowing P(P) supplies the missing factor."
+          "The conditional factor is already 0.60. Knowing P(P) supplies the missing factor.",
+          "The overall album rate describes a mixture of portrait and other customers. The missing portrait share tells how large the subgroup is before applying its 60% album rate."
         ],
         "warning": "The album complement is already known, and repeating the given conditional supplies no new information."
       },
@@ -6347,7 +6407,8 @@
         "steps": [
           "Let C mean taking ceramics and E mean submitting a piece. The information gives <span class=\"math\">P(C) = 0.35</span> and <span class=\"math\">P(E | C) = 0.60.</span>",
           "Use the general multiplication rule: <span class=\"math\">P(C ∩ E) = P(C)P(E | C) = 0.35 × 0.60 = 0.21.</span>",
-          "The second factor is conditional. No assumption of independence is needed."
+          "The second factor is conditional. No assumption of independence is needed.",
+          "The 60% applies within ceramics students, not to all members. Multiplication scales that subgroup share by the fraction of the center belonging to the subgroup."
         ],
         "warning": "B subtracts the given probabilities. C returns only the conditional rate. D adds the probabilities instead of multiplying."
       },
@@ -6442,7 +6503,8 @@
         "steps": [
           "The probability the first token is green is <span class=\"math\">5/12.</span>",
           "After a green token is removed, 4 green tokens remain among 11 tokens. Thus <span class=\"math\">P(second green | first green) = 4/11.</span>",
-          "<span class=\"math\">P(both green) = (5/12)(4/11) = 20/132 ≈ 0.152.</span>"
+          "<span class=\"math\">P(both green) = (5/12)(4/11) = 20/132 ≈ 0.152.</span>",
+          "Without replacement changes both the number of available green tokens and the total. Reusing the first-draw probability on the second draw would assume an unchanged bag."
         ],
         "warning": "A reduces the green count but keeps 12 as the second denominator. C treats the draws as if the first token were replaced. D considers only the first draw."
       },
@@ -6537,13 +6599,13 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "All three detections must occur. Because the sensors operate independently, multiply their detection probabilities.",
           "Let A mean that all three detectors signal. Multiply the three probabilities because the detection events are independent.",
           {
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}r&=0.80(0.90)\\\\&=0.72\\\\P(A)&=r(0.95)\\\\&=0.684\\end{aligned}"
-          }
+          },
+          "The event requires a signal from every sensor, so one missed detection means failure of the requested event. Adding the three detection rates would not describe that simultaneous requirement."
         ],
         "warning": "A multiplies the failure probabilities. B is the probability that at least one sensor fails. D adds the probabilities and produces a value greater than 1."
       },
@@ -6641,7 +6703,8 @@
         "steps": [
           "The complement of “at least one day” is <b>no days</b>. The probability of no adjustment on one day is <span class=\"math\">1 − 0.20 = 0.80.</span>",
           "By independence, <span class=\"math\">P(no adjustments in three days) = 0.80³ = 0.512.</span>",
-          "Therefore, <span class=\"math\">P(at least one adjustment) = 1 − 0.512 = 0.488.</span>"
+          "Therefore, <span class=\"math\">P(at least one adjustment) = 1 − 0.512 = 0.488.</span>",
+          "Using the complement combines cases with one, two or three adjustment days without listing them individually. Exactly one adjustment is only part of the requested at-least-one event."
         ],
         "warning": "A gives exactly one day, missing cases with two or three. C gives no days. D subtracts the probability of adjustment on all three days, a different complement."
       },
@@ -6736,7 +6799,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}P(A\\cap O)&=0.30(0.90)\\\\&=0.27\\\\P(B\\cap O)&=0.70(0.60)\\\\&=0.42\\end{aligned}"
           },
-          "The two service categories are disjoint, so add 0.27 and 0.42 to obtain the overall on-time probability 0.69."
+          "The two service categories are disjoint, so add 0.27 and 0.42 to obtain the overall on-time probability 0.69.",
+          "The overall on-time rate is a weighted average of the two service rates. Equal averaging would incorrectly treat Express and Standard as equally common parcel categories."
         ],
         "warning": "A counts only the Express path. B and D each return one conditional on-time rate and ignore the other delivery method."
       },
@@ -6844,13 +6908,14 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. Exactly one consists of two disjoint paths: the first flags and the second does not, or the first does not flag and the second does. Let F and S denote those two paths, respectively.",
+          "Exactly one consists of two disjoint paths: the first flags and the second does not, or the first does not flag and the second does. Let F and S denote those two paths, respectively.",
           {
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}P(F)&=0.25(0.60)\\\\&=0.15\\\\P(S)&=0.75(0.40)\\\\&=0.30\\end{aligned}"
           },
-          "Add the disjoint paths: <span class=\"math\">0.15 + 0.30 = 0.45.</span>"
+          "Add the disjoint paths: <span class=\"math\">0.15 + 0.30 = 0.45.</span>",
+          "Exactly one excludes both the double-flag and no-flag outcomes. Independence justifies each path product, and the two qualifying paths can be added because they cannot occur together."
         ],
         "warning": "Multiplying only one path omits a valid case. Adding the two flagging rates includes packages flagged by both checks."
       },
@@ -6964,9 +7029,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. The probability that the first bead is silver is 5/13.",
+          "The probability that the first bead is silver is 5/13.",
           "After a silver bead is removed, 4 silver beads remain among 12 beads. The conditional probability for the second bead is 4/12.",
-          "Multiply along the path: <span class=\"math\">5/13 × 4/12 = 20/156.</span>"
+          "Multiply along the path: <span class=\"math\">5/13 × 4/12 = 20/156.</span>",
+          "Multiplying successive conditional probabilities follows the without-replacement process. The denominator decreases even on paths where the second bead is not silver."
         ],
         "warning": "Without replacement, both the silver count and the total decrease. Keeping 13 in the second denominator models the wrong process."
       },
@@ -7073,9 +7139,10 @@
       "answer": "B",
       "solution": {
         "steps": [
-          "Correct. First find the probability of both being in the orchestra and attending: <span class=\"math\">0.40 × 0.80 = 0.32.</span>",
+          "First find the probability of both being in the orchestra and attending: <span class=\"math\">0.40 × 0.80 = 0.32.</span>",
           "The concert attendees split into orchestra students and students outside the orchestra. These groups do not overlap.",
-          "Subtract the orchestra attendees from all attendees: <span class=\"math\">0.55 − 0.32 = 0.23.</span>"
+          "Subtract the orchestra attendees from all attendees: <span class=\"math\">0.55 − 0.32 = 0.23.</span>",
+          "The 80% is a concert rate within the orchestra, so its product with 40% gives the joint share. Removing that joint group leaves concert attendees outside the orchestra."
         ],
         "warning": "Multiplying 0.40 by 0.55 assumes independence, which is not given. The conditional attendance rate must be used to find the overlap."
       },
@@ -7183,9 +7250,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. Use two disjoint paths: Bank A and germinates, or Bank B and germinates.",
+          "Use two disjoint paths: Bank A and germinates, or Bank B and germinates.",
           "Their probabilities are <span class=\"math\">0.25 × 0.40 = 0.10</span> and <span class=\"math\">0.75 × 0.80 = 0.60.</span>",
-          "Add the paths to obtain <span class=\"math\">0.10 + 0.60 = 0.70.</span>"
+          "Add the paths to obtain <span class=\"math\">0.10 + 0.60 = 0.70.</span>",
+          "Bank B supplies three times as many seeds as Bank A. Its germination rate therefore receives three times the weight in the overall mixture, rather than equal weighting."
         ],
         "warning": "The bank-specific germination rates must be weighted by how many seeds come from each bank. One branch alone does not account for all germinating seeds."
       },
@@ -7303,9 +7371,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. The multiplication rule is <span class=\"math\">P(A ∩ B) = P(A) × P(B | A).</span>",
+          "The multiplication rule is <span class=\"math\">P(A ∩ B) = P(A) × P(B | A).</span>",
           "Here, <span class=\"math\">0.24 = P(A) × 0.60.</span> Solve for the probability of the condition by dividing the joint probability by the conditional probability.",
-          "<span class=\"math\">P(A) = 0.24/0.60 = 0.40.</span>"
+          "<span class=\"math\">P(A) = 0.24/0.60 = 0.40.</span>",
+          "The conditional probability applies only to people who clicked. Recovering the click share requires dividing the joint share by that within-clicker registration rate, not by the overall complement."
         ],
         "warning": "Multiplication finds the joint when a marginal and conditional are known. Here the joint is already known, so divide to recover the marginal."
       },
@@ -7409,7 +7478,8 @@
       "solution": {
         "steps": [
           "The error paths have probabilities 0.25 × 0.12 = 0.03 and 0.75 × 0.04 = 0.03.",
-          "The total error probability is 0.06. Of that error probability, line A contributes 0.03, so the reverse conditional is 0.03/0.06 = 0.50."
+          "The total error probability is 0.06. Of that error probability, line A contributes 0.03, so the reverse conditional is 0.03/0.06 = 0.50.",
+          "The rare-error rates must be weighted by line shares before conditioning. Although A has a higher within-line error rate, its smaller volume makes its error contribution equal to B's."
         ],
         "warning": "0.12 is the probability of an error given line A, not the reverse conditional. A single path is a joint probability."
       },
@@ -7582,7 +7652,8 @@
       "solution": {
         "steps": [
           "Every traffic-delay trip qualifies, including those also delayed by rain, contributing 0.20.",
-          "Add the disjoint no-traffic, rain-delay path: 0.80 × 0.10 = 0.08. The union probability is 0.20 + 0.08 = 0.28."
+          "Add the disjoint no-traffic, rain-delay path: 0.80 × 0.10 = 0.08. The union probability is 0.20 + 0.08 = 0.28.",
+          "Every traffic case is already counted in the first contribution. Add only rain cases without traffic; adding all rain cases would count joint traffic-and-rain delays twice."
         ],
         "warning": "The total rain probability 0.14 excludes traffic-only delays. Adding 0.20 and 0.10 fails to weight the second path."
       },
@@ -7694,7 +7765,8 @@
       "solution": {
         "steps": [
           "The first copper probability is 4/9. After a copper draw, 3 of the remaining 8 tokens are copper.",
-          "Multiply along the required sequence: (4/9)(3/8) = 12/72."
+          "Multiply along the required sequence: (4/9)(3/8) = 12/72.",
+          "Drawing a copper token first changes the second-draw composition. The copper count and total both decrease by one, so multiplying two copies of the initial fraction would model replacement instead."
         ],
         "warning": "Reducing neither count models replacement; reducing only the numerator leaves the second denominator incorrect. The first-draw probability alone is incomplete."
       },
@@ -7800,7 +7872,8 @@
       "solution": {
         "steps": [
           "The disjoint matching-color cases are red-red, blue-blue, and green-green.",
-          "With replacement the draws are independent, so add 0.50² + 0.30² + 0.20² = 0.38."
+          "With replacement the draws are independent, so add 0.50² + 0.30² + 0.20² = 0.38.",
+          "Matching colors includes three separate paths. Replacement restores the same color proportions on the second draw, and the different matching-color paths cannot occur together in one two-draw experiment."
         ],
         "warning": "0.25 counts only two reds. The complement 0.62 is the probability of different colors."
       },
@@ -7909,7 +7982,8 @@
       "solution": {
         "steps": [
           "The probability of black-white is 0.70 × 0.30 = 0.21. White-black has probability 0.30 × 0.70 = 0.21.",
-          "Previous spins do not change these probabilities. Black-black has probability 0.49, compared with 0.09 for white-white."
+          "Previous spins do not change these probabilities. Black-black has probability 0.49, compared with 0.09 for white-white.",
+          "Each specified sequence has one black and one white result, so reversing their order preserves the product. The earlier black streak does not make a white result due."
         ],
         "warning": "Independence rules out compensation for earlier outcomes, and equally many sequences need not have equal probabilities when their color counts differ."
       },
@@ -7959,7 +8033,8 @@
       "solution": {
         "steps": [
           "Start with the electric-bicycle group, which represents 0.40 of all customers.",
-          "Multiply by its helmet rate: 0.40 × 0.30 = 0.12. The overall helmet rate is not needed."
+          "Multiply by its helmet rate: 0.40 × 0.30 = 0.12. The overall helmet rate is not needed.",
+          "The 30% helmet rate belongs specifically to electric-bike customers. Multiplying by the overall 25% helmet rate would impose an independence assumption that the given conditional information contradicts."
         ],
         "warning": "Multiplying the two marginal rates assumes independence. The conditional helmet rate alone omits the first stage."
       },
@@ -8067,7 +8142,8 @@
       "solution": {
         "steps": [
           "The failure probabilities are 1 − 0.80 = 0.20 and 1 − 0.60 = 0.40.",
-          "Independent failures have joint probability 0.20 × 0.40 = 0.08."
+          "Independent failures have joint probability 0.20 × 0.40 = 0.08.",
+          "Both connections failing requires the intersection of the two failure events. The complement of both succeeding would also include cases where exactly one connection fails and would answer a broader question."
         ],
         "warning": "0.48 is both connections succeeding; 0.52 is at least one failing, which also includes exactly one failure."
       },
@@ -8174,7 +8250,8 @@
       "solution": {
         "steps": [
           "Greenhouse A contributes 0.60 × 0.70 = 0.42 to the flowering probability.",
-          "Greenhouse B contributes 0.40 × 0.45 = 0.18. Add the disjoint paths to obtain 0.60, or 60%."
+          "Greenhouse B contributes 0.40 × 0.45 = 0.18. Add the disjoint paths to obtain 0.60, or 60%.",
+          "The overall flowering probability includes greenhouse A flowers and greenhouse B flowers. Weighting their separate rates by their production shares prevents the larger greenhouse from being underrepresented."
         ],
         "warning": "A single path excludes plants from the other greenhouse. The conditional flowering rates require weighting by greenhouse share."
       },
@@ -8302,7 +8379,8 @@
       "solution": {
         "steps": [
           "The probability of both a laboratory course and a locker is 0.40 × 0.75 = 0.30.",
-          "Subtract this overlap from the overall locker probability: 0.50 − 0.30 = 0.20."
+          "Subtract this overlap from the overall locker probability: 0.50 − 0.30 = 0.20.",
+          "The locker population splits into laboratory-course and nonlaboratory students. Subtracting the joint laboratory-and-locker share leaves the locker users who are outside the laboratory group."
         ],
         "warning": "0.30 is the wrong part of the locker group. Multiplying 0.50 by 0.60 assumes an independence condition that was not given."
       },
@@ -8404,7 +8482,8 @@
       "solution": {
         "steps": [
           "Supplier A contributes 0.40 × 0.05 = 0.02 to the damaged probability; supplier B contributes 0.60 × 0.10 = 0.06.",
-          "Among damaged lamps, the A share is 0.02/(0.02 + 0.06) = 0.25."
+          "Among damaged lamps, the A share is 0.02/(0.02 + 0.06) = 0.25.",
+          "The question reverses the tree: among damaged lamps, identify their source. Normalize the A-damaged path by all damaged paths, rather than by all lamps from A."
         ],
         "warning": "The 0.05 rate conditions on supplier A, whereas the question conditions on damage. The 0.02 joint probability requires normalization."
       },
@@ -8582,7 +8661,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}P(E\\mid D)&=\\frac{18}{60}\\\\&=0.30\\\\P(E\\mid L)&=\\frac{12}{40}\\\\&=0.30\\end{aligned}"
           },
-          "The overall enabled proportion is also <span class=\"math\">30/100 = 0.30.</span> Knowing device type does not change the probability of enabling backups, so the events are independent for this group."
+          "The overall enabled proportion is also <span class=\"math\">30/100 = 0.30.</span> Knowing device type does not change the probability of enabling backups, so the events are independent for this group.",
+          "Independence here concerns the selected participant in this recorded group. Equal backup rates do not imply equal device counts or that backups cannot occur with either device type."
         ],
         "warning": "A compares counts instead of proportions. B claims equal counts, but 18 and 12 are different. C compares complementary outcomes within one device group."
       },
@@ -8722,7 +8802,8 @@
         "steps": [
           "Let S mean Spanish and J mean Japanese. The 30% is conditional: <span class=\"math\">P(J | S) = 0.30.</span>",
           "Find the overlap: <span class=\"math\">P(S ∩ J) = 0.50 × 0.30 = 0.15.</span>",
-          "Use the addition rule: <span class=\"math\">P(S ∪ J) = 0.50 + 0.40 − 0.15 = 0.75.</span> Subtracting the overlap prevents double counting."
+          "Use the addition rule: <span class=\"math\">P(S ∪ J) = 0.50 + 0.40 − 0.15 = 0.75.</span> Subtracting the overlap prevents double counting.",
+          "The given 30% is measured among Spanish learners, so it must first be converted into a share of all learners. Subtracting 0.30 directly would remove too much overlap."
         ],
         "warning": "A constructs the overlap from the wrong probabilities: 0.40 × 0.70. B assumes independence and subtracts 0.50 × 0.40. D does not subtract the overlap."
       },
@@ -8825,7 +8906,8 @@
         "steps": [
           "By independence, the probability both lose signal is <span class=\"math\">0.25 × 0.40 = 0.10.</span>",
           "Use the addition rule for at least one: <span class=\"math\">0.25 + 0.40 − 0.10 = 0.55.</span>",
-          "Equivalently, subtract the probability neither loses signal: <span class=\"math\">1 − (0.75)(0.60) = 0.55.</span>"
+          "Equivalently, subtract the probability neither loses signal: <span class=\"math\">1 − (0.75)(0.60) = 0.55.</span>",
+          "Independent systems may still fail together. Their positive overlap must be removed once when adding individual loss probabilities to find the chance of one or both failures."
         ],
         "warning": "A gives the intersection instead of the union. B subtracts the two probabilities. D adds them without correcting for overlap."
       },
@@ -8928,7 +9010,8 @@
         "steps": [
           "A passenger cannot buy both types in this transaction, so <span class=\"math\">P(S ∩ D) = 0.</span> The events are mutually exclusive.",
           "Independence would require <span class=\"math\">P(S ∩ D) = P(S)P(D) = 0.30 × 0.20 = 0.06.</span>",
-          "Since <span class=\"math\">0 ≠ 0.06</span>, the events are not independent. Knowing that one occurred rules out the other."
+          "Since <span class=\"math\">0 ≠ 0.06</span>, the events are not independent. Knowing that one occurred rules out the other.",
+          "Mutual exclusivity rules out a shared outcome, whereas independence says learning one event does not change the other event's chance. Positive-probability events that exclude one another fail that independence test."
         ],
         "warning": "Mutually exclusive means “cannot happen together.” Independent means “knowing one occurred does not change the probability of the other.” With both probabilities positive, these are different properties."
       },
@@ -9024,7 +9107,8 @@
         "steps": [
           "The addition rule is <span class=\"math\">P(S ∪ P) = 0.35 + 0.25 − P(S ∩ P).</span>",
           "The overlap is unknown. Neither independence nor mutual exclusivity is stated, so neither can be assumed.",
-          "For example, if the overlap is 0.10, the union is 0.50. If the overlap is 0.20, the union is 0.40. Both are consistent with the given marginals, so there is <b>no unique answer</b>."
+          "For example, if the overlap is 0.10, the union is 0.50. If the overlap is 0.20, the union is 0.40. Both are consistent with the given marginals, so there is <b>no unique answer</b>.",
+          "Knowing both individual gallery rates does not identify how visitors are shared between galleries. A unique union requires overlap information or another justified relationship between the events."
         ],
         "warning": "A is the complement of the sum. B assumes independence. C assumes no overlap. Each needs information the question does not supply."
       },
@@ -9068,9 +9152,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. Independence gives <span class=\"math\">P(A ∩ B) = P(A) × P(B).</span> Thus <span class=\"math\">P(B) = 0.12/0.40 = 0.30.</span>",
+          "Independence gives <span class=\"math\">P(A ∩ B) = P(A) × P(B).</span> Thus <span class=\"math\">P(B) = 0.12/0.40 = 0.30.</span>",
           "Knowing that A occurs does not change the probability of B. Therefore, <span class=\"math\">P(B | A) = 0.30.</span>",
-          "The reversed conditional is 0.40, and the union is <span class=\"math\">0.40 + 0.30 − 0.12 = 0.58.</span>"
+          "The reversed conditional is 0.40, and the union is <span class=\"math\">0.40 + 0.30 − 0.12 = 0.58.</span>",
+          "The conditional in the key is tied to inspection, while its reversed conditional is tied to sensor inclusion. Independence removes conditioning effects but does not make the two marginal probabilities equal."
         ],
         "warning": "Independence makes each conditional equal to the marginal of the same event. It does not make both conditional probabilities equal to each other."
       },
@@ -9174,9 +9259,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. For each option, add the first two pieces to find the marginal probability of A and the last two to find the marginal probability of B.",
+          "For each option, add the first two pieces to find the marginal probability of A and the last two to find the marginal probability of B.",
           "In option A, both marginals are <span class=\"math\">0.21 + 0.09 = 0.30.</span> Their product is <span class=\"math\">0.30 × 0.30 = 0.09,</span> exactly the joint probability.",
-          "In B the product is 0.09, not 0.10. In C it is 0.0625, not zero. In D it is 0.15, not 0.20. Only A satisfies independence."
+          "In B the product is 0.09, not 0.10. In C it is 0.0625, not zero. In D it is 0.15, not 0.20. Only A satisfies independence.",
+          "The three regions are disjoint, so their cell probabilities can be summed to reconstruct marginals. Independence must be checked on those marginals and the overlap, not by comparing two isolated region sizes."
         ],
         "warning": "A zero overlap with two positive marginal probabilities indicates mutually exclusive, dependent events, not independent events."
       },
@@ -9401,9 +9487,10 @@
       "answer": "A",
       "solution": {
         "steps": [
-          "Correct. The sum of the two individual purchase probabilities counts visitors who buy both items twice.",
+          "The sum of the two individual purchase probabilities counts visitors who buy both items twice.",
           "Rearrange the addition rule to find the overlap: <span class=\"math\">P(print ∩ card) = 0.55 + 0.40 − 0.75 = 0.20.</span>",
-          "Independence is not stated, so the product of the two purchase rates need not equal the overlap."
+          "Independence is not stated, so the product of the two purchase rates need not equal the overlap.",
+          "Buying either item includes people who buy both, but counts each visitor only once. The excess of the marginal sum over the union is precisely that duplicated group."
         ],
         "warning": "The union includes either purchase. The intersection includes both purchases and must not be confused with their sum."
       },
@@ -9513,9 +9600,10 @@
       "answer": "D",
       "solution": {
         "steps": [
-          "Correct. Because the alarms are independent, the probability that both sound is <span class=\"math\">0.70 × 0.50 = 0.35.</span>",
+          "Because the alarms are independent, the probability that both sound is <span class=\"math\">0.70 × 0.50 = 0.35.</span>",
           "Apply the addition rule: <span class=\"math\">0.70 + 0.50 − 0.35 = 0.85.</span>",
-          "Equivalently, neither sounds with probability <span class=\"math\">0.30 × 0.50 = 0.15,</span> whose complement is 0.85."
+          "Equivalently, neither sounds with probability <span class=\"math\">0.30 × 0.50 = 0.15,</span> whose complement is 0.85.",
+          "At least one alarm permits either alarm alone or both. Only the neither-alarm case fails, which makes the complement a direct way to describe the event."
         ],
         "warning": "Adding the two alarm probabilities alone double-counts the case when both sound. Their product answers both, rather than at least one."
       },
@@ -9629,9 +9717,10 @@
       "answer": "C",
       "solution": {
         "steps": [
-          "Correct. Among apartment residents, the cleanup attendance proportion is <span class=\"math\">60/100 = 0.60.</span>",
+          "Among apartment residents, the cleanup attendance proportion is <span class=\"math\">60/100 = 0.60.</span>",
           "Independence requires this same attendance proportion among house residents.",
-          "Therefore, <span class=\"math\">200 × 0.60 = 120</span> house residents attend the cleanup."
+          "Therefore, <span class=\"math\">200 × 0.60 = 120</span> house residents attend the cleanup.",
+          "Independent variables can have unequal group sizes. The house count must be larger because the same attendance rate is applied to twice as many house residents."
         ],
         "warning": "The two groups have different sizes, so equal proportions do not require equal counts. Apply the attendance proportion, rather than its complement, to the house group."
       },
@@ -9738,7 +9827,8 @@
       "solution": {
         "steps": [
           "The poster probability is 0.12 + 0.28 = 0.40.",
-          "Independence gives 0.12 = 0.40 × P(B), so the pin probability is 0.12/0.40 = 0.30."
+          "Independence gives 0.12 = 0.40 × P(B), so the pin probability is 0.12/0.40 = 0.30.",
+          "Buying a poster includes both the poster-only group and the overlap. Reconstruct that marginal before using independence to recover the pin probability."
         ],
         "warning": "0.40 is the known marginal for posters, 0.60 is its complement, and 0.12 is the joint probability."
       },
@@ -9853,7 +9943,8 @@
       "solution": {
         "steps": [
           "The overlap is 0.50 × 0.60 = 0.30.",
-          "Use the addition rule: 0.50 + 0.40 − 0.30 = 0.60."
+          "Use the addition rule: 0.50 + 0.40 − 0.30 = 0.60.",
+          "The 60% swimming rate within yoga is not the overall overlap. Weight it by the yoga share first, then subtract that joint probability once in the union calculation."
         ],
         "warning": "0.70 assumes independence when finding the overlap. The sum 0.90 counts members who attend both activities twice."
       },
@@ -9960,7 +10051,8 @@
       "solution": {
         "steps": [
           "One holder cannot occupy both seating sections, so the intersection probability is 0.",
-          "The marginal product is 0.30 × 0.70 = 0.21, which differs from 0. Therefore, the events are not independent."
+          "The marginal product is 0.30 × 0.70 = 0.21, which differs from 0. Therefore, the events are not independent.",
+          "Sitting in the balcony makes sitting in the stalls impossible for the same holder. This changes the stalls probability from 0.70 to zero, demonstrating dependence despite the disjoint categories."
         ],
         "warning": "Mutual exclusivity and independence have different requirements. Nonzero disjoint events cannot be independent."
       },
@@ -10059,7 +10151,8 @@
       "solution": {
         "steps": [
           "Neither transmitter sends a usable reading with probability 0.40 × 0.50 = 0.20.",
-          "Take the complement: 1 − 0.20 = 0.80. Equivalently, subtract the overlap 0.30 from the sum 1.10."
+          "Take the complement: 1 − 0.20 = 0.80. Equivalently, subtract the overlap 0.30 from the sum 1.10.",
+          "At least one usable reading includes both single-transmitter cases and the double-success case. Complementing double failure includes all three without double-counting the double success."
         ],
         "warning": "The product 0.30 is both, and 0.60 is only one transmitter’s marginal. The union includes exactly one and both."
       },
@@ -10167,7 +10260,8 @@
       "solution": {
         "steps": [
           "The union contains 20 + 15 + 30 = 65 students.",
-          "The 35 students outside both circles participate in neither activity, giving a probability of 35/100 = 0.35."
+          "The 35 students outside both circles participate in neither activity, giving a probability of 35/100 = 0.35.",
+          "Neither means outside both activity circles. A student outside only one circle might still belong to the other activity, so a single-circle complement is not enough."
         ],
         "warning": "The overlap 0.15 is both activities, not neither. Adding the marginal counts without subtracting overlap counts some students twice."
       },
@@ -10238,7 +10332,8 @@
       "solution": {
         "steps": [
           "Among coupon users, the bag-purchase probability is 30/60 = 0.50. Overall it is 40/100 = 0.40.",
-          "Because conditioning on coupon use changes the bag-purchase probability, the events are not independent."
+          "Because conditioning on coupon use changes the bag-purchase probability, the events are not independent.",
+          "The independence test compares the same event before and after conditioning. The unequal rates show that coupon information changes the bag-purchase probability in this customer group."
         ],
         "warning": "B compares unrelated marginals, C compares a joint probability with a marginal probability, and D states a false equality: 0.50 does not equal 0.40."
       },
@@ -10392,7 +10487,8 @@
       "solution": {
         "steps": [
           "The union is the set inside either circle: 70 + 30 + 50 = 150 members.",
-          "Its probability is 150/200 = 0.75. Counting the 30-member overlap once is essential."
+          "Its probability is 150/200 = 0.75. Counting the 30-member overlap once is essential.",
+          "Add the separate Venn regions, not the two circle totals without adjustment. The overlap is already one region of the union and should contribute once."
         ],
         "warning": "0.15 counts only the overlap. The sum of the two marginal proportions is 0.90 and double-counts those using both facilities."
       },
@@ -10504,7 +10600,8 @@
       "solution": {
         "steps": [
           "The day-pass shuttle rate is 20/50 = 0.40; the full-pass rate is 40/100 = 0.40.",
-          "The conditional rates match, and they also equal the overall rate 60/150 = 0.40, so the variables are independent in these data."
+          "The conditional rates match, and they also equal the overall rate 60/150 = 0.40, so the variables are independent in these data.",
+          "Matching segment heights indicate equal conditional shuttle rates even with unequal mosaic widths. Independence does not require the two pass groups to have equal numbers of visitors."
         ],
         "warning": "Counts and column widths reflect unequal group sizes. Equal full column heights alone would occur even with unequal shuttle rates."
       },
@@ -10671,7 +10768,8 @@
       "solution": {
         "steps": [
           "The addition rule combines the marginal probabilities and subtracts the overlap.",
-          "The two marginals are given, so the probability of doing both activities is the missing value."
+          "The two marginals are given, so the probability of doing both activities is the missing value.",
+          "The missing shared-activity probability determines how much double-counting to remove. Assuming zero overlap or multiplying the individual rates would add an unjustified relationship between the activities."
         ],
         "warning": "The planetarium complement can already be computed, and repeating the telescope marginal does not determine the overlap."
       },
@@ -10743,7 +10841,8 @@
       "solution": {
         "steps": [
           "The marginal sum is 0.60 + 0.45 = 1.05. That sum counts the overlap twice.",
-          "Subtract the union to recover the overlap: 1.05 − 0.80 = 0.25."
+          "Subtract the union to recover the overlap: 1.05 − 0.80 = 0.25.",
+          "A marginal sum above 1 is possible because some households own both vehicles. The union remains a valid probability; its difference from that sum identifies the overlap."
         ],
         "warning": "0.27 assumes independence. The 0.20 complement of the union represents neither vehicle, and 0.80 is the union."
       },

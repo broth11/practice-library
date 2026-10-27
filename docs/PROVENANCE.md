@@ -166,3 +166,8 @@ All numerical keys were independently recomputed and all four alternatives for e
 Reviewed eight original AP scoring-guide pages for expression-choice and explanatory patterns: SG_3.2#1, SG_3.3#6/#33/#41, SG_3.7#5, SG_3.10#20/#21, and SG_3.13#6. Original pages were rendered and visually inspected. Six have gray explanation boxes and two do not. No source prose, data, or images were copied. The SG_3.10#19 pooled-interval explanation defect was excluded.
 
 Nine Unit 3 items now assess working expressions, with all four options independently evaluated; all 130 explanations were expanded and independently AI-reviewed. Counts, stable IDs, keyed letters, and calculator metadata are retained. Shared formats now support two-row hypotheses and mathematical choices. Layout and verification details, including corrected source-scan field boundaries and two narrow stock-frame exceptions allowed by S16, are recorded in `docs/READABLE-WORKING-REVIEW.md`. These changes supersede the old horizontal-math-scroll limitation. AI/tool verification only.
+
+
+## Fuller Unit 1 and 2 explanations (2026-10-27)
+
+At Ben’s request, all 420 earlier solutions were reviewed and expanded using the existing original library scenarios and reasoning. No new AP source text was consulted or copied for the additions. Historical question provenance, keys and calculator descriptors remain intact; Unit 3 is unchanged. Existing answer checks and the equation checker were rerun. The coverage and browser verification record is `docs/UNIT-1-2-EXPLANATION-REVIEW.md`. This is AI and tool review without recorded human sign-off.
