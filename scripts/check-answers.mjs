@@ -8,6 +8,7 @@ import { readFileSync } from 'node:fs';
 
 import { Q, q, sum, Phi, invPhi, binom } from './lib/stats.mjs';
 import './check-unit-one.mjs';
+import './check-unit-three.mjs';
 import './check-unit-two-a.mjs';
 import './check-unit-two-a-concepts.mjs';
 import './check-unit-two-b.mjs';

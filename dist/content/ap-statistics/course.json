@@ -34,6 +34,22 @@
       "questionCount": 100,
       "lessonCount": 5,
       "source": "content/ap-statistics/units/2-b.json"
+    },
+    {
+      "id": "3-a",
+      "title": "Unit 3.A",
+      "description": "Inference for proportions",
+      "questionCount": 80,
+      "lessonCount": 8,
+      "source": "content/ap-statistics/units/3-a.json"
+    },
+    {
+      "id": "3-b",
+      "title": "Unit 3.B",
+      "description": "Comparing proportions and categorical distributions",
+      "questionCount": 50,
+      "lessonCount": 5,
+      "source": "content/ap-statistics/units/3-b.json"
     }
   ]
 }

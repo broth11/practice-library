@@ -145,3 +145,10 @@ The calculator question uses the reading width of the normal sidebar-open deskto
 ## Unit 1 GitHub synchronization (2026-10-27)
 
 Ben explicitly requested pushing the completed expansion to main after Sites publication. Synchronize the same source and regenerated build to GitHub main, preserving its history and existing Pages workflow. This follow-up supersedes the earlier GitHub scope limit and authorizes a direct main push for this synchronization.
+
+
+## Unit 3 production (2026-10-27)
+
+Add thirteen core lessons in two progressively loaded modules, with ten original questions per lesson and no optional opener. Treat 3.A.6 Parts A/B as one lesson. Follow the audited STS boundaries, especially known-p versus unpooled versus pooled formulas and the staged chi-square conditions/df instruction. Calculator guidance is explicitly deferred for all new items at Ben’s request. Preserve existing modules, calculator guides, audience, and both hosting histories.
+
+Use explicit display/aligned working and shared inference-notation support. Give every radio answer a complete text label so MathML-bearing hypothesis symbols do not disappear from its accessible name. Add generated proportion-dotplot and chi-square-density diagram kinds to the existing AP grayscale pipeline.

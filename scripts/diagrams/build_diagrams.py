@@ -479,10 +479,57 @@ def sampling_grid(spec):
     return finish(fig)
 
 
+def proportion_dotplot(spec):
+    """A data-driven sample-proportion dotplot."""
+    fig, ax = plt.subplots(figsize=WIDE)
+    counts = {}
+    for x in spec['values']:
+        counts[x] = counts.get(x, 0)+1
+        ax.scatter([x], [counts[x]], s=35, facecolor='white', edgecolor=INK, linewidth=1)
+    step = spec['step']
+    low, high = min(counts), max(counts)
+    ax.set_xlim(low-step/2, high+step/2)
+    ax.set_ylim(0,max(counts.values())+.7)
+    ticks = [low+i*step for i in range(round((high-low)/step)+1)]
+    ax.set_xticks(ticks,[f'{x:.2f}' for x in ticks])
+    ax.set_yticks([])
+    ax.spines[['left','right','top']].set_visible(False)
+    ax.set_xlabel(tex(spec['xLabel']))
+    return finish(fig)
+
+
+def chi_square_curve(spec):
+    """Defining gamma density, without an additional dependency."""
+    from math import exp, lgamma, log
+    df = spec['df']
+    if df < 1 or df != int(df):
+        raise ValueError('Chi-square df must be a positive integer')
+    xmax = spec['xMax']
+    density = lambda x: exp((df/2-1)*log(x)-x/2-(df/2)*log(2)-lgamma(df/2))
+    xs = [xmax*i/600 for i in range(1,601)]
+    ys = [density(x) for x in xs]
+    fig, ax = plt.subplots(figsize=WIDE)
+    cutoff = spec.get('cutoff')
+    if cutoff is not None:
+        ax.fill_between(xs,ys,where=[x>=cutoff for x in xs],color=LIGHT,interpolate=True)
+        ax.plot([cutoff,cutoff],[0,density(cutoff)],color=INK,linewidth=.8)
+    ax.plot(xs,ys,color=INK,linewidth=1.6)
+    ax.set_xlim(0,xmax)
+    ax.set_ylim(0,max(ys)*1.15)
+    ticks=[0,xmax/4,xmax/2,3*xmax/4,xmax]
+    if cutoff is not None: ticks=sorted(set([t for t in ticks if abs(t-cutoff)>xmax*.075]+[cutoff]))
+    ax.set_xticks(ticks,[number(x) for x in ticks])
+    ax.set_yticks([])
+    ax.spines[['left','top','right']].set_visible(False)
+    ax.set_xlabel(tex(spec['xLabel']))
+    ax.text(.98,.9,f'df = {df}',transform=ax.transAxes,ha='right',va='top')
+    return finish(fig)
+
+
 KINDS = {fn.__name__: fn for fn in (discrete_bars, binomial_bars, normal, normal_comparison, frequency_histogram,
                                     relative_frequency_bars, dotplot, segmented, venn, tree,
                                     categorical_bars, categorical_pie, summary_boxplots, paired_histograms, grouped_bars, mosaic,
-                                    comparison_dotplots, study_flow, sampling_grid)}
+                                    comparison_dotplots, study_flow, sampling_grid, proportion_dotplot, chi_square_curve)}
 
 
 def display_size(svg: bytes) -> tuple[int, int]:

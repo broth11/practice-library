@@ -18,9 +18,9 @@
       "card": "association_from_conditional_proportions",
       "questions": [
         "2-a:q03",
-        "2-a:q21",
         "2-a:q52",
         "2-a:q55",
+        "2-a:q21",
         "2-a:q96",
         "2-a:q98"
       ]
@@ -53,8 +53,8 @@
       "status": "card",
       "card": "causal_conclusion_from_study",
       "questions": [
-        "1-b:c48",
         "1-b:c57",
+        "1-b:c48",
         "1-b:c98"
       ]
     },
@@ -65,6 +65,99 @@
       "questions": [
         "2-b:b44",
         "2-b:b99"
+      ]
+    },
+    {
+      "id": "central_normal_critical_value",
+      "status": "local",
+      "note": "Finds a central-confidence normal quantile, rather than computing a margin of error.",
+      "questions": [
+        "3-a:u3a41"
+      ]
+    },
+    {
+      "id": "chi_square_conditions",
+      "status": "card",
+      "card": "chi_square_conditions",
+      "questions": [
+        "3-b:u3b44",
+        "3-b:u3b45"
+      ]
+    },
+    {
+      "id": "chi_square_degrees_of_freedom",
+      "status": "card",
+      "card": "chi_square_degrees_of_freedom",
+      "questions": [
+        "3-b:u3b43"
+      ]
+    },
+    {
+      "id": "chi_square_distance_reasoning",
+      "status": "card",
+      "card": "chi_square_distance_reasoning",
+      "questions": [
+        "3-b:u3b36"
+      ]
+    },
+    {
+      "id": "chi_square_distribution_shape",
+      "status": "card",
+      "card": "chi_square_distribution_shape",
+      "questions": [
+        "3-b:u3b48"
+      ]
+    },
+    {
+      "id": "chi_square_expected_count",
+      "status": "card",
+      "card": "chi_square_expected_count",
+      "questions": [
+        "3-b:u3b33",
+        "3-b:u3b46"
+      ]
+    },
+    {
+      "id": "chi_square_hypotheses",
+      "status": "card",
+      "card": "chi_square_hypotheses",
+      "questions": [
+        "3-b:u3b32",
+        "3-b:u3b42"
+      ]
+    },
+    {
+      "id": "chi_square_inference_and_direction",
+      "status": "card",
+      "card": "chi_square_inference_and_direction",
+      "questions": [
+        "3-b:u3b49"
+      ]
+    },
+    {
+      "id": "chi_square_p_value",
+      "status": "card",
+      "card": "chi_square_p_value",
+      "questions": [
+        "3-b:u3b37",
+        "3-b:u3b47"
+      ]
+    },
+    {
+      "id": "chi_square_statistic_and_cell_contribution",
+      "status": "card",
+      "card": "chi_square_statistic_and_cell_contribution",
+      "questions": [
+        "3-b:u3b34",
+        "3-b:u3b35"
+      ]
+    },
+    {
+      "id": "choose_alpha_for_error_consequences",
+      "status": "card",
+      "card": "choose_alpha_for_error_consequences",
+      "questions": [
+        "3-a:u3a78"
       ]
     },
     {
@@ -83,6 +176,16 @@
         "1-b:c44",
         "1-b:c91",
         "1-b:c95"
+      ]
+    },
+    {
+      "id": "claim_from_one_proportion_interval",
+      "status": "card",
+      "card": "claim_from_one_proportion_interval",
+      "questions": [
+        "3-a:u3a27",
+        "3-a:u3a38",
+        "3-a:u3a49"
       ]
     },
     {
@@ -128,6 +231,16 @@
       ]
     },
     {
+      "id": "claim_from_two_proportion_interval",
+      "status": "card",
+      "card": "claim_from_two_proportion_interval",
+      "questions": [
+        "3-b:u3b16",
+        "3-b:u3b18",
+        "3-b:u3b19"
+      ]
+    },
+    {
       "id": "classify_variable_type_pair",
       "status": "card",
       "card": "classify_variable_type_pair",
@@ -140,10 +253,10 @@
       "status": "card",
       "card": "compare_boxplots_and_summaries",
       "questions": [
-        "1-a:a117",
         "1-a:a51",
         "1-a:a52",
-        "1-a:a59"
+        "1-a:a59",
+        "1-a:a117"
       ]
     },
     {
@@ -151,10 +264,10 @@
       "status": "card",
       "card": "compare_histograms_dotplots_stemplots",
       "questions": [
+        "1-a:a98",
         "1-a:a111",
         "1-a:a112",
-        "1-a:a118",
-        "1-a:a98"
+        "1-a:a118"
       ]
     },
     {
@@ -171,10 +284,10 @@
       "status": "card",
       "card": "compare_relative_position_with_z_scores",
       "questions": [
+        "1-a:a56",
         "1-a:a113",
         "1-a:a114",
-        "1-a:a119",
-        "1-a:a56"
+        "1-a:a119"
       ]
     },
     {
@@ -196,8 +309,8 @@
         "1-a:a31",
         "1-a:a32",
         "1-a:a40",
-        "1-a:a41",
-        "1-a:a92"
+        "1-a:a92",
+        "1-a:a41"
       ]
     },
     {
@@ -205,14 +318,14 @@
       "status": "card",
       "card": "conditional_probability_and_multiplication_rule",
       "questions": [
+        "2-a:q36",
+        "2-a:q73",
+        "2-a:q79",
         "2-a:q16",
         "2-a:q17",
-        "2-a:q36",
         "2-a:q42",
         "2-a:q43",
         "2-a:q45",
-        "2-a:q73",
-        "2-a:q79",
         "2-a:q83",
         "2-a:q86",
         "2-a:q89"
@@ -230,6 +343,22 @@
       ]
     },
     {
+      "id": "confidence_interval_parameter_fixed",
+      "status": "card",
+      "card": "confidence_interval_parameter_fixed",
+      "questions": [
+        "3-a:u3a26"
+      ]
+    },
+    {
+      "id": "confidence_level_from_moe",
+      "status": "card",
+      "card": "confidence_level_from_moe",
+      "questions": [
+        "3-a:u3a46"
+      ]
+    },
+    {
       "id": "construct_stemplot_from_data",
       "status": "card",
       "card": "construct_stemplot_from_data",
@@ -243,6 +372,35 @@
       "card": "count_observations_from_dotplot",
       "questions": [
         "1-a:a23"
+      ]
+    },
+    {
+      "id": "critique_complementary_category_test",
+      "status": "card",
+      "card": "critique_complementary_category_test",
+      "questions": [
+        "3-a:u3a67"
+      ]
+    },
+    {
+      "id": "decision_from_p_value",
+      "status": "card",
+      "card": "decision_from_p_value",
+      "questions": [
+        "3-b:u3b27",
+        "3-b:u3b39",
+        "3-a:u3a56",
+        "3-a:u3a57",
+        "3-a:u3a60",
+        "3-a:u3a69"
+      ]
+    },
+    {
+      "id": "define_population_proportion_parameter",
+      "status": "card",
+      "card": "define_population_proportion_parameter",
+      "questions": [
+        "3-a:u3a31"
       ]
     },
     {
@@ -263,6 +421,23 @@
         "1-a:a21",
         "1-a:a22",
         "1-a:a83"
+      ]
+    },
+    {
+      "id": "difference_proportions_point_estimate",
+      "status": "card",
+      "card": "difference_proportions_point_estimate",
+      "questions": [
+        "3-b:u3b04"
+      ]
+    },
+    {
+      "id": "difference_proportions_sampling_mean_sd",
+      "status": "card",
+      "card": "difference_proportions_sampling_mean_sd",
+      "questions": [
+        "3-b:u3b01",
+        "3-b:u3b02"
       ]
     },
     {
@@ -315,13 +490,13 @@
       "status": "card",
       "card": "effect_of_linear_transformation_on_statistics",
       "questions": [
-        "1-a:a104",
-        "1-a:a110",
+        "1-a:a94",
         "1-a:a48",
         "1-a:a49",
         "1-a:a50",
-        "1-a:a57",
-        "1-a:a94"
+        "1-a:a104",
+        "1-a:a110",
+        "1-a:a57"
       ]
     },
     {
@@ -337,6 +512,16 @@
         "2-b:b72",
         "2-b:b73",
         "2-b:b78"
+      ]
+    },
+    {
+      "id": "estimator_bias_from_expectation",
+      "status": "card",
+      "card": "estimator_bias_from_expectation",
+      "questions": [
+        "3-a:u3a11",
+        "3-a:u3a15",
+        "3-a:u3a18"
       ]
     },
     {
@@ -371,11 +556,11 @@
         "1-b:c35",
         "1-b:c36",
         "1-b:c39",
-        "1-b:c47",
         "1-b:c84",
         "1-b:c86",
         "1-b:c88",
-        "1-b:c90"
+        "1-b:c90",
+        "1-b:c47"
       ]
     },
     {
@@ -401,8 +586,16 @@
       "questions": [
         "1-b:c05",
         "1-b:c06",
-        "1-b:c49",
-        "1-b:c55"
+        "1-b:c55",
+        "1-b:c49"
+      ]
+    },
+    {
+      "id": "hypothesis_test_purpose",
+      "status": "card",
+      "card": "hypothesis_test_purpose",
+      "questions": [
+        "3-a:u3a52"
       ]
     },
     {
@@ -426,6 +619,15 @@
         "2-b:b12",
         "2-b:b64",
         "2-b:b66"
+      ]
+    },
+    {
+      "id": "identify_chi_square_homogeneity_or_independence",
+      "status": "card",
+      "card": "identify_chi_square_homogeneity_or_independence",
+      "questions": [
+        "3-b:u3b31",
+        "3-b:u3b41"
       ]
     },
     {
@@ -469,13 +671,21 @@
       ]
     },
     {
+      "id": "identify_one_proportion_interval",
+      "status": "card",
+      "card": "identify_one_proportion_interval",
+      "questions": [
+        "3-a:u3a32"
+      ]
+    },
+    {
       "id": "identify_outliers_with_iqr_rule",
       "status": "card",
       "card": "identify_outliers_with_iqr_rule",
       "questions": [
+        "1-a:a42",
         "1-a:a102",
-        "1-a:a109",
-        "1-a:a42"
+        "1-a:a109"
       ]
     },
     {
@@ -520,6 +730,23 @@
       ]
     },
     {
+      "id": "identify_two_proportion_interval",
+      "status": "card",
+      "card": "identify_two_proportion_interval",
+      "questions": [
+        "3-b:u3b11"
+      ]
+    },
+    {
+      "id": "identify_type_i_and_ii_error",
+      "status": "card",
+      "card": "identify_type_i_and_ii_error",
+      "questions": [
+        "3-a:u3a71",
+        "3-a:u3a72"
+      ]
+    },
+    {
       "id": "identify_type_of_bias",
       "status": "card",
       "card": "identify_type_of_bias",
@@ -540,13 +767,51 @@
       ]
     },
     {
+      "id": "interpret_confidence_interval",
+      "status": "card",
+      "card": "interpret_confidence_interval",
+      "questions": [
+        "3-a:u3a24"
+      ]
+    },
+    {
+      "id": "interpret_confidence_level",
+      "status": "card",
+      "card": "interpret_confidence_level",
+      "questions": [
+        "3-b:u3b17",
+        "3-a:u3a25",
+        "3-a:u3a40"
+      ]
+    },
+    {
+      "id": "interpret_margin_of_error",
+      "status": "card",
+      "card": "interpret_margin_of_error",
+      "questions": [
+        "3-a:u3a30"
+      ]
+    },
+    {
       "id": "interpret_mean_of_random_variable",
       "status": "card",
       "card": "interpret_mean_of_random_variable",
       "questions": [
+        "3-b:u3b05",
+        "3-a:u3a03",
         "2-b:b04",
-        "2-b:b18",
-        "2-b:b59"
+        "2-b:b59",
+        "2-b:b18"
+      ]
+    },
+    {
+      "id": "interpret_p_value_in_context",
+      "status": "card",
+      "card": "interpret_p_value_in_context",
+      "questions": [
+        "3-b:u3b26",
+        "3-b:u3b38",
+        "3-a:u3a55"
       ]
     },
     {
@@ -575,6 +840,15 @@
       ]
     },
     {
+      "id": "interpret_two_proportion_interval",
+      "status": "card",
+      "card": "interpret_two_proportion_interval",
+      "questions": [
+        "3-b:u3b15",
+        "3-b:u3b20"
+      ]
+    },
+    {
       "id": "interpret_z_score",
       "status": "card",
       "card": "interpret_z_score",
@@ -583,13 +857,23 @@
       ]
     },
     {
+      "id": "interval_center_width_and_moe",
+      "status": "card",
+      "card": "interval_center_width_and_moe",
+      "questions": [
+        "3-a:u3a21",
+        "3-a:u3a22",
+        "3-a:u3a23"
+      ]
+    },
+    {
       "id": "investigative_question_for_study",
       "status": "card",
       "card": "investigative_question_for_study",
       "questions": [
-        "1-a:a10",
         "1-b:c09",
-        "1-b:c51"
+        "1-b:c51",
+        "1-a:a10"
       ]
     },
     {
@@ -597,9 +881,9 @@
       "status": "card",
       "card": "justify_experimental_design_choice",
       "questions": [
-        "1-b:c100",
         "1-b:c45",
-        "1-b:c94"
+        "1-b:c94",
+        "1-b:c100"
       ]
     },
     {
@@ -767,8 +1051,8 @@
       "status": "local",
       "note": "Local Unit 1 archetype. An outcome difference cannot be attributed to treatment alone when treatment and other relevant conditions always change together.",
       "questions": [
-        "1-b:c37",
-        "1-b:c59"
+        "1-b:c59",
+        "1-b:c37"
       ]
     },
     {
@@ -987,9 +1271,9 @@
       "questions": [
         "1-b:c07",
         "1-b:c08",
-        "1-b:c50",
         "1-b:c56",
-        "1-b:c58"
+        "1-b:c58",
+        "1-b:c50"
       ]
     },
     {
@@ -1063,8 +1347,24 @@
       "status": "card",
       "card": "locate_median_or_quartile_from_binned_data",
       "questions": [
-        "1-a:a100",
-        "1-a:a81"
+        "1-a:a81",
+        "1-a:a100"
+      ]
+    },
+    {
+      "id": "margin_of_error_expression",
+      "status": "card",
+      "card": "margin_of_error_expression",
+      "questions": [
+        "3-a:u3a36"
+      ]
+    },
+    {
+      "id": "match_statistic_to_parameter",
+      "status": "card",
+      "card": "match_statistic_to_parameter",
+      "questions": [
+        "3-a:u3a20"
       ]
     },
     {
@@ -1076,13 +1376,23 @@
       ]
     },
     {
+      "id": "minimum_sample_size_proportion_interval",
+      "status": "card",
+      "card": "minimum_sample_size_proportion_interval",
+      "questions": [
+        "3-a:u3a43",
+        "3-a:u3a44",
+        "3-a:u3a50"
+      ]
+    },
+    {
       "id": "missing_information_for_probability",
       "status": "card",
       "card": "missing_information_for_probability",
       "questions": [
-        "2-a:q25",
         "2-a:q40",
         "2-a:q80",
+        "2-a:q25",
         "2-a:q99"
       ]
     },
@@ -1096,18 +1406,27 @@
       ]
     },
     {
+      "id": "multiple_testing_false_positives",
+      "status": "card",
+      "card": "multiple_testing_false_positives",
+      "questions": [
+        "3-b:u3b40",
+        "3-a:u3a79"
+      ]
+    },
+    {
       "id": "mutually_exclusive_events_and_joint_probability",
       "status": "card",
       "card": "mutually_exclusive_events_and_joint_probability",
       "questions": [
-        "2-a:q100",
         "2-a:q13",
-        "2-a:q24",
         "2-a:q39",
-        "2-a:q48",
         "2-a:q77",
+        "2-a:q24",
+        "2-a:q48",
         "2-a:q93",
-        "2-a:q95"
+        "2-a:q95",
+        "2-a:q100"
       ]
     },
     {
@@ -1131,6 +1450,105 @@
         "2-b:b39",
         "2-b:b84",
         "2-b:b85"
+      ]
+    },
+    {
+      "id": "normal_test_p_value_and_tail_conversion",
+      "status": "card",
+      "card": "normal_test_p_value_and_tail_conversion",
+      "questions": [
+        "3-b:u3b25",
+        "3-a:u3a65",
+        "3-a:u3a66",
+        "3-a:u3a70"
+      ]
+    },
+    {
+      "id": "normality_difference_sample_proportions",
+      "status": "card",
+      "card": "normality_difference_sample_proportions",
+      "questions": [
+        "3-b:u3b03",
+        "3-b:u3b08",
+        "3-b:u3b10"
+      ]
+    },
+    {
+      "id": "normality_of_sample_proportion",
+      "status": "card",
+      "card": "normality_of_sample_proportion",
+      "questions": [
+        "3-a:u3a12",
+        "3-a:u3a14",
+        "3-a:u3a19"
+      ]
+    },
+    {
+      "id": "null_distribution_for_sample_proportion",
+      "status": "card",
+      "card": "null_distribution_for_sample_proportion",
+      "questions": [
+        "3-a:u3a58"
+      ]
+    },
+    {
+      "id": "null_standard_deviation_one_proportion",
+      "status": "card",
+      "card": "null_standard_deviation_one_proportion",
+      "questions": [
+        "3-a:u3a62"
+      ]
+    },
+    {
+      "id": "one_proportion_confidence_interval",
+      "status": "card",
+      "card": "one_proportion_confidence_interval",
+      "questions": [
+        "3-a:u3a35",
+        "3-a:u3a37",
+        "3-a:u3a42"
+      ]
+    },
+    {
+      "id": "one_proportion_hypotheses",
+      "status": "card",
+      "card": "one_proportion_hypotheses",
+      "questions": [
+        "3-a:u3a51"
+      ]
+    },
+    {
+      "id": "one_proportion_interval_conditions",
+      "status": "card",
+      "card": "one_proportion_interval_conditions",
+      "questions": [
+        "3-a:u3a33",
+        "3-a:u3a39"
+      ]
+    },
+    {
+      "id": "one_proportion_test_conditions",
+      "status": "card",
+      "card": "one_proportion_test_conditions",
+      "questions": [
+        "3-a:u3a61"
+      ]
+    },
+    {
+      "id": "one_proportion_test_statistic",
+      "status": "card",
+      "card": "one_proportion_test_statistic",
+      "questions": [
+        "3-a:u3a63",
+        "3-a:u3a64"
+      ]
+    },
+    {
+      "id": "p_value_assumes_null",
+      "status": "card",
+      "card": "p_value_assumes_null",
+      "questions": [
+        "3-a:u3a54"
       ]
     },
     {
@@ -1159,6 +1577,44 @@
       ]
     },
     {
+      "id": "possible_error_after_test_decision",
+      "status": "card",
+      "card": "possible_error_after_test_decision",
+      "questions": [
+        "3-b:u3b28",
+        "3-a:u3a73"
+      ]
+    },
+    {
+      "id": "power_and_error_tradeoffs",
+      "status": "card",
+      "card": "power_and_error_tradeoffs",
+      "questions": [
+        "3-a:u3a77",
+        "3-a:u3a80"
+      ]
+    },
+    {
+      "id": "power_probability_and_complement",
+      "status": "card",
+      "card": "power_probability_and_complement",
+      "questions": [
+        "3-a:u3a75",
+        "3-a:u3a76"
+      ]
+    },
+    {
+      "id": "probability_for_sample_statistic_normal_approximation",
+      "status": "card",
+      "card": "probability_for_sample_statistic_normal_approximation",
+      "questions": [
+        "3-b:u3b06",
+        "3-a:u3a05",
+        "3-a:u3a06",
+        "3-a:u3a16"
+      ]
+    },
+    {
       "id": "probability_from_discrete_distribution",
       "status": "local",
       "card": null,
@@ -1177,10 +1633,10 @@
         "2-a:q64",
         "2-a:q65",
         "2-a:q70",
-        "2-b:b100",
-        "2-b:b48",
         "2-b:b68",
-        "2-b:b92"
+        "2-b:b48",
+        "2-b:b92",
+        "2-b:b100"
       ]
     },
     {
@@ -1215,12 +1671,31 @@
       ]
     },
     {
+      "id": "proportion_interval_width_comparison",
+      "status": "card",
+      "card": "proportion_interval_width_comparison",
+      "questions": [
+        "3-a:u3a28",
+        "3-a:u3a29",
+        "3-a:u3a45",
+        "3-a:u3a48"
+      ]
+    },
+    {
       "id": "randomization_distribution_definition",
       "status": "local",
       "card": null,
       "note": "Original course label for the stated reasoning; no matching private card is asserted.",
       "questions": [
         "2-b:b98"
+      ]
+    },
+    {
+      "id": "rank_p_values_by_standardized_distance",
+      "status": "card",
+      "card": "rank_p_values_by_standardized_distance",
+      "questions": [
+        "3-a:u3a68"
       ]
     },
     {
@@ -1247,14 +1722,14 @@
       "questions": [
         "2-a:q01",
         "2-a:q02",
-        "2-a:q11",
-        "2-a:q12",
-        "2-a:q15",
         "2-a:q27",
-        "2-a:q37",
         "2-a:q51",
         "2-a:q56",
         "2-a:q60",
+        "2-a:q11",
+        "2-a:q12",
+        "2-a:q15",
+        "2-a:q37",
         "2-a:q71",
         "2-a:q72",
         "2-a:q76",
@@ -1270,10 +1745,38 @@
       ]
     },
     {
+      "id": "sample_proportion_mean_and_sd",
+      "status": "card",
+      "card": "sample_proportion_mean_and_sd",
+      "questions": [
+        "3-a:u3a01",
+        "3-a:u3a02",
+        "3-a:u3a09"
+      ]
+    },
+    {
+      "id": "sample_proportion_spread_comparison",
+      "status": "card",
+      "card": "sample_proportion_spread_comparison",
+      "questions": [
+        "3-a:u3a17"
+      ]
+    },
+    {
+      "id": "sample_size_effect_on_binomial_probability",
+      "status": "card",
+      "card": "sample_size_effect_on_binomial_probability",
+      "questions": [
+        "3-a:u3a07"
+      ]
+    },
+    {
       "id": "sample_size_effect_on_sampling_distribution",
       "status": "card",
       "card": "sample_size_effect_on_sampling_distribution",
       "questions": [
+        "3-a:u3a04",
+        "3-a:u3a08",
         "2-b:b47",
         "2-b:b93"
       ]
@@ -1313,6 +1816,14 @@
       "note": "No card covers enumerating every sample from a tiny population."
     },
     {
+      "id": "sampling_distribution_observation",
+      "status": "local",
+      "note": "Identifies the statistic recorded in one repetition, rather than interpreting its expected value.",
+      "questions": [
+        "3-a:u3a10"
+      ]
+    },
+    {
       "id": "sampling_distribution_shape",
       "status": "local",
       "card": null,
@@ -1321,6 +1832,14 @@
         "2-b:b46"
       ],
       "note": "Closest card is reason_sampling_distribution_not_normal (same normal-population-or-large-n rule, opposite polarity). Not linked because its distractor list differs."
+    },
+    {
+      "id": "sampling_fraction_independence",
+      "status": "local",
+      "note": "Checks the 10% without-replacement independence approximation, distinct from a normal large-counts check.",
+      "questions": [
+        "3-a:u3a13"
+      ]
     },
     {
       "id": "sampling_simulation_design",
@@ -1332,11 +1851,44 @@
       ]
     },
     {
+      "id": "select_difference_sampling_distribution_graph",
+      "status": "card",
+      "card": "select_difference_sampling_distribution_graph",
+      "questions": [
+        "3-b:u3b09"
+      ]
+    },
+    {
+      "id": "selected_population_inference_limit",
+      "status": "local",
+      "note": "Restricts inference to the sampled population and identifies unmeasured upstream selection.",
+      "questions": [
+        "3-b:u3b50"
+      ]
+    },
+    {
       "id": "shape_of_combined_distributions",
       "status": "card",
       "card": "shape_of_combined_distributions",
       "questions": [
         "1-a:a88"
+      ]
+    },
+    {
+      "id": "significance_level_meaning",
+      "status": "card",
+      "card": "significance_level_meaning",
+      "questions": [
+        "3-a:u3a74"
+      ]
+    },
+    {
+      "id": "simulated_p_value_decision",
+      "status": "card",
+      "card": "simulated_p_value_decision",
+      "questions": [
+        "3-a:u3a53",
+        "3-a:u3a59"
       ]
     },
     {
@@ -1358,6 +1910,15 @@
         "2-b:b06",
         "2-b:b54",
         "2-b:b58"
+      ]
+    },
+    {
+      "id": "standard_error_sample_proportion",
+      "status": "card",
+      "card": "standard_error_sample_proportion",
+      "questions": [
+        "3-a:u3a34",
+        "3-a:u3a47"
       ]
     },
     {
@@ -1389,6 +1950,14 @@
       ]
     },
     {
+      "id": "test_decision_from_confidence_intervals",
+      "status": "card",
+      "card": "test_decision_from_confidence_intervals",
+      "questions": [
+        "3-b:u3b30"
+      ]
+    },
+    {
       "id": "total_probability_and_reverse_conditional",
       "status": "card",
       "card": "total_probability_and_reverse_conditional",
@@ -1399,6 +1968,56 @@
         "2-a:q82",
         "2-a:q88",
         "2-a:q90"
+      ]
+    },
+    {
+      "id": "two_proportion_confidence_interval",
+      "status": "card",
+      "card": "two_proportion_confidence_interval",
+      "questions": [
+        "3-b:u3b13"
+      ]
+    },
+    {
+      "id": "two_proportion_hypotheses",
+      "status": "card",
+      "card": "two_proportion_hypotheses",
+      "questions": [
+        "3-b:u3b21"
+      ]
+    },
+    {
+      "id": "two_proportion_interval_conditions",
+      "status": "card",
+      "card": "two_proportion_interval_conditions",
+      "questions": [
+        "3-b:u3b14"
+      ]
+    },
+    {
+      "id": "two_proportion_interval_standard_error",
+      "status": "card",
+      "card": "two_proportion_interval_standard_error",
+      "questions": [
+        "3-b:u3b12"
+      ]
+    },
+    {
+      "id": "two_proportion_pooled_test_statistic",
+      "status": "card",
+      "card": "two_proportion_pooled_test_statistic",
+      "questions": [
+        "3-b:u3b22",
+        "3-b:u3b24"
+      ]
+    },
+    {
+      "id": "two_proportion_test_conditions",
+      "status": "card",
+      "card": "two_proportion_test_conditions",
+      "questions": [
+        "3-b:u3b23",
+        "3-b:u3b29"
       ]
     },
     {
@@ -1413,6 +2032,14 @@
         "2-a:q92",
         "2-a:q94",
         "2-a:q97"
+      ]
+    },
+    {
+      "id": "units_of_proportion_difference",
+      "status": "card",
+      "card": "units_of_proportion_difference",
+      "questions": [
+        "3-b:u3b07"
       ]
     },
     {
@@ -1441,10 +2068,10 @@
       "card": "value_at_percentile_of_normal_distribution",
       "questions": [
         "2-b:b30",
+        "2-b:b77",
         "2-b:b35",
         "2-b:b36",
         "2-b:b37",
-        "2-b:b77",
         "2-b:b83",
         "2-b:b86",
         "2-b:b88"
@@ -1456,8 +2083,8 @@
       "card": "value_for_no_association",
       "questions": [
         "2-a:q28",
-        "2-a:q50",
-        "2-a:q58"
+        "2-a:q58",
+        "2-a:q50"
       ]
     },
     {
@@ -1481,10 +2108,10 @@
       "status": "card",
       "card": "z_score_calculation",
       "questions": [
-        "1-a:a116",
         "1-a:a53",
         "1-a:a55",
         "1-a:a60",
+        "1-a:a116",
         "2-b:b27",
         "2-b:b74",
         "2-b:b76",
