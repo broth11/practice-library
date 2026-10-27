@@ -159,3 +159,8 @@ Use explicit display/aligned working and shared inference-notation support. Give
 The author explicitly requested separate null/alternative lines, no horizontal scrolling to read mathematical working, more expression-selection questions, and fuller explanations. Use structured hypothesis pairs and explicit display-math choices. Align short working at relation signs, defining intermediate quantities rather than forcing a wide formula into one line. Measure nested choice mathematics when fitting grids. At ordinary narrow-desktop widths up to 1,100 CSS pixels, stack the question and explanation panes; preserve calculator-mode layout. This supersedes the earlier math-scroll allowance.
 
 Keep a mixture of expression selection and numerical answers. Explanations must justify the procedure and connect the data to the formula and contextual conclusion. AP scoring-guide boxes inform that method but are not text to copy.
+
+
+## Full workspace for the active solution (2026-10-27)
+
+Ben reported clipped explanation content and requested collapsing the question whenever a solution or calculator is viewed. Hide the question from layout and accessibility while either view is open. Let the explanation use the full workspace with automatic vertical scrolling. Keep calculator steps and hardware together, with a direct Question return. Closing, Escape or changing questions restores the question. This supersedes stable question-width and question/solution stacking rules above.

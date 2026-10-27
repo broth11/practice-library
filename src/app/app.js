@@ -167,7 +167,7 @@ function renderQuestion(question) {
 
 function renderExplanation(question) {
   const selected = answers.get(answerKey(question));
-  explanation.innerHTML = `<div class="solution-panel"><div class="solution-inner"><div class="answer-block"><span class="eyebrow">Correct answer</span><strong>${question.answer}</strong><p class="feedback" aria-live="polite" ${selected ? '' : 'hidden'}>${selected ? selected === question.answer ? 'Your choice was correct.' : `You chose ${selected}. Compare it with the reasoning below.` : ''}</p></div><h3>Work it through</h3>${renderStimulus(question.solutionStimulus)}<ol>${question.solution.steps.map(step => `<li>${renderStep(step)}</li>`).join('')}</ol><div class="trap"><h3>Watch the reasoning</h3><p>${question.solution.warning}</p></div></div></div>`;
+  explanation.innerHTML = `<div class="solution-panel" tabindex="0" role="region" aria-label="Worked solution"><div class="solution-inner"><div class="answer-block"><span class="eyebrow">Correct answer</span><strong>${question.answer}</strong><p class="feedback" aria-live="polite" ${selected ? '' : 'hidden'}>${selected ? selected === question.answer ? 'Your choice was correct.' : `You chose ${selected}. Compare it with the reasoning below.` : ''}</p></div><h3>Work it through</h3>${renderStimulus(question.solutionStimulus)}<ol>${question.solution.steps.map(step => `<li>${renderStep(step)}</li>`).join('')}</ol><div class="trap"><h3>Watch the reasoning</h3><p>${question.solution.warning}</p></div></div></div>`;
   typesetMath(explanation);
 }
 
@@ -177,10 +177,12 @@ function openSolution() {
   viewed.add(answerKey(question));
   solutionShell.hidden = false;
   drawer.dataset.revealed = 'true';
+  questionArea.hidden = true;
   document.getElementById('solution-title').textContent = `Question ${String(state.current + 1).padStart(2, '0')}`;
   questionArea.querySelector('.solution-trigger').setAttribute('aria-expanded', 'true');
   questionArea.querySelector('.solution-trigger').innerHTML = 'Hide solution <span aria-hidden="true">↗</span>';
   setSolutionView('explanation');
+  document.getElementById('solution-title').focus();
   renderNavigation();
 }
 
@@ -189,8 +191,10 @@ function closeSolution(focus = false) {
   state.solutionView = 'explanation';
   solutionShell.hidden = true;
   drawer.dataset.revealed = 'false';
+  questionArea.hidden = false;
   app.classList.remove('calculator-mode');
   const trigger = questionArea.querySelector('.solution-trigger');
+  fit();
   if (trigger) { trigger.setAttribute('aria-expanded', 'false'); trigger.innerHTML = 'Solution <span aria-hidden="true">↗</span>'; if (focus) trigger.focus(); }
 }
 
@@ -209,7 +213,8 @@ function setSolutionView(view) {
   calculatorView.hidden = view !== 'calculator';
   app.classList.toggle('calculator-mode', view === 'calculator' && Boolean(question.calculator?.needed || question.calculator?.distribution));
   if (view === 'explanation') renderExplanation(question);
-  else mountCalculator(calculatorView, question, () => transitionPanels(() => setSolutionView('explanation')));
+  else mountCalculator(calculatorView, question, () => transitionPanels(() => setSolutionView('explanation')), () => transitionPanels(() => closeSolution(true)));
+  if (view === 'calculator') calculatorView.querySelector('h2, h3')?.focus();
   fit();
 }
 
