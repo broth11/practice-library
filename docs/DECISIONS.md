@@ -169,3 +169,8 @@ Ben reported clipped explanation content and requested collapsing the question w
 ## Clarified navigation collapse (2026-10-27)
 
 Ben clarified that the Courses/Units/Questions navigation should collapse, not the question card. Opening either explanation or calculator collapses the expanded navigation content through the shared route control. The narrow navigation handles remain available. Keep the question visible alongside the explanation or calculator panes; retain responsive stacking and automatic vertical explanation scrolling. Closing a solution does not reopen navigation automatically. This supersedes the full-workspace decision immediately above.
+
+
+## Earlier-unit explanations and navigation typography (2026-10-27)
+
+Ben requested the fuller Unit 3 explanation style for Units 1 and 2. Add question-specific method justification, reference-group reasoning, interpretation and relevant limits while retaining concise existing working. Keep warnings focused and preserve all question targets and calculator guidance. Increase the route pane’s unit and lesson title sizes with natural wrapping and vertical list scrolling. Preserve the clarified navigation-collapse behavior.

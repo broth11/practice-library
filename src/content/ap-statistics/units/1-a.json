@@ -77,7 +77,8 @@
       "solution": {
         "steps": [
           "The goal concerns trained volunteer crews belonging to this rescue center.",
-          "The 45 observed crews form a sample. The population includes all crews meeting the goal's definition."
+          "The 45 observed crews form a sample. The population includes all crews meeting the goal's definition.",
+          "Define the population from the question the center wants answered, not from the crews it happened to observe. Untrained crews and crews at other centers fall outside that target."
         ],
         "warning": "Keep both restrictions: trained volunteer crews and membership in this center."
       },
@@ -130,7 +131,8 @@
       "solution": {
         "steps": [
           "Every member of the sample must belong to the defined population of monthly-pass holders.",
-          "Only the sample drawn from monthly-pass records guarantees that membership."
+          "Only the sample drawn from monthly-pass records guarantees that membership.",
+          "An appropriate sample can contain fewer than all pass holders, but its members must be eligible pass holders. A large group of terminal employees would answer a different question."
         ],
         "warning": "A group that might include pass holders is not guaranteed to be a subset of them."
       },
@@ -183,7 +185,8 @@
       "solution": {
         "steps": [
           "An observational unit is the object on which measurements are taken.",
-          "Each scooter has a model, repair time, and replacement cost recorded."
+          "Each scooter has a model, repair time, and replacement cost recorded.",
+          "Think of a data table: each scooter occupies one row, while model, time and cost occupy columns. The 120 scooters are the units; 120 is their count."
         ],
         "warning": "A variable is a characteristic measured on a unit; a summary combines measurements."
       },
@@ -234,7 +237,8 @@
       "solution": {
         "steps": [
           "Mass measures an amount and supports meaningful arithmetic.",
-          "Species, release bay, and tag status assign labels or groups."
+          "Species, release bay, and tag status assign labels or groups.",
+          "Arithmetic on masses has an interpretation: one turtle can be 2 kilograms heavier than another. Arithmetic on species names or release-bay codes has no comparable meaning."
         ],
         "warning": "A label remains categorical even if it is stored using a number."
       },
@@ -288,7 +292,8 @@
       "solution": {
         "steps": [
           "Volume can take any value in an interval, subject to measurement precision.",
-          "Lamps, pumps, and repairs are counted in whole numbers."
+          "Lamps, pumps, and repairs are counted in whole numbers.",
+          "A volume such as 12.4 liters is possible even if an instrument rounds its display. Counts of lamps or pumps cannot take fractional values."
         ],
         "warning": "The accuracy of a measuring instrument does not turn an underlying continuous quantity into a count."
       },
@@ -342,7 +347,8 @@
       "solution": {
         "steps": [
           "The recorded value is a count for one night, so it is quantitative.",
-          "Possible values are whole-number counts, making the variable discrete."
+          "Possible values are whole-number counts, making the variable discrete.",
+          "The night is the unit being observed, and its fox count is the variable. A count of zero is a valid numerical observation, not missing data."
         ],
         "warning": "Discrete and continuous classify quantitative variables, not category labels."
       },
@@ -404,7 +410,8 @@
       "solution": {
         "steps": [
           "A statistic summarizes a sample; a parameter summarizes the entire population.",
-          "The value 2.8 kilograms was calculated from the 160 sampled parcels."
+          "The value 2.8 kilograms was calculated from the 160 sampled parcels.",
+          "The distinction depends on which parcels the mean describes. Random selection can make the statistic useful for estimating the unknown population mean, but it does not turn the statistic into a parameter."
         ],
         "warning": "The type of summary depends on which units were measured, not on whether the value is known."
       },
@@ -455,7 +462,8 @@
       "solution": {
         "steps": [
           "The population for this investigation is all 850 seats in this theater.",
-          "Checking every seat gives a population proportion, which is a parameter."
+          "Checking every seat gives a population proportion, which is a parameter.",
+          "The 4% describes this theater's complete seat population. It need not describe seats in other theaters, and knowing its value exactly does not change its classification."
         ],
         "warning": "Define the population from the study's goal. It does not automatically include other theaters."
       },
@@ -506,7 +514,8 @@
       "solution": {
         "steps": [
           "A datum is one recorded piece of information about one unit.",
-          "The response of 35 minutes belongs to one participant."
+          "The response of 35 minutes belongs to one participant.",
+          "The participant is the observational unit, practicing time is the variable and 35 minutes is one observed value. These refer to different parts of the same record."
         ],
         "warning": "The instrument collects data; the final report summarizes them."
       },
@@ -592,7 +601,8 @@
       "solution": {
         "steps": [
           "The goal concerns the population proportion of registered users who want covered parking.",
-          "A majority means more than half, and the conclusion concerns all registered users rather than only the sample."
+          "A majority means more than half, and the conclusion concerns all registered users rather than only the sample.",
+          "The sample supplies evidence, but the research question concerns all registered users. Asking whether the sampled users favor the proposal would only describe the responses already collected."
         ],
         "warning": "An investigative question must preserve the population, variable, and direction of the study."
       },
@@ -679,7 +689,8 @@
       "solution": {
         "steps": [
           "The question names a group and a quantity that can vary among its members.",
-          "Collecting tending times from members would allow a summary of that variation."
+          "Collecting tending times from members would allow a summary of that variation.",
+          "A statistical question anticipates differing tending times and asks for a summary across members. A question about one fixed schedule would not address this group variation."
         ],
         "warning": "A statistical question anticipates variation in the data used to answer it."
       },
@@ -747,7 +758,8 @@
       "solution": {
         "steps": [
           "A lifetime test consumes the item being measured.",
-          "A sample provides evidence about lamp life while preserving most of the stock."
+          "A sample provides evidence about lamp life while preserving most of the stock.",
+          "The cost here includes destroying lamps, not merely taking more time. Sampling makes estimation possible without using up every item the manufacturer hopes to sell."
         ],
         "warning": "Sampling can be necessary because a census is impractical, even when the population is countable."
       },
@@ -815,7 +827,8 @@
       "solution": {
         "steps": [
           "Publication year, language, and width can differ across maps.",
-          "The collection size describes the data set as a whole, rather than a characteristic recorded for each map."
+          "The collection size describes the data set as a whole, rather than a characteristic recorded for each map.",
+          "A variable must assign a value to each individual map. The collection size does not vary from map to map and instead summarizes how many rows the full file contains."
         ],
         "warning": "Distinguish information about one observational unit from a fixed description of the collection."
       },
@@ -883,7 +896,8 @@
       "solution": {
         "steps": [
           "The object has one true length under the stated conditions.",
-          "Technique and instrument precision can produce different recorded measurements of that fixed quantity."
+          "Technique and instrument precision can produce different recorded measurements of that fixed quantity.",
+          "Different recorded values can arise from measurement variability without any change in the beam itself. Distinguish the physical quantity from the instrument readings used to estimate it."
         ],
         "warning": "Variation in measurements does not require the object itself to change."
       },
@@ -940,7 +954,8 @@
       "solution": {
         "steps": [
           "Each row contains measurements on one job.",
-          "A technician can appear in several rows, so the technician is not the unit represented by a row."
+          "A technician can appear in several rows, so the technician is not the unit represented by a row.",
+          "Identify the unit by asking what one complete row describes. A repeated technician label is a characteristic of jobs, not evidence that a row represents a technician."
         ],
         "warning": "Find what one row represents before classifying the columns."
       },
@@ -1027,7 +1042,8 @@
       "solution": {
         "steps": [
           "The labels identify routes. Differences between their numbers do not measure differences in a quantity.",
-          "Numerical coding does not change a category into a quantitative variable."
+          "Numerical coding does not change a category into a quantitative variable.",
+          "A route labelled 40 is not twice as much route as one labelled 20. A numerical appearance alone does not justify taking a mean or measuring a distance between categories."
         ],
         "warning": "Classify by the meaning of the values, rather than their written form."
       },
@@ -1084,7 +1100,8 @@
       "solution": {
         "steps": [
           "Distance measures an amount with a meaningful unit.",
-          "A code and the named response categories identify groups; the ordering of enjoyment categories does not supply equal numerical distances."
+          "A code and the named response categories identify groups; the ordering of enjoyment categories does not supply equal numerical distances.",
+          "Meaningful differences can be measured in kilometers for travel distance. Ordered enjoyment labels indicate rank, but the distance from one label to the next is not a measured amount."
         ],
         "warning": "Ordered categories remain categorical unless the recorded values represent measured or counted quantities."
       },
@@ -1167,7 +1184,8 @@
       "solution": {
         "steps": [
           "Only the 52 respondents supplied measurements in the completed data set.",
-          "The selected sample had 70 families, but selection does not guarantee that data are obtained from everyone selected."
+          "The selected sample had 70 families, but selection does not guarantee that data are obtained from everyone selected.",
+          "Distinguish the planned sample from the observations actually obtained. The missing 18 selected families also raise a nonresponse concern when using the responses to describe all enrolled families."
         ],
         "warning": "Keep the selected sample distinct from the responding group when nonresponse is stated."
       },
@@ -1230,7 +1248,8 @@
       "solution": {
         "steps": [
           "The proportion summarizes the entire defined population.",
-          "A numerical summary of a population is a parameter, even when its exact value is known from a census."
+          "A numerical summary of a population is a parameter, even when its exact value is known from a census.",
+          "The population is explicitly limited to the stored crates. The result can describe that population exactly without automatically describing crates in future shipments or other warehouses."
         ],
         "warning": "Whether a summary is known does not determine whether it is a parameter or a statistic."
       },
@@ -1287,7 +1306,8 @@
       "solution": {
         "steps": [
           "Elapsed time is measured and can vary continuously.",
-          "Rounding limits the recorded precision but does not make the underlying quantity a count."
+          "Rounding limits the recorded precision but does not make the underlying quantity a count.",
+          "Recording whole seconds does not restrict actual drying to whole-second increments. Classification depends on the underlying quantity being measured, rather than the number of digits stored."
         ],
         "warning": "Distinguish a measurement scale from the precision used to record it."
       },
@@ -1350,7 +1370,8 @@
       "solution": {
         "steps": [
           "The four counts total 80 participants.",
-          "Planting was chosen by 24 participants, so its relative frequency is 24/80 = 0.30."
+          "Planting was chosen by 24 participants, so its relative frequency is 24/80 = 0.30.",
+          "Use all 80 participants as the reference group because the question asks for a share of the whole garden sample. The result means 30% chose planting."
         ],
         "warning": "Use the total across all mutually exclusive categories, not only the other categories."
       },
@@ -1427,7 +1448,8 @@
       "solution": {
         "steps": [
           "Add the counts: 25 + 40 + 15 + 20 = 100.",
-          "Fabric accounts for 40 of 100 stalls. Wood is not the largest category, and metal accounts for 15%."
+          "Fabric accounts for 40 of 100 stalls. Wood is not the largest category, and metal accounts for 15%.",
+          "Each stall contributes to exactly one main-material category, so the category counts partition the 100 stalls. This makes a count of 40 equivalent to 40% here."
         ],
         "warning": "A count becomes a percentage only after dividing by the total."
       },
@@ -1509,7 +1531,8 @@
       "solution": {
         "steps": [
           "Kayak and reef tours together account for 30 + 40 = 70 visitors.",
-          "Half of 120 is 60, so the combined share is greater than half. The other three fractions match their counts."
+          "Half of 120 is 60, so the combined share is greater than half. The other three fractions match their counts.",
+          "The claim says exactly half. The observed combined count exceeds 60 by 10, so it contradicts that claim rather than merely failing to confirm it."
         ],
         "warning": "For a not-supported question, reject the one claim contradicted by the counts."
       },
@@ -1589,7 +1612,8 @@
       "solution": {
         "steps": [
           "The herb entry is 0.18, meaning 18% of visitors.",
-          "An exact count requires the total number of visitors, which is not given. Each remaining claim follows from the proportions."
+          "An exact count requires the total number of visitors, which is not given. Each remaining claim follows from the proportions.",
+          "The proportion would correspond to 18 people out of 100 or 36 out of 200. Both have the reported share, so the share alone cannot identify one exact count."
         ],
         "warning": "A relative frequency of 0.18 does not mean 18 observations."
       },
@@ -1669,7 +1693,8 @@
       "solution": {
         "steps": [
           "Relative frequency is count divided by total.",
-          "Multiply the total by the share: 250 × 0.28 = 70 members."
+          "Multiply the total by the share: 250 × 0.28 = 70 members.",
+          "Here the share and total are known and the count is missing. Multiplication reverses the relative-frequency calculation; dividing 250 by 0.28 would not give a subset count."
         ],
         "warning": "Do not treat a decimal proportion or its percentage as the count."
       },
@@ -1720,7 +1745,8 @@
       "solution": {
         "steps": [
           "Destination zone is categorical because each value names a group.",
-          "A bar chart compares the counts or relative frequencies of the categories."
+          "A bar chart compares the counts or relative frequencies of the categories.",
+          "Separate bars preserve the distinct zone categories. A histogram would instead imply numerical intervals, even if the zones happen to have number codes."
         ],
         "warning": "Histograms, boxplots, and numerical dotplots summarize quantitative values."
       },
@@ -1771,7 +1797,8 @@
       "solution": {
         "steps": [
           "Electronics account for 30% and toys for 15%, giving a combined 45%.",
-          "Electronics are the largest single category. Toys and kitchen items total 35%, and electronics exceed kitchen items."
+          "Electronics are the largest single category. Toys and kitchen items total 35%, and electronics exceed kitchen items.",
+          "Each repaired item has one category, so the electronics and toy shares can be added without counting an item twice. Their combined share remains less than half."
         ],
         "warning": "Combine only the named slices and compare the result with the stated benchmark."
       },
@@ -1832,7 +1859,8 @@
       "solution": {
         "steps": [
           "Walking and cycling are distinct categories, so add their counts: 24 + 18 = 42.",
-          "There are 100 visitors in total, giving a share of 42/100."
+          "There are 100 visitors in total, giving a share of 42/100.",
+          "Count every visitor who satisfies either arrival category once, then divide by all visitors. Using only walkers and cyclists as the denominator would make their combined share trivially 1."
         ],
         "warning": "The word or includes both of the named, nonoverlapping categories."
       },
@@ -1890,7 +1918,8 @@
       "solution": {
         "steps": [
           "Hill's climbing-wall share is 45/150 = 0.30; Lake's is 60/240 = 0.25.",
-          "Hill has the larger proportion, although Lake has the larger count."
+          "Hill has the larger proportion, although Lake has the larger count.",
+          "Compare like reference groups: climbing-wall visitors as a fraction of each festival's own attendance. Different total attendance makes the raw counts unsuitable for comparing preference rates."
         ],
         "warning": "Different group sizes require each count to be divided by its own total."
       },
@@ -1966,7 +1995,8 @@
       "solution": {
         "steps": [
           "The categories cover all visitors and do not overlap, so their shares sum to 1.",
-          "The known shares sum to 0.75. The missing share is 1 − 0.75 = 0.25."
+          "The known shares sum to 0.75. The missing share is 1 − 0.75 = 0.25.",
+          "The missing category must fill the part of the whole not already assigned. A share of 0.25 represents one quarter of visitors, regardless of the unknown total count."
         ],
         "warning": "Relative frequencies sum to 1, while percentages sum to 100."
       },
@@ -2043,7 +2073,8 @@
       "solution": {
         "steps": [
           "Divide each count by the total of 40: 8/40, 12/40, and 20/40.",
-          "The resulting proportions are 0.20, 0.30, and 0.50, which sum to 1."
+          "The resulting proportions are 0.20, 0.30, and 0.50, which sum to 1.",
+          "Using the same total for all categories makes their shares comparable. Since each visitor chooses one workshop, the three shares account for the entire group without overlap."
         ],
         "warning": "A total of 1 is necessary, but each proportion must also match its category."
       },
@@ -2156,7 +2187,8 @@
       "solution": {
         "steps": [
           "Audio accounts for 25% and digital accounts for 35%.",
-          "The categories do not overlap, so their combined share is 25% + 35% = 60%."
+          "The categories do not overlap, so their combined share is 25% + 35% = 60%.",
+          "Adding shares is appropriate because audio and digital are different preferred-format categories. The remaining 40% prefer the other format, which checks the combined share against the whole."
         ],
         "warning": "Add shares only when the categories are mutually exclusive."
       },
@@ -2220,7 +2252,8 @@
       "solution": {
         "steps": [
           "The wood count is 30. Metal and glass have counts 18 and 12, which also total 30.",
-          "Wood accounts for exactly half of the 60 items, so the claim of more than half is false."
+          "Wood accounts for exactly half of the 60 items, so the claim of more than half is false.",
+          "The equality follows from category counts on the same scale. Comparing only the tallest individual bar would miss that two smaller categories can have the same combined count."
         ],
         "warning": "Compare the actual bar values rather than their order on the horizontal axis."
       },
@@ -2290,7 +2323,8 @@
       "solution": {
         "steps": [
           "Bar height encodes a count using distance from the baseline.",
-          "Starting at 45 exaggerates the relative difference between 48 and 52; a zero baseline displays that difference proportionally."
+          "Starting at 45 exaggerates the relative difference between 48 and 52; a zero baseline displays that difference proportionally.",
+          "The difference between 48 and 52 is four registrations. Truncating the baseline makes their displayed lengths appear to have a much larger ratio than their actual counts."
         ],
         "warning": "A truncated baseline can distort bar-length comparisons even when the printed counts are correct."
       },
@@ -2347,7 +2381,8 @@
       "solution": {
         "steps": [
           "The counts total 150 because visitors may select multiple activities.",
-          "Slices representing percentages of visitors would overlap rather than partition one whole."
+          "Slices representing percentages of visitors would overlap rather than partition one whole.",
+          "A pie chart needs nonoverlapping parts of one whole. Multiple-response activity counts can instead be shown in separate bars whose percentages are not required to sum to 100%."
         ],
         "warning": "A pie chart requires mutually exclusive categories that divide the same whole."
       },
@@ -2404,7 +2439,8 @@
       "solution": {
         "steps": [
           "At East, the collection share is 30/100 = 0.30. At West, it is 20/50 = 0.40.",
-          "West has the larger proportion despite having fewer collection customers."
+          "West has the larger proportion despite having fewer collection customers.",
+          "Use each branch's own customer total when measuring its collection preference. The smaller West branch can have the higher collection rate while contributing fewer collection customers."
         ],
         "warning": "Use each branch total as its denominator when comparing its distribution."
       },
@@ -2485,7 +2521,8 @@
       "solution": {
         "steps": [
           "The robotics count is 0.30 times the total.",
-          "Dividing 18 by 0.30 gives a total of 60 students."
+          "Dividing 18 by 0.30 gives a total of 60 students.",
+          "Thirty percent is the known part-to-whole ratio, not 30 additional students. The recovered total must exceed the robotics count because robotics is only part of the fair attendance."
         ],
         "warning": "A part divided by its share gives the whole."
       },
@@ -2542,7 +2579,8 @@
       "solution": {
         "steps": [
           "Tuesday accounts for 45%, which is less than half.",
-          "Friday and Saturday total 55%, and Saturday represents 25% of 200, or 50 households."
+          "Friday and Saturday total 55%, and Saturday represents 25% of 200, or 50 households.",
+          "The unsupported statement requires a share greater than 50%. Tuesday's displayed 45% directly contradicts it even though Tuesday is the largest individual category."
         ],
         "warning": "The largest category need not contain a majority."
       },
@@ -2606,7 +2644,8 @@
       "solution": {
         "steps": [
           "The counts are 24 for renewals and 12 for account access.",
-          "Since 24 is twice 12, the stated comparison is supported. Room bookings account for 4 of the 40 requests."
+          "Since 24 is twice 12, the stated comparison is supported. Room bookings account for 4 of the 40 requests.",
+          "A ratio comparison uses the two relevant bar heights. The statement concerns request counts and does not require converting all categories to percentages first."
         ],
         "warning": "Named categories have no numerical spacing; use bar heights to compare frequencies."
       },
@@ -2676,7 +2715,8 @@
       "solution": {
         "steps": [
           "Reordering categories changes their positions, rather than their counts.",
-          "Both each count and the total remain fixed, so every relative frequency remains fixed."
+          "Both each count and the total remain fixed, so every relative frequency remains fixed.",
+          "For unrelated categories, horizontal order has no numerical meaning. Alphabetizing changes the presentation but leaves the information about preference shares unchanged."
         ],
         "warning": "Do not assign quantitative shape or numerical spacing to unrelated category labels."
       },
@@ -2733,7 +2773,8 @@
       "solution": {
         "steps": [
           "Most times lie in the first few intervals.",
-          "The frequencies decrease toward the larger times, creating a longer right tail."
+          "The frequencies decrease toward the larger times, creating a longer right tail.",
+          "Name skewness from the direction of the thinner tail, not from the location of the tallest bar. A few long check-ins extend the distribution toward larger times."
         ],
         "warning": "Name skew by the tail, not by the side holding most observations."
       },
@@ -2795,7 +2836,8 @@
       "solution": {
         "steps": [
           "Most visitors completed a high percentage of the puzzle.",
-          "The smaller percentages form the long left tail."
+          "The smaller percentages form the long left tail.",
+          "The low-percentage tail determines the left skew. The fact that most puzzle-completion percentages are large does not make the distribution right-skewed."
         ],
         "warning": "The location of the tallest bar does not name the skew."
       },
@@ -2857,7 +2899,8 @@
       "solution": {
         "steps": [
           "At least 3 includes the dots above 3, 4, 5, and 6.",
-          "There are 3 + 4 + 2 + 1 = 10 such periods."
+          "There are 3 + 4 + 2 + 1 = 10 such periods.",
+          "Each dot is a ten-minute period, not a single call. The count of qualifying dots therefore gives 10 periods with at least 3 calls."
         ],
         "warning": "Include observations at the boundary as well as those above it."
       },
@@ -2926,7 +2969,8 @@
       "solution": {
         "steps": [
           "All but one delivery lie below 20 kilometers.",
-          "The intervals from 20 to under 35 are empty, separating the delivery in the last bin from the main group."
+          "The intervals from 20 to under 35 are empty, separating the delivery in the last bin from the main group.",
+          "A histogram identifies the isolated delivery's interval, not its exact distance. The empty intervening bins justify separation from the main group without identifying one precise outlier value."
         ],
         "warning": "An empty interval is a gap; a distant occupied interval can indicate a potential outlier."
       },
@@ -2995,7 +3039,8 @@
       "solution": {
         "steps": [
           "Changing bins regroups the same 80 observations.",
-          "Each observation still belongs to one bin, so the frequencies still total 80."
+          "Each observation still belongs to one bin, so the frequencies still total 80.",
+          "A finer binning can change the apparent peaks, bar heights and number of empty bins. It cannot add or remove any of the 80 travel-time records."
         ],
         "warning": "Smaller bins can reveal or hide features without changing the underlying data."
       },
@@ -3073,7 +3118,8 @@
       "solution": {
         "steps": [
           "The requested interval includes the bins from 10 to under 20 and from 20 to under 30.",
-          "Their frequencies total 12 + 14 = 26 books."
+          "Their frequencies total 12 + 14 = 26 books.",
+          "The endpoint convention places a time of 10 in the first qualifying bin and a time of 30 outside the requested interval. Only the two fully included bins contribute."
         ],
         "warning": "Count observations rather than counting the number of bars."
       },
@@ -3235,7 +3281,8 @@
       "solution": {
         "steps": [
           "Split each height into its tens digit and units digit.",
-          "List stems in order and sort all leaves within each stem. Every original height must appear exactly once."
+          "List stems in order and sort all leaves within each stem. Every original height must appear exactly once.",
+          "Reconstructing the ordered heights gives 12, 17, 18, 23, 24, 25, 31 and 35 centimeters. This checks both the leaf order and that no observation is lost or duplicated."
         ],
         "warning": "An unordered plot or a plot with missing leaves does not preserve the full ordered display."
       },
@@ -3314,7 +3361,8 @@
       "solution": {
         "steps": [
           "The final stem is 4 and its largest leaf is 7.",
-          "The key combines them as 47 centimeters."
+          "The key combines them as 47 centimeters.",
+          "The stem represents tens and the leaf represents units under the supplied key. The final entry is therefore 47, rather than 4.7 or the leaf value 7 alone."
         ],
         "warning": "Read the key before combining stems and leaves."
       },
@@ -3387,7 +3435,8 @@
       "solution": {
         "steps": [
           "Wing length is a quantitative measurement.",
-          "A histogram groups the lengths into numerical intervals and shows their frequency pattern."
+          "A histogram groups the lengths into numerical intervals and shows their frequency pattern.",
+          "The horizontal intervals represent wing lengths and bar heights summarize how many moths fall in each interval. This reveals clustering and tails in one quantitative variable."
         ],
         "warning": "Identification codes do not reveal the distribution of the measured variable."
       },
@@ -3438,7 +3487,8 @@
       "solution": {
         "steps": [
           "A gap states that an interval contains no observed data.",
-          "The gap alone does not determine whether the remaining values are symmetric, bimodal, or contain an outlier."
+          "The gap alone does not determine whether the remaining values are symmetric, bimodal, or contain an outlier.",
+          "The statement describes the recorded sample only. Values outside the gap could have several different arrangements, so the empty interval does not uniquely determine the distribution's overall shape."
         ],
         "warning": "Use only what the missing interval establishes; do not infer the whole shape."
       },
@@ -3500,7 +3550,8 @@
       "solution": {
         "steps": [
           "The first two bins contain 2 + 6 = 8 observations.",
-          "The next bin brings the cumulative count to 16, so both the 10th and 11th observations lie from 10 to under 15 minutes."
+          "The next bin brings the cumulative count to 16, so both the 10th and 11th observations lie from 10 to under 15 minutes.",
+          "With 20 observations the median averages positions 10 and 11. Both positions fall in the same bin, so the median must lie there even though its exact value is hidden."
         ],
         "warning": "For an even sample size, locate both middle observations."
       },
@@ -3574,7 +3625,8 @@
       "solution": {
         "steps": [
           "Bar heights give interval counts directly.",
-          "Different sets of individual times can produce the same bars while having different means, medians, and maxima."
+          "Different sets of individual times can produce the same bars while having different means, medians, and maxima.",
+          "Moving times within their original intervals would leave all histogram bars unchanged. Such changes can alter numerical summaries, so an interval count is more identifiable than an exact mean or maximum."
         ],
         "warning": "A histogram preserves grouped counts while hiding exact positions within bins."
       },
@@ -3631,7 +3683,8 @@
       "solution": {
         "steps": [
           "Most chairs are in the teens and twenties. Only a few are in their thirties and forties.",
-          "The values extend farther toward older ages, producing a right tail."
+          "The values extend farther toward older ages, producing a right tail.",
+          "Read stems as ordered ages and count leaves as observations. The sparse older ages determine the right-tail direction; the dense young ages identify where most observations lie."
         ],
         "warning": "Identify the direction of the tail, rather than the side containing most observations."
       },
@@ -3714,7 +3767,8 @@
       "solution": {
         "steps": [
           "Six observations fall from 1 to 3 parts, and six fall from 8 to 10 parts.",
-          "There are no observations at 4, 5, 6, or 7 parts in this sample."
+          "There are no observations at 4, 5, 6, or 7 parts in this sample.",
+          "Two separated concentrations are supported by the individual dot positions. The missing integer counts establish a sample gap without proving that future repairs could never need those numbers of parts."
         ],
         "warning": "A gap describes the observed sample; it does not prove those values are impossible."
       },
@@ -3784,7 +3838,8 @@
       "solution": {
         "steps": [
           "The first wider bin combines 3 and 7 observations, giving 10.",
-          "The second combines 6 and 4 observations, also giving 10."
+          "The second combines 6 and 4 observations, also giving 10.",
+          "Combining adjacent bins means adding their frequencies, not averaging them. The new two-bin histogram must still account for all 20 original times."
         ],
         "warning": "Wider bins add neighboring counts; they do not average the original bar heights."
       },
@@ -3872,7 +3927,8 @@
       "solution": {
         "steps": [
           "The qualifying leaves in stem 2 are 5, 7, and 9.",
-          "Both leaves in stem 3 also qualify, giving 3 + 2 = 5 seedlings."
+          "Both leaves in stem 3 also qualify, giving 3 + 2 = 5 seedlings.",
+          "Use the stem-and-leaf key to decide which complete heights satisfy the threshold. Count qualifying leaves as observations; a larger leaf digit in a lower stem need not represent a taller seedling."
         ],
         "warning": "Include 25 itself because the question says at least."
       },
@@ -3951,7 +4007,8 @@
       "solution": {
         "steps": [
           "A stem-and-leaf plot records each observation through its stem and leaf.",
-          "Grouping times into intervals hides the exact values, even when the interval counts are shown."
+          "Grouping times into intervals hides the exact values, even when the interval counts are shown.",
+          "Each leaf encodes an individual time, so this display retains exact observations while showing their distribution. A histogram trades that precision for interval summaries."
         ],
         "warning": "Choose the display according to which information must be retained."
       },
@@ -4039,7 +4096,8 @@
       "solution": {
         "steps": [
           "Combining the data preserves the concentration near each machine center.",
-          "The empty region between the groups leaves two separated peaks; an average near 20 need not be a common value."
+          "The empty region between the groups leaves two separated peaks; an average near 20 need not be a common value.",
+          "The mean of the combined rods can lie between two concentrations where almost no rods occur. A single average therefore cannot describe the two-peaked shape by itself."
         ],
         "warning": "A combined average can fall in a gap between clusters."
       },
@@ -4117,7 +4175,8 @@
       "solution": {
         "steps": [
           "The 20-to-under-30 bin contains 7 visits.",
-          "The 30-to-under-40 bin contains 5 visits, so the requested count is 7 + 5 = 12."
+          "The 30-to-under-40 bin contains 5 visits, so the requested count is 7 + 5 = 12.",
+          "The endpoint convention includes a duration of 20 and excludes one of 40. Add the two complete bins covering that interval without estimating positions inside either bin."
         ],
         "warning": "Use exactly the bins covered by the interval, including its lower endpoint."
       },
@@ -4181,7 +4240,8 @@
       "solution": {
         "steps": [
           "The absence of sample observations in an interval is a feature of this data set.",
-          "It does not establish impossible population values, a cause of the gap, or the location of the mean."
+          "It does not establish impossible population values, a cause of the gap, or the location of the mean.",
+          "The empty interval is observed evidence about this sample. Explaining why it occurred or asserting a population impossibility would require information beyond these plotted lifetimes."
         ],
         "warning": "Describe a graph before drawing explanations that require additional evidence."
       },
@@ -4242,7 +4302,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}S&=7+9+10\\\\&\\quad+11+13\\\\&=50\\\\\\bar x&=\\frac{S}{5}\\\\&=10\\end{aligned}"
-          }
+          },
+          "A mean balances the total repairs across the five days. Ten repairs per day would produce the same five-day total of 50, even though the actual daily counts differ."
         ],
         "warning": "The smallest or largest daily count is not the mean. Add every count before dividing by five."
       },
@@ -4304,7 +4365,8 @@
       "solution": {
         "steps": [
           "Sort the masses: 22, 25, 28, 30, 34, 41.",
-          "The two middle masses are 28 and 30 grams, so the median is their average, 29 grams."
+          "The two middle masses are 28 and 30 grams, so the median is their average, 29 grams.",
+          "Six observations have no single middle position. Averaging the third and fourth ordered masses places the median halfway between the two central packages."
         ],
         "warning": "Find the middle positions after sorting, not in the order the values were recorded."
       },
@@ -4366,7 +4428,8 @@
       "solution": {
         "steps": [
           "Standard deviation describes a typical distance of observations from their mean.",
-          "Its units are the same as those of the original measurements."
+          "Its units are the same as those of the original measurements.",
+          "This is a description of spread around the greenhouse's mean use. It does not say every day's use is exactly 6 away, or that the mean use itself is 6."
         ],
         "warning": "Range, IQR, and distance from the median describe different summaries."
       },
@@ -4428,7 +4491,8 @@
       "solution": {
         "steps": [
           "A percentile locates a score relative to the other recorded scores.",
-          "The 72nd percentile places about 72% of scores at or below that score."
+          "The 72nd percentile places about 72% of scores at or below that score.",
+          "The percentile compares 840 with other participants' scores. It does not mean the participant earned 72% of available points or scored 72 points above average."
         ],
         "warning": "A percentile is not the percentage answering correctly or the percentage with exactly the same score."
       },
@@ -4534,7 +4598,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}\\frac{12}{20}\\times100\\%&=60\\%\\end{aligned}"
-          }
+          },
+          "The question specifies an at-or-below convention, so days with exactly 4 repairs belong in the count. The other eight days lie above that threshold."
         ],
         "warning": "Include dots at the stated value, and divide by the total number of dots."
       },
@@ -4615,7 +4680,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}s&=\\sqrt{\\frac{8}{3-1}}\\\\&=2\\text{ millimeters}\\end{aligned}"
-          }
+          },
+          "Because these are sample measurements, divide the squared-deviation total by one less than the sample size before taking the square root. The result measures spread in millimeters, not square millimeters."
         ],
         "warning": "For a sample standard deviation, divide squared deviations by n − 1 before taking the square root."
       },
@@ -4670,7 +4736,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}\\bar{x}&=\\frac{48+72}{12+8}\\\\&=6\\end{aligned}"
-          }
+          },
+          "The unit being averaged is a workroom, so each of the 20 rooms receives equal weight. The group means cannot receive equal weight because the groups have different numbers of rooms."
         ],
         "warning": "Weight each group mean by its group size. The two groups are not equally large."
       },
@@ -4721,7 +4788,8 @@
       "solution": {
         "steps": [
           "The smallest count is 18 visitors and the largest is 32.",
-          "Subtract the minimum from the maximum: 32 − 18 = 14 visitors."
+          "Subtract the minimum from the maximum: 32 − 18 = 14 visitors.",
+          "Range describes the full observed span of daily counts. It uses the two extremes and provides no information about how the other four counts are distributed within that span."
         ],
         "warning": "The maximum is an endpoint, not a measure of the distance between endpoints."
       },
@@ -4772,7 +4840,8 @@
       "solution": {
         "steps": [
           "The 50th percentile marks the middle of an ordered distribution.",
-          "That location is the median, not a measure of spread or the arithmetic mean."
+          "That location is the median, not a measure of spread or the arithmetic mean.",
+          "This is a position in the ordered delivery-time distribution. It can be identified without knowing whether the distribution is symmetric or whether its mean equals its median."
         ],
         "warning": "The mean need not divide a distribution into two equal halves."
       },
@@ -4850,7 +4919,8 @@
       "solution": {
         "steps": [
           "The sorted middle value is 11, so the median is 11.",
-          "The total is 65 and the mean is 65/5 = 13. The median is 2 less than the mean."
+          "The total is 65 and the mean is 65/5 = 13. The median is 2 less than the mean.",
+          "The unusually high attendance of 24 pulls the arithmetic mean above the middle observation. This illustrates why the mean and median can differ even for a small data set."
         ],
         "warning": "Compute both summaries. A large upper value can pull the mean above the median."
       },
@@ -4920,7 +4990,8 @@
       "solution": {
         "steps": [
           "Subtract the mean from each value to get deviations of −3, −1, 1, and 3.",
-          "Square each deviation before adding: 9 + 1 + 1 + 9 = 20."
+          "Square each deviation before adding: 9 + 1 + 1 + 9 = 20.",
+          "Signed deviations sum to zero here, so adding them would hide the spread. Squaring first prevents cancellation and gives the numerator used to calculate variance."
         ],
         "warning": "The deviations sum to zero; squaring their sum is different from summing their squares."
       },
@@ -5007,7 +5078,8 @@
       "solution": {
         "steps": [
           "Multiply each value by its frequency: 1 × 2 + 2 × 4 + 3 × 2 + 4 × 2 = 24 items.",
-          "Divide 24 items by 10 customers to obtain 2.4 items per customer."
+          "Divide 24 items by 10 customers to obtain 2.4 items per customer.",
+          "Weight each item count by how often it occurs. Averaging the four different count labels equally would incorrectly treat rare and common customer counts as equally frequent."
         ],
         "warning": "Average the customer observations, rather than the four distinct category values."
       },
@@ -5095,7 +5167,8 @@
       "solution": {
         "steps": [
           "After the change the ordered awards are 50, 50, 50, 50, 60, 80, and 100 dollars.",
-          "The fourth of seven values is the median, so it is $50."
+          "The fourth of seven values is the median, so it is $50.",
+          "Recompute the ordered middle after applying the rule to every affected award. The floor changes several observations, so the original median cannot simply be retained."
         ],
         "warning": "Reorder the changed observations before locating the middle."
       },
@@ -5182,7 +5255,8 @@
       "solution": {
         "steps": [
           "Subtract 3 grams from every measurement, so the mean decreases from 18 to 15 grams.",
-          "All distances from the mean stay the same, leaving the standard deviation at 4 grams."
+          "All distances from the mean stay the same, leaving the standard deviation at 4 grams.",
+          "The correction moves all masses and their mean down together. Because no distance between observations changes, the scale error affects location but does not affect variability."
         ],
         "warning": "Adding or subtracting a constant changes location but not spread."
       },
@@ -5238,7 +5312,8 @@
       "solution": {
         "steps": [
           "The total increases by $100 across five observations, so the mean increases by $20.",
-          "The third ordered observation is still $14, so the median is unchanged."
+          "The third ordered observation is still $14, so the median is unchanged.",
+          "The mean responds to the $100 increase through the total, whereas the median depends on ordered position. The corrected extreme remains above the middle observation."
         ],
         "warning": "A one-value correction affects the mean through the total divided by the sample size."
       },
@@ -5305,7 +5380,8 @@
       "solution": {
         "steps": [
           "There are four scores strictly below 4: 1, 2, 2, and 3.",
-          "Four of ten scores is 40%; the two scores equal to 4 are excluded by the stated convention."
+          "Four of ten scores is 40%; the two scores equal to 4 are excluded by the stated convention.",
+          "Percentile-rank conventions differ, and this question explicitly excludes ties at the target score. Counting either score of 4 would answer the at-or-below version instead."
         ],
         "warning": "Check whether a percentile convention counts values below the score or at or below it."
       },
@@ -5379,7 +5455,8 @@
       "solution": {
         "steps": [
           "Every mass equals the mean of 250 grams.",
-          "All deviations from the mean are zero, so the sample variance and standard deviation are zero."
+          "All deviations from the mean are zero, so the sample variance and standard deviation are zero.",
+          "A standard deviation of zero means complete absence of variation, not a mean of zero. All six packages can have a substantial common mass and still have no spread."
         ],
         "warning": "The size of the observations does not by itself determine their variability."
       },
@@ -5435,7 +5512,8 @@
       "solution": {
         "steps": [
           "Both groups have mean 2 and range 4.",
-          "Group B places more observations at 0 and 4, farther from the common mean, so its squared deviations and standard deviation are larger."
+          "Group B places more observations at 0 and 4, farther from the common mean, so its squared deviations and standard deviation are larger.",
+          "Range ignores frequencies within its endpoints. Standard deviation uses every observation's distance from the mean, so more weight at the extremes can increase it without changing the range."
         ],
         "warning": "Equal ranges do not imply equal standard deviations."
       },
@@ -5504,7 +5582,8 @@
       "solution": {
         "steps": [
           "A mean of 10 across five trays requires 50 seedlings in total.",
-          "The four known trays contain 36 seedlings, leaving 50 − 36 = 14."
+          "The four known trays contain 36 seedlings, leaving 50 − 36 = 14.",
+          "Work backward from mean times number of trays to the required total. The unknown tray must supply the shortfall after the four recorded trays are counted."
         ],
         "warning": "Recover the required total before finding the missing observation."
       },
@@ -5560,7 +5639,8 @@
       "solution": {
         "steps": [
           "The cumulative count below 4 kilometers is 2 + 4 = 6.",
-          "The next bin contains positions 7 through 12, including both middle positions 8 and 9."
+          "The next bin contains positions 7 through 12, including both middle positions 8 and 9.",
+          "Sixteen distances put the median halfway between positions 8 and 9. Their shared bin identifies the interval of the median without determining an exact travel distance."
         ],
         "warning": "Locate the middle positions; the tallest bar is not automatically the median bin."
       },
@@ -5629,7 +5709,8 @@
       "solution": {
         "steps": [
           "Order the times: 5, 7, 8, 10, 11, 13, 14, 20.",
-          "The lower-half median is 7.5 and the upper-half median is 13.5, so IQR = 13.5 − 7.5 = 6 minutes."
+          "The lower-half median is 7.5 and the upper-half median is 13.5, so IQR = 13.5 − 7.5 = 6 minutes.",
+          "Use the stated quartile convention rather than a different rule for locating quartiles. Subtracting the two half-sample medians measures the width of the middle half of these waiting times."
         ],
         "warning": "IQR measures the span of the middle half; it is not the full range."
       },
@@ -5691,7 +5772,8 @@
       "solution": {
         "steps": [
           "IQR = 18 − 10 = 8 kilograms. The fences are 10 − 12 = −2 and 18 + 12 = 30.",
-          "The minimum 4 is inside the fences; the maximum 35 exceeds the upper fence. A summary does not show whether other values exceed 30."
+          "The minimum 4 is inside the fences; the maximum 35 exceeds the upper fence. A summary does not show whether other values exceed 30.",
+          "A fence is a classification threshold, not necessarily an observed mass. The summary proves that 35 is beyond the upper threshold, but does not reveal all masses between 18 and 35."
         ],
         "warning": "A five-number summary identifies extreme outliers but cannot count all observations beyond a fence."
       },
@@ -5755,7 +5837,8 @@
       "solution": {
         "steps": [
           "The IQR is 40 − 24 = 16 minutes, giving an upper fence of 40 + 1.5 × 16 = 64 minutes.",
-          "Only 65 is strictly above the upper fence. A value exactly at 64 is not an outlier."
+          "Only 65 is strictly above the upper fence. A value exactly at 64 is not an outlier.",
+          "First measure the middle-half spread, then extend 1.5 such spreads beyond the third quartile. Merely exceeding 40 minutes is insufficient to make a charging time an outlier."
         ],
         "warning": "The outlier rule uses a strict inequality at each fence."
       },
@@ -5807,7 +5890,8 @@
       "solution": {
         "steps": [
           "The left and right edges of the box are 10 and 18 kilograms.",
-          "Their difference is 18 − 10 = 8 kilograms."
+          "Their difference is 18 − 10 = 8 kilograms.",
+          "The box endpoints locate the first and third quartiles. Their separation measures the spread of the middle half of pack weights, independent of the whisker lengths."
         ],
         "warning": "The median line and whisker ends are not the two endpoints of the IQR."
       },
@@ -5885,7 +5969,8 @@
       "solution": {
         "steps": [
           "The lower whisker reaches 3 kilograms.",
-          "The separate point at 29 kilograms is an observed value and is larger than the upper whisker endpoint of 20."
+          "The separate point at 29 kilograms is an observed value and is larger than the upper whisker endpoint of 20.",
+          "A modified boxplot separates outliers from its whiskers but does not remove them from the data. The upper whisker gives the largest nonoutlier, rather than the overall maximum."
         ],
         "warning": "The largest plotted outlier is part of the data and counts when finding the maximum."
       },
@@ -5966,7 +6051,8 @@
       "solution": {
         "steps": [
           "The few very large bills make the distribution strongly right-skewed.",
-          "The median is resistant and better describes the center of the main group."
+          "The median is resistant and better describes the center of the main group.",
+          "The mean incorporates the sizes of the bills above $900 and is pulled toward them. The median locates the middle ordered bill and better represents the main body of ordinary bills."
         ],
         "warning": "Using every value does not make the mean resistant to extreme values."
       },
@@ -6028,7 +6114,8 @@
       "solution": {
         "steps": [
           "Correcting the largest value does not change its position in the ordered list.",
-          "The middle, eighth value stays the same. The range and variance use the changed extreme."
+          "The middle, eighth value stays the same. The range and variance use the changed extreme.",
+          "With 15 distinct observations, the median is determined by position 8. Changing an observation that stays in position 15 cannot alter the observation in that middle position."
         ],
         "warning": "Resistance concerns positions and influence; it does not make every summary stay fixed."
       },
@@ -6079,7 +6166,8 @@
       "solution": {
         "steps": [
           "Adding 7 shifts every value equally and does not change distances between observations.",
-          "Multiplying by 2.5 multiplies standard deviation by 2.5, giving 10 units."
+          "Multiplying by 2.5 multiplies standard deviation by 2.5, giving 10 units.",
+          "Spread measures distances, so only the stretching factor affects standard deviation. The added 7 changes the reference location without making the lengths more or less dispersed."
         ],
         "warning": "Additive shifts affect the mean and position statistics, but not spread."
       },
@@ -6142,7 +6230,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}\\operatorname{Var}(Y)&=3^2\\operatorname{Var}(X)\\\\&=9(9)\\\\&=81\\end{aligned}"
-          }
+          },
+          "Tripling readings triples each deviation from their new mean. Squaring those deviations multiplies variance by nine, which explains why multiplying the variance by only three is incorrect."
         ],
         "warning": "Standard deviation scales by the absolute multiplier; variance scales by its square."
       },
@@ -6197,7 +6286,8 @@
       "solution": {
         "steps": [
           "Every score and every position statistic moves upward by 6 points.",
-          "The distances from scores to their mean remain the same, so standard deviation is unchanged."
+          "The distances from scores to their mean remain the same, so standard deviation is unchanged.",
+          "After the adjustment, both an individual score and the class mean increase by 6. Subtracting the new mean from a new score gives the original deviation."
         ],
         "warning": "A common shift moves the distribution without stretching it."
       },
@@ -6262,7 +6352,8 @@
       "solution": {
         "steps": [
           "The right edge of the box is the third quartile, 14 minutes.",
-          "The third quartile marks approximately the 75th percentile; the whole box spans the middle 50%."
+          "The third quartile marks approximately the 75th percentile; the whole box spans the middle 50%.",
+          "A quartile gives an approximate cumulative proportion. The 14-minute mark is therefore about a three-quarters cutoff, not the share inside the box or a count of visitors."
         ],
         "warning": "A boxplot shows quartiles rather than the mean or exact counts inside subintervals."
       },
@@ -6326,7 +6417,8 @@
       "solution": {
         "steps": [
           "The IQR is 18 − 10 = 8, so the upper fence is 18 + 1.5 × 8 = 30.",
-          "The rule classifies values greater than 30 as upper outliers; equality does not qualify."
+          "The rule classifies values greater than 30 as upper outliers; equality does not qualify.",
+          "The value 30 is an observation on the cutoff. A strict outlier rule needs a value beyond that cutoff, so a large-looking value is not enough by itself."
         ],
         "warning": "Exceeding the third quartile is different from exceeding the upper outlier fence."
       },
@@ -6389,7 +6481,8 @@
       "solution": {
         "steps": [
           "The median is (8 + 10)/2 = 9. The lower-half median is (4 + 6)/2 = 5, and the upper-half median is (12 + 14)/2 = 13.",
-          "Including the minimum 2 and maximum 16 gives 2, 5, 9, 13, 16."
+          "Including the minimum 2 and maximum 16 gives 2, 5, 9, 13, 16.",
+          "The minimum and maximum are actual endpoints, while the other three entries are medians of the whole set or its halves. Keep those roles in the conventional summary order."
         ],
         "warning": "For an even sample size, average the two middle observations at each median calculation."
       },
@@ -6472,7 +6565,8 @@
       "solution": {
         "steps": [
           "Apply the transformation to the mean: 50 − 2 × 12 = 26.",
-          "Multiply standard deviation by the absolute value of the scale factor: 2 × 3 = 6."
+          "Multiply standard deviation by the absolute value of the scale factor: 2 × 3 = 6.",
+          "The negative multiplier reverses which original readings are high and low. It still doubles all distances, while adding 50 affects the mean's location only."
         ],
         "warning": "A negative scale reverses order, but standard deviation remains nonnegative."
       },
@@ -6529,7 +6623,8 @@
       "solution": {
         "steps": [
           "The original total is 20; adding 5 gives 25 across five values, so the mean remains 5.",
-          "The squared deviations still total 20, but the sample-variance denominator increases from 3 to 4, so the standard deviation decreases."
+          "The squared deviations still total 20, but the sample-variance denominator increases from 3 to 4, so the standard deviation decreases.",
+          "The added observation has zero deviation from the unchanged mean. The same squared-deviation total is spread over a larger sample-variance denominator, reducing the reported variability."
         ],
         "warning": "An added value at the mean contributes zero squared deviation but changes the denominator."
       },
@@ -6586,7 +6681,8 @@
       "solution": {
         "steps": [
           "The median and quartiles are marked by the box and its internal line.",
-          "The mean depends on all individual values, which the boxplot does not display."
+          "The mean depends on all individual values, which the boxplot does not display.",
+          "A boxplot compresses individual durations into position summaries. Values can move within quartile regions while those summaries remain unchanged, altering the arithmetic average."
         ],
         "warning": "Different data sets can have the same boxplot and different means."
       },
@@ -6661,7 +6757,8 @@
       "solution": {
         "steps": [
           "A whisker marks a span between summary values.",
-          "It does not display the positions of individual observations within that span, so it cannot establish gaps or uniform spacing."
+          "It does not display the positions of individual observations within that span, so it cannot establish gaps or uniform spacing.",
+          "A long whisker indicates a wide span for that portion of the data. It does not show whether observations occupy the span evenly, form clusters or leave empty subintervals."
         ],
         "warning": "A drawn line in a boxplot is not a record of observations at every point."
       },
@@ -6718,7 +6815,8 @@
       "solution": {
         "steps": [
           "The median depends on ordered position rather than the sizes of the largest bills.",
-          "The IQR describes the middle half and is also resistant to extreme values."
+          "The IQR describes the middle half and is also resistant to extreme values.",
+          "The requested typical value and spread should describe the main body of bills. Mean and standard deviation are more sensitive to the sizes of the few unusually large bills."
         ],
         "warning": "Pair a resistant center with a resistant spread when extreme values are influential."
       },
@@ -6775,7 +6873,8 @@
       "solution": {
         "steps": [
           "The IQR is 16 − 8 = 8 minutes, so the upper fence is 16 + 12 = 28 minutes.",
-          "Only 30 is strictly above that fence."
+          "Only 30 is strictly above that fence.",
+          "The cutoff is above the third quartile by 1.5 times the middle-half spread. Compare each offered duration with that cutoff, rather than with the third quartile alone."
         ],
         "warning": "A value on the fence is not beyond it."
       },
@@ -6838,7 +6937,8 @@
       "solution": {
         "steps": [
           "With a positive multiplier, transform the median directly: 3 × 8 + 5 = 29.",
-          "Quartile distances are multiplied by 3, so the new IQR is 18; the added 5 cancels in their difference."
+          "Quartile distances are multiplied by 3, so the new IQR is 18; the added 5 cancels in their difference.",
+          "The new quartiles each include the added 5, so that shift disappears when one is subtracted from the other. The positive multiplier preserves the order used to locate the median."
         ],
         "warning": "Apply shifts to location measures, not to distances between observations."
       },
@@ -6895,7 +6995,8 @@
       "solution": {
         "steps": [
           "Route A's median is 18 minutes; Route B's is 24 minutes.",
-          "The IQRs are 8 and 12 minutes. The ranges, including A's outlier, are 30 and 26 minutes. Group sizes are not shown."
+          "The IQRs are 8 and 12 minutes. The ranges, including A's outlier, are 30 and 26 minutes. Group sizes are not shown.",
+          "The lower median supports a statement about typical delivery time, not a claim that every A delivery is faster. Different ranges and IQRs compare different aspects of spread."
         ],
         "warning": "Compare medians and box lengths directly; include plotted outliers in a range."
       },
@@ -6968,7 +7069,8 @@
       "solution": {
         "steps": [
           "For R, IQR = 36 − 18 = 18; for S, IQR = 34 − 22 = 12.",
-          "Both ranges equal 40 minutes, and R's median is higher. The table contains no passenger counts."
+          "Both ranges equal 40 minutes, and R's median is higher. The table contains no passenger counts.",
+          "The larger IQR means the middle half of R's travel times spans a wider interval. Equal overall ranges do not force equal spread within the central half."
         ],
         "warning": "Five-number summaries show position and spread, not group sizes or means."
       },
@@ -7065,7 +7167,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}z&=\\frac{30-40}{5}\\\\&=-2\\end{aligned}"
-          }
+          },
+          "The time of 30 minutes is 10 minutes below the mean. Dividing by 5 minutes per standard deviation expresses that distance as two standard deviations below the mean."
         ],
         "warning": "The median and IQR do not replace the mean and standard deviation in a z-score."
       },
@@ -7119,7 +7222,8 @@
       "solution": {
         "steps": [
           "The positive sign places the speed above the mean.",
-          "The magnitude 1.4 measures that difference in standard deviations."
+          "The magnitude 1.4 measures that difference in standard deviations.",
+          "A z-score expresses distance in standard-deviation units. It does not imply a percentile unless the distribution's shape or an appropriate model is also known."
         ],
         "warning": "A standardized score has no original measurement unit and is not a ratio to the mean."
       },
@@ -7193,7 +7297,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}x&=90+1.5(12)\\\\&=108\\end{aligned}"
-          }
+          },
+          "Match how far above the mean the score lies in its own distribution. On the second puzzle, that same relative position requires a larger raw point difference because its standard deviation is larger."
         ],
         "warning": "Carry the standardized distance between distributions, rather than the raw score or raw point difference."
       },
@@ -7249,7 +7354,8 @@
       "solution": {
         "steps": [
           "Nia's standardized score is (82 − 70)/6 = 2.",
-          "Omar's standardized score is (94 − 80)/10 = 1.4. Nia has the higher relative position."
+          "Omar's standardized score is (94 − 80)/10 = 1.4. Nia has the higher relative position.",
+          "Nia's raw score is lower, but her distance above her event mean is larger after scaling by that event's variability. That is the comparison required by relative performance."
         ],
         "warning": "A larger raw score or raw distance does not establish a higher standardized position."
       },
@@ -7320,7 +7426,8 @@
       "solution": {
         "steps": [
           "Both the deviation from the mean and the standard deviation multiply by 1,000.",
-          "Their ratio stays the same, so the z-score remains −0.8."
+          "Their ratio stays the same, so the z-score remains −0.8.",
+          "Changing kilograms to grams is a positive rescaling applied to every mass. It changes the numerical measurements and spread together, leaving their standardized ratio unchanged."
         ],
         "warning": "A positive unit conversion changes the measurement scale, not a value's relative position."
       },
@@ -7379,7 +7486,8 @@
       "solution": {
         "steps": [
           "Workshop A's counts mirror around the middle interval.",
-          "Workshop B has its largest count at the low end and a tail extending toward larger durations."
+          "Workshop B has its largest count at the low end and a tail extending toward larger durations.",
+          "Matching sample sizes and intervals makes the bar patterns directly comparable. Shape is determined by where the observations concentrate and where their tails extend, not just by the largest frequency."
         ],
         "warning": "Compare the full frequency pattern in each graph, using the same horizontal scale."
       },
@@ -7437,7 +7545,8 @@
       "solution": {
         "steps": [
           "Each box represents the middle half of its own group's observations.",
-          "Both groups have 40 runners, so each box represents about 20 runners despite the different box lengths."
+          "Both groups have 40 runners, so each box represents about 20 runners despite the different box lengths.",
+          "Quartiles divide observations into approximate shares, not equal distances along the axis. A longer box can hold the same number of runners while covering a wider distance interval."
         ],
         "warning": "Box length measures spread, while group size determines how many observations the box represents."
       },
@@ -7517,7 +7626,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}s&=\\frac{36}{1.5}\\\\&=24\\text{ units}\\end{aligned}"
-          }
+          },
+          "A standardized distance tells how many standard deviations fit into the 36-unit deviation. The recovered standard deviation is a measure of output variability, not the mean output."
         ],
         "warning": "Divide the distance above the mean by the z-score; do not multiply."
       },
@@ -7575,7 +7685,8 @@
       "solution": {
         "steps": [
           "Every Team B value is 3 more than the corresponding ordered Team A value.",
-          "A translation raises the mean by 3 while preserving all deviations from the mean."
+          "A translation raises the mean by 3 while preserving all deviations from the mean.",
+          "Pairing ordered values reveals a common shift rather than a change in shape. Distances among teammates' counts are preserved even though the typical count is higher for B."
         ],
         "warning": "A distribution can move without becoming more variable."
       },
@@ -7644,7 +7755,8 @@
       "solution": {
         "steps": [
           "Each histogram has four observations below 10 minutes and 16 below 20 minutes.",
-          "Both middle positions, 10 and 11, lie in the 10-to-under-20 bin for both routes; exact values within that bin remain unknown."
+          "Both middle positions, 10 and 11, lie in the 10-to-under-20 bin for both routes; exact values within that bin remain unknown.",
+          "The bin counts locate both middle observations but conceal their exact positions inside the interval. Identical histograms therefore support a common median interval, not necessarily identical medians."
         ],
         "warning": "Matching binned counts do not establish equal exact medians or means."
       },
@@ -7713,7 +7825,8 @@
       "solution": {
         "steps": [
           "The z-score −0.4 is greater than −1.2 and is closer to the group mean from below.",
-          "Because higher scores are better, the higher z-score represents better relative performance."
+          "Because higher scores are better, the higher z-score represents better relative performance.",
+          "Both scores are below their respective group means. The first is less far below in standard-deviation units, so it represents the stronger relative standing when higher scores are desirable."
         ],
         "warning": "Compare signed standardized positions, rather than their absolute magnitudes."
       },
@@ -7780,7 +7893,8 @@
       "solution": {
         "steps": [
           "A negative time z-score indicates a faster-than-average completion.",
-          "For a measure where lower is better, −1.5 represents better relative performance than 0.5."
+          "For a measure where lower is better, −1.5 represents better relative performance than 0.5.",
+          "A smaller standardized completion time indicates a faster result relative to the task group. A positive z-score here means slower than average, rather than better performance."
         ],
         "warning": "The direction of better performance depends on the meaning of the variable."
       },
@@ -7847,7 +7961,8 @@
       "solution": {
         "steps": [
           "Standardization gives (30 − 20)/5 = 2 regardless of the distribution shape.",
-          "A percentile depends on the distribution; a normal percentile rule is not justified by these skewed data."
+          "A percentile depends on the distribution; a normal percentile rule is not justified by these skewed data.",
+          "A z-score measures standardized distance using only mean and spread. Translating that distance into a cumulative proportion needs additional distribution information; strong skew rules out an automatic normal interpretation."
         ],
         "warning": "Calculating a z-score does not require normality; a normal-model percentile does."
       },
@@ -7903,7 +8018,8 @@
       "solution": {
         "steps": [
           "The revised output is 197, the revised mean is 167, and the revised standard deviation is 20.",
-          "The standardized position is (197 − 167)/20 = 1.5, the same as before the positive transformation."
+          "The standardized position is (197 − 167)/20 = 1.5, the same as before the positive transformation.",
+          "A positive linear reporting change preserves relative standing because the deviation and standard deviation share the same multiplier. Applying the reporting rule only to the observed week would give a misleading comparison."
         ],
         "warning": "Transform both the observation and its distribution when standardizing."
       },
@@ -7959,7 +8075,8 @@
       "solution": {
         "steps": [
           "Both medians are 12 days, and both IQRs are 16 − 8 = 8 days.",
-          "The ranges are 20 − 4 = 16 days for A and 24 − 2 = 22 days for B."
+          "The ranges are 20 − 4 = 16 days for A and 24 − 2 = 22 days for B.",
+          "The middle half is equally spread in the two types, but their outer values differ. A claim of equal overall variability would overlook the larger extreme-to-extreme span for type B."
         ],
         "warning": "Equal medians and IQRs do not make two complete distributions identical."
       },
@@ -8028,7 +8145,8 @@
       "solution": {
         "steps": [
           "The largest A lifetime is 4 hours, while the smallest B lifetime is 7 hours.",
-          "Every B value exceeds every A value, so the B mean must exceed the A mean. Their equal shapes do not give B a larger spread."
+          "Every B value exceeds every A value, so the B mean must exceed the A mean. Their equal shapes do not give B a larger spread.",
+          "A mean must lie between its data's minimum and maximum. Since the entire B interval lies above the entire A interval, the mean ordering is forced without needing exact totals."
         ],
         "warning": "Location and spread are separate features."
       },
@@ -8097,7 +8215,8 @@
       "solution": {
         "steps": [
           "The first standardized height is (18 − 14)/2 = 2.",
-          "The second is (27 − 21)/3 = 2, so the relative positions are equal."
+          "The second is (27 − 21)/3 = 2, so the relative positions are equal.",
+          "Each seedling is compared with its own group's variability. The second raw height and raw deviation are larger, but its larger standard deviation exactly offsets that difference."
         ],
         "warning": "Raw differences from different means must be scaled by their corresponding standard deviations."
       },
@@ -8164,7 +8283,8 @@
       "solution": {
         "steps": [
           "A z-score subtracts the mean and divides by the standard deviation. At the mean, the numerator is zero.",
-          "Equal means and standard deviations alone do not determine medians, percentile shares, or shapes."
+          "Equal means and standard deviations alone do not determine medians, percentile shares, or shapes.",
+          "The positive common standard deviation makes division valid, and subtracting the common mean at that observation gives zero. No normality or common shape is needed for this conclusion."
         ],
         "warning": "Two summary statistics do not uniquely identify a distribution."
       },

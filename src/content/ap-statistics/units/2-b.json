@@ -67,7 +67,8 @@
         "steps": [
           "A discrete variable has a countable set of possible values.",
           "The number of canceled reservations is a count: 0, 1, 2, and so on.",
-          "Mass, elapsed time, and volume are measurements modeled as continuous."
+          "Mass, elapsed time, and volume are measurements modeled as continuous.",
+          "The number canceled varies by day but can only take nonnegative integer values. A measured duration or volume can vary between two integers, so it has a different underlying set of possibilities."
         ],
         "warning": "A quantity reported with a number can still be continuous. Counts and measurements are different."
       },
@@ -108,7 +109,8 @@
       "solution": {
         "steps": [
           "A probability distribution must have probabilities between 0 and 1 whose sum is 1.",
-          "The missing probability is 1 − 0.45 − 0.35 = 0.20."
+          "The missing probability is 1 − 0.45 − 0.35 = 0.20.",
+          "The coupon outcomes are exhaustive and mutually exclusive. The missing share fills the remainder of the whole probability, rather than a fraction of only the two known outcomes."
         ],
         "warning": "The probabilities, rather than the dollar values, must add to 1."
       },
@@ -194,7 +196,8 @@
         "steps": [
           "Weight each number of calls by its probability.",
           "E(X) = 0(0.15) + 1(0.35) + 2(0.30) + 3(0.20) = 1.55 calls.",
-          "Over many days, the average number of calls per day approaches 1.55."
+          "Over many days, the average number of calls per day approaches 1.55.",
+          "The probabilities tell how heavily each call count contributes to the long-run mean. A simple average of the four possible counts would incorrectly give rare and common days equal weight."
         ],
         "warning": "The unweighted mean of the four possible counts is 1.50; it ignores how often each count occurs."
       },
@@ -303,7 +306,8 @@
         "steps": [
           "Expected value describes an average over many repetitions of the chance process.",
           "Here the repetitions are shuttle trips and the variable is the number of empty seats.",
-          "The long-run average is about 2.4 empty seats per trip, even though a single trip has a whole-number count."
+          "The long-run average is about 2.4 empty seats per trip, even though a single trip has a whole-number count.",
+          "An average over trips can be fractional even though every observed count is an integer. The expected value need not be the most common count or a count attained on any particular trip."
         ],
         "warning": "An expected count need not be a possible individual outcome."
       },
@@ -345,7 +349,8 @@
         "steps": [
           "The expected prize is 0(0.70) + 5(0.20) + 20(0.10) = $3.",
           "Subtract the $4 cost on every play: E(G) = 3 − 4 = −$1.",
-          "A player loses an average of $1 per card over many plays."
+          "A player loses an average of $1 per card over many plays.",
+          "The entry cost is paid whether the card wins a prize or not. Subtracting it only on losing cards would overstate the player's expected return."
         ],
         "warning": "The expected prize is not the expected net gain. The cost also applies when the prize is zero."
       },
@@ -460,7 +465,8 @@
         "steps": [
           "Compute the weighted sum of squared deviations.",
           "Var(X) = 1.96(0.20) + 0.16(0.40) + 0.36(0.20) + 2.56(0.20) = 1.04.",
-          "SD(X) = √1.04 ≈ 1.02 packages."
+          "SD(X) = √1.04 ≈ 1.02 packages.",
+          "The weights come from the probability model, so this is a distribution variance rather than a sample variance using a sample-size-minus-one denominator. Taking its square root restores the original package unit."
         ],
         "warning": "The variance, 1.04, is in squared packages. Take its square root for standard deviation."
       },
@@ -576,7 +582,8 @@
         "steps": [
           "Standard deviation describes the typical distance of individual values from the mean.",
           "Here the individual values are daily delivery counts.",
-          "Their typical distance from 18 deliveries is about 3 deliveries."
+          "Their typical distance from 18 deliveries is about 3 deliveries.",
+          "This describes variability of individual daily counts, not the uncertainty in an estimated average. It does not mean every day has a count between 15 and 21."
         ],
         "warning": "Standard deviation describes variability; it is not a guarantee about every day or a mean."
       },
@@ -618,7 +625,8 @@
         "steps": [
           "The expected prize is 12(0.25) + 0(0.75) = $3.",
           "Expected net gain is 3 − c.",
-          "Set 3 − c = 0, giving c = $3."
+          "Set 3 − c = 0, giving c = $3.",
+          "A fair fee matches the expected prize, not the largest possible prize or a guaranteed payout. Zero expected gain permits both individual wins and losses over repeated plays."
         ],
         "warning": "A fair fee equals the expected prize, rather than the largest prize."
       },
@@ -700,7 +708,8 @@
         "steps": [
           "The desired event contains X = 2 and X = 3.",
           "Subtract the cumulative probability through 1 from the cumulative probability through 3.",
-          "P(1 < X ≤ 3) = 0.85 − 0.45 = 0.40."
+          "P(1 < X ≤ 3) = 0.85 − 0.45 = 0.40.",
+          "The cumulative probability through 3 includes all outcomes through 1 as well. Subtracting the latter removes that unwanted portion while retaining counts 2 and 3."
         ],
         "warning": "Do not subtract P(X ≤ 0): that would incorrectly include X = 1."
       },
@@ -805,7 +814,8 @@
         "steps": [
           "Use the weighted mean: 0(0.20) + 1(0.50) + k(0.30) = 1.7.",
           "Solve 0.50 + 0.30k = 1.7.",
-          "k = (1.7 − 0.50)/0.30 = 4."
+          "k = (1.7 − 0.50)/0.30 = 4.",
+          "The unknown is a possible sale count, not its probability. Its contribution to the expected count is weighted by the given 0.30 chance of that outcome."
         ],
         "warning": "The outcomes are not equally likely, so their unweighted average is not the expected value."
       },
@@ -892,7 +902,8 @@
       "solution": {
         "steps": [
           "The proposed probabilities sum to 0.25 + 0.50 − 0.10 + 0.35 = 1.",
-          "Every individual probability must also be between 0 and 1. The value −0.10 violates that requirement."
+          "Every individual probability must also be between 0 and 1. The value −0.10 violates that requirement.",
+          "A total of 1 is necessary but not sufficient. A negative probability would require a negative long-run share for one outcome, which no valid probability model can have."
         ],
         "warning": "A sum of 1 is necessary but does not excuse a negative probability."
       },
@@ -968,7 +979,8 @@
       "solution": {
         "steps": [
           "The event includes X = 3 and X = 4.",
-          "Add their probabilities: 0.20 + 0.10 = 0.30."
+          "Add their probabilities: 0.20 + 0.10 = 0.30.",
+          "The strict inequality excludes a count of exactly 2. The bars at 3 and 4 describe disjoint outcomes, so their probability masses can be added directly."
         ],
         "warning": "The bar at 2 is excluded by the strict inequality."
       },
@@ -1023,7 +1035,8 @@
       "solution": {
         "steps": [
           "The table gives P(X ≤ 2) = 0.65 and P(X ≤ 1) = 0.40.",
-          "Subtract: P(X = 2) = 0.65 − 0.40 = 0.25."
+          "Subtract: P(X = 2) = 0.65 − 0.40 = 0.25.",
+          "A cumulative entry is not the probability of that exact count. Its difference from the previous cumulative entry isolates the additional mass at 2."
         ],
         "warning": "A cumulative entry includes all smaller counts, not just the count on its row."
       },
@@ -1105,7 +1118,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}\\operatorname{Var}(X)&=(0-1.6)^2(0.20)\\\\&\\quad +(2-1.6)^2(0.80)\\\\&=0.512+0.128\\\\&=0.64\\end{aligned}"
           },
-          "Variance weights each squared deviation by its probability. Its units are squared parts."
+          "Variance weights each squared deviation by its probability. Its units are squared parts.",
+          "The count of 1.6 need not be a possible outcome for it to be the model mean. Measure each possible count's squared distance from that mean, then apply its probability weight."
         ],
         "warning": "The value 0.80 is the standard deviation, found by taking the square root of the variance 0.64."
       },
@@ -1225,7 +1239,8 @@
         "steps": [
           "Both distributions are symmetric about 2, so both means are 2.",
           "For A, the variance is 4(0.50) + 4(0.50) = 4. For B, it is 1(0.50) + 1(0.50) = 1.",
-          "The standard deviations are 2 and 1, respectively."
+          "The standard deviations are 2 and 1, respectively.",
+          "Equal means describe location but do not determine spread. Station A places its probability farther from the common center, so its expected squared deviation and standard deviation are larger."
         ],
         "warning": "Equal means do not imply equal spread."
       },
@@ -1309,7 +1324,8 @@
       "solution": {
         "steps": [
           "The expected sales count is 0(0.20) + 2(0.50) + 4(0.30) = 2.20.",
-          "Expected profit is 4(2.20) − 7 = 1.80 dollars."
+          "Expected profit is 4(2.20) − 7 = 1.80 dollars.",
+          "Profit is a linear transformation of the random sales count. The fixed fee is charged on every day, including days with zero sales, so it is subtracted once from expected revenue."
         ],
         "warning": "Subtracting the fee from the expected count omits the $4 rate; reversing profit and cost changes its sign; omitting the fee gives $8.80."
       },
@@ -1418,7 +1434,8 @@
       "solution": {
         "steps": [
           "The expected net amount per day is 12(0.70) − 6(0.30) = 6.60 dollars.",
-          "Multiply by 25 days: 25(6.60) = 165 dollars."
+          "Multiply by 25 days: 25(6.60) = 165 dollars.",
+          "Add the daily expected amounts across 25 days. This mean-total calculation does not require independence between days, although independence would matter for computing a total's variance."
         ],
         "warning": "Treat the penalty as a loss. The total is an expectation, not a guaranteed payment."
       },
@@ -1525,7 +1542,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}V&=(0-2)^2(0.25)\\\\&\\quad +(2-2)^2(0.50)\\\\&\\quad +(4-2)^2(0.25)\\\\&=2\\\\\\sigma_X&=\\sqrt{V}\\\\&\\approx1.41\\end{aligned}"
           },
-          "This measures the typical distance of afternoon cancellation counts from the mean of 2."
+          "This measures the typical distance of afternoon cancellation counts from the mean of 2.",
+          "A count at the mean contributes zero squared deviation, while counts equally far on either side make equal contributions at equal probabilities. The square root converts squared cancellations back to cancellations."
         ],
         "warning": "The variance is 2; take its square root for the standard deviation."
       },
@@ -1674,7 +1692,8 @@
       "solution": {
         "steps": [
           "An expected value is a probability-weighted average. It need not itself be a possible value.",
-          "Repeated hours can have different whole-number counts whose average is close to 3.7."
+          "Repeated hours can have different whole-number counts whose average is close to 3.7.",
+          "A long-run average summarizes many possible hourly outcomes rather than predicting a fractional repair in one hour. It can fall between the integer counts in the model."
         ],
         "warning": "A long-run average does not fix the count in any particular hour or block of hours."
       },
@@ -1724,7 +1743,8 @@
         "steps": [
           "The four equally likely sequences are HH, HT, TH, and TT.",
           "HH and TT have no change; HT and TH have one change. There is only one transition to inspect.",
-          "Thus X has values 0 and 1, each with probability 2/4 = 0.50."
+          "Thus X has values 0 and 1, each with probability 2/4 = 0.50.",
+          "There is only one gap between two tosses, so there cannot be two changes. Group the four equally likely toss sequences by that one transition rather than by their number of heads."
         ],
         "warning": "X counts changes between results, not the number of heads."
       },
@@ -1774,7 +1794,8 @@
         "steps": [
           "A binomial variable counts successes in a fixed number of independent trials with the same success probability.",
           "The first described setting has n = 10, p = 0.70, two outcomes on each trial, and X counts successes.",
-          "The other settings lack a fixed trial count, constant probability, or a success-count variable."
+          "The other settings lack a fixed trial count, constant probability, or a success-count variable.",
+          "Success can mean any designated event, including an unfavorable one. What matters is a fixed number of trials, two outcomes, independence and the same success probability on each trial."
         ],
         "warning": "Randomness alone does not make a variable binomial. Check what X counts."
       },
@@ -1816,7 +1837,8 @@
         "steps": [
           "A binomial model requires independent trials with a constant success probability.",
           "Without replacement, the remaining mix changes after a token is drawn.",
-          "Sampling 5 of only 12 tokens is too large a fraction to treat this dependence as negligible."
+          "Sampling 5 of only 12 tokens is too large a fraction to treat this dependence as negligible.",
+          "After a blue draw, the next blue probability differs from its value after a yellow draw. That dependence prevents the exact binomial formula from describing these five draws."
         ],
         "warning": "A sample size of 30 is not a binomial condition."
       },
@@ -1858,7 +1880,8 @@
         "steps": [
           "The binomial coefficient counts which three of the eight seeds germinate.",
           "The product (0.60)³(0.40)⁵ gives the probability of one specified arrangement with three successes and five failures.",
-          "Multiplying gives P(X = 3), the probability of exactly three germinations."
+          "Multiplying gives P(X = 3), the probability of exactly three germinations.",
+          "The coefficient counts mutually exclusive arrangements, while the probability factors describe one arrangement. Omitting the coefficient would count only one specified set of three germinating seeds."
         ],
         "warning": "At most three would require adding probabilities for 0, 1, 2, and 3 germinations."
       },
@@ -1900,7 +1923,8 @@
         "steps": [
           "X follows a binomial distribution with n = 10 and p = 0.20.",
           "P(X = 3) = C(10, 3)(0.20)³(0.80)⁷.",
-          "The probability is approximately 0.2013."
+          "The probability is approximately 0.2013.",
+          "Three failures require seven nonfailures among the ten components. Both types of outcome contribute probability factors, and the coefficient counts which three components failed."
         ],
         "warning": "The binomial coefficient accounts for all arrangements of the three failed components."
       },
@@ -1967,7 +1991,8 @@
         "steps": [
           "At most two means X ≤ 2, including 0, 1, and 2.",
           "Use X ~ Binomial(n = 8, p = 0.30).",
-          "P(X ≤ 2) = P(X = 0) + P(X = 1) + P(X = 2) ≈ 0.5518."
+          "P(X ≤ 2) = P(X = 0) + P(X = 1) + P(X = 2) ≈ 0.5518.",
+          "The binomial distribution describes how many recipients open the link, not which particular recipients do. A cumulative calculation includes every allowed count from zero through two."
         ],
         "warning": "Exactly two and fewer than two are different events."
       },
@@ -2038,7 +2063,8 @@
         "steps": [
           "At least four means 4 through 12 wins, inclusive.",
           "The complementary event is X ≤ 3.",
-          "P(X ≥ 4) = 1 − P(X ≤ 3) ≈ 0.3512."
+          "P(X ≥ 4) = 1 − P(X ≤ 3) ≈ 0.3512.",
+          "The count of four belongs in the requested upper tail. Subtracting the probability through four would wrongly exclude it, so the complementary cumulative cutoff must be three."
         ],
         "warning": "Using 1 − P(X ≤ 4) excludes four wins and answers more than four."
       },
@@ -2109,7 +2135,8 @@
         "steps": [
           "Fewer than four means X < 4. Since X is a count, this is X ≤ 3.",
           "Use X ~ Binomial(n = 10, p = 0.40).",
-          "P(X < 4) = P(X ≤ 3) ≈ 0.3823."
+          "P(X < 4) = P(X ≤ 3) ≈ 0.3823.",
+          "Because detections are integer counts, the strict boundary converts to the next lower integer cutoff. Including four would answer at most four, which is a different event."
         ],
         "warning": "A strict inequality requires moving the integer boundary by one."
       },
@@ -2180,7 +2207,8 @@
         "steps": [
           "For a binomial count, μ = np = 40(0.65) = 26.",
           "This is a long-run average count over many groups of 40 requests.",
-          "A particular group can have more or fewer than 26 first-call resolutions."
+          "A particular group can have more or fewer than 26 first-call resolutions.",
+          "The expected count is the success rate applied to 40 requests. The 0.65 is a proportion for one request, while 26 is an average count for an entire group."
         ],
         "warning": "Do not confuse the one-request probability with the mean count in 40 requests."
       },
@@ -2261,7 +2289,8 @@
       "solution": {
         "steps": [
           "For a binomial count, σ = √[np(1 − p)].",
-          "σ = √[60(0.40)(0.60)] = √14.4 ≈ 3.79 successes."
+          "σ = √[60(0.40)(0.60)] = √14.4 ≈ 3.79 successes.",
+          "The formula gives spread for a count of successes. Dividing by the number of trials would change to the spread of a sample proportion, which is not the variable defined here."
         ],
         "warning": "np = 24 is the mean; np(1 − p) = 14.4 is the variance."
       },
@@ -2352,7 +2381,8 @@
         "steps": [
           "X ~ Binomial(n = 6, p = 0.90), so counts near 6 are much more likely than counts near 0.",
           "P(X = 0) = (0.10)⁶ = 0.000001.",
-          "The probabilities for 1, 5, and 6 detections are 0.000054, 0.354294, and 0.531441, respectively."
+          "The probabilities for 1, 5, and 6 detections are 0.000054, 0.354294, and 0.531441, respectively.",
+          "Zero detections requires all six high-probability detections to fail. It remains possible, but its very small probability makes it the least likely of the listed counts."
         ],
         "warning": "The most extreme listed value relative to the likely high count is zero, not six."
       },
@@ -2438,7 +2468,8 @@
       "solution": {
         "steps": [
           "Include counts 2, 3, and 4.",
-          "The probabilities for 2, 3, and 4 are approximately 0.266828, 0.266828, and 0.171532. Their sum is approximately 0.7052."
+          "The probabilities for 2, 3, and 4 are approximately 0.266828, 0.266828, and 0.171532. Their sum is approximately 0.7052.",
+          "Both interval endpoints are included. A cumulative approach would subtract the probability through 1 from that through 4, preserving the probability mass at 2."
         ],
         "warning": "Include both endpoints of the interval."
       },
@@ -2514,7 +2545,8 @@
       "solution": {
         "steps": [
           "Use the complement of no jams.",
-          "P(X ≥ 1) = 1 − (0.92)⁵ ≈ 0.3409."
+          "P(X ≥ 1) = 1 − (0.92)⁵ ≈ 0.3409.",
+          "Zero jams means all five print runs avoid a jam. Independence lets those five no-jam probabilities be multiplied before the complement includes every positive jam count."
         ],
         "warning": "Adding five probabilities of 0.08 double-counts outcomes with several jams."
       },
@@ -2613,7 +2645,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}\\frac{np(1-p)}{np}&=\\frac{9}{12}\\\\&=1-p\\end{aligned}"
           },
-          "Therefore p = 1 − 0.75 = 0.25."
+          "Therefore p = 1 − 0.75 = 0.25.",
+          "For a binomial model, dividing variance by mean cancels the common trial-count and success-probability factors. This isolates the failure probability before taking its complement to obtain success probability."
         ],
         "warning": "The ratio variance divided by mean gives the failure probability, not p."
       },
@@ -2661,7 +2694,8 @@
       "solution": {
         "steps": [
           "For a binomial count, the mean is np.",
-          "Solve 0.60n = 18 to obtain n = 30. Success means acceptance, so p = 0.60."
+          "Solve 0.60n = 18 to obtain n = 30. Success means acceptance, so p = 0.60.",
+          "The expected number accepted equals batch size times the individual acceptance rate. Keep acceptance as success; replacing 0.60 by its complement would define a different counted variable."
         ],
         "warning": "The mean number of successes is not the number of trials."
       },
@@ -2752,7 +2786,8 @@
       "solution": {
         "steps": [
           "More than two means X = 3, 4, 5, 6, 7, or 8.",
-          "Add those binomial probabilities, or subtract P(X ≤ 2) from 1, to obtain approximately 0.3215."
+          "Add those binomial probabilities, or subtract P(X ≤ 2) from 1, to obtain approximately 0.3215.",
+          "More than two starts at three, not two. Its complement includes zero, one and two cancellations, making a cumulative calculation an efficient alternative to adding six probabilities."
         ],
         "warning": "Do not include X = 2 in a strict upper tail."
       },
@@ -2828,7 +2863,8 @@
       "solution": {
         "steps": [
           "A binomial variable counts successes in a fixed number of trials.",
-          "Here the number of successes is fixed at three, and the number of attempts varies."
+          "Here the number of successes is fixed at three, and the number of attempts varies.",
+          "Independence and a constant success probability are not enough on their own. Stopping when the third hit occurs makes the trial count random instead of fixing it before the experiment."
         ],
         "warning": "Independent trials with a constant success probability are not sufficient when the stopping rule makes n random."
       },
@@ -2881,7 +2917,8 @@
             "type": "math",
             "mode": "display",
             "tex": "\\begin{aligned}\\sigma_X&=\\sqrt{np(1-p)}\\\\&=\\sqrt{50(0.20)(0.80)}\\\\&=\\sqrt{8}\\\\&\\approx2.83\\end{aligned}"
-          }
+          },
+          "This is the spread of the count of forms requiring correction. It describes a typical deviation of about 2.83 forms from the mean count of 10 across repeated groups of 50 forms."
         ],
         "warning": "The mean is 10 and the variance is 8; neither is the standard deviation."
       },
@@ -2981,7 +3018,8 @@
       "solution": {
         "steps": [
           "Counts 3, 4, 5, and 6 occurred 40 + 7 + 1 + 0 = 48 times.",
-          "The estimated probability is 48/500 = 0.096."
+          "The estimated probability is 48/500 = 0.096.",
+          "The denominator counts simulated batches rather than individual batteries. This empirical estimate can differ from the exact binomial probability because only 500 random repetitions were generated."
         ],
         "warning": "Divide by the number of batches, not by the six batteries in a batch."
       },
@@ -3118,7 +3156,8 @@
       "solution": {
         "steps": [
           "The probabilities for 0, 1, 2, and 4 are 1/16, 4/16, 6/16, and 1/16.",
-          "The largest is 6/16, which belongs to X = 2."
+          "The largest is 6/16, which belongs to X = 2.",
+          "There are more arrangements with two successes and two failures than with all successes or all failures. Equal trial probabilities do not make the five possible counts equally likely."
         ],
         "warning": "Equal success and failure probabilities do not make the different counts equally likely."
       },
@@ -3166,7 +3205,8 @@
       "solution": {
         "steps": [
           "Five correct labels contribute (0.80)⁵ and two incorrect labels contribute (0.20)².",
-          "The factor C(7, 5) counts which five trays are labeled correctly."
+          "The factor C(7, 5) counts which five trays are labeled correctly.",
+          "The trials not among the five correct labels must be incorrect. The coefficient counts the possible sets of five correct trays; the probability factors describe any one specified set."
         ],
         "warning": "A single arrangement omits the combination factor; the success exponent must match the count requested."
       },
@@ -3214,7 +3254,8 @@
       "solution": {
         "steps": [
           "Elapsed time is a measurement that can take any value in an interval.",
-          "The other quantities are counts with discrete possible values."
+          "The other quantities are counts with discrete possible values.",
+          "A timer's limited precision may round the displayed reading. That rounding does not change elapsed time itself from a measurement into a count."
         ],
         "warning": "The phrase number of minutes would still describe measured time, rather than a count of objects."
       },
@@ -3256,7 +3297,8 @@
         "steps": [
           "For a continuous variable, probability is area under a density curve over an interval.",
           "A single exact value has zero width and therefore zero area.",
-          "P(X = 500) = 0, even though 500 is the mean. The other regions have positive width and positive area."
+          "P(X = 500) = 0, even though 500 is the mean. The other regions have positive width and positive area.",
+          "The density curve can have its highest point at the mean while the probability of that exact value is zero. Probabilities come from areas across intervals, not individual curve heights."
         ],
         "warning": "A very small tail probability is still positive in a normal model."
       },
@@ -3297,7 +3339,8 @@
       "solution": {
         "steps": [
           "The endpoints are 180 − 12 and 180 + 12: one standard deviation on each side of the mean.",
-          "The empirical rule places approximately 68% within one standard deviation."
+          "The empirical rule places approximately 68% within one standard deviation.",
+          "Measure both endpoint distances from the mean before choosing a rule percentage. The interval is centered and extends one full standard deviation in each direction."
         ],
         "warning": "34% describes only one half of this central interval."
       },
@@ -3346,7 +3389,8 @@
         "steps": [
           "46 = 40 + 2(3), so the boundary is two standard deviations above the mean.",
           "Approximately 95% lie within two standard deviations, leaving 5% in both tails.",
-          "By symmetry the upper tail is approximately 5%/2 = 2.5%."
+          "By symmetry the upper tail is approximately 5%/2 = 2.5%.",
+          "The 5% outside the central two-standard-deviation interval is shared by both tails. The question requests only the high-lifetime side, so taking the whole 5% would double the desired area."
         ],
         "warning": "The remaining 5% is split between two tails."
       },
@@ -3395,7 +3439,8 @@
         "steps": [
           "92 minutes is one standard deviation below the mean.",
           "Approximately 16% lie below μ − σ.",
-          "The area above that boundary is approximately 100% − 16% = 84%."
+          "The area above that boundary is approximately 100% − 16% = 84%.",
+          "The requested region includes the center and the entire upper tail. Recognizing that the boundary lies below the mean also checks that the answer should exceed 50%."
         ],
         "warning": "The direction matters: above a below-mean cutoff includes more than half the distribution."
       },
@@ -3444,7 +3489,8 @@
         "steps": [
           "A central 95% interval extends approximately two standard deviations on each side of the mean.",
           "Its full width is therefore approximately 4σ.",
-          "σ ≈ (66 − 42)/4 = 6 cm."
+          "σ ≈ (66 − 42)/4 = 6 cm.",
+          "The distance from 42 to 66 covers both halves of the central interval. Dividing the full width by two would confuse two standard deviations on one side with the entire width."
         ],
         "warning": "The full interval spans four standard deviations, not two."
       },
@@ -3535,7 +3581,8 @@
         "steps": [
           "Use z = (x − μ)/σ.",
           "z = (60 − 72)/8 = −1.50.",
-          "The score is 1.5 standard deviations below the mean."
+          "The score is 1.5 standard deviations below the mean.",
+          "The negative sign records a score below the mean. Standardization expresses the 12-point shortfall in units of the 8-point standard deviation and does not require a normal population."
         ],
         "warning": "A score below the mean must have a negative z-score."
       },
@@ -3619,7 +3666,8 @@
         "steps": [
           "From z = −1 to 0, the area is approximately 0.34.",
           "From 0 to z = 2, the area is approximately 0.95/2 = 0.475.",
-          "Add the disjoint regions: 0.34 + 0.475 = 0.815."
+          "Add the disjoint regions: 0.34 + 0.475 = 0.815.",
+          "The interval crosses the mean but is not symmetric about it. Split the area at zero so the two empirical-rule pieces can be added without assuming equal endpoint distances."
         ],
         "warning": "The interval is not symmetric about zero. Split it at the mean."
       },
@@ -3668,7 +3716,8 @@
         "steps": [
           "The smaller standard deviation concentrates the same total probability closer to the mean.",
           "Model A is narrower and has a higher peak than model B.",
-          "Every probability density curve has total area 1."
+          "Every probability density curve has total area 1.",
+          "Both curves must enclose the same total probability. Increasing spread redistributes that area across a wider horizontal range and lowers the peak, rather than increasing total area."
         ],
         "warning": "Curve height is density, not total probability."
       },
@@ -3716,7 +3765,8 @@
       "solution": {
         "steps": [
           "About 16% of a normal distribution lies below μ − σ.",
-          "The 16th-percentile time is approximately 54 − 6 = 48 minutes."
+          "The 16th-percentile time is approximately 54 − 6 = 48 minutes.",
+          "A percentile is a lower-tail cumulative proportion. The 16th percentile lies below the mean, so adding a standard deviation would choose the opposite-side percentile."
         ],
         "warning": "A lower percentile corresponds to a time below the mean."
       },
@@ -3764,7 +3814,8 @@
       "solution": {
         "steps": [
           "For a continuous model, P(X = 12) = 0.",
-          "Adding the single endpoint does not change the probability."
+          "Adding the single endpoint does not change the probability.",
+          "Including a single endpoint changes a continuous interval by zero area. This equality need not hold for a discrete count, where a single value can have positive probability."
         ],
         "warning": "Probabilities are areas over intervals, not heights at points."
       },
@@ -3812,7 +3863,8 @@
       "solution": {
         "steps": [
           "The boundaries are one and two standard deviations above the mean.",
-          "The area between them is (95% − 68%)/2 = 13.5%."
+          "The area between them is (95% − 68%)/2 = 13.5%.",
+          "The difference between the central 95% and central 68% leaves two matching side bands. Only the upper band is requested, so divide that difference in half."
         ],
         "warning": "The 27% outside the central 68% but inside the central 95% is shared by two sides."
       },
@@ -3860,7 +3912,8 @@
       "solution": {
         "steps": [
           "Approximately 99.7% lie within three standard deviations.",
-          "The two tails together contain 100% − 99.7% = 0.3%."
+          "The two tails together contain 100% − 99.7% = 0.3%.",
+          "The question includes both extreme sides. The approximate 0.3% is the combined outside area; only one tail would contain about half of it."
         ],
         "warning": "Each individual tail contains about 0.15%; the event includes both."
       },
@@ -3918,7 +3971,8 @@
             "mode": "display",
             "tex": "\\begin{aligned}z_A&=\\frac{82-70}{8}\\\\&=1.5\\\\z_B&=\\frac{660-500}{80}\\\\&=2.0\\end{aligned}"
           },
-          "A larger positive z-score places the student farther above the relevant mean."
+          "A larger positive z-score places the student farther above the relevant mean.",
+          "Comparing raw scores across assessments ignores their different means and spreads. A larger positive standardized score indicates a higher position relative to its own assessment group."
         ],
         "warning": "Raw scores and raw gaps cannot be compared across different scales."
       },
@@ -4059,7 +4113,8 @@
       "solution": {
         "steps": [
           "Both standard deviations are 6, so both curves have the same spread and height.",
-          "Changing the mean from 40 to 60 shifts the curve without changing its shape or total area of 1."
+          "Changing the mean from 40 to 60 shifts the curve without changing its shape or total area of 1.",
+          "A normal curve's mean determines horizontal location, while its standard deviation determines spread. Equal standard deviations prevent a change in width or peak height when only the mean changes."
         ],
         "warning": "The mean controls location; the standard deviation controls spread."
       },
@@ -4127,7 +4182,8 @@
       "solution": {
         "steps": [
           "Undo the standardization: x = μ + zσ.",
-          "The time is 48 + (−1.25)(4) = 43 seconds."
+          "The time is 48 + (−1.25)(4) = 43 seconds.",
+          "The negative standardized score places the time below 48 seconds. Multiplying by the standard deviation converts that relative position into a 5-second shortfall from the mean."
         ],
         "warning": "A negative z-score puts the time below the mean; it does not make the time itself negative."
       },
@@ -4221,7 +4277,8 @@
       "solution": {
         "steps": [
           "A percentile depends on the distribution’s shape as well as its center and spread.",
-          "The standard normal 75th-percentile z-score cannot be imposed on a strongly skewed distribution."
+          "The standard normal 75th-percentile z-score cannot be imposed on a strongly skewed distribution.",
+          "Different skewed distributions can share the same mean and standard deviation but have different upper-quartile cutoffs. Two numerical summaries do not supply the missing cumulative shape information."
         ],
         "warning": "Mean and standard deviation alone do not determine a percentile without a suitable model."
       },
@@ -4269,7 +4326,8 @@
       "solution": {
         "steps": [
           "The symmetric interval is centered at (26 + 50)/2 = 38.",
-          "A central 95% interval spans about four standard deviations, so σ ≈ (50 − 26)/4 = 6."
+          "A central 95% interval spans about four standard deviations, so σ ≈ (50 − 26)/4 = 6.",
+          "The central interval is symmetric, so its midpoint locates the mean. Its half-width corresponds to about two standard deviations, giving a second way to check the recovered spread."
         ],
         "warning": "Its full width is four standard deviations, not two."
       },
@@ -4317,7 +4375,8 @@
       "solution": {
         "steps": [
           "A standard normal distribution has mean and median 0, standard deviation 1, and total area 1.",
-          "Its tails continue beyond ±3, although only about 0.3% of the area is outside that interval."
+          "Its tails continue beyond ±3, although only about 0.3% of the area is outside that interval.",
+          "The empirical rule's 99.7% is close to all observations but is not 100%. A normal model has unbounded tails, so values beyond three standard deviations retain positive interval probabilities."
         ],
         "warning": "The empirical rule does not give a minimum or maximum possible value."
       },
@@ -4367,7 +4426,8 @@
       "solution": {
         "steps": [
           "The distance above the mean is 74 − 62 = 12.",
-          "Since 12 = 1.5σ, divide to find σ = 8."
+          "Since 12 = 1.5σ, divide to find σ = 8.",
+          "The 12-point deviation consists of 1.5 standard-deviation units. Divide that total distance by the number of such units to recover the size of one standard deviation."
         ],
         "warning": "The gap from the mean is not itself the standard deviation unless z = 1."
       },
@@ -4464,7 +4524,8 @@
         "steps": [
           "Standardize the boundary: z = (44 − 50)/8 = −0.75.",
           "The required region is the lower tail.",
-          "P(X < 44) = P(Z < −0.75) ≈ 0.2266."
+          "P(X < 44) = P(Z < −0.75) ≈ 0.2266.",
+          "Standardization carries the original below-44 event to the same-side standard normal tail. A cutoff below the mean provides a quick check that the probability should be less than one half."
         ],
         "warning": "0.7734 is the probability above 44 hours; 0.2734 is only the area between 44 and the mean."
       },
@@ -4535,7 +4596,8 @@
         "steps": [
           "The cutoff has z = (60 − 50)/8 = 1.25.",
           "Longer than 60 cm is the upper tail.",
-          "P(X > 60) = 1 − Φ(1.25) ≈ 0.1056."
+          "P(X > 60) = 1 − Φ(1.25) ≈ 0.1056.",
+          "The cumulative normal function gives area to the left of the cutoff. Subtracting from 1 converts that result to the requested longer-than region on the right."
         ],
         "warning": "A cumulative area to the left must be complemented for an upper-tail question."
       },
@@ -4606,7 +4668,8 @@
         "steps": [
           "The lower and upper z-scores are (25 − 30)/5 = −1 and (38 − 30)/5 = 1.6.",
           "Find the cumulative area through the upper endpoint and subtract the area through the lower endpoint.",
-          "P(25 < X < 38) = Φ(1.6) − Φ(−1) ≈ 0.7865."
+          "P(25 < X < 38) = Φ(1.6) − Φ(−1) ≈ 0.7865.",
+          "The upper cumulative area contains both the requested interval and all travel times below 25. Subtracting the lower cumulative area removes the latter and leaves only times between the boundaries."
         ],
         "warning": "Using only one endpoint includes values outside the requested interval."
       },
@@ -4677,7 +4740,8 @@
         "steps": [
           "The rejection boundaries have z-scores −1 and 2.",
           "Rejection occurs in either of two disjoint tails.",
-          "P(reject) = Φ(−1) + 1 − Φ(2) ≈ 0.1587 + 0.0228 = 0.1814."
+          "P(reject) = Φ(−1) + 1 − Φ(2) ≈ 0.1814.",
+          "The accepted diameters lie between the two boundaries; rejection is outside that interval. The upper cutoff is farther from the mean, so its rejection tail is smaller than the lower tail."
         ],
         "warning": "The central interval represents accepted rings, not rejected rings."
       },
@@ -4782,7 +4846,8 @@
         "steps": [
           "The 90th percentile has 0.90 of the distribution to its left.",
           "Its standard normal value is z ≈ 1.2816.",
-          "x = μ + zσ = 80 + 1.2816(12) ≈ 95.38 km."
+          "x = μ + zσ = 80 + 1.2816(12) ≈ 95.38 km.",
+          "This is an inverse-normal problem: the area is known and the distance is unknown. Convert the percentile to a standardized cutoff before returning to kilometers."
         ],
         "warning": "0.90 is an area, not a z-score. Multiplying 12 by 0.90 gives the wrong cutoff."
       },
@@ -4853,7 +4918,8 @@
         "steps": [
           "Faster means a smaller completion time, so use the lower 5% of the distribution.",
           "The fifth percentile has z ≈ −1.6449.",
-          "x = 120 − 1.6449(15) ≈ 95.33 seconds."
+          "x = 120 − 1.6449(15) ≈ 95.33 seconds.",
+          "Performance wording determines the tail: a smaller time is faster. The fastest 5% cutoff must therefore fall below the mean, rather than above it."
         ],
         "warning": "The slowest 5% are in the upper tail, but the fastest 5% are in the lower tail."
       },
@@ -4924,7 +4990,8 @@
         "steps": [
           "The middle 80% leaves 10% in each tail.",
           "The endpoints are the 10th and 90th percentiles, with z ≈ ±1.2816.",
-          "1000 ± 1.2816(20) gives approximately 974.37 g to 1025.63 g."
+          "1000 ± 1.2816(20) gives approximately 974.37 g to 1025.63 g.",
+          "The excluded 20% is divided equally between two tails because the requested interval is central. Using the 20th and 80th percentiles would leave only 60% in the middle."
         ],
         "warning": "Using the 80th percentile as the upper endpoint does not produce a central 80% interval."
       },
@@ -5019,7 +5086,8 @@
         "steps": [
           "The 10th percentile has z ≈ −1.2816.",
           "Use x = μ + zσ: 42 = μ − 1.2816(5).",
-          "Therefore μ = 42 + 6.408 ≈ 48.41 cm."
+          "Therefore μ = 42 + 6.408 ≈ 48.41 cm.",
+          "A 10th-percentile measurement is below the mean. Moving upward by its standardized distance recovers the center; subtracting again would place the mean on the wrong side of the percentile."
         ],
         "warning": "The 10th percentile lies below the mean. A proposed mean below 42 cm has the wrong direction."
       },
@@ -5103,7 +5171,8 @@
         "steps": [
           "The 90th-percentile z-score is approximately 1.2816.",
           "Standardizing gives z = (x − μ)/σ.",
-          "Substitute: 1.2816 = (84 − 75)/σ, so σ ≈ 7.02 points."
+          "Substitute: 1.2816 = (84 − 75)/σ, so σ ≈ 7.02 points.",
+          "The equation equates the standardized position of the 84-point score to its known normal percentile. The standard deviation is the scale converting the 9-point deviation into that standardized distance."
         ],
         "warning": "The denominator of a z-score is the standard deviation, not the variance."
       },
@@ -5186,7 +5255,8 @@
         "steps": [
           "The boundary has z = (2.45 − 2.0)/0.3 = 1.5.",
           "The upper-tail probability is approximately 0.06681.",
-          "The expected count is 800(0.06681) ≈ 53 parcels."
+          "The expected count is 800(0.06681) ≈ 53 parcels.",
+          "First obtain the probability for one parcel, then scale it by the shipment size to find an expected count. The estimate describes an average count, not an exact shipment guarantee."
         ],
         "warning": "The question asks for an expected count, not just the probability for one parcel."
       },
@@ -5268,7 +5338,8 @@
       "solution": {
         "steps": [
           "Standardize the boundaries: (43 − 40)/6 = 0.5 and (49 − 40)/6 = 1.5.",
-          "The probability is Φ(1.5) − Φ(0.5) ≈ 0.9332 − 0.6915 = 0.2417."
+          "The probability is Φ(1.5) − Φ(0.5) ≈ 0.9332 − 0.6915 = 0.2417.",
+          "Both boundaries lie above the mean, but the desired region is between them rather than beyond either one. Subtracting cumulative areas isolates the shaded band."
         ],
         "warning": "Both boundaries are above the mean; the interval is not centered."
       },
@@ -5344,7 +5415,8 @@
       "solution": {
         "steps": [
           "The cutoffs have z-scores −1.5 and 1.5.",
-          "Add the two tails: 2P(Z > 1.5) ≈ 2(0.066807) = 0.1336."
+          "Add the two tails: 2P(Z > 1.5) ≈ 2(0.066807) = 0.1336.",
+          "The symmetric cutoffs have equal tail probabilities. Rejection includes both tails, so taking one tail alone would count only half of the rejected components."
         ],
         "warning": "One tail gives only half the rejection probability."
       },
@@ -5448,7 +5520,8 @@
       "solution": {
         "steps": [
           "The cutoff has 0.85 of the distribution to its left.",
-          "The corresponding z-score is about 1.0364, so x = 120 + 18(1.0364) ≈ 138.66."
+          "The corresponding z-score is about 1.0364, so x = 120 + 18(1.0364) ≈ 138.66.",
+          "Highest 15% describes a right tail, whereas inverse-normal inputs typically use cumulative area to the left. Its complement, 85%, identifies the required upper-side cutoff."
         ],
         "warning": "The highest 15% starts at the 85th percentile, not the 15th percentile."
       },
@@ -5524,7 +5597,8 @@
       "solution": {
         "steps": [
           "By symmetry the mean is 40. The 75th percentile is 0.67449 standard deviations above it.",
-          "Thus σ = (48 − 40)/0.67449 ≈ 11.86."
+          "Thus σ = (48 − 40)/0.67449 ≈ 11.86.",
+          "For a normal model, the central 50% has a specific width in standard-deviation units. The IQR is not one standard deviation, so dividing its width by two alone would not recover the spread."
         ],
         "warning": "The interquartile range is about 1.349 standard deviations, not two."
       },
@@ -5606,7 +5680,8 @@
       "solution": {
         "steps": [
           "The 95th-percentile standard normal value is about 1.64485.",
-          "Solve 19 = μ + 3(1.64485) to get μ ≈ 14.07 minutes."
+          "Solve 19 = μ + 3(1.64485) to get μ ≈ 14.07 minutes.",
+          "The 95th percentile lies above the mean by a known standardized distance. Subtract that positive distance from 19 to locate the mean; 19 itself is a cutoff, not the center."
         ],
         "warning": "The mean lies below a 95th-percentile cutoff."
       },
@@ -5695,7 +5770,8 @@
       "solution": {
         "steps": [
           "The middle 90% leaves 5% in each tail.",
-          "Use z = ±1.64485: 300 ± 12(1.64485) gives approximately 280.26 to 319.74."
+          "Use z = ±1.64485: 300 ± 12(1.64485) gives approximately 280.26 to 319.74.",
+          "A central interval leaves equal probability on both sides. A one-sided 90th-percentile cutoff would use a different standardized boundary and would not enclose the middle 90%."
         ],
         "warning": "Using the 90th-percentile z-score gives a middle 80% interval."
       },
@@ -5789,7 +5865,8 @@
       "solution": {
         "steps": [
           "The cutoff has z = (740 − 750)/8 = −1.25.",
-          "The lower-tail probability is about 0.10565. Multiply by 1,200 to get approximately 126.78 bottles, or 127."
+          "The lower-tail probability is about 0.10565. Multiply by 1,200 to get approximately 126.78 bottles, or 127.",
+          "The normal model supplies a lower-tail fraction for one bottle. Multiplying by 1,200 gives an expected batch count, which is rounded only after the probability calculation."
         ],
         "warning": "An expected count multiplies the probability by the batch size and need not equal the actual count."
       },
@@ -5871,7 +5948,8 @@
       "solution": {
         "steps": [
           "The 90th-percentile cutoff is 100 + 15(1.28155) ≈ 119.22.",
-          "A score must reach or exceed that cutoff. The smallest whole number that does so is 120."
+          "A score must reach or exceed that cutoff. The smallest whole number that does so is 120.",
+          "Rounding to the nearest whole number would give 119, which is below the required cutoff. Eligibility requires rounding upward to the smallest available score that actually clears the threshold."
         ],
         "warning": "Rounding the cutoff to the nearest integer would admit a score below it."
       },
@@ -5941,7 +6019,8 @@
       "solution": {
         "steps": [
           "The cutoffs standardize to −1.5 and 1.",
-          "The left tail is Φ(−1.5); the right tail is 1 − Φ(1). Add them because the events are disjoint."
+          "The left tail is Φ(−1.5); the right tail is 1 − Φ(1). Add them because the events are disjoint.",
+          "The word or joins two nonoverlapping tails. The cumulative function already supplies the lower tail, while the upper tail requires its cumulative area's complement."
         ],
         "warning": "Subtracting the cumulative probabilities gives the middle interval instead of the two tails."
       },
@@ -5989,7 +6068,8 @@
       "solution": {
         "steps": [
           "Standardize 13 using z = (13 − 10)/2 = 1.5.",
-          "Standardization preserves the direction of this inequality because the standard deviation is positive."
+          "Standardization preserves the direction of this inequality because the standard deviation is positive.",
+          "The event is below the boundary, so the required shaded area stays on the left after standardization. A positive boundary does not imply that the requested probability is an upper tail."
         ],
         "warning": "Using 13/2 ignores the mean, and using both tails changes the event."
       },
@@ -6038,7 +6118,8 @@
         "steps": [
           "The population is the entire group the researcher wants to learn about.",
           "The sample is the subset actually selected and measured.",
-          "Here they are all 12,000 households and the 80 selected households, respectively."
+          "Here they are all 12,000 households and the 80 selected households, respectively.",
+          "Water-use measurements are values of a variable recorded on households. They are not the population or sample themselves; those terms identify the groups of households being studied."
         ],
         "warning": "Parameters and statistics are numerical summaries, rather than the groups of households."
       },
@@ -6080,7 +6161,8 @@
         "steps": [
           "A parameter summarizes the population; a statistic summarizes a sample.",
           "The true mean for all warehouse orders, μ = 18, is a parameter.",
-          "The mean from the 50 sampled orders, x̄ = 19.2, is a statistic."
+          "The mean from the 50 sampled orders, x̄ = 19.2, is a statistic.",
+          "A statistic need not equal its corresponding parameter in one sample. The 1.2-minute difference can reflect sampling variation rather than a reclassification of either numerical summary."
         ],
         "warning": "Whether a number is a parameter or statistic depends on the group it summarizes."
       },
@@ -6122,7 +6204,8 @@
         "steps": [
           "Each plotted value is a mean calculated from one sample of 25 buses.",
           "A distribution of a statistic across repeated samples is a sampling distribution.",
-          "The sample size is 25; 2,000 is the number of repetitions used to approximate the distribution."
+          "The sample size is 25; 2,000 is the number of repetitions used to approximate the distribution.",
+          "The observational unit in the plotted distribution is one sample's mean. Individual bus delays would form a population or sample-data distribution instead of this distribution of repeated statistics."
         ],
         "warning": "Do not confuse the number of simulated samples with the size of each sample."
       },
@@ -6164,7 +6247,8 @@
         "steps": [
           "The central limit theorem concerns the sampling distribution of a sample mean.",
           "For a sufficiently large random sample, that distribution is approximately normal even when the population is not normal.",
-          "Here n = 100 is large for the stated moderately skewed population."
+          "Here n = 100 is large for the stated moderately skewed population.",
+          "Averaging can yield an approximately normal sampling distribution without changing the skewed population of individual transactions. The theorem concerns means from repeated samples of size 100."
         ],
         "warning": "The theorem does not make individual observations or the population normal."
       },
@@ -6206,7 +6290,8 @@
         "steps": [
           "The population is strongly skewed and the sample size is only 4.",
           "A small sample mean can retain substantial skewness from the population.",
-          "More simulation repetitions reveal the shape more clearly; they do not change the underlying sampling distribution."
+          "More simulation repetitions reveal the shape more clearly; they do not change the underlying sampling distribution.",
+          "Increasing the number of plotted means cannot compensate for only four observations per mean. Sample size affects the distribution of the statistic; repetitions affect how accurately the simulation displays it."
         ],
         "warning": "A sample-size rule of thumb is not a guarantee, especially for severe skewness."
       },
@@ -6247,7 +6332,8 @@
       "solution": {
         "steps": [
           "When the population is normal, the sampling distribution of the sample mean is normal for any sample size.",
-          "The n ≥ 30 guideline is used when normality must be justified from a non-normal population."
+          "The n ≥ 30 guideline is used when normality must be justified from a non-normal population.",
+          "Normality of the population supplies the shape justification directly. Small sample size does not invalidate that result when observations are independent and normally distributed."
         ],
         "warning": "A small sample size does not prevent normal sample means when the population itself is normal."
       },
@@ -6289,7 +6375,8 @@
         "steps": [
           "Sample means are centered at the same population mean regardless of the sample size.",
           "A mean from 80 observations varies less from sample to sample than a mean from 10 observations.",
-          "The number of simulation repetitions affects how smooth the display looks, rather than the theoretical spread."
+          "The number of simulation repetitions affects how smooth the display looks, rather than the theoretical spread.",
+          "Distinguish sample size from simulation size: 80 determines how much averaging occurs in each mean, while 500 determines how many such means are plotted. More plotting repetitions do not widen or narrow the theoretical distribution."
         ],
         "warning": "Distinguish the observations per sample from the number of simulated samples."
       },
@@ -6331,7 +6418,8 @@
         "steps": [
           "The event is a simulated sample mean of at least 16.2 minutes.",
           "The shaded bars have frequencies 20 and 8, giving 28 results among 1,000 repetitions.",
-          "Estimated probability = 28/1000 = 0.028."
+          "Estimated probability = 28/1000 = 0.028.",
+          "The claim is assumed when generating the comparison distribution. The 0.028 is a probability of sample results under that assumption, not the probability that the population claim is true."
         ],
         "warning": "This is a probability of a sample statistic assuming the claim, not the probability that the claim is true."
       },
@@ -6420,7 +6508,8 @@
         "steps": [
           "Under the claimed model, the estimated upper-tail probability is 300/500 = 0.60.",
           "An observed mean at least this large is common in the simulation.",
-          "The result gives little evidence against the claim, but does not prove the claim true."
+          "The result gives little evidence against the claim, but does not prove the claim true.",
+          "A common result under a model is not evidence that the model must be correct. This comparison only says the observed upper-tail result is not surprising under the claimed mean."
         ],
         "warning": "Sampling variability permits a sample mean to differ from the population mean."
       },
@@ -6462,7 +6551,8 @@
         "steps": [
           "There are six equally likely samples: (2,4), (2,6), (2,8), (4,6), (4,8), and (6,8).",
           "Their sample means are 3, 4, 5, 5, 6, and 7.",
-          "Two of the six means are at least 6, so the probability is 2/6 = 1/3."
+          "Two of the six means are at least 6, so the probability is 2/6 = 1/3.",
+          "Equal sample probabilities do not make distinct mean values equally likely. The mean 5 occurs twice in the list, so count favorable samples rather than unique numerical means."
         ],
         "warning": "Sample means are not equally likely as distinct values: 5 arises from two different samples."
       },
@@ -6546,7 +6636,8 @@
       "solution": {
         "steps": [
           "Each repetition selects 12 cells and produces one median.",
-          "The display approximates a sampling distribution of a median for samples of size 12."
+          "The display approximates a sampling distribution of a median for samples of size 12.",
+          "The 12 cells determine the sample used to produce each point; the 400 repetitions determine the number of points. A dot does not represent one cell or the mean of the 400 recorded medians."
         ],
         "warning": "A sampling distribution can describe statistics other than the sample mean."
       },
@@ -6594,7 +6685,8 @@
       "solution": {
         "steps": [
           "Count the dots at 27 and 28: there are 3 + 1 = 4.",
-          "The estimated probability is 4/20 = 0.20."
+          "The estimated probability is 4/20 = 0.20.",
+          "Use the rounded outcomes because that is the event specified in this simulation question. The estimate is based on only 20 repetitions and is not an exact theoretical tail probability."
         ],
         "warning": "Count dots rather than distinct positions, and include the boundary at 27."
       },
@@ -6652,7 +6744,8 @@
         "steps": [
           "The observations per sample increase from 5 to 80. Averaging more observations reduces the variability of sample means.",
           "For this moderately skewed population, larger samples also make the sampling distribution closer to normal.",
-          "The center remains the population mean; the repetition count does not determine theoretical spread."
+          "The center remains the population mean; the repetition count does not determine theoretical spread.",
+          "Increasing observations within each sample makes averages more stable and, for this population, closer to normal. Increasing only the number of repeated samples would improve the display rather than change that theoretical shape."
         ],
         "warning": "Increasing repetitions improves the simulation’s detail; increasing sample size changes the sampling distribution."
       },
@@ -6725,7 +6818,7 @@
             "mode": "display",
             "tex": "\\begin{aligned}\\widehat{P}(\\bar{X}\\ge12)&=\\frac{15}{1000}\\\\&=0.015\\end{aligned}"
           },
-          "This small upper-tail estimate provides evidence against the claimed mean in the stated direction."
+          "A sample mean at least as large as 12 appeared in only 15 of the 1,000 repetitions generated under a mean of 10. Such a large result is unusual under the claim and favors the stated larger-mean alternative, without proving it."
         ],
         "warning": "The tail probability assumes the claim; it is not the probability that the claim is true."
       },
@@ -6780,7 +6873,8 @@
         "steps": [
           "The population mean is (1 + 3 + 5 + 7)/4 = 4.",
           "The six sample means are 2, 3, 4, 4, 5, and 6. Two of them equal 4.",
-          "Because the six samples are equally likely, the probability is 2/6."
+          "Because the six samples are equally likely, the probability is 2/6.",
+          "The two favorable samples produce the same mean but remain distinct equally likely selections. The sampling distribution must retain that repeated value's combined probability rather than treating each unique mean equally."
         ],
         "warning": "Distinct sample-mean values are not equally likely."
       },
@@ -6861,7 +6955,8 @@
       "solution": {
         "steps": [
           "The sample size must remain 20 in every repetition.",
-          "Each repeated random sample must contribute one mean. Plotting those means approximates the sampling distribution."
+          "Each repeated random sample must contribute one mean. Plotting those means approximates the sampling distribution.",
+          "Hold the statistic and sample size fixed across repetitions. Plotting individual shelf lives or taking one sample of 1,000 cartons would approximate a different distribution."
         ],
         "warning": "Plotting individual observations produces a distribution of data rather than a distribution of sample means."
       },
@@ -6909,7 +7004,8 @@
       "solution": {
         "steps": [
           "A sampling distribution includes the statistic from every possible sample of the specified size.",
-          "A finite simulation uses only some repeated samples to approximate that distribution."
+          "A finite simulation uses only some repeated samples to approximate that distribution.",
+          "The exact distribution assigns probabilities to statistics from all possible samples. A finite simulation can approximate those probabilities with relative frequencies but still has simulation variation."
         ],
         "warning": "The number of simulated repetitions is separate from the number of books per sample."
       },
@@ -6957,7 +7053,8 @@
       "solution": {
         "steps": [
           "The procedure reassigns the observed responses to treatment groups rather than drawing fresh observations from a population.",
-          "Repeated reassignments generate a randomization distribution for the difference in means under no treatment effect."
+          "Repeated reassignments generate a randomization distribution for the difference in means under no treatment effect.",
+          "Shuffling keeps the observed responses fixed and breaks their original treatment association. That models a no-treatment-effect assignment comparison rather than new random samples of plant heights from a population."
         ],
         "warning": "Shuffling supports a reference distribution; it does not establish that the null claim is true."
       },
@@ -7005,7 +7102,8 @@
       "solution": {
         "steps": [
           "The distribution being approximated still concerns samples of size 6. Its underlying shape and variability are unchanged.",
-          "More repetitions make the simulated frequencies more stable and reveal that distribution more clearly."
+          "More repetitions make the simulated frequencies more stable and reveal that distribution more clearly.",
+          "The underlying small-sample mean distribution may remain strongly skewed. A smoother histogram from 50,000 repetitions is stronger visual evidence of that shape, not evidence that the sample size became large."
         ],
         "warning": "The central limit theorem depends on observations per sample, not the number of repetitions."
       },
@@ -7053,7 +7151,8 @@
       "solution": {
         "steps": [
           "The dots at 46 and 47 occur 2 and 3 times, respectively.",
-          "There are 5 simulated medians at most 47 among 24 repetitions, giving 5/24."
+          "There are 5 simulated medians at most 47 among 24 repetitions, giving 5/24.",
+          "Smaller medians are the stated direction of evidence, so the observed boundary is included in a lower tail. The resulting fraction describes simulated results under the claim, not the chance that the claimed median is true."
         ],
         "warning": "This is a lower-tail event. Include all dots at the observed value."
       },

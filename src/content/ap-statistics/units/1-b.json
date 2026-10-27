@@ -67,7 +67,8 @@
       "solution": {
         "steps": [
           "The researchers ask questions of a subset of residents.",
-          "They impose no treatment. A sample survey is the most specific correct description."
+          "They impose no treatment. A sample survey is the most specific correct description.",
+          "Random selection explains how residents enter the sample; questioning explains how data are collected. Neither action assigns park use, so the design does not test a treatment effect."
         ],
         "warning": "Random selection determines how units enter a study; it does not itself define the study type."
       },
@@ -123,7 +124,8 @@
       "solution": {
         "steps": [
           "The pad types were already in use, so no treatment was imposed.",
-          "The data come from past records, making the observational study retrospective."
+          "The data come from past records, making the observational study retrospective.",
+          "The records look backward at conditions that already occurred. Differences in route, driver or bus age could accompany pad type, so comparing maintenance outcomes cannot isolate a pad effect by design alone."
         ],
         "warning": "Comparing existing groups does not turn an observational study into an experiment."
       },
@@ -179,7 +181,8 @@
       "solution": {
         "steps": [
           "The engineer actively assigns the explanatory condition, the coating.",
-          "Random assignment makes this a randomized experiment."
+          "Random assignment makes this a randomized experiment.",
+          "The decisive feature is the assigned coating, not merely that filters are measured. Random allocation helps separate the coating comparison from preexisting filter differences."
         ],
         "warning": "Every study observes outcomes; the defining feature of an experiment is the imposition of treatments."
       },
@@ -230,7 +233,8 @@
       "solution": {
         "steps": [
           "The population is the arena's 28 emergency exits.",
-          "Every exit is checked, so no subset is sampled."
+          "Every exit is checked, so no subset is sampled.",
+          "Census describes coverage of the population. It does not mean an experiment took place, nor does checking all arena exits establish anything about exits in other buildings."
         ],
         "warning": "Checking the entire defined population is a census, even when that population is small."
       },
@@ -294,7 +298,8 @@
       "solution": {
         "steps": [
           "The random-selection frame is adult annual-pass holders in Bay District.",
-          "Retain the age, pass type, and geographic restrictions when naming the population."
+          "Retain the age, pass type, and geographic restrictions when naming the population.",
+          "The sampled 180 people are a subset of the target population. Single-ticket passengers, children and pass holders outside Bay District were not represented by this sampling frame."
         ],
         "warning": "A random sample does not justify extending conclusions beyond its selection frame."
       },
@@ -353,7 +358,8 @@
       "solution": {
         "steps": [
           "Random selection gives a probability-based link between the sampled households and the population.",
-          "It supports population inference while still allowing sampling variability."
+          "It supports population inference while still allowing sampling variability.",
+          "Random sampling concerns who is measured. It does not assign water-use habits or support a claim about what caused those habits."
         ],
         "warning": "Representativeness is not an exact-match guarantee, and random sampling alone does not establish causation."
       },
@@ -407,7 +413,8 @@
       "solution": {
         "steps": [
           "Random sampling supports generalization to the city's households.",
-          "Because bin ownership was observed rather than randomly assigned, other household differences may explain the association."
+          "Because bin ownership was observed rather than randomly assigned, other household differences may explain the association.",
+          "For example, conservation-minded households could be more likely both to obtain bins and to reduce other waste. Random selection of households does not remove that alternative explanation."
         ],
         "warning": "Random sampling supports scope; random assignment supports a causal comparison."
       },
@@ -459,7 +466,8 @@
       "solution": {
         "steps": [
           "Random assignment supports a causal comparison between the glazes.",
-          "Volunteer recruitment limits the population to artists similar to those who participated."
+          "Volunteer recruitment limits the population to artists similar to those who participated.",
+          "The defensible causal claim is a comparison of average durability under the two glazes. It does not guarantee the same response for each artist or establish that volunteers represent every ceramic artist."
         ],
         "warning": "A randomized experiment can support causation without supporting unrestricted generalization."
       },
@@ -511,7 +519,8 @@
       "solution": {
         "steps": [
           "The target is the mean temperature for shipments from the specified line.",
-          "The proposed question preserves the target population, measured variable, and below-5 direction."
+          "The proposed question preserves the target population, measured variable, and below-5 direction.",
+          "The proposed investigation concerns a population mean, not every shipment individually. A mean below 5 degrees can coexist with some shipments arriving above that threshold."
         ],
         "warning": "Different from is a two-direction question and does not match a specifically lower claim."
       },
@@ -590,7 +599,8 @@
       "solution": {
         "steps": [
           "Every member of the defined population has been measured.",
-          "The population mean for this term can be calculated directly. Sampling uncertainty does not arise for that exact population."
+          "The population mean for this term can be calculated directly. Sampling uncertainty does not arise for that exact population.",
+          "A complete census eliminates uncertainty from selecting a subset of this term's students. It does not make future terms identical or rule out measurement errors in the recorded travel times."
         ],
         "warning": "A census does not eliminate measurement errors, but it removes the need to infer this population mean from a sample."
       },
@@ -643,7 +653,8 @@
       "solution": {
         "steps": [
           "The investigation compares a quantitative response across two stated groups.",
-          "The matching question specifies daily cycling time and the adult resident population, so suitable data could answer it."
+          "The matching question specifies daily cycling time and the adult resident population, so suitable data could answer it.",
+          "Identify the response as time per day and the grouping variable as work arrangement. A suitable comparison summarizes cycling times within each group using the same time unit and population definition."
         ],
         "warning": "An investigative question must identify what will be compared and for whom."
       },
@@ -716,7 +727,8 @@
       "solution": {
         "steps": [
           "Every ship in the defined June population is recorded, so this is a census.",
-          "No treatment is imposed, so the arrival records are observational."
+          "No treatment is imposed, so the arrival records are observational.",
+          "Census and observational study describe different aspects of the design: which ships are included and whether conditions are imposed. Recording every ship does not turn observation into an experiment."
         ],
         "warning": "Census describes coverage; observational describes how the measurements arise."
       },
@@ -773,7 +785,8 @@
       "solution": {
         "steps": [
           "The monitors record existing conditions without imposing a treatment.",
-          "The selected households are only part of the town population, and measurements come from monitors rather than survey questions."
+          "The selected households are only part of the town population, and measurements come from monitors rather than survey questions.",
+          "Random selection makes the sample probabilistic, but a survey specifically obtains answers by questioning people. Passive sound measurements do not meet that more specific description."
         ],
         "warning": "A random sample does not automatically make data collection a survey."
       },
@@ -836,7 +849,8 @@
       "solution": {
         "steps": [
           "The researchers determine the coating condition each device receives.",
-          "Imposing a treatment distinguishes an experiment from merely observing existing conditions."
+          "Imposing a treatment distinguishes an experiment from merely observing existing conditions.",
+          "Random sampling is not necessary for a study to be an experiment. The intervention establishes that classification, while random assignment strengthens the fairness of the treatment comparison."
         ],
         "warning": "Random selection and quantitative measurements are not defining features of an experiment."
       },
@@ -893,7 +907,8 @@
       "solution": {
         "steps": [
           "The random selection frame covers the building’s occupied apartments.",
-          "Random sampling supports inference to that covered population, without extending it to unrepresented city households or future residents."
+          "Random sampling supports inference to that covered population, without extending it to unrepresented city households or future residents.",
+          "A complete building list and full response support coverage of the building's current occupied apartments. The city's other households have no selection pathway in this plan."
         ],
         "warning": "Match the inference population to the frame used for random selection."
       },
@@ -950,7 +965,8 @@
       "solution": {
         "steps": [
           "Random sampling supports generalization to the adult population represented by the frame.",
-          "Workspace use was self-selected, so other differences between users and nonusers could explain the association."
+          "Workspace use was self-selected, so other differences between users and nonusers could explain the association.",
+          "People who choose shared workspaces may also differ in occupation or sociability. Those differences could explain isolation ratings, even when the sampled city adults were chosen randomly."
         ],
         "warning": "Random selection supports population scope; random assignment is the basis for isolating a treatment effect."
       },
@@ -1007,7 +1023,8 @@
       "solution": {
         "steps": [
           "Random assignment and controlled conditions support a causal comparison between programs.",
-          "Volunteer recruitment does not provide a random sample of all adults, so broad population generalization needs further justification."
+          "Volunteer recruitment does not provide a random sample of all adults, so broad population generalization needs further justification.",
+          "Control and random assignment address competing explanations for the program effect. They do not repair the absence of random selection from a broader adult population."
         ],
         "warning": "A causal average treatment comparison is not a guarantee for each individual."
       },
@@ -1070,7 +1087,8 @@
       "solution": {
         "steps": [
           "Random selection supports generalization to the clinic’s registered adults.",
-          "Random assignment supports a causal comparison of the messages, expressed as an average effect."
+          "Random assignment supports a causal comparison of the messages, expressed as an average effect.",
+          "Both random mechanisms matter: selection connects the study to the registered population, and assignment separates message effects from other patient differences. The claim concerns an average change, not every patient's response."
         ],
         "warning": "Selection and assignment answer different questions about what a study can conclude."
       },
@@ -1134,7 +1152,8 @@
       "solution": {
         "steps": [
           "A preference for public transport could influence both housing location and transport use.",
-          "That alternative explanation remains possible because locations were not randomly assigned."
+          "That alternative explanation remains possible because locations were not randomly assigned.",
+          "This preference is a possible lurking variable that could influence both measured variables. The study cannot distinguish that explanation from an effect of station proximity alone."
         ],
         "warning": "An observed association may reflect selection or another variable rather than the proposed cause."
       },
@@ -1191,7 +1210,8 @@
       "solution": {
         "steps": [
           "The original question sets the purpose and data analysis before results are examined.",
-          "Searching the data for a favorable subgroup changes that purpose; the subgroup finding should be treated as exploratory."
+          "Searching the data for a favorable subgroup changes that purpose; the subgroup finding should be treated as exploratory.",
+          "With enough subgroup comparisons, a large-looking difference can appear by chance. The newly chosen subgroup can motivate a future planned investigation, rather than be treated as the original confirmatory target."
         ],
         "warning": "A new exploratory question can be useful, but it should not be presented as the original planned comparison."
       },
@@ -1248,7 +1268,8 @@
       "solution": {
         "steps": [
           "The selection takes place directly from one complete list.",
-          "Every possible set of 50 distinct labels has the same chance of selection."
+          "Every possible set of 50 distinct labels has the same chance of selection.",
+          "The random labels select individual bicycles from the entire register. No preformed groups or fixed selection interval determine which bicycles enter the sample."
         ],
         "warning": "Random sampling within preformed groups would be stratified sampling."
       },
@@ -1327,7 +1348,8 @@
       "solution": {
         "steps": [
           "The population is divided into groups before selection.",
-          "A random sample is taken from every group, which defines stratified random sampling."
+          "A random sample is taken from every group, which defines stratified random sampling.",
+          "Academic, technical and administrative staff are all represented because selection happens within every category. Randomly choosing only some whole categories would be a different design."
         ],
         "warning": "Selecting some whole groups would be cluster sampling."
       },
@@ -1406,7 +1428,8 @@
       "solution": {
         "steps": [
           "Randomness selects whole buildings.",
-          "Every household in those selected buildings is included, so buildings serve as clusters."
+          "Every household in those selected buildings is included, so buildings serve as clusters.",
+          "Households enter together because their building was selected. The authority does not independently draw households from every building, which would instead suggest stratification."
         ],
         "warning": "Random selection can act on groups rather than on individual households."
       },
@@ -1485,7 +1508,8 @@
       "solution": {
         "steps": [
           "The process combines a random starting position with a fixed interval.",
-          "That every-25th structure defines systematic sampling."
+          "That every-25th structure defines systematic sampling.",
+          "Later selections depend on the first position, so not every possible set of bottles can occur. The random start makes the procedure random without making it an SRS."
         ],
         "warning": "A random start does not make every possible sample of the same size equally likely."
       },
@@ -1564,7 +1588,8 @@
       "solution": {
         "steps": [
           "The manager chooses people who are easiest to reach.",
-          "There is no chance mechanism for selecting visitors."
+          "There is no chance mechanism for selecting visitors.",
+          "Visitors who leave through that entrance at that time may differ from other park users. A sample of 30 is not a random sample merely because the manager does not know them beforehand."
         ],
         "warning": "A chronological rule is not systematic random sampling unless it uses a random start and a specified interval."
       },
@@ -1643,7 +1668,8 @@
       "solution": {
         "steps": [
           "A simple random sample gives every possible set of 35 documents equal selection probability.",
-          "Selecting distinct random labels from the full list has that property."
+          "Selecting distinct random labels from the full list has that property.",
+          "The complete list avoids excluding eligible documents, and distinct labels prevent duplicate selections. Equal chance for individuals alone would not establish equal chance for all samples of 35."
         ],
         "warning": "Stratified and systematic samples can be random without being simple random samples."
       },
@@ -1708,7 +1734,8 @@
       "solution": {
         "steps": [
           "Variety explains substantial differences in fruit mass.",
-          "Sampling within every variety keeps random sample composition from varying unnecessarily across those groups."
+          "Sampling within every variety keeps random sample composition from varying unnecessarily across those groups.",
+          "A sample that accidentally overrepresents one variety could shift the estimated mean. Stratification controls that source of variability; it does not change the variability of the fruit masses themselves."
         ],
         "warning": "Stratification targets variability of the response estimate, not automatic bias removal or exact agreement."
       },
@@ -1782,7 +1809,8 @@
       "solution": {
         "steps": [
           "Useful strata group units alike on a characteristic related to the response.",
-          "Random selection within every such group can reduce variability of the overall estimate."
+          "Random selection within every such group can reduce variability of the overall estimate.",
+          "Stratify on a characteristic connected to loading time, rather than an unrelated label. Similarity within groups makes sampling each group more informative about the overall mean."
         ],
         "warning": "Equal-sized strata are not required, and internal heterogeneity weakens the precision benefit."
       },
@@ -1852,7 +1880,8 @@
       "solution": {
         "steps": [
           "Each street is a cluster, but the streets differ in a way related to the outcome.",
-          "Selecting only a few clusters can produce substantial variation in which housing types are represented."
+          "Selecting only a few clusters can produce substantial variation in which housing types are represented.",
+          "Including many households on one selected street does not compensate fully for missing other street types. Responses within a cluster can supply overlapping information about the same local conditions."
         ],
         "warning": "The stated statistical concern is variation between clusters, rather than a problem that any survey might face."
       },
@@ -1922,7 +1951,8 @@
       "solution": {
         "steps": [
           "Field staff make up 360/600 = 0.60 of employees.",
-          "Allocate the same share of the sample to them: 50 × 0.60 = 30."
+          "Allocate the same share of the sample to them: 50 × 0.60 = 30.",
+          "The remaining 20 sampled employees should come from the office group under proportional allocation. Equal group sample sizes would overrepresent office staff relative to their workforce share."
         ],
         "warning": "Use the group's proportion of the whole population, then randomly sample within each group."
       },
@@ -1973,7 +2003,8 @@
       "solution": {
         "steps": [
           "The shuffle gives each set of 45 distinct household labels the same chance of selection.",
-          "No groups are sampled together, fixed step is used, or separate within-group samples are drawn."
+          "No groups are sampled together, fixed step is used, or separate within-group samples are drawn.",
+          "Without replacement means a household cannot occupy two sample positions. Shuffling the full register gives equal chances to complete sets, which is the defining SRS property."
         ],
         "warning": "An SRS is defined by equal chances for possible samples of the specified size."
       },
@@ -2040,7 +2071,8 @@
       "solution": {
         "steps": [
           "A simple random sample of size two gives all six possible pairs an equal chance.",
-          "This procedure permits only AB and CD, even though all four individuals have equal inclusion probabilities."
+          "This procedure permits only AB and CD, even though all four individuals have equal inclusion probabilities.",
+          "Equal individual inclusion probabilities are necessary but insufficient for an SRS. The missing possible pairs reveal unequal probabilities at the sample level even though each person's probability matches."
         ],
         "warning": "Equal individual chances alone do not establish equal chances for every possible sample."
       },
@@ -2096,7 +2128,8 @@
       "solution": {
         "steps": [
           "The faculty is divided into departments, and a random sample is taken from every department.",
-          "Sampling individuals within all groups is stratification; cluster sampling would select entire groups."
+          "Sampling individuals within all groups is stratification; cluster sampling would select entire groups.",
+          "Department membership is used to ensure coverage across the faculty. The defining action is selecting some teachers within every department, rather than selecting all teachers in only a few departments."
         ],
         "warning": "Ask whether the plan samples from every group or selects only some whole groups."
       },
@@ -2170,7 +2203,8 @@
       "solution": {
         "steps": [
           "Buildings are the groups being selected at random.",
-          "All residents in the selected buildings are included, which defines this one-stage cluster sample."
+          "All residents in the selected buildings are included, which defines this one-stage cluster sample.",
+          "The selected building is the sampling group, and all its residents enter together. Grouping residents by building alone would not establish cluster sampling without this whole-group selection step."
         ],
         "warning": "Random selection of groups is different from independent random selection of people."
       },
@@ -2244,7 +2278,8 @@
       "solution": {
         "steps": [
           "The random start determines the first selection.",
-          "The fixed interval of 12 determines later selections, which is a systematic sample."
+          "The fixed interval of 12 determines later selections, which is a systematic sample.",
+          "The 12-step rule links the later selections to the initial draw. Only samples compatible with that spacing can occur, so this is not simple random sampling from all possible sets."
         ],
         "warning": "A fixed sampling step is the defining feature after the random start."
       },
@@ -2306,7 +2341,8 @@
       "solution": {
         "steps": [
           "A step of six returns to the same position in each six-unit cycle.",
-          "Depending on the random start, the sample could contain only machine A units or only machine B units."
+          "Depending on the random start, the sample could contain only machine A units or only machine B units.",
+          "A random starting point does not undo a fixed interval that matches the production cycle. Check for periodic ordering before choosing systematic sampling as a practical design."
         ],
         "warning": "Check whether the sampling interval aligns with a repeating pattern in the list."
       },
@@ -2362,7 +2398,8 @@
       "solution": {
         "steps": [
           "Different dwelling types contribute important variation in use.",
-          "Drawing random samples within every type controls the sample’s representation of that variation and can improve precision."
+          "Drawing random samples within every type controls the sample’s representation of that variation and can improve precision.",
+          "Strata should reflect expected differences in the measured response. Water-use similarities within dwelling types make that classification more useful than an unrelated characteristic."
         ],
         "warning": "Stratification helps most when the grouping variable is related to the response."
       },
@@ -2429,7 +2466,8 @@
       "solution": {
         "steps": [
           "Cluster sampling concentrates collection in selected locations, making travel more practical.",
-          "Similar responses within villages contribute less independent information than the same number of more widely dispersed observations."
+          "Similar responses within villages contribute less independent information than the same number of more widely dispersed observations.",
+          "Sampling more villages rather than many additional households within one village can improve representation of varied local conditions. The convenient concentration of observations is a cost-precision tradeoff."
         ],
         "warning": "A practical collection advantage does not guarantee a statistical precision advantage."
       },
@@ -2491,7 +2529,8 @@
       "solution": {
         "steps": [
           "Packing workers make up 80/200 of the cooperative.",
-          "Apply that share to the sample: (80/200) × 30 = 12."
+          "Apply that share to the sample: (80/200) × 30 = 12.",
+          "Proportional allocation preserves the workforce composition in the sample. The other 18 places belong to orchard workers, so both strata retain their population shares."
         ],
         "warning": "Use the stratum share of the full population, rather than its raw count."
       },
@@ -2547,7 +2586,8 @@
       "solution": {
         "steps": [
           "Accept labels from 01 through 85, skip repeats, and reject labels outside that range.",
-          "The first five accepted distinct labels are 04, 81, 22, 53, and 17."
+          "The first five accepted distinct labels are 04, 81, 22, 53, and 17.",
+          "Two-digit grouping must be set before reading the sequence. Rejected labels and repeats do not use a sample place; continue until five different eligible items have been accepted."
         ],
         "warning": "Without replacement means a repeated valid label does not add a second item."
       },
@@ -2631,7 +2671,8 @@
       "solution": {
         "steps": [
           "Households without registered landlines cannot enter the sample.",
-          "Excluding part of the target population creates undercoverage."
+          "Excluding part of the target population creates undercoverage.",
+          "Random selection within an incomplete list cannot give excluded households a chance to participate. The problem occurs before response, which distinguishes it from nonresponse."
         ],
         "warning": "Random selection from an incomplete list does not repair the missing coverage."
       },
@@ -2703,7 +2744,8 @@
       "solution": {
         "steps": [
           "A sample was selected first, but many selected alumni did not reply.",
-          "Their employment status is related to response likelihood, so the respondents may systematically differ from nonrespondents."
+          "Their employment status is related to response likelihood, so the respondents may systematically differ from nonrespondents.",
+          "The alumni were selected by the intended random mechanism; the imbalance enters when responses are obtained. Employment-related participation can make career outcomes look more favorable than they are."
         ],
         "warning": "Nonresponse concerns selected people who do not reply; an open voluntary survey begins without a selected sample."
       },
@@ -2783,7 +2825,8 @@
       "solution": {
         "steps": [
           "People decide for themselves whether to join the survey.",
-          "Visitors with strong opinions may be especially likely to participate, making the sample self-selected."
+          "Visitors with strong opinions may be especially likely to participate, making the sample self-selected.",
+          "Unlike nonresponse, no defined randomly chosen group first received invitations. The initial decision to join is itself the mechanism that creates the sample."
         ],
         "warning": "An unrestricted invitation does not produce a random sample."
       },
@@ -2851,7 +2894,8 @@
       "solution": {
         "steps": [
           "Words such as wasteful and beautiful steer respondents toward an opinion.",
-          "That wording can systematically change answers, creating response bias."
+          "That wording can systematically change answers, creating response bias.",
+          "The wording supplies negative and positive judgments before residents give their views. A neutral version would ask about the proposal without describing its merits in advance."
         ],
         "warning": "A random sample can still give biased responses to a leading question."
       },
@@ -2923,7 +2967,8 @@
       "solution": {
         "steps": [
           "The employees participate, but some answers systematically understate the true number of violations.",
-          "The issue is inaccurate reporting caused by concern about consequences."
+          "The issue is inaccurate reporting caused by concern about consequences.",
+          "This problem concerns the truthfulness of recorded answers, rather than whether employees were sampled. More interviews would not by itself remove the pressure to conceal violations."
         ],
         "warning": "A false answer is different from a missing response."
       },
@@ -3003,7 +3048,8 @@
       "solution": {
         "steps": [
           "Response bias here arises from how the question is phrased.",
-          "Neutral wording and a clarity check address that mechanism directly."
+          "Neutral wording and a clarity check address that mechanism directly.",
+          "Increasing sample size would repeat the same misleading question. A neutral rewrite and trial with potential respondents target the source of systematic measurement error."
         ],
         "warning": "Larger samples and random selection do not remove a leading-question effect."
       },
@@ -3065,7 +3111,8 @@
       "solution": {
         "steps": [
           "Selection favors residents with negative experiences, so the sample can systematically differ from the population.",
-          "More responses can reduce random variation while leaving the selection mechanism biased."
+          "More responses can reduce random variation while leaving the selection mechanism biased.",
+          "If very dissatisfied residents join more often, their views receive excessive weight. Large size can make that biased estimate very stable without making it representative."
         ],
         "warning": "Sample size controls precision under a design; it does not automatically repair that design."
       },
@@ -3116,7 +3163,8 @@
       "solution": {
         "steps": [
           "The response likelihood is related to the variable being estimated.",
-          "Frequent users are overrepresented among completed surveys, so estimated use may be too high."
+          "Frequent users are overrepresented among completed surveys, so estimated use may be too high.",
+          "An initially random sample can become unrepresentative among completed responses. The likely upward distortion comes from the specific relationship between response and library use, not simply from having fewer returns."
         ],
         "warning": "A lower response rate creates bias when the respondents differ in a relevant way."
       },
@@ -3178,7 +3226,8 @@
       "solution": {
         "steps": [
           "Nonresponse starts with a selected sample, followed by missing responses.",
-          "Bias arises when the tendency not to reply is related to the evaluation outcome."
+          "Bias arises when the tendency not to reply is related to the evaluation outcome.",
+          "The concern is that missing opinions are systematically less favorable. Missing responses alone reduce information; their relationship to the outcome explains the potential direction of bias."
         ],
         "warning": "Self-selection, inaccurate answers, and complete accurate responses describe different situations."
       },
@@ -3242,7 +3291,8 @@
       "solution": {
         "steps": [
           "The frame excludes nonmembers who tend to exercise less.",
-          "An estimate based only on the more active group will tend to overstate the average for all adults."
+          "An estimate based only on the more active group will tend to overstate the average for all adults.",
+          "The relevant comparison is gym members versus all neighborhood adults. Randomly choosing from the membership list would still leave the less-active nonmember group outside the sampling frame."
         ],
         "warning": "A complete list of the wrong population can still create undercoverage."
       },
@@ -3293,7 +3343,8 @@
       "solution": {
         "steps": [
           "People without app accounts have no chance of selection from this frame.",
-          "Their booking access may differ from app users, so excluding them can bias an estimate for all center users."
+          "Their booking access may differ from app users, so excluding them can bias an estimate for all center users.",
+          "The frame excludes precisely the people who may have difficulty accessing the app. Asking only listed users cannot recover the experiences of people absent from that list."
         ],
         "warning": "Random selection within an incomplete frame does not repair its missing groups."
       },
@@ -3365,7 +3416,8 @@
       "solution": {
         "steps": [
           "All selected households were eligible and included in the frame.",
-          "Some selected households did not supply data; bias can arise if their answers would systematically differ from those who responded."
+          "Some selected households did not supply data; bias can arise if their answers would systematically differ from those who responded.",
+          "Coverage and response are distinct stages: the register covers the population, but selected households may still provide no data. The response shortfall alone does not determine which direction an estimate is biased."
         ],
         "warning": "Nonresponse bias depends on a relationship between participation and the measured response."
       },
@@ -3437,7 +3489,8 @@
       "solution": {
         "steps": [
           "The newspaper did not first randomly select a defined set of residents.",
-          "People opt into the poll, so those with strong opinions may be more likely to participate."
+          "People opt into the poll, so those with strong opinions may be more likely to participate.",
+          "A widely distributed invitation does not give each possible sample an equal chance. Participation remains driven by readers' decisions and interest in the fee proposal."
         ],
         "warning": "An open invitation and a selected sample with missing replies have different participation mechanisms."
       },
@@ -3504,7 +3557,8 @@
       "solution": {
         "steps": [
           "The words excellent and do you agree favor a positive response.",
-          "A balanced question gives improvement, worsening, and no change as neutral possibilities."
+          "A balanced question gives improvement, worsening, and no change as neutral possibilities.",
+          "Balanced response categories reduce the suggestion that agreement is expected. Interviewer pressure may still matter, so revising wording targets one specific bias rather than guaranteeing unbiased responses."
         ],
         "warning": "A larger sample does not remove systematic pressure from a leading question."
       },
@@ -3560,7 +3614,8 @@
       "solution": {
         "steps": [
           "People using a bicycle repair shop are more likely to own and use bicycles than adults generally.",
-          "That selection mechanism is likely to inflate the estimated share of cycling commuters."
+          "That selection mechanism is likely to inflate the estimated share of cycling commuters.",
+          "Customers entering the shop are a convenient subset connected to the behavior being estimated. The selection location provides the reason to expect upward bias, rather than sample size alone."
         ],
         "warning": "The likely direction comes from how the sampled group differs on the variable of interest."
       },
@@ -3616,7 +3671,8 @@
       "solution": {
         "steps": [
           "More observations can reduce chance fluctuation in the estimate from the same selection process.",
-          "Residents who do not visit the trail are still excluded, so the systematic mismatch remains."
+          "Residents who do not visit the trail are still excluded, so the systematic mismatch remains.",
+          "The target remains all residents, while the sampling mechanism remains restricted to trail visitors. Ten times as many observations cannot give nonvisitors a chance of inclusion."
         ],
         "warning": "Precision about an unrepresentative group does not establish accuracy for the target population."
       },
@@ -3672,7 +3728,8 @@
       "solution": {
         "steps": [
           "The complaint-page plan depends on self-selection in a setting likely to attract dissatisfied riders.",
-          "The other plans use random selection over the stated rider population, routes, or runs."
+          "The other plans use random selection over the stated rider population, routes, or runs.",
+          "The complaint setting makes dissatisfaction especially relevant to the decision to respond. The selected plan is problematic because of that selection mechanism, not because online collection is inherently invalid."
         ],
         "warning": "Randomness and coverage matter more than how convenient a response channel is."
       },
@@ -3734,7 +3791,8 @@
       "solution": {
         "steps": [
           "The selected people do respond, but their reported values may differ systematically from their actual behavior.",
-          "The desire to appear favorable affects measurement, which is response bias."
+          "The desire to appear favorable affects measurement, which is response bias.",
+          "The error occurs after selection, when participants report inaccurate activity. This differs from undercoverage, which excludes people from the sampling frame before they can respond."
         ],
         "warning": "A completed response can still be systematically inaccurate."
       },
@@ -3806,7 +3864,8 @@
       "solution": {
         "steps": [
           "Following up seeks information from the people selected by the original random mechanism.",
-          "Gift-shop volunteers enter by a different selection process and may differ in their opinions from the missing respondents."
+          "Gift-shop volunteers enter by a different selection process and may differ in their opinions from the missing respondents.",
+          "Additional contacts preserve the original selection mechanism and may reduce missing data. Convenient replacements do not tell the researcher what the originally selected nonrespondents would have said."
         ],
         "warning": "Improved follow-up can help; substituting easy-to-reach volunteers can introduce another bias."
       },
@@ -3862,7 +3921,8 @@
       "solution": {
         "steps": [
           "Random samples generally produce estimates that vary from sample to sample.",
-          "One discrepancy from the population value does not show that the method systematically overestimates or underestimates it."
+          "One discrepancy from the population value does not show that the method systematically overestimates or underestimates it.",
+          "Bias is a tendency across repeated samples, not any one sample's error. A sound probability sample can differ from a census by two percentage points without revealing a systematic flaw."
         ],
         "warning": "Bias is a systematic tendency of a method, rather than every realized estimation error."
       },
@@ -3918,7 +3978,8 @@
       "solution": {
         "steps": [
           "The response is the outcome measured after a treatment is applied.",
-          "Here that outcome is each bottle's temperature increase."
+          "Here that outcome is each bottle's temperature increase.",
+          "The sleeve is the explanatory condition assigned to a bottle. The measured change in temperature is its response; the water's final temperature alone is not the response defined here."
         ],
         "warning": "The sleeve type is the explanatory variable, rather than the measured response."
       },
@@ -3980,7 +4041,8 @@
       "solution": {
         "steps": [
           "The team imposes different levels of daily light.",
-          "Those daily hours form the explanatory variable; height is the response."
+          "Those daily hours form the explanatory variable; height is the response.",
+          "The factor is daily light exposure, and 4, 8 and 12 hours are its levels. Six-week height records what happened after those conditions were imposed."
         ],
         "warning": "A treatment group is a collection of units, not the variable whose levels are imposed."
       },
@@ -4042,7 +4104,8 @@
       "solution": {
         "steps": [
           "Experimental units are the objects to which treatments are assigned.",
-          "Every panel in the experiment receives a finish, so all 90 panels are units."
+          "Every panel in the experiment receives a finish, so all 90 panels are units.",
+          "A panel receives an assigned finish independently of other panels. The finishes are treatments, and corrosion is the measured response; neither is an experimental unit."
         ],
         "warning": "Treatments are conditions, and a single treatment group contains only some of the units."
       },
@@ -4106,7 +4169,8 @@
       "solution": {
         "steps": [
           "A treatment is one combination of imposed factor levels.",
-          "There are 2 × 3 = 6 combinations."
+          "There are 2 × 3 = 6 combinations.",
+          "Pair each of the two irrigation levels with all three fertilizer levels. Adding the numbers of levels would count factor settings, not the full set of treatments."
         ],
         "warning": "Add factor counts to count factors' levels; multiply them to count all treatment combinations."
       },
@@ -4170,7 +4234,8 @@
       "solution": {
         "steps": [
           "Battery characteristics could affect the outcome independently of the charging protocol.",
-          "Random assignment reduces their systematic association with the protocol groups."
+          "Random assignment reduces their systematic association with the protocol groups.",
+          "The aim is to prevent battery characteristics from being systematically tied to protocol. Chance imbalance can still occur; randomization provides a fair assignment mechanism, not exact matching."
         ],
         "warning": "Randomization reduces confounding risk but does not guarantee identical groups or fix other design flaws."
       },
@@ -4245,7 +4310,8 @@
       "solution": {
         "steps": [
           "Replication requires multiple experimental units for each treatment.",
-          "The 18 panels per adhesive provide independent units for each comparison."
+          "The 18 panels per adhesive provide independent units for each comparison.",
+          "Multiple panels allow the experiment to assess how responses vary under the same adhesive. Repeatedly measuring one panel would not provide the same independent treatment replication."
         ],
         "warning": "Repeated measurements on one panel are not additional experimental units."
       },
@@ -4339,7 +4405,8 @@
       "solution": {
         "steps": [
           "Every use of recipe A also uses one baker and oven; every use of B uses a different baker and oven.",
-          "A difference in bread volume could be caused by recipe, baker, oven, or their combination."
+          "A difference in bread volume could be caused by recipe, baker, oven, or their combination.",
+          "Replication of this arrangement would reproduce the same confounding. To isolate recipe, both recipes must be compared under shared baker and oven conditions or a design that balances those conditions."
         ],
         "warning": "A variable is confounded with treatment when its effect is entangled with the treatment comparison."
       },
@@ -4390,7 +4457,8 @@
       "solution": {
         "steps": [
           "Participants may respond to expectations or the experience of receiving treatment.",
-          "A placebo group provides a comparison under similar expectations without the active ingredient."
+          "A placebo group provides a comparison under similar expectations without the active ingredient.",
+          "The placebo may itself be associated with a response through expectations. Its purpose is not to ensure no change, but to provide a comparison that differs in active ingredient."
         ],
         "warning": "A placebo is a comparison condition; it does not replace random assignment or random sampling."
       },
@@ -4441,7 +4509,8 @@
       "solution": {
         "steps": [
           "Participants can see the assigned equipment, so they cannot be blind to it.",
-          "The anonymized videos conceal the method from the assessor, allowing blind scoring."
+          "The anonymized videos conceal the method from the assessor, allowing blind scoring.",
+          "Blinding is assessed separately for each person's role. Visible equipment prevents participant blinding, while concealment in the scoring material can still reduce assessor expectations."
         ],
         "warning": "Blinding concerns knowledge of treatment, not knowledge of every participant characteristic."
       },
@@ -4495,7 +4564,8 @@
       "solution": {
         "steps": [
           "The fluid and temperature change together in every comparison.",
-          "Even with random assignment, a result could be due to temperature rather than fluid."
+          "Even with random assignment, a result could be due to temperature rather than fluid.",
+          "Random assignment balanced the parts before testing, but temperature was then tied to the assigned fluid. Holding temperature constant or comparing both fluids at each temperature would address this confounding."
         ],
         "warning": "Random assignment cannot undo a design that deliberately changes another condition together with treatment."
       },
@@ -4560,7 +4630,8 @@
       "solution": {
         "steps": [
           "Each treatment is one combination of a paper type and a drying temperature.",
-          "There are 2 × 3 = 6 combinations."
+          "There are 2 × 3 = 6 combinations.",
+          "Treatments combine factor levels; paper type alone is only one factor. Each drying temperature must be paired with each paper type to count all treatments."
         ],
         "warning": "The number of treatments is the number of combinations, rather than the sum of factor levels."
       },
@@ -4657,7 +4728,8 @@
       "solution": {
         "steps": [
           "Shuffling gives each set of 12 devices an equal chance to receive A.",
-          "The remaining 12 receive B, ensuring the required group sizes without using delivery order or technician preference."
+          "The remaining 12 receive B, ensuring the required group sizes without using delivery order or technician preference.",
+          "The shuffle uses a chance mechanism and fixes the allocation size in advance. Assigning by arrival order could link treatment to another characteristic, while independent coin flips need not produce exactly 12 per group."
         ],
         "warning": "Random assignment requires a chance mechanism for allocating treatments."
       },
@@ -4714,7 +4786,8 @@
       "solution": {
         "steps": [
           "Treatment is assigned independently to rooms, rather than to individual plants.",
-          "Plants within a room share that assignment, so they are subsamples within an experimental unit."
+          "Plants within a room share that assignment, so they are subsamples within an experimental unit.",
+          "Twenty plants do not create 20 independently assigned lighting units within a room. The treatment comparison has two independently assigned rooms per lighting system, with plants measured inside those rooms."
         ],
         "warning": "Count independently assigned units when judging treatment replication."
       },
@@ -4771,7 +4844,8 @@
       "solution": {
         "steps": [
           "Replication uses multiple independently treated experimental units per treatment.",
-          "Repeated measurements can improve a device’s measurement precision, but they do not create additional independently assigned devices."
+          "Repeated measurements can improve a device’s measurement precision, but they do not create additional independently assigned devices.",
+          "Three readings of one device still share that device's assigned coating. They help measure its response but cannot be counted as three new experimental units."
         ],
         "warning": "Separate replication of treatment units from repeated readings on one unit."
       },
@@ -4839,7 +4913,8 @@
       "solution": {
         "steps": [
           "Both groups share the experience of taking a drink and the possibility of expecting a benefit.",
-          "The active ingredient is the intended treatment difference, so the inactive drink helps separate that effect from the shared routine and expectations."
+          "The active ingredient is the intended treatment difference, so the inactive drink helps separate that effect from the shared routine and expectations.",
+          "Matching taste helps conceal assignment and makes the shared drinking experience comparable. The control drink need not produce zero response for the active-ingredient comparison to be informative."
         ],
         "warning": "A placebo is a comparison condition; it does not guarantee a treatment effect."
       },
@@ -4896,7 +4971,8 @@
       "solution": {
         "steps": [
           "Participants and instructors can see whether a headset or printed cards are used.",
-          "The assessor receives coded performance recordings that conceal the method, so assessor blinding is feasible."
+          "The assessor receives coded performance recordings that conceal the method, so assessor blinding is feasible.",
+          "Coding the recordings can shield grading from knowledge of assignment. Calling the whole experiment double-blind would overstate concealment because participants and instructors see the practice method."
         ],
         "warning": "Blinding concerns knowledge of treatment, rather than knowledge of the eventual outcome."
       },
@@ -4959,7 +5035,8 @@
       "solution": {
         "steps": [
           "Recipe and oven currently change together, so their effects are confounded.",
-          "Using both recipes within each oven allows comparisons that separate recipe from oven differences."
+          "Using both recipes within each oven allows comparisons that separate recipe from oven differences.",
+          "Many loaves improve replication but cannot separate two factors that always occur together. Within-oven recipe comparisons allow the oven effect to be held constant during each recipe comparison."
         ],
         "warning": "More observations do not fix a design in which treatment is tied to another factor."
       },
@@ -5022,7 +5099,8 @@
       "solution": {
         "steps": [
           "Temperature and reference equipment could affect the measured calibration error.",
-          "Holding them fixed reduces unrelated variation and strengthens the treatment comparison."
+          "Holding them fixed reduces unrelated variation and strengthens the treatment comparison.",
+          "Control holds specified conditions comparable, while randomization deals with other characteristics that cannot all be controlled directly. Both features strengthen the interpretation of a calibration-method difference."
         ],
         "warning": "Control of conditions and random assignment serve complementary purposes."
       },
@@ -5085,7 +5163,8 @@
       "solution": {
         "steps": [
           "The allocation depends on participant preference rather than random assignment.",
-          "Prior skill or enthusiasm could be associated with the chosen layout and with task performance."
+          "Prior skill or enthusiasm could be associated with the chosen layout and with task performance.",
+          "Using the same task controls measurement conditions, but it does not make the groups comparable before treatment. Random assignment of layouts would address self-selection into the groups."
         ],
         "warning": "A fair outcome measurement cannot by itself remove self-selection into treatments."
       },
@@ -5155,7 +5234,8 @@
       "solution": {
         "steps": [
           "The random mechanism prevents deliberate allocation based on expected responses.",
-          "It balances other characteristics in expectation, rather than guaranteeing exact equality in a particular assignment."
+          "It balances other characteristics in expectation, rather than guaranteeing exact equality in a particular assignment.",
+          "The possible starting imbalances are due to chance under the random mechanism. This is compatible with a well-designed experiment and should not be described as guaranteed identical groups."
         ],
         "warning": "Randomization supports a fair comparison without making chance variation disappear."
       },
@@ -5223,7 +5303,8 @@
       "solution": {
         "steps": [
           "Treatments are assigned at random across the full set of sensors.",
-          "There is no preliminary grouping or pairing, so the design is completely randomized."
+          "There is no preliminary grouping or pairing, so the design is completely randomized.",
+          "A treatment group is formed after assignment and is not a block. Blocks would be existing sensor groups used before randomization to make within-group comparisons."
         ],
         "warning": "Equal group sizes or several treatments do not create blocks."
       },
@@ -5297,7 +5378,8 @@
       "solution": {
         "steps": [
           "Species forms groups before treatment assignment.",
-          "All treatments are assigned within every species, making this a randomized block design."
+          "All treatments are assigned within every species, making this a randomized block design.",
+          "Species is not a treatment imposed by the researcher; it is an existing grouping variable. Comparisons within species reduce interference from growth differences among species."
         ],
         "warning": "Blocks describe an existing source of response variation; fertilizers are treatments."
       },
@@ -5371,7 +5453,8 @@
       "solution": {
         "steps": [
           "Each cyclist supplies two linked responses, one for each tire model.",
-          "Randomized order gives a matched-pairs experiment while helping balance order effects."
+          "Randomized order gives a matched-pairs experiment while helping balance order effects.",
+          "The two responses from the same cyclist are linked by that person's characteristics. An analysis based on within-cyclist differences can account for rider-to-rider variation."
         ],
         "warning": "Two treatments alone do not create pairing; the link here is the same cyclist under both conditions."
       },
@@ -5445,7 +5528,8 @@
       "solution": {
         "steps": [
           "Room size is an existing source of variation in the response.",
-          "Blocking on size allows panel types to be compared within small rooms and within large rooms."
+          "Blocking on size allows panel types to be compared within small rooms and within large rooms.",
+          "Both panel types must appear in both size blocks. Giving one panel exclusively to small rooms and the other to large rooms would confound panel and room size."
         ],
         "warning": "Assigning one panel to each room-size group confounds panel type with room size."
       },
@@ -5549,7 +5633,8 @@
       "solution": {
         "steps": [
           "Initial performance may affect the final outcome.",
-          "Comparing closely matched devices reduces variation from that preexisting difference."
+          "Comparing closely matched devices reduces variation from that preexisting difference.",
+          "Randomization is still needed within each pair to decide which similar device gets the update. Matching reduces unwanted variation but does not replace random assignment."
         ],
         "warning": "Random assignment is common to randomized designs; similarity and pairing explain this choice."
       },
@@ -5619,7 +5704,8 @@
       "solution": {
         "steps": [
           "If every translator uses the same order, layout and practice are confounded.",
-          "Randomizing order helps distribute practice effects across the layouts."
+          "Randomizing order helps distribute practice effects across the layouts.",
+          "The second trial may benefit from practice regardless of layout. Randomized order prevents that benefit from always favoring the same layout, although individual order effects can remain."
         ],
         "warning": "Giving both treatments to each person creates pairing, but treatment order must also be handled."
       },
@@ -5670,7 +5756,8 @@
       "solution": {
         "steps": [
           "A useful block groups units alike on a characteristic related to the response.",
-          "Random assignment within each block gives a fair comparison while accounting for attendance history."
+          "Random assignment within each block gives a fair comparison while accounting for attendance history.",
+          "Blocks are formed from attendance history before either reminder system is assigned. Randomize systems within those blocks; do not make one system serve only high-attendance patients."
         ],
         "warning": "Blocks are formed using a relevant preexisting variable, rather than treatment or random grouping."
       },
@@ -5740,7 +5827,8 @@
       "solution": {
         "steps": [
           "Random assignment allows the growth difference to be attributed to the mulch comparison.",
-          "Volunteer recruitment and the tested conditions limit generalization. A separate no-mulch group is not required to compare A with B."
+          "Volunteer recruitment and the tested conditions limit generalization. A separate no-mulch group is not required to compare A with B.",
+          "The comparison answers whether A differs from B, not whether either mulch is better than no mulch. That latter question would require an appropriate no-mulch comparison."
         ],
         "warning": "A causal average comparison is not a guarantee for each individual plant."
       },
@@ -5803,7 +5891,8 @@
       "solution": {
         "steps": [
           "Random selection links the experimental sample to the defined club population.",
-          "Random assignment, which is a separate step, supports the causal comparison."
+          "Random assignment, which is a separate step, supports the causal comparison.",
+          "Selection and assignment solve different problems: who the results represent and whether the plan comparison supports causation. Random assignment alone would not create a representative club sample."
         ],
         "warning": "Keep the roles of selection and assignment distinct even when a study uses both."
       },
@@ -5857,7 +5946,8 @@
       "solution": {
         "steps": [
           "Random assignment within grades supports a causal comparison while controlling grade-related variation.",
-          "Random selection from the district's enrollment list supports generalization to that district population."
+          "Random selection from the district's enrollment list supports generalization to that district population.",
+          "Grade blocks account for an existing source of variation without restricting one schedule to a grade. The random sample supports the stated district population, rather than every student elsewhere."
         ],
         "warning": "Blocking strengthens a randomized comparison; it does not remove random assignment or widen the sampling frame."
       },
@@ -5909,7 +5999,8 @@
       "solution": {
         "steps": [
           "Starting size is a nuisance variable related to growth, so similar seedlings form blocks.",
-          "All treatments should be randomly represented within each block to permit comparisons adjusted for size."
+          "All treatments should be randomly represented within each block to permit comparisons adjusted for size.",
+          "The goal is to compare additives among seedlings with similar starting sizes. Assigning an additive exclusively to one block would make additive and initial size inseparable."
         ],
         "warning": "Blocks group similar units before treatments are assigned; blocks are not treatment groups."
       },
@@ -5996,7 +6087,8 @@
       "solution": {
         "steps": [
           "Runners are matched in pairs on characteristics related to performance.",
-          "Within every pair, one runner receives each sole by random assignment, making the treatment comparison a matched-pairs experiment."
+          "Within every pair, one runner receives each sole by random assignment, making the treatment comparison a matched-pairs experiment.",
+          "Each pair supplies a local comparison between soles among similar runners. The pairing identifies the matched structure, while random allocation within pairs supports the causal comparison."
         ],
         "warning": "Pairs are formed before assignment to control differences among experimental units."
       },
@@ -6070,7 +6162,8 @@
       "solution": {
         "steps": [
           "A fixed order would tie layout to the amount of prior practice.",
-          "Balancing randomly assigned orders spreads the practice effect across layouts while retaining within-person comparisons."
+          "Balancing randomly assigned orders spreads the practice effect across layouts while retaining within-person comparisons.",
+          "Each volunteer remains their own comparison, and random counterbalancing prevents the second-trial advantage from consistently benefiting B. Having everyone do A then B would leave practice tied to layout."
         ],
         "warning": "Repeated use of each treatment still needs an appropriate order plan."
       },
@@ -6126,7 +6219,8 @@
       "solution": {
         "steps": [
           "Adjacent pieces share fabric characteristics that may vary between rolls.",
-          "Comparing washes within these similar pairs separates wash effects from much of the roll variation."
+          "Comparing washes within these similar pairs separates wash effects from much of the roll variation.",
+          "Roll-to-roll differences become less influential when each roll contributes both wash conditions. Random assignment within each adjacent-piece pair prevents systematic selection of which piece receives each wash."
         ],
         "warning": "The useful pairing feature is similarity related to the response, rather than random selection."
       },
@@ -6193,7 +6287,8 @@
       "solution": {
         "steps": [
           "Form blocks using grade level because it is an existing characteristic related to the response.",
-          "Assign every method within each grade, so method comparisons are not confounded with grade."
+          "Assign every method within each grade, so method comparisons are not confounded with grade.",
+          "Grades are blocks, not the four treatments being compared. Each grade needs all teaching methods so the analysis can compare methods without confusing those effects with grade differences."
         ],
         "warning": "A treatment factor is not a blocking variable merely because it has several levels."
       },
@@ -6280,7 +6375,8 @@
       "solution": {
         "steps": [
           "Plan S uses groups to select a sample, which is stratification.",
-          "Plan E uses groups to assign and compare treatments, which is blocking."
+          "Plan E uses groups to assign and compare treatments, which is blocking.",
+          "The same department labels can serve different design roles. Sampling chooses which teachers enter the study; blocking organizes the assignment of treatments to teachers already in an experiment."
         ],
         "warning": "Similar grouping ideas have different names according to whether the goal is sampling or treatment assignment."
       },
@@ -6354,7 +6450,8 @@
       "solution": {
         "steps": [
           "All A observations occur on the flat course and all B observations on the steep course.",
-          "Within-person pairing cannot separate seat effects from slope effects when the two always change together."
+          "Within-person pairing cannot separate seat effects from slope effects when the two always change together.",
+          "Receiving both seats controls person-to-person differences but not the perfectly linked slopes. Randomizing or balancing seat order alone would still fail if each seat always stayed on its fixed course."
         ],
         "warning": "A matched-pairs label does not repair a second factor tied to treatment."
       },
@@ -6416,7 +6513,8 @@
       "solution": {
         "steps": [
           "Random treatment assignment within blocks supports a causal comparison.",
-          "Blocking controls a source of variation, but volunteer recruitment still limits population generalization."
+          "Blocking controls a source of variation, but volunteer recruitment still limits population generalization.",
+          "Blocking improves the treatment comparison for participating volunteers. It does not make those volunteers a probability sample of all people who might use the training methods."
         ],
         "warning": "Blocking improves the treatment comparison; it does not change how participants entered the study."
       },
@@ -6478,7 +6576,8 @@
       "solution": {
         "steps": [
           "The A-minus-B differences are 3, 4, 2, and 3 minutes, all positive.",
-          "Since these are completion times, positive A minus B means B was faster for each of these testers."
+          "Since these are completion times, positive A minus B means B was faster for each of these testers.",
+          "The relevant evidence is the four within-tester differences, not a comparison between unrelated testers. Consistent sample differences do not by themselves establish that every future tester would be faster with B."
         ],
         "warning": "State the subtraction order and interpret its sign in the context of the response."
       },
@@ -6565,7 +6664,8 @@
       "solution": {
         "steps": [
           "The units are described as similar, and no useful blocking variable or natural pairs are given.",
-          "A completely randomized allocation provides a fair comparison with replication in both treatments."
+          "A completely randomized allocation provides a fair comparison with replication in both treatments.",
+          "Replication comes from the 20 independently treated filters per solution. Inventing arbitrary blocks would not address a known performance difference and is unnecessary under the stated conditions."
         ],
         "warning": "A design name must match its actual allocation procedure and the structure of the units."
       },

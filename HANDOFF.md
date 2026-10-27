@@ -1,5 +1,11 @@
 # Handoff
 
+## Fuller Unit 1 and 2 explanations (2026-10-27, Codex)
+
+- Reviewed and expanded all 420 earlier solutions with question-specific reasoning, interpretation or limits. Preserved all question fields outside solutions, all warnings and all calculator guidance. Unit 3 is unchanged. Removed repeated introductions, a duplicate sentence and b34’s misleading rounded intermediate sum.
+- Increased unit and lesson title sizes in the route pane, including unit-selection card titles. Navigation collapse and visible question panes are preserved.
+- See `docs/UNIT-1-2-EXPLANATION-REVIEW.md` for scope and verification. Tool and AI review are not human or physical-calculator sign-off. Publish matching source/build to the original public Sites project and GitHub Pages through the PR workflow.
+
 ## Navigation collapse correction (2026-10-27, Codex)
 
 - Ben clarified that Courses/Units/Questions navigation should collapse when an explanation or calculator opens. The question card must remain visible. Both views now call the shared navigation-collapse action; the three narrow navigation handles remain available to reopen a list.
