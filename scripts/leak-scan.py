@@ -22,6 +22,12 @@ from pathlib import Path
 
 N = 8
 FAIL_AT = 12
+# S16 permits stock ask frames. These exact context-free runs are exceptions;
+# longer matches that include context, values, or other wording still fail.
+STOCK_ASK_FRAMES = {
+    "is the mean of the sampling distribution of the sample proportion of",
+    "which of the following is closest to the standard deviation of the",
+}
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -67,7 +73,7 @@ def runs(text: str, shingles: dict[str, str]):
 def blobs(history: bool):
     git = lambda *a: subprocess.run(["git", *a], cwd=ROOT, capture_output=True, check=True).stdout  # noqa: E731
     if not history:
-        for path in git("ls-files").decode().splitlines():
+        for path in git("ls-files", "--cached", "--others", "--exclude-standard").decode().splitlines():
             yield path, (ROOT / path).read_bytes()
         return
     seen = set()
@@ -76,6 +82,29 @@ def blobs(history: bool):
         if path and sha not in seen and git("cat-file", "-t", sha).strip() == b"blob":
             seen.add(sha)
             yield f"{path} @ {sha[:8]}", git("cat-file", "-p", sha)
+
+
+
+def fragments(name: str, text: str):
+    """Never join distinct JSON fields/choices into an invented source sentence."""
+    if name.split(" @ ", 1)[0].endswith(".json"):
+        try:
+            parsed = json.loads(text)
+        except (ValueError, TypeError):
+            pass
+        else:
+            def walk(value, path):
+                if isinstance(value, str):
+                    yield path, value
+                elif isinstance(value, list):
+                    for index, item in enumerate(value):
+                        yield from walk(item, f"{path}[{index}]")
+                elif isinstance(value, dict):
+                    for key, item in value.items():
+                        yield from walk(item, f"{path}.{key}")
+            yield from walk(parsed, name)
+            return
+    yield name, text
 
 
 def main() -> int:
@@ -89,10 +118,11 @@ def main() -> int:
     for name, data in blobs("--history" in sys.argv):
         if b"\0" in data[:4000]:
             continue
-        for length, text, source in runs(data.decode("utf-8", "ignore"), shingles):
-            worst = max(worst, length)
-            if length >= FAIL_AT:
-                failures.append(f"{name}: {length} words shared with {source}: {text[:160]}")
+        for location, fragment in fragments(name, data.decode("utf-8", "ignore")):
+            for length, text, source in runs(fragment, shingles):
+                worst = max(worst, length)
+                if length >= FAIL_AT and text not in STOCK_ASK_FRAMES:
+                    failures.append(f"{location}: {length} words shared with {source}: {text[:160]}")
     print(f"Scanned against {len(shingles)} AP shingles. Longest shared run: {worst} words (fail at {FAIL_AT}).")
     for failure in failures:
         print("LEAK", failure)

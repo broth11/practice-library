@@ -21,7 +21,7 @@ export function fitQuestion(card, room) {
     for (const columns of layouts) {
       const candidate = { font, columns, heights: diagrams.map(() => null) };
       apply(candidate);
-      const overflow = options.some(option => option.scrollWidth > option.clientWidth + 1);
+      const overflow = options.some(option => option.scrollWidth > option.clientWidth + 1 || [...option.querySelectorAll('.math-display')].some(math => math.scrollWidth > math.clientWidth + 1));
       const cramped = columns > 1 && options.some(option => {
         if (option.classList.contains('structured-choice')) return columns === 4;
         const lines = option.getBoundingClientRect().height / parseFloat(getComputedStyle(option).lineHeight);

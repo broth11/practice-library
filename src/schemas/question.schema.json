@@ -35,6 +35,8 @@
     "choice": {
       "oneOf": [
         { "type": "string", "minLength": 1 },
+        {"type": "object", "required": ["type", "tex", "ariaLabel"], "properties": {"type": {"const": "math"}, "tex": {"type": "string", "minLength": 1}, "ariaLabel": {"type": "string", "minLength": 1}}, "additionalProperties": false},
+        {"type": "object", "required": ["type", "null", "alternative"], "properties": {"type": {"const": "hypotheses"}, "null": {"type": "string", "minLength": 1}, "alternative": {"type": "string", "minLength": 1}}, "additionalProperties": false},
         {
           "type": "object",
           "required": ["type", "rows"],

@@ -40,3 +40,6 @@ It fails on any run of 12 or more words shared with an AP item. Shorter runs are
 ## Branches
 
 Use `<who>/<topic>`, for example `claude/unit-2c`, `codex/math-nodes`, or `ben/typo-fixes`. Open a pull request into `main`; `main` is protected and requires the validate workflow to pass.
+
+
+The scan includes untracked files before commit. JSON strings are scanned separately so neighboring answer choices do not become an invented copied passage. Two exact context-free ask frames are narrowly exempted under S16; longer contextual matches still fail. Run `python3 scripts/test-leak-scan.py` to verify these boundaries, then scan current files and history. See `docs/READABLE-WORKING-REVIEW.md` for the correction.

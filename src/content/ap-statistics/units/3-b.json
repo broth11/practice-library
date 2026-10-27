@@ -70,11 +70,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The expected difference follows the stated urban-minus-rural order. Sample sizes affect the variability of that difference, not its expected value.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\mu_{\\hat p_U-\\hat p_R}=p_U-p_R=0.55-0.35=0.20"
-          }
+            "tex": "\\begin{aligned}\\mu_D&=p_U-p_R\\\\&=0.55-0.35\\\\&=0.20\\end{aligned}"
+          },
+          "The positive mean 0.20 represents a 20-percentage-point population gap, rather than a difference in expected numbers of households."
         ],
         "warning": "Use the stated group order and the proportion scale."
       },
@@ -134,7 +136,8 @@
               "reason": "Subtracts expected counts instead of proportions."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -183,11 +186,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Let D be the first sample proportion minus the second. For independent samples, the variance of D is the sum of the two separate sampling variances.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\sigma_{\\hat p_1-\\hat p_2}=\\sqrt{\\frac{0.40(0.60)}{100}+\\frac{0.60(0.40)}{150}}\\approx0.06325"
-          }
+            "tex": "\\begin{aligned}v_1&=\\frac{0.40(0.60)}{100}\\\\&=0.0024\\\\v_2&=\\frac{0.60(0.40)}{150}\\\\&=0.0016\\\\\\sigma_D&=\\sqrt{v_1+v_2}\\\\&=\\sqrt{0.004}\\\\&\\approx0.06325\\end{aligned}"
+          },
+          "Use known p1 and p2 for this sampling model. Taking the square root of the summed variances gives an SD about 0.06325 on the proportion-difference scale."
         ],
         "warning": "Independent variances add even when the statistics are subtracted."
       },
@@ -247,7 +252,8 @@
               "reason": "Correct: \\sigma_{\\hat p_1-\\hat p_2}=\\sqrt{\\frac{0.40(0.60)}{100}+\\frac{0.60(0.40)}{150}}\\approx0.06325 Use the requested units and round only the final result."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -296,8 +302,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "A normal model for a difference requires adequate expected successes and failures in each group separately. Group A is the limiting group here.",
           "The four expected counts are 8, 72, 60, and 60.",
-          "Every group’s expected successes and failures must pass; 8 does not."
+          "Every group’s expected successes and failures must pass; 8 does not.",
+          "The expected count of eight successes is too small. Combining the group sizes or checking only the better-behaved group cannot fix that failure."
         ],
         "warning": "A passing group cannot compensate for a failing group."
       },
@@ -357,7 +365,8 @@
               "reason": "Requires equality for a general sampling distribution."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -406,11 +415,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The sample sizes are unequal, so success counts cannot be compared directly. First divide each success count by its own group size.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\hat p_C-\\hat p_I=\\frac{78}{120}-\\frac{54}{100}=0.65-0.54=0.11"
-          }
+            "tex": "\\begin{aligned}\\hat p_C-\\hat p_I&=\\frac{78}{120}-\\frac{54}{100}\\\\&=0.65-0.54\\\\&=0.11\\end{aligned}"
+          },
+          "Coastal households have sample proportion 0.65 versus inland 0.54, giving a positive difference of 0.11, or 11 percentage points."
         ],
         "warning": "Compute each group’s proportion before subtracting."
       },
@@ -470,7 +481,8 @@
               "reason": "Reports the count difference divided by 100."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -517,8 +529,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "A fresh pair of independent samples produces one new difference each time. The average of these differences is the difference of the population proportions.",
           "The mean difference is pA − pB = 0.18.",
-          "This is a long-run average over sampling repetitions."
+          "This is a long-run average over sampling repetitions.",
+          "The value 0.18 describes this average, not the fraction of repetitions in which the difference has a particular sign."
         ],
         "warning": "A mean difference is neither an exact per-sample difference nor a tail probability."
       },
@@ -578,7 +592,8 @@
               "reason": "Correct: The mean difference is pA − pB = 0.18. This is a long-run average over sampling repetitions."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -637,11 +652,18 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Define D as the first sample proportion minus the second. The first being smaller is exactly the event D < 0. The supplied model has mean 0.10 and SD 0.05.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "P(\\hat p_1-\\hat p_2<0)=\\Phi\\left(\\frac{0-0.10}{0.05}\\right)=\\Phi(-2)\\approx0.0228"
-          }
+            "tex": "\\begin{aligned}D&=\\hat p_1-\\hat p_2\\\\z&=\\frac{0-0.10}{0.05}\\\\&=-2\\end{aligned}"
+          },
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}P(D<0)&=P(Z<-2)\\\\&\\approx0.0228\\end{aligned}"
+          },
+          "Zero is two SDs below the mean, so use the lower normal tail below −2. The resulting probability is about 2.28%, not a central or two-sided area."
         ],
         "warning": "Translate first smaller than second into a negative difference."
       },
@@ -701,7 +723,8 @@
               "reason": "Uses the complementary event."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -754,8 +777,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Subtracting dimensionless fractions leaves a dimensionless difference. To express its absolute size in percentage points, multiply by 100.",
           "Both sample proportions are dimensionless fractions.",
-          "An absolute difference of 0.045 corresponds to 4.5 percentage points."
+          "An absolute difference of 0.045 corresponds to 4.5 percentage points.",
+          "Thus 0.045 becomes 4.5 percentage points. A relative percent comparison would also require a baseline population proportion, which is not given."
         ],
         "warning": "Percentage-point differences and relative percentage changes are different."
       },
@@ -815,7 +840,8 @@
               "reason": "Confuses variability with a rejection probability."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -867,8 +893,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Each without-replacement sample has its own finite population and therefore its own sampling-fraction check. Independent selection of the two samples does not remove dependence within one large-fraction sample.",
           "The first sampling fraction is 15%; the second is 3.6%.",
-          "Each without-replacement sample needs its own small-fraction check."
+          "Each without-replacement sample needs its own small-fraction check.",
+          "The first group’s 15% exceeds the guideline, while the second group’s 3.6% does not. Large category counts address a different condition."
         ],
         "warning": "Check each population separately, rather than combining their sizes."
       },
@@ -928,7 +956,8 @@
               "reason": "180/5,000 is only 3.6%."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -977,8 +1006,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The population difference fixes the center at 0.65 − 0.45 = 0.20. The supplied SD sets the typical horizontal distance from that center.",
           "The center is 0.65 − 0.45 = 0.20.",
-          "Two SDs on either side give 0.20 ± 0.08."
+          "Two SDs on either side give 0.20 ± 0.08.",
+          "Approximately 95% lies within about two SDs, giving endpoints 0.12 and 0.28. A much broader interval does not describe the same approximate 95% span."
         ],
         "warning": "Use both the correct center and the correct spread."
       },
@@ -1038,7 +1069,8 @@
               "reason": "Correct: The center is 0.65 − 0.45 = 0.20. Two SDs on either side give 0.20 ± 0.08."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1091,8 +1123,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The chance mechanism is random treatment assignment, not sampling a large fraction of a fixed finite population without replacement. The problem separately assumes independent responses.",
           "Random assignment creates the treatment comparison; independence is assumed.",
-          "Known-model expected counts are 60, 40, 50, and 50, all sufficient for a normal approximation."
+          "Known-model expected counts are 60, 40, 50, and 50, all sufficient for a normal approximation.",
+          "That design, together with the four adequate expected counts, supports the stated difference model without inventing a population-size requirement."
         ],
         "warning": "Match conditions to the design rather than imposing a sampling requirement mechanically."
       },
@@ -1152,7 +1186,8 @@
               "reason": "Requires null equality outside a null test."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1201,8 +1236,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Both samples measure the same yes/no filter-use response, but in different district populations. The unknown quantity is one population proportion minus the other.",
           "There are two independent populations and a binary response.",
-          "The requested estimate is a difference in population proportions."
+          "The requested estimate is a difference in population proportions.",
+          "A combined single proportion would discard district differences, while a test would address a benchmark decision rather than supply the requested estimate."
         ],
         "warning": "Keep the two groups separate when estimating their difference."
       },
@@ -1262,7 +1299,8 @@
               "reason": "Changes a binary response into a quantitative measurement."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1294,23 +1332,46 @@
       "archetype": "two_proportion_interval_standard_error",
       "variant": "V1",
       "scenario": "Independent SRSs yield 84 successes among 140 observations in group A and 90 among 180 in group B. Conditions hold.",
-      "prompt": "Which value is closest to the unpooled SE for A minus B?",
+      "prompt": "Which working gives the correct unpooled SE for the estimated difference A minus B?",
       "choices": [
-        "0.01804",
-        "0.05571",
-        "0.05613",
-        "0.10918"
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.60(0.40)}{140}\\\\v_B&=\\frac{0.50(0.50)}{180}\\\\SE&=\\sqrt{v_A-v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = square root of vA − vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.60(0.40)}{140}\\\\v_B&=\\frac{0.50(0.50)}{180}\\\\SE&=\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = square root of vA + vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}c&=\\frac{174}{320}\\\\v_A&=\\frac{c(1-c)}{140}\\\\v_B&=\\frac{c(1-c)}{180}\\\\SE&=\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "Pooled c = 174/320; vA = c(1−c)/140 and vB = c(1−c)/180; SE = square root of vA + vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.60(0.40)}{140}\\\\v_B&=\\frac{0.50(0.50)}{180}\\\\SE&=1.96\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.60(0.40)/140 and vB = 0.50(0.50)/180; SE = 1.96 times square root of vA + vB"
+        }
       ],
       "answer": "B",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The observed proportions are 84/140 = 0.60 and 90/180 = 0.50. For an interval, keep these two estimates separate and calculate one variance contribution from each.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "SE=\\sqrt{\\frac{0.60(0.40)}{140}+\\frac{0.50(0.50)}{180}}\\approx0.05571"
-          }
+            "tex": "\\begin{aligned}\\hat p_A&=\\frac{84}{140}=0.60\\\\\\hat p_B&=\\frac{90}{180}=0.50\\end{aligned}"
+          },
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}v_A&=\\frac{0.60(0.40)}{140}\\\\v_B&=\\frac{0.50(0.50)}{180}\\\\SE&=\\sqrt{v_A+v_B}\\\\&\\approx0.05571\\end{aligned}"
+          },
+          "Independent variances add even when the statistics are subtracted. Their square-root sum is SE; multiplying by 1.96 would instead give a 95% margin."
         ],
         "warning": "Intervals use separate observed proportions rather than the null-pooled proportion."
       },
@@ -1343,6 +1404,11 @@
             "role": "T2",
             "build": "Reports the 95% margin instead of SE.",
             "basis": "locally specified fresh build; no claim of AP-observed lineage"
+          },
+          {
+            "role": "KEY",
+            "basis": "expression-choice revision",
+            "build": "Select the calculation structure rather than its rounded numerical result; the final four expressions were independently evaluated for uniqueness."
           }
         ],
         "sourceReview": {
@@ -1370,7 +1436,12 @@
               "reason": "Reports the 95% margin instead of SE."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "formatReview": "Original synthetic inputs retained. All four working expressions checked for algebraic equivalence and unique correctness.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied.",
+          "expressionEvidenceIds": [
+            "SG_3.10#21"
+          ]
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1402,28 +1473,46 @@
       "archetype": "two_proportion_confidence_interval",
       "variant": "V1",
       "scenario": "Independent samples of 200 customers at each of two stores give satisfaction proportions 0.70 and 0.55. Conditions hold. Use z* = 1.96.",
-      "prompt": "Which interval estimates store A minus store B at 95% confidence?",
+      "prompt": "Which working correctly constructs a 95% confidence interval for store A minus store B?",
       "choices": [
-        "(0.1022, 0.1978)",
-        "(0.0713, 0.2287)",
-        "(−0.2437, −0.0563)",
-        "(0.0563, 0.2437)"
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.70(0.30)}{200}\\\\v_B&=\\frac{0.55(0.45)}{200}\\\\I&=0.15\\pm1.645\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1.645 times square root of vA + vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.70(0.30)}{200}\\\\v_B&=\\frac{0.55(0.45)}{200}\\\\I&=-0.15\\pm1.96\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = -0.15 plus or minus 1.96 times square root of vA + vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.70(0.30)}{200}\\\\v_B&=\\frac{0.55(0.45)}{200}\\\\I&=0.15\\pm1\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1 times square root of vA + vB"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}v_A&=\\frac{0.70(0.30)}{200}\\\\v_B&=\\frac{0.55(0.45)}{200}\\\\I&=0.15\\pm1.96\\sqrt{v_A+v_B}\\end{aligned}",
+          "ariaLabel": "vA = 0.70(0.30)/200 and vB = 0.55(0.45)/200; interval = 0.15 plus or minus 1.96 times square root of vA + vB"
+        }
       ],
       "answer": "D",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The target is pA minus pB, so the center is 0.70 − 0.55 = 0.15. Estimate variance separately within each store and add the contributions because the samples are independent.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}&d=0.70-0.55=0.15\\\\ &SE=\\sqrt{\\frac{0.70(0.30)}{200}+\\frac{0.55(0.45)}{200}}\\end{aligned}"
+            "tex": "\\begin{aligned}d&=0.70-0.55\\\\&=0.15\\\\v_A&=\\frac{0.70(0.30)}{200}\\\\v_B&=\\frac{0.55(0.45)}{200}\\\\SE&=\\sqrt{v_A+v_B}\\\\&\\approx0.04783\\end{aligned}"
           },
           {
             "type": "math",
             "mode": "display",
-            "tex": "0.15\\pm1.96SE\\approx(0.0563,0.2437)"
-          }
+            "tex": "\\begin{aligned}ME&=1.96SE\\approx0.09374\\\\L&=0.15-ME\\approx0.0563\\\\U&=0.15+ME\\approx0.2437\\end{aligned}"
+          },
+          "A 95% interval uses center plus or minus 1.96 SE. Its positive endpoints estimate that store A’s population satisfaction proportion is about 5.6 to 24.4 percentage points higher."
         ],
         "warning": "Preserve group order and use the requested confidence multiplier."
       },
@@ -1434,9 +1523,9 @@
       },
       "provenance": {
         "optionRoles": [
-          "T2",
           "T3",
           "T1",
+          "T2",
           "KEY"
         ],
         "keyBuild": "Apply the linked card answer logic to fresh synthetic inputs.",
@@ -1456,6 +1545,11 @@
             "role": "T1",
             "build": "Reverses group order.",
             "basis": "locally specified fresh build; no claim of AP-observed lineage"
+          },
+          {
+            "role": "KEY",
+            "basis": "expression-choice revision",
+            "build": "Select the calculation structure rather than its rounded numerical result; the final four expressions were independently evaluated for uniqueness."
           }
         ],
         "sourceReview": {
@@ -1464,26 +1558,31 @@
           "optionEvidence": [
             {
               "choice": "A",
-              "role": "T2",
-              "reason": "Uses one SE instead of 1.96 SE."
-            },
-            {
-              "choice": "B",
               "role": "T3",
               "reason": "Uses the 90% multiplier 1.645."
             },
             {
-              "choice": "C",
+              "choice": "B",
               "role": "T1",
               "reason": "Reverses group order."
             },
             {
+              "choice": "C",
+              "role": "T2",
+              "reason": "Uses one SE instead of 1.96 SE."
+            },
+            {
               "choice": "D",
               "role": "KEY",
-              "reason": "Correct: d=0.70-0.55=0.15,\\quad SE=\\sqrt{\\frac{0.70(0.30)}{200}+\\frac{0.55(0.45)}{200}} 0.15\\pm1.96SE\\approx(0.0563,0.2437)"
+              "reason": "Correct: uses A minus B, independent unpooled variance contributions, and the 95% multiplier 1.96."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "formatReview": "Original synthetic inputs retained. All four working expressions checked for algebraic equivalence and unique correctness.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied.",
+          "expressionEvidenceIds": [
+            "SG_3.10#20"
+          ]
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1537,8 +1636,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "An interval has no equality-null assumption, so its normal approximation uses the four observed counts rather than pooled expected counts.",
           "For an interval, check the four observed counts separately.",
-          "The second group has only 7 successes."
+          "The second group has only 7 successes.",
+          "The second group has only seven successes. Adequate counts in the first group or in the combined sample cannot establish all four required checks."
         ],
         "warning": "Pooling cannot repair a failed observed-count condition for an interval."
       },
@@ -1598,7 +1699,8 @@
               "reason": "Uses sample size alone."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1642,8 +1744,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The entire interval for A minus B is negative. Negating the endpoints gives the corresponding positive range for B minus A.",
           "A negative difference means pA < pB.",
-          "An absolute difference of 0.04 to 0.14 is 4 to 14 percentage points."
+          "An absolute difference of 0.04 to 0.14 is 4 to 14 percentage points.",
+          "The population gap is estimated in absolute percentage points. A relative percentage decrease would require dividing by city B’s proportion, which this interval alone does not provide."
         ],
         "warning": "Respect subtraction order and absolute proportion units."
       },
@@ -1703,7 +1807,8 @@
               "reason": "Changes the target quantity."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1757,8 +1862,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "A directional ordering would require the entire interval to be strictly positive or strictly negative. Here both signs and zero are compatible with the data.",
           "The interval includes zero and differences of both signs.",
-          "It permits either ordering and equality, so a directional population claim is not established."
+          "It permits either ordering and equality, so a directional population claim is not established.",
+          "The positive midpoint is only the sample estimate; it does not remove the uncertainty expressed by the negative lower endpoint."
         ],
         "warning": "Zero inclusion reflects uncertainty, not proof of no difference."
       },
@@ -1818,7 +1925,8 @@
               "reason": "Correct: The interval includes zero and differences of both signs. It permits either ordering and equality, so a directional population claim is not established."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1867,8 +1975,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The target difference is fixed for the two populations. Repeated sampling changes the estimated difference and interval endpoints, not that target.",
           "Each repetition produces new estimates and endpoints.",
-          "Coverage describes the fraction of intervals containing the same fixed population difference."
+          "Coverage describes the fraction of intervals containing the same fixed population difference.",
+          "The 90% figure describes how often this procedure captures the fixed difference, not a fraction of each realized interval or a probability of particular individual responses."
         ],
         "warning": "The randomness is in the intervals, not in the population difference."
       },
@@ -1928,7 +2038,8 @@
               "reason": "Makes a fixed population difference random."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -1974,8 +2085,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Random assignment separates the treatment comparison from systematic differences between volunteer gardeners within this experiment. That supports a causal treatment interpretation in the studied setting.",
           "Random assignment supports a causal comparison in the experiment.",
-          "Volunteer recruitment limits direct generalization beyond comparable conditions."
+          "Volunteer recruitment limits direct generalization beyond comparable conditions.",
+          "Volunteer recruitment does not make the gardeners a random population sample. Extending the size of the effect to all gardeners therefore needs an additional argument."
         ],
         "warning": "Random assignment supports causation; random sampling supports population generalization."
       },
@@ -2035,7 +2148,8 @@
               "reason": "Ignores experimental randomization."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2079,8 +2193,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "First compare the interval with zero to assess the sign, then compare it with the manager’s stated useful-effect threshold. These are separate questions.",
           "Every interval value is positive.",
-          "Every value is also below 0.02, the manager’s practical threshold."
+          "Every value is also below 0.02, the manager’s practical threshold.",
+          "The whole interval is positive but even its upper endpoint 0.005 is below 0.02. The result supports a positive effect smaller than the required useful gain."
         ],
         "warning": "A statistically discernible difference can be too small to matter practically."
       },
@@ -2140,7 +2256,8 @@
               "reason": "Correct: Every interval value is positive. Every value is also below 0.02, the manager’s practical threshold."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2184,11 +2301,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Changing from North minus South to South minus North negates the parameter being estimated. Negation reverses inequalities and reverses endpoint order.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "-(0.03,0.11)=(-0.11,-0.03)"
-          }
+            "tex": "\\begin{aligned}-(0.03,0.11)&=(-0.11,-0.03)\\end{aligned}"
+          },
+          "The new lower endpoint is −0.11 and the new upper endpoint is −0.03. The interval retains its width and confidence level."
         ],
         "warning": "Negating a difference reverses both signs and endpoint order."
       },
@@ -2248,7 +2367,8 @@
               "reason": "Complements proportions instead of negating a difference."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2292,18 +2412,36 @@
       "scenario": "Two independent populations use different reminder systems. Let pA and pB be their completion proportions. Researchers ask whether system A has a higher population completion proportion.",
       "prompt": "Which hypotheses match this question?",
       "choices": [
-        "H0: pA − pB = 0; Ha: pA − pB < 0",
-        "H0: p-hat-A − p-hat-B = 0; Ha: p-hat-A − p-hat-B > 0",
-        "H0: pA − pB = 0; Ha: pA − pB > 0",
-        "H0: pA − pB = 0; Ha: pA − pB ≠ 0"
+        {
+          "type": "hypotheses",
+          "null": "pA − pB = 0",
+          "alternative": "pA − pB < 0"
+        },
+        {
+          "type": "hypotheses",
+          "null": "p-hat-A − p-hat-B = 0",
+          "alternative": "p-hat-A − p-hat-B > 0"
+        },
+        {
+          "type": "hypotheses",
+          "null": "pA − pB = 0",
+          "alternative": "pA − pB > 0"
+        },
+        {
+          "type": "hypotheses",
+          "null": "pA − pB = 0",
+          "alternative": "pA − pB ≠ 0"
+        }
       ],
       "answer": "C",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Equality of the population rates is equivalent to a difference of zero. The research claim says A is higher, so the A-minus-B difference must be positive under the alternative.",
           "The hypotheses concern the two population proportions in A minus B order.",
-          "Equality is the null and a higher proportion in A gives a positive alternative."
+          "Equality is the null and a higher proportion in A gives a positive alternative.",
+          "Writing sample proportions in the hypotheses would target quantities already observed, rather than the population relationship being tested."
         ],
         "warning": "Use population parameters and the research direction."
       },
@@ -2363,7 +2501,8 @@
               "reason": "Uses a two-sided alternative despite a directional question."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2417,11 +2556,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Under the equality null, both samples estimate one common success probability. Estimate that probability by treating the combined successes as a fraction of all trials.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\hat p_c=\\frac{48+54}{80+120}=\\frac{102}{200}=0.51"
-          }
+            "tex": "\\begin{aligned}\\hat p_c&=\\frac{48+54}{80+120}\\\\&=\\frac{102}{200}\\\\&=0.51\\end{aligned}"
+          },
+          "The sample sizes differ, so the unweighted average 0.525 is not the combined fraction. The 120-trial sample contributes more weight than the 80-trial sample."
         ],
         "warning": "Pool success counts and sample sizes, not the two percentages equally."
       },
@@ -2481,7 +2622,8 @@
               "reason": "Uses only the first group."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2535,11 +2677,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The equality-null reference model applies the same estimated success probability 0.51 to each sample size. Apply the complement 0.49 for failures.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "80(0.51)=40.8,\\ 80(0.49)=39.2,\\ 120(0.51)=61.2,\\ 120(0.49)=58.8"
-          }
+            "tex": "\\begin{aligned}E_{A,s}&=80(0.51)=40.8\\\\E_{A,f}&=80(0.49)=39.2\\\\E_{B,s}&=120(0.51)=61.2\\\\E_{B,f}&=120(0.49)=58.8\\end{aligned}"
+          },
+          "These expected counts differ from the observed counts used for interval checks. All four null expected counts are large enough here."
         ],
         "warning": "The equality null uses the same pooled proportion in both groups."
       },
@@ -2599,7 +2743,8 @@
               "reason": "Correct: 80(0.51)=40.8,\\ 80(0.49)=39.2,\\ 120(0.51)=61.2,\\ 120(0.49)=58.8"
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2636,23 +2781,46 @@
       "archetype": "two_proportion_pooled_test_statistic",
       "variant": "V1",
       "scenario": "Two independent random samples give 90 of 150 successes in A and 66 of 150 in B. Test equality of the population proportions. All conditions hold.",
-      "prompt": "Which value is closest to the pooled z statistic for A minus B?",
+      "prompt": "Which working gives the correct null-pooled z statistic for A minus B?",
       "choices": [
-        "-2.774",
-        "2.774",
-        "2.810",
-        "5.547"
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}\\hat p_c&=\\frac{90+66}{150+150}\\\\&=0.52\\\\V_0&=0.52(0.48)\\frac2{150}\\\\z&=\\frac{0.44-0.60}{\\sqrt{V_0}}\\end{aligned}",
+          "ariaLabel": "Pooled proportion 0.52; null variance = 0.52(0.48)(2/150); z = (0.44 − 0.60)/square root of null variance"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}\\hat p_c&=\\frac{90+66}{150+150}\\\\&=0.52\\\\V_0&=0.52(0.48)\\frac2{150}\\\\z&=\\frac{0.60-0.44}{\\sqrt{V_0}}\\end{aligned}",
+          "ariaLabel": "Pooled proportion 0.52; null variance = 0.52(0.48)(2/150); z = (0.60 − 0.44)/square root of null variance"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}V&=\\frac{0.60(0.40)}{150}\\\\&\\quad+\\frac{0.44(0.56)}{150}\\\\z&=\\frac{0.60-0.44}{\\sqrt{V}}\\end{aligned}",
+          "ariaLabel": "Unpooled variance = 0.60(0.40)/150 + 0.44(0.56)/150; z = (0.60 − 0.44)/square root of variance"
+        },
+        {
+          "type": "math",
+          "tex": "\\begin{aligned}\\hat p_c&=\\frac{90+66}{150+150}\\\\&=0.52\\\\V_0&=\\frac{0.52(0.48)}{300}\\\\z&=\\frac{0.60-0.44}{\\sqrt{V_0}}\\end{aligned}",
+          "ariaLabel": "Pooled proportion 0.52; null variance = 0.52(0.48)/300; z = (0.60 − 0.44)/square root of null variance"
+        }
       ],
       "answer": "B",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The observed fractions are 90/150 = 0.60 and 66/150 = 0.44. Under equality, estimate their common rate from 156 successes in 300 trials, giving 0.52.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}&\\hat p_c=0.52\\\\ &z=\\frac{0.60-0.44}{\\sqrt{0.52(0.48)(1/150+1/150)}}\\approx2.774\\end{aligned}"
-          }
+            "tex": "\\begin{aligned}\\hat p_A&=\\frac{90}{150}=0.60\\\\\\hat p_B&=\\frac{66}{150}=0.44\\\\\\hat p_c&=\\frac{90+66}{150+150}\\\\&=0.52\\end{aligned}"
+          },
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\begin{aligned}V_0&=0.52(0.48)\\left(\\frac2{150}\\right)\\\\z&=\\frac{0.60-0.44}{\\sqrt{V_0}}\\\\&\\approx2.774\\end{aligned}"
+          },
+          "The null variance uses 0.52(0.48) times the sum of the two reciprocal sample sizes. Dividing the positive 0.16 gap by its square root gives z about 2.774."
         ],
         "warning": "A null-pooled test differs from an unpooled interval."
       },
@@ -2685,6 +2853,11 @@
             "role": "T3",
             "build": "Combines sample sizes as a single sample.",
             "basis": "locally specified fresh build; no claim of AP-observed lineage"
+          },
+          {
+            "role": "KEY",
+            "basis": "expression-choice revision",
+            "build": "Select the calculation structure rather than its rounded numerical result; the final four expressions were independently evaluated for uniqueness."
           }
         ],
         "sourceReview": {
@@ -2712,7 +2885,12 @@
               "reason": "Combines sample sizes as a single sample."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "formatReview": "Original synthetic inputs retained. All four working expressions checked for algebraic equivalence and unique correctness.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied.",
+          "expressionEvidenceIds": [
+            "SG_3.13#6"
+          ]
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2766,11 +2944,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The test statistic is defined in A-minus-B order and the alternative asks for a positive population difference. Greater positive z values therefore count as stronger evidence.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "p\\text{-value}=P(Z\\ge1.90)\\approx0.0287"
-          }
+            "tex": "\\begin{aligned}p\\text{-value}&=P(Z\\ge1.90)\\\\&\\approx0.0287\\end{aligned}"
+          },
+          "The upper tail beyond 1.90 is about 0.0287. A two-sided multiplier would include departures in a direction outside the stated research claim."
         ],
         "warning": "Use the upper tail for A minus B greater than zero."
       },
@@ -2830,7 +3010,8 @@
               "reason": "Uses the opposite tail."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2879,8 +3060,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The equality null fixes the population difference at zero. A two-sided test regards either a positive or a negative sample gap of the same absolute size as equally extreme.",
           "The null assumes a population difference of zero.",
-          "The two-sided event includes observed differences as far from zero as ±0.09 in the given sampling design."
+          "The two-sided event includes observed differences as far from zero as ±0.09 in the given sampling design.",
+          "Thus the probability 0.06 concerns gaps at least 0.09 away from zero under that model. It does not give a probability that the two population rates are equal."
         ],
         "warning": "Do not exchange the effect size, null condition, and probability."
       },
@@ -2940,7 +3123,8 @@
               "reason": "Reverses conditional probability."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -2993,16 +3177,18 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The observed fractions are 0.62 and 0.50, and the equality-null combined estimate is 224/400 = 0.56. Use that common rate to standardize the 0.12 excess.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}&\\hat p_c=0.56\\\\ &z=\\frac{0.62-0.50}{\\sqrt{0.56(0.44)(1/200+1/200)}}\\approx2.417\\end{aligned}"
+            "tex": "\\begin{aligned}\\hat p_c&=\\frac{124+100}{200+200}\\\\&=0.56\\\\V_0&=0.56(0.44)\\left(\\frac2{200}\\right)\\\\z&=\\frac{0.62-0.50}{\\sqrt{V_0}}\\\\&\\approx2.417\\end{aligned}"
           },
           {
             "type": "math",
             "mode": "display",
-            "tex": "p\\text{-value}\\approx0.0078<0.01"
-          }
+            "tex": "\\begin{aligned}p\\text{-value}&=P(Z\\ge2.417)\\\\&\\approx0.0078<0.01\\end{aligned}"
+          },
+          "The upper-tail probability is about 0.0078, smaller than 0.01, so the directional population claim is supported at the chosen level."
         ],
         "warning": "Compare the correctly tailed p-value with alpha."
       },
@@ -3062,7 +3248,8 @@
               "reason": "Turns population evidence into a universal individual claim."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3114,8 +3301,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The actual decision was rejection. A mistake with that decision requires the equality null to have been true, which is the Type I case.",
           "Rejection could be wrong only if the null is true.",
-          "That combination is Type I error; the actual population state remains unknown."
+          "That combination is Type I error; the actual population state remains unknown.",
+          "The value alpha controls a long-run risk under the null; it does not prove an error occurred in this particular comparison."
         ],
         "warning": "Significance does not certify that an error did or did not occur."
       },
@@ -3175,7 +3364,8 @@
               "reason": "Correct: Rejection could be wrong only if the null is true. That combination is Type I error; the actual population state remains unknown."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3223,8 +3413,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The count condition concerns the shape of a sampling approximation. It cannot make existing volunteer groups comparable or representative of a population.",
           "Large-count checks address a normal approximation, not comparability or representativeness.",
-          "Voluntary membership in existing programs may confound program effects with participant differences."
+          "Voluntary membership in existing programs may confound program effects with participant differences.",
+          "Selection into training programs may be related to prior ability or motivation. Pooling the observed counts does not remove these design limitations."
         ],
         "warning": "A calculation cannot replace random sampling or random assignment."
       },
@@ -3284,7 +3476,8 @@
               "reason": "Turns a design limitation into a population conclusion."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3333,8 +3526,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The Wald interval estimates each group variance from its own observed proportion. The equality-null z-test instead estimates one common proportion and uses it for both variance terms.",
           "The interval uses separate observed variance terms.",
-          "The equality-null test uses a common pooled estimate. These procedures are not exact algebraic inverses."
+          "The equality-null test uses a common pooled estimate. These procedures are not exact algebraic inverses.",
+          "Because the SEs differ, a near-boundary zero-inclusion result does not mathematically force the other procedure’s decision. Evaluate the requested procedure directly."
         ],
         "warning": "Compute both procedures near a threshold instead of assuming exact equivalence."
       },
@@ -3394,7 +3589,8 @@
               "reason": "Ignores pooled versus unpooled SE."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3448,8 +3644,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Each terminal contributes a separate sample, and each sampled person receives one ticket-type category. The question compares the distributions of that categorical response across populations.",
           "Separate samples come from three terminal populations, and ticket type is categorical.",
-          "A homogeneity test compares the category distributions across those populations."
+          "A homogeneity test compares the category distributions across those populations.",
+          "Neither a binary one-proportion procedure nor a quantitative-mean procedure captures the three-category, three-population comparison."
         ],
         "warning": "Count the populations and identify the categorical response."
       },
@@ -3509,7 +3707,8 @@
               "reason": "Correct: Separate samples come from three terminal populations, and ticket type is categorical. A homogeneity test compares the category distributions across those populations."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3543,18 +3742,36 @@
       "scenario": "Independent random samples from two community centers are classified by preferred class: art, music, or dance. Assume all homogeneity-test conditions hold and use the supplied df = 2. ",
       "prompt": "Which pair states the homogeneity hypotheses?",
       "choices": [
-        "H0: The class-preference distributions are the same at both centers; Ha: the distributions differ.",
-        "H0: The distributions differ; Ha: the distributions are the same.",
-        "H0: Each class has probability one-third at both centers; Ha: at least one probability differs.",
-        "H0: The observed sample counts are identical; Ha: the counts differ."
+        {
+          "type": "hypotheses",
+          "null": "The class-preference distributions are the same at both centers",
+          "alternative": "the distributions differ."
+        },
+        {
+          "type": "hypotheses",
+          "null": "The distributions differ",
+          "alternative": "the distributions are the same."
+        },
+        {
+          "type": "hypotheses",
+          "null": "Each class has probability one-third at both centers",
+          "alternative": "at least one probability differs."
+        },
+        {
+          "type": "hypotheses",
+          "null": "The observed sample counts are identical",
+          "alternative": "the counts differ."
+        }
       ],
       "answer": "A",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The null says that a given preference category has the same population proportion at each center. It allows art, music, and dance to have different overall popularity.",
           "Homogeneity concerns equality of population category distributions.",
-          "It does not require equally common categories within either population."
+          "It does not require equally common categories within either population.",
+          "The alternative requires some distribution difference; it does not require every category or every observed count to differ."
         ],
         "warning": "Equal distributions across groups do not mean uniform distributions within groups."
       },
@@ -3614,7 +3831,8 @@
               "reason": "Tests sample outcomes rather than population distributions."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3696,11 +3914,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Under homogeneity, the combined pickup fraction is 120/200 = 0.60. Applying that common fraction to the 80 hub-A requests gives the null expected count.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "E=\\frac{(80)(120)}{200}=48"
-          }
+            "tex": "\\begin{aligned}E&=\\frac{(80)(120)}{200}\\\\&=48\\end{aligned}"
+          },
+          "This produces 48 expected pickups, which can differ from the 40 actually observed. The discrepancy is what later contributes to the test statistic."
         ],
         "warning": "Expected counts combine both margins, not just one."
       },
@@ -3760,7 +3980,8 @@
               "reason": "Uses the whole column total."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3809,11 +4030,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Chi-square measures discrepancy using a square so that being above or below expectation contributes positively. Division by E scales that squared discrepancy relative to expected count.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\frac{(O-E)^2}{E}=\\frac{(36-30)^2}{30}=1.2"
-          }
+            "tex": "\\begin{aligned}\\frac{(O-E)^2}{E}&=\\frac{(36-30)^2}{30}\\\\&=1.2\\end{aligned}"
+          },
+          "The raw gap is six, its square is 36, and 36/30 = 1.2 is only this cell’s contribution, not the full table statistic."
         ],
         "warning": "A cell contribution is squared discrepancy divided by expected count."
       },
@@ -3873,7 +4096,8 @@
               "reason": "Returns the squared difference without dividing by E."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -3953,11 +4177,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The row totals are both 80 and the pooled category proportions are 60/160, 60/160, and 40/160. Each row therefore has expected counts 30, 30, and 20.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}&E_{row}=(30,30,20)\\\\ &\\chi^2=4\\left(\\frac{6^2}{30}\\right)+2(0)=4.8\\end{aligned}"
-          }
+            "tex": "\\begin{aligned}E_{row}&=(30,30,20)\\\\c&=\\frac{6^2}{30}\\\\&=1.2\\\\\\chi^2&=4c+2(0)\\\\&=4.8\\end{aligned}"
+          },
+          "Four cells deviate by six and contribute 1.2 each; the other two match their expectations. Adding every cell gives 4.8."
         ],
         "warning": "Sum all six cell contributions, including zeros."
       },
@@ -4017,7 +4243,8 @@
               "reason": "Adds squared discrepancies without dividing by expected counts."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4064,8 +4291,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Every term is a squared difference divided by a positive expected count, so no term can offset another through a negative contribution.",
           "Each contribution (O − E)²/E is nonnegative.",
-          "Their sum is zero only when every difference O − E is zero."
+          "Their sum is zero only when every difference O − E is zero.",
+          "A zero total therefore requires zero discrepancy in each cell. That sample fit does not establish that the unknown population distributions are exactly equal."
         ],
         "warning": "A zero statistic means perfect sample fit to expected counts, not proof about populations."
       },
@@ -4125,7 +4354,8 @@
               "reason": "Confuses null fit with uniformity."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4179,11 +4409,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Use the supplied two degrees of freedom to select the reference curve. Larger chi-square values represent greater discrepancy from the null, so the p-value lies to the right of six.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "p\\text{-value}=P(\\chi^2_2\\ge6.00)\\approx0.0498"
-          }
+            "tex": "\\begin{aligned}p\\text{-value}&=P(\\chi^2_2\\ge6.00)\\\\&\\approx0.0498\\end{aligned}"
+          },
+          "The right-tail area is about 0.0498. It is already the full chi-square p-value and should not be halved or doubled."
         ],
         "warning": "Chi-square evidence uses one upper tail; do not double it."
       },
@@ -4243,7 +4475,8 @@
               "reason": "Uses the lower-tail complement."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4300,8 +4533,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Assume equal population preference distributions when interpreting the reference probability. The observed chi-square value measures how far the sample table is from that null expectation.",
           "Condition on the null of equal population distributions.",
-          "Larger chi-square statistics represent greater discrepancies, so the tail is to the right."
+          "Larger chi-square statistics represent greater discrepancies, so the tail is to the right.",
+          "An area of about 0.056 is assigned to discrepancies at least as large as 9.2, not to the hypothesis itself or to values below 9.2."
         ],
         "warning": "A p-value describes data extremeness under the null, not a probability of the null."
       },
@@ -4361,7 +4596,8 @@
               "reason": "Confuses the statistic with a category proportion."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4414,8 +4650,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The p-value 0.014 is below the chosen 0.05 threshold, so the equal-distributions null is rejected. The alternative is that at least one population distribution differs.",
           "Since 0.014 < 0.05, reject homogeneity.",
-          "The omnibus result identifies some distribution difference, not every pair or category."
+          "The omnibus result identifies some distribution difference, not every pair or category.",
+          "The overall result does not identify a particular clinic pair or require every category proportion to differ. Those are more specific claims than the test establishes."
         ],
         "warning": "An overall rejection does not identify every group contrast."
       },
@@ -4475,7 +4713,8 @@
               "reason": "Correct: Since 0.014 < 0.05, reject homogeneity. The omnibus result identifies some distribution difference, not every pair or category."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4528,8 +4767,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Several testing opportunities create several chances to reject a true comparison. A per-test error limit does not automatically limit the probability of any error across all comparisons.",
           "A 0.05 level applies to one test, not automatically to the family of tests.",
-          "Pairwise comparisons share school samples, so an independence product must not be assumed."
+          "Pairwise comparisons share school samples, so an independence product must not be assumed.",
+          "The pairwise tests also reuse schools, so their outcomes are dependent. No exact independence product is justified merely by the independent school sampling."
         ],
         "warning": "Multiple comparisons require attention to familywise error, including dependent tests."
       },
@@ -4589,7 +4830,8 @@
               "reason": "Reverses multiplicity risk."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4644,8 +4886,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "One selected adult contributes a pair of category labels. This one-sample design asks whether the two population variables vary together.",
           "One random sample supplies two categorical variables per person.",
-          "The target is association within the adult population, matching an independence test."
+          "The target is association within the adult population, matching an independence test.",
+          "Separate-sample homogeneity would compare response distributions across independently sampled populations; the table’s appearance alone does not make that the design."
         ],
         "warning": "A table alone does not determine the design; read how the data were collected."
       },
@@ -4705,7 +4949,8 @@
               "reason": "Uses quantitative means for categorical variables."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4739,18 +4984,36 @@
       "scenario": "A random sample of apartment residents is classified by building size and package-locker use.",
       "prompt": "Which hypotheses match a chi-square independence test?",
       "choices": [
-        "H0: All building sizes are equally common; Ha: they are not.",
-        "H0: The observed cell counts are identical; Ha: they differ.",
-        "H0: Building size and locker use are independent in the population; Ha: they are associated.",
-        "H0: Building size causes locker use; Ha: locker use causes building size."
+        {
+          "type": "hypotheses",
+          "null": "All building sizes are equally common",
+          "alternative": "they are not."
+        },
+        {
+          "type": "hypotheses",
+          "null": "The observed cell counts are identical",
+          "alternative": "they differ."
+        },
+        {
+          "type": "hypotheses",
+          "null": "Building size and locker use are independent in the population",
+          "alternative": "they are associated."
+        },
+        {
+          "type": "hypotheses",
+          "null": "Building size causes locker use",
+          "alternative": "locker use causes building size."
+        }
       ],
       "answer": "C",
       "stimulus": null,
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Population independence means the locker-use distribution is the same across building-size categories. The alternative permits a relationship between those variables.",
           "Independence means the population locker-use distribution does not depend on building size.",
-          "The alternative is an association, without specifying causation."
+          "The alternative is an association, without specifying causation.",
+          "Independence is compatible with unequal numbers of residents in the marginal categories and does not imply or reverse a causal relationship."
         ],
         "warning": "Independence does not require equal marginal category frequencies."
       },
@@ -4810,7 +5073,8 @@
               "reason": "Frames hypotheses as causal directions."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4859,11 +5123,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Count only the three travel-mode rows and four employment columns, leaving out totals. Estimating the table margins reduces one degree in each dimension.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "df=(r-1)(c-1)=(3-1)(4-1)=6"
-          }
+            "tex": "\\begin{aligned}df&=(r-1)(c-1)\\\\&=(3-1)(4-1)\\\\&=6\\end{aligned}"
+          },
+          "Multiply the two adjusted counts, two and three, to obtain six. Subtracting one from only one dimension does not account for both margins."
         ],
         "warning": "Exclude totals and subtract one from both dimensions."
       },
@@ -4923,7 +5189,8 @@
               "reason": "Uses r times c."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -4971,8 +5238,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Expected counts are the relevant quantities for the chi-square approximation, because they describe the table’s null-model frequency structure.",
           "Chi-square approximation conditions concern expected cell counts.",
-          "Random selection is given and the sample is 1% of the population; all expected counts exceed the required boundary."
+          "Random selection is given and the sample is 1% of the population; all expected counts exceed the required boundary.",
+          "Every expected cell is greater than eight, comfortably above five. The observed count of three is a sample discrepancy, not a failed expected-count check."
         ],
         "warning": "A small observed cell is not itself a failed expected-count check."
       },
@@ -5032,7 +5301,8 @@
               "reason": "Correct: Chi-square normal-approximation conditions concern expected cell counts. Random selection is given and the sample is 1% of the population; all expected counts exceed the required boundary."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5081,8 +5351,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The large-count requirement and independence approximation address separate parts of the inference. Both must be justified for each sampled population where applicable.",
           "Homogeneity allows independent random samples from different populations.",
-          "Within each without-replacement sample, check the sampling fraction; 180/1,000 = 0.18."
+          "Within each without-replacement sample, check the sampling fraction; 180/1,000 = 0.18.",
+          "The 180-patient sample is 18% of that hospital’s population, so the usual without-replacement independence approximation lacks its required small-fraction support."
         ],
         "warning": "Large expected counts do not replace a within-group independence check."
       },
@@ -5142,7 +5414,8 @@
               "reason": "Overlooks a separate independence condition."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5224,11 +5497,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Independence would make the expected bus share among evening-shift workers equal to the overall bus share, 120/300. Apply that share to the 120 evening workers.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "E=\\frac{(120)(120)}{300}=48"
-          }
+            "tex": "\\begin{aligned}E&=\\frac{(120)(120)}{300}\\\\&=48\\end{aligned}"
+          },
+          "The expected 48 is not forced to equal the observed 60. The row-times-column-over-total formula expresses the same independence calculation."
         ],
         "warning": "Use the cell’s row and column totals, not the observed cell."
       },
@@ -5288,7 +5563,8 @@
               "reason": "Uses the bus row total."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5337,11 +5613,13 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "Three row categories and three column categories give four degrees of freedom after subtracting one in each dimension. Choose that curve before finding the tail area.",
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\begin{aligned}&df=(3-1)(3-1)=4\\\\ &p\\text{-value}=P(\\chi^2_4\\ge12)\\approx0.0174\\end{aligned}"
-          }
+            "tex": "\\begin{aligned}df&=(3-1)(3-1)\\\\&=4\\\\p\\text{-value}&=P(\\chi^2_4\\ge12)\\\\&\\approx0.0174\\end{aligned}"
+          },
+          "At chi-square 12, the df-four upper-tail probability is about 0.0174. Using df two or the lower cumulative area produces a different probability."
         ],
         "warning": "Compute df from the non-total categories, then use one upper tail."
       },
@@ -5401,7 +5679,8 @@
               "reason": "Uses the lower tail."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5453,8 +5732,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "A chi-square statistic adds squared, scaled discrepancies, so its support cannot extend below zero. Small degrees of freedom produce a long right tail.",
           "Chi-square statistics sum nonnegative squared-distance contributions.",
-          "The reference distribution is right-skewed, especially at small df, and becomes more symmetric as df increases."
+          "The reference distribution is right-skewed, especially at small df, and becomes more symmetric as df increases.",
+          "Increasing df reduces the relative skew, although chi-square values remain nonnegative. A statistic is not confined to the zero-to-one range of probabilities."
         ],
         "warning": "A chi-square statistic is not itself a p-value."
       },
@@ -5514,7 +5795,8 @@
               "reason": "Describes a standard-normal family instead."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5558,8 +5840,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "The random sample supports a population association claim, and the problem supplies adequate expected counts and a small sampling fraction. Compare the supplied p-value with 0.01.",
           "The SRS is below 10% of the population and expected counts are sufficient.",
-          "Because 0.0052 < 0.01, reject independence. Random sampling supports the stated population inference but not causation."
+          "Because 0.0052 < 0.01, reject independence. Random sampling supports the stated population inference but not causation.",
+          "Because 0.0052 is smaller, reject independence. The observational design does not isolate a causal effect, and the positive statistic does not assign an association direction."
         ],
         "warning": "An unsigned chi-square statistic gives neither causal direction nor a positive/negative association label."
       },
@@ -5619,7 +5903,8 @@
               "reason": "Reverses the decision rule."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",
@@ -5667,8 +5952,10 @@
       "solutionStimulus": null,
       "solution": {
         "steps": [
+          "All observations are already bike-share users, so the analysis concerns behavior within that selected group. It includes no direct comparison with residents who never use the service.",
           "The study conditions on already being a bike-share user.",
-          "It does not sample nonusers, so it cannot determine population participation rates or upstream selection into the service."
+          "It does not sample nonusers, so it cannot determine population participation rates or upstream selection into the service.",
+          "Even an adequately measured within-user relationship cannot establish how membership tiers affect citywide participation rates or the process of entering the user group."
         ],
         "warning": "A result within a selected population cannot answer a question about entry into that population."
       },
@@ -5733,7 +6020,8 @@
               "reason": "Correct: The study conditions on already being a bike-share user. It does not sample nonusers, so it cannot determine population participation rates or upstream selection into the service."
             }
           ],
-          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded."
+          "sourceQuality": "Equivalent hypotheses, nested valid error cases, true nonanswers, and unresolved numerical source fillers excluded.",
+          "explanationRevision": "2026-10-27: Added item-specific method justification and interpretation, following an independently reviewed statistic → method → substitution → conclusion pattern. AP text was not copied."
         },
         "original": {
           "basis": "Original synthetic context and data; private cards consulted for reasoning only.",

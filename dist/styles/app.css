@@ -134,8 +134,8 @@
 
 .explanation-panels{display:flex;flex:1;min-height:0;flex-direction:column}.explanation-panels:has(.solution-panel:not([hidden])){display:flex}.explanation-panels:not(:has(.solution-panel:not([hidden]))){display:none}
 
-/* Explicit display mathematics (math node, mode "display"). Long lines scroll rather than shrink. */
-.math-display{display:block;margin:.35em 0;overflow-x:auto;overflow-y:hidden;max-width:100%}
+/* Explicit display mathematics (math node, mode "display"). Use authored line breaks instead of horizontal scrolling. */
+.math-display{display:block;margin:.35em 0;overflow:visible;max-width:100%}
 .math-display .katex-display{margin:0;text-align:left}
 .math-display .katex-display>.katex{text-align:left}
 .math-error{color:#9b1c1c;font-family:ui-monospace,monospace;white-space:pre-wrap}
@@ -165,4 +165,16 @@
 @media(max-width:760px){
   /* The stacked keypress pane is at least 330px high. */
   .calculator-mode .calculator-stage .mini-calculator{--calc-width:min(150px,100%)}
+}
+
+/* Hypotheses remain separate rows, including prose hypotheses. */
+.hypothesis-pair{display:grid;gap:.4em;text-align:left}.hypothesis-pair>span{display:block}
+.option .math-display{margin:0;text-align:left}
+
+/* Narrow desktop columns cannot hold full-size working. Stack the two panes
+   before they become cramped; question width stays stable when revealing. */
+@media(min-width:761px) and (max-width:1100px){
+ .app:not(.calculator-mode) .workspace,.app:not(.calculator-mode) .workspace.with-solution{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:10px}
+ .app:not(.calculator-mode) .workspace:has(.drawer[data-revealed="true"]){grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+ .app:not(.calculator-mode) .drawer[data-revealed="false"]{display:none}
 }

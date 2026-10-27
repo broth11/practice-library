@@ -43,6 +43,6 @@ Display math nodes are implemented for solution steps and checked by `scripts/ch
 
 ## Rendering and accessibility
 
-Render through the shared math component with KaTeX's HTML and MathML output. Inline expressions remain part of the surrounding sentence; display expressions receive their own block spacing and overflow handling. Long displays may scroll horizontally on narrow screens but must not shrink until symbols become unreadable.
+Render through the shared math component with KaTeX's HTML and MathML output. Inline expressions remain part of the surrounding sentence; display expressions receive their own block spacing and overflow handling. Long working must be authored as several short lines aligned at the equals or other relation sign. Do not rely on horizontal scrolling, clipping, or tiny type. Define intermediate quantities for long variance sums and calculate interval endpoints on separate lines when needed. Verify the narrow desktop solution column as well as phone width.
 
 Review representative content at desktop and narrow widths. Check fraction clearance, matrix delimiters, alignment, integral and summation bounds, wrapping around inline expressions, and the MathML/accessibility tree. The source TeX, visible result, keyed answer, and solution must agree.

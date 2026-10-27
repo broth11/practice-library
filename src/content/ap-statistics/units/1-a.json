@@ -4241,7 +4241,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\bar{x}=\\frac{7+9+10+11+13}{5}=10"
+            "tex": "\\begin{aligned}S&=7+9+10\\\\&\\quad+11+13\\\\&=50\\\\\\bar x&=\\frac{S}{5}\\\\&=10\\end{aligned}"
           }
         ],
         "warning": "The smallest or largest daily count is not the mean. Add every count before dividing by five."
@@ -4533,7 +4533,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\frac{12}{20}\\times100\\%=60\\%"
+            "tex": "\\begin{aligned}\\frac{12}{20}\\times100\\%&=60\\%\\end{aligned}"
           }
         ],
         "warning": "Include dots at the stated value, and divide by the total number of dots."
@@ -4614,7 +4614,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "s=\\sqrt{\\frac{8}{3-1}}=2\\text{ millimeters}"
+            "tex": "\\begin{aligned}s&=\\sqrt{\\frac{8}{3-1}}\\\\&=2\\text{ millimeters}\\end{aligned}"
           }
         ],
         "warning": "For a sample standard deviation, divide squared deviations by n − 1 before taking the square root."
@@ -4669,7 +4669,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\bar{x}=\\frac{48+72}{12+8}=6"
+            "tex": "\\begin{aligned}\\bar{x}&=\\frac{48+72}{12+8}\\\\&=6\\end{aligned}"
           }
         ],
         "warning": "Weight each group mean by its group size. The two groups are not equally large."
@@ -6141,7 +6141,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\operatorname{Var}(Y)=3^2\\operatorname{Var}(X)=9(9)=81"
+            "tex": "\\begin{aligned}\\operatorname{Var}(Y)&=3^2\\operatorname{Var}(X)\\\\&=9(9)\\\\&=81\\end{aligned}"
           }
         ],
         "warning": "Standard deviation scales by the absolute multiplier; variance scales by its square."
@@ -7064,7 +7064,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "z=\\frac{30-40}{5}=-2"
+            "tex": "\\begin{aligned}z&=\\frac{30-40}{5}\\\\&=-2\\end{aligned}"
           }
         ],
         "warning": "The median and IQR do not replace the mean and standard deviation in a z-score."
@@ -7192,7 +7192,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "x=90+1.5(12)=108"
+            "tex": "\\begin{aligned}x&=90+1.5(12)\\\\&=108\\end{aligned}"
           }
         ],
         "warning": "Carry the standardized distance between distributions, rather than the raw score or raw point difference."
@@ -7516,7 +7516,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "s=\\frac{36}{1.5}=24\\text{ units}"
+            "tex": "\\begin{aligned}s&=\\frac{36}{1.5}\\\\&=24\\text{ units}\\end{aligned}"
           }
         ],
         "warning": "Divide the distance above the mean by the z-score; do not multiply."

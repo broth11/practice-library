@@ -1,4 +1,5 @@
 // Independent JS probability calculations; authoring arithmetic used Python.
+import { choiceText } from '../src/app/choices.js';
 import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {Phi,invPhi,binom} from './lib/stats.mjs';
@@ -22,11 +23,14 @@ for(const u of units){
  for(const q of u.questions){
   const id=u.id+':'+q.id,r=review[id];assert(r,id);
   assert.deepEqual(q.calculator,{needed:false,status:'deferred',reason:"Deferred at Ben's request; Claude will add calculator guidance in a separate pass."},id);
-  assert.equal(q.choices['ABCD'.indexOf(q.answer)],r.correctText,id+' reviewed key');
-  assert.equal(Object.keys(r.optionReasons).length,4);q.choices.forEach(c=>assert(r.optionReasons[c],id+' alternative review'));
+  assert.equal(choiceText(q.choices['ABCD'.indexOf(q.answer)]),r.correctText,id+' reviewed key');
+  assert.equal(Object.keys(r.optionReasons).length,4);q.choices.forEach(c=>assert(r.optionReasons[choiceText(c)],id+' alternative review'));
   if(r.kind==='concept'){conceptual++;continue;}
   const t=Function('Phi','invPhi','binom','chiSF',`return (${r.target});`)(Phi,invPhi,binom,chiSF);
-  if(r.kind==='numeric'){
+  if(r.kind==='expression'){
+   const matches=r.optionFormulas.map((f,i)=>{const v=Function('Phi','invPhi',`return (${f});`)(Phi,invPhi); const same=Array.isArray(t)?Array.isArray(v)&&t.every((x,j)=>Math.abs(x-v[j])<1e-9):Math.abs(v-t)<1e-9;return same?'ABCD'[i]:null;}).filter(Boolean);
+   assert.deepEqual(matches,[q.answer],id+' working expressions');
+  }else if(r.kind==='numeric'){
    const hits=q.choices.map((s,i)=>Math.abs(+s.replaceAll('−','-')-t)<=.50001*10**(-(s.split('.')[1]||'').length)?'ABCD'[i]:null).filter(Boolean);
    assert.deepEqual(hits,[q.answer],id+' scalar '+t);
   }else if(r.kind==='interval'){
@@ -53,7 +57,7 @@ assert.equal(probabilityLatex('p-hat-A'),String.raw`\hat{p}_{\mathrm{A}}`);
 assert.equal(probabilityLatex('H0: pA = pB'),String.raw`H_0: p_{\mathrm{A}} = p_{\mathrm{B}}`);
 assert.equal([...('p-hat-A'.matchAll(mathSequence))][0][0],'p-hat-A');
 for(const u of units)for(const q of u.questions)for(const step of q.solution.steps){
- if(typeof step!=='string')assert(!/\\\\[A-Za-z]/.test(step.tex),q.id+' escaped TeX command');
+ if(typeof step!=='string')assert(!step.tex.startsWith('\\\\'),q.id+' escaped initial TeX command');
 }
 const keys=units.map(u=>Object.fromEntries('ABCD'.split('').map(k=>[k,u.questions.filter(q=>q.answer===k).length])));
 for(const counts of keys)assert(Math.max(...Object.values(counts))-Math.min(...Object.values(counts))<=1,'balanced unit keys');

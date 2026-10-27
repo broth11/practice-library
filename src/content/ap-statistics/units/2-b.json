@@ -1103,7 +1103,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\operatorname{Var}(X)=(0-1.6)^2(0.20)+(2-1.6)^2(0.80)=0.64"
+            "tex": "\\begin{aligned}\\operatorname{Var}(X)&=(0-1.6)^2(0.20)\\\\&\\quad +(2-1.6)^2(0.80)\\\\&=0.512+0.128\\\\&=0.64\\end{aligned}"
           },
           "Variance weights each squared deviation by its probability. Its units are squared parts."
         ],
@@ -1523,7 +1523,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\sigma_X=\\sqrt{(0-2)^2(0.25)+(2-2)^2(0.50)+(4-2)^2(0.25)}=\\sqrt{2}\\approx1.41"
+            "tex": "\\begin{aligned}V&=(0-2)^2(0.25)\\\\&\\quad +(2-2)^2(0.50)\\\\&\\quad +(4-2)^2(0.25)\\\\&=2\\\\\\sigma_X&=\\sqrt{V}\\\\&\\approx1.41\\end{aligned}"
           },
           "This measures the typical distance of afternoon cancellation counts from the mean of 2."
         ],
@@ -2611,7 +2611,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\frac{np(1-p)}{np}=\\frac{9}{12}=1-p"
+            "tex": "\\begin{aligned}\\frac{np(1-p)}{np}&=\\frac{9}{12}\\\\&=1-p\\end{aligned}"
           },
           "Therefore p = 1 − 0.75 = 0.25."
         ],
@@ -2880,7 +2880,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\sigma_X=\\sqrt{np(1-p)}=\\sqrt{50(0.20)(0.80)}=\\sqrt{8}\\approx2.83"
+            "tex": "\\begin{aligned}\\sigma_X&=\\sqrt{np(1-p)}\\\\&=\\sqrt{50(0.20)(0.80)}\\\\&=\\sqrt{8}\\\\&\\approx2.83\\end{aligned}"
           }
         ],
         "warning": "The mean is 10 and the variance is 8; neither is the standard deviation."
@@ -3916,7 +3916,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "z_A=\\frac{82-70}{8}=1.5,\\qquad z_B=\\frac{660-500}{80}=2.0"
+            "tex": "\\begin{aligned}z_A&=\\frac{82-70}{8}\\\\&=1.5\\\\z_B&=\\frac{660-500}{80}\\\\&=2.0\\end{aligned}"
           },
           "A larger positive z-score places the student farther above the relevant mean."
         ],
@@ -6723,7 +6723,7 @@
           {
             "type": "math",
             "mode": "display",
-            "tex": "\\widehat{P}(\\bar{X}\\ge12)=\\frac{15}{1000}=0.015"
+            "tex": "\\begin{aligned}\\widehat{P}(\\bar{X}\\ge12)&=\\frac{15}{1000}\\\\&=0.015\\end{aligned}"
           },
           "This small upper-tail estimate provides evidence against the claimed mean in the stated direction."
         ],
