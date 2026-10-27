@@ -1,9 +1,10 @@
 # Handoff
 
-## Full workspace for solutions and calculators (2026-10-27, Codex)
+## Navigation collapse correction (2026-10-27, Codex)
 
-- At Ben’s request, opening either view collapses the question panel. Explanations scroll vertically automatically. Back to question, Escape and question navigation restore the question; calculator mode also has a direct Question button. This supersedes the earlier stable question-width and stacked question/solution decisions.
-- Includes the final phone fix keeping each symbolic hypothesis label and expression together.
+- Ben clarified that Courses/Units/Questions navigation should collapse when an explanation or calculator opens. The question card must remain visible. Both views now call the shared navigation-collapse action; the three narrow navigation handles remain available to reopen a list.
+- Removed the previous question-hiding/full-width-solution behavior and restored shared question/solution and question/keypress/calculator layouts. Automatic vertical explanation scrolling and keyboard access are retained. Closing a solution leaves navigation collapsed until the user reopens it.
+- This supersedes the previous full-workspace interpretation. No question content, keys or calculator guides changed.
 
 ## Readable working and fuller explanations (2026-10-27, Codex)
 

@@ -177,7 +177,6 @@ function openSolution() {
   viewed.add(answerKey(question));
   solutionShell.hidden = false;
   drawer.dataset.revealed = 'true';
-  questionArea.hidden = true;
   document.getElementById('solution-title').textContent = `Question ${String(state.current + 1).padStart(2, '0')}`;
   questionArea.querySelector('.solution-trigger').setAttribute('aria-expanded', 'true');
   questionArea.querySelector('.solution-trigger').innerHTML = 'Hide solution <span aria-hidden="true">↗</span>';
@@ -191,7 +190,6 @@ function closeSolution(focus = false) {
   state.solutionView = 'explanation';
   solutionShell.hidden = true;
   drawer.dataset.revealed = 'false';
-  questionArea.hidden = false;
   app.classList.remove('calculator-mode');
   const trigger = questionArea.querySelector('.solution-trigger');
   fit();
@@ -201,7 +199,7 @@ function closeSolution(focus = false) {
 function setSolutionView(view) {
   const question = state.unit.questions[state.current];
   if (view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred')) view = 'explanation';
-  if (view === 'calculator') setRoutePane(state.routePane, false);
+  setRoutePane(state.routePane, false);
   state.solutionView = view;
   document.querySelectorAll('.solution-tab').forEach(button => {
     button.hidden = button.dataset.view === 'calculator' && (!question.calculator || question.calculator.status === 'deferred');
@@ -213,7 +211,7 @@ function setSolutionView(view) {
   calculatorView.hidden = view !== 'calculator';
   app.classList.toggle('calculator-mode', view === 'calculator' && Boolean(question.calculator?.needed || question.calculator?.distribution));
   if (view === 'explanation') renderExplanation(question);
-  else mountCalculator(calculatorView, question, () => transitionPanels(() => setSolutionView('explanation')), () => transitionPanels(() => closeSolution(true)));
+  else mountCalculator(calculatorView, question, () => transitionPanels(() => setSolutionView('explanation')));
   if (view === 'calculator') calculatorView.querySelector('h2, h3')?.focus();
   fit();
 }
