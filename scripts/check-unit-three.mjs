@@ -17,10 +17,10 @@ function chiSF(x,df){
 }
 let numeric=0,conceptual=0;
 for(const u of units){
- assert.equal(u.questions.length,u.id==='3-a'?80:50);
+ assert.equal(u.questions.length,u.id==='3-a'?160:100);
  assert.equal(u.lessons.length,u.id==='3-a'?8:5);
- for(const l of u.lessons)assert.equal(u.questions.filter(q=>q.lesson===l.id).length,10,l.id);
- for(const q of u.questions){
+ for(const l of u.lessons)assert.equal(u.questions.filter(q=>q.lesson===l.id).length,20,l.id);
+ for(const q of u.questions.filter(q=>!q.id.startsWith('x'))){
   const id=u.id+':'+q.id,r=review[id];assert(r,id);
   assert.deepEqual(q.calculator,{needed:false,status:'deferred',reason:"Deferred at Ben's request; Claude will add calculator guidance in a separate pass."},id);
   assert.equal(choiceText(q.choices['ABCD'.indexOf(q.answer)]),r.correctText,id+' reviewed key');
@@ -50,7 +50,7 @@ assert(Math.sqrt(.25/100)>Math.sqrt(.16/100));assert((2.576/1.96)*Math.sqrt(400/
 const figs=load('src/diagrams/ap-statistics.json').diagrams.filter(d=>d.file.startsWith('u3'));
 assert.equal(figs.length,6);for(const d of figs){assert.equal(d.questions.length,1);assert(!d.area);}
 assert.equal(Object.keys(review).length,130);
-console.log(`Unit 3: ${numeric} numerical/decision targets independently recomputed; ${conceptual} conceptual keys and all 520 alternatives reviewed; 13 lessons × 10; six figures; 130 exact deferrals.`);
+console.log(`Unit 3: ${numeric} numerical/decision targets independently recomputed; ${conceptual} conceptual keys and all 520 alternatives reviewed; 130 original items; six original figures; original deferrals preserved.`);
 // The new notation must remain semantic KaTeX input, never escaped line breaks.
 const { probabilityLatex, mathSequence } = await import('../src/app/math.js');
 assert.equal(probabilityLatex('p-hat-A'),String.raw`\hat{p}_{\mathrm{A}}`);

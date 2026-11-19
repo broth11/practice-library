@@ -1,3 +1,4 @@
+import './check-expansion.mjs';
 // Independent answer-key check. Every target below is computed from the problem's
 // inputs (event counts, enumeration, or distribution parameters), never read from
 // the keyed answer. Exactly one choice must match each target, and it must be the key.

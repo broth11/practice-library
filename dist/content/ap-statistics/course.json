@@ -39,7 +39,7 @@
       "id": "3-a",
       "title": "Unit 3.A",
       "description": "Inference for proportions",
-      "questionCount": 80,
+      "questionCount": 160,
       "lessonCount": 8,
       "source": "content/ap-statistics/units/3-a.json"
     },
@@ -47,9 +47,33 @@
       "id": "3-b",
       "title": "Unit 3.B",
       "description": "Comparing proportions and categorical distributions",
-      "questionCount": 50,
+      "questionCount": 100,
       "lessonCount": 5,
       "source": "content/ap-statistics/units/3-b.json"
+    },
+    {
+      "id": "4-a",
+      "title": "Unit 4.A",
+      "description": "Inference for one mean and paired mean differences",
+      "source": "content/ap-statistics/units/4-a.json",
+      "questionCount": 100,
+      "lessonCount": 5
+    },
+    {
+      "id": "4-b",
+      "title": "Unit 4.B",
+      "description": "Inference for two independent population means",
+      "source": "content/ap-statistics/units/4-b.json",
+      "questionCount": 100,
+      "lessonCount": 5
+    },
+    {
+      "id": "5",
+      "title": "Unit 5",
+      "description": "Regression analysis",
+      "source": "content/ap-statistics/units/5.json",
+      "questionCount": 100,
+      "lessonCount": 5
     }
   ]
 }

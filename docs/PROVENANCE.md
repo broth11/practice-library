@@ -171,3 +171,12 @@ Nine Unit 3 items now assess working expressions, with all four options independ
 ## Fuller Unit 1 and 2 explanations (2026-10-27)
 
 At Ben’s request, all 420 earlier solutions were reviewed and expanded using the existing original library scenarios and reasoning. No new AP source text was consulted or copied for the additions. Historical question provenance, keys and calculator descriptors remain intact; Unit 3 is unchanged. Existing answer checks and the equation checker were rerun. The coverage and browser verification record is `docs/UNIT-1-2-EXPLANATION-REVIEW.md`. This is AI and tool review without recorded human sign-off.
+
+
+## 2026-11-19: inference and regression expansion
+
+Added 430 questions with fresh synthetic data and local distractor recipes. The private archetype library's operating rules and reasoning for sample proportions, interval widths, two-proportion sampling, and chi-square conditions were consulted. The Fall 2026 CED PDF was read directly for Unit 4 and 5 scope. Existing project authoring references supplied the public AP style conventions. No source question prose or private card contents were copied into authored questions. New labels are local CED-derived builds with no asserted exemplar lineage.
+
+The diagram library's template index, scatter-family guidance, and gallery rules were consulted. Its TikZ scatter/residual families informed the reusable capabilities considered; the project retains its own pinned Matplotlib AP grayscale renderer. No external source image or template code was copied. The 22 new figures have synthetic paired coordinates in the project's diagram spec. Their use and review are recorded in `INFERENCE-REGRESSION-EXPANSION.md`.
+
+The standard checker recomputes 107 new numerical targets with JavaScript, independently of Python/SciPy authoring calculations. The remaining 323 questions have author reasoning records, not a separate independent semantic review. The original questions are preserved. All additions defer calculator guidance; no human or physical-calculator verification is claimed.
