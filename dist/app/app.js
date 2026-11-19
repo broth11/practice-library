@@ -1,11 +1,11 @@
-import { animateLesson } from './lesson-motion.js?v=7d2900eb6c72';
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=7d2900eb6c72';
-import { fitQuestion } from './question-fit.js?v=7d2900eb6c72';
-import { renderStimulus } from './stimulus.js?v=7d2900eb6c72';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=7d2900eb6c72';
-import { renderStep, typesetMath } from './math.js?v=7d2900eb6c72';
-import { mountCalculator } from './calculator.js?v=7d2900eb6c72';
-import { renderChoice, choiceText } from './choices.js?v=7d2900eb6c72';
+import { animateLesson } from './lesson-motion.js?v=daa0d10c27a8';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=daa0d10c27a8';
+import { fitQuestion } from './question-fit.js?v=daa0d10c27a8';
+import { renderStimulus } from './stimulus.js?v=daa0d10c27a8';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=daa0d10c27a8';
+import { renderStep, typesetMath } from './math.js?v=daa0d10c27a8';
+import { mountCalculator } from './calculator.js?v=daa0d10c27a8';
+import { renderChoice, choiceText } from './choices.js?v=daa0d10c27a8';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');
@@ -153,7 +153,7 @@ async function selectLesson(lessonId) {
     await animateLesson({ pane, group, retiringGroup,
       startOffset: Math.max(0, (headingTop ?? pane.getBoundingClientRect().top) - pane.getBoundingClientRect().top),
       reserveSpace: reserveLessonScrollSpace, signal: motion.signal,
-      duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300 });
+      reducedMotion: matchMedia('(prefers-reduced-motion: reduce)').matches });
   } finally {
     motion.abort();
     if (lessonMotion === motion) lessonMotion = undefined;

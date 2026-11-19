@@ -1,5 +1,7 @@
 // Two sequential phases share one clock and cancellation signal. Native smooth
-// scrolling has browser-dependent timing, so drive the 300ms slide explicitly.
+// scrolling has browser-dependent timing, so drive both phase durations explicitly.
+const MOVE_DURATION = 600;
+const REVEAL_DURATION = 500;
 const ease = t => t * t * (3 - 2 * t);
 
 function animateProgress(duration, update, signal) {
@@ -26,7 +28,7 @@ function animateProgress(duration, update, signal) {
   });
 }
 
-export async function animateLesson({ pane, group, retiringGroup, startOffset, reserveSpace, signal, duration = 300 }) {
+export async function animateLesson({ pane, group, retiringGroup, startOffset, reserveSpace, signal, reducedMotion = false }) {
   const dots = group.querySelector('.question-dots');
   const originalStyle = dots.style.cssText;
   const originalInert = dots.inert;
@@ -65,13 +67,13 @@ export async function animateLesson({ pane, group, retiringGroup, startOffset, r
     // heading's screen position before starting its upward movement.
     pane.scrollTop = Math.max(0, target - startOffset);
     const from = pane.scrollTop;
-    if (!await animateProgress(duration, progress => {
+    if (!await animateProgress(reducedMotion ? 0 : MOVE_DURATION, progress => {
       pane.scrollTop = from + (target - from) * progress;
     }, signal)) return false;
     retire();
     reserveSpace(pane);
     pane.scrollTop = targetTop();
-    if (!await animateProgress(duration, reveal, signal)) return false;
+    if (!await animateProgress(reducedMotion ? 0 : REVEAL_DURATION, reveal, signal)) return false;
     return true;
   } finally {
     retire();

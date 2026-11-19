@@ -153,7 +153,7 @@ async function selectLesson(lessonId) {
     await animateLesson({ pane, group, retiringGroup,
       startOffset: Math.max(0, (headingTop ?? pane.getBoundingClientRect().top) - pane.getBoundingClientRect().top),
       reserveSpace: reserveLessonScrollSpace, signal: motion.signal,
-      duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300 });
+      reducedMotion: matchMedia('(prefers-reduced-motion: reduce)').matches });
   } finally {
     motion.abort();
     if (lessonMotion === motion) lessonMotion = undefined;
