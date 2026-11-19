@@ -1,4 +1,4 @@
-import { renderMathNode } from './math.js?v=b6d669bfb43c';
+import { renderMathNode } from './math.js?v=438b865789ff';
 // Structured answers carry data, rather than HTML or layout encoded in prose.
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
 

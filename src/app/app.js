@@ -41,12 +41,12 @@ const fetchJson = async source => {
 };
 const answerKey = question => `${state.unit.id}:${question.id}`;
 
-function transitionPanels(update) {
+function transitionPanels(update, afterTransition) {
   return runPanelTransition(() => {
     update();
     // View transition capture pauses animation frames, so fit synchronously.
     fit(true);
-  });
+  }, afterTransition);
 }
 
 function routeHash() {
@@ -120,6 +120,21 @@ function selectLesson(lessonId) {
   if (index >= 0) showQuestion(index);
 }
 
+function scrollToLesson(lessonId) {
+  if (!state.routeExpanded || state.routePane !== 'questions') return;
+  if (state.unit?.questions[state.current]?.lesson !== lessonId) return;
+  const pane = routeContent.querySelector('.route-pane');
+  const button = [...routeContent.querySelectorAll('[data-lesson]')]
+    .find(item => item.dataset.lesson === lessonId);
+  const group = button?.closest('.nav-group');
+  if (!pane?.clientHeight || !group) return;
+  // Move only the navigation scroller, keeping the lesson heading above its
+  // question grid. Waiting for the panel transition makes the scroll visible.
+  const top = pane.scrollTop + group.getBoundingClientRect().top - pane.getBoundingClientRect().top - 8;
+  pane.scrollTo({ top: Math.max(0, top), left: 0,
+    behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+}
+
 function progressForUnit() {
   if (!state.unit) return { answered: 0, opened: 0 };
   const prefix = `${state.unit.id}:`;
@@ -130,9 +145,14 @@ function progressForUnit() {
 }
 
 function renderNavigation() {
+  const previousPane = routeContent.querySelector('.route-pane');
+  const previousScroll = previousPane && state.unit && previousPane.dataset.questionUnit === state.unit.id ? previousPane.scrollTop : 0;
   const panes = ['courses', 'units', 'questions'];
   rail.innerHTML = panes.map(pane => `<button type="button" role="tab" class="route-tab" aria-selected="${pane === state.routePane}" ${pane === 'units' && !state.course || pane === 'questions' && !state.unit ? 'disabled' : ''} data-pane="${pane}"><span class="tab-arrow" aria-hidden="true">${pane === state.routePane && state.routeExpanded ? '◀' : '▶'}</span><span>${pane[0].toUpperCase() + pane.slice(1)}</span></button>`).join('');
-  rail.querySelectorAll('[data-pane]').forEach(button => button.onclick = () => transitionPanels(() => setRoutePane(button.dataset.pane, state.routePane === button.dataset.pane ? !state.routeExpanded : true)));
+  rail.querySelectorAll('[data-pane]').forEach(button => button.onclick = () => transitionPanels(
+    () => setRoutePane(button.dataset.pane, state.routePane === button.dataset.pane ? !state.routeExpanded : true),
+    () => scrollToLesson(state.unit?.questions[state.current]?.lesson)
+  ));
   if (!state.routeExpanded) { routeContent.innerHTML = ''; return; }
 
   if (state.routePane === 'courses') {
@@ -147,8 +167,12 @@ function renderNavigation() {
   }
   const currentQuestion = state.unit.questions[state.current];
   const progress = progressForUnit();
-  routeContent.innerHTML = `<section class="route-pane"><header class="brand"><div class="eyebrow">${escapeHtml(state.course.title)}</div><h1>${escapeHtml(state.unit.title)}</h1><p>${escapeHtml(state.unit.description)}</p></header><p class="route-label">Lessons &amp; questions</p><nav aria-label="${escapeHtml(state.unit.title)} lessons and questions">${state.unit.lessons.map(lesson => { const indices = state.unit.questions.flatMap((question, index) => question.lesson === lesson.id ? [index] : []); const open = currentQuestion?.lesson === lesson.id && app.classList.contains('practice-started'); return `<div class="nav-group ${open ? 'lesson-open' : ''}"><button type="button" class="section-link" data-lesson="${lesson.id}" aria-expanded="${open}"><span class="section-number">Lesson ${lesson.id}</span><span class="section-label">${escapeHtml(lesson.title)}</span></button><div class="question-dots" aria-label="Questions in lesson ${lesson.id}">${indices.map((index, local) => { const question = state.unit.questions[index]; const selected = index === state.current && app.classList.contains('practice-started'); return `<button type="button" class="question-dot ${selected ? 'current' : ''} ${answers.has(answerKey(question)) ? 'answered' : ''}" data-index="${index}" ${selected ? 'aria-current="step"' : ''}>${local + 1}</button>`; }).join('')}</div></div>`; }).join('')}</nav><footer class="side-footer"><span>${progress.answered}</span> / ${state.unit.questions.length} answers selected<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="${state.unit.questions.length}" aria-valuenow="${progress.answered}"><span style="width:${progress.answered / state.unit.questions.length * 100}%"></span></div><span>${progress.opened}</span> / ${state.unit.questions.length} solutions opened</footer></section>`;
-  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => transitionPanels(() => selectLesson(button.dataset.lesson)));
+  routeContent.innerHTML = `<section class="route-pane" data-question-unit="${state.unit.id}"><header class="brand"><div class="eyebrow">${escapeHtml(state.course.title)}</div><h1>${escapeHtml(state.unit.title)}</h1><p>${escapeHtml(state.unit.description)}</p></header><p class="route-label">Lessons &amp; questions</p><nav aria-label="${escapeHtml(state.unit.title)} lessons and questions">${state.unit.lessons.map(lesson => { const indices = state.unit.questions.flatMap((question, index) => question.lesson === lesson.id ? [index] : []); const open = currentQuestion?.lesson === lesson.id && app.classList.contains('practice-started'); return `<div class="nav-group ${open ? 'lesson-open' : ''}"><button type="button" class="section-link" data-lesson="${lesson.id}" aria-expanded="${open}"><span class="section-number">Lesson ${lesson.id}</span><span class="section-label">${escapeHtml(lesson.title)}</span></button><div class="question-dots" aria-label="Questions in lesson ${lesson.id}">${indices.map((index, local) => { const question = state.unit.questions[index]; const selected = index === state.current && app.classList.contains('practice-started'); return `<button type="button" class="question-dot ${selected ? 'current' : ''} ${answers.has(answerKey(question)) ? 'answered' : ''}" data-index="${index}" ${selected ? 'aria-current="step"' : ''}>${local + 1}</button>`; }).join('')}</div></div>`; }).join('')}</nav><footer class="side-footer"><span>${progress.answered}</span> / ${state.unit.questions.length} answers selected<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="${state.unit.questions.length}" aria-valuenow="${progress.answered}"><span style="width:${progress.answered / state.unit.questions.length * 100}%"></span></div><span>${progress.opened}</span> / ${state.unit.questions.length} solutions opened</footer></section>`;
+  routeContent.querySelector('.route-pane').scrollTop = previousScroll;
+  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => {
+    const lessonId = button.dataset.lesson;
+    return transitionPanels(() => selectLesson(lessonId), () => scrollToLesson(lessonId));
+  });
   routeContent.querySelectorAll('[data-index]').forEach(button => button.onclick = () => showQuestion(Number(button.dataset.index)));
 }
 

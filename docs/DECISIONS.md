@@ -1,5 +1,9 @@
 # Practice Library decision record
 
+## Reveal selected lesson buttons (2026-11-19)
+
+Selecting a lesson smoothly scrolls only the lesson pane to reveal its heading and question grid. Preserve the pane position while rebuilding navigation, then begin the scroll after the panel transition so the movement is visible. Reopening Questions reveals the current lesson too. Reduced-motion preferences use immediate scrolling; a newer transition invalidates an older completion callback. Keep vertical navigation scrolling and suppress horizontal overflow.
+
 ## Authoritative source and new topic grouping (2026-11-19)
 
 Ben designated this GitHub repository as the source of truth. Earlier instructions requiring paired Sites publication are superseded for subsequent GitHub work. Build from `src/` and preserve the repository PR workflow.
