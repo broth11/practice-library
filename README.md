@@ -38,7 +38,9 @@ Node 20 or later. Figures also need `pip install -r scripts/diagrams/requirement
 
 ## Hosting
 
-The primary site is deployed from `dist/`. The [GitHub Pages copy](https://broth11.github.io/practice-library/) builds from `src/` through the Pages workflow. It includes Units 1.A, 1.B, 2.A, and 2.B. Units 1.A and 1.B contain twenty questions per lesson and provide questions, diagrams, and worked explanations without calculator references; see `docs/UNIT-1-EXPANSION-REVIEW.md`.
+This GitHub repository is the authoritative source for content and application changes (Ben's instruction, 19 November 2026). The [GitHub Pages site](https://broth11.github.io/practice-library/) builds from `src/` through the Pages workflow. The former Sites project is no longer the source of truth and does not need a separate publication pass unless requested.
+
+The bank contains 980 questions in nine modules, with twenty questions per lesson. Unit 3.A has 160 questions; 3.B, 4.A, 4.B, and 5 each have 100. Unit 4.A covers CED 4.1–4.5, 4.B covers 4.6–4.10, and Unit 5 covers 5.1–5.5. Unit 1 is explanation-only. Unit 3 and the new Unit 4 and 5 questions defer calculator guidance. See `docs/INFERENCE-REGRESSION-EXPANSION.md` for the latest inventory and review limits.
 
 ## License
 

@@ -1,5 +1,19 @@
 # Handoff
 
+## Current state: Unit 3 expansion and Units 4–5 (2026-11-19, Codex)
+
+- GitHub is now the authoritative source, per Ben. The older Sites synchronization instructions below are historical and superseded. No Sites publication is required for this work.
+- Added 430 original questions: ten per existing Unit 3 lesson (130 total), plus twenty per CED topic 4.1–4.10 and 5.1–5.5 (300 total). The bank now has 980 questions, nine modules, and 49 lessons, all with twenty questions. Original question content and IDs are preserved.
+- Unit 4.A groups CED 4.1–4.5; Unit 4.B groups 4.6–4.10. No local STS Unit 4 map exists, so lesson IDs intentionally use the CED codes. Unit 5 uses 5.1–5.5. New labels are honest local CED-derived builds, not claimed AP card matches.
+- All 430 additions use the existing exact deferred calculator contract. Unit 3 now has 260 deferrals; new Units 4 and 5 have 300. Existing Unit 2 guides are retained.
+- Added 22 reproducible AP grayscale scatter/residual figures using the shared descriptor renderer. Numerical targets are recomputed independently by `scripts/check-expansion.mjs`, imported by standard checks; 323 conceptual items carry author rationale records, not independent reviewer approval.
+- See `docs/INFERENCE-REGRESSION-EXPANSION.md` for scope, checks, and verification limits. AI/tool checks are not human or physical-calculator sign-off.
+
+## Historical handoff entries
+
+The entries below describe earlier work. Later dated instructions above take precedence.
+
+
 ## Fuller Unit 1 and 2 explanations (2026-10-27, Codex)
 
 - Reviewed and expanded all 420 earlier solutions with question-specific reasoning, interpretation or limits. Preserved all question fields outside solutions, all warnings and all calculator guidance. Unit 3 is unchanged. Removed repeated introductions, a duplicate sentence and b34’s misleading rounded intermediate sum.

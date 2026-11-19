@@ -526,10 +526,29 @@ def chi_square_curve(spec):
     return finish(fig)
 
 
+def scatter_points(spec):
+    """AP grayscale scatter/residual plots from exact paired observations."""
+    assert len(spec['x']) == len(spec['y']) and len(spec['x']) > 1
+    fig, ax = plt.subplots(figsize=WIDE)
+    if spec.get('groups'):
+        cut = spec['groups'][0]
+        ax.scatter(spec['x'][:cut], spec['y'][:cut], s=20, c=INK, label='Plot A')
+        ax.scatter(spec['x'][cut:], spec['y'][cut:], s=24, facecolors='none', edgecolors=INK, marker='s', label='Plot B')
+        ax.legend(loc='upper left', bbox_to_anchor=(1.01, 1), frameon=True)
+    else:
+        ax.scatter(spec['x'], spec['y'], s=22, c=INK, zorder=3)
+    if spec.get('residual'):
+        ax.axhline(0, color=DARK, linewidth=.8)
+    ax.set_xlabel(spec['xLabel']); ax.set_ylabel(spec['yLabel'])
+    ax.grid(color=GRID, linewidth=.4); ax.set_axisbelow(True)
+    ax.margins(.12)
+    return finish(fig)
+
+
 KINDS = {fn.__name__: fn for fn in (discrete_bars, binomial_bars, normal, normal_comparison, frequency_histogram,
                                     relative_frequency_bars, dotplot, segmented, venn, tree,
                                     categorical_bars, categorical_pie, summary_boxplots, paired_histograms, grouped_bars, mosaic,
-                                    comparison_dotplots, study_flow, sampling_grid, proportion_dotplot, chi_square_curve)}
+                                    comparison_dotplots, study_flow, sampling_grid, proportion_dotplot, chi_square_curve, scatter_points)}
 
 
 def display_size(svg: bytes) -> tuple[int, int]:

@@ -1,5 +1,11 @@
 # Practice Library decision record
 
+## Authoritative source and new topic grouping (2026-11-19)
+
+Ben designated this GitHub repository as the source of truth. Earlier instructions requiring paired Sites publication are superseded for subsequent GitHub work. Build from `src/` and preserve the repository PR workflow.
+
+Unit 4.A groups CED 4.1–4.5 and Unit 4.B groups 4.6–4.10. Unit 5 uses CED 5.1–5.5. These new lesson IDs are CED codes; no uninspected STS lesson map is claimed. Calculator guidance is explicitly deferred for the 430 new questions.
+
 ## Reading width and fitter priorities (2026-10-26)
 
 - Ben approved increasing the desktop question share from 59% to 64% of the sidebar-open workspace. Preserve this reading width when navigation collapses and across solution modes; calculator instructions and hardware share the remaining space equally.

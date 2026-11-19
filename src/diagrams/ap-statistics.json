@@ -2319,6 +2319,702 @@
       "cutoff": null,
       "xMax": 20,
       "xLabel": "Chi-square statistic"
+    },
+    {
+      "file": "x5001-scatter-direction.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5001"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        3,
+        6,
+        5,
+        9,
+        11
+      ],
+      "xLabel": "Sunlight (hours)",
+      "yLabel": "Weekly growth (cm)",
+      "residual": false
+    },
+    {
+      "file": "x5002-scatter-pairing.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5002"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        3,
+        6,
+        5,
+        9,
+        11
+      ],
+      "xLabel": "Sunlight (hours)",
+      "yLabel": "Weekly growth (cm)",
+      "residual": false
+    },
+    {
+      "file": "x5003-scatter-axes.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5003"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        3,
+        6,
+        5,
+        9,
+        11
+      ],
+      "xLabel": "Sunlight (hours)",
+      "yLabel": "Weekly growth (cm)",
+      "residual": false
+    },
+    {
+      "file": "x5004-scatter-form.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5004"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        2,
+        3.2,
+        4,
+        4.5,
+        4.8,
+        5,
+        5.1,
+        5.15,
+        5.2
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5005-scatter-outlier.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5005"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        14
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5006-scatter-strength.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5006"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        2,
+        3.5,
+        3,
+        5,
+        5.2,
+        6,
+        7.5,
+        8,
+        8.1,
+        5,
+        0.5,
+        7,
+        3,
+        8.2,
+        2,
+        9.5,
+        5,
+        12.1
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false,
+      "groups": [
+        9,
+        9
+      ]
+    },
+    {
+      "file": "x5009-scatter-clusters.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5009"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "y": [
+        2,
+        3,
+        3.5,
+        4.5,
+        8,
+        9.5,
+        10,
+        11
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5051-scatter-direction.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5051"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        22,
+        20,
+        19,
+        15,
+        14
+      ],
+      "xLabel": "Cart age (months)",
+      "yLabel": "Range (km)",
+      "residual": false
+    },
+    {
+      "file": "x5052-scatter-pairing.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5052"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        22,
+        20,
+        19,
+        15,
+        14
+      ],
+      "xLabel": "Cart age (months)",
+      "yLabel": "Range (km)",
+      "residual": false
+    },
+    {
+      "file": "x5053-scatter-axes.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5053"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "y": [
+        22,
+        20,
+        19,
+        15,
+        14
+      ],
+      "xLabel": "Cart age (months)",
+      "yLabel": "Range (km)",
+      "residual": false
+    },
+    {
+      "file": "x5054-scatter-form.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5054"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        2,
+        3.2,
+        4,
+        4.5,
+        4.8,
+        5,
+        5.1,
+        5.15,
+        5.2
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5055-scatter-outlier.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5055"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        14
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5056-scatter-strength.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5056"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        2,
+        3.5,
+        3,
+        5,
+        5.2,
+        6,
+        7.5,
+        8,
+        8.1,
+        5,
+        0.5,
+        7,
+        3,
+        8.2,
+        2,
+        9.5,
+        5,
+        12.1
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false,
+      "groups": [
+        9,
+        9
+      ]
+    },
+    {
+      "file": "x5059-scatter-clusters.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5059"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "y": [
+        2,
+        3,
+        3.5,
+        4.5,
+        8,
+        9.5,
+        10,
+        11
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5017-correlation-zero.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5017"
+      ],
+      "x": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        16,
+        9,
+        4,
+        1,
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5067-correlation-zero.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5067"
+      ],
+      "x": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        16,
+        9,
+        4,
+        1,
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Response",
+      "residual": false
+    },
+    {
+      "file": "x5035-residual-curve.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5035"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        3,
+        1.5,
+        0.2,
+        -1,
+        -2,
+        -1,
+        0.2,
+        1.5,
+        3
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
+    },
+    {
+      "file": "x5036-residual-random.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5036"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        0.5,
+        -0.7,
+        0.3,
+        -0.2,
+        0.8,
+        -0.4,
+        -0.6,
+        0.2,
+        0.1
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
+    },
+    {
+      "file": "x5040-residual-outlier.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5040"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        0.3,
+        -0.2,
+        0.1,
+        0.4,
+        -0.3,
+        0.1,
+        4,
+        -0.2,
+        0.2
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
+    },
+    {
+      "file": "x5085-residual-curve.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5085"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        3,
+        1.5,
+        0.2,
+        -1,
+        -2,
+        -1,
+        0.2,
+        1.5,
+        3
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
+    },
+    {
+      "file": "x5086-residual-random.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5086"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        0.5,
+        -0.7,
+        0.3,
+        -0.2,
+        0.8,
+        -0.4,
+        -0.6,
+        0.2,
+        0.1
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
+    },
+    {
+      "file": "x5090-residual-outlier.svg",
+      "kind": "scatter_points",
+      "questions": [
+        "5:x5090"
+      ],
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "y": [
+        0.3,
+        -0.2,
+        0.1,
+        0.4,
+        -0.3,
+        0.1,
+        4,
+        -0.2,
+        0.2
+      ],
+      "xLabel": "Explanatory value",
+      "yLabel": "Residual",
+      "residual": true
     }
   ]
 }

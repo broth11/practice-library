@@ -1219,6 +1219,906 @@
       }
     },
     {
+      "id": "x3b001",
+      "lesson": "3.B.1",
+      "archetype": "local_two_prop_center_new",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What is the mean sample-proportion difference, A minus B?",
+      "choices": [
+        "-0.1500",
+        "0.1500",
+        "0.5250",
+        "1.0500"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The estimator preserves the parameter difference.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\mu_D=0.60-0.45=0.15"
+          },
+          "The signed result preserves the specified subtraction order."
+        ],
+        "warning": "Subtract in the stated order."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_center_new",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Reverses subtraction.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Averages proportions.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Adds proportions.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Reverses subtraction."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Subtract in the stated order."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Averages proportions."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Adds proportions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b002",
+      "lesson": "3.B.1",
+      "archetype": "local_two_prop_sampling_sd_new",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What is the sampling standard deviation of A minus B?",
+      "choices": [
+        "0.0020",
+        "0.0450",
+        "0.0634",
+        "0.6982"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Independent variance components add even when means are subtracted.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\sigma_D=\\sqrt{\\frac{0.60(0.40)}{200}+\\frac{0.45(0.55)}{300}}"
+          },
+          "Each independent proportion contributes its own estimated sampling variance."
+        ],
+        "warning": "Add variances and then take the square root."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_sampling_sd_new",
+        "extensions": [
+          {
+            "role": "D3",
+            "build": "Reports variance.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Adds SDs.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Omits n.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D3",
+              "reason": "Reports variance."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Add variances and then take the square root."
+            },
+            {
+              "choice": "C",
+              "role": "D1",
+              "reason": "Adds SDs."
+            },
+            {
+              "choice": "D",
+              "role": "D2",
+              "reason": "Omits n."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b003",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_1",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What does a positive observed difference mean?",
+      "choices": [
+        "There are necessarily more sampled refill users in A.",
+        "Every A household refills.",
+        "B has no refill users.",
+        "The observed refill fraction is higher in A."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Compare fractions, not counts from different sample sizes.",
+          "The observed refill fraction is higher in A."
+        ],
+        "warning": "Compare fractions, not counts from different sample sizes."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_1",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Compare fractions, not counts from different sample sizes."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b004",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_2",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "Which condition matters for the normal approximation?",
+      "choices": [
+        "The population proportions are equal.",
+        "Both samples have equal sizes.",
+        "The categorical outcomes are normally distributed.",
+        "Expected successes and failures are sufficiently large in both samples."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Each sample proportion must support a normal approximation.",
+          "Expected successes and failures are sufficiently large in both samples."
+        ],
+        "warning": "Each sample proportion must support a normal approximation."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_2",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Each sample proportion must support a normal approximation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b005",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_3",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What happens to the center if both sample sizes double?",
+      "choices": [
+        "It becomes 0.30.",
+        "It becomes 0.075.",
+        "It becomes zero.",
+        "It remains 0.15."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Sample size changes spread rather than the population difference.",
+          "It remains 0.15."
+        ],
+        "warning": "Sample size changes spread rather than the population difference."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_3",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Sample size changes spread rather than the population difference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b006",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_4",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What happens to spread if both sample sizes quadruple?",
+      "choices": [
+        "It is quartered.",
+        "It doubles.",
+        "It stays unchanged.",
+        "It is halved."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Both variances are divided by four before taking the square root.",
+          "It is halved."
+        ],
+        "warning": "Both variances are divided by four before taking the square root."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_4",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Both variances are divided by four before taking the square root."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b007",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_5",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What would violate the independent-groups formula?",
+      "choices": [
+        "The same households are measured under both programs.",
+        "The populations have different proportions.",
+        "The sample sizes differ.",
+        "The subtraction order is specified."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Repeated measurements introduce within-household dependence.",
+          "The same households are measured under both programs."
+        ],
+        "warning": "Repeated measurements introduce within-household dependence."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_5",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Repeated measurements introduce within-household dependence."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b008",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_6",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "What does one simulated difference represent?",
+      "choices": [
+        "One individual binary response.",
+        "A change in both population proportions.",
+        "Two sample proportions, one from each population, subtracted in order.",
+        "The total sample size alone."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The statistic combines one independent sample from each population.",
+          "Two sample proportions, one from each population, subtracted in order."
+        ],
+        "warning": "The statistic combines one independent sample from each population."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_6",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: The statistic combines one independent sample from each population."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b009",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_7",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "How does reversing group order affect sampling SD?",
+      "choices": [
+        "It becomes negative.",
+        "It doubles.",
+        "It becomes zero.",
+        "It stays the same."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Negating a random difference does not change its spread.",
+          "It stays the same."
+        ],
+        "warning": "Negating a random difference does not change its spread."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_7",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Negating a random difference does not change its spread."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b010",
+      "lesson": "3.B.1",
+      "archetype": "local_3_B_1_reason_8",
+      "variant": null,
+      "scenario": "Two independent random samples compare refill use. Population A has proportion 0.60 and population B has proportion 0.45. Sample sizes are 200 and 300, respectively.",
+      "prompt": "How should a mean difference of 0.15 be expressed?",
+      "choices": [
+        "A is 15 percentage points higher than B.",
+        "A is necessarily 15% larger relative to B.",
+        "A has 15 more sampled people.",
+        "B has proportion 0.15."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "An absolute proportion difference translates to percentage points.",
+          "A is 15 percentage points higher than B."
+        ],
+        "warning": "An absolute proportion difference translates to percentage points."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_1_reason_8",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.9"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: An absolute proportion difference translates to percentage points."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "u3b11",
       "lesson": "3.B.2",
       "archetype": "identify_two_proportion_interval",
@@ -2402,6 +3302,906 @@
             "reason": "Fresh contextual clarity and four-option parallelism reviewed; pilot-card observed range is limited."
           }
         ]
+      }
+    },
+    {
+      "id": "x3b011",
+      "lesson": "3.B.2",
+      "archetype": "local_two_prop_interval_se_new",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "What is the unpooled estimated standard error?",
+      "choices": [
+        "0.0033",
+        "0.0574",
+        "0.0600",
+        "0.0812"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Estimate each population proportion separately for an interval.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "SE=\\sqrt{\\frac{0.70(0.30)}{120}+\\frac{0.45(0.55)}{160}}"
+          },
+          "Each independent proportion contributes its own estimated sampling variance."
+        ],
+        "warning": "Intervals use separate observed proportions."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D2",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_interval_se_new",
+        "extensions": [
+          {
+            "role": "D3",
+            "build": "Reports variance.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Pools under a null assumption.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Adds SDs.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D3",
+              "reason": "Reports variance."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Intervals use separate observed proportions."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Pools under a null assumption."
+            },
+            {
+              "choice": "D",
+              "role": "D1",
+              "reason": "Adds SDs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b012",
+      "lesson": "3.B.2",
+      "archetype": "local_two_prop_interval_lower_new",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B. Use z* = 1.96.",
+      "prompt": "What is the lower 95% endpoint?",
+      "choices": [
+        "0.1375",
+        "0.1926",
+        "0.3625",
+        "0.5875"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Center the interval at the observed difference of 0.25.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "L=0.25-1.96SE"
+          },
+          "This endpoint bounds the plausible population mean quantity on the requested side of the interval."
+        ],
+        "warning": "Maintain the A-minus-B order."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D1",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_interval_lower_new",
+        "extensions": [
+          {
+            "role": "D2",
+            "build": "Omits critical value.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Uses upper endpoint.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Centers at one proportion.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Maintain the A-minus-B order."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Omits critical value."
+            },
+            {
+              "choice": "C",
+              "role": "D1",
+              "reason": "Uses upper endpoint."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Centers at one proportion."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b013",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_1",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "What is the point estimate?",
+      "choices": [
+        "-0.25",
+        "12",
+        "0.25",
+        "0.575"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Compute 84/120 minus 72/160.",
+          "0.25"
+        ],
+        "warning": "Compute 84/120 minus 72/160."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_1",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Compute 84/120 minus 72/160."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b014",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_2",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "Why avoid pooling the proportions for this interval?",
+      "choices": [
+        "Pooling is never permitted in any test.",
+        "The sample sizes are required to be equal.",
+        "The populations must have zero variability.",
+        "The interval does not assume the population proportions are equal."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "A separate estimate is needed for each variance term.",
+          "The interval does not assume the population proportions are equal."
+        ],
+        "warning": "A separate estimate is needed for each variance term."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_2",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: A separate estimate is needed for each variance term."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b015",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_3",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "What does an interval (0.12, 0.38) suggest?",
+      "choices": [
+        "A's population success proportion is higher than B's at this confidence level.",
+        "Every individual in A succeeds more often.",
+        "The difference equals exactly 0.25.",
+        "B's population proportion is 0.12."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "All plausible A-minus-B differences are positive.",
+          "A's population success proportion is higher than B's at this confidence level."
+        ],
+        "warning": "All plausible A-minus-B differences are positive."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_3",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: All plausible A-minus-B differences are positive."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b016",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_4",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "How does reversing order transform (0.12, 0.38)?",
+      "choices": [
+        "(0.38, 0.12)",
+        "(-0.38, -0.12)",
+        "(-0.12, -0.38)",
+        "(0.12, 0.38)"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Negate values and reorder the endpoints.",
+          "(-0.38, -0.12)"
+        ],
+        "warning": "Negate values and reorder the endpoints."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_4",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Negate values and reorder the endpoints."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b017",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_5",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "Which population quantity is estimated?",
+      "choices": [
+        "The difference between sample sizes.",
+        "The sum of population sizes.",
+        "The difference between population success proportions.",
+        "The correlation between two quantitative variables."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The interval targets two categorical-response population fractions.",
+          "The difference between population success proportions."
+        ],
+        "warning": "The interval targets two categorical-response population fractions."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_5",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: The interval targets two categorical-response population fractions."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b018",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_6",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "An interval includes zero. What does it establish?",
+      "choices": [
+        "The proportions are proved equal.",
+        "The design must be invalid.",
+        "Both proportions must equal zero.",
+        "No nonzero population difference is established by that interval."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Zero remains plausible without proving equality.",
+          "No nonzero population difference is established by that interval."
+        ],
+        "warning": "Zero remains plausible without proving equality."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_6",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Zero remains plausible without proving equality."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b019",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_7",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "What is a design requirement?",
+      "choices": [
+        "The two samples should be independent.",
+        "The observed proportions must be identical.",
+        "The populations must be quantitative.",
+        "The success counts must equal sample sizes."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Independence justifies adding estimated sampling variances.",
+          "The two samples should be independent."
+        ],
+        "warning": "Independence justifies adding estimated sampling variances."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_7",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Independence justifies adding estimated sampling variances."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b020",
+      "lesson": "3.B.2",
+      "archetype": "local_3_B_2_reason_8",
+      "variant": null,
+      "scenario": "Independent random samples give 84 successes among 120 observations in A and 72 among 160 in B. Conditions for a two-proportion interval hold. Use A minus B.",
+      "prompt": "At fixed data, increasing confidence does what?",
+      "choices": [
+        "Changes the point estimate to zero.",
+        "Widens the interval.",
+        "Narrows the interval.",
+        "Proves a causal effect."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Higher coverage uses a larger multiplier.",
+          "Widens the interval."
+        ],
+        "warning": "Higher coverage uses a larger multiplier."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_2_reason_8",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.10"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Higher coverage uses a larger multiplier."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
       }
     },
     {
@@ -3624,6 +5424,906 @@
             "reason": "Fresh contextual clarity and four-option parallelism reviewed; pilot-card observed range is limited."
           }
         ]
+      }
+    },
+    {
+      "id": "x3b021",
+      "lesson": "3.B.3",
+      "archetype": "local_two_prop_pool_new",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "What is the pooled estimate under the equality null?",
+      "choices": [
+        "0.3000",
+        "0.4174",
+        "0.4500",
+        "0.6000"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "The equality null assigns one common success probability to both groups.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\hat p_{pool}=\\frac{54+42}{90+140}=\\frac{96}{230}"
+          },
+          "This common estimate weights the two samples by their sizes rather than averaging proportions equally."
+        ],
+        "warning": "Weight by sample size through combined successes and totals."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D3",
+          "KEY",
+          "D1",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_pool_new",
+        "extensions": [
+          {
+            "role": "D3",
+            "build": "Uses B only.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Averages unweighted proportions.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Uses A only.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D3",
+              "reason": "Uses B only."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Weight by sample size through combined successes and totals."
+            },
+            {
+              "choice": "C",
+              "role": "D1",
+              "reason": "Averages unweighted proportions."
+            },
+            {
+              "choice": "D",
+              "role": "D2",
+              "reason": "Uses A only."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b022",
+      "lesson": "3.B.3",
+      "archetype": "local_two_prop_z_new",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "What is the z statistic for A minus B?",
+      "choices": [
+        "-4.5028",
+        "0.7188",
+        "4.5028",
+        "4.6476"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Under equal proportions, the pooled estimate supplies the null spread.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "z=\\frac{0.60-0.30}{\\sqrt{\\hat p_{pool}(1-\\hat p_{pool})(1/90+1/140)}}"
+          },
+          "The sign follows A minus B; its magnitude describes departure from equality in null standard errors."
+        ],
+        "warning": "Use pooling for the equality test denominator."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D3",
+          "KEY",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": "two_prop_z_new",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Reverses the difference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Uses the pooled estimate as SD.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Uses unpooled interval SE.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Reverses the difference."
+            },
+            {
+              "choice": "B",
+              "role": "D3",
+              "reason": "Uses the pooled estimate as SD."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Use pooling for the equality test denominator."
+            },
+            {
+              "choice": "D",
+              "role": "D2",
+              "reason": "Uses unpooled interval SE."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b023",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_1",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "Which null hypothesis is appropriate?",
+      "choices": [
+        "The observed sample proportions are equal.",
+        "The sample sizes are equal.",
+        "The two population success proportions are equal.",
+        "The total successes are equal in every sample."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Hypotheses concern parameters, not the realized statistics.",
+          "The two population success proportions are equal."
+        ],
+        "warning": "Hypotheses concern parameters, not the realized statistics."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_1",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Hypotheses concern parameters, not the realized statistics."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b024",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_2",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "Which alternative tests whether A is higher?",
+      "choices": [
+        "pA < pB",
+        "pA = pB",
+        "p-hat-A = p-hat-B",
+        "pA > pB"
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The alternative follows the research direction on population proportions.",
+          "pA > pB"
+        ],
+        "warning": "The alternative follows the research direction on population proportions."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_2",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: The alternative follows the research direction on population proportions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b025",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_3",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "Why pool for the null reference distribution?",
+      "choices": [
+        "The null assumes a common population success proportion.",
+        "The samples must have equal sizes.",
+        "Pooling guarantees a small p-value.",
+        "The alternative says the proportions are equal."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Combined successes estimate the common null parameter.",
+          "The null assumes a common population success proportion."
+        ],
+        "warning": "Combined successes estimate the common null parameter."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_3",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Combined successes estimate the common null parameter."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b026",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_4",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "Which normal-approximation counts are used?",
+      "choices": [
+        "Only the total number of observed successes.",
+        "Expected successes and failures using the pooled estimate in each sample.",
+        "Only the two sample sizes.",
+        "The two observed proportions multiplied together."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Check each sample under the equality null.",
+          "Expected successes and failures using the pooled estimate in each sample."
+        ],
+        "warning": "Check each sample under the equality null."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_4",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Check each sample under the equality null."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b027",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_5",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "A two-sided p-value is 0.004 at α = 0.01. What follows?",
+      "choices": [
+        "Accept equality as proved.",
+        "The alternative has probability 0.996.",
+        "Reject equality of the population proportions.",
+        "Every A case succeeds."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The p-value is below the significance threshold.",
+          "Reject equality of the population proportions."
+        ],
+        "warning": "The p-value is below the significance threshold."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_5",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: The p-value is below the significance threshold."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b028",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_6",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "A p-value of 0.24 at α = 0.05 supports what?",
+      "choices": [
+        "Proof of equal population proportions.",
+        "A 24% probability the null is true.",
+        "A certain Type I error.",
+        "Insufficient evidence of a population difference."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "Failure to reject leaves unresolved population uncertainty.",
+          "Insufficient evidence of a population difference."
+        ],
+        "warning": "Failure to reject leaves unresolved population uncertainty."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_6",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: Failure to reject leaves unresolved population uncertainty."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b029",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_7",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "What extra design feature supports a causal treatment comparison?",
+      "choices": [
+        "Random assignment to treatments.",
+        "A larger observed difference alone.",
+        "Equal success counts.",
+        "Sorting the samples before testing."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Random assignment helps isolate treatment effects.",
+          "Random assignment to treatments."
+        ],
+        "warning": "Random assignment helps isolate treatment effects."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_7",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Random assignment helps isolate treatment effects."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b030",
+      "lesson": "3.B.3",
+      "archetype": "local_3_B_3_reason_8",
+      "variant": null,
+      "scenario": "Independent random samples show 54 successes among 90 cases in A and 42 among 140 in B. Test equality of population proportions.",
+      "prompt": "How does reversing order affect a two-sided p-value?",
+      "choices": [
+        "It becomes negative.",
+        "It stays the same while z changes sign.",
+        "It always doubles.",
+        "It always becomes one minus the old p-value."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Two-sided extremeness depends on absolute z.",
+          "It stays the same while z changes sign."
+        ],
+        "warning": "Two-sided extremeness depends on absolute z."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_3_reason_8",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.13"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Two-sided extremeness depends on absolute z."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
       }
     },
     {
@@ -4869,6 +7569,911 @@
       }
     },
     {
+      "id": "x3b031",
+      "lesson": "3.B.4",
+      "archetype": "local_chi_df_homogeneity",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method. There are three store categories and four delivery categories.",
+      "prompt": "What are the chi-square degrees of freedom?",
+      "choices": [
+        "6",
+        "7",
+        "11",
+        "12"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The row and column margins constrain the free cell counts.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "df=(3-1)(4-1)=6"
+          },
+          "The row and column constraints leave this many independently varying cell counts."
+        ],
+        "warning": "Use one less than each category count."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": "chi_df_homogeneity",
+        "extensions": [
+          {
+            "role": "D2",
+            "build": "Adds category counts.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Subtracts one from total cells.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Uses cell count.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Use one less than each category count."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Adds category counts."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Subtracts one from total cells."
+            },
+            {
+              "choice": "D",
+              "role": "D1",
+              "reason": "Uses cell count."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b032",
+      "lesson": "3.B.4",
+      "archetype": "local_chi_expected_homogeneity",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method. One row total is 80, one column total is 90, and the grand total is 240.",
+      "prompt": "What expected count belongs to their intersecting cell?",
+      "choices": [
+        "0.3750",
+        "30.0000",
+        "170.0000",
+        "7200.0000"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Under the null, combine the marginal proportions with sample size.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "E=\\frac{80(90)}{240}=30"
+          },
+          "This is the null-model count for this cell, rather than its observed count."
+        ],
+        "warning": "Expected count equals row total times column total divided by grand total."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "chi_expected_homogeneity",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Uses a conditional fraction rather than expected count.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Adds margins.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Omits division by grand total.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Uses a conditional fraction rather than expected count."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Expected count equals row total times column total divided by grand total."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Adds margins."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Omits division by grand total."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b033",
+      "lesson": "3.B.4",
+      "archetype": "local_chi_contribution_homogeneity",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method. A cell has observed count 24 and expected count 30.",
+      "prompt": "What is this cell's contribution to chi-square?",
+      "choices": [
+        "-6.0000",
+        "0.2000",
+        "1.2000",
+        "36.0000"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Squared standardized count discrepancies accumulate in chi-square.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\frac{(24-30)^2}{30}=1.2"
+          },
+          "This cell adds a nonnegative amount to the overall chi-square statistic."
+        ],
+        "warning": "Each contribution is nonnegative."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D3",
+          "KEY",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": "chi_contribution_homogeneity",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Uses a signed difference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Uses an absolute relative difference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Omits expected-count divisor.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Uses a signed difference."
+            },
+            {
+              "choice": "B",
+              "role": "D3",
+              "reason": "Uses an absolute relative difference."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Each contribution is nonnegative."
+            },
+            {
+              "choice": "D",
+              "role": "D2",
+              "reason": "Omits expected-count divisor."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b034",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_1",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "Which test matches the sampling design?",
+      "choices": [
+        "A chi-square test for independence.",
+        "A two-sample t test.",
+        "A chi-square test for homogeneity.",
+        "A one-proportion z interval."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Distinguish independent samples with one categorical response from one sample with two categorical variables.",
+          "A chi-square test for homogeneity."
+        ],
+        "warning": "Distinguish independent samples with one categorical response from one sample with two categorical variables."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_1",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Distinguish independent samples with one categorical response from one sample with two categorical variables."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b035",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_2",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "Which statement expresses the null?",
+      "choices": [
+        "Every category has the same population probability.",
+        "All observed cell counts equal expected counts exactly.",
+        "Every customer chooses the same delivery method.",
+        "Delivery preference distributions are the same across store populations."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The null concerns matching conditional distributions or no association, not uniform probabilities.",
+          "Delivery preference distributions are the same across store populations."
+        ],
+        "warning": "The null concerns matching conditional distributions or no association, not uniform probabilities."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_2",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: The null concerns matching conditional distributions or no association, not uniform probabilities."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b036",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_3",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "What counts must be sufficiently large?",
+      "choices": [
+        "Expected cell counts.",
+        "Only observed row totals.",
+        "Only the number of variables.",
+        "The number of possible p-values."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The chi-square approximation is checked with expected rather than observed cell counts.",
+          "Expected cell counts."
+        ],
+        "warning": "The chi-square approximation is checked with expected rather than observed cell counts."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_3",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: The chi-square approximation is checked with expected rather than observed cell counts."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b037",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_4",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "Which tail supplies the p-value?",
+      "choices": [
+        "The lower tail only.",
+        "The upper tail beyond the observed chi-square statistic.",
+        "Both tails doubled automatically.",
+        "The area between zero and the smallest cell count."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Large nonnegative discrepancies give evidence against the null.",
+          "The upper tail beyond the observed chi-square statistic."
+        ],
+        "warning": "Large nonnegative discrepancies give evidence against the null."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_4",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Large nonnegative discrepancies give evidence against the null."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b038",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_5",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "A p-value is 0.008 at α = 0.05. What follows?",
+      "choices": [
+        "Prove every category differs from every other.",
+        "Accept the null as true.",
+        "Reject the stated null model.",
+        "Conclude a particular cell caused the whole association."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "A significant overall result does not identify every specific difference.",
+          "Reject the stated null model."
+        ],
+        "warning": "A significant overall result does not identify every specific difference."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_5",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: A significant overall result does not identify every specific difference."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b039",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_6",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "Why should repeated records from the same customer be questioned?",
+      "choices": [
+        "They force every expected count below five.",
+        "They change categorical variables into quantitative ones.",
+        "They automatically make the null true.",
+        "They can violate independence of observations."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The count model assumes observations contribute independently.",
+          "They can violate independence of observations."
+        ],
+        "warning": "The count model assumes observations contribute independently."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_6",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: The count model assumes observations contribute independently."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b040",
+      "lesson": "3.B.4",
+      "archetype": "local_3_B_4_reason_7",
+      "variant": null,
+      "scenario": "Independent random samples of customers from three stores classify preferred delivery method.",
+      "prompt": "If the overall test is significant, what would locate the main discrepancies?",
+      "choices": [
+        "Inspect cell contributions and contextual patterns.",
+        "Assume every cell differs equally.",
+        "Use the smallest row label as the cause.",
+        "Conclude the sampling design was random."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The overall statistic sums discrepancies and does not identify their distribution by itself.",
+          "Inspect cell contributions and contextual patterns."
+        ],
+        "warning": "The overall statistic sums discrepancies and does not identify their distribution by itself."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_4_reason_7",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.14"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: The overall statistic sums discrepancies and does not identify their distribution by itself."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "u3b41",
       "lesson": "3.B.5",
       "archetype": "identify_chi_square_homogeneity_or_independence",
@@ -6047,6 +9652,911 @@
             "reason": "Fresh contextual clarity and four-option parallelism reviewed; pilot-card observed range is limited."
           }
         ]
+      }
+    },
+    {
+      "id": "x3b041",
+      "lesson": "3.B.5",
+      "archetype": "local_chi_df_independence",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method. There are three store categories and four delivery categories.",
+      "prompt": "What are the chi-square degrees of freedom?",
+      "choices": [
+        "6",
+        "7",
+        "11",
+        "12"
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "The row and column margins constrain the free cell counts.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "df=(3-1)(4-1)=6"
+          },
+          "The row and column constraints leave this many independently varying cell counts."
+        ],
+        "warning": "Use one less than each category count."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D2",
+          "D3",
+          "D1"
+        ],
+        "variant": null,
+        "keyBuild": "chi_df_independence",
+        "extensions": [
+          {
+            "role": "D2",
+            "build": "Adds category counts.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Subtracts one from total cells.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D1",
+            "build": "Uses cell count.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Use one less than each category count."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Adds category counts."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Subtracts one from total cells."
+            },
+            {
+              "choice": "D",
+              "role": "D1",
+              "reason": "Uses cell count."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b042",
+      "lesson": "3.B.5",
+      "archetype": "local_chi_expected_independence",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method. One row total is 80, one column total is 90, and the grand total is 240.",
+      "prompt": "What expected count belongs to their intersecting cell?",
+      "choices": [
+        "0.3750",
+        "30.0000",
+        "170.0000",
+        "7200.0000"
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Under the null, combine the marginal proportions with sample size.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "E=\\frac{80(90)}{240}=30"
+          },
+          "This is the null-model count for this cell, rather than its observed count."
+        ],
+        "warning": "Expected count equals row total times column total divided by grand total."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "chi_expected_independence",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Uses a conditional fraction rather than expected count.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Adds margins.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Omits division by grand total.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Uses a conditional fraction rather than expected count."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Expected count equals row total times column total divided by grand total."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Adds margins."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Omits division by grand total."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b043",
+      "lesson": "3.B.5",
+      "archetype": "local_chi_contribution_independence",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method. A cell has observed count 24 and expected count 30.",
+      "prompt": "What is this cell's contribution to chi-square?",
+      "choices": [
+        "-6.0000",
+        "0.2000",
+        "1.2000",
+        "36.0000"
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "Squared standardized count discrepancies accumulate in chi-square.",
+          {
+            "type": "math",
+            "mode": "display",
+            "tex": "\\frac{(24-30)^2}{30}=1.2"
+          },
+          "This cell adds a nonnegative amount to the overall chi-square statistic."
+        ],
+        "warning": "Each contribution is nonnegative."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D3",
+          "KEY",
+          "D2"
+        ],
+        "variant": null,
+        "keyBuild": "chi_contribution_independence",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Uses a signed difference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Uses an absolute relative difference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Omits expected-count divisor.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Uses a signed difference."
+            },
+            {
+              "choice": "B",
+              "role": "D3",
+              "reason": "Uses an absolute relative difference."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: Each contribution is nonnegative."
+            },
+            {
+              "choice": "D",
+              "role": "D2",
+              "reason": "Omits expected-count divisor."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b044",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_1",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "Which test matches the sampling design?",
+      "choices": [
+        "A chi-square test for homogeneity.",
+        "A chi-square test for independence.",
+        "A two-sample t test.",
+        "A one-proportion z interval."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "Distinguish independent samples with one categorical response from one sample with two categorical variables.",
+          "A chi-square test for independence."
+        ],
+        "warning": "Distinguish independent samples with one categorical response from one sample with two categorical variables."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_1",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: Distinguish independent samples with one categorical response from one sample with two categorical variables."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b045",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_2",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "Which statement expresses the null?",
+      "choices": [
+        "Every category has the same population probability.",
+        "All observed cell counts equal expected counts exactly.",
+        "Store location and delivery preference are independent in the population.",
+        "Every customer chooses the same delivery method."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The null concerns matching conditional distributions or no association, not uniform probabilities.",
+          "Store location and delivery preference are independent in the population."
+        ],
+        "warning": "The null concerns matching conditional distributions or no association, not uniform probabilities."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_2",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: The null concerns matching conditional distributions or no association, not uniform probabilities."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b046",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_3",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "What counts must be sufficiently large?",
+      "choices": [
+        "Only observed row totals.",
+        "Only the number of variables.",
+        "The number of possible p-values.",
+        "Expected cell counts."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The chi-square approximation is checked with expected rather than observed cell counts.",
+          "Expected cell counts."
+        ],
+        "warning": "The chi-square approximation is checked with expected rather than observed cell counts."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_3",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: The chi-square approximation is checked with expected rather than observed cell counts."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b047",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_4",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "Which tail supplies the p-value?",
+      "choices": [
+        "The upper tail beyond the observed chi-square statistic.",
+        "The lower tail only.",
+        "Both tails doubled automatically.",
+        "The area between zero and the smallest cell count."
+      ],
+      "answer": "A",
+      "solution": {
+        "steps": [
+          "Large nonnegative discrepancies give evidence against the null.",
+          "The upper tail beyond the observed chi-square statistic."
+        ],
+        "warning": "Large nonnegative discrepancies give evidence against the null."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "KEY",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_4",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "KEY",
+              "reason": "Correct: Large nonnegative discrepancies give evidence against the null."
+            },
+            {
+              "choice": "B",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b048",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_5",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "A p-value is 0.008 at α = 0.05. What follows?",
+      "choices": [
+        "Prove every category differs from every other.",
+        "Reject the stated null model.",
+        "Accept the null as true.",
+        "Conclude a particular cell caused the whole association."
+      ],
+      "answer": "B",
+      "solution": {
+        "steps": [
+          "A significant overall result does not identify every specific difference.",
+          "Reject the stated null model."
+        ],
+        "warning": "A significant overall result does not identify every specific difference."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "KEY",
+          "D2",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_5",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "KEY",
+              "reason": "Correct: A significant overall result does not identify every specific difference."
+            },
+            {
+              "choice": "C",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b049",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_6",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "Why should repeated records from the same customer be questioned?",
+      "choices": [
+        "They force every expected count below five.",
+        "They change categorical variables into quantitative ones.",
+        "They can violate independence of observations.",
+        "They automatically make the null true."
+      ],
+      "answer": "C",
+      "solution": {
+        "steps": [
+          "The count model assumes observations contribute independently.",
+          "They can violate independence of observations."
+        ],
+        "warning": "The count model assumes observations contribute independently."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "KEY",
+          "D3"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_6",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "KEY",
+              "reason": "Correct: The count model assumes observations contribute independently."
+            },
+            {
+              "choice": "D",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "x3b050",
+      "lesson": "3.B.5",
+      "archetype": "local_3_B_5_reason_7",
+      "variant": null,
+      "scenario": "One random sample of customers is classified by store location and preferred delivery method.",
+      "prompt": "If the overall test is significant, what would locate the main discrepancies?",
+      "choices": [
+        "Assume every cell differs equally.",
+        "Use the smallest row label as the cause.",
+        "Conclude the sampling design was random.",
+        "Inspect cell contributions and contextual patterns."
+      ],
+      "answer": "D",
+      "solution": {
+        "steps": [
+          "The overall statistic sums discrepancies and does not identify their distribution by itself.",
+          "Inspect cell contributions and contextual patterns."
+        ],
+        "warning": "The overall statistic sums discrepancies and does not identify their distribution by itself."
+      },
+      "calculator": {
+        "needed": false,
+        "status": "deferred",
+        "reason": "Deferred at Ben's request; Claude will add calculator guidance in a separate pass."
+      },
+      "provenance": {
+        "optionRoles": [
+          "D1",
+          "D2",
+          "D3",
+          "KEY"
+        ],
+        "variant": null,
+        "keyBuild": "3_B_5_reason_7",
+        "extensions": [
+          {
+            "role": "D1",
+            "build": "Confuses the target, design, or stated inference rule.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D2",
+            "build": "Does not follow from the stated evidence.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          },
+          {
+            "role": "D3",
+            "build": "Overstates or reverses the inference.",
+            "basis": "CED-derived local build; no AP-observed lineage claimed"
+          }
+        ],
+        "original": {
+          "basis": "Fresh synthetic question; Fall 2026 CED learning objective and public project AP style.",
+          "ced": [
+            "3.15"
+          ],
+          "human_verified": false,
+          "card_exemplars": [],
+          "authoringDate": "2026-11-19"
+        },
+        "sourceReview": {
+          "date": "2026-11-19",
+          "method": "Author reasoning and repeatable checks; no independent human review.",
+          "optionEvidence": [
+            {
+              "choice": "A",
+              "role": "D1",
+              "reason": "Confuses the target, design, or stated inference rule."
+            },
+            {
+              "choice": "B",
+              "role": "D2",
+              "reason": "Does not follow from the stated evidence."
+            },
+            {
+              "choice": "C",
+              "role": "D3",
+              "reason": "Overstates or reverses the inference."
+            },
+            {
+              "choice": "D",
+              "role": "KEY",
+              "reason": "Correct: The overall statistic sums discrepancies and does not identify their distribution by itself."
+            }
+          ]
+        }
       }
     }
   ]

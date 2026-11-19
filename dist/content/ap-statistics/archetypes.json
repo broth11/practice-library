@@ -2117,6 +2117,2468 @@
         "2-b:b76",
         "2-b:b80"
       ]
+    },
+    {
+      "id": "local_proportion_sampling_mean_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a001"
+      ]
+    },
+    {
+      "id": "local_proportion_sampling_sd_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a002"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a003"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a004"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a005"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a006"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a007"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a008"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a009"
+      ]
+    },
+    {
+      "id": "local_3_A_1_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a010"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a011"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a012"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a013"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a014"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a015"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a016"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a017"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a018"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_9",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a019"
+      ]
+    },
+    {
+      "id": "local_3_A_2_reason_10",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a020"
+      ]
+    },
+    {
+      "id": "local_prop_ci_center_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a021"
+      ]
+    },
+    {
+      "id": "local_prop_ci_margin_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a022"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a023"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a024"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a025"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a026"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a027"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a028"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a029"
+      ]
+    },
+    {
+      "id": "local_3_A_3_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a030"
+      ]
+    },
+    {
+      "id": "local_prop_interval_se_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a031"
+      ]
+    },
+    {
+      "id": "local_prop_interval_margin_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a032"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a033"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a034"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a035"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a036"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a037"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a038"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a039"
+      ]
+    },
+    {
+      "id": "local_3_A_4_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a040"
+      ]
+    },
+    {
+      "id": "local_prop_sample_size_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a041"
+      ]
+    },
+    {
+      "id": "local_prop_critical_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a042"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a043"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a044"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a045"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a046"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a047"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a048"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a049"
+      ]
+    },
+    {
+      "id": "local_3_A_5_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a050"
+      ]
+    },
+    {
+      "id": "local_null_simulation_tail_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a051"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a052"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a053"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a054"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a055"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a056"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a057"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a058"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a059"
+      ]
+    },
+    {
+      "id": "local_3_A_6_reason_9",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a060"
+      ]
+    },
+    {
+      "id": "local_prop_test_z_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a061"
+      ]
+    },
+    {
+      "id": "local_prop_test_p_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a062"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a063"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a064"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a065"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a066"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a067"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a068"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a069"
+      ]
+    },
+    {
+      "id": "local_3_A_7_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a070"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a071"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a072"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a073"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a074"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a075"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a076"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a077"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a078"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_9",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a079"
+      ]
+    },
+    {
+      "id": "local_3_A_8_reason_10",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-a:x3a080"
+      ]
+    },
+    {
+      "id": "local_two_prop_center_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b001"
+      ]
+    },
+    {
+      "id": "local_two_prop_sampling_sd_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b002"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b003"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b004"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b005"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b006"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b007"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b008"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b009"
+      ]
+    },
+    {
+      "id": "local_3_B_1_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b010"
+      ]
+    },
+    {
+      "id": "local_two_prop_interval_se_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b011"
+      ]
+    },
+    {
+      "id": "local_two_prop_interval_lower_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b012"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b013"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b014"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b015"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b016"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b017"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b018"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b019"
+      ]
+    },
+    {
+      "id": "local_3_B_2_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b020"
+      ]
+    },
+    {
+      "id": "local_two_prop_pool_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b021"
+      ]
+    },
+    {
+      "id": "local_two_prop_z_new",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b022"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b023"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b024"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b025"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b026"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b027"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b028"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b029"
+      ]
+    },
+    {
+      "id": "local_3_B_3_reason_8",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b030"
+      ]
+    },
+    {
+      "id": "local_chi_df_homogeneity",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b031"
+      ]
+    },
+    {
+      "id": "local_chi_expected_homogeneity",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b032"
+      ]
+    },
+    {
+      "id": "local_chi_contribution_homogeneity",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b033"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b034"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b035"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b036"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b037"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b038"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b039"
+      ]
+    },
+    {
+      "id": "local_3_B_4_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b040"
+      ]
+    },
+    {
+      "id": "local_chi_df_independence",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b041"
+      ]
+    },
+    {
+      "id": "local_chi_expected_independence",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b042"
+      ]
+    },
+    {
+      "id": "local_chi_contribution_independence",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b043"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_1",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b044"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_2",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b045"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_3",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b046"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_4",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b047"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_5",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b048"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_6",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b049"
+      ]
+    },
+    {
+      "id": "local_3_B_5_reason_7",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "3-b:x3b050"
+      ]
+    },
+    {
+      "id": "local_mean_sampling_center",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a001",
+        "4-a:x4a051"
+      ]
+    },
+    {
+      "id": "local_mean_sampling_sd",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a002",
+        "4-a:x4a052"
+      ]
+    },
+    {
+      "id": "local_mean_sampling_tail",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a003",
+        "4-a:x4a053"
+      ]
+    },
+    {
+      "id": "local_mean_sampling_size",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a004",
+        "4-a:x4a054"
+      ]
+    },
+    {
+      "id": "local_mean_normal_population",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a005",
+        "4-a:x4a055"
+      ]
+    },
+    {
+      "id": "local_mean_clt_limits",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a006",
+        "4-a:x4a056"
+      ]
+    },
+    {
+      "id": "local_mean_ten_percent",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a007",
+        "4-a:x4a057"
+      ]
+    },
+    {
+      "id": "local_mean_statistic_identification",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a008",
+        "4-a:x4a058"
+      ]
+    },
+    {
+      "id": "local_mean_bias_vs_variability",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a009",
+        "4-a:x4a059"
+      ]
+    },
+    {
+      "id": "local_mean_se_interpretation",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a010",
+        "4-a:x4a060"
+      ]
+    },
+    {
+      "id": "local_one_mean_se",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a011",
+        "4-a:x4a061"
+      ]
+    },
+    {
+      "id": "local_one_mean_df",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a012",
+        "4-a:x4a062"
+      ]
+    },
+    {
+      "id": "local_one_mean_margin",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a013",
+        "4-a:x4a063"
+      ]
+    },
+    {
+      "id": "local_one_mean_lower",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a014",
+        "4-a:x4a064"
+      ]
+    },
+    {
+      "id": "local_one_mean_upper",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a015",
+        "4-a:x4a065"
+      ]
+    },
+    {
+      "id": "local_one_mean_choose_t",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a016",
+        "4-a:x4a066"
+      ]
+    },
+    {
+      "id": "local_paired_interval_design",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a017",
+        "4-a:x4a067"
+      ]
+    },
+    {
+      "id": "local_paired_interval_df",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a018",
+        "4-a:x4a068"
+      ]
+    },
+    {
+      "id": "local_paired_conditions",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a019",
+        "4-a:x4a069"
+      ]
+    },
+    {
+      "id": "local_t_vs_normal",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a020",
+        "4-a:x4a070"
+      ]
+    },
+    {
+      "id": "local_mean_ci_interpretation",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a021",
+        "4-a:x4a071",
+        "4-b:x4b001",
+        "4-b:x4b051"
+      ]
+    },
+    {
+      "id": "local_mean_ci_zero",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a022",
+        "4-a:x4a072",
+        "4-b:x4b002",
+        "4-b:x4b052"
+      ]
+    },
+    {
+      "id": "local_mean_ci_midpoint",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a023",
+        "4-a:x4a073",
+        "4-b:x4b003",
+        "4-b:x4b053"
+      ]
+    },
+    {
+      "id": "local_mean_ci_margin_from_ends",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a024",
+        "4-a:x4a074",
+        "4-b:x4b004",
+        "4-b:x4b054"
+      ]
+    },
+    {
+      "id": "local_mean_ci_confidence_width",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a025",
+        "4-a:x4a075",
+        "4-b:x4b005",
+        "4-b:x4b055"
+      ]
+    },
+    {
+      "id": "local_mean_ci_negative_order",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a026",
+        "4-a:x4a076",
+        "4-b:x4b006",
+        "4-b:x4b056"
+      ]
+    },
+    {
+      "id": "local_mean_ci_crossing_zero",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a027",
+        "4-a:x4a077",
+        "4-b:x4b007",
+        "4-b:x4b057"
+      ]
+    },
+    {
+      "id": "local_mean_ci_repeated_coverage",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a028",
+        "4-a:x4a078",
+        "4-b:x4b008",
+        "4-b:x4b058"
+      ]
+    },
+    {
+      "id": "local_mean_ci_scope",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a029",
+        "4-a:x4a079",
+        "4-b:x4b009",
+        "4-b:x4b059"
+      ]
+    },
+    {
+      "id": "local_mean_ci_not_causal",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a030",
+        "4-a:x4a080",
+        "4-b:x4b010",
+        "4-b:x4b060"
+      ]
+    },
+    {
+      "id": "local_one_mean_hypotheses",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a031",
+        "4-a:x4a032",
+        "4-a:x4a033",
+        "4-a:x4a081",
+        "4-a:x4a082",
+        "4-a:x4a083"
+      ]
+    },
+    {
+      "id": "local_one_mean_design",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a034",
+        "4-a:x4a084"
+      ]
+    },
+    {
+      "id": "local_one_mean_parameter",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a035",
+        "4-a:x4a085"
+      ]
+    },
+    {
+      "id": "local_one_mean_conditions",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a036",
+        "4-a:x4a086"
+      ]
+    },
+    {
+      "id": "local_one_mean_randomness",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a037",
+        "4-a:x4a087"
+      ]
+    },
+    {
+      "id": "local_paired_setup",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a038",
+        "4-a:x4a088"
+      ]
+    },
+    {
+      "id": "local_one_mean_null_center",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a039",
+        "4-a:x4a089"
+      ]
+    },
+    {
+      "id": "local_one_mean_sigma",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a040",
+        "4-a:x4a090"
+      ]
+    },
+    {
+      "id": "local_one_mean_test_se",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a041",
+        "4-a:x4a091"
+      ]
+    },
+    {
+      "id": "local_one_mean_t",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a042",
+        "4-a:x4a092"
+      ]
+    },
+    {
+      "id": "local_t_pvalue_upper",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a043",
+        "4-a:x4a093",
+        "4-b:x4b023",
+        "4-b:x4b073"
+      ]
+    },
+    {
+      "id": "local_t_pvalue_two_sided",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a044",
+        "4-a:x4a094",
+        "4-b:x4b024",
+        "4-b:x4b074"
+      ]
+    },
+    {
+      "id": "local_t_decision",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a045",
+        "4-a:x4a046",
+        "4-a:x4a047",
+        "4-a:x4a095",
+        "4-a:x4a096",
+        "4-a:x4a097",
+        "4-b:x4b025",
+        "4-b:x4b026",
+        "4-b:x4b027",
+        "4-b:x4b075",
+        "4-b:x4b076",
+        "4-b:x4b077"
+      ]
+    },
+    {
+      "id": "local_t_pvalue_meaning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a048",
+        "4-a:x4a098",
+        "4-b:x4b028",
+        "4-b:x4b078"
+      ]
+    },
+    {
+      "id": "local_t_practical_significance",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a049",
+        "4-a:x4a099",
+        "4-b:x4b029",
+        "4-b:x4b079"
+      ]
+    },
+    {
+      "id": "local_t_failure_not_equality",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-a:x4a050",
+        "4-a:x4a100",
+        "4-b:x4b030",
+        "4-b:x4b080"
+      ]
+    },
+    {
+      "id": "local_two_mean_sampling_center",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b031",
+        "4-b:x4b081"
+      ]
+    },
+    {
+      "id": "local_two_mean_sampling_sd",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b032",
+        "4-b:x4b082"
+      ]
+    },
+    {
+      "id": "local_two_mean_sampling_variance",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b033",
+        "4-b:x4b083"
+      ]
+    },
+    {
+      "id": "local_two_mean_size_scale",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b034",
+        "4-b:x4b035",
+        "4-b:x4b084",
+        "4-b:x4b085"
+      ]
+    },
+    {
+      "id": "local_two_mean_normal",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b036",
+        "4-b:x4b086"
+      ]
+    },
+    {
+      "id": "local_two_mean_small_skew",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b037",
+        "4-b:x4b087"
+      ]
+    },
+    {
+      "id": "local_two_mean_independent_design",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b038",
+        "4-b:x4b088"
+      ]
+    },
+    {
+      "id": "local_two_mean_pairing_limit",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b039",
+        "4-b:x4b089"
+      ]
+    },
+    {
+      "id": "local_two_mean_sampling_order",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b040",
+        "4-b:x4b090"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_estimate",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b041",
+        "4-b:x4b091"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_se",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b042",
+        "4-b:x4b092"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_lower",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b043",
+        "4-b:x4b093"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_upper",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b044",
+        "4-b:x4b094"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_margin",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b045",
+        "4-b:x4b095"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_method",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b046",
+        "4-b:x4b096"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_assumptions",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b047",
+        "4-b:x4b097"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_n_effect",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b048",
+        "4-b:x4b098"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_paired_warning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b049",
+        "4-b:x4b099"
+      ]
+    },
+    {
+      "id": "local_two_mean_interval_tails",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b050",
+        "4-b:x4b100"
+      ]
+    },
+    {
+      "id": "local_two_mean_hypotheses",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b011",
+        "4-b:x4b012",
+        "4-b:x4b013",
+        "4-b:x4b061",
+        "4-b:x4b062",
+        "4-b:x4b063"
+      ]
+    },
+    {
+      "id": "local_two_mean_design",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b014",
+        "4-b:x4b064"
+      ]
+    },
+    {
+      "id": "local_two_mean_parameter",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b015",
+        "4-b:x4b065"
+      ]
+    },
+    {
+      "id": "local_two_mean_conditions",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b016",
+        "4-b:x4b066"
+      ]
+    },
+    {
+      "id": "local_two_mean_randomness",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b017",
+        "4-b:x4b067"
+      ]
+    },
+    {
+      "id": "local_two_mean_independence",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b018",
+        "4-b:x4b068"
+      ]
+    },
+    {
+      "id": "local_two_mean_null_center",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b019",
+        "4-b:x4b069"
+      ]
+    },
+    {
+      "id": "local_two_mean_sigma",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b020",
+        "4-b:x4b070"
+      ]
+    },
+    {
+      "id": "local_two_mean_test_se",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b021",
+        "4-b:x4b071"
+      ]
+    },
+    {
+      "id": "local_two_mean_t",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "4-b:x4b022",
+        "4-b:x4b072"
+      ]
+    },
+    {
+      "id": "local_scatter_direction",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5001",
+        "5:x5051"
+      ]
+    },
+    {
+      "id": "local_scatter_pairing",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5002",
+        "5:x5052"
+      ]
+    },
+    {
+      "id": "local_scatter_axes",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5003",
+        "5:x5053"
+      ]
+    },
+    {
+      "id": "local_scatter_form",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5004",
+        "5:x5054"
+      ]
+    },
+    {
+      "id": "local_scatter_outlier",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5005",
+        "5:x5055"
+      ]
+    },
+    {
+      "id": "local_scatter_strength",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5006",
+        "5:x5056"
+      ]
+    },
+    {
+      "id": "local_scatter_no_cause",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5007",
+        "5:x5057"
+      ]
+    },
+    {
+      "id": "local_scatter_unpaired",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5008",
+        "5:x5058"
+      ]
+    },
+    {
+      "id": "local_scatter_clusters",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5009",
+        "5:x5059"
+      ]
+    },
+    {
+      "id": "local_scatter_range",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5010",
+        "5:x5060"
+      ]
+    },
+    {
+      "id": "local_correlation_interpret",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5011",
+        "5:x5061"
+      ]
+    },
+    {
+      "id": "local_correlation_strength",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5012",
+        "5:x5062"
+      ]
+    },
+    {
+      "id": "local_correlation_units",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5013",
+        "5:x5063"
+      ]
+    },
+    {
+      "id": "local_correlation_rescale",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5014",
+        "5:x5064"
+      ]
+    },
+    {
+      "id": "local_correlation_negate",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5015",
+        "5:x5065"
+      ]
+    },
+    {
+      "id": "local_correlation_swap",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5016",
+        "5:x5066"
+      ]
+    },
+    {
+      "id": "local_correlation_zero",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5017",
+        "5:x5067"
+      ]
+    },
+    {
+      "id": "local_correlation_bounds",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5018",
+        "5:x5068"
+      ]
+    },
+    {
+      "id": "local_correlation_cause",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5019",
+        "5:x5069"
+      ]
+    },
+    {
+      "id": "local_correlation_outlier",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5020",
+        "5:x5070"
+      ]
+    },
+    {
+      "id": "local_regression_prediction",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5021",
+        "5:x5071"
+      ]
+    },
+    {
+      "id": "local_regression_change",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5022",
+        "5:x5072"
+      ]
+    },
+    {
+      "id": "local_regression_missing_x",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5023",
+        "5:x5073"
+      ]
+    },
+    {
+      "id": "local_regression_domain",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5024",
+        "5:x5025",
+        "5:x5074",
+        "5:x5075"
+      ]
+    },
+    {
+      "id": "local_regression_response",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5026",
+        "5:x5076"
+      ]
+    },
+    {
+      "id": "local_regression_not_exact",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5027",
+        "5:x5077"
+      ]
+    },
+    {
+      "id": "local_regression_linear_change",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5028",
+        "5:x5078"
+      ]
+    },
+    {
+      "id": "local_regression_far_prediction",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5029",
+        "5:x5079"
+      ]
+    },
+    {
+      "id": "local_regression_reverse_warning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5030",
+        "5:x5080"
+      ]
+    },
+    {
+      "id": "local_residual_compute",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5031",
+        "5:x5081"
+      ]
+    },
+    {
+      "id": "local_residual_recover_y",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5032",
+        "5:x5082"
+      ]
+    },
+    {
+      "id": "local_residual_recover_fit",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5033",
+        "5:x5083"
+      ]
+    },
+    {
+      "id": "local_residual_sign",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5034",
+        "5:x5084"
+      ]
+    },
+    {
+      "id": "local_residual_curve",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5035",
+        "5:x5085"
+      ]
+    },
+    {
+      "id": "local_residual_random",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5036",
+        "5:x5086"
+      ]
+    },
+    {
+      "id": "local_residual_axes",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5037",
+        "5:x5087"
+      ]
+    },
+    {
+      "id": "local_residual_zero",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5038",
+        "5:x5088"
+      ]
+    },
+    {
+      "id": "local_residual_squared",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5039",
+        "5:x5089"
+      ]
+    },
+    {
+      "id": "local_residual_outlier",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5040",
+        "5:x5090"
+      ]
+    },
+    {
+      "id": "local_regression_r_squared",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5041",
+        "5:x5091"
+      ]
+    },
+    {
+      "id": "local_regression_r_squared_meaning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5042",
+        "5:x5092"
+      ]
+    },
+    {
+      "id": "local_regression_slope_meaning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5043",
+        "5:x5093"
+      ]
+    },
+    {
+      "id": "local_regression_intercept_meaning",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5044",
+        "5:x5094"
+      ]
+    },
+    {
+      "id": "local_regression_intercept_scope",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5045",
+        "5:x5095"
+      ]
+    },
+    {
+      "id": "local_least_squares_goal",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5046",
+        "5:x5096"
+      ]
+    },
+    {
+      "id": "local_least_squares_mean_point",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5047",
+        "5:x5097"
+      ]
+    },
+    {
+      "id": "local_least_squares_sign",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5048",
+        "5:x5098"
+      ]
+    },
+    {
+      "id": "local_least_squares_unexplained",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5049",
+        "5:x5099"
+      ]
+    },
+    {
+      "id": "local_least_squares_coefficient_units",
+      "status": "local",
+      "card": null,
+      "note": "CED-derived local reasoning build, authored 2026-11-19. No claim of private AP card or observed exemplar lineage.",
+      "questions": [
+        "5:x5050",
+        "5:x5100"
+      ]
     }
   ]
 }

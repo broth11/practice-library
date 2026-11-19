@@ -21,7 +21,7 @@ for(const file of readdirSync(dir)){
   }
  }
 }
-assert.equal(pairs,16,'four complete four-choice hypothesis questions');
+assert.equal(pairs,64,'sixteen complete four-choice hypothesis questions');
 assert.equal(expressions,36,'nine four-choice working questions');
 const css=readFileSync('src/styles/app.css','utf8');
 assert(!/\.math-display\{[^}]*overflow-x:auto/.test(css),'math must use authored lines rather than a scroll container');

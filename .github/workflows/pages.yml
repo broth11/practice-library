@@ -1,8 +1,8 @@
-# Secondary copy of the site on GitHub Pages, built from src/.
-# The primary site stays authoritative. To switch this on:
+# GitHub is the authoritative source; Pages is built from src/.
+# To enable deployment:
 #   1. Settings > Pages > Source: GitHub Actions
 #   2. Settings > Secrets and variables > Actions > Variables: PAGES_ENABLED = true
-name: GitHub Pages mirror
+name: GitHub Pages
 
 on:
   push:
