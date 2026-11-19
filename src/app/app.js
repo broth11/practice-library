@@ -120,6 +120,18 @@ function selectLesson(lessonId) {
   if (index >= 0) showQuestion(index);
 }
 
+function reserveLessonScrollSpace(pane) {
+  if (!app.classList.contains('practice-started')) return;
+  const groups = pane.querySelectorAll('.nav-group');
+  const lastGroup = groups[groups.length - 1];
+  const footer = pane.querySelector('.side-footer');
+  if (!lastGroup || !footer || !pane.clientHeight) return;
+  // The browser otherwise clamps the scroll before a late lesson can reach
+  // the top. Add only the trailing space needed to align the final lesson.
+  const tail = footer.getBoundingClientRect().bottom - lastGroup.getBoundingClientRect().top;
+  pane.style.setProperty('--lesson-scroll-space', `${Math.max(0, Math.ceil(pane.clientHeight - tail))}px`);
+}
+
 function scrollToLesson(lessonId) {
   if (!state.routeExpanded || state.routePane !== 'questions') return;
   if (state.unit?.questions[state.current]?.lesson !== lessonId) return;
@@ -128,9 +140,10 @@ function scrollToLesson(lessonId) {
     .find(item => item.dataset.lesson === lessonId);
   const group = button?.closest('.nav-group');
   if (!pane?.clientHeight || !group) return;
-  // Move only the navigation scroller, keeping the lesson heading above its
-  // question grid. Waiting for the panel transition makes the scroll visible.
-  const top = pane.scrollTop + group.getBoundingClientRect().top - pane.getBoundingClientRect().top - 8;
+  reserveLessonScrollSpace(pane);
+  // Align the selected lesson with the top, including the last lesson. Wait
+  // for the panel transition so the gentle scroll itself remains visible.
+  const top = pane.scrollTop + group.getBoundingClientRect().top - pane.getBoundingClientRect().top;
   pane.scrollTo({ top: Math.max(0, top), left: 0,
     behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
 }
@@ -168,7 +181,9 @@ function renderNavigation() {
   const currentQuestion = state.unit.questions[state.current];
   const progress = progressForUnit();
   routeContent.innerHTML = `<section class="route-pane" data-question-unit="${state.unit.id}"><header class="brand"><div class="eyebrow">${escapeHtml(state.course.title)}</div><h1>${escapeHtml(state.unit.title)}</h1><p>${escapeHtml(state.unit.description)}</p></header><p class="route-label">Lessons &amp; questions</p><nav aria-label="${escapeHtml(state.unit.title)} lessons and questions">${state.unit.lessons.map(lesson => { const indices = state.unit.questions.flatMap((question, index) => question.lesson === lesson.id ? [index] : []); const open = currentQuestion?.lesson === lesson.id && app.classList.contains('practice-started'); return `<div class="nav-group ${open ? 'lesson-open' : ''}"><button type="button" class="section-link" data-lesson="${lesson.id}" aria-expanded="${open}"><span class="section-number">Lesson ${lesson.id}</span><span class="section-label">${escapeHtml(lesson.title)}</span></button><div class="question-dots" aria-label="Questions in lesson ${lesson.id}">${indices.map((index, local) => { const question = state.unit.questions[index]; const selected = index === state.current && app.classList.contains('practice-started'); return `<button type="button" class="question-dot ${selected ? 'current' : ''} ${answers.has(answerKey(question)) ? 'answered' : ''}" data-index="${index}" ${selected ? 'aria-current="step"' : ''}>${local + 1}</button>`; }).join('')}</div></div>`; }).join('')}</nav><footer class="side-footer"><span>${progress.answered}</span> / ${state.unit.questions.length} answers selected<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="${state.unit.questions.length}" aria-valuenow="${progress.answered}"><span style="width:${progress.answered / state.unit.questions.length * 100}%"></span></div><span>${progress.opened}</span> / ${state.unit.questions.length} solutions opened</footer></section>`;
-  routeContent.querySelector('.route-pane').scrollTop = previousScroll;
+  const pane = routeContent.querySelector('.route-pane');
+  reserveLessonScrollSpace(pane);
+  pane.scrollTop = previousScroll;
   routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => {
     const lessonId = button.dataset.lesson;
     return transitionPanels(() => selectLesson(lessonId), () => scrollToLesson(lessonId));

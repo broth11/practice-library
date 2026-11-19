@@ -1,11 +1,11 @@
 # Handoff
 
-## Selected lesson scrolling (2026-11-19, Codex)
+## Selected lesson top alignment (2026-11-19, Codex)
 
-- Selecting a lesson preserves the existing navigation scroll position during its rebuild, then smoothly reveals that lesson's heading and question grid after the panel transition finishes. This shared behavior applies to every unit.
+- Selecting a lesson preserves the existing navigation scroll position during its rebuild, then smoothly aligns that lesson at the top of the pane after the panel transition finishes. A trailing spacer reserves enough scroll range for the final lesson too. This shared behavior applies to every unit.
 - Reopening Questions also reveals the current lesson, including on phones where selecting a question closes the navigation overlay. Reduced-motion settings use immediate scrolling. Superseded transitions cannot run stale scroll callbacks.
 - The lesson pane scrolls vertically only, with browser scroll anchoring disabled so expanding and collapsing lesson grids do not fight the requested scroll position.
-- Standard checks and build pass. Browser checks cover the final lesson in all nine units, the reported 3.A.6 case, and phone reopening at 390px. All twenty buttons and the selected lesson heading are visible after settling, with no horizontal overflow. Completion callbacks were checked with reduced motion, absent View Transition support, and superseded transitions.
+- Standard checks and build pass. Browser checks cover the final lesson in all nine units, the reported 3.A.6 case, and phone reopening at 390px. The selected lesson begins within 0.13 CSS pixels of the pane top in all nine final-lesson cases and the 3.A.6 desktop/phone cases; all twenty buttons remain visible. Completion callbacks were checked with reduced motion, absent View Transition support, and superseded transitions.
 - Question content and calculator guidance are unchanged. GitHub remains authoritative; publication uses a separate review branch and PR.
 
 ## Current state: Unit 3 expansion and Units 4–5 (2026-11-19, Codex)

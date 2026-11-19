@@ -1,8 +1,8 @@
 # Practice Library decision record
 
-## Reveal selected lesson buttons (2026-11-19)
+## Align selected lessons at the pane top (2026-11-19)
 
-Selecting a lesson smoothly scrolls only the lesson pane to reveal its heading and question grid. Preserve the pane position while rebuilding navigation, then begin the scroll after the panel transition so the movement is visible. Reopening Questions reveals the current lesson too. Reduced-motion preferences use immediate scrolling; a newer transition invalidates an older completion callback. Keep vertical navigation scrolling and suppress horizontal overflow.
+Selecting a lesson smoothly scrolls its heading to the top of the lesson pane. Merely making the buttons visible is insufficient. Reserve trailing space after the list so even the final lesson can reach the top. Preserve the pane position while rebuilding navigation, then begin the scroll after the panel transition so the movement is visible. Reopening Questions reveals the current lesson too. Reduced-motion preferences use immediate scrolling; a newer transition invalidates an older completion callback. Keep vertical navigation scrolling and suppress horizontal overflow.
 
 ## Authoritative source and new topic grouping (2026-11-19)
 
