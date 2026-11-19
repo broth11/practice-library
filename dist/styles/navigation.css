@@ -9,7 +9,8 @@
 .route-tab:hover{background:#e0e9df}.route-tab[aria-selected=true]{border-color:#bdd3c4;background:#f8fbf5;color:#225b4f}.route-tab .tab-arrow{font-size:10px}
 .app .route-content,.app.calculator-mode .route-content{display:flex;flex:1;min-width:0;visibility:visible;opacity:1;pointer-events:auto;overflow:hidden;padding:22px 15px 14px}
 .app.nav-collapsed .route-content{display:none}
-.route-pane{min-height:0;overflow:auto;scrollbar-width:thin;flex:1;display:flex;flex-direction:column}
+.route-pane{min-height:0;overflow-y:auto;overflow-x:hidden;overflow-anchor:none;overscroll-behavior:contain;scrollbar-width:thin;flex:1;display:flex;flex-direction:column}
+.route-pane[data-question-unit]::after{content:'';display:block;flex:0 0 var(--lesson-scroll-space,0px)}
 .route-pane:focus{outline:none}.route-pane h1{font:normal 29px/1.1 var(--serif);margin:9px 0}.route-pane .pane-description{font-size:12px;color:var(--muted);line-height:1.55;margin:0 0 20px}
 .nav-choice{display:block;width:100%;padding:17px 13px;margin:0 0 12px;text-align:left;border:1px solid #d0ddd1;border-radius:10px;background:#f9fbf6;color:var(--ink)}
 .nav-choice[aria-current=true]{border-color:#79a892;background:#e0ede2}.nav-choice:hover{background:#e5eee2}.nav-choice strong{display:block;font:normal 24px/1.2 var(--serif);margin:7px 0}.nav-choice small{display:block;color:#617268;font-size:11px;line-height:1.5}.nav-choice .eyebrow{font-size:9px}.choice-link{display:block;color:var(--accent);margin-top:12px;font-size:11px;font-weight:650}
