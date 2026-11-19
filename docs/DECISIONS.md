@@ -1,5 +1,9 @@
 # Practice Library decision record
 
+## Sequential 300ms lesson slide and 300ms reveal (2026-11-19)
+
+Ben requested the selected lesson slide to the top over 300ms, followed by its question buttons opening over a separate 300ms. Keep the grid collapsed during the slide, then animate height, padding, and opacity. Preserve the clicked heading position while retiring the previous grid, and retain trailing space for final-lesson alignment. Skip motion for reduced-motion preferences and cancel superseded sequences. Phone lesson selection keeps the navigation visible for the reveal; picking a numbered question closes it. Ben authorized direct publication to main without a PR for this change.
+
 ## Align selected lessons at the pane top (2026-11-19)
 
 Selecting a lesson smoothly scrolls its heading to the top of the lesson pane. Merely making the buttons visible is insufficient. Reserve trailing space after the list so even the final lesson can reach the top. Preserve the pane position while rebuilding navigation, then begin the scroll after the panel transition so the movement is visible. Reopening Questions reveals the current lesson too. Reduced-motion preferences use immediate scrolling; a newer transition invalidates an older completion callback. Keep vertical navigation scrolling and suppress horizontal overflow.

@@ -1,5 +1,14 @@
 # Handoff
 
+## Sequential lesson animation (2026-11-19, Codex)
+
+- Ben requested a 300ms upward slide aligning the chosen lesson at the top, followed by a separate 300ms expansion revealing its twenty question buttons. This replaces the previous immediate-open/native-scroll sequence. Lesson selection no longer adds a whole-panel view transition before these phases.
+- `src/app/lesson-motion.js` uses a cancellable animation clock for both phases. The grid stays collapsed and inert during the slide, then expands its height, padding, and opacity over the next 300ms. Natural sizing and interaction are restored afterward. Reduced motion completes immediately.
+- Retain the previous open grid during the slide so its collapse cannot jump the clicked heading. Close it once the target reaches the top, adjusting the scroll position before revealing the new grid. Navigation rebuilds, another selection, wheel input, and touch/pointer input cancel older motion.
+- Phone lesson selection keeps the navigation open for the reveal. Choosing a numbered question still closes the overlay. Existing trailing space supports top alignment even for each unit's final lesson.
+- The standard checks include a controlled-clock regression verifying hidden buttons during the first 300ms, a separate reveal through 600ms, cancellation, and reduced motion. Browser checks cover all nine final lessons, 3.A.1 → 3.A.6 → 3.A.8 → 3.A.1 switches, a 390px phone reveal, and selecting question 20 afterward. All selected headings finish within 0.13px of the pane top, with twenty usable buttons.
+- Ben explicitly requested a direct push to main and no PR for this change, overriding the normal branch/PR rule for this publication only. Preserve GitHub as the source of truth. Question content and calculator guidance are unchanged.
+
 ## Selected lesson top alignment (2026-11-19, Codex)
 
 - Selecting a lesson preserves the existing navigation scroll position during its rebuild, then smoothly aligns that lesson at the top of the pane after the panel transition finishes. A trailing spacer reserves enough scroll range for the final lesson too. This shared behavior applies to every unit.

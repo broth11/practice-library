@@ -1,3 +1,4 @@
+import { animateLesson } from './lesson-motion.js';
 import { transitionPanels as runPanelTransition } from './panel-motion.js';
 import { fitQuestion } from './question-fit.js';
 import { renderStimulus } from './stimulus.js';
@@ -20,6 +21,12 @@ const previous = document.getElementById('previous');
 const next = document.getElementById('next');
 const answers = new Map();
 const viewed = new Set();
+let lessonMotion;
+
+function cancelLessonMotion() {
+  lessonMotion?.abort();
+  lessonMotion = undefined;
+}
 
 const state = {
   catalog: null,
@@ -115,9 +122,42 @@ async function selectUnit(unitMeta, updateHash = true) {
   else update();
 }
 
-function selectLesson(lessonId) {
+async function selectLesson(lessonId) {
+  cancelLessonMotion();
   const index = state.unit.questions.findIndex(question => question.lesson === lessonId);
-  if (index >= 0) showQuestion(index);
+  if (index < 0) return;
+  const oldButton = [...routeContent.querySelectorAll('[data-lesson]')]
+    .find(button => button.dataset.lesson === lessonId);
+  const headingTop = oldButton?.closest('.nav-group').getBoundingClientRect().top;
+  const previousLesson = routeContent.querySelector('.lesson-open [data-lesson]')?.dataset.lesson;
+  // Keep the phone navigation visible while its question choices unfold.
+  // Picking a question button still closes the phone overlay as before.
+  showQuestion(index, true, true);
+  fit(true);
+  const pane = routeContent.querySelector('.route-pane');
+  const button = [...routeContent.querySelectorAll('[data-lesson]')]
+    .find(item => item.dataset.lesson === lessonId);
+  const group = button?.closest('.nav-group');
+  if (!pane?.clientHeight || !group) return;
+  button.focus({ preventScroll: true });
+  const retiringGroup = previousLesson !== lessonId
+    ? [...pane.querySelectorAll('.nav-group')].find(item => item.querySelector('[data-lesson]').dataset.lesson === previousLesson)
+    : undefined;
+  const motion = new AbortController();
+  lessonMotion = motion;
+  const interrupt = () => motion.abort();
+  for (const event of ['wheel', 'touchstart', 'pointerdown']) {
+    pane.addEventListener(event, interrupt, { passive: true, signal: motion.signal });
+  }
+  try {
+    await animateLesson({ pane, group, retiringGroup,
+      startOffset: Math.max(0, (headingTop ?? pane.getBoundingClientRect().top) - pane.getBoundingClientRect().top),
+      reserveSpace: reserveLessonScrollSpace, signal: motion.signal,
+      duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300 });
+  } finally {
+    motion.abort();
+    if (lessonMotion === motion) lessonMotion = undefined;
+  }
 }
 
 function reserveLessonScrollSpace(pane) {
@@ -158,6 +198,7 @@ function progressForUnit() {
 }
 
 function renderNavigation() {
+  cancelLessonMotion();
   const previousPane = routeContent.querySelector('.route-pane');
   const previousScroll = previousPane && state.unit && previousPane.dataset.questionUnit === state.unit.id ? previousPane.scrollTop : 0;
   const panes = ['courses', 'units', 'questions'];
@@ -184,10 +225,7 @@ function renderNavigation() {
   const pane = routeContent.querySelector('.route-pane');
   reserveLessonScrollSpace(pane);
   pane.scrollTop = previousScroll;
-  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => {
-    const lessonId = button.dataset.lesson;
-    return transitionPanels(() => selectLesson(lessonId), () => scrollToLesson(lessonId));
-  });
+  routeContent.querySelectorAll('[data-lesson]').forEach(button => button.onclick = () => selectLesson(button.dataset.lesson));
   routeContent.querySelectorAll('[data-index]').forEach(button => button.onclick = () => showQuestion(Number(button.dataset.index)));
 }
 
@@ -255,7 +293,7 @@ function setSolutionView(view) {
   fit();
 }
 
-function showQuestion(index, updateHash = true) {
+function showQuestion(index, updateHash = true, keepNavigation = false) {
   if (!state.unit || index < 0 || index >= state.unit.questions.length) return;
   closeSolution();
   state.current = index;
@@ -271,7 +309,7 @@ function showQuestion(index, updateHash = true) {
   document.getElementById('next-label').textContent = !next.disabled && state.unit.questions[index + 1].lesson !== question.lesson ? 'Next lesson' : 'Next';
   // At phone width the route pane overlays the question, so close it once a
   // question is chosen. The rail tabs stay visible to reopen it.
-  if (state.routeExpanded && matchMedia('(max-width: 760px)').matches) {
+  if (!keepNavigation && state.routeExpanded && matchMedia('(max-width: 760px)').matches) {
     state.routeExpanded = false;
     app.classList.add('nav-collapsed');
   }
