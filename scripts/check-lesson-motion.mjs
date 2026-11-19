@@ -1,5 +1,4 @@
-// Verify the requested sequence against a controlled animation clock: the
-// buttons must remain closed throughout the slide, then reveal at the top.
+// Verify moving and opening progress together on one controlled 600ms clock.
 import assert from 'node:assert/strict';
 import { animateLesson } from '../src/app/lesson-motion.js';
 let now = 0, nextFrame = 0;
@@ -29,25 +28,21 @@ const first = fixture();
 const completed = animateLesson(first.options);
 await step(300);
 assert.equal(first.pane.scrollTop, 250, 'halfway through the 600ms slide');
-assert.equal(first.dots.style.height, '0px', 'buttons stay hidden during the slide');
+assert.equal(first.dots.style.height, '78.5px', 'buttons are halfway open halfway through the move');
+assert.equal(first.dots.style.opacity, '0.5', 'button fade shares the same progress');
 await step(600);
 assert.equal(first.pane.scrollTop, 500, 'lesson reaches the top after 600ms');
-assert.equal(first.dots.style.height, '0px', 'reveal starts only after arrival');
-await step(850);
-assert.equal(first.pane.scrollTop, 500, 'heading stays at the top during reveal');
-assert.equal(first.dots.style.height, '78.5px', 'halfway through the separate 500ms reveal');
-await step(1100);
 assert.equal(await completed, true);
 assert.equal(first.dots.inert, false, 'buttons become interactive after the reveal');
 assert.equal(first.dots.style.height, undefined, 'natural grid sizing is restored');
 assert.equal(frames.size, 0);
 const interrupted = fixture();
 const canceled = animateLesson(interrupted.options);
-await step(1200);
+await step(700);
 interrupted.controller.abort();
 assert.equal(await canceled, false);
 const stoppedAt = interrupted.pane.scrollTop;
-await step(1800);
+await step(1300);
 assert.equal(interrupted.pane.scrollTop, stoppedAt, 'canceled animation cannot resume');
 assert.equal(interrupted.dots.inert, false);
 const reduced = fixture();
@@ -55,4 +50,27 @@ assert.equal(await animateLesson({ ...reduced.options, reducedMotion: true }), t
 assert.equal(reduced.pane.scrollTop, 500);
 assert.equal(reduced.dots.inert, false);
 assert.equal(frames.size, 0, 'reduced motion schedules no animation frames');
-console.log('Verified sequential 600ms slide and 500ms reveal, cancellation, and reduced motion.');
+// Closing a previous grid above the chosen lesson changes the destination.
+// Both grids and the scroll must still share the same progress without a snap.
+const switching = fixture();
+const oldDots = fixture().dots;
+let oldOpen = false;
+const retiringGroup = {
+  classList: { add: () => { oldOpen = true; }, remove: () => { oldOpen = false; } },
+  querySelector: selector => selector === '.question-dots' ? oldDots : { setAttribute() {} }
+};
+switching.options.group.getBoundingClientRect = () => ({
+  top: 500 - (157 - (oldOpen ? oldDots.getBoundingClientRect().height : 0)) - switching.pane.scrollTop
+});
+const switched = animateLesson({ ...switching.options, retiringGroup });
+await step(1600);
+assert.equal(switching.dots.style.height, '78.5px');
+assert.equal(oldDots.style.height, '78.5px', 'previous grid closes as the selected grid opens');
+assert.equal(switching.pane.scrollTop, 210.75, 'scroll follows the changing destination');
+await step(1900);
+assert.equal(await switched, true);
+assert.equal(oldOpen, false);
+assert.equal(oldDots.inert, false);
+assert.equal(switching.pane.scrollTop, 343, 'selected heading finishes at its updated top position');
+assert.equal(switching.options.group.getBoundingClientRect().top, 0);
+console.log('Verified simultaneous 600ms move and button reveal, cancellation, and reduced motion.');

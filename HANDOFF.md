@@ -1,5 +1,12 @@
 # Handoff
 
+## Combined 600ms lesson animation (2026-11-19, Codex)
+
+- Ben replaced the sequential move/reveal with one shared 600ms animation. The selected lesson moves to the top while its twenty buttons expand and fade in. The previous grid closes concurrently. Recompute the scroll destination as grid heights change to avoid an endpoint snap.
+- One easing curve and clock drive scrolling, height, padding, and opacity. Reduced motion is immediate; existing cancellation and phone question-selection behavior are retained.
+- Controlled-clock tests verify that movement and opening are both halfway complete at 300ms and finished at 600ms, including a previous grid above the selection changing its destination. Cancellation and reduced-motion checks pass. Browser checks cover all nine units and 390px phone width, with all twenty buttons usable and headings within 0.41px of the pane top. A captured intermediate state confirmed that buttons were already opening while the lesson was still moving.
+- Continue the user's explicit direct-to-main publication preference for this navigation work. The sequential timing entries below are superseded.
+
 ## Sequential lesson animation (2026-11-19, Codex)
 
 Ben revised the timing to a 600ms section move and a 500ms button reveal, and explicitly requested another direct push to main. The updated controlled-clock check and standard checks pass. The earlier browser coverage below verifies the unchanged layout and interaction behavior.

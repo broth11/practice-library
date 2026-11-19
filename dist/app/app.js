@@ -1,11 +1,11 @@
-import { animateLesson } from './lesson-motion.js?v=daa0d10c27a8';
-import { transitionPanels as runPanelTransition } from './panel-motion.js?v=daa0d10c27a8';
-import { fitQuestion } from './question-fit.js?v=daa0d10c27a8';
-import { renderStimulus } from './stimulus.js?v=daa0d10c27a8';
-import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=daa0d10c27a8';
-import { renderStep, typesetMath } from './math.js?v=daa0d10c27a8';
-import { mountCalculator } from './calculator.js?v=daa0d10c27a8';
-import { renderChoice, choiceText } from './choices.js?v=daa0d10c27a8';
+import { animateLesson } from './lesson-motion.js?v=60eb74461250';
+import { transitionPanels as runPanelTransition } from './panel-motion.js?v=60eb74461250';
+import { fitQuestion } from './question-fit.js?v=60eb74461250';
+import { renderStimulus } from './stimulus.js?v=60eb74461250';
+import { preloadLibraryImages, preloadUnitImages } from './image-preload.js?v=60eb74461250';
+import { renderStep, typesetMath } from './math.js?v=60eb74461250';
+import { mountCalculator } from './calculator.js?v=60eb74461250';
+import { renderChoice, choiceText } from './choices.js?v=60eb74461250';
 
 const app = document.getElementById('practice-app');
 const rail = document.getElementById('route-rail');

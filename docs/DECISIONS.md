@@ -1,5 +1,9 @@
 # Practice Library decision record
 
+## Combined 600ms lesson move and reveal (2026-11-19)
+
+Ben requested one smooth 600ms animation: the lesson moves to the top while its question buttons expand and fade in, replacing the separate 600ms move and 500ms reveal. Close the previous grid on the same timeline and track the changing target position during scrolling. Retain immediate reduced-motion behavior and cancellation of interrupted animations.
+
 ## Sequential 600ms lesson slide and 500ms reveal (2026-11-19)
 
 Ben requested the selected lesson slide to the top over 600ms, followed by its question buttons opening over a separate 500ms. Keep the grid collapsed during the slide, then animate height, padding, and opacity. Preserve the clicked heading position while retiring the previous grid, and retain trailing space for final-lesson alignment. Skip motion for reduced-motion preferences and cancel superseded sequences. Phone lesson selection keeps the navigation visible for the reveal; picking a numbered question closes it. Ben authorized direct publication to main without a PR for this change.
